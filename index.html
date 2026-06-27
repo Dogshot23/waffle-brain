@@ -81,10 +81,16 @@
 
   .logo-img {
     display: block;
-    height: 36px;
+    height: 54px;
     width: auto;
     object-fit: contain;
     object-position: left center;
+  }
+
+  @media (max-width: 600px) {
+    .logo-img {
+      height: 44px;
+    }
   }
 
   .logo-subtitle {
@@ -426,7 +432,7 @@
 
   <header>
     <div class="logo-group">
-      <img src="images/logo.png" alt="WaffleBrain" class="logo-img">
+      <img src="logo.png" alt="WaffleBrain" class="logo-img">
       <span class="logo-subtitle">For teachers</span>
     </div>
     <nav class="version-nav" aria-label="Switch version">
