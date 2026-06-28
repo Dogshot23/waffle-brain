@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-87ZVSS7Q5N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-87ZVSS7Q5N');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WaffleBrain — Teacher</title>
@@ -50,7 +58,6 @@
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
-    min-height: 100dvh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -59,7 +66,6 @@
     width: 100%;
     max-width: 380px;
     min-height: 100vh;
-    min-height: 100dvh;
     display: flex;
     flex-direction: column;
     padding: 16px 16px 20px;
@@ -426,122 +432,6 @@
   /* ── Reduced motion ── */
   @media (prefers-reduced-motion: reduce) {
     #next-btn, #prompt-card::before { transition: none; }
-  }
-
-  /* ────────────────────────────────────────────────────────
-     MOBILE LAYOUT FIX
-     Problem: #prompt-card has flex:1 which makes it grow to
-     fill the entire #app height (100vh). The button lives
-     outside the card, so it gets pushed below the screen.
-     Fix: on mobile the card stops growing and takes only
-     the space its content needs.
-  ──────────────────────────────────────────────────────── */
-  @media (max-width: 600px) {
-    #app {
-      padding-top: 12px;
-      padding-bottom: 14px;
-    }
-
-    header {
-      margin-bottom: 10px;
-    }
-
-    .selector-bar {
-      margin-bottom: 8px;
-    }
-
-    /* Core fix: card no longer stretches to fill viewport */
-    #prompt-card {
-      flex: 0 1 auto;
-      padding: 16px 16px 18px;
-    }
-
-    .mode-badge {
-      margin-bottom: 10px;
-    }
-
-    #prompt-text {
-      font-size: 18px;
-      margin-bottom: 14px;
-    }
-
-    .divider {
-      margin-bottom: 10px;
-    }
-
-    .constraint-block {
-      padding: 10px 12px 11px;
-    }
-
-    #copy-btn {
-      margin-top: 10px;
-    }
-
-    .btn-wrap {
-      margin-top: 8px;
-    }
-
-    #next-btn {
-      padding: 13px 20px;
-    }
-
-    footer {
-      margin-top: 8px;
-    }
-  }
-
-  /* Extra compact for shorter phones (iPhone SE = 667px tall,
-     or any phone in landscape) */
-  @media (max-width: 600px) and (max-height: 720px) {
-    #app {
-      padding-top: 8px;
-      padding-bottom: 10px;
-    }
-
-    header {
-      margin-bottom: 7px;
-    }
-
-    .selector-bar {
-      margin-bottom: 6px;
-    }
-
-    #prompt-card {
-      padding: 13px 14px 14px;
-    }
-
-    .mode-badge {
-      margin-bottom: 8px;
-    }
-
-    #prompt-text {
-      font-size: 17px;
-      margin-bottom: 11px;
-    }
-
-    .divider {
-      margin-bottom: 8px;
-    }
-
-    .constraint-block {
-      padding: 8px 11px 9px;
-    }
-
-    #copy-btn {
-      margin-top: 8px;
-    }
-
-    .btn-wrap {
-      margin-top: 6px;
-    }
-
-    #next-btn {
-      padding: 12px 20px;
-    }
-
-    footer {
-      margin-top: 6px;
-    }
   }
 </style>
 </head>
