@@ -121,6 +121,7 @@ levelSelect.addEventListener('change', () => {
   currentLevel = levelSelect.value;
   localStorage.setItem('wb_level', currentLevel);
   updateLevelDisplay();
+  WB.prime(getFilter(), getLevel());
 });
 
 categorySelect.addEventListener('change', () => {
