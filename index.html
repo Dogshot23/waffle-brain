@@ -494,17 +494,6 @@
     background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%233B5BDB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   }
 
-  /* ── Level display ── */
-  #level-display {
-    font-size: 11px;
-    font-weight: 400;
-    color: var(--text-tertiary);
-    letter-spacing: 0.01em;
-    padding: 0 2px;
-    margin-top: -4px;
-    margin-bottom: 8px;
-  }
-
   /* ── Reduced motion ── */
   @media (prefers-reduced-motion: reduce) {
     #next-btn, #prompt-card::before { transition: none; }
@@ -528,11 +517,9 @@
 
   <div class="selector-bar">
     <select id="level-select" aria-label="Student level">
-      <option value="A1">A1 Beginner</option>
-      <option value="A2">A2 Elementary</option>
-      <option value="B1" selected>B1 Intermediate</option>
-      <option value="B1B2">B1/B2 Upper Intermediate</option>
-      <option value="B2">B2 Advanced</option>
+      <option value="A1A2">Beginner (A1/A2)</option>
+      <option value="B1" selected>Intermediate (B1)</option>
+      <option value="B2plus">Advanced (B2+)</option>
     </select>
     <select id="category-select" aria-label="Filter by category">
       <option value="">All categories</option>
@@ -548,7 +535,6 @@
       <option value="Quick Fire">Quick Fire</option>
     </select>
   </div>
-  <p id="level-display" aria-live="polite"></p>
 
   <div id="prompt-card">
     <span class="mode-badge" id="mode-label">Loading</span>
