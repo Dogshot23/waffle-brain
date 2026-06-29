@@ -1,36 +1,101 @@
+/* ============================================================
+   WaffleBrain — Unified Stylesheet
+   Covers: index.html (Teacher) + student.html (Student)
+   Sections:
+     1. Reset
+     2. Tokens (:root)
+     3. Shared layout
+     4. Shared components (badge, buttons, footer)
+     5. Teacher-only
+     6. Student-only
+     7. Utilities & overrides
+   ============================================================ */
+
+
+/* ── 1. Reset ─────────────────────────────────────────────── */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+
+/* ── 2. Tokens ────────────────────────────────────────────── */
+
 :root {
+  /* Surface */
   --bg:           #F7F6F3;
   --surface:      #FFFFFF;
   --border:       #E4E2DC;
   --border-light: #EDECE8;
 
+  /* Text */
   --text-primary:   #1C1C1E;
   --text-secondary: #5C5C6E;
   --text-tertiary:  #9898A6;
 
-  --badge-bg:       #EEF2FF;
-  --badge-text:     #3B5BDB;
+  /* Badge (default; overridden per mode below) */
+  --badge-bg:   #EEF2FF;
+  --badge-text: #3B5BDB;
 
-  --constraint-bg:    #FFFBF0;
-  --constraint-border:#FDE89A;
-  --constraint-label: #B45309;
-  --constraint-text:  #44360A;
+  /* Teacher — constraint block */
+  --constraint-bg:     #FFFBF0;
+  --constraint-border: #FDE89A;
+  --constraint-label:  #B45309;
+  --constraint-text:   #44360A;
 
-  --btn-bg:         #3B5BDB;
-  --btn-bg-hover:   #3451C7;
-  --btn-bg-active:  #2F47B3;
-  --btn-text:       #FFFFFF;
+  /* Student — info blocks */
+  --practice-bg:     #F0F4FF;
+  --practice-border: #C7D4F8;
+  --practice-label:  #2F4AB3;
+  --practice-text:   #1A2D6B;
 
-  --flash-ring:     rgba(59, 91, 219, 0.18);
+  --starter-bg:     #F0FBF4;
+  --starter-border: #B6E8C8;
+  --starter-label:  #1A6B3A;
+  --starter-text:   #0E3D22;
+
+  --followup-bg:     #FFF7ED;
+  --followup-border: #FED7AA;
+  --followup-label:  #9A3412;
+  --followup-text:   #431407;
+
+  /* Teacher buttons (blue) */
+  --teacher-btn-bg:        #3B5BDB;
+  --teacher-btn-bg-hover:  #3451C7;
+  --teacher-btn-bg-active: #2F47B3;
+  --teacher-flash-ring:    rgba(59, 91, 219, 0.18);
+
+  /* Student buttons (orange) */
+  --student-btn-bg:        #D4610B;
+  --student-btn-bg-hover:  #C05509;
+  --student-btn-bg-active: #AB4A08;
+  --student-flash-ring:    rgba(212, 97, 11, 0.18);
+
+  /* Active button (set per page via body class — see section 5 & 6) */
+  --btn-bg:        var(--teacher-btn-bg);
+  --btn-bg-hover:  var(--teacher-btn-bg-hover);
+  --btn-bg-active: var(--teacher-btn-bg-active);
+  --btn-text:      #FFFFFF;
+  --flash-ring:    var(--teacher-flash-ring);
 }
 
-html, body { height: 100%; }
+/* Student page overrides button tokens */
+body.student {
+  --btn-bg:        var(--student-btn-bg);
+  --btn-bg-hover:  var(--student-btn-bg-hover);
+  --btn-bg-active: var(--student-btn-bg-active);
+  --flash-ring:    var(--student-flash-ring);
+}
+
+
+/* ── 3. Shared layout ─────────────────────────────────────── */
+
+html {
+  height: 100%;
+  height: 100dvh;
+}
 
 body {
   background: var(--bg);
@@ -39,7 +104,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -47,20 +113,22 @@ body {
 #app {
   width: 100%;
   max-width: 380px;
-  min-height: 100vh;
+  height: 100%;
+  max-height: 100dvh;
   display: flex;
   flex-direction: column;
   padding: 16px 16px 20px;
-  gap: 0;
 }
 
-/* ── Header ── */
+/* Header */
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 14px;
   padding: 0 2px;
+  flex-shrink: 0;
 }
 
 .logo-group {
@@ -71,16 +139,10 @@ header {
 
 .logo-img {
   display: block;
-  height: 54px;
+  height: 44px;
   width: auto;
   object-fit: contain;
   object-position: left center;
-}
-
-@media (max-width: 600px) {
-  .logo-img {
-    height: 44px;
-  }
 }
 
 .logo-subtitle {
@@ -92,7 +154,8 @@ header {
   padding-left: 1px;
 }
 
-/* ── Version nav ── */
+/* Version nav */
+
 .version-nav {
   display: flex;
   align-items: center;
@@ -127,27 +190,23 @@ header {
   background: var(--bg);
 }
 
-.counter {
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--text-tertiary);
-  letter-spacing: 0.02em;
-}
+/* Prompt card */
 
-/* ── Main card ── */
 #prompt-card {
   flex: 1;
+  min-height: 0;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 20px 20px 22px;
+  padding: 18px 18px 20px;
   display: flex;
   flex-direction: column;
-  gap: 0;
-  transition: box-shadow 0.15s ease;
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+
+/* Flash ring */
 
 #prompt-card::before {
   content: '';
@@ -163,7 +222,11 @@ header {
   box-shadow: 0 0 0 4px var(--flash-ring);
 }
 
-/* ── Mode badge ── */
+
+/* ── 4. Shared components ─────────────────────────────────── */
+
+/* Mode badge */
+
 .mode-badge {
   display: inline-flex;
   align-items: center;
@@ -177,7 +240,6 @@ header {
   padding: 3px 9px 3px 7px;
   border-radius: 100px;
   align-self: flex-start;
-  margin-bottom: 14px;
   white-space: nowrap;
 }
 
@@ -191,120 +253,37 @@ header {
   flex-shrink: 0;
 }
 
-/* Per-mode badge colours */
-#prompt-card[data-mode="Role Shift"]      .mode-badge { --badge-bg: #FFF0F6; --badge-text: #C2255C; }
-#prompt-card[data-mode="Monologue"]       .mode-badge { --badge-bg: #FFF3BF; --badge-text: #845E00; }
-#prompt-card[data-mode="Reversal"]        .mode-badge { --badge-bg: #E8F5E9; --badge-text: #2E7D32; }
-#prompt-card[data-mode="Opinion Fight"]   .mode-badge { --badge-bg: #FFF0E8; --badge-text: #C04B00; }
-#prompt-card[data-mode="Language Rule"]   .mode-badge { --badge-bg: #EEF2FF; --badge-text: #3B5BDB; }
-#prompt-card[data-mode="Hypothetical"]    .mode-badge { --badge-bg: #F3F0FF; --badge-text: #6741D9; }
-#prompt-card[data-mode="Story Mode"]      .mode-badge { --badge-bg: #E8F8F5; --badge-text: #0E7490; }
-#prompt-card[data-mode="Real Talk"]       .mode-badge { --badge-bg: #FFF0F0; --badge-text: #B91C1C; }
-#prompt-card[data-mode="Big Question"]    .mode-badge { --badge-bg: #F0F4FF; --badge-text: #1D4ED8; }
-#prompt-card[data-mode="Quick Fire"]      .mode-badge { --badge-bg: #FFF7ED; --badge-text: #C2410C; }
+/* Per-mode badge colours — shared across both pages */
+#prompt-card[data-mode="Role Shift"]    .mode-badge { --badge-bg: #FFF0F6; --badge-text: #C2255C; }
+#prompt-card[data-mode="Monologue"]     .mode-badge { --badge-bg: #FFF3BF; --badge-text: #845E00; }
+#prompt-card[data-mode="Reversal"]      .mode-badge { --badge-bg: #E8F5E9; --badge-text: #2E7D32; }
+#prompt-card[data-mode="Opinion Fight"] .mode-badge { --badge-bg: #FFF0E8; --badge-text: #C04B00; }
+#prompt-card[data-mode="Language Rule"] .mode-badge { --badge-bg: #EEF2FF; --badge-text: #3B5BDB; }
+#prompt-card[data-mode="Hypothetical"]  .mode-badge { --badge-bg: #F3F0FF; --badge-text: #6741D9; }
+#prompt-card[data-mode="Story Mode"]    .mode-badge { --badge-bg: #E8F8F5; --badge-text: #0E7490; }
+#prompt-card[data-mode="Real Talk"]     .mode-badge { --badge-bg: #FFF0F0; --badge-text: #B91C1C; }
+#prompt-card[data-mode="Big Question"]  .mode-badge { --badge-bg: #F0F4FF; --badge-text: #1D4ED8; }
+#prompt-card[data-mode="Quick Fire"]    .mode-badge { --badge-bg: #FFF7ED; --badge-text: #C2410C; }
 
-/* ── Prompt text ── */
+/* Prompt text */
+
 #prompt-text {
   font-family: 'Lora', Georgia, serif;
   font-style: italic;
-  font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
   color: var(--text-primary);
   letter-spacing: -0.01em;
-  margin-bottom: 18px;
 }
 
-/* ── Divider ── */
-.divider {
-  width: 100%;
-  height: 1px;
-  background: var(--border-light);
-  margin-bottom: 14px;
-}
+/* Button row */
 
-/* ── Constraint block ── */
-.constraint-block {
-  background: var(--constraint-bg);
-  border: 1px solid var(--constraint-border);
-  border-radius: 8px;
-  padding: 11px 13px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.constraint-label {
-  font-size: 9.5px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--constraint-label);
-}
-
-#constraint-text {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.55;
-  color: var(--constraint-text);
-}
-
-/* ── Copy button ── */
-#copy-btn {
-  align-self: flex-start;
-  margin-top: 12px;
-  padding: 5px 11px;
-  background: transparent;
-  color: var(--text-tertiary);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 10.5px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  cursor: pointer;
-  transition: color 0.1s ease, border-color 0.1s ease, background 0.1s ease;
-  -webkit-tap-highlight-color: transparent;
-  user-select: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-}
-
-#copy-btn svg {
-  width: 11px;
-  height: 11px;
-  flex-shrink: 0;
-  transition: opacity 0.1s ease;
-}
-
-#copy-btn:hover {
-  color: var(--text-secondary);
-  border-color: var(--text-tertiary);
-  background: var(--bg);
-}
-
-#copy-btn:active { transform: translateY(1px); }
-
-#copy-btn.copied {
-  color: #2E7D32;
-  border-color: #A5D6A7;
-  background: #F1F8F1;
-}
-
-#copy-btn:focus-visible {
-  outline: 2px solid var(--btn-bg);
-  outline-offset: 2px;
-}
-
-/* ── Button ── */
 .btn-wrap {
   margin-top: 10px;
   display: flex;
   gap: 8px;
   align-items: stretch;
-  width: 100%;
-  min-width: 0;
+  flex-shrink: 0;
 }
 
 #back-btn {
@@ -338,9 +317,7 @@ header {
   color: var(--text-primary);
 }
 
-#back-btn:active:not(:disabled) {
-  transform: translateY(1px);
-}
+#back-btn:active:not(:disabled) { transform: translateY(1px); }
 
 #back-btn:disabled {
   opacity: 0.35;
@@ -355,7 +332,7 @@ header {
 #next-btn {
   flex: 1;
   min-width: 0;
-  padding: 15px clamp(12px, 4vw, 20px);
+  padding: 15px 16px;
   background: var(--btn-bg);
   color: var(--btn-text);
   border: none;
@@ -374,7 +351,7 @@ header {
   gap: 8px;
   overflow: hidden;
   white-space: nowrap;
-  box-shadow: 0 1px 3px rgba(59,91,219,0.2), 0 4px 12px rgba(59,91,219,0.12);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.08);
 }
 
 #next-btn svg {
@@ -385,17 +362,12 @@ header {
   flex-shrink: 0;
 }
 
-#next-btn:hover {
-  background: var(--btn-bg-hover);
-  box-shadow: 0 1px 3px rgba(59,91,219,0.25), 0 6px 16px rgba(59,91,219,0.18);
-}
-
+#next-btn:hover { background: var(--btn-bg-hover); }
 #next-btn:hover svg { transform: translateX(2px); }
 
 #next-btn:active {
   background: var(--btn-bg-active);
   transform: translateY(1px);
-  box-shadow: 0 1px 2px rgba(59,91,219,0.15);
 }
 
 #next-btn:focus-visible {
@@ -403,7 +375,8 @@ header {
   outline-offset: 3px;
 }
 
-/* ── Footer ── */
+/* Footer */
+
 footer {
   margin-top: 12px;
   font-size: 11px;
@@ -411,6 +384,7 @@ footer {
   color: var(--text-tertiary);
   text-align: center;
   letter-spacing: 0.01em;
+  flex-shrink: 0;
 }
 
 footer kbd {
@@ -425,12 +399,24 @@ footer kbd {
   border: 1px solid #D4D2CC;
 }
 
-/* ── Selector bar ── */
+
+/* ── 5. Teacher-only ──────────────────────────────────────── */
+
+/* Counter */
+.counter {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  letter-spacing: 0.02em;
+}
+
+/* Selector bar */
 .selector-bar {
   margin-bottom: 10px;
   padding: 0 2px;
   display: flex;
   gap: 8px;
+  flex-shrink: 0;
 }
 
 #level-select {
@@ -440,6 +426,7 @@ footer kbd {
 
 #category-select {
   flex: 1;
+  min-width: 0;
 }
 
 #level-select,
@@ -479,22 +466,257 @@ footer kbd {
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%233B5BDB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
-/* ── Reduced motion ── */
-@media (prefers-reduced-motion: reduce) {
-  #next-btn, #prompt-card::before { transition: none; }
+/* Teacher prompt text sizing */
+body:not(.student) #prompt-text {
+  font-size: 20px;
+  margin-bottom: 18px;
 }
 
-/* ── Narrow viewport fix (≤ 360px — iPhone SE, older Androids) ── */
+/* Teacher badge margin */
+body:not(.student) .mode-badge {
+  margin-bottom: 14px;
+}
+
+/* Divider */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: var(--border-light);
+  margin-bottom: 14px;
+}
+
+/* Constraint block */
+.constraint-block {
+  background: var(--constraint-bg);
+  border: 1px solid var(--constraint-border);
+  border-radius: 8px;
+  padding: 11px 13px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.constraint-label {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--constraint-label);
+}
+
+#constraint-text {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--constraint-text);
+}
+
+/* Copy button */
+#copy-btn {
+  align-self: flex-start;
+  margin-top: 12px;
+  padding: 5px 11px;
+  background: transparent;
+  color: var(--text-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: color 0.1s ease, border-color 0.1s ease, background 0.1s ease;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#copy-btn svg {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+}
+
+#copy-btn:hover {
+  color: var(--text-secondary);
+  border-color: var(--text-tertiary);
+  background: var(--bg);
+}
+
+#copy-btn:active { transform: translateY(1px); }
+
+#copy-btn.copied {
+  color: #2E7D32;
+  border-color: #A5D6A7;
+  background: #F1F8F1;
+}
+
+#copy-btn:focus-visible {
+  outline: 2px solid var(--btn-bg);
+  outline-offset: 2px;
+}
+
+
+/* ── 6. Student-only ──────────────────────────────────────── */
+
+/* Student prompt text sizing */
+.student #prompt-text {
+  font-size: 18px;
+}
+
+/* Topic section */
+.topic-section {
+  margin-bottom: 14px;
+}
+
+.topic-eyebrow {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.topic-eyebrow::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-light);
+}
+
+/* Student badge sits inside topic section */
+.student .mode-badge {
+  margin-bottom: 10px;
+}
+
+/* Info blocks */
+.info-block {
+  border-radius: 8px;
+  padding: 10px 12px 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.info-label {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* Useful English */
+.info-block.practice {
+  background: var(--practice-bg);
+  border: 1px solid var(--practice-border);
+}
+
+.info-block.practice .info-label { color: var(--practice-label); }
+
+#practice-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+#practice-list li {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--practice-text);
+  line-height: 1.4;
+  padding-left: 12px;
+  position: relative;
+}
+
+#practice-list li::before {
+  content: '·';
+  position: absolute;
+  left: 2px;
+  color: var(--practice-label);
+  font-weight: 700;
+}
+
+/* Try saying */
+.info-block.starters {
+  background: var(--starter-bg);
+  border: 1px solid var(--starter-border);
+}
+
+.info-block.starters .info-label { color: var(--starter-label); }
+
+#starter-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#starter-list li {
+  font-size: 12.5px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--starter-text);
+  line-height: 1.45;
+  padding-left: 13px;
+  position: relative;
+}
+
+#starter-list li::before {
+  content: '"';
+  position: absolute;
+  left: 1px;
+  color: var(--starter-label);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+/* Keep the conversation going */
+.info-block.followup {
+  background: var(--followup-bg);
+  border: 1px solid var(--followup-border);
+}
+
+.info-block.followup .info-label { color: var(--followup-label); }
+
+#follow-up-text {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--followup-text);
+  line-height: 1.5;
+}
+
+
+/* ── 7. Utilities & overrides ─────────────────────────────── */
+
+/* Narrow viewport (320–360px) */
 @media (max-width: 360px) {
   #app {
     padding: 12px 12px 16px;
   }
 
   #prompt-card {
-    padding: 16px 14px 18px;
+    padding: 14px 14px 16px;
   }
 
   #level-select {
     width: 120px;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  #next-btn,
+  #prompt-card::before {
+    transition: none;
   }
 }
