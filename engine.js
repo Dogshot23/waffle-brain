@@ -124,10 +124,16 @@ const WB = (() => {
     },
   };
 
-  // ── Level-specific constraint guidance ────
-  // Applied as a constraint overlay for B1 and B2+ levels.
-  // Prompt text is left untouched; only the constraint field is set.
-  // Defaults to B1 if level is unrecognised.
+  // ── Level prompt extensions ───────────────
+  // Appended to the existing prompt text for B1 and B2+.
+  // Keeps the original topic and question intact; adds a spoken
+  // instruction that raises or lowers the register of the task.
+
+  const B1_EXTENSION = 'Give your opinion and explain why. '
+    + 'Use an example from your own experience if you can.';
+
+  const B2_EXTENSION = 'Discuss both sides and give a detailed opinion. '
+    + 'Try to use precise vocabulary and complex sentences.';
 
   const B1_CONSTRAINT = 'Encourage a full answer with opinions and examples. '
     + 'Ask a natural follow-up question. '
@@ -139,10 +145,12 @@ const WB = (() => {
 
   /**
    * Returns the prompt object adapted for the current level.
-   * For A1/A2: swaps prompt + constraint using the tables above.
-   * For B1: keeps original prompt, overlays B1 constraint guidance.
-   * For B2/B2+: keeps original prompt, overlays B2+ constraint guidance.
-   * Defaults to B1 behaviour if level is unrecognised.
+   *
+   * A1/A2 — full swap from static override tables (prompt + constraint replaced).
+   * B1    — original prompt kept; B1 extension appended; B1 constraint set.
+   * B2+   — original prompt kept; B2 extension appended; B2 constraint set.
+   *
+   * Defaults to B1 behaviour for any unrecognised level string.
    * Always preserves category and any other fields on the object.
    */
   function applyLevelAdaptation(p, level) {
@@ -155,10 +163,10 @@ const WB = (() => {
       if (override) return { ...p, prompt: override.prompt, constraint: override.constraint };
     }
     if (level === 'B2' || level === 'B2+' || level === 'C1' || level === 'C2') {
-      return { ...p, constraint: B2_CONSTRAINT };
+      return { ...p, prompt: p.prompt + ' ' + B2_EXTENSION, constraint: B2_CONSTRAINT };
     }
-    // B1, B1/B2, or any unrecognised level → Intermediate behaviour
-    return { ...p, constraint: B1_CONSTRAINT };
+    // B1, B1/B2, or any unrecognised level → Intermediate
+    return { ...p, prompt: p.prompt + ' ' + B1_EXTENSION, constraint: B1_CONSTRAINT };
   }
 
   // ── Public API ────────────────────────────
