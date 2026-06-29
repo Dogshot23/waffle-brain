@@ -316,7 +316,59 @@
   }
 
   /* ── Button ── */
-  .btn-wrap { margin-top: 10px; }
+  .btn-wrap {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  #back-btn {
+    flex-shrink: 0;
+    padding: 15px 14px;
+    background: var(--surface);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.1s ease, color 0.1s ease, border-color 0.1s ease, transform 0.07s ease;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #back-btn svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+  }
+
+  #back-btn:hover:not(:disabled) {
+    background: var(--bg);
+    border-color: var(--text-tertiary);
+    color: var(--text-primary);
+  }
+
+  #back-btn:active:not(:disabled) {
+    transform: translateY(1px);
+  }
+
+  #back-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  #back-btn:focus-visible {
+    outline: 2px solid var(--btn-bg);
+    outline-offset: 3px;
+  }
+
+  #next-btn { flex: 1; }
 
   #next-btn {
     width: 100%;
@@ -388,14 +440,25 @@
     border: 1px solid #D4D2CC;
   }
 
-  /* ── Category selector ── */
+  /* ── Selector bar ── */
   .selector-bar {
     margin-bottom: 10px;
     padding: 0 2px;
+    display: flex;
+    gap: 8px;
+  }
+
+  #level-select {
+    flex: 0 0 auto;
+    width: 148px;
   }
 
   #category-select {
-    width: 100%;
+    flex: 1;
+  }
+
+  #level-select,
+  #category-select {
     padding: 8px 32px 8px 11px;
     background: var(--surface);
     color: var(--text-primary);
@@ -414,8 +477,10 @@
     transition: border-color 0.1s ease, box-shadow 0.1s ease;
   }
 
+  #level-select:hover,
   #category-select:hover { border-color: var(--text-tertiary); }
 
+  #level-select:focus,
   #category-select:focus {
     outline: none;
     border-color: var(--btn-bg);
@@ -427,6 +492,17 @@
     color: var(--btn-bg);
     font-weight: 600;
     background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%233B5BDB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+
+  /* ── Level display ── */
+  #level-display {
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--text-tertiary);
+    letter-spacing: 0.01em;
+    padding: 0 2px;
+    margin-top: -4px;
+    margin-bottom: 8px;
   }
 
   /* ── Reduced motion ── */
@@ -451,6 +527,13 @@
   </header>
 
   <div class="selector-bar">
+    <select id="level-select" aria-label="Student level">
+      <option value="A1">A1 Beginner</option>
+      <option value="A2">A2 Elementary</option>
+      <option value="B1" selected>B1 Intermediate</option>
+      <option value="B1B2">B1/B2 Upper Intermediate</option>
+      <option value="B2">B2 Advanced</option>
+    </select>
     <select id="category-select" aria-label="Filter by category">
       <option value="">All categories</option>
       <option value="Role Shift">Role Shift</option>
@@ -465,6 +548,7 @@
       <option value="Quick Fire">Quick Fire</option>
     </select>
   </div>
+  <p id="level-display" aria-live="polite"></p>
 
   <div id="prompt-card">
     <span class="mode-badge" id="mode-label">Loading</span>
@@ -484,6 +568,11 @@
   </div>
 
   <div class="btn-wrap">
+    <button id="back-btn" disabled aria-label="Go to previous prompt">
+      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
     <button id="next-btn" disabled>
       Next prompt
       <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">

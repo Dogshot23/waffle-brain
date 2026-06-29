@@ -11,22 +11,53 @@ const promptText     = document.getElementById('prompt-text');
 const constraintText = document.getElementById('constraint-text');
 const counter        = document.getElementById('counter');
 const nextBtn        = document.getElementById('next-btn');
+const backBtn        = document.getElementById('back-btn');
 const copyBtn        = document.getElementById('copy-btn');
 const categorySelect = document.getElementById('category-select');
+const levelSelect    = document.getElementById('level-select');
+
+const levelDisplay    = document.getElementById('level-display');
+
+// ── History ───────────────────────────────────
+// Each entry: { category, prompt, constraint, shown }
+const history = [];
+let historyIndex = -1;
 
 // ── Active filter ─────────────────────────────
 function getFilter() {
   return categorySelect ? categorySelect.value : '';
 }
 
-// ── Display ───────────────────────────────────
-function showPrompt() {
-  const p = WB.draw(getFilter());
+// ── Student level ─────────────────────────────
+// Reflects the teacher's current selection. Default: B1.
+// Not yet wired into prompt generation — stored for future use.
+let currentLevel = 'B1';
 
+function getLevel() {
+  return currentLevel;
+}
+
+// ── Level display ─────────────────────────────
+const levelLabels = {
+  A1:   'A1 Beginner',
+  A2:   'A2 Elementary',
+  B1:   'B1 Intermediate',
+  B1B2: 'B1/B2 Upper Intermediate',
+  B2:   'B2 Advanced',
+};
+
+function updateLevelDisplay() {
+  if (levelDisplay) {
+    levelDisplay.textContent = `Student level: ${levelLabels[currentLevel] ?? currentLevel}`;
+  }
+}
+
+// ── Render a prompt object to the UI ──────────
+function renderPrompt(p) {
   modeLabel.textContent      = p.category;
   promptText.textContent     = p.prompt;
   constraintText.textContent = p.constraint;
-  counter.textContent        = `${WB.getShown()} shown`;
+  counter.textContent        = `${p.shown} shown`;
 
   promptCard.setAttribute('data-mode', p.category);
 
@@ -34,13 +65,43 @@ function showPrompt() {
   void promptCard.offsetWidth;
   promptCard.classList.add('flash');
   setTimeout(() => promptCard.classList.remove('flash'), 350);
+
+  backBtn.disabled = historyIndex <= 0;
+}
+
+// ── Draw a new prompt and push to history ─────
+function showPrompt() {
+  const p = WB.draw(getFilter(), getLevel());
+  const entry = {
+    category:   p.category,
+    prompt:     p.prompt,
+    constraint: p.constraint,
+    shown:      WB.getShown()
+  };
+
+  // If we went back and now go forward again, discard the forward branch
+  history.splice(historyIndex + 1);
+
+  history.push(entry);
+  historyIndex = history.length - 1;
+
+  renderPrompt(entry);
+}
+
+// ── Step back through history ─────────────────
+function showPrev() {
+  if (historyIndex <= 0) return;
+  historyIndex--;
+  renderPrompt(history[historyIndex]);
 }
 
 // ── Init ──────────────────────────────────────
 WB.load()
   .then(() => {
     nextBtn.disabled = false;
-    WB.prime(getFilter());
+    localStorage.setItem('wb_level', currentLevel);
+    updateLevelDisplay();
+    WB.prime(getFilter(), getLevel());
     showPrompt();
   })
   .catch(err => {
@@ -54,11 +115,21 @@ WB.load()
 
 // ── Event listeners ───────────────────────────
 nextBtn.addEventListener('click', showPrompt);
+backBtn.addEventListener('click', showPrev);
+
+levelSelect.addEventListener('change', () => {
+  currentLevel = levelSelect.value;
+  localStorage.setItem('wb_level', currentLevel);
+  updateLevelDisplay();
+});
 
 categorySelect.addEventListener('change', () => {
   const isFiltered = categorySelect.value !== '';
   categorySelect.classList.toggle('filtered', isFiltered);
-  WB.prime(getFilter());
+  // Reset history when filter changes — back would cross category contexts
+  history.length = 0;
+  historyIndex = -1;
+  WB.prime(getFilter(), getLevel());
   showPrompt();
 });
 

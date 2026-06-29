@@ -363,11 +363,16 @@
     line-height: 1.5;
   }
 
-  /* ── Button ── */
-  .btn-wrap { margin-top: 10px; }
+  /* ── Button row ── */
+  .btn-wrap {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+    align-items: stretch;
+  }
 
   #next-btn {
-    width: 100%;
+    flex: 1;
     padding: 15px 20px;
     background: var(--btn-bg);
     color: var(--btn-text);
@@ -410,6 +415,51 @@
   }
 
   #next-btn:focus-visible {
+    outline: 2px solid var(--btn-bg);
+    outline-offset: 3px;
+  }
+
+  #back-btn {
+    flex-shrink: 0;
+    padding: 15px 14px;
+    background: var(--surface);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.1s ease, color 0.1s ease, transform 0.07s ease;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #back-btn svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+  }
+
+  #back-btn:hover:not(:disabled) {
+    background: var(--bg);
+    color: var(--text-primary);
+    border-color: var(--text-tertiary);
+  }
+
+  #back-btn:active:not(:disabled) {
+    transform: translateY(1px);
+  }
+
+  #back-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+
+  #back-btn:focus-visible {
     outline: 2px solid var(--btn-bg);
     outline-offset: 3px;
   }
@@ -482,6 +532,11 @@
   </div>
 
   <div class="btn-wrap">
+    <button id="back-btn" disabled aria-label="Previous prompt">
+      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
     <button id="next-btn" disabled>
       Next prompt
       <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">

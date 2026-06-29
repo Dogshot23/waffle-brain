@@ -12,10 +12,20 @@ const practiceList  = document.getElementById('practice-list');
 const starterList   = document.getElementById('starter-list');
 const followUpText  = document.getElementById('follow-up-text');
 const nextBtn       = document.getElementById('next-btn');
+const backBtn       = document.getElementById('back-btn');
 
-// ── Display ───────────────────────────────────
-function showPrompt() {
-  const p = WB.draw();
+// ── History ───────────────────────────────────
+const promptHistory = [];   // stores prompt objects already shown
+let   currentPrompt = null; // the prompt currently on screen
+
+// ── Shared level (set by teacher page) ────────
+function getSharedLevel() {
+  return localStorage.getItem('wb_level') || 'B1';
+}
+
+// ── Render (does NOT call WB.draw) ───────────
+function renderPrompt(p) {
+  currentPrompt = p;
 
   // Category badge
   modeLabel.textContent = p.category;
@@ -48,6 +58,23 @@ function showPrompt() {
   void promptCard.offsetWidth;
   promptCard.classList.add('flash');
   setTimeout(() => promptCard.classList.remove('flash'), 350);
+
+  // Back button: enabled only when there is history to return to
+  backBtn.disabled = promptHistory.length === 0;
+}
+
+// ── Display (draws new prompt, saves current to history) ──
+function showPrompt() {
+  if (currentPrompt !== null) {
+    promptHistory.push(currentPrompt);
+  }
+  renderPrompt(WB.draw('', getSharedLevel()));
+}
+
+// ── Go back ───────────────────────────────────
+function goBack() {
+  if (promptHistory.length === 0) return;
+  renderPrompt(promptHistory.pop());
 }
 
 // ── Init ──────────────────────────────────────
@@ -67,10 +94,17 @@ WB.load()
 
 // ── Event listeners ───────────────────────────
 nextBtn.addEventListener('click', showPrompt);
+backBtn.addEventListener('click', goBack);
 
 document.addEventListener('keydown', (e) => {
   if (e.code === 'Space' && e.target === document.body) {
     e.preventDefault();
     if (!nextBtn.disabled) showPrompt();
+  }
+});
+
+window.addEventListener('storage', (e) => {
+  if (e.key === 'wb_level' && !nextBtn.disabled) {
+    WB.prime('', getSharedLevel());
   }
 });
