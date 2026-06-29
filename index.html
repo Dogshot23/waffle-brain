@@ -48,7 +48,10 @@
     --flash-ring:     rgba(59, 91, 219, 0.18);
   }
 
-  html, body { height: 100%; }
+  html {
+    height: 100%;
+    height: 100dvh;
+  }
 
   body {
     background: var(--bg);
@@ -57,7 +60,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: 100vh;
+    height: 100%;
+    overflow: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -65,11 +69,13 @@
   #app {
     width: 100%;
     max-width: 380px;
-    min-height: 100vh;
+    height: 100%;
+    max-height: 100dvh;
     display: flex;
     flex-direction: column;
     padding: 16px 16px 20px;
     gap: 0;
+    overflow: hidden;
   }
 
   /* ── Header ── */
@@ -79,6 +85,7 @@
     justify-content: space-between;
     margin-bottom: 14px;
     padding: 0 2px;
+    flex-shrink: 0;
   }
 
   .logo-group {
@@ -155,6 +162,7 @@
   /* ── Main card ── */
   #prompt-card {
     flex: 1;
+    min-height: 0;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 12px;
@@ -164,7 +172,8 @@
     gap: 0;
     transition: box-shadow 0.15s ease;
     position: relative;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   #prompt-card::before {
@@ -321,6 +330,9 @@
     display: flex;
     gap: 8px;
     align-items: stretch;
+    width: 100%;
+    min-width: 0;
+    flex-shrink: 0;
   }
 
   #back-btn {
@@ -425,6 +437,7 @@
     color: var(--text-tertiary);
     text-align: center;
     letter-spacing: 0.01em;
+    flex-shrink: 0;
   }
 
   footer kbd {
@@ -445,6 +458,7 @@
     padding: 0 2px;
     display: flex;
     gap: 8px;
+    flex-shrink: 0;
   }
 
   #level-select {
@@ -496,6 +510,19 @@
   /* ── Reduced motion ── */
   @media (prefers-reduced-motion: reduce) {
     #next-btn, #prompt-card::before { transition: none; }
+  }
+
+  /* ── Narrow viewport (≤ 360px) ── */
+  @media (max-width: 360px) {
+    #app {
+      padding: 12px 12px 16px;
+    }
+    #prompt-card {
+      padding: 16px 14px 18px;
+    }
+    #level-select {
+      width: 120px;
+    }
   }
 </style>
 </head>
