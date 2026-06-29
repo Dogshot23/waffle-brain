@@ -124,10 +124,43 @@ const WB = (() => {
     },
   };
 
+  // ── Beginner fallback simplifier ─────────
+  // Used when a prompt's category has no entry in the A1/A2 override tables.
+  // Strips advanced clauses from the original prompt text and replaces them
+  // with a short, concrete instruction the student can act on immediately.
+
+  const ADVANCED_PATTERNS = [
+    /[^.]*\bexplain\b[^.]*/gi,
+    /[^.]*\bgive your (opinion|view|reasons?)\b[^.]*/gi,
+    /[^.]*\bwhy do you think\b[^.]*/gi,
+    /[^.]*\buse an example\b[^.]*/gi,
+    /[^.]*\bdiscuss\b[^.]*/gi,
+    /[^.]*\bdebate\b[^.]*/gi,
+    /[^.]*\bboth sides\b[^.]*/gi,
+    /[^.]*\bdetailed\b[^.]*/gi,
+    /[^.]*\bprecise vocabulary\b[^.]*/gi,
+    /[^.]*\bcomplex sentences\b[^.]*/gi,
+    /[^.]*\bnuanced\b[^.]*/gi,
+    /[^.]*\bcounterargument\b[^.]*/gi,
+  ];
+
+  function simplifyForBeginner(text) {
+    let simplified = text;
+    for (const pattern of ADVANCED_PATTERNS) {
+      simplified = simplified.replace(pattern, '');
+    }
+    simplified = simplified
+      .replace(/\s{2,}/g, ' ')
+      .replace(/([.?!])\s*[.?!]+/g, '$1')
+      .trim();
+    if (!simplified || simplified.length < 10) {
+      simplified = 'Tell me about this topic. Use simple words.';
+    }
+    return simplified + ' Use simple words and short sentences.';
+  }
+
   // ── Level prompt extensions ───────────────
   // Appended to the existing prompt text for B1 and B2+.
-  // Keeps the original topic and question intact; adds a spoken
-  // instruction that raises or lowers the register of the task.
 
   const B1_EXTENSION = 'Give your opinion and explain why. '
     + 'Use an example from your own experience if you can.';
@@ -143,10 +176,18 @@ const WB = (() => {
     + 'Introduce abstract angles or counterarguments. '
     + 'Expect and encourage advanced vocabulary and complex sentence structures.';
 
+  const A1_FALLBACK_CONSTRAINT = 'Very simple answers are fine. '
+    + 'Use gestures or pictures to help. One or two words is enough to start.';
+
+  const A2_FALLBACK_CONSTRAINT = 'Short sentences are fine. '
+    + 'Help the student with any vocabulary they need. Keep it encouraging.';
+
   /**
    * Returns the prompt object adapted for the current level.
    *
-   * A1/A2 — full swap from static override tables (prompt + constraint replaced).
+   * A1/A2 — if a category override exists, use it (prompt + constraint replaced).
+   *          if no override exists, simplify the original prompt text and apply
+   *          a beginner-appropriate constraint. Never falls through to B1.
    * B1    — original prompt kept; B1 extension appended; B1 constraint set.
    * B2+   — original prompt kept; B2 extension appended; B2 constraint set.
    *
@@ -157,15 +198,17 @@ const WB = (() => {
     if (level === 'A1') {
       const override = A1_PROMPTS[p.category];
       if (override) return { ...p, prompt: override.prompt, constraint: override.constraint };
+      return { ...p, prompt: simplifyForBeginner(p.prompt), constraint: A1_FALLBACK_CONSTRAINT };
     }
     if (level === 'A2') {
       const override = A2_PROMPTS[p.category];
       if (override) return { ...p, prompt: override.prompt, constraint: override.constraint };
+      return { ...p, prompt: simplifyForBeginner(p.prompt), constraint: A2_FALLBACK_CONSTRAINT };
     }
     if (level === 'B2' || level === 'B2+' || level === 'C1' || level === 'C2') {
       return { ...p, prompt: p.prompt + ' ' + B2_EXTENSION, constraint: B2_CONSTRAINT };
     }
-    // B1, B1/B2, or any unrecognised level → Intermediate
+    // B1, B1/B2, or any unrecognised level -> Intermediate
     return { ...p, prompt: p.prompt + ' ' + B1_EXTENSION, constraint: B1_CONSTRAINT };
   }
 
