@@ -40,87 +40,87 @@ const WB = (() => {
 
   const A1_PROMPTS = {
     'Picture Description': {
-      prompt:     'Look at this picture. What do you see? Tell me three things.',
-      constraint: 'Use "I can see…" and simple nouns. Present simple only.',
+      prompt:     'Look at this picture. Point to three things. Tell me what each one is.',
+      constraint: 'Accept single words or "I can see a…" One word per thing is fine.',
     },
     'Debate': {
-      prompt:     'Do you like this? Yes or no? Why?',
-      constraint: 'Use "I like…" or "I don\'t like…" + one simple reason.',
+      prompt:     'Do you like this? Say yes or no. Tell me one reason.',
+      constraint: 'Use "I like… because…" or "I don\'t like… because…" One sentence is enough.',
     },
     'Storytelling': {
-      prompt:     'Look at the picture. What is happening? Tell me the story in three sentences.',
-      constraint: 'Use "First… Then… After that…" Present simple or past simple.',
+      prompt:     'Look at the picture. What do you see? Tell me what is happening.',
+      constraint: 'Accept present simple: "There is a…", "The man is…" Two or three words per thing is fine.',
     },
     'Role Play': {
-      prompt:     'You are in a shop. You want to buy something. What do you say?',
-      constraint: 'Use "Can I have…?", "How much is…?", "Thank you." Simple shopping phrases.',
+      prompt:     'You are in a café. Ask me for a coffee and a piece of cake.',
+      constraint: 'Prompt with "Can I have…?" if needed. Model the phrase first if the student is unsure.',
     },
     'Questions Game': {
-      prompt:     'Answer my question with a full sentence. Then ask me one question back.',
-      constraint: 'Full sentences only. Use "I…" to start your answer.',
+      prompt:     'I will ask you a question. Answer with a full sentence. Start with "I…"',
+      constraint: 'Keep questions personal and concrete: name, age, family, food, colours. One sentence answers are fine.',
     },
     'Hot Takes': {
-      prompt:     'Is this good or bad? Tell me what you think.',
-      constraint: 'Use "I think… because…" Keep it to one or two sentences.',
+      prompt:     'Look at this. Do you like it? Tell me yes or no and one reason.',
+      constraint: 'Use "I like it because…" or "I don\'t like it because…" Keep topics familiar: food, animals, weather.',
     },
     'Problem Solving': {
-      prompt:     'There is a problem. What do you do first? What do you do next?',
-      constraint: 'Use "First I… Then I…" Simple present. Everyday vocabulary only.',
+      prompt:     'You are hungry but the shops are closed. What do you do?',
+      constraint: 'Accept very simple answers: "I cook at home." "I call a friend." One or two sentences is fine.',
     },
     'Current Events': {
-      prompt:     'Tell me something you know about this topic. Use simple words.',
-      constraint: 'Three sentences maximum. Simple present or past simple.',
+      prompt:     'Tell me one thing about your day today. What did you do this morning?',
+      constraint: 'Accept past simple: "I woke up at…", "I had breakfast." Correct gently and repeat back.',
     },
     'Presentation': {
-      prompt:     'Tell me about your favourite thing. What is it? Why do you like it?',
-      constraint: 'Use "My favourite… is…" Say three things about it.',
+      prompt:     'Tell me about your home. How many rooms does it have? What is your favourite room?',
+      constraint: 'Use "My home has… rooms." and "My favourite room is… because…" Two or three sentences is enough.',
     },
     'Pronunciation': {
-      prompt:     'Repeat this word or sentence after me. Then use it in your own sentence.',
-      constraint: 'Focus on clear sounds. One sentence is enough.',
+      prompt:     'Listen and repeat this word. Now say it in a short sentence.',
+      constraint: 'Focus on one sound at a time. Praise effort. Demonstrate and repeat.',
     },
   };
 
   const A2_PROMPTS = {
     'Picture Description': {
-      prompt:     'Describe this picture. Where are the people? What are they doing? How do they feel?',
-      constraint: 'Use present continuous for actions. Add one opinion: "I think…"',
+      prompt:     'Describe this picture. Where are the people? What are they doing? What can you see in the background?',
+      constraint: 'Use present continuous for actions: "They are…" Add one opinion: "I think they feel…"',
     },
     'Debate': {
-      prompt:     'Do you agree or disagree? Give two reasons for your opinion.',
-      constraint: 'Use "I agree/disagree because…" and "Also,…" for your second reason.',
+      prompt:     'Do you prefer spending time at home or going out? Tell me which you prefer and give two reasons.',
+      constraint: 'Use "I prefer… because…" and "Also,…" for the second reason. Keep topics personal.',
     },
     'Storytelling': {
-      prompt:     'Tell me the story in this picture. What happened before? What happens next?',
-      constraint: 'Use past simple for events. "First… Then… Finally…" structure.',
+      prompt:     'Tell me about a recent trip or journey — even a short one, like going to the shops. What happened?',
+      constraint: 'Use past simple: "I went…", "I saw…", "Then I…" Three or four sentences is fine.',
     },
     'Role Play': {
-      prompt:     'You need help in this situation. Start the conversation and solve the problem.',
-      constraint: 'Use polite requests: "Could you…?", "I\'d like to…", "Is it possible to…?"',
+      prompt:     'You want to change the time of an appointment. Call me and ask to reschedule.',
+      constraint: 'Prompt with "I\'d like to change my appointment" if needed. Keep the scenario realistic and simple.',
     },
     'Questions Game': {
-      prompt:     'Answer my question with two or three sentences. Include a detail or example.',
-      constraint: 'Avoid yes/no answers. Add "for example…" or "like…" to extend.',
+      prompt:     'I will ask you a question about your daily life. Answer with two or three sentences and add one detail.',
+      constraint: 'Keep questions grounded: routines, food, family, weekends. Prompt with "Can you tell me more about…?"',
     },
     'Hot Takes': {
-      prompt:     'What is your opinion on this? Do you think it is a good or bad idea? Why?',
-      constraint: 'Use "I think… because…" Give one example from everyday life.',
+      prompt:     'Do you think it is better to cook at home or eat in a restaurant? Tell me your opinion and one reason.',
+      constraint: 'Use "I think… because…" and "For example,…" Focus on familiar everyday topics.',
     },
     'Problem Solving': {
-      prompt:     'What is the problem here? What are two things you could do to fix it?',
-      constraint: 'Use "I could… or I could…" Explain which option you prefer and why.',
+      prompt:     'You forgot your wallet at home. You are already at the supermarket. What do you do?',
+      constraint: 'Encourage "I could… or I could…" Keep the scenario realistic. Accept simple solutions.',
     },
     'Current Events': {
-      prompt:     'What do you know about this topic? How does it affect people?',
-      constraint: 'Use simple present for facts. "This affects people because…"',
+      prompt:     'Tell me about something that happened recently — in your town, your school, or your family.',
+      constraint: 'Use past simple for events. Ask "What happened next?" to extend the answer naturally.',
     },
     'Presentation': {
-      prompt:     'Tell me about this topic for one minute. Include what it is, why it matters, and your opinion.',
-      constraint: 'Use "First… Also… In my opinion…" to organise your talk.',
+      prompt:     'Tell me about a place you know well — your neighbourhood, your school, or a place you visit often.',
+      constraint: 'Use "There is / There are…" and "I like it because…" Three or four sentences is a good target.',
     },
     'Pronunciation': {
-      prompt:     'Say this word or phrase. Now use it in two different sentences.',
-      constraint: 'Focus on word stress. Check the vowel sounds.',
+      prompt:     'Say this word or phrase. Now make two sentences using it — one about yourself and one about someone you know.',
+      constraint: 'Focus on word stress. Praise accuracy. Model the correct form and ask the student to try again.',
     },
   };
 
@@ -154,9 +154,9 @@ const WB = (() => {
       .replace(/([.?!])\s*[.?!]+/g, '$1')
       .trim();
     if (!simplified || simplified.length < 10) {
-      simplified = 'Tell me about this topic. Use simple words.';
+      simplified = 'Tell me about this topic.';
     }
-    return simplified + ' Use simple words and short sentences.';
+    return simplified;
   }
 
   // ── Level prompt extensions ───────────────
