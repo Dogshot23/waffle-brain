@@ -124,10 +124,25 @@ const WB = (() => {
     },
   };
 
+  // ── Level-specific constraint guidance ────
+  // Applied as a constraint overlay for B1 and B2+ levels.
+  // Prompt text is left untouched; only the constraint field is set.
+  // Defaults to B1 if level is unrecognised.
+
+  const B1_CONSTRAINT = 'Encourage a full answer with opinions and examples. '
+    + 'Ask a natural follow-up question. '
+    + 'Introduce a slightly more challenging word if the student is ready.';
+
+  const B2_CONSTRAINT = 'Push for detailed opinions and nuanced reasoning. '
+    + 'Introduce abstract angles or counterarguments. '
+    + 'Expect and encourage advanced vocabulary and complex sentence structures.';
+
   /**
    * Returns the prompt object adapted for the current level.
    * For A1/A2: swaps prompt + constraint using the tables above.
-   * For B1 and above: returns the original object untouched.
+   * For B1: keeps original prompt, overlays B1 constraint guidance.
+   * For B2/B2+: keeps original prompt, overlays B2+ constraint guidance.
+   * Defaults to B1 behaviour if level is unrecognised.
    * Always preserves category and any other fields on the object.
    */
   function applyLevelAdaptation(p, level) {
@@ -139,7 +154,11 @@ const WB = (() => {
       const override = A2_PROMPTS[p.category];
       if (override) return { ...p, prompt: override.prompt, constraint: override.constraint };
     }
-    return p;
+    if (level === 'B2' || level === 'B2+' || level === 'C1' || level === 'C2') {
+      return { ...p, constraint: B2_CONSTRAINT };
+    }
+    // B1, B1/B2, or any unrecognised level → Intermediate behaviour
+    return { ...p, constraint: B1_CONSTRAINT };
   }
 
   // ── Public API ────────────────────────────
