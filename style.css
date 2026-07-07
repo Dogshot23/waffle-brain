@@ -45,21 +45,22 @@
   --constraint-label:  #B45309;
   --constraint-text:   #44360A;
 
-  /* Student — info blocks */
-  --practice-bg:     #F0F4FF;
-  --practice-border: #C7D4F8;
-  --practice-label:  #2F4AB3;
-  --practice-text:   #1A2D6B;
+  /* Student — support block pastels (reuse existing category hues) */
+  --support-useful-bg:      #EEF2FF;
+  --support-useful-border:  #D6DEFA;
+  --support-useful-label:   #3B5BDB;
 
-  --starter-bg:     #F0FBF4;
-  --starter-border: #B6E8C8;
-  --starter-label:  #1A6B3A;
-  --starter-text:   #0E3D22;
+  --support-trysaying-bg:     #E8F5E9;
+  --support-trysaying-border: #CDE9CF;
+  --support-trysaying-label:  #2E7D32;
 
-  --followup-bg:     #FFF7ED;
-  --followup-border: #FED7AA;
-  --followup-label:  #9A3412;
-  --followup-text:   #431407;
+  --support-keepgoing-bg:     #F3F0FF;
+  --support-keepgoing-border: #E1DAFA;
+  --support-keepgoing-label:  #6741D9;
+
+  --support-challenge-bg:     #FFFBF0;
+  --support-challenge-border: #FDE89A;
+  --support-challenge-label:  #B45309;
 
   /* Teacher buttons (blue) */
   --teacher-btn-bg:        #3B5BDB;
@@ -253,17 +254,14 @@ header {
   flex-shrink: 0;
 }
 
-/* Per-mode badge colours — shared across both pages */
-#prompt-card[data-mode="Role Shift"]    .mode-badge { --badge-bg: #FFF0F6; --badge-text: #C2255C; }
-#prompt-card[data-mode="Monologue"]     .mode-badge { --badge-bg: #FFF3BF; --badge-text: #845E00; }
-#prompt-card[data-mode="Reversal"]      .mode-badge { --badge-bg: #E8F5E9; --badge-text: #2E7D32; }
-#prompt-card[data-mode="Opinion Fight"] .mode-badge { --badge-bg: #FFF0E8; --badge-text: #C04B00; }
-#prompt-card[data-mode="Language Rule"] .mode-badge { --badge-bg: #EEF2FF; --badge-text: #3B5BDB; }
-#prompt-card[data-mode="Hypothetical"]  .mode-badge { --badge-bg: #F3F0FF; --badge-text: #6741D9; }
-#prompt-card[data-mode="Story Mode"]    .mode-badge { --badge-bg: #E8F8F5; --badge-text: #0E7490; }
-#prompt-card[data-mode="Real Talk"]     .mode-badge { --badge-bg: #FFF0F0; --badge-text: #B91C1C; }
-#prompt-card[data-mode="Big Question"]  .mode-badge { --badge-bg: #F0F4FF; --badge-text: #1D4ED8; }
-#prompt-card[data-mode="Quick Fire"]    .mode-badge { --badge-bg: #FFF7ED; --badge-text: #C2410C; }
+/* Per-category badge colours — shared across both pages.
+   Keys match the category/group names used in prompts.json exactly. */
+#prompt-card[data-mode="Everyday Situations"] .mode-badge { --badge-bg: #EEF2FF; --badge-text: #3B5BDB; }
+#prompt-card[data-mode="Describe"]            .mode-badge { --badge-bg: #E8F8F5; --badge-text: #0E7490; }
+#prompt-card[data-mode="Explain and Show"]    .mode-badge { --badge-bg: #FFF3BF; --badge-text: #845E00; }
+#prompt-card[data-mode="Simple Roleplay"]     .mode-badge { --badge-bg: #FFF0F6; --badge-text: #C2255C; }
+#prompt-card[data-mode="Choose and Create"]   .mode-badge { --badge-bg: #F3F0FF; --badge-text: #6741D9; }
+#prompt-card[data-mode="Guided Stories"]      .mode-badge { --badge-bg: #E8F5E9; --badge-text: #2E7D32; }
 
 /* Prompt text */
 
@@ -408,6 +406,133 @@ footer kbd {
   font-weight: 500;
   color: var(--text-tertiary);
   letter-spacing: 0.02em;
+}
+
+/* Waffle selector */
+.waffle-select {
+  position: relative;
+  margin-bottom: 8px;
+  padding: 0 2px;
+  flex-shrink: 0;
+}
+
+.waffle-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 11px;
+  background: var(--surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+}
+
+.waffle-trigger:focus-visible {
+  outline: 2px solid var(--btn-bg);
+  outline-offset: 2px;
+}
+
+.waffle-trigger-icon {
+  font-size: 14px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.waffle-trigger-label {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.waffle-trigger-chevron {
+  width: 10px;
+  height: 6px;
+  color: var(--text-tertiary);
+  flex-shrink: 0;
+}
+
+.waffle-list {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 2px;
+  right: 2px;
+  z-index: 20;
+  max-height: 260px;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 2px;
+  list-style: none;
+}
+
+.waffle-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 8px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--text-primary);
+  cursor: pointer;
+  user-select: none;
+}
+
+.waffle-option:hover:not(.locked) { background: var(--bg); }
+
+.waffle-option[aria-selected="true"] {
+  background: var(--badge-bg);
+  color: var(--badge-text);
+  font-weight: 600;
+}
+
+.waffle-option-icon {
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.waffle-option-label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.waffle-option-tag {
+  flex-shrink: 0;
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  background: var(--border-light);
+  padding: 2px 5px;
+}
+
+.waffle-option.locked {
+  color: var(--text-tertiary);
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
+.waffle-separator {
+  margin: 6px 4px 4px;
+  padding-top: 7px;
+  border-top: 1px solid var(--border-light);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
 }
 
 /* Selector bar */
@@ -564,6 +689,7 @@ body:not(.student) .mode-badge {
 /* Student prompt text sizing */
 .student #prompt-text {
   font-size: 18px;
+  white-space: pre-line;
 }
 
 /* Topic section */
@@ -595,104 +721,100 @@ body:not(.student) .mode-badge {
   margin-bottom: 10px;
 }
 
-/* Info blocks */
-.info-block {
+/* Student support section.
+   All four blocks (Useful English, Try Saying, Keep the Conversation
+   Going, Today's Challenge) are always fully visible. */
+.support-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border-light);
+}
+
+.support-block {
+  background: var(--bg);
+  border: 1px solid var(--border-light);
   border-radius: 8px;
   padding: 10px 12px 11px;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  margin-top: 10px;
 }
 
-.info-label {
+/* Per-section pastel tints — gives each support block a distinct,
+   low-saturation identity while keeping body text on the neutral
+   text-secondary colour for readability. Only the background,
+   border and label pick up the tint. */
+.support-block--useful-english {
+  background: var(--support-useful-bg);
+  border-color: var(--support-useful-border);
+}
+.support-block--useful-english .support-label {
+  color: var(--support-useful-label);
+}
+
+.support-block--try-saying {
+  background: var(--support-trysaying-bg);
+  border-color: var(--support-trysaying-border);
+}
+.support-block--try-saying .support-label {
+  color: var(--support-trysaying-label);
+}
+
+.support-block--keep-going {
+  background: var(--support-keepgoing-bg);
+  border-color: var(--support-keepgoing-border);
+}
+.support-block--keep-going .support-label {
+  color: var(--support-keepgoing-label);
+}
+
+.support-block--challenge {
+  background: var(--support-challenge-bg);
+  border-color: var(--support-challenge-border);
+}
+.support-block--challenge .support-label {
+  color: var(--support-challenge-label);
+}
+
+.support-label {
   font-size: 9.5px;
   font-weight: 700;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: var(--text-tertiary);
 }
 
-/* Useful English */
-.info-block.practice {
-  background: var(--practice-bg);
-  border: 1px solid var(--practice-border);
-}
-
-.info-block.practice .info-label { color: var(--practice-label); }
-
-#practice-list {
+.support-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
+  padding-top: 2px;
 }
 
-#practice-list li {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--practice-text);
-  line-height: 1.4;
-  padding-left: 12px;
-  position: relative;
-}
-
-#practice-list li::before {
-  content: '·';
-  position: absolute;
-  left: 2px;
-  color: var(--practice-label);
-  font-weight: 700;
-}
-
-/* Try saying */
-.info-block.starters {
-  background: var(--starter-bg);
-  border: 1px solid var(--starter-border);
-}
-
-.info-block.starters .info-label { color: var(--starter-label); }
-
-#starter-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-#starter-list li {
-  font-size: 12.5px;
-  font-weight: 400;
-  font-style: italic;
-  color: var(--starter-text);
-  line-height: 1.45;
+.support-list li {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-secondary);
   padding-left: 13px;
   position: relative;
 }
 
-#starter-list li::before {
-  content: '"';
+.support-list li::before {
+  content: '–';
   position: absolute;
-  left: 1px;
-  color: var(--starter-label);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.3;
+  left: 0;
+  color: var(--text-tertiary);
 }
 
-/* Keep the conversation going */
-.info-block.followup {
-  background: var(--followup-bg);
-  border: 1px solid var(--followup-border);
-}
-
-.info-block.followup .info-label { color: var(--followup-label); }
-
-#follow-up-text {
-  font-size: 12.5px;
-  font-weight: 500;
-  color: var(--followup-text);
-  line-height: 1.5;
+.support-text {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-secondary);
+  padding-top: 2px;
 }
 
 
