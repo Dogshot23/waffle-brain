@@ -20,6 +20,13 @@
   padding: 0;
 }
 
+/* Buttons across both pages: avoid the ~300ms tap delay and
+   accidental double-tap zoom on mobile, without altering any
+   other styling. */
+button {
+  touch-action: manipulation;
+}
+
 
 /* ── 2. Tokens ────────────────────────────────────────────── */
 
