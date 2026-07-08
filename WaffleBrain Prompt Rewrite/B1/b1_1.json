@@ -1,0 +1,122 @@
+[
+  {
+    "prompt": "Ask the student to imagine they can fix only one thing in their apartment this month. Find out what they'd choose and why.",
+    "constraint": "Choose only one thing to fix."
+  },
+  {
+    "prompt": "Explore which internet plan the student would choose for their household — cheaper but slower, or faster but more expensive — and why.",
+    "constraint": "Give at least one reason based on cost and one based on speed."
+  },
+  {
+    "prompt": "Ask the student to recommend what a friend should do about a car repair: one day but expensive, or one week but cheaper. Find out their reasoning.",
+    "constraint": "Recommend only one option, based on their situation, not yours."
+  },
+  {
+    "prompt": "Discuss how the student would respond if a friend asked to borrow money until next month.",
+    "constraint": "Your answer must address both the friendship and the money."
+  },
+  {
+    "prompt": "Invite the student to choose between two apartments — shorter commute but higher rent, or longer commute but lower rent — and justify their decision.",
+    "constraint": "Mention at least one trade-off you're accepting."
+  },
+  {
+    "prompt": "Ask the student to recommend what to do about a roommate's higher-than-expected energy bill.",
+    "constraint": "Recommend one specific action, not a list of possibilities."
+  },
+  {
+    "prompt": "Talk about how the student would plan meals for the week on a limited budget.",
+    "constraint": "Mention at least two meals and one cost-saving decision."
+  },
+  {
+    "prompt": "Explore how the student would compromise between the cost of a school trip and their child's wishes.",
+    "constraint": "Your compromise must involve a real trade-off, not a simple yes or no."
+  },
+  {
+    "prompt": "Find out how the student would spend two days off with a long list of errands, and their priorities.",
+    "constraint": "You must leave at least one errand for later and explain why."
+  },
+  {
+    "prompt": "Ask the student to decide between a faster private appointment or a free public one with a long wait for a minor health problem, and explain their reasoning.",
+    "constraint": "Base your decision on how the problem is affecting your daily life, not just the cost."
+  },
+  {
+    "prompt": "Discuss whether the student would fix an old washing machine or buy a new one, and why.",
+    "constraint": "Mention cost and at least one other factor."
+  },
+  {
+    "prompt": "Ask the student to propose a compromise to their manager after a schedule change clashes with picking up their kids from school.",
+    "constraint": "Your compromise must address both your needs and the company's."
+  },
+  {
+    "prompt": "Explore what the student would recommend to a family member choosing between two doctors — one sooner but further, one closer but with a longer wait.",
+    "constraint": "Base your recommendation on urgency, not just distance."
+  },
+  {
+    "prompt": "Find out which monthly subscription the student would cancel, and why.",
+    "constraint": "Choose only one subscription to cancel."
+  },
+  {
+    "prompt": "Ask the student what they'd recommend to a friend deciding whether to attend an expensive wedding abroad.",
+    "constraint": "Your recommendation must balance cost against the value of the relationship."
+  },
+  {
+    "prompt": "Invite the student to choose between two neighbourhoods when moving to a new city — one convenient but noisy, one quiet but far from work.",
+    "constraint": "You must weigh convenience against quality of life."
+  },
+  {
+    "prompt": "Discuss how the student's team could agree on a weekly meeting time that suits everyone.",
+    "constraint": "Mention at least one compromise."
+  },
+  {
+    "prompt": "Ask the student to compare two jobs — one paying more with a long commute, one paying less but close to home — and explain which matters more to them.",
+    "constraint": "Weigh at least two factors for each job before reaching a conclusion."
+  },
+  {
+    "prompt": "Explore how the student's family would prioritise factors — distance, reputation, cost, facilities — when choosing between two schools.",
+    "constraint": "Rank at least three factors before naming your final choice."
+  },
+  {
+    "prompt": "Find out whether the student would take a better-paid job in a different city, even if it means leaving friends and family behind.",
+    "constraint": "You must weigh the relationship cost against the professional opportunity, not just the money."
+  },
+  {
+    "prompt": "Ask the student how they'd manage if their internet stopped working and a technician couldn't come for five days.",
+    "constraint": "Mention at least one practical workaround."
+  },
+  {
+    "prompt": "Discuss what matters most to the student in a new phone — price, reliability, or speed of getting one — and their final choice.",
+    "constraint": "Rank your priorities before stating your decision."
+  },
+  {
+    "prompt": "Explore how the student would handle two friends asking for help moving house on the same weekend.",
+    "constraint": "Your answer must address both friendships."
+  },
+  {
+    "prompt": "Ask the student how they'd vote on installing a new elevator that raises everyone's monthly fees.",
+    "constraint": "Mention both the benefit and the cost."
+  },
+  {
+    "prompt": "Talk about whether the student would cook at home or eat out more, based on their schedule and budget.",
+    "constraint": "Support your decision with a specific reason from your daily life."
+  },
+  {
+    "prompt": "Find out what the student would do about an expensive gym membership they rarely use.",
+    "constraint": "Choose one specific action, not just 'I should think about it.'"
+  },
+  {
+    "prompt": "Ask the student what they'd recommend to a neighbour choosing between two contractors — one cheaper with a longer wait, one pricier but available now.",
+    "constraint": "Your recommendation must address both time and money."
+  },
+  {
+    "prompt": "Discuss how the student would handle a relative wanting to stay for two weeks in their small apartment while they work from home.",
+    "constraint": "Your answer must consider both hospitality and practicality."
+  },
+  {
+    "prompt": "Explore whether the student would use public transport or buy a car, based on their daily needs.",
+    "constraint": "Mention at least one cost and one convenience factor."
+  },
+  {
+    "prompt": "Ask the student how they'd vote on a local council choice between repairing roads or improving the park.",
+    "constraint": "Your answer must consider the needs of the wider community, not just yourself."
+  }
+]

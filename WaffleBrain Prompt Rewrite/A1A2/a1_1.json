@@ -1,0 +1,122 @@
+[
+  {
+    "prompt": "Ask the student to create a weekend plan, choosing a place — park, city, or beach — and an activity — walking, shopping, or eating out. Have them explain what they chose and why.",
+    "constraint": "Student chooses a place and an activity and gives one reason using 'because'."
+  },
+  {
+    "prompt": "Invite the student to plan a day out with a friend, choosing a time, a place — museum, market, or cinema — and food — café, restaurant, or picnic. Find out their plan and why they chose it.",
+    "constraint": "Student plans all 3 parts and uses 'we can' or 'let's' at least once."
+  },
+  {
+    "prompt": "Have the student create a birthday party plan, choosing a place, an activity — games, music, or cake — and a time. Ask them to explain their plan and why people will enjoy it.",
+    "constraint": "Student names 3 plan items and gives one reason."
+  },
+  {
+    "prompt": "Ask the student to plan a simple school day — a first activity, lunch arrangements, and what they do after school. Have them explain their plan and why.",
+    "constraint": "Student describes all 3 parts of the day using simple present or 'going to'."
+  },
+  {
+    "prompt": "Invite the student to create a breakfast menu for a small café, choosing food, drinks, and prices. Find out what they'd choose and why people would like it.",
+    "constraint": "Student names at least 2 food items, 1 drink, and gives a price for each."
+  },
+  {
+    "prompt": "Have the student create a menu for a birthday party, choosing food, drinks, and extras like cake or snacks. Ask them what they'd choose and why people would like it.",
+    "constraint": "Student names 3 menu items and gives one reason using 'because'."
+  },
+  {
+    "prompt": "Ask the student to design a picnic menu for a sunny day, choosing food, drinks, and extras. Have them explain what they'd pack and why it suits a picnic.",
+    "constraint": "Student names 3 items and explains why they suit a picnic."
+  },
+  {
+    "prompt": "Invite the student to create a lunch menu for a small restaurant, choosing a main dish, a drink, and a dessert. Find out their menu and why customers would like it.",
+    "constraint": "Student names all 3 courses and gives one reason customers will like it."
+  },
+  {
+    "prompt": "Explain that the student is going on a two-day trip. Have them choose 3 important items and 2 optional ones, then ask what they'd pack and why each item matters.",
+    "constraint": "Student lists 3 important items and gives a reason for each."
+  },
+  {
+    "prompt": "Ask the student to pack a bag for one day at the beach, choosing important items and optional items. Find out what they'd take and why.",
+    "constraint": "Student names at least 3 items and gives one reason using 'because'."
+  },
+  {
+    "prompt": "Have the student prepare a bag for the first day at a new job, choosing important and optional items. Ask what they'd take and why each item helps.",
+    "constraint": "Student lists 3 items and explains why each is useful."
+  },
+  {
+    "prompt": "Explain that the student is moving to a new apartment. Ask them to choose the 3 most important things to take first and give a reason for each.",
+    "constraint": "Student names 3 items in order of importance and gives one reason."
+  },
+  {
+    "prompt": "Invite the student to prepare for a sports activity this weekend — football, running, or swimming — choosing important and optional items. Find out what they'd take and why.",
+    "constraint": "Student chooses a sport, lists 2 items, and gives one reason."
+  },
+  {
+    "prompt": "Ask the student to design a small bedroom, choosing furniture, colours, and where things go. Have them explain their design and why it's comfortable.",
+    "constraint": "Student names 3 items and explains why the room is comfortable."
+  },
+  {
+    "prompt": "Have the student design a study area at home, choosing furniture, equipment, and where things go. Ask them to explain their design and why it helps them study.",
+    "constraint": "Student names 3 items and gives one reason each helps studying."
+  },
+  {
+    "prompt": "Invite the student to design a small café, choosing tables and chairs, decoration, and music. Find out their design and why customers would like it.",
+    "constraint": "Student names 3 design choices and gives one reason customers will like it."
+  },
+  {
+    "prompt": "Ask the student to design a shop window display, choosing products to show, colours, and decoration. Have them explain their design and why it attracts customers.",
+    "constraint": "Student names 3 elements and gives one reason it attracts customers."
+  },
+  {
+    "prompt": "Present two hotels for a weekend trip — Hotel A, cheap, small, near the beach; Hotel B, expensive, big, in the city centre. Ask the student which they'd choose and why.",
+    "constraint": "Student names one hotel and gives 2 reasons for the choice."
+  },
+  {
+    "prompt": "Compare two after-school activities with the student — a sports club or an art class. Find out which they'd choose and why it's better for them.",
+    "constraint": "Student chooses one option and gives at least one clear reason."
+  },
+  {
+    "prompt": "Present two phones for a friend — Phone A, cheap, small screen, good battery; Phone B, expensive, big screen, good camera. Ask the student which they'd choose and why.",
+    "constraint": "Student names one phone and gives 2 reasons for the choice."
+  },
+  {
+    "prompt": "Compare two restaurants for a family dinner — Restaurant A, cheap and fast food; Restaurant B, expensive, quiet, slow service. Have the student choose one and explain why it suits the family.",
+    "constraint": "Student chooses one restaurant and gives one reason using 'because'."
+  },
+  {
+    "prompt": "Present two ways to travel to work — Option A, bus, cheap and slow; Option B, taxi, expensive and fast. Ask the student which they'd pick and why.",
+    "constraint": "Student picks one option and gives at least one reason."
+  },
+  {
+    "prompt": "Ask the student to choose a birthday gift for a friend with a €20 budget, deciding on the gift, the shop, and their reason. Find out what they'd buy and why their friend will like it.",
+    "constraint": "Student names the gift, the shop, and gives one clear reason."
+  },
+  {
+    "prompt": "Have the student plan a simple activity for a visiting family member, choosing the activity, place, and time. Ask them to explain their plan and why the person will enjoy it.",
+    "constraint": "Student names 3 plan details and gives one reason the person will enjoy it."
+  },
+  {
+    "prompt": "Invite the student to create a small welcome plan for a new student at school, covering what to show them, what to tell them, and who helps them.",
+    "constraint": "Student gives at least 2 pieces of help using 'should' or 'can'."
+  },
+  {
+    "prompt": "Ask the student to choose a helpful item for a visitor who's new in town — a map, a phone number, or a list of places — and give a reason. Find out what they'd give and why it helps.",
+    "constraint": "Student names one item and gives one clear reason it helps the visitor."
+  },
+  {
+    "prompt": "Have the student plan a small surprise for a family member's special day, choosing an activity, food, and decoration. Ask them to explain their plan and why the person will like it.",
+    "constraint": "Student names 3 plan items and gives one reason using 'because'."
+  },
+  {
+    "prompt": "Ask the student to create a shopping list for one week of dinners, choosing 5 food items and explaining why each is needed.",
+    "constraint": "Student lists 5 items and gives at least one reason."
+  },
+  {
+    "prompt": "Invite the student to plan a simple exercise schedule for one week, choosing days, type of exercise, and time of day. Find out their schedule and why it works for them.",
+    "constraint": "Student gives a 3-part schedule and one reason it fits their life."
+  },
+  {
+    "prompt": "Have the student create a simple morning routine for a busy weekday, choosing a first task, breakfast, and a last task before leaving. Ask them to explain their routine and why it saves time.",
+    "constraint": "Student describes all 3 steps and gives one reason it saves time."
+  }
+]

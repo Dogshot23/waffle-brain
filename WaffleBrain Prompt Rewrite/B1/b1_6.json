@@ -1,0 +1,122 @@
+[
+  {
+    "prompt": "Ask the student to imagine they were supposed to pick up their younger sibling from school but got stuck in traffic and arrived 40 minutes late. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains the reason for the delay and how they resolved the situation with their sibling."
+  },
+  {
+    "prompt": "Ask the student to imagine they accidentally posted a private message into a public work group chat. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains the immediate action they took and how they handled any consequences."
+  },
+  {
+    "prompt": "Ask the student to imagine their flight was cancelled the night before an important event. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student describes at least one alternative they considered before deciding."
+  },
+  {
+    "prompt": "Ask the student to imagine they bought a used bike online that arrived in worse condition than described. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains the outcome of their decision, whether they got a refund, repair, or kept it."
+  },
+  {
+    "prompt": "Ask the student to imagine they realised the night before a big exam that they'd studied the wrong chapter. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains the reasoning behind their last-minute decision."
+  },
+  {
+    "prompt": "Ask the student to recall a time they changed their diet suddenly for health reasons and it caused problems at first. Have them tell the story and reflect on why it turned out that way.",
+    "constraint": "Student reflects on the outcome using \"I think the reason was...\" and explains what they would do differently."
+  },
+  {
+    "prompt": "Ask the student to imagine a neighbour asked to borrow their car for a weekend they had plans of their own. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains how they handled saying yes or no and the consequence."
+  },
+  {
+    "prompt": "Ask the student to imagine they went to renew their ID card but were told a document was missing. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains the steps they took to solve the problem and the result."
+  },
+  {
+    "prompt": "Ask the student to imagine they had two ways to reach an important meeting — a faster risky route or a slower reliable one. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains the reasoning behind choosing one option over another, not just what went wrong."
+  },
+  {
+    "prompt": "Ask the student to imagine they signed up for a local sports team but found their skill level much lower than everyone else's. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains their decision to continue, adapt, or leave, with a reason."
+  },
+  {
+    "prompt": "Ask the student to imagine they were organising a neighbourhood event and two people disagreed strongly about the shared budget. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student negotiates or mediates between the two views and explains the final decision."
+  },
+  {
+    "prompt": "Ask the student to imagine they promised to help a family member move house, but got an unexpected job interview at the same time. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains how they prioritised and what the outcome was."
+  },
+  {
+    "prompt": "Ask the student to imagine they accidentally sent a private email to the wrong person at their company. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains the immediate action they took and the consequence."
+  },
+  {
+    "prompt": "Ask the student to imagine they lost their wallet on the second day of a trip abroad. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains at least two steps they took to solve the problem."
+  },
+  {
+    "prompt": "Ask the student to imagine they were at the checkout and realised they didn't have enough money for everything in their basket. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains how they decided what to keep or remove and why."
+  },
+  {
+    "prompt": "Ask the student to imagine that during a group project, one teammate stopped doing their share close to the deadline. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains how the group's decision affected the final result."
+  },
+  {
+    "prompt": "Ask the student to imagine they noticed a colleague seemed unwell but insisted on continuing demanding physical work. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains their decision to step in or not, and the reasoning behind it."
+  },
+  {
+    "prompt": "Ask the student to imagine they noticed water leaking from the ceiling, coming from the neighbour's flat above. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains the sequence of actions taken to resolve the issue."
+  },
+  {
+    "prompt": "Ask the student to imagine they reported a broken streetlight, but nothing happened for weeks and it became dangerous. Have them tell the story: what happened, what they decided to do next, and why.",
+    "constraint": "Student explains what further action they took and why."
+  },
+  {
+    "prompt": "Ask the student to imagine that during a long train delay, two passengers near them argued over the last empty seat. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains any action taken to ease the situation and the reasoning behind it."
+  },
+  {
+    "prompt": "Ask the student to recall giving up a hobby a year ago because of a scheduling conflict. Have them tell the story and reflect on whether it was the right call.",
+    "constraint": "Student reflects on the long-term outcome of a past decision, not just the immediate event."
+  },
+  {
+    "prompt": "Ask the student to imagine they saw an elderly neighbour struggling to carry groceries up the stairs. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains their decision and the effect it had."
+  },
+  {
+    "prompt": "Ask the student to imagine two family members argued right before an important family dinner they'd organised. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains how they tried to resolve the tension and what happened as a result."
+  },
+  {
+    "prompt": "Ask the student to imagine their manager asked for an urgent task while they already had another deadline that day. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains how they managed the competing priorities."
+  },
+  {
+    "prompt": "Ask the student to imagine they arrived at a hotel to find the room didn't match what was advertised. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains their decision and how the situation was resolved."
+  },
+  {
+    "prompt": "Ask the student to imagine a cashier gave them too much change. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains the reasoning behind their decision and its outcome."
+  },
+  {
+    "prompt": "Ask the student to imagine they had a choice between completing a class assignment alone or with a partner. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains the trade-offs they considered before deciding."
+  },
+  {
+    "prompt": "Ask the student to imagine they forgot to take an important medication before a long day of work. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains the decision made to manage the situation safely."
+  },
+  {
+    "prompt": "Ask the student to imagine they accidentally damaged a neighbour's fence while parking. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains how they took responsibility and the result."
+  },
+  {
+    "prompt": "Ask the student to imagine they noticed their workplace throwing away large amounts of recyclable material every day. Have them tell the story: what happened, what they decided to do, and why.",
+    "constraint": "Student explains the action they took and whether it changed the situation."
+  }
+]

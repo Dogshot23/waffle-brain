@@ -1,0 +1,122 @@
+[
+  {
+    "prompt": "Ask the student to explain how to submit expense claims at their company, for a new colleague who doesn't know the process. Have them include one useful tip.",
+    "constraint": "Student explains the process in a logical order and adds one practical tip."
+  },
+  {
+    "prompt": "Ask the student to explain what a friend should check before signing a lease on their first apartment, and why.",
+    "constraint": "Student organises key points to check and gives a reason for each."
+  },
+  {
+    "prompt": "Ask the student to explain how to use a train ticket machine to a confused tourist, and recommend the fastest option.",
+    "constraint": "Student explains the steps clearly and recommends one option with a reason."
+  },
+  {
+    "prompt": "Ask the student to explain, step by step, how to set up a video call for a grandparent who finds the app confusing.",
+    "constraint": "Student explains the setup in a clear step-by-step order suitable for a beginner."
+  },
+  {
+    "prompt": "Ask the student to compare two savings account options for a friend and recommend one.",
+    "constraint": "Student compares two options and justifies a recommendation based on the friend's needs."
+  },
+  {
+    "prompt": "Ask the student to explain the method for referencing sources correctly to a classmate who missed the lesson, and warn them about a common mistake.",
+    "constraint": "Student explains the method clearly and highlights one common mistake to avoid."
+  },
+  {
+    "prompt": "Ask the student to explain, step by step, how to assemble flat-pack furniture for a nervous neighbour.",
+    "constraint": "Student explains the process in a logical step-by-step order."
+  },
+  {
+    "prompt": "Ask the student to compare emailing versus messaging a client about an urgent issue, and recommend one for a colleague.",
+    "constraint": "Student compares both methods and recommends one with a clear reason."
+  },
+  {
+    "prompt": "Ask the student to explain the recycling rules to a friend who wants to start recycling properly, and give a tip to avoid mistakes.",
+    "constraint": "Student organises the explanation clearly and adds a practical tip."
+  },
+  {
+    "prompt": "Ask the student to compare two ways to get from the airport to the city centre and recommend one for a tourist, with reasons.",
+    "constraint": "Student compares two options and justifies their recommendation."
+  },
+  {
+    "prompt": "Ask the student to explain how to book a meeting room to a new employee, mentioning one thing people often forget.",
+    "constraint": "Student explains the process step by step and mentions a common oversight."
+  },
+  {
+    "prompt": "Ask the student to teach a cousin how to cook rice without a rice cooker, step by step, with one common mistake to avoid.",
+    "constraint": "Student teaches the method in order and warns about one common mistake."
+  },
+  {
+    "prompt": "Ask the student to explain the difference between two phone contracts and recommend the better one for a light user.",
+    "constraint": "Student explains both contracts and recommends one based on the user's needs."
+  },
+  {
+    "prompt": "Ask the student to explain how tipping works to a visitor unfamiliar with the custom, with practical advice to avoid awkwardness.",
+    "constraint": "Student explains the custom clearly and gives practical advice."
+  },
+  {
+    "prompt": "Ask the student to explain the steps for returning an item bought online to a friend, and warn them about the deadline.",
+    "constraint": "Student explains the steps in order and highlights a time-sensitive warning."
+  },
+  {
+    "prompt": "Ask the student to explain, step by step, how to use a washing machine to a younger sibling, pointing out one common mistake.",
+    "constraint": "Student explains the process in a clear step-by-step order and names one common mistake."
+  },
+  {
+    "prompt": "Ask the student to compare taking the bus versus cycling to work, and recommend the best option for a colleague.",
+    "constraint": "Student compares both options and gives a reasoned recommendation."
+  },
+  {
+    "prompt": "Ask the student to explain what's needed to apply for a first library card, for a friend who isn't sure.",
+    "constraint": "Student explains the required steps in a clear, logical order."
+  },
+  {
+    "prompt": "Ask the student to explain how a new tenant should report a maintenance problem to the landlord, and why reporting it clearly matters.",
+    "constraint": "Student explains the process and gives a reason why clear reporting matters."
+  },
+  {
+    "prompt": "Ask the student to recommend an approach for a friend who wants to become more organised, and explain why it works.",
+    "constraint": "Student recommends a clear approach and justifies why it would be effective."
+  },
+  {
+    "prompt": "Ask the student to explain, step by step, how to set up parental controls on a tablet for a confused parent.",
+    "constraint": "Student explains the setup process in a clear step-by-step order."
+  },
+  {
+    "prompt": "Ask the student to explain a method for packing for a long trip, for a cousin who always forgets something important.",
+    "constraint": "Student explains the method in a logical order and gives one practical tip for avoiding forgotten items."
+  },
+  {
+    "prompt": "Ask the student to explain how the local bus payment system works to a confused tourist, with one useful tip.",
+    "constraint": "Student explains the system clearly and adds one practical tip."
+  },
+  {
+    "prompt": "Ask the student to explain how to back up files before a computer update, for a coworker, and warn what could go wrong if skipped.",
+    "constraint": "Student explains the process step by step and warns of a consequence if skipped."
+  },
+  {
+    "prompt": "Ask the student to explain how to start planting vegetables on a balcony for a friend, and what mistakes to avoid.",
+    "constraint": "Student explains how to begin and highlights mistakes to avoid."
+  },
+  {
+    "prompt": "Ask the student to explain how to register for classes online to a new student, mentioning a common problem to watch for.",
+    "constraint": "Student explains the steps in order and flags a common problem."
+  },
+  {
+    "prompt": "Ask the student to compare fixing an old laptop versus buying a new one for a friend, and recommend the better choice.",
+    "constraint": "Student compares both options and justifies a recommendation."
+  },
+  {
+    "prompt": "Ask the student to explain the safest ways to carry money while travelling in their city, and recommend one to a visitor.",
+    "constraint": "Student explains the options and recommends one with a clear reason."
+  },
+  {
+    "prompt": "Ask the student to explain, step by step, how a friend should prepare for their first job interview.",
+    "constraint": "Student explains preparation steps in a clear, logical order."
+  },
+  {
+    "prompt": "Ask the student to explain two changes a neighbour could make to reduce their energy bill, and recommend the more effective one.",
+    "constraint": "Student explains two options and recommends the more effective one with reasoning."
+  }
+]

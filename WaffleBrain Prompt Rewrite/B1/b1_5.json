@@ -1,0 +1,122 @@
+[
+  {
+    "prompt": "Ask the student to decide what three new items a small café should add to its menu, given a limited kitchen budget, and explain why.",
+    "constraint": "You must stay within the limited kitchen budget and justify each choice."
+  },
+  {
+    "prompt": "Ask the student to decide how to divide a small school library space for quiet study and group work, and justify their choices.",
+    "constraint": "The layout must fit within the existing room size."
+  },
+  {
+    "prompt": "Ask the student to decide what furniture a family should keep when moving into a smaller apartment, keeping only half.",
+    "constraint": "You may only keep half of the original furniture."
+  },
+  {
+    "prompt": "Ask the student to decide how a local sports club should spend a small budget to improve its training equipment, and justify their choices.",
+    "constraint": "You must stay within the club's small budget."
+  },
+  {
+    "prompt": "Ask the student to plan a workplace team lunch limited to one hour and a modest budget, and explain their decisions.",
+    "constraint": "The event must fit within one hour and the modest budget."
+  },
+  {
+    "prompt": "Ask the student to design a bike parking area outside a community centre with room for only ten bikes, and explain their design choices.",
+    "constraint": "Your design must fit within the limited space and explain why your layout works best."
+  },
+  {
+    "prompt": "Ask the student to help a friend plan a weekend trip itinerary with only two free days and a tight budget, and explain their choices.",
+    "constraint": "The plan must fit within two days and a tight budget."
+  },
+  {
+    "prompt": "Ask the student to propose a solution for a small office that keeps running out of meeting room space, using only rooms and equipment they already have.",
+    "constraint": "You may not add new rooms or buy new equipment."
+  },
+  {
+    "prompt": "Ask the student to plan a neighbourhood weekend market that must fit in a small parking lot, and explain their reasoning.",
+    "constraint": "The market must fit within the small parking lot."
+  },
+  {
+    "prompt": "Ask the student to decide what a new after-school club should focus on, given only one hour per week, and justify their choice.",
+    "constraint": "The club can only run for one hour per week."
+  },
+  {
+    "prompt": "Ask the student to decide how a family should reorganise their kitchen storage within limited cabinet space, and explain their reasoning.",
+    "constraint": "The plan must fit within the existing cabinet space."
+  },
+  {
+    "prompt": "Ask the student to decide what a charity shop should display from a large donation, given very limited shelf space, and explain their choices.",
+    "constraint": "Choose what deserves priority and justify your decisions."
+  },
+  {
+    "prompt": "Ask the student to propose a system for organising shared files at an office where not everyone is comfortable with new technology.",
+    "constraint": "The solution must be usable by people who are not comfortable with new technology."
+  },
+  {
+    "prompt": "Ask the student to decide on activities for a weekend teen program at a community centre with limited staff, and explain their reasoning.",
+    "constraint": "The plan must work with the limited number of staff available."
+  },
+  {
+    "prompt": "Ask the student to decide how a small hotel could improve its breakfast service without increasing costs, and justify their choices.",
+    "constraint": "The changes must not increase current costs."
+  },
+  {
+    "prompt": "Ask the student to design a small seating area for a public square with very limited space, and explain their design choices.",
+    "constraint": "Your design must stay within the available space."
+  },
+  {
+    "prompt": "Ask the student to propose a simple solution for a community centre that keeps losing track of shared meeting room bookings, using materials they already have.",
+    "constraint": "Do not rely on buying new software or equipment."
+  },
+  {
+    "prompt": "Ask the student to organise the layout for a school science fair with a limited number of tables and rooms, and explain their reasoning.",
+    "constraint": "The layout must fit within the limited tables and rooms."
+  },
+  {
+    "prompt": "Ask the student to decide what their team should buy to decorate a shared workspace on a small budget, and justify their choices.",
+    "constraint": "You must stay within the small budget."
+  },
+  {
+    "prompt": "Ask the student to decide what to prioritise when improving a small public park with a budget that only covers a few changes.",
+    "constraint": "You may only choose a few changes within the limited budget."
+  },
+  {
+    "prompt": "Ask the student to propose a solution for a small delivery company struggling to cross town during rush hour, within its current budget.",
+    "constraint": "You cannot increase the budget or hire more staff."
+  },
+  {
+    "prompt": "Ask the student to propose how a small restaurant could reduce food waste without changing suppliers, and justify their choices.",
+    "constraint": "The solution must work with the current suppliers."
+  },
+  {
+    "prompt": "Ask the student to plan a children's reading event for a local library with a limited number of volunteers, and explain their decisions.",
+    "constraint": "The event must work with the limited number of volunteers."
+  },
+  {
+    "prompt": "Ask the student to decide what to include in a child's birthday party on a strict budget, and justify their choices.",
+    "constraint": "You must stay within the strict budget."
+  },
+  {
+    "prompt": "Ask the student to decide on a new layout for a small clothing shop to improve customer flow, without expanding the space.",
+    "constraint": "The layout must fit within the current store space."
+  },
+  {
+    "prompt": "Ask the student to organise a half-day training schedule for new employees, and justify their priorities.",
+    "constraint": "The schedule must fit within half a day."
+  },
+  {
+    "prompt": "Ask the student to plan a park clean-up event with limited volunteers and equipment, and explain their decisions.",
+    "constraint": "The plan must work with the limited volunteers and equipment."
+  },
+  {
+    "prompt": "Ask the student to decide how a family could improve their weekly grocery shopping to save money, without changing stores.",
+    "constraint": "You must continue shopping at the same store."
+  },
+  {
+    "prompt": "Ask the student to reorganise a school sports day schedule around limited field space, and explain their reasoning.",
+    "constraint": "The schedule must fit within the limited field space."
+  },
+  {
+    "prompt": "Ask the student to decide what a hobby club newsletter should include, given only one volunteer to produce it.",
+    "constraint": "Keep the newsletter realistic for one volunteer to produce regularly."
+  }
+]

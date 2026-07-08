@@ -1,0 +1,122 @@
+[
+  {
+    "prompt": "Ask the student to compare their kitchen at home with a friend or family member's kitchen. Find out which is more practical for cooking, and why.",
+    "constraint": "Give at least one reason based on practicality."
+  },
+  {
+    "prompt": "Ask the student to describe their workplace or classroom. Explore whether it's well organised for getting things done, and what they'd change.",
+    "constraint": "Suggest at least one specific change."
+  },
+  {
+    "prompt": "Ask the student to compare two cafés or restaurants they've been to in their neighbourhood. Find out which has a better atmosphere, and why.",
+    "constraint": "Compare at least two specific aspects."
+  },
+  {
+    "prompt": "Talk about how the student's local high street has changed in the last few years. Find out if it's better or worse now.",
+    "constraint": "Mention at least one specific change."
+  },
+  {
+    "prompt": "Show the student two menus from different restaurants. Find out which is easier to choose from, and why.",
+    "constraint": "Give a reason based on clarity or choice."
+  },
+  {
+    "prompt": "Ask the student to describe public transport in their city. Find out one change that would make it more convenient.",
+    "constraint": "Suggest exactly one improvement."
+  },
+  {
+    "prompt": "Ask the student to compare shopping at a small local shop with shopping at a large supermarket. Find out which works better for them, and why.",
+    "constraint": "Compare at least two aspects."
+  },
+  {
+    "prompt": "Ask the student to describe a park near where they live. Explore whether it's well designed for visitors, and what they'd improve.",
+    "constraint": "Suggest at least one improvement."
+  },
+  {
+    "prompt": "Show the student two photos of the same room, one tidy and one messy. Find out which would help them focus more, and why.",
+    "constraint": "Justify the choice with a reason."
+  },
+  {
+    "prompt": "Ask the student to describe their daily commute. Find out the biggest problem with it, and what would fix it.",
+    "constraint": "Identify one main problem and one solution."
+  },
+  {
+    "prompt": "Ask the student to describe their desk or workspace. Find out the three most important items for helping them work well, and why.",
+    "constraint": "Name exactly three items and explain each."
+  },
+  {
+    "prompt": "Talk about how the student's school or workplace has changed since they first started there. Find out if it's better or worse.",
+    "constraint": "Mention at least one specific change."
+  },
+  {
+    "prompt": "Ask the student to compare two websites that sell the same kind of product. Find out which is easier to use, and why.",
+    "constraint": "Give a reason based on usability."
+  },
+  {
+    "prompt": "Ask the student to describe a shop they visit often. Find out one thing that would make the shopping experience better.",
+    "constraint": "Suggest exactly one improvement."
+  },
+  {
+    "prompt": "Show the student two logos for a local business. Find out which is more memorable, and why.",
+    "constraint": "Justify the choice with a reason."
+  },
+  {
+    "prompt": "Ask the student to describe the waiting area at a doctor's office, train station, or similar place. Explore whether it's comfortable for waiting, and what they'd change.",
+    "constraint": "Suggest at least one change."
+  },
+  {
+    "prompt": "Ask the student to compare living in their current neighbourhood with another neighbourhood they know. Find out which suits them better, and why.",
+    "constraint": "Compare at least two aspects."
+  },
+  {
+    "prompt": "Talk about how a product the student owns has changed compared to an older version. Find out if the new version is an improvement.",
+    "constraint": "Give a reason for your judgement."
+  },
+  {
+    "prompt": "Ask the student to describe a public park they know. Find out which feature most needs improving, and why.",
+    "constraint": "Name one feature and justify the choice."
+  },
+  {
+    "prompt": "Ask the student to describe the layout of a supermarket they know well. Explore whether it makes shopping efficient, and what they'd rearrange.",
+    "constraint": "Suggest at least one rearrangement."
+  },
+  {
+    "prompt": "Show the student two photographs of the same street taken at different times of day. Find out which feels safer or more welcoming.",
+    "constraint": "Justify the choice with a reason."
+  },
+  {
+    "prompt": "Ask the student to describe the customer service at a shop or restaurant they visit. Find out what works well, and what doesn't.",
+    "constraint": "Mention at least one strength and one weakness."
+  },
+  {
+    "prompt": "Ask the student to describe their home, or one they know well. Find out which room would benefit most from renovation, and why.",
+    "constraint": "Name one room and justify the choice."
+  },
+  {
+    "prompt": "Talk about how the design of a website or app has changed over the years. Find out if the current version is easier to use.",
+    "constraint": "Give a reason based on usability."
+  },
+  {
+    "prompt": "Ask the student to compare two offices or classrooms they've worked or studied in. Find out which helps people concentrate more, and why.",
+    "constraint": "Compare at least two aspects."
+  },
+  {
+    "prompt": "Ask the student to describe a service they use regularly, like a gym, salon, or delivery service. Find out one improvement that would make it better.",
+    "constraint": "Suggest exactly one improvement."
+  },
+  {
+    "prompt": "Show the student two versions of the same product's packaging. Find out which is more effective at catching attention, and why.",
+    "constraint": "Justify the choice with a reason."
+  },
+  {
+    "prompt": "Talk about how traffic or crowding has changed on a street the student knows well. Find out if it's better or worse now.",
+    "constraint": "Mention at least one specific change."
+  },
+  {
+    "prompt": "Ask the student to imagine they can only prioritise one improvement for their local public transport system. Find out what matters most, and why.",
+    "constraint": "Choose only one priority and justify it."
+  },
+  {
+    "prompt": "Ask the student to compare a physical shop with its online store. Find out which gives a better experience, and why.",
+    "constraint": "Compare at least two aspects."
+  }
+]

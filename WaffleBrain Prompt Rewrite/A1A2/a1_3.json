@@ -1,0 +1,122 @@
+[
+  {
+    "prompt": "Ask the student to teach you how to make their favourite drink — coffee, tea, juice, or a smoothie. Find out what you need, what to do first, and what happens next.",
+    "constraint": "Student names the ingredients and describes at least 2 steps in order using 'First' and 'Then'."
+  },
+  {
+    "prompt": "Have the student show you their morning routine. Ask what time they wake up, what they do first, and what they do before leaving home.",
+    "constraint": "Student describes at least 3 actions in order using sequencing words."
+  },
+  {
+    "prompt": "Invite the student to teach you how to use their favourite app — a messaging app, a video app, a game, or a music app. Find out what it's for, what you can do with it, and what you should try first.",
+    "constraint": "Student explains the app's purpose and gives at least 2 simple instructions."
+  },
+  {
+    "prompt": "Ask the student to teach a visitor how to get around their town — to a restaurant, shop, park, or station. Have them show you how to get there, what transport to use, and what you need to know.",
+    "constraint": "Student gives clear directions with at least one transport method and one landmark."
+  },
+  {
+    "prompt": "Have the student teach you a simple recipe — a sandwich, salad, breakfast, or dessert. Ask what ingredients you need, what to do first, and how to finish.",
+    "constraint": "Student lists at least 2 ingredients and describes the steps in order."
+  },
+  {
+    "prompt": "Ask the student to show you how they prepare for work or school. Find out what they prepare, what they take with them, and what they do before leaving.",
+    "constraint": "Student names at least 3 things and describes the order of preparation."
+  },
+  {
+    "prompt": "Invite the student to teach you a hobby — a sport, game, craft, or activity. Ask what you'd need, how to start, and what to do next.",
+    "constraint": "Student names the equipment needed and explains at least 2 steps to begin."
+  },
+  {
+    "prompt": "Have the student show you how to have a good weekend by creating a plan. Ask what they do on Saturday, what they do on Sunday, and what the best part is.",
+    "constraint": "Student describes one activity for each day and gives a reason for the best part."
+  },
+  {
+    "prompt": "Ask the student to teach you how to buy something in their country — food, clothes, a ticket, or a gift. Find out where to go, what to say, and what happens.",
+    "constraint": "Student describes the location, one useful phrase, and the process in order."
+  },
+  {
+    "prompt": "Invite the student to show you how they relax after a busy day by creating their routine. Ask what they do first, what they do next, and what makes them feel good.",
+    "constraint": "Student describes at least 2 steps in order and gives one reason it helps."
+  },
+  {
+    "prompt": "Ask the student to teach you how to look after something — a plant, a pet, a bike, or a phone. Find out what it needs, what they do, and how often.",
+    "constraint": "Student names at least 2 care actions and states how often each happens."
+  },
+  {
+    "prompt": "Have the student show you how they get ready for a trip. Ask what they pack, what they check, and what they do before leaving.",
+    "constraint": "Student names at least 3 preparation steps in a clear order."
+  },
+  {
+    "prompt": "Ask the student to teach you how to celebrate a special day — a birthday, holiday, festival, or family event. Find out what happens, what food people have, and what people do.",
+    "constraint": "Student describes the event with at least 3 details, including food and an activity."
+  },
+  {
+    "prompt": "Invite the student to teach you how to set the table for a meal. Ask what you need, where everything goes, and what to do first.",
+    "constraint": "Student names at least 3 items and describes their positions or order."
+  },
+  {
+    "prompt": "Have the student show you how to pack a bag for school or work. Ask what goes in first, what else they add, and what they check before leaving.",
+    "constraint": "Student describes packing in order using 'First', 'Then', and 'Finally'."
+  },
+  {
+    "prompt": "Ask the student to teach you how to wash and dry laundry. Find out what they do first, what happens next, and how they finish.",
+    "constraint": "Student explains at least 3 steps in the correct order."
+  },
+  {
+    "prompt": "Invite the student to show you how to make a hot drink for a guest. Ask what they'd say to the guest, what they prepare, and how they serve it.",
+    "constraint": "Student describes at least 2 steps and one polite phrase used with a guest."
+  },
+  {
+    "prompt": "Have the student teach you how to use public transport in their town — bus, train, tram, or taxi. Ask where to buy a ticket, how to know where to get on, and what to do on arrival.",
+    "constraint": "Student explains at least 3 steps of the process in order."
+  },
+  {
+    "prompt": "Ask the student to show you how to find their way to a new place — a friend's house, a shop, an office, or a school. Find out what to look for, which way to go, and how they know they've arrived.",
+    "constraint": "Student gives directions with at least 2 landmarks or turns."
+  },
+  {
+    "prompt": "Invite the student to teach you how to cook eggs — fried, boiled, scrambled, or omelette. Ask what you need, what to do first, and how to know it's ready.",
+    "constraint": "Student names ingredients and describes at least 2 steps in order."
+  },
+  {
+    "prompt": "Have the student show you how they organise their desk or bag. Ask what goes where, what they keep close, and why it's a good system.",
+    "constraint": "Student describes at least 2 organisation choices and gives one reason."
+  },
+  {
+    "prompt": "Ask the student to teach you how to plan a shopping trip. Find out what goes on their list, where they go first, and how they save time or money.",
+    "constraint": "Student names at least 2 items and describes one practical tip."
+  },
+  {
+    "prompt": "Invite the student to show you how they charge and look after their phone. Ask when they charge it, what they check, and what they avoid.",
+    "constraint": "Student describes at least 2 habits using present simple."
+  },
+  {
+    "prompt": "Have the student teach you a simple exercise routine — stretching, walking, a home workout, or yoga. Ask how they start, what they do next, and how they finish.",
+    "constraint": "Student describes at least 3 steps in order using sequencing words."
+  },
+  {
+    "prompt": "Ask the student to show you how they make their bed. Find out what they do first, what they do next, and how they finish.",
+    "constraint": "Student describes the process in at least 2 clear steps."
+  },
+  {
+    "prompt": "Invite the student to teach you how to plan a birthday surprise for a friend. Ask what they prepare, who helps them, and what happens on the day.",
+    "constraint": "Student names at least 2 preparations and describes what happens on the day."
+  },
+  {
+    "prompt": "Have the student show you how they take care of their health every day. Ask what they eat or drink, what activity they do, and what helps them sleep well.",
+    "constraint": "Student names at least 3 daily habits using present simple."
+  },
+  {
+    "prompt": "Ask the student to teach you how to send a message or email politely. Find out how they start, what they write, and how they finish.",
+    "constraint": "Student describes at least 2 steps and one polite phrase."
+  },
+  {
+    "prompt": "Invite the student to show you how to prepare a simple picnic. Ask what food they bring, what else they pack, and where they go.",
+    "constraint": "Student names at least 3 items and one location detail."
+  },
+  {
+    "prompt": "Have the student teach you how to look after a house plant. Ask where they put it, how often they water it, and what else it needs.",
+    "constraint": "Student gives at least 2 care instructions using present simple."
+  }
+]

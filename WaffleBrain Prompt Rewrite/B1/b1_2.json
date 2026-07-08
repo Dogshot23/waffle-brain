@@ -1,0 +1,122 @@
+[
+  {
+    "prompt": "Set up a roleplay: the student booked a hotel room online but arrives to find it's occupied. Play the front desk staff and have them negotiate a solution, given they have nowhere else to stay tonight.",
+    "constraint": "Student negotiates a workable solution and gives at least one reason to support their preferred outcome."
+  },
+  {
+    "prompt": "Set up a roleplay: the student's neighbour has played loud music for three nights and they have an early start tomorrow. Play the neighbour and have the student raise it and agree on a compromise.",
+    "constraint": "Student raises the issue politely and reaches a compromise using softened disagreement language."
+  },
+  {
+    "prompt": "Set up a roleplay: the student and a colleague both want the same week off work. Play the colleague and have them discuss reasons and reach a fair agreement.",
+    "constraint": "Student explains their reasons and works toward a fair agreement, acknowledging the colleague's position."
+  },
+  {
+    "prompt": "Set up a roleplay: a repair shop wants to charge more than the original quote to fix the student's laptop. Play the shop and have them negotiate the price, explaining what they can realistically afford.",
+    "constraint": "Student states the discrepancy, negotiates a new price, and justifies their budget limit."
+  },
+  {
+    "prompt": "Set up a roleplay: a furniture shop sent the student a sofa in the wrong colour and claims it was their mistake. Play the shop and have them explain why they believe the error was the shop's, and what they expect done.",
+    "constraint": "Student explains their position clearly, states evidence for their view, and states a desired outcome."
+  },
+  {
+    "prompt": "Set up a roleplay: the student's gym membership renewed automatically but they want a cheaper plan. Play the staff member and have them persuade you to make the change without a penalty fee.",
+    "constraint": "Student persuades the staff member using at least one polite persuasion phrase and a clear reason."
+  },
+  {
+    "prompt": "Set up a roleplay: a friend wants to split a restaurant bill equally, but the student only ordered a small dish while the friend ordered several courses. Play the friend and have them discuss a fair way to split it.",
+    "constraint": "Student proposes a fair alternative and reaches agreement with the friend."
+  },
+  {
+    "prompt": "Set up a roleplay: the student shares an apartment and their roommate keeps leaving dishes for days. Play the roommate and have them raise the issue and agree on a new system.",
+    "constraint": "Student resolves the conflict calmly and agrees on a concrete new system."
+  },
+  {
+    "prompt": "Set up a roleplay: the student needs to change a dentist appointment, but the only free slot clashes with an important work meeting. Play the receptionist and have them persuade you to find another solution.",
+    "constraint": "Student persuades the receptionist to offer an alternative, giving a clear reason for the request."
+  },
+  {
+    "prompt": "Set up a roleplay: a delivery driver left the student's package with a neighbour without telling them, and it's now missing. Play the neighbour and have them discuss the situation and decide what to do next.",
+    "constraint": "Student resolves the conflict calmly and agrees on a next step with the neighbour."
+  },
+  {
+    "prompt": "Set up a roleplay: the student wants a refund for a concert ticket because the event was postponed to a date they can't attend. Play the box office and have them try to convince you to help.",
+    "constraint": "Student persuades the box office using a clear reason and at least one persuasive phrase."
+  },
+  {
+    "prompt": "Set up a roleplay: the student and a friend are planning a weekend trip but disagree about the budget. Play the friend and have them work together to find a plan that suits both.",
+    "constraint": "Student proposes options and reaches agreement that addresses both budgets."
+  },
+  {
+    "prompt": "Set up a roleplay: the student's landlord wants to raise the rent, but the student feels the increase is too high given the apartment's condition. Play the landlord and have them discuss and try to reach a compromise.",
+    "constraint": "Student negotiates the increase and justifies their position with a specific reason."
+  },
+  {
+    "prompt": "Set up a roleplay: a colleague keeps taking credit for the student's ideas in meetings. Play the colleague and have the student calmly explain how they'd like things to change.",
+    "constraint": "Student explains their position clearly and states what change they would like to see."
+  },
+  {
+    "prompt": "Set up a roleplay: the student wants to return a jacket that no longer fits, but has lost the receipt. Play the shop assistant and have them try to persuade you to help anyway.",
+    "constraint": "Student persuades the shop assistant using a polite, reasoned argument."
+  },
+  {
+    "prompt": "Set up a roleplay: the student and a friend are choosing a restaurant for a group dinner but have very different budgets. Play the friend and have them find an option they can both agree on.",
+    "constraint": "Student proposes a compromise option and reaches agreement with the friend."
+  },
+  {
+    "prompt": "Set up a roleplay: the student's internet keeps cutting out, but the provider insists the problem is with their equipment. Play the provider and have them resolve the disagreement and agree on next steps.",
+    "constraint": "Student resolves the conflict by presenting their view and agreeing on next steps with the provider."
+  },
+  {
+    "prompt": "Set up a roleplay: the student's tutor has raised their lesson price with very little notice. Play the tutor and have the student explain whether the increase feels fair and how they'd like to move forward.",
+    "constraint": "Student explains their position clearly and states a preferred way forward."
+  },
+  {
+    "prompt": "Set up a roleplay: a mechanic recommends several repairs for the student's car, but the student suspects not all are necessary. Play the mechanic and have them persuade you to justify each recommendation.",
+    "constraint": "Student persuades the mechanic to justify each recommendation, using at least one probing question."
+  },
+  {
+    "prompt": "Set up a roleplay: the student and a family member disagree about which venue to book for a celebration. Play the family member and have them talk it through and reach a joint decision.",
+    "constraint": "Student proposes reasons for their preference and reaches a joint decision."
+  },
+  {
+    "prompt": "Set up a roleplay: a shop refuses to exchange a gift bought during a sale. Play the shop assistant and have the student explain their situation and try to find a solution.",
+    "constraint": "Student persuades the shop assistant with a clear explanation and a suggested solution."
+  },
+  {
+    "prompt": "Set up a roleplay: the student's flight was delayed and they missed a connecting train, but airline staff say it isn't their responsibility. Play the airline staff and have them resolve the disagreement.",
+    "constraint": "Student resolves the conflict by stating their case and negotiating what the airline will offer."
+  },
+  {
+    "prompt": "Set up a roleplay: the student wants to cancel their phone contract early, but the company wants a high cancellation fee. Play the company and have the student explain why the fee feels unfair.",
+    "constraint": "Student explains their position clearly and responds to the company's counter-proposal."
+  },
+  {
+    "prompt": "Set up a roleplay: a colleague wants to borrow money from the student, who isn't comfortable lending the full amount. Play the colleague and have them discuss the situation honestly and agree on a solution.",
+    "constraint": "Student explains their position honestly and reaches an agreement that respects their limits."
+  },
+  {
+    "prompt": "Set up a roleplay: the student is sharing a taxi with a stranger heading a similar direction, but their destinations aren't identical. Play the stranger and have them agree on a fair route and fare split.",
+    "constraint": "Student negotiates a fair route and cost split, giving at least one reason for their proposal."
+  },
+  {
+    "prompt": "Set up a roleplay: the student's child's school wants an extra fee for a trip they feel is too expensive. Play the staff member and have the student raise their concerns.",
+    "constraint": "Student explains their position clearly and states what outcome they are hoping for."
+  },
+  {
+    "prompt": "Set up a roleplay: a friend cancelled plans with the student last minute for the second time. Play the friend and have the student honestly discuss how this affects the friendship.",
+    "constraint": "Student resolves the conflict by expressing how they feel and working toward an understanding."
+  },
+  {
+    "prompt": "Set up a roleplay: the student wants to work from home two days a week, but their manager prefers everyone in the office. Play the manager and have the student present their case and find a compromise.",
+    "constraint": "Student negotiates a compromise and supports their case with at least one clear reason."
+  },
+  {
+    "prompt": "Set up a roleplay: the student's energy bill was unexpectedly high, and they and the provider disagree about the cause. Play the provider and have them work together to reach an agreement.",
+    "constraint": "Student works with the provider to reach an agreement on the cause and next steps."
+  },
+  {
+    "prompt": "Set up a roleplay: two neighbours disagree about who should pay for a shared fence that needs repairing. Play one neighbour and have the student discuss the situation and agree on a fair arrangement.",
+    "constraint": "Student negotiates a fair arrangement and justifies their proposed share of responsibility."
+  }
+]

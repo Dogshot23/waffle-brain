@@ -1,0 +1,122 @@
+[
+  {
+    "prompt": "Ask the student to describe their bedroom, covering the furniture, the colours, and their favourite thing in it.",
+    "constraint": "Student describes at least 3 features of the room using 'There is/are' or 'It has'."
+  },
+  {
+    "prompt": "Explore the student's kitchen at home — ask what's there, where things are, and what they use every day.",
+    "constraint": "Student names at least 3 items and uses 'There is/are' or 'I use'."
+  },
+  {
+    "prompt": "Have the student describe a park near their home, covering what's there, what people do, and what they like about it.",
+    "constraint": "Student names 3 features of the park and gives one opinion."
+  },
+  {
+    "prompt": "Ask the student to describe their classroom — the furniture, what's on the walls, and where they sit.",
+    "constraint": "Student describes at least 3 features using 'There is/are'."
+  },
+  {
+    "prompt": "Find out about the student's favourite shop: what it sells, what it looks like, and why they like it.",
+    "constraint": "Student describes what the shop sells and gives one reason they like it."
+  },
+  {
+    "prompt": "Invite the student to describe their school bag, covering what's inside, what they use every day, and one unusual item.",
+    "constraint": "Student names at least 3 items inside and uses 'There is/are' or 'I keep'."
+  },
+  {
+    "prompt": "Ask the student to describe their fridge at home — what's inside, what they eat every day, and something they don't like.",
+    "constraint": "Student names at least 3 food items and uses 'There is/are'."
+  },
+  {
+    "prompt": "Explore the student's desk or study space: what's on it, what they keep near them, and what they use most.",
+    "constraint": "Student names at least 3 items and uses 'I keep' or 'I use'."
+  },
+  {
+    "prompt": "Have the student describe their wardrobe or cupboard — what's inside, their favourite clothes, and something they never wear.",
+    "constraint": "Student names at least 3 items of clothing and uses 'There is/are'."
+  },
+  {
+    "prompt": "Ask the student to describe their pencil case, covering what's inside, what they use every day, and their favourite pen or pencil.",
+    "constraint": "Student names at least 3 items inside and gives one preference."
+  },
+  {
+    "prompt": "Encourage the student to compare their home and their school — what's similar, what's different, and where they prefer to be.",
+    "constraint": "Student gives at least one similarity and one difference between the two places."
+  },
+  {
+    "prompt": "Invite the student to compare their summer clothes and winter clothes — what they wear, the colours, and what they prefer.",
+    "constraint": "Student compares at least 2 items of clothing and gives one preference."
+  },
+  {
+    "prompt": "Ask the student to compare their bedroom now with their bedroom as a child — what's different, what's the same, and what they miss.",
+    "constraint": "Student gives at least 2 differences between the two bedrooms."
+  },
+  {
+    "prompt": "Discuss a weekday versus a weekend with the student — what they do, what they eat, and how they feel.",
+    "constraint": "Student compares at least 2 activities between the two days."
+  },
+  {
+    "prompt": "Have the student compare their house and a friend's house — size, rooms, and what they like about each.",
+    "constraint": "Student gives at least one similarity and one difference and names one thing they like."
+  },
+  {
+    "prompt": "Ask the student to describe their favourite jacket — what it looks like, where they got it, and when they wear it.",
+    "constraint": "Student describes appearance, origin, and when they use the item."
+  },
+  {
+    "prompt": "Find out about the student's favourite mug or cup — what it looks like, where they got it, and why they like it.",
+    "constraint": "Student describes appearance and gives one reason they like the item."
+  },
+  {
+    "prompt": "Invite the student to describe their favourite gadget — what it looks like, what they use it for, and how often they use it.",
+    "constraint": "Student describes appearance and explains what the item is used for."
+  },
+  {
+    "prompt": "Ask the student to describe their favourite book or comic — what it looks like, what it's about, and why they like it.",
+    "constraint": "Student describes the item and gives one reason for liking it."
+  },
+  {
+    "prompt": "Explore the student's favourite pair of shoes — what they look like, where they got them, and when they wear them.",
+    "constraint": "Student describes appearance, origin, and when they wear the item."
+  },
+  {
+    "prompt": "Have the student describe a photo or picture in their home — what's in it, where it is, and why they keep it.",
+    "constraint": "Student describes at least 2 details in the picture and gives one reason."
+  },
+  {
+    "prompt": "Ask the student to describe their phone case, covering the colour, the design, and why they chose it.",
+    "constraint": "Student describes colour and design and gives one reason for the choice."
+  },
+  {
+    "prompt": "Invite the student to describe a plant in their home or garden — what it looks like, where it is, and who looks after it.",
+    "constraint": "Student describes appearance and location and names who cares for it."
+  },
+  {
+    "prompt": "Explore an object on the student's desk right now — what it looks like, what's next to it, and what they use it for.",
+    "constraint": "Student describes appearance, one neighbouring object, and its use."
+  },
+  {
+    "prompt": "Ask the student to describe a poster or picture on their wall — what colour it is, what's in it, and why they have it.",
+    "constraint": "Student describes colour and content and gives one reason for having it."
+  },
+  {
+    "prompt": "Turn it into a guessing game: ask the student to describe an animal without saying its name, covering what it looks like, where it lives, and what it eats, then try to guess it.",
+    "constraint": "Student gives at least 3 clues without naming the animal."
+  },
+  {
+    "prompt": "Play a guessing game: invite the student to describe a job without saying its name, covering what the person wears, where they work, and what they do, then try to guess it.",
+    "constraint": "Student gives at least 3 clues without naming the job."
+  },
+  {
+    "prompt": "Set up a guessing game: ask the student to describe a food without saying its name, covering its colour, how it tastes, and when they eat it, then try to guess it.",
+    "constraint": "Student gives at least 3 clues without naming the food."
+  },
+  {
+    "prompt": "Try a guessing game: have the student describe a place in town without saying its name, covering what you can do there, what's inside, and who goes there, then guess what it is.",
+    "constraint": "Student gives at least 3 clues without naming the place."
+  },
+  {
+    "prompt": "Close with a guessing game: invite the student to describe an object in the kitchen without saying its name, covering what it looks like, what it's used for, and where it's kept, then try to guess it.",
+    "constraint": "Student gives at least 3 clues without naming the object."
+  }
+]

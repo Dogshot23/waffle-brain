@@ -1,0 +1,82 @@
+[
+  {
+    "prompt": "Set the scene: a friend is visiting the student's town on Saturday and likes food and outdoor activities but dislikes museums. Ask them to choose a morning activity, a lunch place, and an afternoon activity, then have them explain where they'd go, what they'd do, and why their friend would like it.",
+    "constraint": "Student gives a plan for 3 parts of the day and uses 'going to' with at least one reason."
+  },
+  {
+    "prompt": "Explain that the student's friend always has a bad morning and needs a better routine. Encourage the student to choose solutions for waking up late, forgetting things, and having no breakfast, then have them say what their friend should do first, what they can change, and why it helps.",
+    "constraint": "Student uses 'should' or 'can' for each problem and gives a reason."
+  },
+  {
+    "prompt": "Tell the student their friend is visiting and doesn't eat meat or like spicy food. Ask them to plan a meal, a drink, and something extra, then find out what they'd prepare and why they chose it.",
+    "constraint": "Student names 3 food items and explains why each is suitable."
+  },
+  {
+    "prompt": "Present a change of plan: the student had a day outside planned, but now it's raining. Invite them to choose a new activity at home, a food or drink, and something fun to do, then have them explain their new plan and why it's better.",
+    "constraint": "Student describes a new 3-part plan and gives one reason why it is better."
+  },
+  {
+    "prompt": "Set up a situation where a visitor is new in the student's town and needs help getting somewhere. Ask the student to choose a destination, transport, and route, then find out where the visitor goes, how they get there, and what they need.",
+    "constraint": "Student gives clear directions including destination, transport, and one practical detail."
+  },
+  {
+    "prompt": "Explain that the student is organising a party for five friends on a small budget. Have them choose a place, food, and activities, then discuss their plan and why they chose these things.",
+    "constraint": "Student names 3 plan items and gives at least one reason related to budget."
+  },
+  {
+    "prompt": "Tell the student they need to buy a birthday present for a friend with €20. Ask them to choose a present, a shop, and a reason, then find out what they'd buy and why their friend would like it.",
+    "constraint": "Student names the present, the shop, and gives a clear reason the friend will like it."
+  },
+  {
+    "prompt": "Explain that the student's friend feels tired every day and needs a better routine. Encourage them to choose a food change, an activity, and a sleep habit, then have them say what their friend should do and why it helps.",
+    "constraint": "Student gives 3 routine changes and a reason for at least one."
+  },
+  {
+    "prompt": "Set up a two-day trip with only a small bag to pack. Ask the student to choose three things to pack, transport, and one activity, then find out what they'd take and why these things matter.",
+    "constraint": "Student lists 3 packed items and explains why each is important."
+  },
+  {
+    "prompt": "Explain that a new student has started at the school and needs to feel comfortable. Ask the student to explain important places, useful things to know, and advice for the first day.",
+    "constraint": "Student gives at least 2 pieces of advice using 'should' or 'can'."
+  },
+  {
+    "prompt": "Tell the student their friend is moving to a new apartment and needs help choosing the best place. Ask them to choose a location, rooms, and important features, then discuss why the apartment is good and what their friend can do there.",
+    "constraint": "Student uses at least 2 adjectives and gives one reason the apartment suits the friend."
+  },
+  {
+    "prompt": "Explain that the student's friend wants to spend one day without their phone. Invite the student to create the plan by choosing a morning, afternoon, and evening activity, then have them explain what their friend would do and why it's a good idea.",
+    "constraint": "Student plans 3 parts of the day and gives one reason it is good."
+  },
+  {
+    "prompt": "Tell the student their friend starts a new job tomorrow and needs help. Ask them to explain what their friend needs, what they do in the morning, and what they take with them.",
+    "constraint": "Student gives clear advice covering preparation, morning routine, and items to bring."
+  },
+  {
+    "prompt": "Set up a scenario where the student is choosing a restaurant for three friends with different needs — one vegetarian, one on a budget, one who loves desserts. Ask them where they'd go, what each person would eat, and why.",
+    "constraint": "Student addresses all 3 friends' needs and explains the choice."
+  },
+  {
+    "prompt": "Explain that the student wants a fun weekend but doesn't have much money. Ask them to choose an activity, food, and transport, then find out their plan and how they save money.",
+    "constraint": "Student gives a 3-part plan and explains how at least one thing saves money."
+  },
+  {
+    "prompt": "Set up a situation where a tourist is visiting the student's town and needs help. Ask the student to explain where the tourist should go, what they should see, and how they should travel.",
+    "constraint": "Student uses 'should' to give at least 2 recommendations with a reason."
+  },
+  {
+    "prompt": "Tell the student they have an important day tomorrow — a birthday, first day at school, or meeting new people. Ask them to choose one and plan their clothes, food, and preparation, then have them explain what they'll do and why.",
+    "constraint": "Student describes 3 preparations using 'going to' and gives at least one reason."
+  },
+  {
+    "prompt": "Explain that there's a problem at the student's home — no internet, a broken light, or no hot water. Ask them to choose one and tell you what the problem is, what they do about it, and who helps.",
+    "constraint": "Student states the problem clearly, describes one action, and names who helps."
+  },
+  {
+    "prompt": "Explain that the student is shopping for food for one week. Ask them to choose breakfast, lunch, and dinner food, then find out what they'd buy and why.",
+    "constraint": "Student names food for all 3 meals and gives one reason for a choice."
+  },
+  {
+    "prompt": "Tell the student their friend wants to improve their English and needs a simple plan. Ask them to choose a practice activity, time of day, and place, then have them explain what their friend would do and why it helps.",
+    "constraint": "Student gives a complete 3-part practice plan and explains why it helps."
+  }
+]

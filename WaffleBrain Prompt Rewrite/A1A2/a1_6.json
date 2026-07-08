@@ -1,0 +1,122 @@
+[
+  {
+    "prompt": "Ask the student to tell the story of losing their bag at the train station. Have them explain where they last had it, where they looked, and who helped them find it.",
+    "constraint": "Student uses First, Then, Finally and past tense to tell the story."
+  },
+  {
+    "prompt": "Invite the student to tell the story of arriving late for an important meeting. Find out why they were late, what they did, and what happened when they arrived.",
+    "constraint": "Student gives a reason for being late and describes 3 story parts in order."
+  },
+  {
+    "prompt": "Have the student tell the story of breaking a friend's phone by accident. Ask how it happened, what they said, and how they solved the problem.",
+    "constraint": "Student describes the accident, a reaction, and a solution using past tense."
+  },
+  {
+    "prompt": "Ask the student to tell the story of forgetting their homework at home on the day it's due. Find out when they noticed, what they did, and how the problem ended.",
+    "constraint": "Student tells a 3-part story with a clear ending using First, Then, Finally."
+  },
+  {
+    "prompt": "Invite the student to tell the story of getting a flat tyre far from home. Ask where they were, what they did, and how they got home.",
+    "constraint": "Student describes the problem and gives a clear solution in sequence."
+  },
+  {
+    "prompt": "Have the student tell the story of a busy day at work or school, covering the morning, the afternoon, and how the day ends.",
+    "constraint": "Student describes 3 parts of the day using First, Then, Finally."
+  },
+  {
+    "prompt": "Ask the student to tell the story of a special day, like a birthday or celebration, covering how it starts, what they do together, and how it finishes.",
+    "constraint": "Student sequences the day into 3 clear parts with past tense verbs."
+  },
+  {
+    "prompt": "Invite the student to tell the story of a day trip to another city, covering how they travel, what they see or do, and how they return home.",
+    "constraint": "Student describes travel, activity, and return using sequence words."
+  },
+  {
+    "prompt": "Have the student tell the story of a day when everything goes wrong, covering what happens first, what happens next, and how the day ends.",
+    "constraint": "Student describes at least 2 problems and gives an ending."
+  },
+  {
+    "prompt": "Ask the student to tell the story of their first day at a new job or school. Find out how they felt arriving, what they did during the day, and how they felt at the end.",
+    "constraint": "Student uses First, Then, Finally and describes a feeling at start and end."
+  },
+  {
+    "prompt": "Have the student build a story by choosing a place — park, shop, or train station — a person — friend, stranger, or family member — and a problem — lost item, wrong direction, or no money. Ask them to create the story using their choices.",
+    "constraint": "Student names all 3 choices and tells a complete story using them."
+  },
+  {
+    "prompt": "Invite the student to build a story by choosing a place — restaurant, airport, or school — a person — teacher, classmate, or waiter — and an activity — ordering food, catching a flight, or giving a presentation. Have them create the story using their choices.",
+    "constraint": "Student includes all 3 chosen elements and uses First, Then, Finally."
+  },
+  {
+    "prompt": "Ask the student to build a story by choosing a place — their house, a friend's house, or a hotel — a person — neighbour, visitor, or delivery person — and a problem — broken object, strange noise, or unexpected visitor. Have them create the story using their choices.",
+    "constraint": "Student uses all 3 chosen elements and completes a beginning, middle, and end."
+  },
+  {
+    "prompt": "Have the student build a story by choosing a place — supermarket, gym, or library — a person — friend, stranger, or staff member — and an activity — helping someone, finding something, or meeting someone new. Ask them to create the story using their choices.",
+    "constraint": "Student combines the 3 choices into one clear story with a sequence."
+  },
+  {
+    "prompt": "Invite the student to build a story by choosing a place — city street, bus stop, or office — a person — old friend, new colleague, or lost tourist — and a problem — bad weather, wrong bus, or forgotten appointment. Have them create the story using their choices.",
+    "constraint": "Student tells the story in order and uses all 3 chosen elements."
+  },
+  {
+    "prompt": "Ask the student to imagine a park on a sunny afternoon. Have them describe where they are, what they see around them, and a small event that happens next.",
+    "constraint": "Student describes the scene and adds one event that happens."
+  },
+  {
+    "prompt": "Invite the student to imagine a small shop on a quiet street. Ask them to describe where they are, the items and people in the shop, and a small event that happens next.",
+    "constraint": "Student describes the location, at least 2 details, and one event."
+  },
+  {
+    "prompt": "Have the student imagine a busy street in the city at rush hour. Ask them to describe where they are, the people and traffic around them, and something unexpected that happens.",
+    "constraint": "Student sets the scene and describes one unexpected happening."
+  },
+  {
+    "prompt": "Ask the student to imagine a cosy house on a rainy day. Have them describe where they are, the rooms and objects around them, and a small event that happens next.",
+    "constraint": "Student uses 'There is/are' to describe the scene and adds an event."
+  },
+  {
+    "prompt": "Invite the student to imagine a train station early in the morning. Ask them to describe where they are, the people and things around them, and a small event that happens next.",
+    "constraint": "Student describes the setting with 2 details and one event."
+  },
+  {
+    "prompt": "Explain that a friend can't find their way in a new city. Ask the student who needs help, what the problem is, and how they help their friend.",
+    "constraint": "Student identifies the problem and describes the help given, step by step."
+  },
+  {
+    "prompt": "Explain that a new student doesn't know anyone at school. Ask the student who needs help, what the problem is, and how they help them.",
+    "constraint": "Student describes the problem and gives at least 2 actions that help."
+  },
+  {
+    "prompt": "Explain that a visitor to the student's town doesn't speak the local language well. Ask who needs help, what the problem is, and how the student helps them.",
+    "constraint": "Student describes the problem and explains the help step by step."
+  },
+  {
+    "prompt": "Explain that a family member forgets an important appointment and is late and worried. Ask the student who needs help, what the problem is, and how they help them.",
+    "constraint": "Student explains the problem and describes a clear solution."
+  },
+  {
+    "prompt": "Explain that a friend's car breaks down on the way to work. Ask the student who needs help, what the problem is, and how they help them.",
+    "constraint": "Student uses First, Then, Finally to describe the help given."
+  },
+  {
+    "prompt": "Ask the student to describe a messy room before and after cleaning — what it looked like, what changed, and what it looks like now.",
+    "constraint": "Student contrasts before and after using 'There was/were' and 'Now there is/are'."
+  },
+  {
+    "prompt": "Invite the student to describe a trip before they left and after they returned — how they felt before, what happened on the trip, and how they feel now.",
+    "constraint": "Student describes a feeling before and after, with one event in between."
+  },
+  {
+    "prompt": "Have the student describe learning a new skill, before and after practice — what they couldn't do, how they practised, and what they can do now.",
+    "constraint": "Student contrasts ability before and after using 'could' and 'can'."
+  },
+  {
+    "prompt": "Ask the student to describe a garden or park before and after a change of season — what it looked like, what happened over time, and what it looks like now.",
+    "constraint": "Student describes 2 clear differences between before and after."
+  },
+  {
+    "prompt": "Invite the student to describe their English before and after taking lessons — what they couldn't do, what they did to improve, and what they can do now.",
+    "constraint": "Student contrasts ability before and after using 'could' and 'can'."
+  }
+]

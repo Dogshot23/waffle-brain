@@ -1,0 +1,82 @@
+[
+  {
+    "prompt": "Set up a roleplay where you're the café worker and the student is a customer. Their goal is to order a drink — coffee, tea, juice, or water — and a snack such as cake, a sandwich, or salad. Ask them what they'd like and whether they want anything else, then explore why they chose it and what they usually order.",
+    "constraint": "Student orders one drink and one food item and answers at least one extension question."
+  },
+  {
+    "prompt": "Play the hotel receptionist while the student checks in for a holiday. Their goal is to get a room — single, double, or family — for one night, three nights, or one week. Find out who they're travelling with and what they need in the room.",
+    "constraint": "Student states room type and length of stay, and answers at least one extension question."
+  },
+  {
+    "prompt": "Take the role of a shop assistant while the student looks for something to wear — a shirt, jacket, shoes, or trousers, in black, blue, or white. Ask them when they'd wear it and how much it costs.",
+    "constraint": "Student names the item and colour they want and answers at least one extension question."
+  },
+  {
+    "prompt": "Play the doctor's receptionist while the student calls to make an appointment for a cold, headache, or stomach ache, choosing a morning, afternoon, or evening slot. Ask how they feel and what they do to feel better.",
+    "constraint": "Student explains the problem, chooses a time, and answers at least one extension question."
+  },
+  {
+    "prompt": "Act as someone who knows the area while the student asks for directions to a supermarket, station, restaurant, or park. Have them ask where it is and how to get there, then find out whether they'd walk or take transport and how long it takes.",
+    "constraint": "Student names a place and asks for directions using both questions, then answers one extension question."
+  },
+  {
+    "prompt": "Play the student's friend while they ask for help moving to a new home — books, clothes, furniture, or boxes. Get them to describe part of a plan (what to move first, when, who can help), then ask why they need help and what's difficult.",
+    "constraint": "Student names items to move, describes part of a plan, and answers at least one extension question."
+  },
+  {
+    "prompt": "Take the role of a supermarket worker while the student looks for fruit, milk, bread, or cheese. Have them ask where an item is and how much it costs, then find out what they buy every week and what they eat at home.",
+    "constraint": "Student names at least two items and asks both questions, then answers one extension question."
+  },
+  {
+    "prompt": "Play the student's friend while they plan a birthday party together — a place (home, park, or restaurant) and food (pizza, cake, or sandwiches). Ask who's coming and what time it starts.",
+    "constraint": "Student chooses a place and food and answers at least one extension question."
+  },
+  {
+    "prompt": "Act as the information desk worker while the student buys a train ticket to a city, beach, or airport for the morning, afternoon, or evening. Find out who they're travelling with and how long the journey is.",
+    "constraint": "Student states a destination and time and answers at least one extension question."
+  },
+  {
+    "prompt": "Play a new neighbour meeting the student for the first time. Encourage them to introduce themselves and talk about their name, home, job or school, and hobbies, then ask what they do in their free time and how long they've lived there.",
+    "constraint": "Student talks about at least 3 of the 4 topics and answers one extension question."
+  },
+  {
+    "prompt": "Take the role of a shop worker while the student returns an item that's the wrong size, broken, or the wrong colour, and asks for an exchange or a refund. Ask why they don't want it and what they'd like instead.",
+    "constraint": "Student explains the problem, states the solution they want, and answers one extension question."
+  },
+  {
+    "prompt": "Play a restaurant worker while the student books a table for 2, 4, or 6 people at 7pm, 8pm, or 9pm. Ask what food they like and whether they need anything special.",
+    "constraint": "Student states number of people and a time, and answers at least one extension question."
+  },
+  {
+    "prompt": "Have the student ask you, as a friend, about weekend plans, choosing an activity — cinema, shopping, walking, or eating out — and a day, Saturday or Sunday. Find out why they want to do it and what time they'd meet.",
+    "constraint": "Student chooses an activity and a day and answers at least one extension question."
+  },
+  {
+    "prompt": "Play hotel reception while the student calls about a problem — no hot water, a noisy room, or the wrong room — and asks for a solution. Ask what they want the hotel to do and how serious the problem is.",
+    "constraint": "Student explains the problem clearly and answers at least one extension question."
+  },
+  {
+    "prompt": "Play the student's friend while they talk through preparing for their first day at a new school or job — clothes, bag, transport, or schedule. Ask what they're worried about and what they need tomorrow.",
+    "constraint": "Student describes at least 2 preparations and answers one extension question."
+  },
+  {
+    "prompt": "Take the role of a pharmacy worker while the student explains a health problem — a cold, cough, or headache — and asks for medicine, advice, or information. Ask how they feel and what they usually do when they're sick.",
+    "constraint": "Student explains the problem, states what they need, and answers one extension question."
+  },
+  {
+    "prompt": "Play a restaurant worker taking a delivery order while the student chooses food — pizza, burger, salad, or pasta — and a drink — water, juice, or cola. Ask what food they like and when they usually order.",
+    "constraint": "Student orders one food and one drink and answers at least one extension question."
+  },
+  {
+    "prompt": "Play the student's friend while they ask for help learning something new — cooking, English, sport, or technology. Ask why they want to learn it and when they'd like to start.",
+    "constraint": "Student names what they want to learn and answers at least one extension question."
+  },
+  {
+    "prompt": "Act as an airport information desk worker while the student asks about their flight — finding the gate, checking the time, or finding a place — and talks about their destination, time, or a problem. Ask where they're going and who they're travelling with.",
+    "constraint": "Student states one need and talks about at least 2 of the 3 topics, then answers one extension question."
+  },
+  {
+    "prompt": "Play the student's friend while they plan a day out together — visiting a city, shopping, going to the beach, or the park — at a chosen time of day. Ask what they need to take and what they want to do first.",
+    "constraint": "Student chooses an activity and time and answers at least one extension question."
+  }
+]
