@@ -33,57 +33,41 @@
 
   <div id="prompt-card">
 
-    <div class="topic-section">
-      <div class="topic-eyebrow">Topic</div>
-      <span class="mode-badge" id="mode-label">Loading</span>
-      <p id="prompt-text"></p>
-    </div>
+    <section class="waffle-section" id="waffle-section">
+      <div class="waffle-label">🧇 Waffle</div>
+      <p class="waffle-text" id="waffle-text"></p>
+    </section>
 
-    <div class="support-section" id="support-section">
+    <section class="goal-section" id="goal-section">
+      <div class="goal-label">🎯 Goal</div>
+      <p class="goal-text" id="goal-text"></p>
+    </section>
 
-      <div class="support-block support-block--useful-english">
-        <div class="support-label">📚 Useful English</div>
-        <ul class="support-list" id="useful-english-list"></ul>
-      </div>
-
-      <div class="support-block support-block--try-saying">
-        <div class="support-label">💬 Try Saying</div>
-        <ul class="support-list" id="try-saying-list"></ul>
-      </div>
-
-      <div class="support-block support-block--keep-going">
-        <div class="support-label">🔄 Keep the Conversation Going</div>
-        <p class="support-text" id="keep-going-text"></p>
-      </div>
-
-      <div class="support-block support-block--challenge">
-        <div class="support-label">⭐ Today's Challenge</div>
-        <p class="support-text" id="challenge-text"></p>
-      </div>
-
-    </div>
+    <section class="starters-section" id="starters-section">
+      <div class="starters-label">💬 Waffle Starters</div>
+      <ul class="starters-list" id="starters-list"></ul>
+    </section>
 
   </div>
 
   <div class="btn-wrap">
-    <button id="back-btn" disabled aria-label="Previous prompt">
+    <button id="back-btn" disabled aria-label="Previous Waffle">
       <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </button>
     <button id="next-btn" disabled>
-      Next prompt
+      Next Waffle
       <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </button>
   </div>
 
-  <footer>Press <kbd>Space</kbd> for next prompt</footer>
+  <footer>Press <kbd>Space</kbd> for a new Waffle</footer>
 
 </div>
 
-<script src="engine.js"></script>
 <script src="studentSupport.js"></script>
 <script src="student.js"></script>
 </body>

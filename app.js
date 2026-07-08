@@ -9,7 +9,6 @@ const promptCard     = document.getElementById('prompt-card');
 const modeLabel      = document.getElementById('mode-label');
 const promptText     = document.getElementById('prompt-text');
 const constraintText = document.getElementById('constraint-text');
-const counter        = document.getElementById('counter');
 const nextBtn        = document.getElementById('next-btn');
 const backBtn        = document.getElementById('back-btn');
 const copyBtn        = document.getElementById('copy-btn');
@@ -200,7 +199,6 @@ function renderPrompt(p) {
   modeLabel.textContent      = p.category;
   promptText.innerHTML       = formatPrompt(p.prompt);
   constraintText.textContent = p.constraint;
-  counter.textContent        = `${p.shown} shown`;
 
   promptCard.setAttribute('data-mode', p.category);
 
@@ -253,7 +251,6 @@ WB.load()
     promptText.textContent     = 'Could not load prompts.';
     constraintText.textContent = err.message + ' — Check that data/prompts.json exists and the app is served over HTTP.';
     promptCard.setAttribute('data-mode', '');
-    counter.textContent = '—';
     console.error('[WaffleBrain]', err);
   });
 

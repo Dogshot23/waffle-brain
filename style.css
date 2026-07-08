@@ -45,23 +45,6 @@
   --constraint-label:  #B45309;
   --constraint-text:   #44360A;
 
-  /* Student — support block pastels (reuse existing category hues) */
-  --support-useful-bg:      #EEF2FF;
-  --support-useful-border:  #D6DEFA;
-  --support-useful-label:   #3B5BDB;
-
-  --support-trysaying-bg:     #E8F5E9;
-  --support-trysaying-border: #CDE9CF;
-  --support-trysaying-label:  #2E7D32;
-
-  --support-keepgoing-bg:     #F3F0FF;
-  --support-keepgoing-border: #E1DAFA;
-  --support-keepgoing-label:  #6741D9;
-
-  --support-challenge-bg:     #FFFBF0;
-  --support-challenge-border: #FDE89A;
-  --support-challenge-label:  #B45309;
-
   /* Teacher buttons (blue) */
   --teacher-btn-bg:        #3B5BDB;
   --teacher-btn-bg-hover:  #3451C7;
@@ -73,6 +56,11 @@
   --student-btn-bg-hover:  #C05509;
   --student-btn-bg-active: #AB4A08;
   --student-flash-ring:    rgba(212, 97, 11, 0.18);
+
+  /* Student — Waffle Starters box */
+  --starters-bg:     #FFF6EC;
+  --starters-border: #FBDFC0;
+  --starters-label:  #B45309;
 
   /* Active button (set per page via body class — see section 5 & 6) */
   --btn-bg:        var(--teacher-btn-bg);
@@ -400,14 +388,6 @@ footer kbd {
 
 /* ── 5. Teacher-only ──────────────────────────────────────── */
 
-/* Counter */
-.counter {
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--text-tertiary);
-  letter-spacing: 0.02em;
-}
-
 /* Waffle selector */
 .waffle-select {
   position: relative;
@@ -685,136 +665,110 @@ body:not(.student) .mode-badge {
 
 
 /* ── 6. Student-only ──────────────────────────────────────── */
+/* Fresh architecture: the student page shows one standalone Waffle
+   at a time — no topic strip, no category badge, no legacy prompt
+   text. Three parts only: 🧇 Waffle, 🎯 Goal, 💬 Waffle Starters. */
 
-/* Student prompt text sizing */
-.student #prompt-text {
-  font-size: 18px;
-  white-space: pre-line;
-}
-
-/* Topic section */
-.topic-section {
-  margin-bottom: 14px;
-}
-
-.topic-eyebrow {
-  font-size: 9.5px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-tertiary);
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
-
-.topic-eyebrow::after {
+/* Extra vertical space (e.g. on tall/large-screen viewports) collects
+   here, below the Waffle Starters, instead of being distributed above
+   or around the Waffle group. Student page only — the teacher page's
+   #prompt-card keeps its own layout. */
+.student #prompt-card::after {
   content: '';
   flex: 1;
-  height: 1px;
-  background: var(--border-light);
+  min-height: 0;
 }
 
-/* Student badge sits inside topic section */
-.student .mode-badge {
-  margin-bottom: 10px;
-}
-
-/* Student support section.
-   All four blocks (Useful English, Try Saying, Keep the Conversation
-   Going, Today's Challenge) are always fully visible. */
-.support-section {
+/* Waffle section (🧇) — the dominant element on the page. Largest
+   type, most vertical room: this is what pulls the student's eye
+   first, and the only thing on the page framed as a task. Sized to
+   its content and anchored to the top of the card — see the
+   #prompt-card::after spacer below, which absorbs any extra height
+   so it collects under the Waffle Starters instead of around the
+   Waffle. */
+.waffle-section {
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 16px;
-  padding-top: 14px;
-  border-top: 1px solid var(--border-light);
+  padding: 4px 2px 10px;
 }
 
-.support-block {
-  background: var(--bg);
-  border: 1px solid var(--border-light);
-  border-radius: 8px;
-  padding: 10px 12px 11px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-/* Per-section pastel tints — gives each support block a distinct,
-   low-saturation identity while keeping body text on the neutral
-   text-secondary colour for readability. Only the background,
-   border and label pick up the tint. */
-.support-block--useful-english {
-  background: var(--support-useful-bg);
-  border-color: var(--support-useful-border);
-}
-.support-block--useful-english .support-label {
-  color: var(--support-useful-label);
-}
-
-.support-block--try-saying {
-  background: var(--support-trysaying-bg);
-  border-color: var(--support-trysaying-border);
-}
-.support-block--try-saying .support-label {
-  color: var(--support-trysaying-label);
-}
-
-.support-block--keep-going {
-  background: var(--support-keepgoing-bg);
-  border-color: var(--support-keepgoing-border);
-}
-.support-block--keep-going .support-label {
-  color: var(--support-keepgoing-label);
-}
-
-.support-block--challenge {
-  background: var(--support-challenge-bg);
-  border-color: var(--support-challenge-border);
-}
-.support-block--challenge .support-label {
-  color: var(--support-challenge-label);
-}
-
-.support-label {
-  font-size: 9.5px;
+.waffle-label {
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-tertiary);
+  letter-spacing: 0.02em;
+  color: var(--student-btn-bg);
 }
 
-.support-list {
+.waffle-text {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.35;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+/* Goal section (🎯) — one quiet supporting sentence underneath the
+   Waffle. Smaller and quieter than the Waffle text; it explains,
+   it doesn't compete. */
+.goal-section {
+  flex-shrink: 0;
+  padding: 0 2px 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.goal-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--text-tertiary);
+  margin-bottom: 4px;
+}
+
+.goal-text {
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+
+/* Waffle Starters (💬) — always visible, never collapsible.
+   Exactly three ready-to-use conversation starters inside a single
+   pale box. The starters are plain lines separated by a hairline,
+   not individual cards — the box is the container, not each item. */
+.starters-section {
+  flex-shrink: 0;
+  padding: 13px 14px 14px;
+  background: var(--starters-bg);
+  border: 1px solid var(--starters-border);
+  border-radius: 10px;
+}
+
+.starters-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--starters-label);
+  margin-bottom: 8px;
+}
+
+.starters-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  padding-top: 2px;
 }
 
-.support-list li {
-  font-size: 13px;
+.starters-list li {
+  font-size: 13.5px;
   line-height: 1.5;
   color: var(--text-secondary);
-  padding-left: 13px;
-  position: relative;
+  padding: 7px 0;
 }
 
-.support-list li::before {
-  content: '–';
-  position: absolute;
-  left: 0;
-  color: var(--text-tertiary);
-}
-
-.support-text {
-  font-size: 13px;
-  line-height: 1.55;
-  color: var(--text-secondary);
-  padding-top: 2px;
+.starters-list li + li {
+  border-top: 1px solid var(--starters-border);
 }
 
 
@@ -832,6 +786,10 @@ body:not(.student) .mode-badge {
 
   #level-select {
     width: 120px;
+  }
+
+  .waffle-text {
+    font-size: 22px;
   }
 }
 

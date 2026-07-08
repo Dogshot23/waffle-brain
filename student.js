@@ -1,99 +1,64 @@
 // ─────────────────────────────────────────────
 //  WaffleBrain — student.js
 //  Student interface controller.
-//  Depends on engine.js (WB) and studentSupport.js (STUDENT_SUPPORT).
+//
+//  Fresh architecture: the student page shows one random
+//  standalone Waffle from studentSupport.js. It never shows a
+//  teacher prompt, topic, or category — the teacher decides what
+//  to discuss; this page just gets the student talking.
+//
+//  Depends on studentSupport.js (WAFFLES).
 // ─────────────────────────────────────────────
 
 // ── DOM refs ─────────────────────────────────
-const promptCard        = document.getElementById('prompt-card');
-const modeLabel         = document.getElementById('mode-label');
-const promptText        = document.getElementById('prompt-text');
-const nextBtn           = document.getElementById('next-btn');
-const backBtn           = document.getElementById('back-btn');
+const promptCard      = document.getElementById('prompt-card');
+const waffleSection    = document.getElementById('waffle-section');
+const goalSection      = document.getElementById('goal-section');
+const startersSection  = document.getElementById('starters-section');
 
-const usefulEnglishList  = document.getElementById('useful-english-list');
-const trySayingList      = document.getElementById('try-saying-list');
-const keepGoingText      = document.getElementById('keep-going-text');
-const challengeText      = document.getElementById('challenge-text');
-const supportSection     = document.getElementById('support-section');
+const waffleText   = document.getElementById('waffle-text');
+const goalText     = document.getElementById('goal-text');
+const startersList = document.getElementById('starters-list');
+
+const nextBtn = document.getElementById('next-btn');
+const backBtn = document.getElementById('back-btn');
 
 // ── History ───────────────────────────────────
-const promptHistory = [];   // stores prompt objects already shown
-let   currentPrompt = null; // the prompt currently on screen
+const waffleHistory = [];   // stores Waffle objects already shown
+let   currentWaffle = null; // the Waffle currently on screen
 
-// ── Shared level (set by teacher page) ────────
-function getSharedLevel() {
-  return localStorage.getItem('wb_level') || 'B1';
+// ── Random Waffle picker ──────────────────────
+// Picks a random Waffle from WAFFLES, avoiding an immediate repeat of
+// the Waffle currently on screen whenever there's more than one to choose from.
+function pickRandomWaffle() {
+  if (!Array.isArray(WAFFLES) || WAFFLES.length === 0) return null;
+  if (WAFFLES.length === 1) return WAFFLES[0];
+
+  let next;
+  do {
+    next = WAFFLES[Math.floor(Math.random() * WAFFLES.length)];
+  } while (next === currentWaffle);
+
+  return next;
 }
 
-// ── Support lookup ────────────────────────────
-// Falls back to an empty-but-safe shape if a level/category
-// combination is missing from STUDENT_SUPPORT. The validation
-// pass below should catch this during load, but this keeps
-// rendering safe even if that check is ever bypassed.
-const EMPTY_SUPPORT = {
-  usefulEnglish: [],
-  trySaying: [],
-  keepGoing: '',
-  challenge: ''
-};
+// ── Render ─────────────────────────────────────
+function renderWaffle(w) {
+  currentWaffle = w;
 
-function getSupport(level, category) {
-  const levelEntry = STUDENT_SUPPORT && STUDENT_SUPPORT[level];
-  const entry = levelEntry && levelEntry[category];
-  return entry || EMPTY_SUPPORT;
-}
+  // 🧇 Waffle — the speaking mission
+  waffleText.textContent = w.waffle;
 
-// ── Validation ─────────────────────────────────
-// Confirms every level/category found in prompts.json has a
-// matching entry in STUDENT_SUPPORT. Missing combinations are
-// logged clearly but never block rendering.
-function validateStudentSupport(rawPromptData) {
-  Object.keys(rawPromptData).forEach(level => {
-    Object.keys(rawPromptData[level]).forEach(category => {
-      const levelEntry = STUDENT_SUPPORT && STUDENT_SUPPORT[level];
-      if (!levelEntry || !levelEntry[category]) {
-        console.error(
-          `[WaffleBrain] Missing studentSupport.js entry for level "${level}", ` +
-          `category "${category}". Add STUDENT_SUPPORT["${level}"]["${category}"] ` +
-          `with usefulEnglish, trySaying, keepGoing, and challenge.`
-        );
-      }
-    });
-  });
-}
+  // 🎯 Goal — why this Waffle matters
+  goalText.textContent = w.goal;
 
-// ── Render support blocks ─────────────────────
-function renderList(listEl, items) {
-  listEl.innerHTML = '';
-  items.forEach(item => {
+  // 💬 Waffle Starters — always visible, never collapsible
+  startersList.innerHTML = '';
+  w.starters.forEach(starter => {
     const li = document.createElement('li');
-    li.textContent = item;
-    listEl.appendChild(li);
+    li.textContent = starter;
+    startersList.appendChild(li);
   });
-}
-
-function renderSupport(level, category) {
-  const support = getSupport(level, category);
-  renderList(usefulEnglishList, support.usefulEnglish);
-  renderList(trySayingList, support.trySaying);
-  keepGoingText.textContent = support.keepGoing;
-  challengeText.textContent = support.challenge;
-}
-
-// ── Render (does NOT call WB.draw) ───────────
-function renderPrompt(p) {
-  currentPrompt = p;
-
-  // Category badge
-  modeLabel.textContent = p.category;
-  promptCard.setAttribute('data-mode', p.category);
-
-  // Main prompt
-  promptText.textContent = p.prompt;
-
-  // Student support (looked up separately from prompt selection)
-  renderSupport(getSharedLevel(), p.category);
 
   // Flash
   promptCard.classList.remove('flash');
@@ -102,52 +67,41 @@ function renderPrompt(p) {
   setTimeout(() => promptCard.classList.remove('flash'), 350);
 
   // Back button: enabled only when there is history to return to
-  backBtn.disabled = promptHistory.length === 0;
+  backBtn.disabled = waffleHistory.length === 0;
 }
 
-// ── Display (draws new prompt, saves current to history) ──
-function showPrompt() {
-  if (currentPrompt !== null) {
-    promptHistory.push(currentPrompt);
+// ── Display (draws new Waffle, saves current to history) ──
+function showWaffle() {
+  if (currentWaffle !== null) {
+    waffleHistory.push(currentWaffle);
   }
-  renderPrompt(WB.draw('', getSharedLevel()));
+  renderWaffle(pickRandomWaffle());
 }
 
 // ── Go back ───────────────────────────────────
 function goBack() {
-  if (promptHistory.length === 0) return;
-  renderPrompt(promptHistory.pop());
+  if (waffleHistory.length === 0) return;
+  renderWaffle(waffleHistory.pop());
 }
 
 // ── Init ──────────────────────────────────────
-WB.load()
-  .then((rawPromptData) => {
-    validateStudentSupport(rawPromptData);
-    nextBtn.disabled = false;
-    WB.prime();
-    showPrompt();
-  })
-  .catch(err => {
-    modeLabel.textContent  = 'Error';
-    promptText.textContent = `Could not load prompts. ${err.message}`;
-    promptCard.setAttribute('data-mode', '');
-    if (supportSection) supportSection.style.display = 'none';
-    console.error('[WaffleBrain]', err);
-  });
+if (Array.isArray(WAFFLES) && WAFFLES.length > 0) {
+  nextBtn.disabled = false;
+  showWaffle();
+} else {
+  waffleText.textContent = 'Could not load Waffles.';
+  if (goalSection) goalSection.style.display = 'none';
+  if (startersSection) startersSection.style.display = 'none';
+  console.error('[WaffleBrain] WAFFLES is missing or empty.');
+}
 
 // ── Event listeners ───────────────────────────
-nextBtn.addEventListener('click', showPrompt);
+nextBtn.addEventListener('click', showWaffle);
 backBtn.addEventListener('click', goBack);
 
 document.addEventListener('keydown', (e) => {
   if (e.code === 'Space' && e.target === document.body) {
     e.preventDefault();
-    if (!nextBtn.disabled) showPrompt();
-  }
-});
-
-window.addEventListener('storage', (e) => {
-  if (e.key === 'wb_level' && !nextBtn.disabled) {
-    WB.prime('', getSharedLevel());
+    if (!nextBtn.disabled) showWaffle();
   }
 });

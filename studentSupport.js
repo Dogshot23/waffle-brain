@@ -1,243 +1,299 @@
 // ─────────────────────────────────────────────
 //  WaffleBrain — studentSupport.js
-//  Student-facing scaffolding, keyed by level and category.
+//  Student-facing scaffolding: 30 standalone Waffles.
 //
-//  STUDENT_SUPPORT[level][category] = {
-//    usefulEnglish:  string[]   // key words/phrases relevant to the topic
-//    trySaying:      string[]  // sentence starters / model chunks
-//    keepGoing:      string     // a follow-up question to extend speaking time
-//    challenge:      string     // one small stretch goal for stronger students
-//  }
+//  SCHEMA:
+//  WAFFLES = [
+//    {
+//      waffle:   string    // a short, self-contained speaking mission —
+//                          // something to DO in the conversation with
+//                          // the teacher, not a language point.
+//      goal:     string    // one short sentence: why this Waffle matters.
+//      starters: string[]  // exactly 3 ready-to-use conversation starters —
+//                          // the 💬 Waffle Starters box. Always visible,
+//                          // never collapsible.
+//    },
+//    ...
+//  ]
+//
+//  Waffles are level-agnostic and category-agnostic: every entry is
+//  written for a roughly B1 student but flexes naturally for stronger
+//  or weaker learners. No pictures, worksheets, or external materials
+//  are required — each Waffle works from the words on the page alone.
 //
 //  This file is intentionally separate from prompts.json.
-//  Support content is shared across every prompt in a level/category —
-//  it does not vary per individual prompt, so it does not belong
-//  inside the (potentially thousands-of-entries) prompt bank.
-//
-//  Coverage required: every level x category combination that exists
-//  in prompts.json. Currently: 3 levels x 6 categories = 18 entries.
-//
-//  REVISION NOTE:
-//  Trimmed for cognitive load. Students should spend time speaking,
-//  not reading. Where usefulEnglish and trySaying communicated the
-//  same idea, the stronger version was kept and the weaker one cut.
-//  Caps applied: A1A2/B1 → usefulEnglish max 2, trySaying max 1 frame.
-//  B2+ → usefulEnglish max 1, trySaying: [] (advanced students
-//  generate their own frames, but the key is always present as an
-//  empty array so every entry keeps the same shape; keepGoing and
-//  challenge are unchanged at every level).
+//  Support content is not tied to any one prompt.
 // ─────────────────────────────────────────────
 
-const STUDENT_SUPPORT = {
-
-  // ───────────────────────────── A1A2 ─────────────────────────────
-  "A1A2": {
-
-    "Everyday Situations": {
-      usefulEnglish: [
-        "can / can't",
-        "because (for reasons)"
-      ],
-      trySaying: [
-        "I think you should..."
-      ],
-      keepGoing: "What would you do if that didn't work?",
-      challenge: "Try to give two different reasons, not just one."
-    },
-
-    "Describe": {
-      usefulEnglish: [
-        "big, small, old, new",
-        "next to, in, on"
-      ],
-      trySaying: [
-        "My favourite thing is... because..."
-      ],
-      keepGoing: "What's your favourite part, and why?",
-      challenge: "Try to use three different adjectives."
-    },
-
-    "Explain and Show": {
-      usefulEnglish: [
-        "it's easy / it's difficult",
-        "for example"
-      ],
-      trySaying: [
-        "First, you..."
-      ],
-      keepGoing: "What happens if you forget a step?",
-      challenge: "Try to explain it in exactly three steps."
-    },
-
-    "Simple Roleplay": {
-      usefulEnglish: [
-        "How much is...?",
-        "I'd like..."
-      ],
-      trySaying: [
-        "Excuse me, can I...?"
-      ],
-      keepGoing: "What do you say if they say no?",
-      challenge: "Try to stay in the role and not switch to explaining."
-    },
-
-    "Choose and Create": {
-      usefulEnglish: [
-        "the best thing is...",
-        "one problem is..."
-      ],
-      trySaying: [
-        "I choose... because..."
-      ],
-      keepGoing: "Why didn't you choose the other option?",
-      challenge: "Try to compare your choice with one you didn't pick."
-    },
-
-    "Guided Stories": {
-      usefulEnglish: [
-        "past simple (went, saw, had)",
-        "so (for result)"
-      ],
-      trySaying: [
-        "One day, ..."
-      ],
-      keepGoing: "How did the story end? What happened next?",
-      challenge: "Try to use three time words to order your story."
-    }
+const WAFFLES = [
+  {
+    waffle: "Ask your teacher about a holiday they really enjoyed.",
+    goal: "Find out three reasons it was so memorable.",
+    starters: [
+      "Can you tell me about...?",
+      "What made it special?",
+      "What happened next?"
+    ]
   },
-
-  // ────────────────────────────── B1 ──────────────────────────────
-  "B1": {
-
-    "Everyday Situations": {
-      usefulEnglish: [
-        "I'd recommend... / You could try...",
-        "on the other hand"
-      ],
-      trySaying: [
-        "If I were you, I'd..."
-      ],
-      keepGoing: "What could go wrong with that plan, and how would you fix it?",
-      challenge: "Try to give advice using a conditional (if... / unless...)."
-    },
-
-    "Describe": {
-      usefulEnglish: [
-        "compared to...",
-        "-ish / kind of / a bit"
-      ],
-      trySaying: [
-        "What stands out most is..."
-      ],
-      keepGoing: "How would you describe it to someone who's never seen it?",
-      challenge: "Try to include a comparison, not just a list of features."
-    },
-
-    "Explain and Show": {
-      usefulEnglish: [
-        "a common mistake is...",
-        "in other words"
-      ],
-      trySaying: [
-        "Make sure you..., otherwise..."
-      ],
-      keepGoing: "What would you tell a complete beginner to watch out for?",
-      challenge: "Try to explain why each step matters, not just what to do."
-    },
-
-    "Simple Roleplay": {
-      usefulEnglish: [
-        "I see what you mean, but...",
-        "let's find a compromise"
-      ],
-      trySaying: [
-        "I was wondering if you could..."
-      ],
-      keepGoing: "How does the other person probably feel in this situation?",
-      challenge: "Try to negotiate to an agreement, not just state your side."
-    },
-
-    "Choose and Create": {
-      usefulEnglish: [
-        "the downside is...",
-        "it comes down to..."
-      ],
-      trySaying: [
-        "All things considered, I'd go with..."
-      ],
-      keepGoing: "If your first choice weren't available, what's your backup plan?",
-      challenge: "Try to name a real downside of your own choice, not just the upside."
-    },
-
-    "Guided Stories": {
-      usefulEnglish: [
-        "past continuous (was doing)",
-        "just as / right when"
-      ],
-      trySaying: [
-        "Little did I know that..."
-      ],
-      keepGoing: "Was there a moment where things could have gone differently?",
-      challenge: "Try mixing past simple and past continuous in the same story."
-    }
+  {
+    waffle: "Tell your teacher about a place you love visiting.",
+    goal: "See if your teacher knows somewhere similar.",
+    starters: [
+      "One place I really like is...",
+      "Have you ever been somewhere like that?",
+      "What do you like about it?"
+    ]
   },
-
-  // ────────────────────────────── B2+ ─────────────────────────────
-  "B2+": {
-
-    "Everyday Situations": {
-      usefulEnglish: [
-        "it's a trade-off between..."
-      ],
-      trySaying: [],
-      keepGoing: "What assumption are you making that might not hold true?",
-      challenge: "Try to acknowledge a counterargument before responding to it."
-    },
-
-    "Describe": {
-      usefulEnglish: [
-        "what's striking about... is..."
-      ],
-      trySaying: [],
-      keepGoing: "Is there anything about it that surprises you, or contradicts first impressions?",
-      challenge: "Try to describe an impression, not just physical facts."
-    },
-
-    "Explain and Show": {
-      usefulEnglish: [
-        "the underlying logic is..."
-      ],
-      trySaying: [],
-      keepGoing: "Where does this approach tend to break down, or stop working?",
-      challenge: "Try to explain one exception or limitation, not just the general rule."
-    },
-
-    "Simple Roleplay": {
-      usefulEnglish: [
-        "I take your point, but..."
-      ],
-      trySaying: [],
-      keepGoing: "What would it take for you to change your position here?",
-      challenge: "Try to concede one small point before making your counter-argument."
-    },
-
-    "Choose and Create": {
-      usefulEnglish: [
-        "the crux of the matter is..."
-      ],
-      trySaying: [],
-      keepGoing: "What would have to change for you to make the opposite choice?",
-      challenge: "Try to hold two competing priorities in tension before deciding."
-    },
-
-    "Guided Stories": {
-      usefulEnglish: [
-        "in hindsight..."
-      ],
-      trySaying: [],
-      keepGoing: "How did that experience change your perspective afterwards?",
-      challenge: "Try to include a moment of reflection, not just a sequence of events."
-    }
+  {
+    waffle: "Ask your teacher about something they enjoy doing at weekends.",
+    goal: "Keep the conversation going until you learn three new things.",
+    starters: [
+      "What do you usually...?",
+      "Why do you enjoy it?",
+      "What do you do after that?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about your favourite food.",
+    goal: "Find one food you both enjoy.",
+    starters: [
+      "One of my favourites is...",
+      "What about you?",
+      "Why do you like it?"
+    ]
+  },
+  {
+    waffle: "Ask your teacher about a skill they would like to learn.",
+    goal: "Find out what makes that skill interesting.",
+    starters: [
+      "Is there anything you'd like to learn?",
+      "Why that?",
+      "How would you start?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about a film or series you enjoyed.",
+    goal: "Find out whether they would enjoy it too.",
+    starters: [
+      "Have you seen...?",
+      "It's about...",
+      "I think you'd like it because..."
+    ]
+  },
+  {
+    waffle: "Ask your teacher about a country they would like to visit.",
+    goal: "Find out what they would do there.",
+    starters: [
+      "Where would you like to go?",
+      "Why there?",
+      "What would you do first?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about someone you admire.",
+    goal: "Find out who they admire and why.",
+    starters: [
+      "I really admire...",
+      "What about you?",
+      "What makes that person special?"
+    ]
+  },
+  {
+    waffle: "Ask your teacher about something that made them laugh recently.",
+    goal: "Find out the whole story.",
+    starters: [
+      "What happened?",
+      "Who was there?",
+      "Why was it so funny?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about something you're looking forward to.",
+    goal: "Find out what they're excited about too.",
+    starters: [
+      "I'm really looking forward to...",
+      "What about you?",
+      "Why are you excited about it?"
+    ]
+  },
+  {
+    waffle: "Ask your teacher about a memorable teacher they had.",
+    goal: "Find out what made that person unforgettable.",
+    starters: [
+      "Can you tell me about...?",
+      "What made them special?",
+      "What did you learn from them?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about a difficult decision you had to make.",
+    goal: "Find out whether they would have made the same choice.",
+    starters: [
+      "I had to decide whether...",
+      "What would you have done?",
+      "Why do you think that?"
+    ]
+  },
+  {
+    waffle: "Ask your teacher about a hobby they used to have.",
+    goal: "Find out why they stopped doing it.",
+    starters: [
+      "Did you ever use to...?",
+      "Why did you stop?",
+      "Would you do it again?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about something you're proud of.",
+    goal: "Explain why it matters to you.",
+    starters: [
+      "I'm quite proud of...",
+      "It wasn't easy because...",
+      "What do you think?"
+    ]
+  },
+  {
+    waffle: "Ask your teacher about the best meal they've ever eaten.",
+    goal: "Find out what made it so memorable.",
+    starters: [
+      "Where was it?",
+      "What made it so good?",
+      "Would you go back?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about a place in your town that visitors should see.",
+    goal: "Convince them that it's worth visiting.",
+    starters: [
+      "If you came to my town...",
+      "I'd definitely recommend...",
+      "The best thing about it is..."
+    ]
+  },
+  {
+    waffle: "Ask your teacher about a childhood memory.",
+    goal: "Find out why they still remember it today.",
+    starters: [
+      "What happened?",
+      "How old were you?",
+      "Why do you still remember it?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about something you've changed your mind about.",
+    goal: "Explain what caused you to change your opinion.",
+    starters: [
+      "I used to think...",
+      "Then I realised...",
+      "Now I think..."
+    ]
+  },
+  {
+    waffle: "Ask your teacher about something they'd like to improve.",
+    goal: "Find out how they plan to improve it.",
+    starters: [
+      "What would you like to get better at?",
+      "Why that?",
+      "How will you do it?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about a tradition you enjoy.",
+    goal: "Find out whether they have something similar.",
+    starters: [
+      "Every year I...",
+      "Do you have anything similar?",
+      "What's your favourite tradition?"
+    ]
+  },
+  {
+    waffle: "Ask your teacher about something they hope to do in the next five years.",
+    goal: "Find out why it's important to them.",
+    starters: [
+      "What's something you'd really like to...?",
+      "Why is that important?",
+      "When would you like to do it?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about one thing you'd change in your town.",
+    goal: "See if your teacher agrees with your idea.",
+    starters: [
+      "I'd change...",
+      "What do you think?",
+      "Would that improve things?"
+    ]
+  },
+  {
+    waffle: "Ask your teacher about a useful piece of advice they've received.",
+    goal: "Find out whether it's still useful today.",
+    starters: [
+      "Who gave you the advice?",
+      "Why do you remember it?",
+      "Has it helped you?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about your ideal weekend.",
+    goal: "Compare your perfect weekends.",
+    starters: [
+      "Ideally I'd...",
+      "What about you?",
+      "Why does that sound perfect?"
+    ]
+  },
+  {
+    waffle: "Ask your teacher about a time something didn't go as planned.",
+    goal: "Find out how they solved the problem.",
+    starters: [
+      "What happened?",
+      "How did you deal with it?",
+      "What did you learn?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about a small achievement that made you happy.",
+    goal: "Explain why it mattered to you.",
+    starters: [
+      "Recently I managed to...",
+      "I was pleased because...",
+      "Have you ever felt like that?"
+    ]
+  },
+  {
+    waffle: "Ask your teacher which invention has changed everyday life the most.",
+    goal: "Compare your opinions and explain your reasons.",
+    starters: [
+      "I'd probably choose...",
+      "What would you choose?",
+      "Why?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about something you'd like to learn outside the classroom.",
+    goal: "Find out what your teacher would like to learn too.",
+    starters: [
+      "I'd love to learn...",
+      "What about you?",
+      "Why does that interest you?"
+    ]
+  },
+  {
+    waffle: "Ask your teacher about a challenge they overcame.",
+    goal: "Find out what helped them succeed.",
+    starters: [
+      "What was the biggest challenge?",
+      "How did you overcome it?",
+      "What advice would you give?"
+    ]
+  },
+  {
+    waffle: "Tell your teacher about something you hope never changes.",
+    goal: "Find one thing you both agree is worth keeping.",
+    starters: [
+      "I'd never want... to change.",
+      "What about you?",
+      "Why is it important?"
+    ]
   }
-
-};
+];
