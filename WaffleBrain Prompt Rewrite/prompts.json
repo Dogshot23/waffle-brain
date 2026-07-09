@@ -1,0 +1,2124 @@
+{
+  "A1A2": {
+    "Everyday Situations": [
+      {
+        "prompt": "Your friend is visiting your town on Saturday. They like food and outdoor activities, but they don't like museums.\nChoose:\nmorning activity\nlunch place\nafternoon activity\nTell your teacher:\nwhere you go\nwhat you do\nwhy your friend will like it",
+        "constraint": "Student gives a plan for 3 parts of the day and uses 'going to' with at least one reason."
+      },
+      {
+        "prompt": "Your friend always has a bad morning. Help them create a better routine.\nChoose solutions for:\nwaking up late\nforgetting things\nhaving no breakfast\nTell your teacher:\nwhat they should do first\nwhat they can change\nwhy it helps",
+        "constraint": "Student uses 'should' or 'can' for each problem and gives a reason."
+      },
+      {
+        "prompt": "Your friend is visiting your home. They don't eat meat and they don't like spicy food.\nPlan:\na meal\na drink\nsomething extra\nTell your teacher:\nwhat you prepare\nwhy you choose it",
+        "constraint": "Student names 3 food items and explains why each is suitable."
+      },
+      {
+        "prompt": "You planned a day outside, but now it is raining.\nChange the plan.\nChoose:\nactivity at home\nfood or drink\nsomething fun to do\nTell your teacher:\nyour new plan\nwhy it is better",
+        "constraint": "Student describes a new 3-part plan and gives one reason why it is better."
+      },
+      {
+        "prompt": "A visitor is new in your town. They need help getting somewhere.\nChoose:\ndestination\ntransport\nroute\nTell your teacher:\nwhere they go\nhow they get there\nwhat they need",
+        "constraint": "Student gives clear directions including destination, transport, and one practical detail."
+      },
+      {
+        "prompt": "You are organising a party for five friends. You have a small budget.\nChoose:\nplace\nfood\nactivities\nTell your teacher:\nyour plan\nwhy you choose these things",
+        "constraint": "Student names 3 plan items and gives at least one reason related to budget."
+      },
+      {
+        "prompt": "You need to buy a birthday present for a friend. You have €20.\nChoose:\npresent\nshop\nreason\nTell your teacher:\nwhat you buy\nwhy your friend likes it",
+        "constraint": "Student names the present, the shop, and gives a clear reason the friend will like it."
+      },
+      {
+        "prompt": "Your friend feels tired every day. Help them create a better routine.\nChoose:\nfood change\nactivity\nsleep habit\nTell your teacher:\nwhat they do\nwhy it helps",
+        "constraint": "Student gives 3 routine changes and a reason for at least one."
+      },
+      {
+        "prompt": "You are going on a two-day trip but you have a small bag.\nChoose:\nthree things to pack\ntransport\none activity\nTell your teacher:\nwhat you take\nwhy these things are important",
+        "constraint": "Student lists 3 packed items and explains why each is important."
+      },
+      {
+        "prompt": "A new student starts at your school. Help them feel comfortable.\nExplain:\nimportant places\nuseful things to know\nadvice for the first day",
+        "constraint": "Student gives at least 2 pieces of advice using 'should' or 'can'."
+      },
+      {
+        "prompt": "Your friend is moving to a new apartment. Help them choose the best place.\nChoose:\nlocation\nrooms\nimportant features\nTell your teacher:\nwhy this apartment is good\nwhat your friend can do there",
+        "constraint": "Student uses at least 2 adjectives and gives one reason the apartment suits the friend."
+      },
+      {
+        "prompt": "Your friend wants to spend one day without using their phone.\nCreate the plan.\nChoose:\nmorning activity\nafternoon activity\nevening activity\nTell your teacher:\nwhat they do\nwhy it is a good idea",
+        "constraint": "Student plans 3 parts of the day and gives one reason it is good."
+      },
+      {
+        "prompt": "Your friend starts a new job tomorrow and needs help.\nExplain:\nwhat they need\nwhat they do in the morning\nwhat they take with them",
+        "constraint": "Student gives clear advice covering preparation, morning routine, and items to bring."
+      },
+      {
+        "prompt": "You are choosing a restaurant for three friends. Everyone has different needs.\nFriends:\none person likes vegetarian food\none person wants cheap food\none person likes desserts\nTell your teacher:\nwhere you go\nwhat people eat\nwhy",
+        "constraint": "Student addresses all 3 friends' needs and explains the choice."
+      },
+      {
+        "prompt": "You want a fun weekend but you don't have much money.\nChoose:\nactivity\nfood\ntransport\nTell your teacher:\nyour plan\nhow you save money",
+        "constraint": "Student gives a 3-part plan and explains how at least one thing saves money."
+      },
+      {
+        "prompt": "A tourist is visiting your town and needs help.\nExplain:\nwhere they should go\nwhat they should see\nhow they travel",
+        "constraint": "Student uses 'should' to give at least 2 recommendations with a reason."
+      },
+      {
+        "prompt": "You have an important day tomorrow.\nChoose:\nbirthday\nfirst day at school\nmeeting new people\nPlan:\nclothes\nfood\npreparation\nTell your teacher:\nwhat you do\nwhy",
+        "constraint": "Student describes 3 preparations using 'going to' and gives at least one reason."
+      },
+      {
+        "prompt": "There is a problem in your home.\nChoose:\nno internet\nbroken light\nno hot water\nTell your teacher:\nwhat the problem is\nwhat you do\nwho helps",
+        "constraint": "Student states the problem clearly, describes one action, and names who helps."
+      },
+      {
+        "prompt": "You are shopping for food for one week.\nChoose:\nbreakfast food\nlunch food\ndinner food\nTell your teacher:\nwhat you buy\nwhy",
+        "constraint": "Student names food for all 3 meals and gives one reason for a choice."
+      },
+      {
+        "prompt": "Your friend wants to improve their English. Make a simple plan.\nChoose:\npractice activity\ntime of day\nplace\nTell your teacher:\nwhat they do\nwhy it helps",
+        "constraint": "Student gives a complete 3-part practice plan and explains why it helps."
+      }
+    ],
+    "Describe": [
+      {
+        "prompt": "Describe your bedroom.\n\nTalk about:\nfurniture\ncolours\nyour favourite thing",
+        "constraint": "Student describes at least 3 features of the room using 'There is/are' or 'It has'."
+      },
+      {
+        "prompt": "Describe your kitchen at home.\n\nTalk about:\nwhat is there\nwhere things are\nwhat you use every day",
+        "constraint": "Student names at least 3 items and uses 'There is/are' or 'I use'."
+      },
+      {
+        "prompt": "Describe a park near your home.\n\nTalk about:\nwhat is there\nwhat people do\nwhat you like",
+        "constraint": "Student names 3 features of the park and gives one opinion."
+      },
+      {
+        "prompt": "Describe your classroom.\n\nTalk about:\nfurniture\nwhat is on the walls\nwhere you sit",
+        "constraint": "Student describes at least 3 features using 'There is/are'."
+      },
+      {
+        "prompt": "Describe your favourite shop.\n\nTalk about:\nwhat they sell\nwhat it looks like\nwhy you like it",
+        "constraint": "Student describes what the shop sells and gives one reason they like it."
+      },
+      {
+        "prompt": "Describe your school bag.\n\nTalk about:\nwhat is inside\nwhat you use every day\none unusual thing",
+        "constraint": "Student names at least 3 items inside and uses 'There is/are' or 'I keep'."
+      },
+      {
+        "prompt": "Describe your fridge at home.\n\nTalk about:\nwhat is inside\nwhat you eat every day\nsomething you don't like",
+        "constraint": "Student names at least 3 food items and uses 'There is/are'."
+      },
+      {
+        "prompt": "Describe your desk or study space.\n\nTalk about:\nwhat is on it\nwhat you keep near you\nwhat you use most",
+        "constraint": "Student names at least 3 items and uses 'I keep' or 'I use'."
+      },
+      {
+        "prompt": "Describe your wardrobe or cupboard.\n\nTalk about:\nwhat is inside\nyour favourite clothes\nsomething you never wear",
+        "constraint": "Student names at least 3 items of clothing and uses 'There is/are'."
+      },
+      {
+        "prompt": "Describe your pencil case.\n\nTalk about:\nwhat is inside\nwhat you use every day\nyour favourite pen or pencil",
+        "constraint": "Student names at least 3 items inside and gives one preference."
+      },
+      {
+        "prompt": "Compare your home and your school.\n\nTalk about:\nwhat is similar\nwhat is different\nwhere you prefer to be",
+        "constraint": "Student gives at least one similarity and one difference between the two places."
+      },
+      {
+        "prompt": "Compare your summer clothes and your winter clothes.\n\nTalk about:\nwhat you wear\nthe colours\nwhat you prefer",
+        "constraint": "Student compares at least 2 items of clothing and gives one preference."
+      },
+      {
+        "prompt": "Compare your bedroom now and your bedroom when you were a child.\n\nTalk about:\nwhat is different\nwhat is the same\nwhat you miss",
+        "constraint": "Student gives at least 2 differences between the two bedrooms."
+      },
+      {
+        "prompt": "Compare a weekday and a weekend for you.\n\nTalk about:\nwhat you do\nwhat you eat\nhow you feel",
+        "constraint": "Student compares at least 2 activities between the two days."
+      },
+      {
+        "prompt": "Compare your house and a friend's house.\n\nTalk about:\nsize\nrooms\nwhat you like about each",
+        "constraint": "Student gives at least one similarity and one difference and names one thing they like."
+      },
+      {
+        "prompt": "Describe your favourite jacket.\n\nTalk about:\nwhat it looks like\nwhere you got it\nwhen you wear it",
+        "constraint": "Student describes appearance, origin, and when they use the item."
+      },
+      {
+        "prompt": "Describe your favourite mug or cup.\n\nTalk about:\nwhat it looks like\nwhere you got it\nwhy you like it",
+        "constraint": "Student describes appearance and gives one reason they like the item."
+      },
+      {
+        "prompt": "Describe your favourite gadget.\n\nTalk about:\nwhat it looks like\nwhat you use it for\nhow often you use it",
+        "constraint": "Student describes appearance and explains what the item is used for."
+      },
+      {
+        "prompt": "Describe your favourite book or comic.\n\nTalk about:\nwhat it looks like\nwhat it is about\nwhy you like it",
+        "constraint": "Student describes the item and gives one reason for liking it."
+      },
+      {
+        "prompt": "Describe your favourite pair of shoes.\n\nTalk about:\nwhat they look like\nwhere you got them\nwhen you wear them",
+        "constraint": "Student describes appearance, origin, and when they wear the item."
+      },
+      {
+        "prompt": "Describe a photo or picture in your home.\n\nTalk about:\nwhat is in it\nwhere it is\nwhy you keep it",
+        "constraint": "Student describes at least 2 details in the picture and gives one reason."
+      },
+      {
+        "prompt": "Describe your phone case.\n\nTalk about:\nthe colour\nthe design\nwhy you chose it",
+        "constraint": "Student describes colour and design and gives one reason for the choice."
+      },
+      {
+        "prompt": "Describe a plant in your home or garden.\n\nTalk about:\nwhat it looks like\nwhere it is\nwho looks after it",
+        "constraint": "Student describes appearance and location and names who cares for it."
+      },
+      {
+        "prompt": "Describe an object on your desk right now.\n\nTalk about:\nwhat it looks like\nwhat is next to it\nwhat you use it for",
+        "constraint": "Student describes appearance, one neighbouring object, and its use."
+      },
+      {
+        "prompt": "Describe a poster or picture on your wall.\n\nTalk about:\nwhat colour it is\nwhat is in it\nwhy you have it",
+        "constraint": "Student describes colour and content and gives one reason for having it."
+      },
+      {
+        "prompt": "Describe an animal without saying its name.\n\nTalk about:\nwhat it looks like\nwhere it lives\nwhat it eats\n\nCan your teacher guess?",
+        "constraint": "Student gives at least 3 clues without naming the animal."
+      },
+      {
+        "prompt": "Describe a job without saying its name.\n\nTalk about:\nwhat the person wears\nwhere they work\nwhat they do\n\nCan your teacher guess?",
+        "constraint": "Student gives at least 3 clues without naming the job."
+      },
+      {
+        "prompt": "Describe a food without saying its name.\n\nTalk about:\nwhat colour it is\nhow it tastes\nwhen you eat it\n\nCan your teacher guess?",
+        "constraint": "Student gives at least 3 clues without naming the food."
+      },
+      {
+        "prompt": "Describe a place in town without saying its name.\n\nTalk about:\nwhat you can do there\nwhat is inside\nwho goes there\n\nCan your teacher guess?",
+        "constraint": "Student gives at least 3 clues without naming the place."
+      },
+      {
+        "prompt": "Describe an object in the kitchen without saying its name.\n\nTalk about:\nwhat it looks like\nwhat it is used for\nwhere it is kept\n\nCan your teacher guess?",
+        "constraint": "Student gives at least 3 clues without naming the object."
+      }
+    ],
+    "Explain and Show": [
+      {
+        "prompt": "You are teaching me how to make your favourite drink.\n\nChoose:\ncoffee\ntea\njuice\nsmoothie\n\nTell me:\nWhat do we need?\nWhat do we do first?\nWhat happens next?",
+        "constraint": "Student names the ingredients and describes at least 2 steps in order using 'First' and 'Then'."
+      },
+      {
+        "prompt": "You are showing me your morning routine.\n\nTell me:\nWhat time do you wake up?\nWhat do you do first?\nWhat do you do before leaving home?",
+        "constraint": "Student describes at least 3 actions in order using sequencing words."
+      },
+      {
+        "prompt": "You are teaching me how to use your favourite app.\n\nChoose:\nmessaging app\nvideo app\ngame\nmusic app\n\nTell me:\nWhat is it for?\nWhat can you do?\nWhat should I do first?",
+        "constraint": "Student explains the app's purpose and gives at least 2 simple instructions."
+      },
+      {
+        "prompt": "You are teaching a visitor how to get around your town.\n\nChoose:\nrestaurant\nshop\npark\nstation\n\nShow me:\nHow to get to the place\nWhat transport to use\nWhat I need to know",
+        "constraint": "Student gives clear directions with at least one transport method and one landmark."
+      },
+      {
+        "prompt": "You are teaching me a simple recipe.\n\nChoose:\nsandwich\nsalad\nbreakfast\ndessert\n\nTell me:\nWhat ingredients do we need?\nWhat do we do first?\nHow do we finish?",
+        "constraint": "Student lists at least 2 ingredients and describes the steps in order."
+      },
+      {
+        "prompt": "You are showing me how to prepare for work or school.\n\nTell me:\nWhat do you prepare?\nWhat do you take with you?\nWhat do you do before leaving?",
+        "constraint": "Student names at least 3 things and describes the order of preparation."
+      },
+      {
+        "prompt": "You are teaching me a hobby.\n\nChoose:\nsport\ngame\ncraft\nactivity\n\nTell me:\nWhat do I need?\nHow do I start?\nWhat can I do next?",
+        "constraint": "Student names the equipment needed and explains at least 2 steps to begin."
+      },
+      {
+        "prompt": "You are showing me how to have a good weekend.\n\nCreate a plan.\n\nTell me:\nWhat do you do on Saturday?\nWhat do you do on Sunday?\nWhat is the best part?",
+        "constraint": "Student describes one activity for each day and gives a reason for the best part."
+      },
+      {
+        "prompt": "You are teaching me how to buy something in your country.\n\nChoose:\nfood\nclothes\na ticket\na gift\n\nTell me:\nWhere do I go?\nWhat do I say?\nWhat happens?",
+        "constraint": "Student describes the location, one useful phrase, and the process in order."
+      },
+      {
+        "prompt": "You are showing me how to relax after a busy day.\n\nCreate your routine.\n\nTell me:\nWhat do you do first?\nWhat do you do next?\nWhat makes you feel good?",
+        "constraint": "Student describes at least 2 steps in order and gives one reason it helps."
+      },
+      {
+        "prompt": "You are teaching me how to look after something.\n\nChoose:\na plant\na pet\na bike\na phone\n\nTell me:\nWhat does it need?\nWhat do you do?\nHow often?",
+        "constraint": "Student names at least 2 care actions and states how often each happens."
+      },
+      {
+        "prompt": "You are showing me how to get ready for a trip.\n\nTell me:\nWhat do you pack?\nWhat do you check?\nWhat do you do before leaving?",
+        "constraint": "Student names at least 3 preparation steps in a clear order."
+      },
+      {
+        "prompt": "You are teaching me how to celebrate a special day.\n\nChoose:\nbirthday\nholiday\nfestival\nfamily event\n\nTell me:\nWhat happens?\nWhat food do people have?\nWhat do people do?",
+        "constraint": "Student describes the event with at least 3 details, including food and an activity."
+      },
+      {
+        "prompt": "You are teaching me how to set the table for a meal.\n\nTell me:\nWhat do we need?\nWhere does everything go?\nWhat do we do first?",
+        "constraint": "Student names at least 3 items and describes their positions or order."
+      },
+      {
+        "prompt": "You are showing me how to pack a bag for school or work.\n\nTell me:\nWhat goes in first?\nWhat else do you add?\nWhat do you check before you go?",
+        "constraint": "Student describes packing in order using 'First', 'Then', and 'Finally'."
+      },
+      {
+        "prompt": "You are teaching me how to wash and dry laundry.\n\nTell me:\nWhat do you do first?\nWhat happens next?\nHow do you finish?",
+        "constraint": "Student explains at least 3 steps in the correct order."
+      },
+      {
+        "prompt": "You are showing me how to make a hot drink for a guest.\n\nTell me:\nWhat do you ask them?\nWhat do you prepare?\nHow do you serve it?",
+        "constraint": "Student describes at least 2 steps and one polite phrase used with a guest."
+      },
+      {
+        "prompt": "You are teaching me how to use public transport in your town.\n\nChoose:\nbus\ntrain\ntram\ntaxi\n\nTell me:\nWhere do you buy a ticket?\nHow do you know where to get on?\nWhat do you do when you arrive?",
+        "constraint": "Student explains at least 3 steps of the process in order."
+      },
+      {
+        "prompt": "You are showing me how to find your way to a new place.\n\nChoose:\na friend's house\na shop\nan office\na school\n\nTell me:\nWhat do you look for?\nWhich way do you go?\nHow do you know you arrived?",
+        "constraint": "Student gives directions with at least 2 landmarks or turns."
+      },
+      {
+        "prompt": "You are teaching me how to cook eggs.\n\nChoose:\nfried\nboiled\nscrambled\nomelette\n\nTell me:\nWhat do we need?\nWhat do we do first?\nHow do we know it is ready?",
+        "constraint": "Student names ingredients and describes at least 2 steps in order."
+      },
+      {
+        "prompt": "You are showing me how to organise your desk or bag.\n\nTell me:\nWhat goes where?\nWhat do you keep close?\nWhy is this a good system?",
+        "constraint": "Student describes at least 2 organisation choices and gives one reason."
+      },
+      {
+        "prompt": "You are teaching me how to plan a shopping trip.\n\nTell me:\nWhat do you write on your list?\nWhere do you go first?\nHow do you save time or money?",
+        "constraint": "Student names at least 2 items and describes one practical tip."
+      },
+      {
+        "prompt": "You are showing me how to charge and look after your phone.\n\nTell me:\nWhen do you charge it?\nWhat do you check?\nWhat do you avoid?",
+        "constraint": "Student describes at least 2 habits using present simple."
+      },
+      {
+        "prompt": "You are teaching me a simple exercise routine.\n\nChoose:\nstretching\nwalking\nhome workout\nyoga\n\nTell me:\nHow do you start?\nWhat do you do next?\nHow do you finish?",
+        "constraint": "Student describes at least 3 steps in order using sequencing words."
+      },
+      {
+        "prompt": "You are showing me how to make your bed.\n\nTell me:\nWhat do you do first?\nWhat do you do next?\nHow do you finish?",
+        "constraint": "Student describes the process in at least 2 clear steps."
+      },
+      {
+        "prompt": "You are teaching me how to plan a birthday surprise for a friend.\n\nTell me:\nWhat do you prepare?\nWho helps you?\nWhat happens on the day?",
+        "constraint": "Student names at least 2 preparations and describes what happens on the day."
+      },
+      {
+        "prompt": "You are showing me how to take care of your health every day.\n\nTell me:\nWhat do you eat or drink?\nWhat activity do you do?\nWhat helps you sleep well?",
+        "constraint": "Student names at least 3 daily habits using present simple."
+      },
+      {
+        "prompt": "You are teaching me how to send a message or email politely.\n\nTell me:\nHow do you start?\nWhat do you write?\nHow do you finish?",
+        "constraint": "Student describes at least 2 steps and one polite phrase."
+      },
+      {
+        "prompt": "You are showing me how to prepare a simple picnic.\n\nTell me:\nWhat food do you bring?\nWhat else do you pack?\nWhere do you go?",
+        "constraint": "Student names at least 3 items and one location detail."
+      },
+      {
+        "prompt": "You are teaching me how to look after a house plant.\n\nTell me:\nWhere do you put it?\nHow often do you water it?\nWhat else does it need?",
+        "constraint": "Student gives at least 2 care instructions using present simple."
+      }
+    ],
+    "Simple Roleplay": [
+      {
+        "prompt": "Set up: \"You are at a café. I am the person working there.\"\n\nYour goal: order a drink and a snack.\n\nChoose:\ndrink - coffee, tea, juice, or water\nfood - cake, sandwich, or salad\n\nAsk your teacher:\nWhat do you want?\nDo you want anything else?\n\nExtension: why do you choose this? What do you usually order?",
+        "constraint": "Student orders one drink and one food item and answers at least one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are checking into a hotel. I am the receptionist.\"\n\nYour goal: get a room for your holiday.\n\nChoose:\nroom - single, double, or family\nlength of stay - one night, three nights, or one week\n\nExtension: who are you travelling with? What do you need in the room?",
+        "constraint": "Student states room type and length of stay, and answers at least one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are buying clothes. I work in the shop.\"\n\nYour goal: find something to wear.\n\nChoose:\nitem - shirt, jacket, shoes, or trousers\ncolour - black, blue, or white\n\nExtension: when do you wear it? How much is it?",
+        "constraint": "Student names the item and colour they want and answers at least one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are calling a doctor. I am the receptionist.\"\n\nYour goal: make an appointment.\n\nChoose:\nproblem - cold, headache, or stomach ache\ntime - morning, afternoon, or evening\n\nExtension: how do you feel? What do you do to feel better?",
+        "constraint": "Student explains the problem, chooses a time, and answers at least one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are asking for directions. I know the area.\"\n\nYour goal: find a place.\n\nChoose a place:\nsupermarket, station, restaurant, or park\n\nAsk your teacher:\nWhere is it?\nHow do I get there?\n\nExtension: do you walk or take transport? How long does it take?",
+        "constraint": "Student names a place and asks for directions using both questions, then answers one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are moving to a new home. I am your friend.\"\n\nYour goal: ask for help with moving.\n\nChoose:\nthings to move - books, clothes, furniture, or boxes\nplan - what to move first, when to move, who can help\n\nExtension: why do you need help? What is difficult?",
+        "constraint": "Student names items to move, describes part of a plan, and answers at least one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are at a supermarket. I work there.\"\n\nYour goal: find the things you need.\n\nChoose items:\nfruit, milk, bread, or cheese\n\nAsk your teacher:\nWhere is it?\nHow much is it?\n\nExtension: what food do you buy every week? What do you eat at home?",
+        "constraint": "Student names at least two items and asks both questions, then answers one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are planning a birthday party. I am your friend.\"\n\nYour goal: decide the party plan together.\n\nChoose:\nplace - home, park, or restaurant\nfood - pizza, cake, or sandwiches\n\nExtension: who is coming? What time does it start?",
+        "constraint": "Student chooses a place and food and answers at least one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are at a train station. I work at the information desk.\"\n\nYour goal: buy a ticket and ask about your journey.\n\nChoose:\ndestination - city, beach, or airport\ntime - morning, afternoon, or evening\n\nExtension: who are you travelling with? How long is the journey?",
+        "constraint": "Student states a destination and time and answers at least one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are meeting a new neighbour. I live next door.\"\n\nYour goal: introduce yourself and have a short conversation.\n\nTalk about:\nname\nhome\njob or school\nhobbies\n\nExtension: what do you do in your free time? How long have you lived here?",
+        "constraint": "Student talks about at least 3 of the 4 topics and answers one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are returning something to a shop. I work there.\"\n\nYour goal: explain the problem and ask for help.\n\nChoose a problem:\nwrong size, broken, or wrong colour\n\nChoose a solution:\nexchange it or get a refund\n\nExtension: why don't you want it? What would you like instead?",
+        "constraint": "Student explains the problem, states the solution they want, and answers one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are booking a restaurant table. I work at the restaurant.\"\n\nYour goal: make a reservation.\n\nChoose:\npeople - 2, 4, or 6\ntime - 7pm, 8pm, or 9pm\n\nExtension: what food do you like? Do you need anything special?",
+        "constraint": "Student states number of people and a time, and answers at least one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are asking a friend for weekend plans.\"\n\nYour goal: make a plan together.\n\nChoose:\nactivity - cinema, shopping, walking, or eating out\nday - Saturday or Sunday\n\nExtension: why do you want to do this? What time do you meet?",
+        "constraint": "Student chooses an activity and a day and answers at least one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are calling a hotel because there is a problem. I work at reception.\"\n\nYour goal: explain the problem and find a solution.\n\nChoose a problem:\nno hot water, noisy room, or wrong room\n\nExtension: what do you want the hotel to do? Is the problem serious?",
+        "constraint": "Student explains the problem clearly and answers at least one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are preparing for your first day at a new school or job. I am your friend.\"\n\nYour goal: talk about your preparation.\n\nChoose what to prepare:\nclothes, bag, transport, or schedule\n\nExtension: what are you worried about? What do you need tomorrow?",
+        "constraint": "Student describes at least 2 preparations and answers one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are at a pharmacy. I work there.\"\n\nYour goal: explain a simple health problem and ask for help.\n\nChoose a problem:\ncold, cough, or headache\n\nChoose what you need:\nmedicine, advice, or information\n\nExtension: how do you feel? What do you usually do when you are sick?",
+        "constraint": "Student explains the problem, states what they need, and answers one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are ordering food for delivery. I work at the restaurant.\"\n\nYour goal: place an order and give information.\n\nChoose:\nfood - pizza, burger, salad, or pasta\ndrink - water, juice, or cola\n\nExtension: what food do you like? When do you usually order food?",
+        "constraint": "Student orders one food and one drink and answers at least one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are asking a friend to help you learn something. I am your friend.\"\n\nYour goal: ask for help and explain what you want to learn.\n\nChoose what to learn:\ncooking, English, sport, or technology\n\nExtension: why do you want to learn this? When do you want to start?",
+        "constraint": "Student names what they want to learn and answers at least one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are at an airport. I work at the information desk.\"\n\nYour goal: ask questions about your flight.\n\nChoose what you need:\nfind the gate, check the time, or find a place\n\nTalk about:\ndestination\ntime\nproblem\n\nExtension: where are you going? Who are you travelling with?",
+        "constraint": "Student states one need and talks about at least 2 of the 3 topics, then answers one extension question."
+      },
+      {
+        "prompt": "Set up: \"You are planning a day out with a friend. I am your friend.\"\n\nYour goal: create a simple plan together.\n\nChoose:\nactivity - visit a city, go shopping, go to the beach, or go to the park\ntime - morning, afternoon, or evening\n\nExtension: what do you need to take? What do you want to do first?",
+        "constraint": "Student chooses an activity and time and answers at least one extension question."
+      }
+    ],
+    "Choose and Create": [
+      {
+        "prompt": "Create a weekend plan.\n\nChoose:\nplace: park / city / beach\nactivity: walking / shopping / eating out\n\nTell your teacher:\nwhat you choose\nwhy you choose it",
+        "constraint": "Student chooses a place and an activity and gives one reason using 'because'."
+      },
+      {
+        "prompt": "Plan a day out with a friend.\n\nChoose:\ntime: morning / afternoon\nplace: museum / market / cinema\nfood: café / restaurant / picnic\n\nTell your teacher:\nyour plan\nwhy you choose it",
+        "constraint": "Student plans all 3 parts and uses 'we can' or 'let's' at least once."
+      },
+      {
+        "prompt": "Create a birthday party plan.\n\nChoose:\nplace: home / restaurant / park\nactivity: games / music / cake\ntime: afternoon / evening\n\nTell your teacher:\nyour plan\nwhy people will enjoy it",
+        "constraint": "Student names 3 plan items and gives one reason."
+      },
+      {
+        "prompt": "Plan a simple school day.\n\nChoose:\nfirst activity: study / sport / art\nlunch: at school / at home\nafter school: homework / free time\n\nTell your teacher:\nyour plan\nwhy",
+        "constraint": "Student describes all 3 parts of the day using simple present or 'going to'."
+      },
+      {
+        "prompt": "Create a breakfast menu for a small café.\n\nChoose:\nfood\ndrinks\nprices\n\nTell your teacher:\nwhat you choose\nwhy people will like it",
+        "constraint": "Student names at least 2 food items, 1 drink, and gives a price for each."
+      },
+      {
+        "prompt": "Create a menu for a birthday party.\n\nChoose:\nfood\ndrinks\nextras (cake, snacks)\n\nTell your teacher:\nwhat you choose\nwhy people will like it",
+        "constraint": "Student names 3 menu items and gives one reason using 'because'."
+      },
+      {
+        "prompt": "Design a picnic menu for a sunny day.\n\nChoose:\nfood\ndrinks\nextras\n\nTell your teacher:\nwhat you pack\nwhy it is good for a picnic",
+        "constraint": "Student names 3 items and explains why they suit a picnic."
+      },
+      {
+        "prompt": "Create a lunch menu for a small restaurant.\n\nChoose:\nmain dish\ndrink\ndessert\n\nTell your teacher:\nyour menu\nwhy customers will like it",
+        "constraint": "Student names all 3 courses and gives one reason customers will like it."
+      },
+      {
+        "prompt": "You are going on a two-day trip.\n\nChoose:\nimportant items (3)\noptional items (2)\n\nTell your teacher:\nwhat you pack\nwhy each item is important",
+        "constraint": "Student lists 3 important items and gives a reason for each."
+      },
+      {
+        "prompt": "Pack a bag for one day at the beach.\n\nChoose:\nimportant items\noptional items\n\nTell your teacher:\nwhat you take\nwhy",
+        "constraint": "Student names at least 3 items and gives one reason using 'because'."
+      },
+      {
+        "prompt": "Prepare a bag for the first day at a new job.\n\nChoose:\nimportant items\noptional items\n\nTell your teacher:\nwhat you take\nwhy each item helps",
+        "constraint": "Student lists 3 items and explains why each is useful."
+      },
+      {
+        "prompt": "You are moving to a new apartment.\n\nChoose:\n3 important things to take first\nreasons\n\nTell your teacher:\nwhat you take first\nwhy",
+        "constraint": "Student names 3 items in order of importance and gives one reason."
+      },
+      {
+        "prompt": "Prepare for a sports activity this weekend.\n\nChoose:\nsport: football / running / swimming\nimportant items\noptional items\n\nTell your teacher:\nwhat you take\nwhy",
+        "constraint": "Student chooses a sport, lists 2 items, and gives one reason."
+      },
+      {
+        "prompt": "Design a small bedroom.\n\nChoose:\nfurniture\ncolours\nwhere things go\n\nTell your teacher:\nyour design\nwhy it is comfortable",
+        "constraint": "Student names 3 items and explains why the room is comfortable."
+      },
+      {
+        "prompt": "Design a study area at home.\n\nChoose:\nfurniture\nequipment\nwhere things go\n\nTell your teacher:\nyour design\nwhy it helps you study",
+        "constraint": "Student names 3 items and gives one reason each helps studying."
+      },
+      {
+        "prompt": "Design a small café.\n\nChoose:\ntables and chairs\ndecoration\nmusic\n\nTell your teacher:\nyour design\nwhy customers will like it",
+        "constraint": "Student names 3 design choices and gives one reason customers will like it."
+      },
+      {
+        "prompt": "Design a shop window display.\n\nChoose:\nproducts to show\ncolours\ndecoration\n\nTell your teacher:\nyour design\nwhy it attracts customers",
+        "constraint": "Student names 3 elements and gives one reason it attracts customers."
+      },
+      {
+        "prompt": "Compare two hotels for a weekend trip.\n\nHotel A: cheap, small, near the beach\nHotel B: expensive, big, in the city centre\n\nTell your teacher:\nwhich you choose\nwhy",
+        "constraint": "Student names one hotel and gives 2 reasons for the choice."
+      },
+      {
+        "prompt": "Compare two after-school activities.\n\nOption A: sports club\nOption B: art class\n\nTell your teacher:\nwhich you choose\nwhy it is better for you",
+        "constraint": "Student chooses one option and gives at least one clear reason."
+      },
+      {
+        "prompt": "Compare two phones for a friend.\n\nPhone A: cheap, small screen, good battery\nPhone B: expensive, big screen, good camera\n\nTell your teacher:\nwhich you choose\nwhy",
+        "constraint": "Student names one phone and gives 2 reasons for the choice."
+      },
+      {
+        "prompt": "Compare two restaurants for a family dinner.\n\nRestaurant A: cheap, fast food\nRestaurant B: expensive, quiet, slow service\n\nTell your teacher:\nwhich you choose\nwhy it suits the family",
+        "constraint": "Student chooses one restaurant and gives one reason using 'because'."
+      },
+      {
+        "prompt": "Compare two ways to travel to work.\n\nOption A: bus, cheap, slow\nOption B: taxi, expensive, fast\n\nTell your teacher:\nwhich you choose\nwhy",
+        "constraint": "Student picks one option and gives at least one reason."
+      },
+      {
+        "prompt": "Choose a birthday gift for a friend. You have €20.\n\nChoose:\ngift\nshop\nreason\n\nTell your teacher:\nwhat you buy\nwhy your friend will like it",
+        "constraint": "Student names the gift, the shop, and gives one clear reason."
+      },
+      {
+        "prompt": "Plan a simple activity for a visiting family member.\n\nChoose:\nactivity\nplace\ntime\n\nTell your teacher:\nyour plan\nwhy they will enjoy it",
+        "constraint": "Student names 3 plan details and gives one reason the person will enjoy it."
+      },
+      {
+        "prompt": "Create a small welcome plan for a new student at school.\n\nChoose:\nwhat to show them\nwhat to tell them\nwho helps them",
+        "constraint": "Student gives at least 2 pieces of help using 'should' or 'can'."
+      },
+      {
+        "prompt": "Choose a helpful item to give a visitor who is new in town.\n\nChoose:\nitem: map / phone number / list of places\nreason\n\nTell your teacher:\nwhat you give\nwhy it helps",
+        "constraint": "Student names one item and gives one clear reason it helps the visitor."
+      },
+      {
+        "prompt": "Plan a small surprise for a family member's special day.\n\nChoose:\nactivity\nfood\ndecoration\n\nTell your teacher:\nyour plan\nwhy they will like it",
+        "constraint": "Student names 3 plan items and gives one reason using 'because'."
+      },
+      {
+        "prompt": "Create a shopping list for one week of dinners.\n\nChoose:\n5 food items\nwhy each is needed",
+        "constraint": "Student lists 5 items and gives at least one reason."
+      },
+      {
+        "prompt": "Plan a simple exercise schedule for one week.\n\nChoose:\ndays to exercise\ntype of exercise\ntime of day\n\nTell your teacher:\nyour schedule\nwhy it works for you",
+        "constraint": "Student gives a 3-part schedule and one reason it fits their life."
+      },
+      {
+        "prompt": "Create a simple morning routine for a busy weekday.\n\nChoose:\nfirst task\nbreakfast\nlast task before leaving\n\nTell your teacher:\nyour routine\nwhy it saves time",
+        "constraint": "Student describes all 3 steps and gives one reason it saves time."
+      }
+    ],
+    "Guided Stories": [
+      {
+        "prompt": "You lose your bag at the train station.\n\nFirst:\nwhere you last had it\n\nThen:\nwhere you look\n\nFinally:\nwho helps you find it",
+        "constraint": "Student uses First, Then, Finally and past tense to tell the story."
+      },
+      {
+        "prompt": "You arrive late for an important meeting.\n\nFirst:\nwhy you are late\n\nThen:\nwhat you do\n\nFinally:\nwhat happens when you arrive",
+        "constraint": "Student gives a reason for being late and describes 3 story parts in order."
+      },
+      {
+        "prompt": "You break your friend's phone by accident.\n\nFirst:\nhow it happens\n\nThen:\nwhat you say\n\nFinally:\nhow you solve the problem",
+        "constraint": "Student describes the accident, a reaction, and a solution using past tense."
+      },
+      {
+        "prompt": "You forget your homework at home on the day it is due.\n\nFirst:\nwhen you notice\n\nThen:\nwhat you do\n\nFinally:\nhow the problem ends",
+        "constraint": "Student tells a 3-part story with a clear ending using First, Then, Finally."
+      },
+      {
+        "prompt": "Your bike gets a flat tyre far from home.\n\nFirst:\nwhere you are\n\nThen:\nwhat you do\n\nFinally:\nhow you get home",
+        "constraint": "Student describes the problem and gives a clear solution in sequence."
+      },
+      {
+        "prompt": "Tell the story of a busy day at work or school.\n\nFirst:\nwhat happens in the morning\n\nThen:\nwhat happens in the afternoon\n\nFinally:\nhow the day ends",
+        "constraint": "Student describes 3 parts of the day using First, Then, Finally."
+      },
+      {
+        "prompt": "Tell the story of a special day, like a birthday or celebration.\n\nFirst:\nhow the day starts\n\nThen:\nwhat you do together\n\nFinally:\nhow the day finishes",
+        "constraint": "Student sequences the day into 3 clear parts with past tense verbs."
+      },
+      {
+        "prompt": "Tell the story of a trip to another city for one day.\n\nFirst:\nhow you travel\n\nThen:\nwhat you see or do\n\nFinally:\nhow you return home",
+        "constraint": "Student describes travel, activity, and return using sequence words."
+      },
+      {
+        "prompt": "Tell the story of a day when everything goes wrong.\n\nFirst:\nwhat happens first\n\nThen:\nwhat happens next\n\nFinally:\nhow the day ends",
+        "constraint": "Student describes at least 2 problems and gives an ending."
+      },
+      {
+        "prompt": "Tell the story of your first day at a new job or school.\n\nFirst:\nhow you feel arriving\n\nThen:\nwhat you do during the day\n\nFinally:\nhow you feel at the end",
+        "constraint": "Student uses First, Then, Finally and describes a feeling at start and end."
+      },
+      {
+        "prompt": "Choose a story:\n\nplace: park / shop / train station\nperson: friend / stranger / family member\nproblem: lost item / wrong direction / no money\n\nCreate the story using your choices.",
+        "constraint": "Student names all 3 choices and tells a complete story using them."
+      },
+      {
+        "prompt": "Choose a story:\n\nplace: restaurant / airport / school\nperson: teacher / classmate / waiter\nactivity: ordering food / catching a flight / giving a presentation\n\nCreate the story using your choices.",
+        "constraint": "Student includes all 3 chosen elements and uses First, Then, Finally."
+      },
+      {
+        "prompt": "Choose a story:\n\nplace: your house / a friend's house / a hotel\nperson: neighbour / visitor / delivery person\nproblem: broken object / strange noise / unexpected visitor\n\nCreate the story using your choices.",
+        "constraint": "Student uses all 3 chosen elements and completes a beginning, middle, and end."
+      },
+      {
+        "prompt": "Choose a story:\n\nplace: supermarket / gym / library\nperson: friend / stranger / staff member\nactivity: helping someone / finding something / meeting someone new\n\nCreate the story using your choices.",
+        "constraint": "Student combines the 3 choices into one clear story with a sequence."
+      },
+      {
+        "prompt": "Choose a story:\n\nplace: city street / bus stop / office\nperson: old friend / new colleague / lost tourist\nproblem: bad weather / wrong bus / forgotten appointment\n\nCreate the story using your choices.",
+        "constraint": "Student tells the story in order and uses all 3 chosen elements."
+      },
+      {
+        "prompt": "Imagine a park on a sunny afternoon.\n\nDescribe:\nwhere you are\n\nWhat you see:\npeople and things around you\n\nWhat happens next:\na small event",
+        "constraint": "Student describes the scene and adds one event that happens."
+      },
+      {
+        "prompt": "Imagine a small shop on a quiet street.\n\nDescribe:\nwhere you are\n\nWhat you see:\nitems and people in the shop\n\nWhat happens next:\na small event",
+        "constraint": "Student describes the location, at least 2 details, and one event."
+      },
+      {
+        "prompt": "Imagine a busy street in the city at rush hour.\n\nDescribe:\nwhere you are\n\nWhat you see:\npeople and traffic around you\n\nWhat happens next:\nsomething unexpected",
+        "constraint": "Student sets the scene and describes one unexpected happening."
+      },
+      {
+        "prompt": "Imagine a cosy house on a rainy day.\n\nDescribe:\nwhere you are\n\nWhat you see:\nrooms and objects around you\n\nWhat happens next:\na small event",
+        "constraint": "Student uses 'There is/are' to describe the scene and adds an event."
+      },
+      {
+        "prompt": "Imagine a train station early in the morning.\n\nDescribe:\nwhere you are\n\nWhat you see:\npeople and things around you\n\nWhat happens next:\na small event",
+        "constraint": "Student describes the setting with 2 details and one event."
+      },
+      {
+        "prompt": "A friend cannot find their way in a new city.\n\nWho needs help:\nyour friend\n\nWhat is the problem:\nthey are lost\n\nWhat happens:\nhow you help them",
+        "constraint": "Student identifies the problem and describes the help given, step by step."
+      },
+      {
+        "prompt": "A new student does not know anyone at school.\n\nWho needs help:\nthe new student\n\nWhat is the problem:\nthey feel alone\n\nWhat happens:\nhow you help them",
+        "constraint": "Student describes the problem and gives at least 2 actions that help."
+      },
+      {
+        "prompt": "A visitor to your town does not speak the local language well.\n\nWho needs help:\nthe visitor\n\nWhat is the problem:\nthey cannot communicate\n\nWhat happens:\nhow you help them",
+        "constraint": "Student describes the problem and explains the help step by step."
+      },
+      {
+        "prompt": "A family member forgets an important appointment.\n\nWho needs help:\nyour family member\n\nWhat is the problem:\nthey are late and worried\n\nWhat happens:\nhow you help them",
+        "constraint": "Student explains the problem and describes a clear solution."
+      },
+      {
+        "prompt": "A friend's car breaks down on the way to work.\n\nWho needs help:\nyour friend\n\nWhat is the problem:\nthe car does not work\n\nWhat happens:\nhow you help them",
+        "constraint": "Student uses First, Then, Finally to describe the help given."
+      },
+      {
+        "prompt": "Describe a messy room before and after cleaning.\n\nBefore:\nwhat it looked like\n\nChange:\nwhat you did\n\nAfter:\nwhat it looks like now",
+        "constraint": "Student contrasts before and after using 'There was/were' and 'Now there is/are'."
+      },
+      {
+        "prompt": "Describe a trip before you left and after you returned.\n\nBefore:\nhow you felt\n\nChange:\nwhat happened on the trip\n\nAfter:\nhow you feel now",
+        "constraint": "Student describes a feeling before and after, with one event in between."
+      },
+      {
+        "prompt": "Describe learning a new skill, before and after practice.\n\nBefore:\nwhat you could not do\n\nChange:\nhow you practised\n\nAfter:\nwhat you can do now",
+        "constraint": "Student contrasts ability before and after using 'could' and 'can'."
+      },
+      {
+        "prompt": "Describe a garden or park before and after a change of season.\n\nBefore:\nwhat it looked like\n\nChange:\nwhat happened over time\n\nAfter:\nwhat it looks like now",
+        "constraint": "Student describes 2 clear differences between before and after."
+      },
+      {
+        "prompt": "Describe your English before and after taking lessons.\n\nBefore:\nwhat you could not do\n\nChange:\nwhat you did to improve\n\nAfter:\nwhat you can do now",
+        "constraint": "Student contrasts ability before and after using 'could' and 'can'."
+      }
+    ]
+  },
+  "B1": {
+    "Everyday Situations": [
+      {
+        "prompt": "You have enough money to fix ONE thing in your apartment this month. Choose what to fix and explain why.",
+        "constraint": "Choose only one thing to fix."
+      },
+      {
+        "prompt": "Your internet company offers two plans: one cheaper but slower, one faster but more expensive. Which do you choose for your household, and why?",
+        "constraint": "Give at least one reason based on cost and one based on speed."
+      },
+      {
+        "prompt": "A friend's car needs a repair that will take either one day (expensive) or one week (cheaper). They ask what you'd do. Recommend an option and explain your reasoning.",
+        "constraint": "Recommend only one option, based on their situation, not yours."
+      },
+      {
+        "prompt": "A friend wants to borrow money from you until next month. Decide how you'll respond and explain your reasoning.",
+        "constraint": "Your answer must address both the friendship and the money."
+      },
+      {
+        "prompt": "You're choosing between two apartments: one with a shorter commute but higher rent, one with a longer commute but lower rent. Make your decision and justify it.",
+        "constraint": "Mention at least one trade-off you're accepting."
+      },
+      {
+        "prompt": "Your roommate is worried about a higher-than-expected energy bill and asks what you think you should both do. Recommend a solution and explain why.",
+        "constraint": "Recommend one specific action, not a list of possibilities."
+      },
+      {
+        "prompt": "You're planning meals for the week on a limited budget. Decide your approach and explain why it works.",
+        "constraint": "Mention at least two meals and one cost-saving decision."
+      },
+      {
+        "prompt": "Your child's school trip costs more than you planned to spend this month, but your child really wants to go. Find a compromise between the cost and their wishes, and explain your reasoning.",
+        "constraint": "Your compromise must involve a real trade-off, not a simple yes or no."
+      },
+      {
+        "prompt": "You have two days off this week but a long list of errands. Decide how to use the time and explain your priorities.",
+        "constraint": "You must leave at least one errand for later and explain why."
+      },
+      {
+        "prompt": "You've had a minor but persistent health problem for weeks. You can get a faster private appointment that costs more, or a free public one with a long wait. Decide what you'll do and explain your reasoning.",
+        "constraint": "Base your decision on how the problem is affecting your daily life, not just the cost."
+      },
+      {
+        "prompt": "You're deciding whether to fix your old washing machine or buy a new one. Make a decision and justify it.",
+        "constraint": "Mention cost and at least one other factor."
+      },
+      {
+        "prompt": "Your work schedule changed and now clashes with picking up your kids from school. Propose a compromise to your manager and explain why it could work for both sides.",
+        "constraint": "Your compromise must address both your needs and the company's."
+      },
+      {
+        "prompt": "A family member is choosing between two doctors — one available sooner but further away, one closer but with a longer wait. Recommend an option and explain your reasoning.",
+        "constraint": "Base your recommendation on urgency, not just distance."
+      },
+      {
+        "prompt": "Your monthly subscription costs are adding up. Decide which one to cancel and explain your reasoning.",
+        "constraint": "Choose only one subscription to cancel."
+      },
+      {
+        "prompt": "A friend has been invited to a wedding abroad but says the trip would be expensive. They ask what you think they should do. Recommend a decision and explain your reasoning.",
+        "constraint": "Your recommendation must balance cost against the value of the relationship."
+      },
+      {
+        "prompt": "You're moving to a new city and must choose between two neighborhoods — one convenient but noisy, one quiet but far from work. Decide and justify it.",
+        "constraint": "You must weigh convenience against quality of life."
+      },
+      {
+        "prompt": "Your team at work needs to choose a time for a weekly meeting that suits everyone's different schedules. Propose a solution and explain your reasoning.",
+        "constraint": "Mention at least one compromise."
+      },
+      {
+        "prompt": "You're comparing two jobs: one pays slightly more with a long commute, one pays less but is close to home. Evaluate the pros and cons of each, then explain which matters more to you.",
+        "constraint": "Weigh at least two factors for each job before reaching a conclusion."
+      },
+      {
+        "prompt": "Your family is choosing between two good schools for your child. Prioritise the factors that matter most — distance, reputation, cost, facilities — and explain which one wins.",
+        "constraint": "Rank at least three factors before naming your final choice."
+      },
+      {
+        "prompt": "You've been offered a slightly better-paid job in a different city, but taking it means leaving close friends and family behind. Decide what you'll do and explain your reasoning.",
+        "constraint": "You must weigh the relationship cost against the professional opportunity, not just the money."
+      },
+      {
+        "prompt": "Your internet stopped working and the company says a technician can't come for five days. Decide how you'll manage and explain your plan.",
+        "constraint": "Mention at least one practical workaround."
+      },
+      {
+        "prompt": "Your phone broke and you're deciding what matters most in a replacement: price, reliability, or how fast you can get one. Prioritise your needs and explain your final choice.",
+        "constraint": "Rank your priorities before stating your decision."
+      },
+      {
+        "prompt": "Two friends both want you to help them move house on the same weekend. Decide how you'll handle it and explain your reasoning.",
+        "constraint": "Your answer must address both friendships."
+      },
+      {
+        "prompt": "Your building is voting on whether to install a new elevator, which will raise everyone's monthly fees. Decide how you'll vote and explain why.",
+        "constraint": "Mention both the benefit and the cost."
+      },
+      {
+        "prompt": "You're deciding between cooking at home or eating out more often, based on your recent schedule and budget. Make a decision and justify it.",
+        "constraint": "Support your decision with a specific reason from your daily life."
+      },
+      {
+        "prompt": "Your gym membership is expensive and you haven't been going often. Decide what to do and explain your reasoning.",
+        "constraint": "Choose one specific action, not just 'I should think about it.'"
+      },
+      {
+        "prompt": "A neighbor is choosing between two contractors to renovate their kitchen — one cheaper with a longer wait, one pricier but available now. They ask for your recommendation. Recommend one and explain your reasoning.",
+        "constraint": "Your recommendation must address both time and money."
+      },
+      {
+        "prompt": "Your relative wants to stay with you for two weeks, but your apartment is small and you work from home. Decide how you'll handle it and explain your reasoning.",
+        "constraint": "Your answer must consider both hospitality and practicality."
+      },
+      {
+        "prompt": "You're deciding whether to take public transport or buy a car based on your daily needs. Make a decision and justify it.",
+        "constraint": "Mention at least one cost and one convenience factor."
+      },
+      {
+        "prompt": "Your local council is asking residents to choose between repairing the roads or improving the park. Decide how you'd vote and explain your reasoning.",
+        "constraint": "Your answer must consider the needs of the wider community, not just yourself."
+      }
+    ],
+    "Simple Roleplay": [
+      {
+        "prompt": "You booked a hotel room online but arrive to find it's already occupied. Negotiate a solution with the front desk staff, considering you have nowhere else to stay tonight.",
+        "constraint": "Student negotiates a workable solution and gives at least one reason to support their preferred outcome."
+      },
+      {
+        "prompt": "Your neighbour's music has been too loud for the past three nights and you have an early start tomorrow. Talk to them and agree on a reasonable compromise.",
+        "constraint": "Student raises the issue politely and reaches a compromise using softened disagreement language."
+      },
+      {
+        "prompt": "You and a colleague both want to take the same week off work. Discuss your reasons and try to reach a fair agreement.",
+        "constraint": "Student explains their reasons and works toward a fair agreement, acknowledging the colleague's position."
+      },
+      {
+        "prompt": "A repair shop wants to charge more than the original quote to fix your laptop. Negotiate the price, explaining what you can realistically afford.",
+        "constraint": "Student states the discrepancy, negotiates a new price, and justifies their budget limit."
+      },
+      {
+        "prompt": "A furniture shop sent you a sofa in the wrong colour and now claims it was your mistake when ordering online. Explain clearly why you believe the error was theirs and what you expect them to do about it.",
+        "constraint": "Student explains their position clearly, states evidence for their view, and states a desired outcome."
+      },
+      {
+        "prompt": "Your gym membership renewed automatically but you want to switch to a cheaper plan. Persuade the staff member to make the change without a penalty fee.",
+        "constraint": "Student persuades the staff member using at least one polite persuasion phrase and a clear reason."
+      },
+      {
+        "prompt": "A friend wants to split a restaurant bill equally, but you only ordered a small dish while they ordered several courses. Discuss a fair way to split it.",
+        "constraint": "Student proposes a fair alternative and reaches agreement with the friend."
+      },
+      {
+        "prompt": "You're sharing an apartment and one roommate keeps leaving dishes for days. Raise the issue and agree on a new system that works for both of you.",
+        "constraint": "Student resolves the conflict calmly and agrees on a concrete new system."
+      },
+      {
+        "prompt": "You need to change a dentist appointment, but the only free slot clashes with an important work meeting. Persuade the receptionist to find another solution for you.",
+        "constraint": "Student persuades the receptionist to offer an alternative, giving a clear reason for the request."
+      },
+      {
+        "prompt": "A delivery driver left your package with a neighbour without telling you, and it's now missing. Discuss the situation with the neighbour and decide what to do next.",
+        "constraint": "Student resolves the conflict calmly and agrees on a next step with the neighbour."
+      },
+      {
+        "prompt": "You want a refund for a concert ticket because the event was postponed to a date you can't attend. Convince the box office to help you.",
+        "constraint": "Student persuades the box office using a clear reason and at least one persuasive phrase."
+      },
+      {
+        "prompt": "Two friends are planning a weekend trip but disagree about the budget. Work together to find a plan that suits you both.",
+        "constraint": "Student proposes options and reaches agreement that addresses both budgets."
+      },
+      {
+        "prompt": "Your landlord wants to raise the rent, but you feel the increase is too high given the apartment's condition. Discuss and try to reach a compromise.",
+        "constraint": "Student negotiates the increase and justifies their position with a specific reason."
+      },
+      {
+        "prompt": "A colleague keeps taking credit for your ideas in meetings. Have a calm conversation with them about how you'd like things to change going forward.",
+        "constraint": "Student explains their position clearly and states what change they would like to see."
+      },
+      {
+        "prompt": "You want to return a jacket that no longer fits, but you've lost the receipt. Persuade the shop assistant to help you anyway.",
+        "constraint": "Student persuades the shop assistant using a polite, reasoned argument."
+      },
+      {
+        "prompt": "You and a friend are choosing a restaurant for a group dinner, but you have very different budgets. Find an option you can both agree on.",
+        "constraint": "Student proposes a compromise option and reaches agreement with the friend."
+      },
+      {
+        "prompt": "Your internet keeps cutting out, but the provider insists the problem is with your equipment, not their service. Resolve the disagreement and agree on how it will be fixed.",
+        "constraint": "Student resolves the conflict by presenting their view and agreeing on next steps with the provider."
+      },
+      {
+        "prompt": "Your tutor has raised their lesson price with very little notice. Explain your position on whether the increase feels fair and how you'd like to move forward.",
+        "constraint": "Student explains their position clearly and states a preferred way forward."
+      },
+      {
+        "prompt": "Your car mechanic recommends several repairs for your car, but you suspect not all of them are necessary. Persuade them to explain clearly which repairs are truly essential.",
+        "constraint": "Student persuades the mechanic to justify each recommendation, using at least one probing question."
+      },
+      {
+        "prompt": "You and a family member disagree about which venue to book for a celebration. Talk it through and reach a decision everyone can accept.",
+        "constraint": "Student proposes reasons for their preference and reaches a joint decision."
+      },
+      {
+        "prompt": "A shop refuses to exchange a gift because it was bought during a sale. Explain your situation and try to find a solution.",
+        "constraint": "Student persuades the shop assistant with a clear explanation and a suggested solution."
+      },
+      {
+        "prompt": "Your flight was delayed and you missed your connecting train, but airline staff say it isn't their responsibility. Resolve the disagreement and find out what they're willing to do.",
+        "constraint": "Student resolves the conflict by stating their case and negotiating what the airline will offer."
+      },
+      {
+        "prompt": "You want to cancel your phone contract early, but the company wants to charge a high cancellation fee. Explain your position on why the fee feels unfair and hear what they propose instead.",
+        "constraint": "Student explains their position clearly and responds to the company's counter-proposal."
+      },
+      {
+        "prompt": "A colleague wants to borrow money from you, but you're not comfortable lending the full amount. Discuss the situation honestly and agree on a solution.",
+        "constraint": "Student explains their position honestly and reaches an agreement that respects their limits."
+      },
+      {
+        "prompt": "You're sharing a taxi with a stranger heading in a similar direction, but your destinations aren't identical. Agree on a fair route and how to split the fare.",
+        "constraint": "Student negotiates a fair route and cost split, giving at least one reason for their proposal."
+      },
+      {
+        "prompt": "Your child's school wants to charge an extra fee for a trip you feel is too expensive. Speak with a staff member about your concerns.",
+        "constraint": "Student explains their position clearly and states what outcome they are hoping for."
+      },
+      {
+        "prompt": "A friend cancelled plans with you last minute for the second time. Have an honest conversation about how this affects your friendship.",
+        "constraint": "Student resolves the conflict by expressing how they feel and working toward an understanding."
+      },
+      {
+        "prompt": "You want to negotiate working from home two days a week, but your manager prefers everyone in the office. Present your case and try to find a compromise.",
+        "constraint": "Student negotiates a compromise and supports their case with at least one clear reason."
+      },
+      {
+        "prompt": "Your energy bill was unexpectedly high this month, and you and the provider disagree about the cause. Work together to reach an agreement on how to resolve it.",
+        "constraint": "Student works with the provider to reach an agreement on the cause and next steps."
+      },
+      {
+        "prompt": "Two neighbours disagree about who should pay for a shared fence that needs repairing. Discuss the situation and agree on a fair arrangement.",
+        "constraint": "Student negotiates a fair arrangement and justifies their proposed share of responsibility."
+      }
+    ],
+    "Describe": [
+      {
+        "prompt": "Compare the kitchen in your home with the kitchen of a friend or family member. Which one is more practical for cooking, and why?",
+        "constraint": "Give at least one reason based on practicality."
+      },
+      {
+        "prompt": "Describe your workplace or classroom. Is it well organised for getting things done? What would you change?",
+        "constraint": "Suggest at least one specific change."
+      },
+      {
+        "prompt": "Compare two cafés or restaurants you've been to in your neighbourhood. Which one has a better atmosphere, and why?",
+        "constraint": "Compare at least two specific aspects."
+      },
+      {
+        "prompt": "Describe how your local high street has changed in the last few years. Is it better or worse now?",
+        "constraint": "Mention at least one specific change."
+      },
+      {
+        "prompt": "Look at two menus from different restaurants. Which one is easier to choose from, and why?",
+        "constraint": "Give a reason based on clarity or choice."
+      },
+      {
+        "prompt": "Describe the public transport in your city. What is one change that would make it more convenient?",
+        "constraint": "Suggest exactly one improvement."
+      },
+      {
+        "prompt": "Compare shopping at a small local shop with shopping at a large supermarket. Which one works better for you, and why?",
+        "constraint": "Compare at least two aspects."
+      },
+      {
+        "prompt": "Describe a park near where you live. Is it well designed for visitors? What would you improve?",
+        "constraint": "Suggest at least one improvement."
+      },
+      {
+        "prompt": "Compare two photos of the same room, one tidy and one messy. Which one would help you focus more, and why?",
+        "constraint": "Justify the choice with a reason."
+      },
+      {
+        "prompt": "Describe your daily commute. What is the biggest problem with it, and what would fix it?",
+        "constraint": "Identify one main problem and one solution."
+      },
+      {
+        "prompt": "Describe your desk or workspace. Which three items are the most important for helping you work well, and why?",
+        "constraint": "Name exactly three items and explain each."
+      },
+      {
+        "prompt": "Describe how your school or workplace has changed since you first started there. Is it better or worse?",
+        "constraint": "Mention at least one specific change."
+      },
+      {
+        "prompt": "Compare two websites that sell the same kind of product. Which one is easier to use, and why?",
+        "constraint": "Give a reason based on usability."
+      },
+      {
+        "prompt": "Describe a shop you visit often. What is one thing that would make the shopping experience better?",
+        "constraint": "Suggest exactly one improvement."
+      },
+      {
+        "prompt": "Look at two logos for a local business. Which one is more memorable, and why?",
+        "constraint": "Justify the choice with a reason."
+      },
+      {
+        "prompt": "Describe the waiting area at a doctor's office, train station, or similar place. Is it comfortable for waiting? What would you change?",
+        "constraint": "Suggest at least one change."
+      },
+      {
+        "prompt": "Compare living in your current neighbourhood with living in another neighbourhood you know. Which one suits you better, and why?",
+        "constraint": "Compare at least two aspects."
+      },
+      {
+        "prompt": "Describe how a product you own has changed compared to an older version. Is the new version an improvement?",
+        "constraint": "Give a reason for your judgement."
+      },
+      {
+        "prompt": "Describe a public park you know. Which feature most needs improving, and why?",
+        "constraint": "Name one feature and justify the choice."
+      },
+      {
+        "prompt": "Describe the layout of a supermarket you know well. Does it make shopping efficient? What would you rearrange?",
+        "constraint": "Suggest at least one rearrangement."
+      },
+      {
+        "prompt": "Compare two photographs of the same street taken at different times of day. Which one feels safer or more welcoming?",
+        "constraint": "Justify the choice with a reason."
+      },
+      {
+        "prompt": "Describe the customer service at a shop or restaurant you visit. What works well, and what doesn't?",
+        "constraint": "Mention at least one strength and one weakness."
+      },
+      {
+        "prompt": "Describe your home, or one you know well. Which room would benefit most from renovation, and why?",
+        "constraint": "Name one room and justify the choice."
+      },
+      {
+        "prompt": "Describe how the design of a website or app has changed over the years. Is the current version easier to use?",
+        "constraint": "Give a reason based on usability."
+      },
+      {
+        "prompt": "Compare two offices or classrooms you've worked or studied in. Which one helps people concentrate more, and why?",
+        "constraint": "Compare at least two aspects."
+      },
+      {
+        "prompt": "Describe a service you use regularly, like a gym, salon, or delivery service. What is one improvement that would make it better?",
+        "constraint": "Suggest exactly one improvement."
+      },
+      {
+        "prompt": "Look at two versions of the same product's packaging. Which one is more effective at catching attention, and why?",
+        "constraint": "Justify the choice with a reason."
+      },
+      {
+        "prompt": "Describe how traffic or crowding has changed on a street you know well. Is it better or worse now?",
+        "constraint": "Mention at least one specific change."
+      },
+      {
+        "prompt": "You can only prioritise one improvement for your local public transport system. Decide what matters most, and explain your reasoning.",
+        "constraint": "Choose only one priority and justify it."
+      },
+      {
+        "prompt": "Compare a physical shop with its online store. Which one gives a better experience, and why?",
+        "constraint": "Compare at least two aspects."
+      }
+    ],
+    "Explain and Show": [
+      {
+        "prompt": "A new colleague doesn't know how to submit expense claims at your company. Explain the process and give one useful tip.",
+        "constraint": "Student explains the process in a logical order and adds one practical tip."
+      },
+      {
+        "prompt": "A friend is about to rent their first apartment and doesn't know what to check before signing. Explain what to look for and why.",
+        "constraint": "Student organises key points to check and gives a reason for each."
+      },
+      {
+        "prompt": "A tourist wants to buy a train ticket but the machine confuses them. Explain how to use it and recommend the fastest option.",
+        "constraint": "Student explains the steps clearly and recommends one option with a reason."
+      },
+      {
+        "prompt": "Your grandparent wants to make their first video call with the family but finds the app confusing. Explain how to set it up, step by step.",
+        "constraint": "Student explains the setup in a clear step-by-step order suitable for a beginner."
+      },
+      {
+        "prompt": "A friend wants to open a savings account but doesn't know which type suits them. Compare two options and recommend one.",
+        "constraint": "Student compares two options and justifies a recommendation based on the friend's needs."
+      },
+      {
+        "prompt": "A classmate missed the lesson on how to reference sources correctly. Explain the method and warn them about a common mistake.",
+        "constraint": "Student explains the method clearly and highlights one common mistake to avoid."
+      },
+      {
+        "prompt": "A neighbour is nervous about assembling flat-pack furniture for the first time. Explain how you would do it, step by step.",
+        "constraint": "Student explains the process in a logical step-by-step order."
+      },
+      {
+        "prompt": "A colleague is unsure whether to email or message a client about an urgent issue. Compare both methods and recommend one.",
+        "constraint": "Student compares both methods and recommends one with a clear reason."
+      },
+      {
+        "prompt": "A friend wants to start recycling properly but doesn't know the rules. Explain what goes where and give a tip to avoid mistakes.",
+        "constraint": "Student organises the explanation clearly and adds a practical tip."
+      },
+      {
+        "prompt": "A tourist asks you the best way to get from the airport to the city centre. Compare two options and recommend one, with reasons.",
+        "constraint": "Student compares two options and justifies their recommendation."
+      },
+      {
+        "prompt": "A new employee doesn't know how to book a meeting room. Explain the process and mention one thing people often forget.",
+        "constraint": "Student explains the process step by step and mentions a common oversight."
+      },
+      {
+        "prompt": "Your cousin wants to learn to cook rice without a rice cooker. Teach them the method, step by step, with one common mistake to avoid.",
+        "constraint": "Student teaches the method in order and warns about one common mistake."
+      },
+      {
+        "prompt": "A friend is confused about the difference between two phone contracts. Explain both and recommend the better one for a light user.",
+        "constraint": "Student explains both contracts and recommends one based on the user's needs."
+      },
+      {
+        "prompt": "A visitor to your country doesn't understand how tipping works. Explain the custom and give practical advice to avoid awkwardness.",
+        "constraint": "Student explains the custom clearly and gives practical advice."
+      },
+      {
+        "prompt": "A friend wants to return an item they bought online but isn't sure of the process. Explain the steps and warn them about the deadline.",
+        "constraint": "Student explains the steps in order and highlights a time-sensitive warning."
+      },
+      {
+        "prompt": "Your younger sibling wants to learn how to use the washing machine properly. Explain the process step by step and point out one common mistake.",
+        "constraint": "Student explains the process in a clear step-by-step order and names one common mistake."
+      },
+      {
+        "prompt": "A colleague is deciding between taking the bus or cycling to work. Compare both and recommend the best option for them.",
+        "constraint": "Student compares both options and gives a reasoned recommendation."
+      },
+      {
+        "prompt": "A friend is applying for their first library card and doesn't know what's needed. Explain the process clearly.",
+        "constraint": "Student explains the required steps in a clear, logical order."
+      },
+      {
+        "prompt": "A new tenant doesn't know how to report a maintenance problem to the landlord. Explain the process and why it's important to report it clearly.",
+        "constraint": "Student explains the process and gives a reason why clear reporting matters."
+      },
+      {
+        "prompt": "A friend wants to become more organised but doesn't know where to start. Recommend an approach and explain why it works.",
+        "constraint": "Student recommends a clear approach and justifies why it would be effective."
+      },
+      {
+        "prompt": "A parent wants to set up parental controls on their child's tablet but finds it confusing. Explain how, step by step.",
+        "constraint": "Student explains the setup process in a clear step-by-step order."
+      },
+      {
+        "prompt": "Your cousin has never packed for a long trip before and always forgets something important. Explain a method for packing so nothing gets left behind.",
+        "constraint": "Student explains the method in a logical order and gives one practical tip for avoiding forgotten items."
+      },
+      {
+        "prompt": "A tourist doesn't understand how the local bus payment system works. Explain it clearly and give one useful tip.",
+        "constraint": "Student explains the system clearly and adds one practical tip."
+      },
+      {
+        "prompt": "Your coworker doesn't know how to back up their files before a computer update. Explain the process and warn them what could go wrong if they skip it.",
+        "constraint": "Student explains the process step by step and warns of a consequence if skipped."
+      },
+      {
+        "prompt": "A friend wants to plant vegetables on their balcony for the first time. Explain how to start and what mistakes to avoid.",
+        "constraint": "Student explains how to begin and highlights mistakes to avoid."
+      },
+      {
+        "prompt": "A new student doesn't know how to register for classes online. Explain the steps clearly and mention a common problem to watch for.",
+        "constraint": "Student explains the steps in order and flags a common problem."
+      },
+      {
+        "prompt": "A friend is deciding whether to fix their old laptop or buy a new one. Compare both options and recommend the better choice.",
+        "constraint": "Student compares both options and justifies a recommendation."
+      },
+      {
+        "prompt": "A visitor wants to know the safest way to carry money while travelling in your city. Explain the options and recommend one.",
+        "constraint": "Student explains the options and recommends one with a clear reason."
+      },
+      {
+        "prompt": "A friend is nervous about their first job interview and doesn't know how to prepare. Explain what to do, step by step.",
+        "constraint": "Student explains preparation steps in a clear, logical order."
+      },
+      {
+        "prompt": "A neighbour wants to reduce their energy bill but doesn't know where to start. Explain two changes they could make and recommend the more effective one.",
+        "constraint": "Student explains two options and recommends the more effective one with reasoning."
+      }
+    ],
+    "Choose and Create": [
+      {
+        "prompt": "A small café owner wants to add three new items to the menu but has a limited kitchen budget. Decide what to add and explain why.",
+        "constraint": "You must stay within the limited kitchen budget and justify each choice."
+      },
+      {
+        "prompt": "Your school wants to redesign the library space for quiet study and group work, but the room is small. Decide how to divide the space and justify your choices.",
+        "constraint": "The layout must fit within the existing room size."
+      },
+      {
+        "prompt": "A family is moving into a smaller apartment and can only keep half of their furniture. Decide what to keep and explain your reasoning.",
+        "constraint": "You may only keep half of the original furniture."
+      },
+      {
+        "prompt": "A local sports club has a small budget to improve its training equipment. Decide how to spend it and justify your choices.",
+        "constraint": "You must stay within the club's small budget."
+      },
+      {
+        "prompt": "Your workplace wants to organise a team lunch, but only has one hour and a modest budget. Plan the event and explain your decisions.",
+        "constraint": "The event must fit within one hour and the modest budget."
+      },
+      {
+        "prompt": "A neighbourhood group wants to design a new bike parking area outside the community centre, but there's only room for ten bikes. Decide the layout and explain your design choices.",
+        "constraint": "Your design must fit within the limited space and explain why your layout works best."
+      },
+      {
+        "prompt": "A friend is planning a weekend trip with only two free days and a tight budget. Help them plan the itinerary and explain your choices.",
+        "constraint": "The plan must fit within two days and a tight budget."
+      },
+      {
+        "prompt": "A small office keeps running out of meeting room space during busy weeks. Propose a solution using only the rooms and equipment they already have, and explain why it would work.",
+        "constraint": "You may not add new rooms or buy new equipment."
+      },
+      {
+        "prompt": "Your neighbourhood wants to organise a weekend market but has only a small parking lot to use as space. Plan the layout and explain your reasoning.",
+        "constraint": "The market must fit within the small parking lot."
+      },
+      {
+        "prompt": "A school is organising a new after-school club but can only offer one hour per week. Decide what the club will focus on and justify your choice.",
+        "constraint": "The club can only run for one hour per week."
+      },
+      {
+        "prompt": "A family wants to reorganise their kitchen storage, but the cabinets are limited in size. Decide how to organise it and explain your reasoning.",
+        "constraint": "The plan must fit within the existing cabinet space."
+      },
+      {
+        "prompt": "A local charity shop has received a large donation of items but has very limited shelf space. Decide what to display and explain your choices.",
+        "constraint": "Choose what deserves priority and justify your decisions."
+      },
+      {
+        "prompt": "Your office needs a better system for organising shared files, but not everyone is comfortable with new technology. Propose a solution and explain why it works.",
+        "constraint": "The solution must be usable by people who are not comfortable with new technology."
+      },
+      {
+        "prompt": "A community centre wants to create a weekend program for teenagers, but has limited staff. Decide on the activities and explain your reasoning.",
+        "constraint": "The plan must work with the limited number of staff available."
+      },
+      {
+        "prompt": "A small hotel wants to improve its breakfast service without increasing costs. Decide what to change and justify your choices.",
+        "constraint": "The changes must not increase current costs."
+      },
+      {
+        "prompt": "A city council wants to design a small seating area in a public square, but the space is very limited. Decide what to include and explain your design choices.",
+        "constraint": "Your design must stay within the available space."
+      },
+      {
+        "prompt": "A community centre keeps losing track of who has booked its shared meeting rooms. Propose a simple solution using materials they already have, and explain why it would work.",
+        "constraint": "Do not rely on buying new software or equipment."
+      },
+      {
+        "prompt": "A school is planning a science fair but has a limited number of tables and rooms available. Organise the layout and explain your reasoning.",
+        "constraint": "The layout must fit within the limited tables and rooms."
+      },
+      {
+        "prompt": "Your team is decorating a shared workspace but only has a small budget. Decide what to buy and justify your choices.",
+        "constraint": "You must stay within the small budget."
+      },
+      {
+        "prompt": "A city council wants to improve a small public park, but the budget only covers a few changes. Decide what to prioritise and explain why.",
+        "constraint": "You may only choose a few changes within the limited budget."
+      },
+      {
+        "prompt": "A small delivery company is struggling to get packages across town during rush hour. Propose a solution within their current budget and explain why it would help.",
+        "constraint": "You cannot increase the budget or hire more staff."
+      },
+      {
+        "prompt": "A small restaurant wants to reduce food waste but cannot change suppliers. Propose a solution and justify your choices.",
+        "constraint": "The solution must work with the current suppliers."
+      },
+      {
+        "prompt": "Your local library wants to organise a reading event for children, but has a limited number of volunteers. Plan the event and explain your decisions.",
+        "constraint": "The event must work with the limited number of volunteers."
+      },
+      {
+        "prompt": "A family wants to plan a birthday party for a child, but has a strict budget. Decide what to include and justify your choices.",
+        "constraint": "You must stay within the strict budget."
+      },
+      {
+        "prompt": "A small clothing shop wants to reorganise its store layout to improve customer flow, but cannot expand the space. Decide the new layout and explain why.",
+        "constraint": "The layout must fit within the current store space."
+      },
+      {
+        "prompt": "Your company is planning a training day for new employees, but only has half a day available. Organise the schedule and justify your priorities.",
+        "constraint": "The schedule must fit within half a day."
+      },
+      {
+        "prompt": "A community group wants to organise a clean-up event for a local park, but has limited volunteers and equipment. Plan the event and explain your decisions.",
+        "constraint": "The plan must work with the limited volunteers and equipment."
+      },
+      {
+        "prompt": "A family wants to improve their weekly grocery shopping to save money, but cannot change stores. Decide what to change and justify your choices.",
+        "constraint": "You must continue shopping at the same store."
+      },
+      {
+        "prompt": "Your school's sports day needs a new schedule because of limited field space. Reorganise the events and explain your reasoning.",
+        "constraint": "The schedule must fit within the limited field space."
+      },
+      {
+        "prompt": "A local hobby club wants to design a simple newsletter to keep members updated, but only has one volunteer to produce it. Decide what to include and explain your choices.",
+        "constraint": "Keep the newsletter realistic for one volunteer to produce regularly."
+      }
+    ],
+    "Guided Stories": [
+      {
+        "prompt": "You were supposed to pick up your younger sibling from school, but you got stuck in traffic and arrived 40 minutes late. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains the reason for the delay and how they resolved the situation with their sibling."
+      },
+      {
+        "prompt": "You accidentally posted a private message into a public work group chat. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains the immediate action they took and how they handled any consequences."
+      },
+      {
+        "prompt": "Your flight was cancelled the night before an important event you had to attend. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student describes at least one alternative they considered before deciding."
+      },
+      {
+        "prompt": "You bought a used bike online, but when it arrived it was in worse condition than described. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains the outcome of their decision, whether they got a refund, repair, or kept it."
+      },
+      {
+        "prompt": "You realised the night before a big exam that you had been studying the wrong chapter. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains the reasoning behind their last-minute decision."
+      },
+      {
+        "prompt": "Last year you decided to change your diet suddenly for health reasons, and it caused problems at first. Tell the story: what happened, what you decided to do, and why you think it turned out the way it did.",
+        "constraint": "Student reflects on the outcome using \"I think the reason was...\" and explains what they would do differently."
+      },
+      {
+        "prompt": "Your neighbour asked to borrow your car for the weekend, but you had plans that required it. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains how they handled saying yes or no and the consequence."
+      },
+      {
+        "prompt": "You went to renew your ID card, but the office told you a document was missing. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains the steps they took to solve the problem and the result."
+      },
+      {
+        "prompt": "You had two ways to get to an important meeting: a faster route with a risk of being late if there was traffic, or a slower but more reliable one. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains the reasoning behind choosing one option over another, not just what went wrong."
+      },
+      {
+        "prompt": "You signed up for a local sports team, but on the first day you realised your skill level was much lower than everyone else's. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains their decision to continue, adapt, or leave, with a reason."
+      },
+      {
+        "prompt": "You were organising a small neighbourhood event and two people disagreed strongly about how to spend the shared budget. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student negotiates or mediates between the two views and explains the final decision."
+      },
+      {
+        "prompt": "You promised to help a family member move house, but on the day you got an unexpected job opportunity interview at the same time. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains how they prioritised and what the outcome was."
+      },
+      {
+        "prompt": "You accidentally sent a private email to the wrong person at your company. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains the immediate action they took and the consequence."
+      },
+      {
+        "prompt": "You lost your wallet on the second day of a trip abroad. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains at least two steps they took to solve the problem."
+      },
+      {
+        "prompt": "You were at the checkout and realised you didn't have enough money to pay for everything in your basket. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains how they decided what to keep or remove and why."
+      },
+      {
+        "prompt": "During a group project, one teammate stopped doing their share of the work close to the deadline. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains how the group's decision affected the final result."
+      },
+      {
+        "prompt": "You noticed a colleague at work seemed unwell but insisted on continuing a physically demanding task. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains their decision to step in or not, and the reasoning behind it."
+      },
+      {
+        "prompt": "You noticed water leaking from the ceiling, coming from the neighbour's flat above. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains the sequence of actions taken to resolve the issue."
+      },
+      {
+        "prompt": "You reported a broken streetlight outside your house, but nothing happened for weeks and it became dangerous. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains what further action they took and why."
+      },
+      {
+        "prompt": "During a long train delay, two passengers near you started arguing over the last empty seat. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains any action taken to ease the situation and the reasoning behind it."
+      },
+      {
+        "prompt": "A year ago you gave up a hobby you used to enjoy because of a scheduling conflict. Tell the story: what happened at the time, what you decided to do, and why you think it was or wasn't the right call.",
+        "constraint": "Student reflects on the long-term outcome of a past decision, not just the immediate event."
+      },
+      {
+        "prompt": "You saw an elderly neighbour struggling to carry groceries up the stairs during a busy morning. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains their decision and the effect it had."
+      },
+      {
+        "prompt": "Two family members had an argument right before an important family dinner you had organised. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains how they tried to resolve the tension and what happened as a result."
+      },
+      {
+        "prompt": "Your manager asked you to complete an urgent task, but you already had another deadline the same day. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains how they managed the competing priorities."
+      },
+      {
+        "prompt": "You arrived at a hotel to find the room didn't match what was advertised online. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains their decision and how the situation was resolved."
+      },
+      {
+        "prompt": "You noticed the cashier gave you too much change. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains the reasoning behind their decision and its outcome."
+      },
+      {
+        "prompt": "You were offered two ways to complete a class assignment: working alone for full control, or with a partner for less work but shared risk. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains the trade-offs they considered before deciding."
+      },
+      {
+        "prompt": "You forgot to take an important medication before a long day of work. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains the decision made to manage the situation safely."
+      },
+      {
+        "prompt": "You accidentally damaged your neighbour's fence while parking your car. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains how they took responsibility and the result."
+      },
+      {
+        "prompt": "You noticed your workplace was throwing away large amounts of recyclable material every day. Tell the story: what happened, what you decided to do, and why.",
+        "constraint": "Student explains the action they took and whether it changed the situation."
+      }
+    ]
+  },
+  "B2+": {
+    "Everyday Situations": [
+      {
+        "prompt": "Your neighbor's dog barks loudly most evenings, and you suspect it's because the dog is left alone too long. You want to raise this without damaging the relationship.",
+        "constraint": "Explain exactly how you'd start the conversation and why that approach is less likely to cause conflict."
+      },
+      {
+        "prompt": "You share an apartment with a roommate, and chores have become unevenly split — you're doing more. Design a fairer system going forward.",
+        "constraint": "Justify why your system is fair to both people, not just convenient for you."
+      },
+      {
+        "prompt": "A friend has tried to start exercising regularly three times this year and quit each time within a month. They ask for your advice.",
+        "constraint": "Explain what you think is actually causing the pattern before suggesting a fix."
+      },
+      {
+        "prompt": "You've noticed your child (or a younger relative) spends most of their free time on their phone instead of other activities. You want to address it without starting a fight.",
+        "constraint": "Prioritise the single most effective approach and explain why it beats the alternatives."
+      },
+      {
+        "prompt": "A close friend asks you to stop posting photos of them on social media without asking first. You think they're overreacting slightly, but you want to respect their wishes.",
+        "constraint": "Consider both your friend's perspective and your own before explaining how you'd respond."
+      },
+      {
+        "prompt": "Your local council has a small budget and must choose one improvement for the neighborhood park — new lighting, better play equipment, or more benches.",
+        "constraint": "Prioritise the three options and justify your ranking."
+      },
+      {
+        "prompt": "You bought a kitchen appliance that broke after two weeks. The store's return policy is unclear about whether it covers this. Walk through how you'd handle getting it resolved.",
+        "constraint": "Explain your reasoning at each step, not just the final outcome."
+      },
+      {
+        "prompt": "You're hosting a dinner for a few friends, but you've just remembered one of them has a dietary restriction you don't know the details of, and it's too late to ask.",
+        "constraint": "Explain how you'd solve this and what risks you're managing."
+      },
+      {
+        "prompt": "You're considering adopting a dog, but you live in a small apartment and work long hours some days. Decide whether it's a good idea right now.",
+        "constraint": "Consider both the animal's wellbeing and your own lifestyle before deciding."
+      },
+      {
+        "prompt": "Two things you care about are scheduled at the same time next weekend — a close friend's birthday and a family gathering you rarely get to attend.",
+        "constraint": "Explain what factors influenced your decision, not just which one you picked."
+      },
+      {
+        "prompt": "A friend is consistently 20-30 minutes late whenever you meet, and it's starting to bother you. You still want to keep the friendship strong.",
+        "constraint": "Explain how you'd raise it in a way that addresses the behavior without sounding like an accusation."
+      },
+      {
+        "prompt": "Your apartment building wants to start a recycling program, but residents have very different habits and some are resistant. Propose how it should work.",
+        "constraint": "Explain how your plan accounts for the more resistant residents, not just the cooperative ones."
+      },
+      {
+        "prompt": "Your parent lives alone and increasingly forgets small things, like turning off the stove. You're not sure if it's a serious issue or normal aging.",
+        "constraint": "Explain how you'd evaluate the situation before deciding what to do."
+      },
+      {
+        "prompt": "You've noticed you check your phone the moment you wake up and often lose an hour without realizing it. You want to change this.",
+        "constraint": "Diagnose why you think this habit formed before explaining your plan to change it."
+      },
+      {
+        "prompt": "At a town meeting, some residents want a strict quiet hours rule after 9pm, while others feel it's excessive for a lively neighborhood. You're asked for your view.",
+        "constraint": "Explain what would make the rule fair to both groups."
+      },
+      {
+        "prompt": "A friend has seemed stressed and withdrawn lately, but hasn't said anything is wrong. You're deciding how, or whether, to bring it up.",
+        "constraint": "Explain the reasoning behind your approach and what you're trying to avoid."
+      },
+      {
+        "prompt": "There's a small leak under your kitchen sink. You could try fixing it yourself or wait for the landlord, who is usually slow to respond.",
+        "constraint": "Weigh the risks of each option before explaining your decision."
+      },
+      {
+        "prompt": "You're organizing a weekend trip with friends who have very different ideas about pace — some want a packed schedule, others want to relax.",
+        "constraint": "Explain how you'd design a plan that keeps most people satisfied, and what compromises it requires."
+      },
+      {
+        "prompt": "You want to pick up a new hobby, but you only have a few hours a week free, and several options are competing for your attention.",
+        "constraint": "Prioritise based on what you'd actually sustain long-term, not just what sounds appealing now."
+      },
+      {
+        "prompt": "You and your sibling disagree about how to divide responsibility for caring for an aging parent, and it's starting to cause tension.",
+        "constraint": "Propose a solution and explain why it's fair to both of you, not only convenient for one side."
+      },
+      {
+        "prompt": "A family member keeps sharing news articles online that you're fairly sure are inaccurate or misleading. You want to say something without causing a family conflict.",
+        "constraint": "Explain how you'd approach it and why that method is more likely to be effective than direct confrontation."
+      },
+      {
+        "prompt": "You've been offered a small amount of freelance work on the side, but it would mean giving up your one evening a week of downtime, which you protect carefully. Decide whether it's worth it.",
+        "constraint": "Explain what you're actually weighing, not just the time cost."
+      },
+      {
+        "prompt": "You read two news articles about the same local event that describe it quite differently. Explain how you'd figure out what actually happened.",
+        "constraint": "Explain your reasoning process, not just your conclusion."
+      },
+      {
+        "prompt": "You've realized you procrastinate on tasks you actually care about, not just boring ones, and it's starting to frustrate you.",
+        "constraint": "Explain what you think is really causing this before describing your plan to address it."
+      },
+      {
+        "prompt": "Package theft has increased in your neighborhood recently, and neighbors are discussing possible solutions, from cameras to a shared delivery locker.",
+        "constraint": "Consider the advantages and disadvantages of at least two approaches before recommending one."
+      },
+      {
+        "prompt": "You're trying to decide whether to repair an old but sentimental piece of furniture or replace it with something more practical.",
+        "constraint": "Explain what factors matter most to you and why they outweigh the others."
+      },
+      {
+        "prompt": "A close friend just went through a breakup and you're not sure whether they want advice, distraction, or just someone to listen.",
+        "constraint": "Explain how you'd figure out what they need and why that matters more than guessing."
+      },
+      {
+        "prompt": "You're decluttering a shared living space, but a family member wants to keep several items you think are unnecessary.",
+        "constraint": "Explain how you'd navigate the disagreement and what a fair compromise would look like."
+      },
+      {
+        "prompt": "Three generations live in the same house, and everyone has different routines around meal times, noise, and shared spaces, causing friction.",
+        "constraint": "Propose a compromise and explain what makes it realistic, not just ideal."
+      },
+      {
+        "prompt": "A friend has a habit — interrupting, canceling plans last-minute, something similar — that's been quietly bothering you for months. You're deciding whether to say something or let it go.",
+        "constraint": "Weigh what you'd gain and lose either way before explaining your decision."
+      }
+    ],
+    "Simple Roleplay": [
+      {
+        "prompt": "A neighbour keeps parking in the spot you normally use, even though it's not officially assigned to anyone. Play the conversation where you raise this with them.",
+        "constraint": "Propose a fair long-term solution, not just a one-time complaint."
+      },
+      {
+        "prompt": "Your close friend wants you to invest in a business idea you have doubts about. Have the conversation where you express your concerns.",
+        "constraint": "Support each concern with a specific reason, not a general feeling."
+      },
+      {
+        "prompt": "A colleague takes credit for an idea that was actually yours during a meeting. Act out the private conversation you have with them afterwards.",
+        "constraint": "Address the issue without accusing them outright of lying."
+      },
+      {
+        "prompt": "You're returning a piece of furniture that broke after normal use, but you no longer have the receipt. Play the conversation with the store manager.",
+        "constraint": "Build your case using at least two different types of evidence or argument."
+      },
+      {
+        "prompt": "Your teenage nephew wants your support convincing his parents to let him take a gap year. Play the conversation where you help him think it through.",
+        "constraint": "Raise both a potential benefit and a potential risk before offering your opinion."
+      },
+      {
+        "prompt": "A tenant is asking you, their landlord, to reduce the rent because of ongoing noise from nearby construction. Play out the negotiation.",
+        "constraint": "Offer a compromise that isn't simply \"yes\" or \"no.\""
+      },
+      {
+        "prompt": "Your roommate has started inviting people over late at night without asking you first. Act out the conversation where you set a boundary.",
+        "constraint": "Explain the impact on you before stating what you'd like to change."
+      },
+      {
+        "prompt": "A close friend asks to borrow a significant amount of money for the second time. Play the conversation where you decide how to respond.",
+        "constraint": "Justify your decision using reasoning, not just an emotional reaction."
+      },
+      {
+        "prompt": "You're a travel agent trying to convince a client to choose a less obvious destination over the one they originally wanted. Act out the conversation.",
+        "constraint": "Anticipate one objection they might raise and address it directly."
+      },
+      {
+        "prompt": "Your adult sibling wants to skip a family gathering again, and you think it's starting to hurt your parents' feelings. Play the conversation where you bring this up.",
+        "constraint": "Avoid sounding like you're lecturing them."
+      },
+      {
+        "prompt": "A client is unhappy with a service you delivered on time but says it wasn't what they expected. Play the conversation where you handle the complaint.",
+        "constraint": "Clarify the misunderstanding before offering any solution."
+      },
+      {
+        "prompt": "You're trying to convince an older relative to finally start using a smartphone for video calls. Act out the conversation.",
+        "constraint": "Frame your argument around what matters to them, not what's convenient for you."
+      },
+      {
+        "prompt": "Two friends of yours had a falling out, and you've been asked by one of them to talk to the other. Play the mediation conversation.",
+        "constraint": "Stay neutral and represent both sides fairly."
+      },
+      {
+        "prompt": "You're booking a package holiday and the travel agent's offer doesn't quite match what you need, while your ideal option is outside their standard terms. Act out the negotiation.",
+        "constraint": "Reach an agreement where both sides give something up, not just you."
+      },
+      {
+        "prompt": "You want to convince your partner to try a completely different type of holiday than you usually take. Act out the conversation.",
+        "constraint": "Acknowledge what they'll be giving up before making your case."
+      },
+      {
+        "prompt": "A student asks you, their tutor, to give them a better grade than they earned, arguing they tried hard. Play the conversation where you respond.",
+        "constraint": "Separate effort from outcome clearly in your explanation."
+      },
+      {
+        "prompt": "You're negotiating with a contractor who wants to charge more than originally agreed, citing unexpected complications. Act out the discussion.",
+        "constraint": "Question the reasoning before accepting or rejecting the new price."
+      },
+      {
+        "prompt": "A friend keeps cancelling plans at the last minute, and you're deciding whether to say something. Play the conversation where you finally bring it up.",
+        "constraint": "Give them a genuine chance to explain before reacting."
+      },
+      {
+        "prompt": "You're trying to convince a stubborn family member to see a doctor about a health issue they keep dismissing. Act out the conversation.",
+        "constraint": "Use a mix of concern and practical reasoning, not pressure alone."
+      },
+      {
+        "prompt": "A new employee you're training keeps doing a task in a way that used to work but no longer fits the current process. Play the conversation where you correct this.",
+        "constraint": "Explain the reasoning behind the current process, not just the rule itself."
+      },
+      {
+        "prompt": "You want your manager to let you work from home two extra days a week, but the company generally discourages it. Act out the negotiation.",
+        "constraint": "Offer something in return rather than only asking for the change."
+      },
+      {
+        "prompt": "Two colleagues on your team are in an ongoing dispute over how to split a shared project, and you've been asked to mediate. Play the three-way conversation.",
+        "constraint": "Guide both sides toward a solution without taking either side."
+      },
+      {
+        "prompt": "A friend asks for your honest opinion on a big life decision you privately disagree with. Play the conversation where you respond honestly.",
+        "constraint": "Be honest without being harsh or dismissive."
+      },
+      {
+        "prompt": "You're negotiating with a housemate over who takes on more shared chores, since your schedules have changed. Act out the discussion.",
+        "constraint": "Propose a system, not just a one-off fix."
+      },
+      {
+        "prompt": "A colleague wants your help covering up a small mistake they made at work. Play the conversation where you respond to this request.",
+        "constraint": "Explain your reasoning for whatever you decide to do."
+      },
+      {
+        "prompt": "A university housing officer suggests moving you to a different room to resolve a conflict with your roommate, but you believe the other student should move instead. Play the conversation where you make your case.",
+        "constraint": "Support your position with reasoning the officer can actually act on."
+      },
+      {
+        "prompt": "A close friend keeps asking to stay at your place for extended periods, and you need to say no this time without damaging the friendship. Play the conversation where you hold your ground.",
+        "constraint": "Maintain your decision even if they push back or offer alternatives."
+      },
+      {
+        "prompt": "A friend is upset that you didn't invite them to something and you have to explain why. Play the conversation where you handle this.",
+        "constraint": "Acknowledge their feelings before explaining your reasoning."
+      },
+      {
+        "prompt": "You're trying to convince a group of friends to change a long-standing tradition that no longer works well for everyone. Act out the conversation.",
+        "constraint": "Address why the change is worth the disruption it will cause."
+      },
+      {
+        "prompt": "A close friend confides that they're thinking of ending a long relationship, and asks what you honestly think. Play the conversation where you respond.",
+        "constraint": "Offer perspective without telling them what to do."
+      }
+    ],
+    "Describe": [
+      {
+        "prompt": "Describe a person you know who is very good at handling stressful situations calmly.",
+        "constraint": "Explain what specifically they do differently from people who don't cope well."
+      },
+      {
+        "prompt": "Describe the neighbourhood or area where you grew up.",
+        "constraint": "Explain how it shaped the kind of person you became."
+      },
+      {
+        "prompt": "Describe an object in your home that you'd genuinely be upset to lose.",
+        "constraint": "Go beyond what it looks like — explain why it matters more than its price would suggest."
+      },
+      {
+        "prompt": "Describe how your eating habits have changed since you were a teenager.",
+        "constraint": "Compare then and now, and explain what caused the shift."
+      },
+      {
+        "prompt": "Describe a piece of technology that annoys you every time you use it.",
+        "constraint": "Explain exactly what design choice causes the frustration, not just that it's \"bad.\""
+      },
+      {
+        "prompt": "Describe the atmosphere of a place you go to relax.",
+        "constraint": "Explain which specific elements create that atmosphere — sound, light, people, pace."
+      },
+      {
+        "prompt": "Describe how your city or town changes between day and night.",
+        "constraint": "Explain what this shift reveals about the people who live there."
+      },
+      {
+        "prompt": "Describe a skill you have that most people don't realize takes real effort.",
+        "constraint": "Explain what non-experts typically get wrong about it."
+      },
+      {
+        "prompt": "Describe the way a close friend or family member expresses affection.",
+        "constraint": "Compare their style to how you express it, and explain the difference."
+      },
+      {
+        "prompt": "Describe a meal that reminds you of a specific period in your life.",
+        "constraint": "Explain the connection between the food and the memory, not just the taste."
+      },
+      {
+        "prompt": "Describe how weather affects your mood or productivity.",
+        "constraint": "Give specific examples that support your explanation."
+      },
+      {
+        "prompt": "Describe the personality of someone you find difficult to work or study with.",
+        "constraint": "Explain the underlying reason the dynamic is difficult, not just a list of traits."
+      },
+      {
+        "prompt": "Describe a habit you have that other people find strange.",
+        "constraint": "Explain the logic behind it from your own point of view."
+      },
+      {
+        "prompt": "Describe how your taste in music or films has evolved over the years.",
+        "constraint": "Explain what triggered the change at each stage."
+      },
+      {
+        "prompt": "Describe a public space (park, square, station) that works surprisingly well for the people who use it.",
+        "constraint": "Explain the specific design or social factors that make it succeed."
+      },
+      {
+        "prompt": "Describe how communication styles differ between your closest colleagues or classmates at work or in study.",
+        "constraint": "Explain what makes one style more effective than the other in that setting."
+      },
+      {
+        "prompt": "Describe a piece of clothing or an accessory that says something about who you are.",
+        "constraint": "Explain what it communicates and whether that's intentional."
+      },
+      {
+        "prompt": "Describe how a family tradition has changed across generations in your family.",
+        "constraint": "Explain what stayed the same in meaning even as the form changed."
+      },
+      {
+        "prompt": "Describe someone whose sense of humour you find genuinely funny.",
+        "constraint": "Explain what makes their humour work, using a specific example."
+      },
+      {
+        "prompt": "Describe the way your energy levels shift throughout a typical day.",
+        "constraint": "Explain what causes the pattern and how you work around it."
+      },
+      {
+        "prompt": "Describe how you typically make decisions under time pressure at work or when studying.",
+        "constraint": "Explain what this reveals about your priorities compared to when you have plenty of time."
+      },
+      {
+        "prompt": "Describe how noise or silence affects the way you think or work.",
+        "constraint": "Explain the difference with reference to a specific situation."
+      },
+      {
+        "prompt": "Describe a place that felt completely different the second time you visited it.",
+        "constraint": "Explain whether the place changed, you changed, or both."
+      },
+      {
+        "prompt": "Describe a moment when you clearly noticed you were more tired or run-down than usual.",
+        "constraint": "Explain the specific signs your body or mind gave you before you consciously realized it."
+      },
+      {
+        "prompt": "Describe how your relationship with money has changed as you've gotten older.",
+        "constraint": "Explain the experience or realization that triggered the biggest shift."
+      },
+      {
+        "prompt": "Describe a smell or sound that instantly takes you back to a particular time in your life.",
+        "constraint": "Explain why you think that specific sense is so strongly linked to memory for you."
+      },
+      {
+        "prompt": "Describe how two people you know handle the same type of stress in very different ways.",
+        "constraint": "Explain what each approach reveals about their personality."
+      },
+      {
+        "prompt": "Describe a routine you follow that other people would probably find boring.",
+        "constraint": "Explain what value it actually gives you."
+      },
+      {
+        "prompt": "Describe how travelling somewhere new has changed the way you plan a trip now compared to your first ever trip alone.",
+        "constraint": "Evaluate whether the change has made your travel experiences better or simply different."
+      },
+      {
+        "prompt": "Describe a first impression you had of someone that turned out to be completely wrong.",
+        "constraint": "Explain what specifically caused you to misjudge them."
+      }
+    ],
+    "Explain and Show": [
+      {
+        "prompt": "Explain to someone who has never used public transport in a big city how to figure out which bus or train to take to get somewhere unfamiliar.",
+        "constraint": "Include what to do if you make a mistake and end up on the wrong route."
+      },
+      {
+        "prompt": "A friend wants to start cooking for themselves but feels intimidated by the kitchen. Explain how you'd help them get comfortable with basic cooking.",
+        "constraint": "Focus on building confidence, not just listing techniques."
+      },
+      {
+        "prompt": "Show a younger family member how to tell if a piece of information online is trustworthy or not.",
+        "constraint": "Use a specific example to illustrate your reasoning process."
+      },
+      {
+        "prompt": "Explain to someone how to negotiate a lower price when buying something secondhand, like a car or furniture.",
+        "constraint": "Describe the tone and approach that works, not just the words to say."
+      },
+      {
+        "prompt": "A colleague is nervous about giving their first presentation at work. Explain how you'd help them prepare.",
+        "constraint": "Address both the practical preparation and the mental side of it."
+      },
+      {
+        "prompt": "Explain how to read a room during a conversation and tell whether someone is genuinely interested or just being polite.",
+        "constraint": "Give examples of the subtle signals involved."
+      },
+      {
+        "prompt": "Show someone how to plan a trip on a tight budget without feeling like they're missing out.",
+        "constraint": "Explain the trade-offs you'd suggest they consider."
+      },
+      {
+        "prompt": "Explain to a teenager how compound interest works and why starting to save early matters.",
+        "constraint": "Use an everyday comparison rather than technical financial terms."
+      },
+      {
+        "prompt": "A friend keeps overwatering or underwatering their houseplants. Explain how to figure out what a plant actually needs.",
+        "constraint": "Describe how you'd notice and interpret the plant's signals."
+      },
+      {
+        "prompt": "Explain how to defuse a tense moment when two people are arguing at a family gathering.",
+        "constraint": "Focus on what you'd say and do in the first thirty seconds."
+      },
+      {
+        "prompt": "Show someone how to organize their week when they have too many tasks and not enough time.",
+        "constraint": "Explain the reasoning behind how you'd prioritize, not just a list of steps."
+      },
+      {
+        "prompt": "Explain to a visitor from another country an unwritten social rule in your culture that often confuses outsiders.",
+        "constraint": "Explain why the rule exists, not just what it is."
+      },
+      {
+        "prompt": "A friend's phone or laptop is running slowly and they don't understand why. Explain how you'd help them figure out the cause.",
+        "constraint": "Walk through your thinking step by step as if diagnosing the problem live."
+      },
+      {
+        "prompt": "Explain how to comfort a friend who is upset without making them feel like you're trying to fix everything immediately.",
+        "constraint": "Describe what you would say and, just as importantly, what you would avoid saying."
+      },
+      {
+        "prompt": "Show someone how to choose good produce at a market or grocery store — what to look and feel for.",
+        "constraint": "Explain the reasoning behind each sign you look for."
+      },
+      {
+        "prompt": "Explain to a new colleague or classmate how to adapt their communication style depending on who they're talking to.",
+        "constraint": "Use specific examples of what changes and why."
+      },
+      {
+        "prompt": "A friend wants to get fitter but has failed at gym memberships before. Explain how you'd help them build a routine that actually sticks.",
+        "constraint": "Focus on the psychological reasons past attempts failed, not just an exercise plan."
+      },
+      {
+        "prompt": "Explain how to spot when an online deal or advertisement is too good to be true.",
+        "constraint": "Give the specific warning signs and explain the logic behind each one."
+      },
+      {
+        "prompt": "Show someone how to fold a fitted sheet, or another everyday task that looks harder than it is.",
+        "constraint": "Describe it clearly enough that someone could follow along without seeing you do it."
+      },
+      {
+        "prompt": "Explain to a child why it's important to apologise properly, and what makes an apology feel genuine versus empty.",
+        "constraint": "Use a concrete example of a good and a bad apology."
+      },
+      {
+        "prompt": "Coach someone on how to make good decisions quickly when they're under time pressure at work or while studying.",
+        "constraint": "Explain how this differs from decision-making when there's no rush, and why that matters."
+      },
+      {
+        "prompt": "Explain how to tell if a used item, like a phone or a bike, is actually in good condition before buying it.",
+        "constraint": "Describe your inspection process in the order you'd actually do it."
+      },
+      {
+        "prompt": "Show someone unfamiliar with recycling rules how to figure out what can and can't be recycled in general.",
+        "constraint": "Explain the underlying logic rather than a memorised list."
+      },
+      {
+        "prompt": "Explain to someone how to recognise the early warning signs that they're more tired or run-down than they realise.",
+        "constraint": "Describe the specific signs to watch for and why people often miss them."
+      },
+      {
+        "prompt": "A friend keeps missing deadlines because they underestimate how long tasks take. Explain how you'd help them estimate time more realistically.",
+        "constraint": "Use a real example of a task and how you'd break it down."
+      },
+      {
+        "prompt": "Explain how to politely decline an invitation without damaging the relationship.",
+        "constraint": "Give an example of wording that manages to be both honest and kind."
+      },
+      {
+        "prompt": "Show someone how to take care of a small cut or minor injury safely at home.",
+        "constraint": "Explain how you'd know when it's serious enough to need a doctor instead."
+      },
+      {
+        "prompt": "Explain to someone how to choose between two similar job offers when the salary is almost the same.",
+        "constraint": "Walk through the less obvious factors you'd weigh up."
+      },
+      {
+        "prompt": "Teach someone planning their first solo trip how to prepare in ways a first-timer usually wouldn't think of.",
+        "constraint": "Explain the reasoning behind each piece of advice, not just what to do."
+      },
+      {
+        "prompt": "Explain how you'd teach someone to give and receive constructive feedback without either person feeling defensive.",
+        "constraint": "Give an example of how you'd phrase difficult feedback well."
+      }
+    ],
+    "Choose and Create": [
+      {
+        "prompt": "You're redesigning a public park that nobody uses anymore. Decide what to remove, what to keep, and what to add.",
+        "constraint": "Justify each decision by explaining what problem it solves."
+      },
+      {
+        "prompt": "You have to invent a new rule for your workplace or school that would actually improve daily life there.",
+        "constraint": "Explain why people would resist it at first and how you'd win them over."
+      },
+      {
+        "prompt": "Design a morning routine for someone who is chronically late to everything.",
+        "constraint": "Prioritise the three changes that would matter most and explain why those first."
+      },
+      {
+        "prompt": "You're creating a new tradition for your family or friend group.",
+        "constraint": "Compare it with an existing tradition and explain what gap it fills."
+      },
+      {
+        "prompt": "Choose three items to put in a time capsule that represents life today.",
+        "constraint": "Defend your choices against someone who thinks you picked the wrong things."
+      },
+      {
+        "prompt": "Invent a fairer way to split household chores between people who have very different schedules.",
+        "constraint": "Address what happens when the system breaks down."
+      },
+      {
+        "prompt": "You must design a farewell event for a colleague who dislikes attention.",
+        "constraint": "Balance their preferences against the group's desire to celebrate them."
+      },
+      {
+        "prompt": "Create a plan to convince a stubborn friend to try something new.",
+        "constraint": "Rank your strategies from most to least likely to work, and explain your ranking."
+      },
+      {
+        "prompt": "Design a small business that solves a problem in your neighbourhood.",
+        "constraint": "Identify the biggest risk it faces and how you'd reduce it."
+      },
+      {
+        "prompt": "You're choosing between three ways to spend an unexpected day off.",
+        "constraint": "Weigh the trade-offs of each option before settling on one."
+      },
+      {
+        "prompt": "Invent a new way to welcome new employees that avoids the usual awkward introductions.",
+        "constraint": "Justify why your approach is better than the standard method."
+      },
+      {
+        "prompt": "You have one free afternoon to reduce food waste in your household for good, but you can only take one action: a shopping change, a storage change, or a cooking-habit change.",
+        "constraint": "Choose one and explain what you're deliberately giving up by not doing the other two."
+      },
+      {
+        "prompt": "Design a weekend trip structure that lets group members with very different budgets and energy levels each get what they need.",
+        "constraint": "Explain which parts of the trip are fixed for everyone and which parts flex, and justify where you drew that line."
+      },
+      {
+        "prompt": "You need to choose which of three friends to ask for a favour that requires trust.",
+        "constraint": "Compare their strengths and weaknesses before deciding."
+      },
+      {
+        "prompt": "Invent a fair method for choosing who gets the last seat on a fully booked group trip.",
+        "constraint": "Defend your method against accusations of unfairness."
+      },
+      {
+        "prompt": "Design an ideal waiting room for a place people usually dread visiting.",
+        "constraint": "Explain which changes address the real source of discomfort, not just the surface annoyance."
+      },
+      {
+        "prompt": "Create a plan to help a shy person make more friends in a new city.",
+        "constraint": "Order your suggestions from easiest to hardest and justify the order."
+      },
+      {
+        "prompt": "Choose how to spend a small unexpected windfall between saving, spending, and giving.",
+        "constraint": "Justify the proportions you'd choose and what would change your mind."
+      },
+      {
+        "prompt": "Invent a new format for team meetings that people won't dread attending.",
+        "constraint": "Anticipate one objection and respond to it."
+      },
+      {
+        "prompt": "Design a system for resolving noise complaints between neighbours without involving authorities.",
+        "constraint": "Explain why your system avoids escalation."
+      },
+      {
+        "prompt": "Design a surprise for someone who says they hate surprises, built around three elements: how they find out, where it happens, and what makes it feel personal.",
+        "constraint": "Decide how much of the \"surprise\" element to keep versus soften, and justify the balance you chose."
+      },
+      {
+        "prompt": "Create a plan to repurpose an unused room in a house.",
+        "constraint": "Compare at least two possible uses before choosing one."
+      },
+      {
+        "prompt": "You're redesigning how a long queue works, from three possible approaches: a numbered ticket system, a mobile app that lets people wait elsewhere, or entertainment placed along the line.",
+        "constraint": "Rank the three options and justify your top choice over the other two."
+      },
+      {
+        "prompt": "Design a mentorship pairing system for new and experienced staff.",
+        "constraint": "Explain what you'd do about a pairing that isn't working."
+      },
+      {
+        "prompt": "Choose which three skills someone should learn to become more self-sufficient at home.",
+        "constraint": "Defend your selection against someone who thinks different skills matter more."
+      },
+      {
+        "prompt": "Create a plan to revive a friendship that has quietly faded over the years.",
+        "constraint": "Weigh the risk of rejection against the value of trying."
+      },
+      {
+        "prompt": "Design a feature for an app that helps people stick to small daily habits.",
+        "constraint": "Choose which single feature matters most and explain why you'd build that before anything else."
+      },
+      {
+        "prompt": "Design a fairer way to divide an inheritance of sentimental objects with no clear monetary value.",
+        "constraint": "Address how you'd handle disagreement between siblings."
+      },
+      {
+        "prompt": "You must choose one habit to eliminate and one to build, given limited willpower.",
+        "constraint": "Explain the trade-off and why you prioritised as you did."
+      },
+      {
+        "prompt": "Create a plan for a community skill-share event where neighbours teach each other things.",
+        "constraint": "Decide how you'd handle someone who wants to teach something nobody wants to learn."
+      }
+    ],
+    "Guided Stories": [
+      {
+        "prompt": "Tell a story about a time a stranger's small act of kindness changed the direction of your day.",
+        "constraint": "Reveal the key information only near the end."
+      },
+      {
+        "prompt": "Tell a story about a trip that went completely differently than planned.",
+        "constraint": "Tell the story in chronological order."
+      },
+      {
+        "prompt": "Tell a story about a misunderstanding between you and a friend or colleague that escalated before it was resolved.",
+        "constraint": "Include a moment where your opinion completely changes."
+      },
+      {
+        "prompt": "Tell a story about a time you had to make a difficult decision with very little time to think.",
+        "constraint": "Explain why one decision made everything else happen."
+      },
+      {
+        "prompt": "Tell a story about a message, call, or video online that led to a real, unexpected event in your life.",
+        "constraint": "Let the true cause come out through something someone said, reported as dialogue, rather than stated directly."
+      },
+      {
+        "prompt": "Tell a story about a family member whose actions you completely misunderstood at the time.",
+        "constraint": "Tell it first the way you understood it back then, then stop and correct yourself with what you know now."
+      },
+      {
+        "prompt": "Tell a story about a coincidence so unlikely that people didn't believe you when you told them.",
+        "constraint": "Finish by explaining what you learned."
+      },
+      {
+        "prompt": "Tell a story about a small problem at work or school that got worse because of what you did next, and worse again after that.",
+        "constraint": "Show clearly how each step caused the next."
+      },
+      {
+        "prompt": "Tell a story about a long trip or period of travel that led to one specific moment you still remember clearly.",
+        "constraint": "Cover the wider period quickly, then slow right down for the final scene."
+      },
+      {
+        "prompt": "Tell a story about a moment when you had to choose between honesty and loyalty.",
+        "constraint": "Explain why one decision made everything else happen."
+      },
+      {
+        "prompt": "Tell a story about an argument that ended in an outcome nobody expected.",
+        "constraint": "Include a moment where your opinion completely changes."
+      },
+      {
+        "prompt": "Tell a story about a time you helped a stranger and later discovered something surprising about them.",
+        "constraint": "Include two moments that seemed unrelated but later connected."
+      },
+      {
+        "prompt": "Tell a story about a competition or challenge where the result surprised everyone, including you.",
+        "constraint": "Reveal the key information only near the end."
+      },
+      {
+        "prompt": "Tell a story about a plan involving money or a possession that you gave up on, then picked up again later.",
+        "constraint": "Show why you abandoned it and what brought you back to it."
+      },
+      {
+        "prompt": "Tell a story about a time a small lie grew into a bigger problem.",
+        "constraint": "Explain why one decision made everything else happen."
+      },
+      {
+        "prompt": "Tell a story about a person you initially disliked who you later came to respect.",
+        "constraint": "Make the listener sympathise with someone who first seemed unlikeable."
+      },
+      {
+        "prompt": "Tell a story about a local event or piece of community news, and separately, something happening in your own life at the same time — until the two came together.",
+        "constraint": "Tell both threads side by side until they meet."
+      },
+      {
+        "prompt": "Tell a story about a time you had to trust someone you barely knew.",
+        "constraint": "Include a moment where your opinion completely changes."
+      },
+      {
+        "prompt": "Tell a story about a piece of advice you ignored, and what happened as a result.",
+        "constraint": "Finish by explaining what you learned."
+      },
+      {
+        "prompt": "Tell a story about a time two separate events in your life turned out to be connected.",
+        "constraint": "Include two moments that seemed unrelated but later connected."
+      },
+      {
+        "prompt": "Tell a story about a moment when you realized you had misjudged a situation completely.",
+        "constraint": "Reveal the key information only near the end."
+      },
+      {
+        "prompt": "Tell a story about an unusual encounter with someone from a very different background than yours.",
+        "constraint": "Make the listener sympathise with someone who first seemed unlikeable."
+      },
+      {
+        "prompt": "Tell a story about a time you had to give up something important to gain something else.",
+        "constraint": "Explain why one decision made everything else happen."
+      },
+      {
+        "prompt": "Tell a story about a celebration or event that was ruined, then unexpectedly saved.",
+        "constraint": "Tell the story in chronological order."
+      },
+      {
+        "prompt": "Tell a story about a time you discovered a secret that changed how you saw someone.",
+        "constraint": "Include a moment where your opinion completely changes."
+      },
+      {
+        "prompt": "Tell a story about a mistake at work or school that turned into an unexpected opportunity.",
+        "constraint": "Finish by explaining what you learned."
+      },
+      {
+        "prompt": "Tell a story about a time you had to choose between two people you cared about.",
+        "constraint": "Explain why one decision made everything else happen."
+      },
+      {
+        "prompt": "Tell a story about an old friendship that ended, then unexpectedly started again years later.",
+        "constraint": "Include two moments that seemed unrelated but later connected."
+      },
+      {
+        "prompt": "Tell a story about a time you stood up for someone even though it cost you something.",
+        "constraint": "Make the listener sympathise with someone who first seemed unlikeable."
+      },
+      {
+        "prompt": "Tell a story about a journey (real or figurative) where the destination turned out to matter less than what happened along the way.",
+        "constraint": "Reveal the key information only near the end."
+      }
+    ]
+  }
+}

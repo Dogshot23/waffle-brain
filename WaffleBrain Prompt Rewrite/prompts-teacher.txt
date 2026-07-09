@@ -1,0 +1,520 @@
+Imagine your friend is visiting your town on Saturday; they like food and outdoor activities but dislike museums, so choose a morning activity, a lunch place, and an afternoon activity, and tell your teacher where you go, what you do, and why your friend will like it.
+Help your friend create a better morning routine by choosing solutions for waking up late, forgetting things, and having no breakfast, and tell your teacher what they should do first, what they can change, and why it helps.
+Plan a meal, a drink, and something extra for a friend visiting your home who doesn't eat meat and doesn't like spicy food, then tell your teacher what you prepare and why you choose it.
+Change your plans for a day outside because it is raining by choosing an activity at home, food or drink, and something fun to do, and tell your teacher your new plan and why it is better.
+Help a new visitor in your town get somewhere by choosing a destination, transport, and a route, and tell your teacher where they go, how they get there, and what they need.
+Tell your teacher your plan and why you chose the specific place, food, and activities for a party you are organising for five friends on a small budget.
+Tell your teacher what present you buy with €20, which shop you choose, and why your friend will like it for their birthday.
+Help your friend who feels tired every day create a better routine by choosing a food change, an activity, and a sleep habit, and tell your teacher what they do and why it helps.
+Tell your teacher what three things you pack, your transport, and one activity for a two-day trip where you only have a small bag, and explain why these things are important.
+Explain the important places, useful things to know, and advice for the first day to help a new student who is starting at your school feel comfortable.
+Help your friend choose the best apartment by choosing a location, rooms, and important features, and tell your teacher why this apartment is good and what your friend can do there.
+Create a plan for your friend who wants to spend one day without using their phone by choosing a morning, afternoon, and evening activity, and tell your teacher what they do and why it is a good idea.
+Help your friend who starts a new job tomorrow by explaining what they need, what they do in the morning, and what they take with them.
+Tell your teacher where you go, what people eat, and why when choosing a restaurant for three friends where one person likes vegetarian food, one wants cheap food, and one likes desserts.
+Tell your teacher your plan and how you save money when choosing an activity, food, and transport for a fun weekend without much money.
+Explain where a tourist visiting your town should go, what they should see, and how they should travel to help them.
+Plan the clothes, food, and preparation for an important day tomorrow—choosing between a birthday, a first day at school, or meeting new people—and tell your teacher what you do and why.
+Choose a home problem between having no internet, a broken light, or no hot water, and tell your teacher what the problem is, what you do, and who helps.
+Tell your teacher what breakfast, lunch, and dinner food you buy and why when you are shopping for one week of food.
+Make a simple plan for a friend who wants to improve their English by choosing a practice activity, time of day, and place, and tell your teacher what they do and why it helps.
+Describe your bedroom by talking about the furniture, colours, and your favourite thing.
+Describe your kitchen at home by talking about what is there, where things are, and what you use every day.
+Describe a park near your home by talking about what is there, what people do, and what you like.
+Describe your classroom by talking about the furniture, what is on the walls, and where you sit.
+Describe your favourite shop by talking about what they sell, what it looks like, and why you like it.
+Describe your school bag by talking about what is inside, what you use every day, and one unusual thing.
+Describe your fridge at home by talking about what is inside, what you eat every day, and something you don't like.
+Describe your desk or study space by talking about what is on it, what you keep near you, and what you use most.
+Describe your wardrobe or cupboard by talking about what is inside, your favourite clothes, and something you never wear.
+Describe your pencil case by talking about what is inside, what you use every day, and your favourite pen or pencil.
+Compare your home and your school by talking about what is similar, what is different, and where you prefer to be.
+Compare your summer clothes and your winter clothes by talking about what you wear, the colours, and what you prefer.
+Compare your bedroom now and your bedroom when you were a child by talking about what is different, what is the same, and what you miss.
+Compare a weekday and a weekend for you by talking about what you do, what you eat, and how you feel.
+Compare your house and a friend's house by talking about the size, the rooms, and what you like about each.
+Describe your favourite jacket by talking about what it looks like, where you got it, and when you wear it.
+Describe your favourite mug or cup by talking about what it looks like, where you got it, and why you like it.
+Describe your favourite gadget by talking about what it looks like, what you use it for, and how often you use it.
+Describe your favourite book or comic by talking about what it looks like, what it is about, and why you like it.
+Describe your favourite pair of shoes by talking about what they look like, where you got them, and when you wear them.
+Describe a photo or picture in your home by talking about what is in it, where it is, and why you keep it.
+Describe your phone case by talking about the colour, the design, and why you chose it.
+Describe a plant in your home or garden by talking about what it looks like, where it is, and who looks after it.
+Describe an object on your desk right now by talking about what it looks like, what is next to it, and what you use it for.
+Describe a poster or picture on your wall by talking about what colour it is, what is in it, and why you have it.
+Describe an animal without saying its name by talking about what it looks like, where it lives, and what it eats, and see if your teacher can guess what it is.
+Describe a job without saying its name by talking about what the person wears, where they work, and what they do, and see if your teacher can guess what it is.
+Describe a food without saying its name by talking about what colour it is, how it tastes, and when you eat it, and see if your teacher can guess what it is.
+Describe a place in town without saying its name by talking about what you can do there, what is inside, and who goes there, and see if your teacher can guess what it is.
+Describe an object in the kitchen without saying its name by talking about what it looks like, what it is used for, and where it is kept, and see if your teacher can guess what it is.
+Teach me how to make your favourite drink—choosing coffee, tea, juice, or a smoothie—by telling me what we need, what we do first, and what happens next.
+Show me your morning routine by telling me what time you wake up, what you do first, and what you do before leaving home.
+Teach me how to use your favourite messaging, video, game, or music app by telling me what it is for, what you can do, and what I should do first.
+Teach a visitor how to get around your town by choosing a restaurant, shop, park, or station, and showing me how to get to the place, what transport to use, and what I need to know.
+Teach me a simple sandwich, salad, breakfast, or dessert recipe by telling me what ingredients we need, what we do first, and how we finish.
+Show me how you prepare for work or school by telling me what you prepare, what you take with them, and what you do before leaving.
+Teach me a sport, game, craft, or activity hobby by telling me what I need, how I start, and what I can do next.
+Show me how to have a good weekend by creating a plan that tells me what you do on Saturday, what you do on Sunday, and what the best part is.
+Teach me how to buy food, clothes, a ticket, or a gift in your country by telling me where I go, what I say, and what happens.
+Show me how to relax after a busy day by creating your routine and telling me what you do first, what you do next, and what makes you feel good.
+Teach me how to look after a plant, a pet, a bike, or a phone by telling me what it needs, what you do, and how often.
+Show me how to get ready for a trip by telling me what you pack, what you check, and what you do before leaving.
+Teach me how to celebrate a special birthday, holiday, festival, or family event by telling me what happens, what food people have, and what people do.
+Teach me how to set the table for a meal by telling me what we need, where everything goes, and what we do first.
+Show me how to pack a bag for school or work by telling me what goes in first, what else you add, and what you check before you go.
+Teach me how to wash and dry laundry by telling me what you do first, what happens next, and how you finish.
+Show me how to make a hot drink for a guest by telling me what you ask them, what you prepare, and how you serve it.
+Teach me how to use a bus, train, tram, or taxi in your town by telling me where you buy a ticket, how you know where to get on, and what you do when you arrive.
+Show me how to find your way to a friend's house, a shop, an office, or a school by telling me what you look for, which way you go, and how you know you arrived.
+Teach me how to cook fried, boiled, scrambled, or omelette eggs by telling me what we need, what we do first, and how we know it is ready.
+Show me how to organise your desk or bag by telling me what goes where, what you keep close, and why this is a good system.
+Teach me how to plan a shopping trip by telling me what you write on your list, where you go first, and how you save time or money.
+Show me how to charge and look after your phone by telling me when you charge it, what you check, and what you avoid.
+Teach me a simple stretching, walking, home workout, or yoga exercise routine by telling me how you start, what you do next, and how you finish.
+Show me how to make your bed by telling me what you do first, what you do next, and how you finish.
+Teach me how to plan a birthday surprise for a friend by telling me what you prepare, who helps you, and what happens on the day.
+Show me how to take care of your health every day by telling me what you eat or drink, what activity you do, and what helps you sleep well.
+Teach me how to send a message or email politely by telling me how you start, what you write, and how you finish.
+Show me how to prepare a simple picnic by telling me what food you bring, what else you pack, and where you go.
+Teach me how to look after a house plant by telling me where you put it, how often you water it, and what else does it need.
+Set up a café roleplay where you order a drink and a snack from me, choosing between coffee, tea, juice, or water, and cake, a sandwich, or a salad, and ask me what I want and if I want anything else, before explaining why you choose this and what you usually order.
+Set up a hotel check-in roleplay where you get a single, double, or family room from me for one night, three nights, or one week, and explain who you are travelling with and what you need in the room.
+Set up a clothing shop roleplay where your goal is to find a black, blue, or white shirt, jacket, shoes, or trousers to wear, and explain when you wear it and how much it costs.
+Set up a doctor's office phone call roleplay where you make an morning, afternoon, or evening appointment with me for a cold, headache, or stomach ache, and explain how you feel and what you do to feel better.
+Set up a directions roleplay to find a supermarket, station, restaurant, or park where you ask me where it is and how to get there, and explain whether you walk or take transport and how long it takes.
+Set up a moving home roleplay where you ask me for help moving books, clothes, furniture, or boxes, share your plan on what to move first, when to move, and who can help, and explain why you need help and what is difficult.
+Set up a supermarket roleplay where you find fruit, milk, bread, or cheese, ask me where it is and how much it costs, and explain what food you buy every week and what you eat at home.
+Set up a birthday party planning roleplay where we decide a plan together, choosing a home, park, or restaurant venue and pizza, cake, or sandwiches, and explain who is coming and what time it starts.
+Set up a train station roleplay where you buy a morning, afternoon, or evening ticket to a city, beach, or airport and ask me about your journey, then explain who you are travelling with and how long the journey is.
+Set up a new neighbour introduction roleplay where you introduce yourself to me, talk about your name, home, job or school, and hobbies, and explain what you do in your free time and how long you have lived here.
+Set up a shop return roleplay where you explain why an item is the wrong size, broken, or the wrong colour, ask to exchange it or get a refund, and explain why you don't want it and what you would like instead.
+Set up a restaurant booking roleplay where you make a reservation for 2, 4, or 6 people at 7pm, 8pm, or 9pm, and explain what food you like and if you need anything special.
+Set up a weekend plans roleplay where we make a plan together to go to the cinema, shopping, walking, or eating out on Saturday or Sunday, and explain why you want to do this and what time we meet.
+Set up a hotel reception phone call roleplay where you explain a hot water, noise, or wrong room problem to find a solution, and explain what you want the hotel to do and if the problem is serious.
+Set up a new school or job preparation roleplay where you talk to me about preparing your clothes, bag, transport, or schedule, and explain what you are worried about and what you need tomorrow.
+Set up a pharmacy roleplay where you explain a cold, cough, or headache problem to ask me for medicine, advice, or information, and explain how you feel and what you usually do when you are sick.
+Set up a food delivery roleplay where you order a pizza, burger, salad, or pasta with water, juice, or cola, and explain what food you like and when you usually order food.
+Set up a learning roleplay where you ask me to help you learn cooking, English, a sport, or technology, and explain why you want to learn this and when you want to start.
+Set up an airport information desk roleplay where you ask questions to find your gate, check the time, or find a place by talking about your destination, time, and problem, then explain where you are going and who you are travelling with.
+Set up a day out planning roleplay where we create a simple morning, afternoon, or evening plan to visit a city, go shopping, go to the beach, or go to the park, and explain what you need to take and what you want to do first.
+Create a weekend plan by choosing a park, city, or beach, and walking, shopping, or eating out, then tell your teacher what you choose and why you choose it.
+Plan a day out with a friend by choosing a morning or afternoon time, a museum, market, or cinema place, and a café, restaurant, or picnic food, then tell your teacher your plan and why you choose it.
+Create a birthday party plan by choosing a home, restaurant, or park place, games, music, or cake activities, and an afternoon or evening time, then tell your teacher your plan and why people will enjoy it.
+Plan a simple school day by choosing study, sport, or art as your first activity, a school or home lunch, and homework or free time after school, then tell your teacher your plan and why.
+Create a breakfast menu for a small café by choosing the food, drinks, and prices, then tell your teacher what you choose and why people will like it.
+Create a menu for a birthday party by choosing the food, drinks, and extras like cake and snacks, then tell your teacher what you choose and why people will like it.
+Design a picnic menu for a sunny day by choosing the food, drinks, and extras, then tell your teacher what you pack and why it is good for a picnic.
+Create a lunch menu for a small restaurant by choosing a main dish, drink, and dessert, then tell your teacher your menu and why customers will like it.
+Tell your teacher what 3 important items and 2 optional items you pack and why each item is important when you are going on a two-day trip.
+Pack a bag for one day at the beach by choosing important items and optional items, then tell your teacher what you take and why.
+Prepare a bag for the first day at a new job by choosing important items and optional items, then tell your teacher what you take and why each item helps.
+Tell your teacher what 3 important things you choose to take first and the reasons why when you are moving to a new apartment.
+Prepare for a football, running, or swimming sports activity this weekend by choosing important items and optional items, then tell your teacher what you take and why.
+Design a small bedroom by choosing the furniture, colours, and where things go, then tell your teacher your design and why it is comfortable.
+Design a study area at home by choosing the furniture, equipment, and where things go, then tell your teacher your design and why it helps you study.
+Design a small café by choosing the tables and chairs, decoration, and music, then tell your teacher your design and why customers will like it.
+Design a shop window display by choosing the products to show, colours, and decoration, then tell your teacher your design and why it attracts customers.
+Compare Hotel A, which is cheap, small, and near the beach, with Hotel B, which is expensive, big, and in the city centre, then tell your teacher which you choose and why for a weekend trip.
+Compare a sports club option with an art class option for an after-school activity, then tell your teacher which you choose and why it is better for you.
+Compare Phone A, which is cheap, has a small screen, and a good battery, with Phone B, which is expensive, has a big screen, and a good camera, then tell your teacher which you choose and why for a friend.
+Compare Restaurant A, which is a cheap fast food place, with Restaurant B, which is expensive, quiet, and has slow service, then tell your teacher which you choose and why it suits the family for a dinner.
+Compare a cheap, slow bus option with an expensive, fast taxi option to travel to work, then tell your teacher which you choose and why.
+Choose a birthday gift, shop, and reason for a friend when you have a €20 budget, then tell your teacher what you buy and why your friend will like it.
+Plan a simple activity for a visiting family member by choosing the activity, place, and time, then tell your teacher your plan and why they will enjoy it.
+Create a small welcome plan for a new student at school by choosing what to show them, what to tell them, and who helps them.
+Choose a map, phone number, or list of places helpful item and a reason to give a visitor who is new in town, then tell your teacher what you give and why it helps.
+Plan a small surprise for a family member's special day by choosing the activity, food, and decoration, then tell your teacher your plan and why they will like it.
+Create a shopping list for one week of dinners by choosing 5 food items and explaining why each is needed.
+Plan a simple exercise schedule for one week by choosing the days to exercise, type of exercise, and time of day, then tell your teacher your schedule and why it works for you.
+Create a simple morning routine for a busy weekday by choosing the first task, breakfast, and last task before leaving, then tell your teacher your routine and why it saves time.
+Tell a story about losing your bag at the train station by explaining first where you last had it, then where you look, and finally who helps you find it.
+Tell a story about arriving late for an important meeting by explaining first why you are late, then what you do, and finally what happens when you arrive.
+Tell a story about breaking your friend's phone by accident by explaining first how it happens, then what you say, and finally how you solve the problem.
+Tell a story about forgetting your homework at home on the day it is due by explaining first when you notice, then what you do, and finally how the problem ends.
+Tell a story about your bike getting a flat tyre far from home by explaining first where you are, then what you do, and finally how you get home.
+Tell the story of a busy day at work or school by explaining first what happens in the morning, then what happens in the afternoon, and finally how the day ends.
+Tell the story of a special day like a birthday or celebration by explaining first how the day starts, then what you do together, and finally how the day finishes.
+Tell the story of a trip to another city for one day by explaining first how you travel, then what you see or do, and finally how you return home.
+Tell the story of a day when everything goes wrong by explaining first what happens first, then what happens next, and finally how the day ends.
+Tell the story of your first day at a new job or school by explaining first how you feel arriving, then what you do during the day, and finally how you feel at the end.
+Create a story by choosing a park, shop, or train station place, a friend, stranger, or family member person, and a lost item, wrong direction, or no money problem.
+Create a story by choosing a restaurant, airport, or school place, a teacher, classmate, or waiter person, and an ordering food, catching a flight, or giving a presentation activity.
+Create a story by choosing your house, a friend's house, or a hotel place, a neighbour, visitor, or delivery person, and a broken object, strange noise, or unexpected visitor problem.
+Create a story by choosing a supermarket, gym, or library place, a friend, stranger, or staff member person, and a helping someone, finding something, or meeting someone new activity.
+Create a story by choosing a city street, bus stop, or office place, an old friend, new colleague, or lost tourist person, and a bad weather, wrong bus, or forgotten appointment problem.
+Imagine a park on a sunny afternoon and describe where you are, what you see around you, and what small event happens next.
+Imagine a small shop on a quiet street and describe where you are, what items and people you see in the shop, and what small event happens next.
+Imagine a busy street in the city at rush hour and describe where you are, what people and traffic you see around you, and what unexpected thing happens next.
+Imagine a cosy house on a rainy day and describe where you are, what rooms and objects you see around you, and what small event happens next.
+Imagine a train station early in the morning and describe where you are, what people and things you see around you, and what small event happens next.
+Tell a story about helping a lost friend in a new city by explaining who needs help, what the problem is, and how you help them.
+Tell a story about a new student who does not know anyone at school by explaining who needs help, why they feel alone, and how you help them.
+Tell a story about a visitor to your town who does not speak the local language well by explaining who needs help, why they cannot communicate, and how you help them.
+Tell a story about a family member who forgets an important appointment by explaining who needs help, why they are late and worried, and how you help them.
+Tell a story about a friend's car breaking down on the way to work by explaining who needs help, what the problem is with the car, and how you help them.
+Describe a messy room before and after cleaning by explaining what it looked like before, what you did to change it, and what it looks like now.
+Describe a trip before you left and after you returned by explaining how you felt before, what happened on the trip, and how you feel now.
+Describe learning a new skill before and after practice by explaining what you could not do before, how you practised, and what you can do now.
+Describe a garden or park before and after a change of season by explaining what it looked like before, what happened over time, and what it looks like now.
+Describe your English before and after taking lessons by explaining what you could not do before, what you did to improve, and what you can do now.
+Choose what to fix and explain why if you only have enough money to fix one thing in your apartment this month.
+Choose which internet plan you would select for your household and explain why between a cheaper but slower plan or a faster but more expensive plan.
+Recommend an option and explain your reasoning to a friend whose car needs a repair that will take either one day and be expensive or one week and be cheaper.
+Decide how you will respond and explain your reasoning to a friend who wants to borrow money from you until next month.
+Make your decision and justify it when choosing between an apartment with a shorter commute but higher rent and one with a longer commute but lower rent.
+Recommend a solution and explain why to your roommate who is worried about a higher-than-expected energy bill.
+Decide your approach and explain why it works when planning meals for the week on a limited budget.
+Find a compromise between the cost and your child's wishes, and explain your reasoning, when a school trip costs more than you planned but your child really wants to go.
+Decide how to use your time and explain your priorities when you have two days off this week but a long list of errands.
+Decide what you will do and explain your reasoning when choosing between a faster private health appointment that costs more or a free public one with a long wait for a minor, persistent problem.
+Make a decision and justify it when deciding whether to fix your old washing machine or buy a new one.
+Propose a compromise to your manager and explain why it could work for both sides when your work schedule changes and clashes with picking up your kids from school.
+Recommend an option and explain your reasoning to a family member choosing between a doctor available sooner but further away and one closer but with a longer wait.
+Decide which monthly subscription to cancel and explain your reasoning as the costs are adding up.
+Recommend a decision and explain your reasoning to a friend who is invited to an expensive wedding abroad and asks what to do.
+Decide and justify your choice between a convenient but noisy neighbourhood and a quiet but far from work neighbourhood when moving to a new city.
+Propose a solution and explain your reasoning to help your team at work choose a weekly meeting time that suits everyone's different schedules.
+Evaluate the pros and cons of each option, then explain which matters more to you when comparing a job that pays slightly more with a long commute and one that pays less but is close to home.
+Prioritise the factors that matter most—such as distance, reputation, cost, or facilities—and explain which one wins when choosing between two good schools for your child.
+Decide what you will do and explain your reasoning when offered a slightly better-paid job in a different city that requires leaving close friends and family behind.
+Decide how you will manage and explain your plan when your internet stops working and a technician cannot come for five days.
+Prioritise your needs and explain your final choice when deciding whether price, reliability, or speed matters most for a replacement phone.
+Decide how you will handle it and explain your reasoning when two friends both want you to help them move house on the same weekend.
+Decide how you will vote and explain why when your building votes on installing a new elevator that will raise everyone's monthly fees.
+Make a decision and justify it between cooking at home or eating out more often based on your recent schedule and budget.
+Decide what to do and explain your reasoning regarding an expensive gym membership that you haven't been using often.
+Recommend one contractor and explain your reasoning to a neighbor choosing between a cheaper option with a longer wait and a pricier one available now.
+Decide how you will handle the situation and explain your reasoning when a relative wants to stay with you for two weeks in your small apartment where you work from home.
+Make a decision and justify it between taking public transport or buying a car based on your daily needs.
+Decide how you would vote and explain your reasoning when your local council asks residents to choose between repairing roads or improving the park.
+Negotiate a solution with the front desk staff, considering you have nowhere else to stay tonight, after arriving to find your online hotel booking is already occupied.
+Talk to your neighbour and agree on a reasonable compromise because their music has been too loud for the past three nights and you have an early start tomorrow.
+Discuss your reasons and try to reach a fair agreement with a colleague when you both want to take the same week off work.
+Negotiate the price with a repair shop that wants to charge more than the original quote to fix your laptop, and explain what you can realistically afford.
+Explain clearly why you believe a sofa error was the furniture shop's fault and what you expect them to do about it after they sent the wrong colour and blamed your online order.
+Persuade a gym staff member to switch you to a cheaper plan without a penalty fee after your membership renewed automatically.
+Discuss a fair way to split a restaurant bill with a friend who wants to split it equally even though you only ordered a small dish and they ordered several courses.
+Raise the issue and agree on a new system that works for both of you with a roommate who keeps leaving dishes for days.
+Persuade the receptionist to find another solution when you need to change a dentist appointment but the only free slot clashes with an important work meeting.
+Discuss the situation with your neighbour and decide what to do next after a delivery driver left your package with them without telling you and it went missing.
+Convince the box office to help you get a refund for a concert ticket because the event was postponed to a date you cannot attend.
+Work together with a friend to find a weekend trip plan that suits you both when you disagree about the budget.
+Discuss and try to reach a compromise with your landlord who wants to raise the rent too high given the apartment's condition.
+Have a calm conversation with a colleague about how you would like things to change going forward because they keep taking credit for your ideas in meetings.
+Persuade the shop assistant to help you return a jacket that no longer fits even though you have lost the receipt.
+Find a restaurant option you can both agree on with a friend when planning a group dinner on very different budgets.
+Resolve a disagreement and agree on how your internet will be fixed with a provider who insists the problem is with your equipment rather than their service.
+Explain your position on whether a lesson price increase feels fair and how you would like to move forward after your tutor raised prices with little notice.
+Persuade your car mechanic to explain clearly which repairs are truly essential when you suspect not all of their recommendations are necessary.
+Talk it through and reach a decision everyone can accept with a family member when you disagree about which venue to book for a celebration.
+Explain your situation and try to find a solution with a shop that refuses to exchange a gift because it was bought during a sale.
+Resolve a disagreement and find out what airline staff are willing to do after a flight delay caused you to miss your connecting train.
+Explain your position on why a phone contract early cancellation fee feels unfair and hear what the company proposes instead.
+Discuss the situation honestly and agree on a solution with a colleague who wants to borrow money when you are not comfortable lending the full amount.
+Agree on a fair route and how to split the fare when sharing a taxi with a stranger heading in a similar direction to different destinations.
+Speak with a staff member about your concerns regarding an extra fee for a school trip that you feel is too expensive.
+Have an honest conversation with a friend about how it affects your friendship when they cancel plans last minute for the second time.
+Present your case and try to find a compromise with your manager who prefers everyone in the office when you want to work from home two days a week.
+Work together with your energy provider to reach an agreement on how to resolve an unexpectedly high bill that you disagree about the cause of.
+Discuss the situation and agree on a fair arrangement with a neighbour when you disagree about who should pay to repair a shared fence.
+Compare the kitchen in your home with the kitchen of a friend or family member to explain which one is more practical for cooking and why.
+Describe your workplace or classroom, explain whether it is well organised for getting things done, and share what you would change.
+Compare two cafés or restaurants you have been to in your neighbourhood to explain which one has a better atmosphere and why.
+Describe how your local high street has changed in the last few years and explain whether it is better or worse now.
+Look at two menus from different restaurants and explain which one is easier to choose from and why.
+Describe the public transport in your city and explain one change that would make it more convenient.
+Compare shopping at a small local shop with shopping at a large supermarket to explain which one works better for you and why.
+Describe a park near where you live, explain whether it is well designed for visitors, and share what you would improve.
+Compare two photos of the same room, one tidy and one messy, to explain which one would help you focus more and why.
+Describe your daily commute, explain the biggest problem with it, and share what would fix it.
+Describe your desk or workspace and explain which three items are the most important for helping you work well and why.
+Describe how your school or workplace has changed since you first started there and explain whether it is better or worse.
+Compare two websites that sell the same kind of product to explain which one is easier to use and why.
+Describe a shop you visit often and explain one thing that would make the shopping experience better.
+Look at two logos for a local business and explain which one is more memorable and why.
+Describe the waiting area at a place like a doctor's office or train station, explain whether it is comfortable, and share what you would change.
+Compare living in your current neighbourhood with living in another neighbourhood you know to explain which one suits you better and why.
+Describe how a product you own has changed compared to an older version and explain whether the new version is an improvement.
+Describe a public park you know and explain which feature most needs improving and why.
+Describe the layout of a supermarket you know well, explain whether it makes shopping efficient, and share what you would rearrange.
+Compare two photographs of the same street taken at different times of day to explain which one feels safer or more welcoming.
+Describe the customer service at a shop or restaurant you visit and explain what works well and what doesn't.
+Describe your home, or one you know well, and explain which room would benefit most from renovation and why.
+Describe how the design of a website or app has changed over the years and explain whether the current version is easier to use.
+Compare two offices or classrooms you have worked or studied in to explain which one helps people concentrate more and why.
+Describe a regular service you use like a gym, salon, or delivery, and explain one improvement that would make it better.
+Look at two versions of the same product's packaging and explain which one is more effective at catching attention and why.
+Describe how traffic or crowding has changed on a street you know well and explain whether it is better or worse now.
+Decide what matters most and explain your reasoning if you can only prioritise one improvement for your local public transport system.
+Compare a physical shop with its online store to explain which one gives a better experience and why.
+Explain the process of submitting expense claims at your company to a new colleague and give them one useful tip.
+Explain to a friend what to look for and why before they sign the lease on their first apartment.
+Explain how to use a train ticket machine to a confused tourist and recommend the fastest ticket option to them.
+Explain how to set up a video call app step by step to your grandparent who finds it confusing.
+Compare two savings account options and recommend one to a friend who doesn't know which type suits them.
+Explain the correct method for referencing sources to a classmate who missed the lesson, and warn them about a common mistake.
+Explain step by step how you would assemble flat-pack furniture to help a nervous neighbour doing it for the first time.
+Compare email and messaging methods for an urgent issue and recommend one to an unsure colleague.
+Explain what goes where to a friend who wants to start recycling properly, and give them a tip to avoid mistakes.
+Compare two airport-to-city-centre travel options for a tourist and recommend one with reasons.
+Explain the process of booking a meeting room to a new employee and mention one thing people often forget.
+Teach your cousin step by step how to cook rice without a rice cooker, including one common mistake to avoid.
+Explain two different phone contracts to a friend and recommend the better one for a light user.
+Explain the custom of tipping to a visitor to your country and give them practical advice to avoid awkwardness.
+Explain the steps for returning an online purchase to a friend and warn them about the deadline.
+Explain the washing machine process step by step to your younger sibling and point out one common mistake.
+Compare taking the bus versus cycling to work and recommend the best option for an undecided colleague.
+Explain clearly to a friend what is needed to apply for their first library card.
+Explain the process of reporting a maintenance problem to a landlord to a new tenant, and explain why reporting it clearly matters.
+Recommend an organisation approach to a friend who wants to become more organised and explain why it works.
+Explain step by step how to set up parental controls on a child's tablet to a parent who finds it confusing.
+Explain a packing method to your cousin who has never packed for a long trip and always leaves things behind.
+Explain how the local bus payment system works to a tourist and give them one useful tip.
+Explain the file backup process to a coworker before a computer update, and warn them what could go wrong if they skip it.
+Explain how to start planting vegetables on a balcony to a friend doing it for the first time, and share what mistakes to avoid.
+Explain the online class registration steps clearly to a new student and mention a common problem to watch for.
+Compare fixing an old laptop versus buying a new one for a friend and recommend the better choice.
+Explain the different money-carrying options to a visitor and recommend the safest way to carry money in your city.
+Explain step by step what to do to help a friend who is nervous about their first job interview.
+Explain two changes a neighbour could make to reduce their energy bill and recommend the more effective one.
+Decide what three new items to add to a menu and explain why for a small café owner with a limited kitchen budget.
+Decide how to divide a small library space for quiet study and group work, and justify your choices for the school redesign.
+Decide what furniture to keep and explain your reasoning for a family moving into a smaller apartment that only holds half their things.
+Decide how to spend a small budget to improve training equipment for a local sports club and justify your choices.
+Plan a one-hour, modest budget team lunch for your workplace and explain your decisions.
+Decide the layout and explain your design choices for a new ten-bike parking area outside a community centre.
+Help a friend plan a weekend trip itinerary with only two free days and a tight budget, and explain your choices.
+Propose a solution using only existing rooms and equipment for a small office that keeps running out of meeting space, and explain why it would work.
+Plan the layout and explain your reasoning for a neighbourhood weekend market that only has a small parking lot to use.
+Decide what a new one-hour-per-week after-school club will focus on and justify your choice.
+Decide how to organise limited kitchen cabinets for a family and explain your reasoning.
+Decide what items to display and explain your choices for a local charity shop with a large donation but limited shelf space.
+Propose a shared file organisation solution for an office where not everyone is comfortable with new technology, and explain why it works.
+Decide on activities for a teenage weekend program at a community centre with limited staff, and explain your reasoning.
+Decide what to change to improve a small hotel's breakfast service without increasing costs, and justify your choices.
+Decide what to include and explain your design choices for a small seating area in a public square with very limited space.
+Propose a simple room-booking solution using existing materials for a community centre that keeps losing track of bookings, and explain why it would work.
+Organise the layout and explain your reasoning for a school science fair with a limited number of tables and rooms.
+Decide what to buy with a small budget to decorate a shared workspace, and justify your choices.
+Decide what changes to prioritise in a small public park with a limited budget, and explain why.
+Propose a rush-hour package delivery solution within a small company's current budget, and explain why it would help.
+Propose a food waste reduction solution for a small restaurant that cannot change suppliers, and justify your choices.
+Plan a children's reading event for a local library with a limited number of volunteers, and explain your decisions.
+Decide what to include and justify your choices for a children's birthday party on a strict budget.
+Decide a new store layout to improve customer flow for a small clothing shop that cannot expand its space, and explain why.
+Organise a half-day training schedule for new employees and justify your priorities.
+Plan a park clean-up event for a community group with limited volunteers and equipment, and explain your decisions.
+Decide what to change and justify your choices for a family wanting to save money on weekly grocery shopping without changing stores.
+Reorganise a school sports day schedule due to limited field space and explain your reasoning.
+Decide what to include in a simple hobby club newsletter and explain your choices when only one volunteer is producing it.
+Tell a story about getting stuck in traffic and arriving 40 minutes late to pick up your younger sibling, explaining what happened, what you decided to do, and why.
+Tell a story about accidentally posting a private message into a public work group chat, explaining what happened, what you decided to do, and why.
+Tell a story about your flight being cancelled the night before an important event, explaining what happened, what you decided to do, and why.
+Tell a story about buying a used bike online that arrived in worse condition than described, explaining what happened, what you decided to do, and why.
+Tell a story about realising the night before a big exam that you had been studying the wrong chapter, explaining what happened, what you decided to do, and why.
+Tell a story about suddenly changing your diet last year for health reasons, explaining what happened, what you decided to do, and why it turned out the way it did.
+Tell a story about a neighbour asking to borrow your car for the weekend when you had plans for it, explaining what happened, what you decided to do, and why.
+Tell a story about trying to renew your ID card only to be told a document was missing, explaining what happened, what you decided to do, and why.
+Tell a story about choosing between a faster route with traffic risks and a slower, reliable route for an important meeting, explaining what happened, what you decided to do, and why.
+Tell a story about signing up for a sports team and realising your skill level was much lower than everyone else's on the first day, explaining what happened, what you decided to do, and why.
+Tell a story about organising a neighbourhood event where two people disagreed strongly on the budget, explaining what happened, what you decided to do, and why.
+Tell a story about promising to help a family member move but getting an unexpected job interview at the same time, explaining what happened, what you decided to do, and why.
+Tell a story about accidentally sending a private email to the wrong person at your company, explaining what happened, what you decided to do, and why.
+Tell a story about losing your wallet on the second day of a trip abroad, explaining what happened, what you decided to do, and why.
+Tell a story about realising at the checkout that you didn't have enough money for everything in your basket, explaining what happened, what you decided to do, and why.
+Tell a story about a group project where a teammate stopped working close to the deadline, explaining what happened, what you decided to do, and why.
+Tell a story about noticing a colleague seemed unwell but insisted on doing physically demanding work, explaining what happened, what you decided to do, and why.
+Tell a story about noticing water leaking from the ceiling from the neighbour's flat above, explaining what happened, what you decided to do, and why.
+Tell a story about a broken streetlight that became dangerous after nothing happened for weeks, explaining what happened, what you decided to do, and why.
+Tell a story about two passengers arguing over the last empty seat during a long train delay, explaining what happened, what you decided to do, and why.
+Tell a story about giving up a favourite hobby a year ago due to a scheduling conflict, explaining what happened, what you did, and whether it was the right call.
+Tell a story about seeing an elderly neighbour struggling with groceries during a busy morning, explaining what happened, what you decided to do, and why.
+Tell a story about two family members arguing right before an important dinner you organised, explaining what happened, what you decided to do, and why.
+Tell a story about your manager giving you an urgent task on the day of another big deadline, explaining what happened, what you decided to do, and why.
+Tell a story about arriving at a hotel to find the room did not match the online advertisement, explaining what happened, what you decided to do, and why.
+Tell a story about noticing a cashier gave you too much change, explaining what happened, what you decided to do, and why.
+Tell a story about choosing between working alone or with a partner for a class assignment, explaining what happened, what you decided to do, and why.
+Tell a story about forgetting to take an important medication before a long day of work, explaining what happened, what you decided to do, and why.
+Tell a story about accidentally damaging your neighbour's fence while parking your car, explaining what happened, what you decided to do, and why.
+Tell a story about noticing your workplace throwing away large amounts of recyclable material every day, explaining what happened, what you decided to do, and why.
+Explain how you would address a neighbor whose dog barks loudly most evenings without damaging the relationship.
+Design a fairer chores system for you and a roommate when the work has become unevenly split.
+Give your advice to a friend who has tried and quit exercising three times already this year within a month.
+Explain how you would address a child or younger relative who spends most of their free time on their phone instead of other activities without starting a fight.
+Explain how you would respond to a close friend who asks you to stop posting photos of them on social media without permission.
+Choose between new lighting, better play equipment, or more benches for a neighborhood park improvement on a small council budget.
+Walk through how you would handle getting a resolution for a kitchen appliance that broke after two weeks when the store's return policy is unclear.
+Explain your approach to hosting a dinner for friends when you just remembered one guest has an unknown dietary restriction and it is too late to ask.
+Decide whether it is a good idea right now to adopt a dog when you live in a small apartment and work long hours some days.
+Explain how you would choose between a close friend's birthday and a rare family gathering scheduled at the same time next weekend.
+Explain how you would handle a friend who is consistently 20-30 minutes late while keeping the friendship strong.
+Propose how an apartment building recycling program should work when residents have different habits and some are resistant.
+Explain how you would handle a parent who increasingly forgets small things like turning off the stove when you are unsure if it is serious or normal aging.
+Explain how you would change the habit of checking your phone the moment you wake up and losing an hour.
+Share your view on whether a town meeting should implement strict quiet hours after 9pm or keep the neighborhood lively.
+Decide how or whether to bring it up with a friend who has seemed stressed and withdrawn lately but hasn't said anything.
+Decide whether to try fixing a small leak under your kitchen sink yourself or wait for a slow landlord.
+Explain how you would organize a weekend trip with friends who disagree on the pace, where some want a packed schedule and others want to relax.
+Explain how you would choose between several competing hobbies when you only have a few free hours a week.
+Explain how you would address a disagreement with your sibling over dividing responsibility for caring for an aging parent.
+Explain how you would say something without causing a conflict to a family member who keeps sharing inaccurate news articles online.
+Decide whether it is worth accepting a small amount of freelance work that requires giving up your protected weekly evening of downtime.
+Explain how you would figure out what actually happened after reading two news articles that describe the same local event quite differently.
+Explain how you would address the frustration of realizing you procrastinate on tasks you actually care about.
+Discuss possible neighborhood solutions for an increase in package theft, ranging from cameras to a shared delivery locker.
+Explain how you would decide whether to repair an old, sentimental piece of furniture or replace it with something more practical.
+Explain how you would decide whether a friend going through a breakup wants advice, distraction, or just a listener.
+Explain how you would handle decluttering a shared living space when a family member wants to keep unnecessary items.
+Explain how you would address friction caused by three generations living in the same house with different routines.
+Decide whether to say something or let it go regarding a friend's quiet, bothersome habit like interrupting or canceling last-minute.
+Act out the conversation with a neighbour who keeps parking in the unassigned spot you normally use.
+Have the conversation with a close friend to express your doubts and concerns about investing in their business idea.
+Act out the private conversation you have with a colleague after they take credit for your idea during a meeting.
+Play the conversation with a store manager when returning a piece of furniture that broke after normal use without a receipt.
+Play the conversation where you help your teenage nephew think through convincing his parents to let him take a gap year.
+Play out the negotiation with a tenant asking you, their landlord, to reduce the rent due to nearby construction noise.
+Act out the conversation where you set a boundary with a roommate who has started inviting people over late at night without asking.
+Play the conversation where you decide how to respond to a close friend asking to borrow a significant amount of money for the second time.
+Act out the conversation where you are a travel agent trying to convince a client to choose a less obvious destination.
+Play the conversation where you bring up your parents' hurt feelings to an adult sibling who wants to skip a family gathering again.
+Play the conversation where you handle an unhappy client's complaint about a service that didn't match their expectations.
+Act out the conversation where you try to convince an older relative to start using a smartphone for video calls.
+Play the mediation conversation between two friends of yours who had a falling out.
+Act out the negotiation with a travel agent when booking a package holiday that doesn't quite match your needs or standard terms.
+Act out the conversation where you try to convince your partner to try a completely different type of holiday.
+Play the conversation where you respond to a student asking you, their tutor, for a better grade than they earned because they tried hard.
+Act out the discussion with a contractor who wants to charge more than agreed due to unexpected complications.
+Play the conversation where you finally bring it up to a friend who keeps cancelling plans at the last minute.
+Act out the conversation where you try to convince a stubborn family member to see a doctor about a dismissed health issue.
+Play the conversation where you correct a new employee who keeps doing a task in an outdated way.
+Act out the negotiation to convince your manager to let you work from home two extra days a week despite company discouragement.
+Play the three-way conversation to mediate an ongoing project split dispute between two colleagues on your team.
+Play the conversation where you respond honestly to a friend asking for your opinion on a big life decision you privately disagree with.
+Act out the discussion to negotiate shared chores with a housemate since your schedules have changed.
+Play the conversation where you respond to a colleague asking for help covering up a small mistake at work.
+Play the conversation where you make your case to a university housing officer who wants to move your room instead of your conflicting roommate.
+Play the conversation where you hold your ground and say no to a close friend who keeps asking to stay at your place for extended periods.
+Play the conversation where you handle a friend who is upset that you didn't invite them to something.
+Act out the conversation where you try to convince a group of friends to change a long-standing tradition that no longer works.
+Play the conversation where you respond to a close friend who asks what you honestly think about them ending a long relationship.
+Describe a person you know who is very good at handling stressful situations calmly.
+Describe the neighbourhood or area where you grew up.
+Describe an object in your home that you would genuinely be upset to lose.
+Describe how your eating habits have changed since you were a teenager.
+Describe a piece of technology that annoys you every time you use it.
+Describe the atmosphere of a place you go to relax.
+Describe how your city or town changes between day and night.
+Describe a skill you have that most people don't realize takes real effort.
+Describe the way a close friend or family member expresses affection.
+Describe a meal that reminds you of a specific period in your life.
+Describe how weather affects your mood or productivity.
+Describe the personality of someone you find difficult to work or study with.
+Describe a habit you have that other people find strange.
+Describe how your taste in music or films has evolved over the years.
+Describe a public space like a park, square, or station that works surprisingly well for the people who use it.
+Describe how communication styles differ between your closest colleagues or classmates at work or in study.
+Describe a piece of clothing or an accessory that says something about who you are.
+Describe how a family tradition has changed across generations in your family.
+Describe someone whose sense of humour you find genuinely funny.
+Describe the way your energy levels shift throughout a typical day.
+Describe how you typically make decisions under time pressure at work or when studying.
+Describe how noise or silence affects the way you think or work.
+Describe a place that felt completely different the second time you visited it.
+Describe a moment when you clearly noticed you were more tired or run-down than usual.
+Describe how your relationship with money has changed as you've gotten older.
+Describe a smell or sound that instantly takes you back to a particular time in your life.
+Describe how two people you know handle the same type of stress in very different ways.
+Describe a routine you follow that other people would probably find boring.
+Describe how travelling somewhere new has changed the way you plan a trip now compared to your first ever trip alone.
+Describe a first impression you had of someone that turned out to be completely wrong.
+Explain to someone who has never used public transport in a big city how to figure out which bus or train to take to get somewhere unfamiliar.
+Explain how you would help a friend get comfortable with basic cooking if they feel intimidated by the kitchen.
+Show a younger family member how to tell if a piece of information online is trustworthy or not.
+Explain to someone how to negotiate a lower price when buying something secondhand like a car or furniture.
+Explain how you would help a colleague prepare for their first presentation at work.
+Explain how to read a room during a conversation to tell whether someone is genuinely interested or just being polite.
+Show someone how to plan a trip on a tight budget without feeling like they are missing out.
+Explain to a teenager how compound interest works and why starting to save early matters.
+Explain how to figure out what a houseplant actually needs to a friend who keeps overwatering or underwatering them.
+Explain how to defuse a tense moment when two people are arguing at a family gathering.
+Show someone how to organize their week when they have too many tasks and not enough time.
+Explain an unwritten social rule in your culture that often confuses outsiders to a visitor from another country.
+Explain how you would help a friend figure out why their phone or laptop is running slowly.
+Explain how to comfort an upset friend without making them feel like you are trying to fix everything immediately.
+Show someone how to choose good produce at a market or grocery store by explaining what to look and feel for.
+Explain to a new colleague or classmate how to adapt their communication style depending on who they are talking to.
+Explain how you would help a friend build a fitness routine that actually sticks after failing at gym memberships before.
+Explain how to spot when an online deal or advertisement is too good to be true.
+Show someone how to fold a fitted sheet or complete another everyday task that looks harder than it is.
+Explain to a child why it is important to apologise properly and what makes an apology feel genuine versus empty.
+Coach someone on how to make good decisions quickly when they are under time pressure at work or while studying.
+Explain how to tell if a used item like a phone or a bike is actually in good condition before buying it.
+Show someone unfamiliar with recycling rules how to figure out what can and cannot be recycled in general.
+Explain to someone how to recognise the early warning signs that they are more tired or run-down than they realise.
+Explain how you would help a friend estimate time more realistically when they keep missing deadlines.
+Explain how to politely decline an invitation without damaging the relationship.
+Show someone how to take care of a small cut or minor injury safely at home.
+Explain to someone how to choose between two similar job offers when the salary is almost the same.
+Teach someone planning their first solo trip how to prepare in ways a first-timer usually wouldn't think of.
+Explain how you would teach someone to give and receive constructive feedback without either person feeling defensive.
+Decide what to remove, keep, and add if you were redesigning a public park that nobody uses anymore.
+Invent a new rule for your workplace or school that would actually improve daily life there.
+Design a morning routine for someone who is chronically late to everything.
+Create a new tradition for your family or friend group.
+Choose three items to put in a time capsule that represents life today.
+Invent a fairer way to split household chores between people who have very different schedules.
+Design a farewell event for a colleague who dislikes attention.
+Create a plan to convince a stubborn friend to try something new.
+Design a small business that solves a problem in your neighbourhood.
+Choose between three ways to spend an unexpected day off.
+Invent a new way to welcome new employees that avoids the usual awkward introductions.
+Choose one action between a shopping change, storage change, or cooking-habit change to reduce food waste for good in your household during a free afternoon.
+Design a weekend trip structure that lets group members with very different budgets and energy levels each get what they need.
+Choose which of three friends to ask for a favour that requires trust.
+Invent a fair method for choosing who gets the last seat on a fully booked group trip.
+Design an ideal waiting room for a place people usually dread visiting.
+Create a plan to help a shy person make more friends in a new city.
+Choose how to spend a small unexpected windfall between saving, spending, and giving.
+Invent a new format for team meetings that people won't dread attending.
+Design a system for resolving noise complaints between neighbours without involving authorities.
+Design a surprise for someone who hates surprises, built around how they find out, where it happens, and what makes it personal.
+Create a plan to repurpose an unused room in a house.
+Redesign how a long queue works by choosing between a numbered ticket system, a mobile app, or line entertainment.
+Design a mentorship pairing system for new and experienced staff.
+Choose which three skills someone should learn to become more self-sufficient at home.
+Create a plan to revive a friendship that has quietly faded over the years.
+Design a feature for an app that helps people stick to small daily habits.
+Design a fairer way to divide an inheritance of sentimental objects with no clear monetary value.
+Choose one habit to eliminate and one to build given limited willpower.
+Create a plan for a community skill-share event where neighbours teach each other things.
+Tell a story about a time a stranger's small act of kindness changed the direction of your day.
+Tell a story about a trip that went completely differently than planned.
+Tell a story about a misunderstanding between you and a friend or colleague that escalated before it was resolved.
+Tell a story about a time you had to make a difficult decision with very little time to think.
+Tell a story about a message, call, or video online that led to a real, unexpected event in your life.
+Tell a story about a family member whose actions you completely misunderstood at the time.
+Tell a story about a coincidence so unlikely that people didn't believe you when you told them.
+Tell a story about a small problem at work or school that got worse because of what you did next, and worse again after that.
+Tell a story about a long trip or period of travel that led to one specific moment you still remember clearly.
+Tell a story about a moment when you had to choose between honesty and loyalty.
+Tell a story about an argument that ended in an outcome nobody expected.
+Tell a story about a time you helped a stranger and later discovered something surprising about them.
+Tell a story about a competition or challenge where the result surprised everyone, including you.
+Tell a story about a plan involving money or a possession that you gave up on, then picked up again later.
+Tell a story about a time a small lie grew into a bigger problem.
+Tell a story about a person you initially disliked who you later came to respect.
+Tell a story about a local event or piece of community news and something happening in your own life that eventually came together.
+Tell a story about a time you had to trust someone you barely knew.
+Tell a story about a piece of advice you ignored and what happened as a result.
+Tell a story about a time two separate events in your life turned out to be connected.
+Tell a story about a moment when you realized you had misjudged a situation completely.
+Tell a story about an unusual encounter with someone from a very different background than yours.
+Tell a story about a time you had to give up something important to gain something else.
+Tell a story about a celebration or event that was ruined, then unexpectedly saved.
+Tell a story about a time you discovered a secret that changed how you saw someone.
+Tell a story about a mistake at work or school that turned into an unexpected opportunity.
+Tell a story about a time you had to choose between two people you cared about.
+Tell a story about an old friendship that ended, then unexpectedly started again years later.
+Tell a story about a time you stood up for someone even though it cost you something.
+Tell a story about a journey where the destination turned out to matter less than what happened along the way.
