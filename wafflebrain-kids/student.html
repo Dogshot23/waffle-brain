@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-87ZVSS7Q5N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-87ZVSS7Q5N');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>WaffleBrain Kids Student (Dev)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="student">
+<div id="app">
+
+  <header>
+    <div class="logo-group">
+      <img src="images/logo.png" alt="WaffleBrain" class="logo-img">
+      <span class="logo-subtitle">For Young Learners</span>
+    </div>
+    <nav class="version-nav" aria-label="Switch version">
+      <a href="index.html"   class="version-link inactive">Teacher</a>
+      <a href="student.html" class="version-link active" aria-current="page">Student</a>
+    </nav>
+  </header>
+
+  <div id="prompt-card">
+
+    <section class="waffle-section" id="waffle-section">
+      <div class="waffle-label">🧇 Waffle</div>
+      <p class="waffle-text" id="waffle-text"></p>
+    </section>
+
+    <section class="goal-section" id="goal-section">
+      <div class="goal-label">🎯 Goal</div>
+      <p class="goal-text" id="goal-text"></p>
+    </section>
+
+    <section class="starters-section" id="starters-section">
+      <div class="starters-label">💬 Waffle Starters</div>
+      <ul class="starters-list" id="starters-list"></ul>
+    </section>
+
+  </div>
+
+  <div class="btn-wrap">
+    <button id="back-btn" disabled aria-label="Previous Waffle">
+      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button id="next-btn" disabled>
+      Next Waffle
+      <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <footer>Press <kbd>Space</kbd> for a new Waffle</footer>
+
+</div>
+
+<script src="studentSupport.js"></script>
+<script src="student.js"></script>
+</body>
+</html>
