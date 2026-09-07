@@ -32,44 +32,44 @@ button {
 
 :root {
   /* Surface */
-  --bg:           #F8FAFF;
+  --bg:           #FFF9EF;
   --surface:      #FFFFFF;
-  --border:       #E4E2DC;
-  --border-light: #EDECE8;
+  --border:       #F0D9AE;
+  --border-light: #F8ECD3;
 
   /* Text */
-  --text-primary:   #1C1C1E;
-  --text-secondary: #5C5C6E;
-  --text-tertiary:  #9898A6;
+  --text-primary:   #2F2A25;
+  --text-secondary: #6B625A;
+  --text-tertiary:  #A39A90;
 
-  /* Badge (default; overridden per mode below) */
-  --badge-bg:   #EEF2FF;
-  --badge-text: #3B5BDB;
+  /* Badge */
+  --badge-bg:   #FFF3D6;
+  --badge-text: #D97706;
 
   /* Teacher — constraint block */
-  --constraint-bg:     #FFFBF0;
-  --constraint-border: #FDE89A;
+  --constraint-bg:     #FFF8E8;
+  --constraint-border: #FFD36E;
   --constraint-label:  #B45309;
-  --constraint-text:   #44360A;
+  --constraint-text:   #5C4208;
 
-  /* Teacher buttons (blue) */
-  --teacher-btn-bg:        #4C7DFF;
-  --teacher-btn-bg-hover:  #3E6EF0;
-  --teacher-btn-bg-active: #345DD0;
-  --teacher-flash-ring:    rgba(59, 91, 219, 0.18);
+  /* Teacher buttons */
+  --teacher-btn-bg:        #4F8DF7;
+  --teacher-btn-bg-hover:  #3F7CE6;
+  --teacher-btn-bg-active: #2F67C9;
+  --teacher-flash-ring:    rgba(79, 141, 247, 0.20);
 
-  /* Student buttons (orange) */
-  --student-btn-bg:        #D4610B;
-  --student-btn-bg-hover:  #E57D17;
-  --student-btn-bg-active: #D86F09;
-  --student-flash-ring:    rgba(212, 97, 11, 0.18);
+  /* Student buttons */
+  --student-btn-bg:        #FF9F1C;
+  --student-btn-bg-hover:  #FFB547;
+  --student-btn-bg-active: #F28C00;
+  --student-flash-ring:    rgba(255, 159, 28, 0.22);
 
   /* Student — Waffle Starters box */
-  --starters-bg:     #FFF6EC;
-  --starters-border: #FBDFC0;
-  --starters-label:  #B45309;
+  --starters-bg:     #FFF7E8;
+  --starters-border: #FFD9A3;
+  --starters-label:  #D97706;
 
-  /* Active button (set per page via body class — see section 5 & 6) */
+  /* Active button */
   --btn-bg:        var(--teacher-btn-bg);
   --btn-bg-hover:  var(--teacher-btn-bg-hover);
   --btn-bg-active: var(--teacher-btn-bg-active);
@@ -196,7 +196,7 @@ header {
   min-height: 0;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 16px;
   padding: 18px 18px 20px;
   display: flex;
   flex-direction: column;
@@ -252,14 +252,14 @@ header {
   flex-shrink: 0;
 }
 
-/* Per-category badge colours — shared across both pages.
-   Keys match the category/group names used in prompts.json exactly. */
-#prompt-card[data-mode="Everyday Situations"] .mode-badge { --badge-bg: #EEF2FF; --badge-text: #3B5BDB; }
-#prompt-card[data-mode="Describe"]            .mode-badge { --badge-bg: #E8F8F5; --badge-text: #0E7490; }
-#prompt-card[data-mode="Explain and Show"]    .mode-badge { --badge-bg: #FFF3BF; --badge-text: #845E00; }
-#prompt-card[data-mode="Simple Roleplay"]     .mode-badge { --badge-bg: #FFF0F6; --badge-text: #C2255C; }
-#prompt-card[data-mode="Choose and Create"]   .mode-badge { --badge-bg: #F3F0FF; --badge-text: #6741D9; }
-#prompt-card[data-mode="Guided Stories"]      .mode-badge { --badge-bg: #E8F5E9; --badge-text: #2E7D32; }
+/* Per-world badge colours — shared across both pages.
+   Keys match the World/group names used in prompts.json exactly. */
+#prompt-card[data-mode="Gaming"]          .mode-badge { --badge-bg: #EEF2FF; --badge-text: #3B5BDB; }
+#prompt-card[data-mode="Weird Creatures"] .mode-badge { --badge-bg: #E8F8F5; --badge-text: #0E7490; }
+#prompt-card[data-mode="Future Tech"]     .mode-badge { --badge-bg: #FFF3BF; --badge-text: #845E00; }
+#prompt-card[data-mode="Weird & Gross"]   .mode-badge { --badge-bg: #FFF0F6; --badge-text: #C2255C; }
+#prompt-card[data-mode="Mysteries"]       .mode-badge { --badge-bg: #F3F0FF; --badge-text: #6741D9; }
+#prompt-card[data-mode="Stories"]         .mode-badge { --badge-bg: #E8F5E9; --badge-text: #2E7D32; }
 
 /* Prompt text */
 

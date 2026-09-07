@@ -1,2123 +1,403 @@
 {
   "A1A2": {
-    "Everyday Situations": [
+    "Weird Creatures": [
       {
-        "prompt": "Set the scene: a friend is visiting the student's town on Saturday and likes food and outdoor activities but dislikes museums. Ask them to choose a morning activity, a lunch place, and an afternoon activity, then have them explain where they'd go, what they'd do, and why their friend would like it.",
-        "constraint": "Student gives a plan for 3 parts of the day and uses 'going to' with at least one reason."
+        "prompt": "🦖👻🐍 Three strange pets escaped from a scientist's lab: a tiny dragon, a friendly ghost, and a talking snake. You can only keep ONE.\nAsk: \"Which one do you keep — the dragon, the ghost, or the snake?\"\nTeacher: Get a fast choice, then push for a reason with 'because'. Ask what happens to the other two.\nQuick: What's the first weird thing your pet does on day one?\nStuck: Easier: forget the ghost. Just dragon or snake — go!",
+        "constraint": "Student chooses one and gives a reason using 'because'; can also use 'can'."
       },
       {
-        "prompt": "Explain that the student's friend always has a bad morning and needs a better routine. Encourage the student to choose solutions for waking up late, forgetting things, and having no breakfast, then have them say what their friend should do first, what they can change, and why it helps.",
-        "constraint": "Student uses 'should' or 'can' for each problem and gives a reason."
+        "prompt": "🐸 Two bad pets: one that never stops singing, one that eats your homework every day.\nAsk: \"Which pet is worse — the singer or the homework-eater?\"\nTeacher: Both are bad on purpose. Push for laughter and one clear reason.\nQuick: What's the worst moment with that pet?\nStuck: Easier: which is worse at school — singing pet or eating pet?",
+        "constraint": "Student picks one and gives a reason using 'because'; uses 'can' to describe the problem."
       },
       {
-        "prompt": "Tell the student their friend is visiting and doesn't eat meat or like spicy food. Ask them to plan a meal, a drink, and something extra, then find out what they'd prepare and why they chose it.",
-        "constraint": "Student names 3 food items and explains why each is suitable."
+        "prompt": "👹 Three 'monsters' under the bed: one smelly, one noisy, one just a bit sticky.\nAsk: \"Put them in order — scariest first!\"\nTeacher: Get the order fast, then ask 'because' only for the top one.\nQuick: What sound does the scariest one make?\nStuck: Easier: just tell me — smelly or noisy, which is scarier?",
+        "constraint": "Student ranks and gives one reason using 'because'."
       },
       {
-        "prompt": "Present a change of plan: the student had a day outside planned, but now it's raining. Invite them to choose a new activity at home, a food or drink, and something fun to do, then have them explain their new plan and why it's better.",
-        "constraint": "Student describes a new 3-part plan and gives one reason why it is better."
+        "prompt": "🐾 A furry blue creature lives happily in your garden — but you can only change ONE thing about it.\nAsk: \"What's the one thing you change?\"\nTeacher: Only one change allowed — no extras! Push for 'because'.\nQuick: What can it do now that it couldn't before?\nStuck: Easier: choose — bigger or smaller. That's your one change.",
+        "constraint": "Student describes one change and gives a reason using 'because'; may use 'can'."
       },
       {
-        "prompt": "Set up a situation where a visitor is new in the student's town and needs help getting somewhere. Ask the student to choose a destination, transport, and route, then find out where the visitor goes, how they get there, and what they need.",
-        "constraint": "Student gives clear directions including destination, transport, and one practical detail."
-      },
-      {
-        "prompt": "Explain that the student is organising a party for five friends on a small budget. Have them choose a place, food, and activities, then discuss their plan and why they chose these things.",
-        "constraint": "Student names 3 plan items and gives at least one reason related to budget."
-      },
-      {
-        "prompt": "Tell the student they need to buy a birthday present for a friend with €20. Ask them to choose a present, a shop, and a reason, then find out what they'd buy and why their friend would like it.",
-        "constraint": "Student names the present, the shop, and gives a clear reason the friend will like it."
-      },
-      {
-        "prompt": "Explain that the student's friend feels tired every day and needs a better routine. Encourage them to choose a food change, an activity, and a sleep habit, then have them say what their friend should do and why it helps.",
-        "constraint": "Student gives 3 routine changes and a reason for at least one."
-      },
-      {
-        "prompt": "Set up a two-day trip with only a small bag to pack. Ask the student to choose three things to pack, transport, and one activity, then find out what they'd take and why these things matter.",
-        "constraint": "Student lists 3 packed items and explains why each is important."
-      },
-      {
-        "prompt": "Explain that a new student has started at the school and needs to feel comfortable. Ask the student to explain important places, useful things to know, and advice for the first day.",
-        "constraint": "Student gives at least 2 pieces of advice using 'should' or 'can'."
-      },
-      {
-        "prompt": "Tell the student their friend is moving to a new apartment and needs help choosing the best place. Ask them to choose a location, rooms, and important features, then discuss why the apartment is good and what their friend can do there.",
-        "constraint": "Student uses at least 2 adjectives and gives one reason the apartment suits the friend."
-      },
-      {
-        "prompt": "Explain that the student's friend wants to spend one day without their phone. Invite the student to create the plan by choosing a morning, afternoon, and evening activity, then have them explain what their friend would do and why it's a good idea.",
-        "constraint": "Student plans 3 parts of the day and gives one reason it is good."
-      },
-      {
-        "prompt": "Tell the student their friend starts a new job tomorrow and needs help. Ask them to explain what their friend needs, what they do in the morning, and what they take with them.",
-        "constraint": "Student gives clear advice covering preparation, morning routine, and items to bring."
-      },
-      {
-        "prompt": "Set up a scenario where the student is choosing a restaurant for three friends with different needs — one vegetarian, one on a budget, one who loves desserts. Ask them where they'd go, what each person would eat, and why.",
-        "constraint": "Student addresses all 3 friends' needs and explains the choice."
-      },
-      {
-        "prompt": "Explain that the student wants a fun weekend but doesn't have much money. Ask them to choose an activity, food, and transport, then find out their plan and how they save money.",
-        "constraint": "Student gives a 3-part plan and explains how at least one thing saves money."
-      },
-      {
-        "prompt": "Set up a situation where a tourist is visiting the student's town and needs help. Ask the student to explain where the tourist should go, what they should see, and how they should travel.",
-        "constraint": "Student uses 'should' to give at least 2 recommendations with a reason."
-      },
-      {
-        "prompt": "Tell the student they have an important day tomorrow — a birthday, first day at school, or meeting new people. Ask them to choose one and plan their clothes, food, and preparation, then have them explain what they'll do and why.",
-        "constraint": "Student describes 3 preparations using 'going to' and gives at least one reason."
-      },
-      {
-        "prompt": "Explain that there's a problem at the student's home — no internet, a broken light, or no hot water. Ask them to choose one and tell you what the problem is, what they do about it, and who helps.",
-        "constraint": "Student states the problem clearly, describes one action, and names who helps."
-      },
-      {
-        "prompt": "Explain that the student is shopping for food for one week. Ask them to choose breakfast, lunch, and dinner food, then find out what they'd buy and why.",
-        "constraint": "Student names food for all 3 meals and gives one reason for a choice."
-      },
-      {
-        "prompt": "Tell the student their friend wants to improve their English and needs a simple plan. Ask them to choose a practice activity, time of day, and place, then have them explain what their friend would do and why it helps.",
-        "constraint": "Student gives a complete 3-part practice plan and explains why it helps."
+        "prompt": "🌑 Something is hiding behind the old shed. First clue: it's big.\nAsk: \"What do you think it is?\"\nTeacher: Give clues one at a time (next: 'it has three eyes', then 'it likes cheese'). Never reveal everything at once.\nQuick: What does it eat?\nStuck: Easier: is it an animal or a robot?",
+        "constraint": "Student guesses and gives a reason using 'because'; predicts using 'going to'."
       }
     ],
-    "Describe": [
+    "Gaming": [
       {
-        "prompt": "Ask the student to describe their bedroom, covering the furniture, the colours, and their favourite thing in it.",
-        "constraint": "Student describes at least 3 features of the room using 'There is/are' or 'It has'."
+        "prompt": "🎮 New game update. You can only keep ONE character: fast ninja, strong robot, funny wizard.\nAsk: \"Which one do you keep?\"\nTeacher: Fast choice, push for 'because'. Ask what happens to the other two characters.\nQuick: What's their first move in battle?\nStuck: Easier: ninja or robot — go!",
+        "constraint": "Student chooses one and gives a reason using 'because'; may use 'can'."
       },
       {
-        "prompt": "Explore the student's kitchen at home — ask what's there, where things are, and what they use every day.",
-        "constraint": "Student names at least 3 items and uses 'There is/are' or 'I use'."
+        "prompt": "🕹️ Your friend says mobile games are better than console games. You disagree!\nAsk: \"Convince me consoles are better!\"\nTeacher: Pretend to disagree gently ('But phones are easier!'). Never fully agree — keep it going.\nQuick: What can consoles do that phones can't?\nStuck: Easier: just tell me — controller or touchscreen, which is better?",
+        "constraint": "Student uses 'because', 'can', and 'should' to persuade."
       },
       {
-        "prompt": "Have the student describe a park near their home, covering what's there, what people do, and what they like about it.",
-        "constraint": "Student names 3 features of the park and gives one opinion."
+        "prompt": "🏆 Three game prizes: gold coins, a new skin, extra lives.\nAsk: \"Put them in order — best prize first!\"\nTeacher: Get the order fast, then ask 'because' for the winner.\nQuick: What can you do with the best prize?\nStuck: Easier: coins or skin — which is better?",
+        "constraint": "Student ranks and gives one reason using 'because'."
       },
       {
-        "prompt": "Ask the student to describe their classroom — the furniture, what's on the walls, and where they sit.",
-        "constraint": "Student describes at least 3 features using 'There is/are'."
+        "prompt": "🌩️ You're winning the game easily... but suddenly the power goes out!\nAsk: \"What do you do now?\"\nTeacher: Let them answer, then twist again ('...but your little brother saved the game on HIS profile!'). Keep adding twists.\nQuick: What happens when the power comes back?\nStuck: Easier: do you laugh or get angry? Why?",
+        "constraint": "Student uses 'going to' to predict and 'because' to explain."
       },
       {
-        "prompt": "Find out about the student's favourite shop: what it sells, what it looks like, and why they like it.",
-        "constraint": "Student describes what the shop sells and gives one reason they like it."
-      },
-      {
-        "prompt": "Invite the student to describe their school bag, covering what's inside, what they use every day, and one unusual item.",
-        "constraint": "Student names at least 3 items inside and uses 'There is/are' or 'I keep'."
-      },
-      {
-        "prompt": "Ask the student to describe their fridge at home — what's inside, what they eat every day, and something they don't like.",
-        "constraint": "Student names at least 3 food items and uses 'There is/are'."
-      },
-      {
-        "prompt": "Explore the student's desk or study space: what's on it, what they keep near them, and what they use most.",
-        "constraint": "Student names at least 3 items and uses 'I keep' or 'I use'."
-      },
-      {
-        "prompt": "Have the student describe their wardrobe or cupboard — what's inside, their favourite clothes, and something they never wear.",
-        "constraint": "Student names at least 3 items of clothing and uses 'There is/are'."
-      },
-      {
-        "prompt": "Ask the student to describe their pencil case, covering what's inside, what they use every day, and their favourite pen or pencil.",
-        "constraint": "Student names at least 3 items inside and gives one preference."
-      },
-      {
-        "prompt": "Encourage the student to compare their home and their school — what's similar, what's different, and where they prefer to be.",
-        "constraint": "Student gives at least one similarity and one difference between the two places."
-      },
-      {
-        "prompt": "Invite the student to compare their summer clothes and winter clothes — what they wear, the colours, and what they prefer.",
-        "constraint": "Student compares at least 2 items of clothing and gives one preference."
-      },
-      {
-        "prompt": "Ask the student to compare their bedroom now with their bedroom as a child — what's different, what's the same, and what they miss.",
-        "constraint": "Student gives at least 2 differences between the two bedrooms."
-      },
-      {
-        "prompt": "Discuss a weekday versus a weekend with the student — what they do, what they eat, and how they feel.",
-        "constraint": "Student compares at least 2 activities between the two days."
-      },
-      {
-        "prompt": "Have the student compare their house and a friend's house — size, rooms, and what they like about each.",
-        "constraint": "Student gives at least one similarity and one difference and names one thing they like."
-      },
-      {
-        "prompt": "Ask the student to describe their favourite jacket — what it looks like, where they got it, and when they wear it.",
-        "constraint": "Student describes appearance, origin, and when they use the item."
-      },
-      {
-        "prompt": "Find out about the student's favourite mug or cup — what it looks like, where they got it, and why they like it.",
-        "constraint": "Student describes appearance and gives one reason they like the item."
-      },
-      {
-        "prompt": "Invite the student to describe their favourite gadget — what it looks like, what they use it for, and how often they use it.",
-        "constraint": "Student describes appearance and explains what the item is used for."
-      },
-      {
-        "prompt": "Ask the student to describe their favourite book or comic — what it looks like, what it's about, and why they like it.",
-        "constraint": "Student describes the item and gives one reason for liking it."
-      },
-      {
-        "prompt": "Explore the student's favourite pair of shoes — what they look like, where they got them, and when they wear them.",
-        "constraint": "Student describes appearance, origin, and when they wear the item."
-      },
-      {
-        "prompt": "Have the student describe a photo or picture in their home — what's in it, where it is, and why they keep it.",
-        "constraint": "Student describes at least 2 details in the picture and gives one reason."
-      },
-      {
-        "prompt": "Ask the student to describe their phone case, covering the colour, the design, and why they chose it.",
-        "constraint": "Student describes colour and design and gives one reason for the choice."
-      },
-      {
-        "prompt": "Invite the student to describe a plant in their home or garden — what it looks like, where it is, and who looks after it.",
-        "constraint": "Student describes appearance and location and names who cares for it."
-      },
-      {
-        "prompt": "Explore an object on the student's desk right now — what it looks like, what's next to it, and what they use it for.",
-        "constraint": "Student describes appearance, one neighbouring object, and its use."
-      },
-      {
-        "prompt": "Ask the student to describe a poster or picture on their wall — what colour it is, what's in it, and why they have it.",
-        "constraint": "Student describes colour and content and gives one reason for having it."
-      },
-      {
-        "prompt": "Turn it into a guessing game: ask the student to describe an animal without saying its name, covering what it looks like, where it lives, and what it eats, then try to guess it.",
-        "constraint": "Student gives at least 3 clues without naming the animal."
-      },
-      {
-        "prompt": "Play a guessing game: invite the student to describe a job without saying its name, covering what the person wears, where they work, and what they do, then try to guess it.",
-        "constraint": "Student gives at least 3 clues without naming the job."
-      },
-      {
-        "prompt": "Set up a guessing game: ask the student to describe a food without saying its name, covering its colour, how it tastes, and when they eat it, then try to guess it.",
-        "constraint": "Student gives at least 3 clues without naming the food."
-      },
-      {
-        "prompt": "Try a guessing game: have the student describe a place in town without saying its name, covering what you can do there, what's inside, and who goes there, then guess what it is.",
-        "constraint": "Student gives at least 3 clues without naming the place."
-      },
-      {
-        "prompt": "Close with a guessing game: invite the student to describe an object in the kitchen without saying its name, covering what it looks like, what it's used for, and where it's kept, then try to guess it.",
-        "constraint": "Student gives at least 3 clues without naming the object."
+        "prompt": "🕹️🐉🔥 Three gaming emojis.\nAsk: \"What game do these emojis make?\"\nTeacher: Push them to invent a game combining the three ideas. Reuse the emojis for a second round if there's time.\nQuick: What's the hero's superpower?\nStuck: Easier: just pick your favourite emoji and describe it.",
+        "constraint": "Student uses 'can' and 'because' to describe the game."
       }
     ],
-    "Explain and Show": [
+    "Mysteries": [
       {
-        "prompt": "Ask the student to teach you how to make their favourite drink — coffee, tea, juice, or a smoothie. Find out what you need, what to do first, and what happens next.",
-        "constraint": "Student names the ingredients and describes at least 2 steps in order using 'First' and 'Then'."
+        "prompt": "🔍 Two clues at the crime scene: a broken window OR a missing key.\nAsk: \"Which clue is worse for the thief — the broken window or the missing key?\"\nTeacher: Push for 'because'; ask what the thief should do now.\nQuick: What can the detective find next?\nStuck: Easier: which clue is bigger — broken window or key?",
+        "constraint": "Student picks one and gives a reason using 'because'; can use 'can'."
       },
       {
-        "prompt": "Have the student show you their morning routine. Ask what time they wake up, what they do first, and what they do before leaving home.",
-        "constraint": "Student describes at least 3 actions in order using sequencing words."
+        "prompt": "🕵️ A shoe, a note, and a dropped glove are the only clues so far.\nAsk: \"Let's build the story together — who do you think it is?\"\nTeacher: Add one detail after the student speaks ('...and there's mud on the shoe too!'). Keep adding, never finish alone.\nQuick: What should the detective check next?\nStuck: Easier: is it a kid or an adult? Why?",
+        "constraint": "Student gives reasons using 'because' and 'should'."
       },
       {
-        "prompt": "Invite the student to teach you how to use their favourite app — a messaging app, a video app, a game, or a music app. Find out what it's for, what you can do with it, and what you should try first.",
-        "constraint": "Student explains the app's purpose and gives at least 2 simple instructions."
+        "prompt": "🔎 Three suspects: the neighbour, the postman, the cat.\nAsk: \"Rank them from most to least suspicious!\"\nTeacher: Fast order, then push 'because' for #1.\nQuick: What did the top suspect do?\nStuck: Easier: neighbour or postman — who's guiltier?",
+        "constraint": "Student ranks and gives one reason using 'because'."
       },
       {
-        "prompt": "Ask the student to teach a visitor how to get around their town — to a restaurant, shop, park, or station. Have them show you how to get there, what transport to use, and what you need to know.",
-        "constraint": "Student gives clear directions with at least one transport method and one landmark."
+        "prompt": "🔦 Something's missing from the classroom. Clue one: it's small.\nAsk: \"What do you think happened?\"\nTeacher: Add clues slowly ('next: it's shiny', then 'it was on the teacher's desk'). Never reveal all at once.\nQuick: Who do you think took it?\nStuck: Easier: is it a toy or a pen?",
+        "constraint": "Student guesses and gives a reason using 'because'; predicts using 'going to'."
       },
       {
-        "prompt": "Have the student teach you a simple recipe — a sandwich, salad, breakfast, or dessert. Ask what ingredients you need, what to do first, and how to finish.",
-        "constraint": "Student lists at least 2 ingredients and describes the steps in order."
-      },
-      {
-        "prompt": "Ask the student to show you how they prepare for work or school. Find out what they prepare, what they take with them, and what they do before leaving.",
-        "constraint": "Student names at least 3 things and describes the order of preparation."
-      },
-      {
-        "prompt": "Invite the student to teach you a hobby — a sport, game, craft, or activity. Ask what you'd need, how to start, and what to do next.",
-        "constraint": "Student names the equipment needed and explains at least 2 steps to begin."
-      },
-      {
-        "prompt": "Have the student show you how to have a good weekend by creating a plan. Ask what they do on Saturday, what they do on Sunday, and what the best part is.",
-        "constraint": "Student describes one activity for each day and gives a reason for the best part."
-      },
-      {
-        "prompt": "Ask the student to teach you how to buy something in their country — food, clothes, a ticket, or a gift. Find out where to go, what to say, and what happens.",
-        "constraint": "Student describes the location, one useful phrase, and the process in order."
-      },
-      {
-        "prompt": "Invite the student to show you how they relax after a busy day by creating their routine. Ask what they do first, what they do next, and what makes them feel good.",
-        "constraint": "Student describes at least 2 steps in order and gives one reason it helps."
-      },
-      {
-        "prompt": "Ask the student to teach you how to look after something — a plant, a pet, a bike, or a phone. Find out what it needs, what they do, and how often.",
-        "constraint": "Student names at least 2 care actions and states how often each happens."
-      },
-      {
-        "prompt": "Have the student show you how they get ready for a trip. Ask what they pack, what they check, and what they do before leaving.",
-        "constraint": "Student names at least 3 preparation steps in a clear order."
-      },
-      {
-        "prompt": "Ask the student to teach you how to celebrate a special day — a birthday, holiday, festival, or family event. Find out what happens, what food people have, and what people do.",
-        "constraint": "Student describes the event with at least 3 details, including food and an activity."
-      },
-      {
-        "prompt": "Invite the student to teach you how to set the table for a meal. Ask what you need, where everything goes, and what to do first.",
-        "constraint": "Student names at least 3 items and describes their positions or order."
-      },
-      {
-        "prompt": "Have the student show you how to pack a bag for school or work. Ask what goes in first, what else they add, and what they check before leaving.",
-        "constraint": "Student describes packing in order using 'First', 'Then', and 'Finally'."
-      },
-      {
-        "prompt": "Ask the student to teach you how to wash and dry laundry. Find out what they do first, what happens next, and how they finish.",
-        "constraint": "Student explains at least 3 steps in the correct order."
-      },
-      {
-        "prompt": "Invite the student to show you how to make a hot drink for a guest. Ask what they'd say to the guest, what they prepare, and how they serve it.",
-        "constraint": "Student describes at least 2 steps and one polite phrase used with a guest."
-      },
-      {
-        "prompt": "Have the student teach you how to use public transport in their town — bus, train, tram, or taxi. Ask where to buy a ticket, how to know where to get on, and what to do on arrival.",
-        "constraint": "Student explains at least 3 steps of the process in order."
-      },
-      {
-        "prompt": "Ask the student to show you how to find their way to a new place — a friend's house, a shop, an office, or a school. Find out what to look for, which way to go, and how they know they've arrived.",
-        "constraint": "Student gives directions with at least 2 landmarks or turns."
-      },
-      {
-        "prompt": "Invite the student to teach you how to cook eggs — fried, boiled, scrambled, or omelette. Ask what you need, what to do first, and how to know it's ready.",
-        "constraint": "Student names ingredients and describes at least 2 steps in order."
-      },
-      {
-        "prompt": "Have the student show you how they organise their desk or bag. Ask what goes where, what they keep close, and why it's a good system.",
-        "constraint": "Student describes at least 2 organisation choices and gives one reason."
-      },
-      {
-        "prompt": "Ask the student to teach you how to plan a shopping trip. Find out what goes on their list, where they go first, and how they save time or money.",
-        "constraint": "Student names at least 2 items and describes one practical tip."
-      },
-      {
-        "prompt": "Invite the student to show you how they charge and look after their phone. Ask when they charge it, what they check, and what they avoid.",
-        "constraint": "Student describes at least 2 habits using present simple."
-      },
-      {
-        "prompt": "Have the student teach you a simple exercise routine — stretching, walking, a home workout, or yoga. Ask how they start, what they do next, and how they finish.",
-        "constraint": "Student describes at least 3 steps in order using sequencing words."
-      },
-      {
-        "prompt": "Ask the student to show you how they make their bed. Find out what they do first, what they do next, and how they finish.",
-        "constraint": "Student describes the process in at least 2 clear steps."
-      },
-      {
-        "prompt": "Invite the student to teach you how to plan a birthday surprise for a friend. Ask what they prepare, who helps them, and what happens on the day.",
-        "constraint": "Student names at least 2 preparations and describes what happens on the day."
-      },
-      {
-        "prompt": "Have the student show you how they take care of their health every day. Ask what they eat or drink, what activity they do, and what helps them sleep well.",
-        "constraint": "Student names at least 3 daily habits using present simple."
-      },
-      {
-        "prompt": "Ask the student to teach you how to send a message or email politely. Find out how they start, what they write, and how they finish.",
-        "constraint": "Student describes at least 2 steps and one polite phrase."
-      },
-      {
-        "prompt": "Invite the student to show you how to prepare a simple picnic. Ask what food they bring, what else they pack, and where they go.",
-        "constraint": "Student names at least 3 items and one location detail."
-      },
-      {
-        "prompt": "Have the student teach you how to look after a house plant. Ask where they put it, how often they water it, and what else it needs.",
-        "constraint": "Student gives at least 2 care instructions using present simple."
+        "prompt": "🕵️ Your friend says the dog broke the vase. You think it was the wind!\nAsk: \"Convince me it was the wind!\"\nTeacher: Push back gently, defending 'the dog' position; don't give in easily.\nQuick: What can prove your idea?\nStuck: Easier: was a window open — yes or no?",
+        "constraint": "Student uses 'because' and 'can' to persuade."
       }
     ],
-    "Simple Roleplay": [
+    "Future Tech": [
       {
-        "prompt": "Set up a roleplay where you're the café worker and the student is a customer. Their goal is to order a drink — coffee, tea, juice, or water — and a snack such as cake, a sandwich, or salad. Ask them what they'd like and whether they want anything else, then explore why they chose it and what they usually order.",
-        "constraint": "Student orders one drink and one food item and answers at least one extension question."
+        "prompt": "🤖 A robot helper can only do ONE job in your house: cooking, cleaning, or homework.\nAsk: \"What's the one job you choose?\"\nTeacher: Only one job allowed. Push for 'because'.\nQuick: What can it do to help even more?\nStuck: Easier: cooking or cleaning — which one?",
+        "constraint": "Student uses 'because', 'can', and 'should'."
       },
       {
-        "prompt": "Play the hotel receptionist while the student checks in for a holiday. Their goal is to get a room — single, double, or family — for one night, three nights, or one week. Find out who they're travelling with and what they need in the room.",
-        "constraint": "Student states room type and length of stay, and answers at least one extension question."
+        "prompt": "🚗 Your friend says flying cars are a bad idea. You think they're great!\nAsk: \"Convince me flying cars are good!\"\nTeacher: Push back gently ('But they're noisy!'). Don't agree too soon.\nQuick: What can flying cars do that normal cars can't?\nStuck: Easier: fast or slow — which matters more?",
+        "constraint": "Student uses 'because', 'can', and 'should' to persuade."
       },
       {
-        "prompt": "Take the role of a shop assistant while the student looks for something to wear — a shirt, jacket, shoes, or trousers, in black, blue, or white. Ask them when they'd wear it and how much it costs.",
-        "constraint": "Student names the item and colour they want and answers at least one extension question."
+        "prompt": "⚡ You get new super-shoes that let you run really fast... but suddenly they stop working in the rain!\nAsk: \"What do you do now?\"\nTeacher: Let them answer, then twist again ('...but it's raining every day this week!'). Keep it going.\nQuick: What's going to happen tomorrow?\nStuck: Easier: walk or wait — which do you choose?",
+        "constraint": "Student uses 'going to' and 'can'."
       },
       {
-        "prompt": "Play the doctor's receptionist while the student calls to make an appointment for a cold, headache, or stomach ache, choosing a morning, afternoon, or evening slot. Ask how they feel and what they do to feel better.",
-        "constraint": "Student explains the problem, chooses a time, and answers at least one extension question."
+        "prompt": "📱 A new phone can do one amazing thing nobody's invented yet.\nAsk: \"Let's build it together — what's the first amazing thing it does?\"\nTeacher: Add a new feature after each student turn ('...and it can also read your mind a little!').\nQuick: What can't it do?\nStuck: Easier: does it fly or does it talk?",
+        "constraint": "Student uses 'can' and 'going to'."
       },
       {
-        "prompt": "Act as someone who knows the area while the student asks for directions to a supermarket, station, restaurant, or park. Have them ask where it is and how to get there, then find out whether they'd walk or take transport and how long it takes.",
-        "constraint": "Student names a place and asks for directions using both questions, then answers one extension question."
-      },
-      {
-        "prompt": "Play the student's friend while they ask for help moving to a new home — books, clothes, furniture, or boxes. Get them to describe part of a plan (what to move first, when, who can help), then ask why they need help and what's difficult.",
-        "constraint": "Student names items to move, describes part of a plan, and answers at least one extension question."
-      },
-      {
-        "prompt": "Take the role of a supermarket worker while the student looks for fruit, milk, bread, or cheese. Have them ask where an item is and how much it costs, then find out what they buy every week and what they eat at home.",
-        "constraint": "Student names at least two items and asks both questions, then answers one extension question."
-      },
-      {
-        "prompt": "Play the student's friend while they plan a birthday party together — a place (home, park, or restaurant) and food (pizza, cake, or sandwiches). Ask who's coming and what time it starts.",
-        "constraint": "Student chooses a place and food and answers at least one extension question."
-      },
-      {
-        "prompt": "Act as the information desk worker while the student buys a train ticket to a city, beach, or airport for the morning, afternoon, or evening. Find out who they're travelling with and how long the journey is.",
-        "constraint": "Student states a destination and time and answers at least one extension question."
-      },
-      {
-        "prompt": "Play a new neighbour meeting the student for the first time. Encourage them to introduce themselves and talk about their name, home, job or school, and hobbies, then ask what they do in their free time and how long they've lived there.",
-        "constraint": "Student talks about at least 3 of the 4 topics and answers one extension question."
-      },
-      {
-        "prompt": "Take the role of a shop worker while the student returns an item that's the wrong size, broken, or the wrong colour, and asks for an exchange or a refund. Ask why they don't want it and what they'd like instead.",
-        "constraint": "Student explains the problem, states the solution they want, and answers one extension question."
-      },
-      {
-        "prompt": "Play a restaurant worker while the student books a table for 2, 4, or 6 people at 7pm, 8pm, or 9pm. Ask what food they like and whether they need anything special.",
-        "constraint": "Student states number of people and a time, and answers at least one extension question."
-      },
-      {
-        "prompt": "Have the student ask you, as a friend, about weekend plans, choosing an activity — cinema, shopping, walking, or eating out — and a day, Saturday or Sunday. Find out why they want to do it and what time they'd meet.",
-        "constraint": "Student chooses an activity and a day and answers at least one extension question."
-      },
-      {
-        "prompt": "Play hotel reception while the student calls about a problem — no hot water, a noisy room, or the wrong room — and asks for a solution. Ask what they want the hotel to do and how serious the problem is.",
-        "constraint": "Student explains the problem clearly and answers at least one extension question."
-      },
-      {
-        "prompt": "Play the student's friend while they talk through preparing for their first day at a new school or job — clothes, bag, transport, or schedule. Ask what they're worried about and what they need tomorrow.",
-        "constraint": "Student describes at least 2 preparations and answers one extension question."
-      },
-      {
-        "prompt": "Take the role of a pharmacy worker while the student explains a health problem — a cold, cough, or headache — and asks for medicine, advice, or information. Ask how they feel and what they usually do when they're sick.",
-        "constraint": "Student explains the problem, states what they need, and answers one extension question."
-      },
-      {
-        "prompt": "Play a restaurant worker taking a delivery order while the student chooses food — pizza, burger, salad, or pasta — and a drink — water, juice, or cola. Ask what food they like and when they usually order.",
-        "constraint": "Student orders one food and one drink and answers at least one extension question."
-      },
-      {
-        "prompt": "Play the student's friend while they ask for help learning something new — cooking, English, sport, or technology. Ask why they want to learn it and when they'd like to start.",
-        "constraint": "Student names what they want to learn and answers at least one extension question."
-      },
-      {
-        "prompt": "Act as an airport information desk worker while the student asks about their flight — finding the gate, checking the time, or finding a place — and talks about their destination, time, or a problem. Ask where they're going and who they're travelling with.",
-        "constraint": "Student states one need and talks about at least 2 of the 3 topics, then answers one extension question."
-      },
-      {
-        "prompt": "Play the student's friend while they plan a day out together — visiting a city, shopping, going to the beach, or the park — at a chosen time of day. Ask what they need to take and what they want to do first.",
-        "constraint": "Student chooses an activity and time and answers at least one extension question."
+        "prompt": "🔋 Two phone problems: a battery that dies every hour, or a screen that cracks every week.\nAsk: \"Which problem is worse?\"\nTeacher: Push for 'because'.\nQuick: What should the phone company do?\nStuck: Easier: battery or screen — which is worse?",
+        "constraint": "Student picks one and gives a reason using 'because'; uses 'should'."
       }
     ],
-    "Choose and Create": [
+    "Weird & Gross": [
       {
-        "prompt": "Ask the student to create a weekend plan, choosing a place — park, city, or beach — and an activity — walking, shopping, or eating out. Have them explain what they chose and why.",
-        "constraint": "Student chooses a place and an activity and gives one reason using 'because'."
+        "prompt": "🦟🩸💤 Three gross emojis.\nAsk: \"What creepy creature story do these make?\"\nTeacher: Push them to connect the three ideas into a mini creature description.\nQuick: What does it do at night?\nStuck: Easier: pick just one emoji and describe it.",
+        "constraint": "Student uses 'can' and 'because'."
       },
       {
-        "prompt": "Invite the student to plan a day out with a friend, choosing a time, a place — museum, market, or cinema — and food — café, restaurant, or picnic. Find out their plan and why they chose it.",
-        "constraint": "Student plans all 3 parts and uses 'we can' or 'let's' at least once."
+        "prompt": "🤢 A frog can breathe through its skin!\nAsk: \"Give me the silliest reason why!\"\nTeacher: Reward wild, wrong answers — never say 'no'. Build on whatever they say.\nQuick: What else can it do because of that?\nStuck: Easier: is it magic or a superpower? Pick one.",
+        "constraint": "Student uses 'because' and 'can'."
       },
       {
-        "prompt": "Have the student create a birthday party plan, choosing a place, an activity — games, music, or cake — and a time. Ask them to explain their plan and why people will enjoy it.",
-        "constraint": "Student names 3 plan items and gives one reason."
+        "prompt": "🐛 Two gross facts: a bug that lays eggs in fruit, or a fish that lives inside another fish.\nAsk: \"Which is grosser?\"\nTeacher: Push for 'because'.\nQuick: What would you do if you found one?\nStuck: Easier: bug or fish — which is worse?",
+        "constraint": "Student picks one and gives a reason using 'because'."
       },
       {
-        "prompt": "Ask the student to plan a simple school day — a first activity, lunch arrangements, and what they do after school. Have them explain their plan and why.",
-        "constraint": "Student describes all 3 parts of the day using simple present or 'going to'."
+        "prompt": "🦠 A slimy swamp creature can only change ONE thing about itself to be less gross.\nAsk: \"What's the one change?\"\nTeacher: One change only. Push for 'because'.\nQuick: What can it do now?\nStuck: Easier: less slime or less smell — pick one.",
+        "constraint": "Student gives a reason using 'because'; may use 'can'."
       },
       {
-        "prompt": "Invite the student to create a breakfast menu for a small café, choosing food, drinks, and prices. Find out what they'd choose and why people would like it.",
-        "constraint": "Student names at least 2 food items, 1 drink, and gives a price for each."
-      },
-      {
-        "prompt": "Have the student create a menu for a birthday party, choosing food, drinks, and extras like cake or snacks. Ask them what they'd choose and why people would like it.",
-        "constraint": "Student names 3 menu items and gives one reason using 'because'."
-      },
-      {
-        "prompt": "Ask the student to design a picnic menu for a sunny day, choosing food, drinks, and extras. Have them explain what they'd pack and why it suits a picnic.",
-        "constraint": "Student names 3 items and explains why they suit a picnic."
-      },
-      {
-        "prompt": "Invite the student to create a lunch menu for a small restaurant, choosing a main dish, a drink, and a dessert. Find out their menu and why customers would like it.",
-        "constraint": "Student names all 3 courses and gives one reason customers will like it."
-      },
-      {
-        "prompt": "Explain that the student is going on a two-day trip. Have them choose 3 important items and 2 optional ones, then ask what they'd pack and why each item matters.",
-        "constraint": "Student lists 3 important items and gives a reason for each."
-      },
-      {
-        "prompt": "Ask the student to pack a bag for one day at the beach, choosing important items and optional items. Find out what they'd take and why.",
-        "constraint": "Student names at least 3 items and gives one reason using 'because'."
-      },
-      {
-        "prompt": "Have the student prepare a bag for the first day at a new job, choosing important and optional items. Ask what they'd take and why each item helps.",
-        "constraint": "Student lists 3 items and explains why each is useful."
-      },
-      {
-        "prompt": "Explain that the student is moving to a new apartment. Ask them to choose the 3 most important things to take first and give a reason for each.",
-        "constraint": "Student names 3 items in order of importance and gives one reason."
-      },
-      {
-        "prompt": "Invite the student to prepare for a sports activity this weekend — football, running, or swimming — choosing important and optional items. Find out what they'd take and why.",
-        "constraint": "Student chooses a sport, lists 2 items, and gives one reason."
-      },
-      {
-        "prompt": "Ask the student to design a small bedroom, choosing furniture, colours, and where things go. Have them explain their design and why it's comfortable.",
-        "constraint": "Student names 3 items and explains why the room is comfortable."
-      },
-      {
-        "prompt": "Have the student design a study area at home, choosing furniture, equipment, and where things go. Ask them to explain their design and why it helps them study.",
-        "constraint": "Student names 3 items and gives one reason each helps studying."
-      },
-      {
-        "prompt": "Invite the student to design a small café, choosing tables and chairs, decoration, and music. Find out their design and why customers would like it.",
-        "constraint": "Student names 3 design choices and gives one reason customers will like it."
-      },
-      {
-        "prompt": "Ask the student to design a shop window display, choosing products to show, colours, and decoration. Have them explain their design and why it attracts customers.",
-        "constraint": "Student names 3 elements and gives one reason it attracts customers."
-      },
-      {
-        "prompt": "Present two hotels for a weekend trip — Hotel A, cheap, small, near the beach; Hotel B, expensive, big, in the city centre. Ask the student which they'd choose and why.",
-        "constraint": "Student names one hotel and gives 2 reasons for the choice."
-      },
-      {
-        "prompt": "Compare two after-school activities with the student — a sports club or an art class. Find out which they'd choose and why it's better for them.",
-        "constraint": "Student chooses one option and gives at least one clear reason."
-      },
-      {
-        "prompt": "Present two phones for a friend — Phone A, cheap, small screen, good battery; Phone B, expensive, big screen, good camera. Ask the student which they'd choose and why.",
-        "constraint": "Student names one phone and gives 2 reasons for the choice."
-      },
-      {
-        "prompt": "Compare two restaurants for a family dinner — Restaurant A, cheap and fast food; Restaurant B, expensive, quiet, slow service. Have the student choose one and explain why it suits the family.",
-        "constraint": "Student chooses one restaurant and gives one reason using 'because'."
-      },
-      {
-        "prompt": "Present two ways to travel to work — Option A, bus, cheap and slow; Option B, taxi, expensive and fast. Ask the student which they'd pick and why.",
-        "constraint": "Student picks one option and gives at least one reason."
-      },
-      {
-        "prompt": "Ask the student to choose a birthday gift for a friend with a €20 budget, deciding on the gift, the shop, and their reason. Find out what they'd buy and why their friend will like it.",
-        "constraint": "Student names the gift, the shop, and gives one clear reason."
-      },
-      {
-        "prompt": "Have the student plan a simple activity for a visiting family member, choosing the activity, place, and time. Ask them to explain their plan and why the person will enjoy it.",
-        "constraint": "Student names 3 plan details and gives one reason the person will enjoy it."
-      },
-      {
-        "prompt": "Invite the student to create a small welcome plan for a new student at school, covering what to show them, what to tell them, and who helps them.",
-        "constraint": "Student gives at least 2 pieces of help using 'should' or 'can'."
-      },
-      {
-        "prompt": "Ask the student to choose a helpful item for a visitor who's new in town — a map, a phone number, or a list of places — and give a reason. Find out what they'd give and why it helps.",
-        "constraint": "Student names one item and gives one clear reason it helps the visitor."
-      },
-      {
-        "prompt": "Have the student plan a small surprise for a family member's special day, choosing an activity, food, and decoration. Ask them to explain their plan and why the person will like it.",
-        "constraint": "Student names 3 plan items and gives one reason using 'because'."
-      },
-      {
-        "prompt": "Ask the student to create a shopping list for one week of dinners, choosing 5 food items and explaining why each is needed.",
-        "constraint": "Student lists 5 items and gives at least one reason."
-      },
-      {
-        "prompt": "Invite the student to plan a simple exercise schedule for one week, choosing days, type of exercise, and time of day. Find out their schedule and why it works for them.",
-        "constraint": "Student gives a 3-part schedule and one reason it fits their life."
-      },
-      {
-        "prompt": "Have the student create a simple morning routine for a busy weekday, choosing a first task, breakfast, and a last task before leaving. Ask them to explain their routine and why it saves time.",
-        "constraint": "Student describes all 3 steps and gives one reason it saves time."
+        "prompt": "🤮 Three gross animal facts: sticky tongue, smelly spray, eats its own skin.\nAsk: \"Rank them from grossest to least gross!\"\nTeacher: Fast order, then push 'because' for #1.\nQuick: What animal do you think does the grossest one?\nStuck: Easier: sticky tongue or smelly spray — which is worse?",
+        "constraint": "Student ranks and gives one reason using 'because'."
       }
     ],
-    "Guided Stories": [
+    "Stories": [
       {
-        "prompt": "Ask the student to tell the story of losing their bag at the train station. Have them explain where they last had it, where they looked, and who helped them find it.",
-        "constraint": "Student uses First, Then, Finally and past tense to tell the story."
+        "prompt": "📦 An old locked box sits in the attic. Clue one: it's heavier than it looks.\nAsk: \"What do you think is inside?\"\nTeacher: Reveal clues slowly ('next: it makes a ticking sound', then 'there's a name on it'). Never all at once.\nQuick: What's going to happen when it opens?\nStuck: Easier: is it something old or something new?",
+        "constraint": "Student guesses and gives a reason using 'because'; predicts using 'going to'."
       },
       {
-        "prompt": "Invite the student to tell the story of arriving late for an important meeting. Find out why they were late, what they did, and what happened when they arrived.",
-        "constraint": "Student gives a reason for being late and describes 3 story parts in order."
+        "prompt": "📸 A photo shows an extra person nobody remembers seeing.\nAsk: \"Let's build the story together — who is it?\"\nTeacher: Add a detail each turn ('...and they're wearing something strange'). Keep building.\nQuick: What should the character do next?\nStuck: Easier: friend or stranger — which is it?",
+        "constraint": "Student gives reasons using 'because' and 'should'."
       },
       {
-        "prompt": "Have the student tell the story of breaking a friend's phone by accident. Ask how it happened, what they said, and how they solved the problem.",
-        "constraint": "Student describes the accident, a reaction, and a solution using past tense."
+        "prompt": "🚪 A door in the school that nobody has ever opened.\nAsk: \"Give me the silliest reason it's locked!\"\nTeacher: Reward silly, wrong, wonderful answers. Build on them, never say no.\nQuick: What can you hear behind it?\nStuck: Easier: is it magic or just broken?",
+        "constraint": "Student uses 'because' and 'can'."
       },
       {
-        "prompt": "Ask the student to tell the story of forgetting their homework at home on the day it's due. Find out when they noticed, what they did, and how the problem ended.",
-        "constraint": "Student tells a 3-part story with a clear ending using First, Then, Finally."
+        "prompt": "🚌 The school bus breaks down on a dark road... and there's only one umbrella.\nAsk: \"What do the characters do?\"\nTeacher: Let them answer, then twist ('...but now it's not rain — it's snow!'). Keep expanding.\nQuick: What's going to happen next?\nStuck: Easier: walk or wait — which do they choose?",
+        "constraint": "Student uses 'going to' and 'should'."
       },
       {
-        "prompt": "Invite the student to tell the story of getting a flat tyre far from home. Ask where they were, what they did, and how they got home.",
-        "constraint": "Student describes the problem and gives a clear solution in sequence."
-      },
-      {
-        "prompt": "Have the student tell the story of a busy day at work or school, covering the morning, the afternoon, and how the day ends.",
-        "constraint": "Student describes 3 parts of the day using First, Then, Finally."
-      },
-      {
-        "prompt": "Ask the student to tell the story of a special day, like a birthday or celebration, covering how it starts, what they do together, and how it finishes.",
-        "constraint": "Student sequences the day into 3 clear parts with past tense verbs."
-      },
-      {
-        "prompt": "Invite the student to tell the story of a day trip to another city, covering how they travel, what they see or do, and how they return home.",
-        "constraint": "Student describes travel, activity, and return using sequence words."
-      },
-      {
-        "prompt": "Have the student tell the story of a day when everything goes wrong, covering what happens first, what happens next, and how the day ends.",
-        "constraint": "Student describes at least 2 problems and gives an ending."
-      },
-      {
-        "prompt": "Ask the student to tell the story of their first day at a new job or school. Find out how they felt arriving, what they did during the day, and how they felt at the end.",
-        "constraint": "Student uses First, Then, Finally and describes a feeling at start and end."
-      },
-      {
-        "prompt": "Have the student build a story by choosing a place — park, shop, or train station — a person — friend, stranger, or family member — and a problem — lost item, wrong direction, or no money. Ask them to create the story using their choices.",
-        "constraint": "Student names all 3 choices and tells a complete story using them."
-      },
-      {
-        "prompt": "Invite the student to build a story by choosing a place — restaurant, airport, or school — a person — teacher, classmate, or waiter — and an activity — ordering food, catching a flight, or giving a presentation. Have them create the story using their choices.",
-        "constraint": "Student includes all 3 chosen elements and uses First, Then, Finally."
-      },
-      {
-        "prompt": "Ask the student to build a story by choosing a place — their house, a friend's house, or a hotel — a person — neighbour, visitor, or delivery person — and a problem — broken object, strange noise, or unexpected visitor. Have them create the story using their choices.",
-        "constraint": "Student uses all 3 chosen elements and completes a beginning, middle, and end."
-      },
-      {
-        "prompt": "Have the student build a story by choosing a place — supermarket, gym, or library — a person — friend, stranger, or staff member — and an activity — helping someone, finding something, or meeting someone new. Ask them to create the story using their choices.",
-        "constraint": "Student combines the 3 choices into one clear story with a sequence."
-      },
-      {
-        "prompt": "Invite the student to build a story by choosing a place — city street, bus stop, or office — a person — old friend, new colleague, or lost tourist — and a problem — bad weather, wrong bus, or forgotten appointment. Have them create the story using their choices.",
-        "constraint": "Student tells the story in order and uses all 3 chosen elements."
-      },
-      {
-        "prompt": "Ask the student to imagine a park on a sunny afternoon. Have them describe where they are, what they see around them, and a small event that happens next.",
-        "constraint": "Student describes the scene and adds one event that happens."
-      },
-      {
-        "prompt": "Invite the student to imagine a small shop on a quiet street. Ask them to describe where they are, the items and people in the shop, and a small event that happens next.",
-        "constraint": "Student describes the location, at least 2 details, and one event."
-      },
-      {
-        "prompt": "Have the student imagine a busy street in the city at rush hour. Ask them to describe where they are, the people and traffic around them, and something unexpected that happens.",
-        "constraint": "Student sets the scene and describes one unexpected happening."
-      },
-      {
-        "prompt": "Ask the student to imagine a cosy house on a rainy day. Have them describe where they are, the rooms and objects around them, and a small event that happens next.",
-        "constraint": "Student uses 'There is/are' to describe the scene and adds an event."
-      },
-      {
-        "prompt": "Invite the student to imagine a train station early in the morning. Ask them to describe where they are, the people and things around them, and a small event that happens next.",
-        "constraint": "Student describes the setting with 2 details and one event."
-      },
-      {
-        "prompt": "Explain that a friend can't find their way in a new city. Ask the student who needs help, what the problem is, and how they help their friend.",
-        "constraint": "Student identifies the problem and describes the help given, step by step."
-      },
-      {
-        "prompt": "Explain that a new student doesn't know anyone at school. Ask the student who needs help, what the problem is, and how they help them.",
-        "constraint": "Student describes the problem and gives at least 2 actions that help."
-      },
-      {
-        "prompt": "Explain that a visitor to the student's town doesn't speak the local language well. Ask who needs help, what the problem is, and how the student helps them.",
-        "constraint": "Student describes the problem and explains the help step by step."
-      },
-      {
-        "prompt": "Explain that a family member forgets an important appointment and is late and worried. Ask the student who needs help, what the problem is, and how they help them.",
-        "constraint": "Student explains the problem and describes a clear solution."
-      },
-      {
-        "prompt": "Explain that a friend's car breaks down on the way to work. Ask the student who needs help, what the problem is, and how they help them.",
-        "constraint": "Student uses First, Then, Finally to describe the help given."
-      },
-      {
-        "prompt": "Ask the student to describe a messy room before and after cleaning — what it looked like, what changed, and what it looks like now.",
-        "constraint": "Student contrasts before and after using 'There was/were' and 'Now there is/are'."
-      },
-      {
-        "prompt": "Invite the student to describe a trip before they left and after they returned — how they felt before, what happened on the trip, and how they feel now.",
-        "constraint": "Student describes a feeling before and after, with one event in between."
-      },
-      {
-        "prompt": "Have the student describe learning a new skill, before and after practice — what they couldn't do, how they practised, and what they can do now.",
-        "constraint": "Student contrasts ability before and after using 'could' and 'can'."
-      },
-      {
-        "prompt": "Ask the student to describe a garden or park before and after a change of season — what it looked like, what happened over time, and what it looks like now.",
-        "constraint": "Student describes 2 clear differences between before and after."
-      },
-      {
-        "prompt": "Invite the student to describe their English before and after taking lessons — what they couldn't do, what they did to improve, and what they can do now.",
-        "constraint": "Student contrasts ability before and after using 'could' and 'can'."
+        "prompt": "📱 A character finds a wallet full of money and no ID.\nAsk: \"Convince me they should keep it!\"\nTeacher: Push back with the 'give it to the police' position; don't agree too fast.\nQuick: What can they do with the money?\nStuck: Easier: keep it or give it back — pick one.",
+        "constraint": "Student uses 'should', 'can', and 'because' to persuade."
       }
     ]
   },
   "B1": {
-    "Everyday Situations": [
+    "Weird Creatures": [
       {
-        "prompt": "Ask the student to imagine they can fix only one thing in their apartment this month. Find out what they'd choose and why.",
-        "constraint": "Choose only one thing to fix."
+        "prompt": "🦖 A wildlife park can only save one mystery creature before the storm hits: a huge calm one, a tiny fast one, or a loud angry one.\nAsk: \"Which creature do you save, and which two do you leave behind?\"\nTeacher: Push for comparisons — 'more dangerous than', 'safer than'. Ask what could happen to the ones left behind.\nQuick: What might happen to the creature in its new home?\nStuck: Easier: just the huge one or the tiny one — which is safer to save?",
+        "constraint": "Student compares options using comparatives and predicts using 'might' or 'could'."
       },
       {
-        "prompt": "Explore which internet plan the student would choose for their household — cheaper but slower, or faster but more expensive — and why.",
-        "constraint": "Give at least one reason based on cost and one based on speed."
+        "prompt": "🐍 Two creature problems for a farmer: an invisible chicken thief, or a giant slow snail that blocks every gate.\nAsk: \"Which problem is worse for the farmer, and what could go wrong with each?\"\nTeacher: Compare consequences. Push predictions with 'might' / 'could'.\nQuick: What could the farmer try first?\nStuck: Easier: which is easier to solve — invisible thief or giant snail?",
+        "constraint": "Student compares using comparatives and predicts with 'might' or 'could'."
       },
       {
-        "prompt": "Ask the student to recommend what a friend should do about a car repair: one day but expensive, or one week but cheaper. Find out their reasoning.",
-        "constraint": "Recommend only one option, based on their situation, not yours."
+        "prompt": "👣 Four clues appear near a farm: fur on a fence, a howl at 2am, three missing chickens, no footprints anywhere.\nAsk: \"Rank the clues from most to least convincing.\"\nTeacher: Push comparatives ('more convincing than'). Ask which piece of proof could be faked.\nQuick: What extra proof could make the top one certain?\nStuck: Easier: just top two — fur or howl, which do you trust more?",
+        "constraint": "Student ranks all 4 clues using comparatives and predicts using 'could'."
       },
       {
-        "prompt": "Discuss how the student would respond if a friend asked to borrow money until next month.",
-        "constraint": "Your answer must address both the friendship and the money."
+        "prompt": "🧬 A newly discovered creature has one strange trait scientists want to 'fix' to help it survive — but they can only change one thing.\nAsk: \"What's the one change you'd make, and what might happen because of it?\"\nTeacher: Enforce the single-change rule strictly. Push for a predicted side effect.\nQuick: What could go wrong with that one change?\nStuck: Easier: change its size or change its speed — which?",
+        "constraint": "Student predicts a consequence using 'might' or 'could' and gives a reason."
       },
       {
-        "prompt": "Invite the student to choose between two apartments — shorter commute but higher rent, or longer commute but lower rent — and justify their decision.",
-        "constraint": "Mention at least one trade-off you're accepting."
-      },
-      {
-        "prompt": "Ask the student to recommend what to do about a roommate's higher-than-expected energy bill.",
-        "constraint": "Recommend one specific action, not a list of possibilities."
-      },
-      {
-        "prompt": "Talk about how the student would plan meals for the week on a limited budget.",
-        "constraint": "Mention at least two meals and one cost-saving decision."
-      },
-      {
-        "prompt": "Explore how the student would compromise between the cost of a school trip and their child's wishes.",
-        "constraint": "Your compromise must involve a real trade-off, not a simple yes or no."
-      },
-      {
-        "prompt": "Find out how the student would spend two days off with a long list of errands, and their priorities.",
-        "constraint": "You must leave at least one errand for later and explain why."
-      },
-      {
-        "prompt": "Ask the student to decide between a faster private appointment or a free public one with a long wait for a minor health problem, and explain their reasoning.",
-        "constraint": "Base your decision on how the problem is affecting your daily life, not just the cost."
-      },
-      {
-        "prompt": "Discuss whether the student would fix an old washing machine or buy a new one, and why.",
-        "constraint": "Mention cost and at least one other factor."
-      },
-      {
-        "prompt": "Ask the student to propose a compromise to their manager after a schedule change clashes with picking up their kids from school.",
-        "constraint": "Your compromise must address both your needs and the company's."
-      },
-      {
-        "prompt": "Explore what the student would recommend to a family member choosing between two doctors — one sooner but further, one closer but with a longer wait.",
-        "constraint": "Base your recommendation on urgency, not just distance."
-      },
-      {
-        "prompt": "Find out which monthly subscription the student would cancel, and why.",
-        "constraint": "Choose only one subscription to cancel."
-      },
-      {
-        "prompt": "Ask the student what they'd recommend to a friend deciding whether to attend an expensive wedding abroad.",
-        "constraint": "Your recommendation must balance cost against the value of the relationship."
-      },
-      {
-        "prompt": "Invite the student to choose between two neighbourhoods when moving to a new city — one convenient but noisy, one quiet but far from work.",
-        "constraint": "You must weigh convenience against quality of life."
-      },
-      {
-        "prompt": "Discuss how the student's team could agree on a weekly meeting time that suits everyone.",
-        "constraint": "Mention at least one compromise."
-      },
-      {
-        "prompt": "Ask the student to compare two jobs — one paying more with a long commute, one paying less but close to home — and explain which matters more to them.",
-        "constraint": "Weigh at least two factors for each job before reaching a conclusion."
-      },
-      {
-        "prompt": "Explore how the student's family would prioritise factors — distance, reputation, cost, facilities — when choosing between two schools.",
-        "constraint": "Rank at least three factors before naming your final choice."
-      },
-      {
-        "prompt": "Find out whether the student would take a better-paid job in a different city, even if it means leaving friends and family behind.",
-        "constraint": "You must weigh the relationship cost against the professional opportunity, not just the money."
-      },
-      {
-        "prompt": "Ask the student how they'd manage if their internet stopped working and a technician couldn't come for five days.",
-        "constraint": "Mention at least one practical workaround."
-      },
-      {
-        "prompt": "Discuss what matters most to the student in a new phone — price, reliability, or speed of getting one — and their final choice.",
-        "constraint": "Rank your priorities before stating your decision."
-      },
-      {
-        "prompt": "Explore how the student would handle two friends asking for help moving house on the same weekend.",
-        "constraint": "Your answer must address both friendships."
-      },
-      {
-        "prompt": "Ask the student how they'd vote on installing a new elevator that raises everyone's monthly fees.",
-        "constraint": "Mention both the benefit and the cost."
-      },
-      {
-        "prompt": "Talk about whether the student would cook at home or eat out more, based on their schedule and budget.",
-        "constraint": "Support your decision with a specific reason from your daily life."
-      },
-      {
-        "prompt": "Find out what the student would do about an expensive gym membership they rarely use.",
-        "constraint": "Choose one specific action, not just 'I should think about it.'"
-      },
-      {
-        "prompt": "Ask the student what they'd recommend to a neighbour choosing between two contractors — one cheaper with a longer wait, one pricier but available now.",
-        "constraint": "Your recommendation must address both time and money."
-      },
-      {
-        "prompt": "Discuss how the student would handle a relative wanting to stay for two weeks in their small apartment while they work from home.",
-        "constraint": "Your answer must consider both hospitality and practicality."
-      },
-      {
-        "prompt": "Explore whether the student would use public transport or buy a car, based on their daily needs.",
-        "constraint": "Mention at least one cost and one convenience factor."
-      },
-      {
-        "prompt": "Ask the student how they'd vote on a local council choice between repairing roads or improving the park.",
-        "constraint": "Your answer must consider the needs of the wider community, not just yourself."
+        "prompt": "❄️ Scientists found something frozen in the ice. Clue one: it's the size of a car.\nAsk: \"What might it be?\"\nTeacher: Reveal clues gradually (next: 'it has fur', then 'nobody's seen bones like this'). Push predictions after each clue.\nQuick: What could scientists do with it next?\nStuck: Easier: animal or plant — which is more likely?",
+        "constraint": "Student predicts using 'might' or 'could' after each clue and compares ideas."
       }
     ],
-    "Simple Roleplay": [
+    "Gaming": [
       {
-        "prompt": "Set up a roleplay: the student booked a hotel room online but arrives to find it's occupied. Play the front desk staff and have them negotiate a solution, given they have nowhere else to stay tonight.",
-        "constraint": "Student negotiates a workable solution and gives at least one reason to support their preferred outcome."
+        "prompt": "🎮 The tournament rules just changed: you can only bring ONE character into every match — speedy hacker, tank fighter, or tricky healer.\nAsk: \"Which one do you keep for the whole tournament?\"\nTeacher: Push comparatives, then ask what could go wrong against different opponents.\nQuick: What might a smart opponent do against your choice?\nStuck: Easier: offence or defence — which matters more?",
+        "constraint": "Student compares using comparatives and predicts using 'might' or 'could'."
       },
       {
-        "prompt": "Set up a roleplay: the student's neighbour has played loud music for three nights and they have an early start tomorrow. Play the neighbour and have the student raise it and agree on a compromise.",
-        "constraint": "Student raises the issue politely and reaches a compromise using softened disagreement language."
+        "prompt": "🕹️ Your friend insists esports isn't a 'real sport.' You think it is.\nAsk: \"Convince me esports counts as a real sport!\"\nTeacher: Resist gently — raise real objections like fitness and physical skill. Never fully agree.\nQuick: What could change people's minds about this?\nStuck: Easier: is skill enough to make something a sport — yes or no?",
+        "constraint": "Student uses comparatives and 'might' / 'could' to persuade."
       },
       {
-        "prompt": "Set up a roleplay: the student and a colleague both want the same week off work. Play the colleague and have them discuss reasons and reach a fair agreement.",
-        "constraint": "Student explains their reasons and works toward a fair agreement, acknowledging the colleague's position."
+        "prompt": "🏆 Four ways to build a winning team: best strategy, best gear, best communication, most practice time.\nAsk: \"Rank these from most to least important.\"\nTeacher: Push comparatives; challenge the ranking with 'what if the team has none of that?'\nQuick: What could happen to a team missing your #1 pick?\nStuck: Easier: just top two — strategy or practice. Which wins?",
+        "constraint": "Student ranks using comparatives and predicts using 'could'."
       },
       {
-        "prompt": "Set up a roleplay: a repair shop wants to charge more than the original quote to fix the student's laptop. Play the shop and have them negotiate the price, explaining what they can realistically afford.",
-        "constraint": "Student states the discrepancy, negotiates a new price, and justifies their budget limit."
+        "prompt": "🌩️ Your team is about to win the final match... then the internet cuts out for everyone.\nAsk: \"What happens next?\"\nTeacher: Let them predict, then twist: '...but the organisers say the score still counts!' Keep expanding.\nQuick: What might the other team say about that?\nStuck: Easier: fair or unfair? Why?",
+        "constraint": "Student predicts using 'might' or 'could' and compares ideas."
       },
       {
-        "prompt": "Set up a roleplay: a furniture shop sent the student a sofa in the wrong colour and claims it was their mistake. Play the shop and have them explain why they believe the error was the shop's, and what they expect done.",
-        "constraint": "Student explains their position clearly, states evidence for their view, and states a desired outcome."
-      },
-      {
-        "prompt": "Set up a roleplay: the student's gym membership renewed automatically but they want a cheaper plan. Play the staff member and have them persuade you to make the change without a penalty fee.",
-        "constraint": "Student persuades the staff member using at least one polite persuasion phrase and a clear reason."
-      },
-      {
-        "prompt": "Set up a roleplay: a friend wants to split a restaurant bill equally, but the student only ordered a small dish while the friend ordered several courses. Play the friend and have them discuss a fair way to split it.",
-        "constraint": "Student proposes a fair alternative and reaches agreement with the friend."
-      },
-      {
-        "prompt": "Set up a roleplay: the student shares an apartment and their roommate keeps leaving dishes for days. Play the roommate and have them raise the issue and agree on a new system.",
-        "constraint": "Student resolves the conflict calmly and agrees on a concrete new system."
-      },
-      {
-        "prompt": "Set up a roleplay: the student needs to change a dentist appointment, but the only free slot clashes with an important work meeting. Play the receptionist and have them persuade you to find another solution.",
-        "constraint": "Student persuades the receptionist to offer an alternative, giving a clear reason for the request."
-      },
-      {
-        "prompt": "Set up a roleplay: a delivery driver left the student's package with a neighbour without telling them, and it's now missing. Play the neighbour and have them discuss the situation and decide what to do next.",
-        "constraint": "Student resolves the conflict calmly and agrees on a next step with the neighbour."
-      },
-      {
-        "prompt": "Set up a roleplay: the student wants a refund for a concert ticket because the event was postponed to a date they can't attend. Play the box office and have them try to convince you to help.",
-        "constraint": "Student persuades the box office using a clear reason and at least one persuasive phrase."
-      },
-      {
-        "prompt": "Set up a roleplay: the student and a friend are planning a weekend trip but disagree about the budget. Play the friend and have them work together to find a plan that suits both.",
-        "constraint": "Student proposes options and reaches agreement that addresses both budgets."
-      },
-      {
-        "prompt": "Set up a roleplay: the student's landlord wants to raise the rent, but the student feels the increase is too high given the apartment's condition. Play the landlord and have them discuss and try to reach a compromise.",
-        "constraint": "Student negotiates the increase and justifies their position with a specific reason."
-      },
-      {
-        "prompt": "Set up a roleplay: a colleague keeps taking credit for the student's ideas in meetings. Play the colleague and have the student calmly explain how they'd like things to change.",
-        "constraint": "Student explains their position clearly and states what change they would like to see."
-      },
-      {
-        "prompt": "Set up a roleplay: the student wants to return a jacket that no longer fits, but has lost the receipt. Play the shop assistant and have them try to persuade you to help anyway.",
-        "constraint": "Student persuades the shop assistant using a polite, reasoned argument."
-      },
-      {
-        "prompt": "Set up a roleplay: the student and a friend are choosing a restaurant for a group dinner but have very different budgets. Play the friend and have them find an option they can both agree on.",
-        "constraint": "Student proposes a compromise option and reaches agreement with the friend."
-      },
-      {
-        "prompt": "Set up a roleplay: the student's internet keeps cutting out, but the provider insists the problem is with their equipment. Play the provider and have them resolve the disagreement and agree on next steps.",
-        "constraint": "Student resolves the conflict by presenting their view and agreeing on next steps with the provider."
-      },
-      {
-        "prompt": "Set up a roleplay: the student's tutor has raised their lesson price with very little notice. Play the tutor and have the student explain whether the increase feels fair and how they'd like to move forward.",
-        "constraint": "Student explains their position clearly and states a preferred way forward."
-      },
-      {
-        "prompt": "Set up a roleplay: a mechanic recommends several repairs for the student's car, but the student suspects not all are necessary. Play the mechanic and have them persuade you to justify each recommendation.",
-        "constraint": "Student persuades the mechanic to justify each recommendation, using at least one probing question."
-      },
-      {
-        "prompt": "Set up a roleplay: the student and a family member disagree about which venue to book for a celebration. Play the family member and have them talk it through and reach a joint decision.",
-        "constraint": "Student proposes reasons for their preference and reaches a joint decision."
-      },
-      {
-        "prompt": "Set up a roleplay: a shop refuses to exchange a gift bought during a sale. Play the shop assistant and have the student explain their situation and try to find a solution.",
-        "constraint": "Student persuades the shop assistant with a clear explanation and a suggested solution."
-      },
-      {
-        "prompt": "Set up a roleplay: the student's flight was delayed and they missed a connecting train, but airline staff say it isn't their responsibility. Play the airline staff and have them resolve the disagreement.",
-        "constraint": "Student resolves the conflict by stating their case and negotiating what the airline will offer."
-      },
-      {
-        "prompt": "Set up a roleplay: the student wants to cancel their phone contract early, but the company wants a high cancellation fee. Play the company and have the student explain why the fee feels unfair.",
-        "constraint": "Student explains their position clearly and responds to the company's counter-proposal."
-      },
-      {
-        "prompt": "Set up a roleplay: a colleague wants to borrow money from the student, who isn't comfortable lending the full amount. Play the colleague and have them discuss the situation honestly and agree on a solution.",
-        "constraint": "Student explains their position honestly and reaches an agreement that respects their limits."
-      },
-      {
-        "prompt": "Set up a roleplay: the student is sharing a taxi with a stranger heading a similar direction, but their destinations aren't identical. Play the stranger and have them agree on a fair route and fare split.",
-        "constraint": "Student negotiates a fair route and cost split, giving at least one reason for their proposal."
-      },
-      {
-        "prompt": "Set up a roleplay: the student's child's school wants an extra fee for a trip they feel is too expensive. Play the staff member and have the student raise their concerns.",
-        "constraint": "Student explains their position clearly and states what outcome they are hoping for."
-      },
-      {
-        "prompt": "Set up a roleplay: a friend cancelled plans with the student last minute for the second time. Play the friend and have the student honestly discuss how this affects the friendship.",
-        "constraint": "Student resolves the conflict by expressing how they feel and working toward an understanding."
-      },
-      {
-        "prompt": "Set up a roleplay: the student wants to work from home two days a week, but their manager prefers everyone in the office. Play the manager and have the student present their case and find a compromise.",
-        "constraint": "Student negotiates a compromise and supports their case with at least one clear reason."
-      },
-      {
-        "prompt": "Set up a roleplay: the student's energy bill was unexpectedly high, and they and the provider disagree about the cause. Play the provider and have them work together to reach an agreement.",
-        "constraint": "Student works with the provider to reach an agreement on the cause and next steps."
-      },
-      {
-        "prompt": "Set up a roleplay: two neighbours disagree about who should pay for a shared fence that needs repairing. Play one neighbour and have the student discuss the situation and agree on a fair arrangement.",
-        "constraint": "Student negotiates a fair arrangement and justifies their proposed share of responsibility."
+        "prompt": "🎮🤖⚡ Three symbols.\nAsk: \"What new game could these three make?\"\nTeacher: Push for a game concept connecting all three; challenge with 'what could make it fail commercially?'\nQuick: What could the sequel add?\nStuck: Easier: pick one emoji and describe the main character.",
+        "constraint": "Student uses 'could' / 'might' and comparatives to build the idea."
       }
     ],
-    "Describe": [
+    "Mysteries": [
       {
-        "prompt": "Ask the student to compare their kitchen at home with a friend or family member's kitchen. Find out which is more practical for cooking, and why.",
-        "constraint": "Give at least one reason based on practicality."
+        "prompt": "🔍 Two theories for the missing bike: stolen by a stranger, or borrowed without asking by a friend.\nAsk: \"Which is worse for the owner, and what could happen next in each case?\"\nTeacher: Push comparatives and predictions.\nQuick: What could the owner do differently?\nStuck: Easier: which feels more unfair — stranger or friend?",
+        "constraint": "Student compares using comparatives and predicts using 'could' or 'might'."
       },
       {
-        "prompt": "Ask the student to describe their workplace or classroom. Explore whether it's well organised for getting things done, and what they'd change.",
-        "constraint": "Suggest at least one specific change."
+        "prompt": "🕵️ A torn ticket, a text message, and a locked drawer are the only leads.\nAsk: \"Let's build the case together — what's your first theory?\"\nTeacher: Add a new detail after each turn, pushing predictions with 'might' / 'could'.\nQuick: What could the drawer be hiding?\nStuck: Easier: focus on just the text message — who sent it?",
+        "constraint": "Student predicts using 'might' / 'could' and compares theories."
       },
       {
-        "prompt": "Ask the student to compare two cafés or restaurants they've been to in their neighbourhood. Find out which has a better atmosphere, and why.",
-        "constraint": "Compare at least two specific aspects."
+        "prompt": "🔎 Four suspects, each with a motive and a weak alibi.\nAsk: \"Rank them from most to least likely, and explain your top pick.\"\nTeacher: Push comparatives; challenge with 'what could clear your top suspect?'\nQuick: What evidence could prove you wrong?\nStuck: Easier: just top two — compare them directly.",
+        "constraint": "Student ranks using comparatives and predicts using 'could'."
       },
       {
-        "prompt": "Talk about how the student's local high street has changed in the last few years. Find out if it's better or worse now.",
-        "constraint": "Mention at least one specific change."
+        "prompt": "🔦 A cold case reopens. Clue one: the file was hidden for a reason.\nAsk: \"What might that reason be?\"\nTeacher: Reveal clues slowly, pushing predictions after each ('next: someone paid to bury it').\nQuick: What could happen if the truth comes out now?\nStuck: Easier: good reason or bad reason — which do you think?",
+        "constraint": "Student predicts using 'might' / 'could' and compares ideas."
       },
       {
-        "prompt": "Show the student two menus from different restaurants. Find out which is easier to choose from, and why.",
-        "constraint": "Give a reason based on clarity or choice."
-      },
-      {
-        "prompt": "Ask the student to describe public transport in their city. Find out one change that would make it more convenient.",
-        "constraint": "Suggest exactly one improvement."
-      },
-      {
-        "prompt": "Ask the student to compare shopping at a small local shop with shopping at a large supermarket. Find out which works better for them, and why.",
-        "constraint": "Compare at least two aspects."
-      },
-      {
-        "prompt": "Ask the student to describe a park near where they live. Explore whether it's well designed for visitors, and what they'd improve.",
-        "constraint": "Suggest at least one improvement."
-      },
-      {
-        "prompt": "Show the student two photos of the same room, one tidy and one messy. Find out which would help them focus more, and why.",
-        "constraint": "Justify the choice with a reason."
-      },
-      {
-        "prompt": "Ask the student to describe their daily commute. Find out the biggest problem with it, and what would fix it.",
-        "constraint": "Identify one main problem and one solution."
-      },
-      {
-        "prompt": "Ask the student to describe their desk or workspace. Find out the three most important items for helping them work well, and why.",
-        "constraint": "Name exactly three items and explain each."
-      },
-      {
-        "prompt": "Talk about how the student's school or workplace has changed since they first started there. Find out if it's better or worse.",
-        "constraint": "Mention at least one specific change."
-      },
-      {
-        "prompt": "Ask the student to compare two websites that sell the same kind of product. Find out which is easier to use, and why.",
-        "constraint": "Give a reason based on usability."
-      },
-      {
-        "prompt": "Ask the student to describe a shop they visit often. Find out one thing that would make the shopping experience better.",
-        "constraint": "Suggest exactly one improvement."
-      },
-      {
-        "prompt": "Show the student two logos for a local business. Find out which is more memorable, and why.",
-        "constraint": "Justify the choice with a reason."
-      },
-      {
-        "prompt": "Ask the student to describe the waiting area at a doctor's office, train station, or similar place. Explore whether it's comfortable for waiting, and what they'd change.",
-        "constraint": "Suggest at least one change."
-      },
-      {
-        "prompt": "Ask the student to compare living in their current neighbourhood with another neighbourhood they know. Find out which suits them better, and why.",
-        "constraint": "Compare at least two aspects."
-      },
-      {
-        "prompt": "Talk about how a product the student owns has changed compared to an older version. Find out if the new version is an improvement.",
-        "constraint": "Give a reason for your judgement."
-      },
-      {
-        "prompt": "Ask the student to describe a public park they know. Find out which feature most needs improving, and why.",
-        "constraint": "Name one feature and justify the choice."
-      },
-      {
-        "prompt": "Ask the student to describe the layout of a supermarket they know well. Explore whether it makes shopping efficient, and what they'd rearrange.",
-        "constraint": "Suggest at least one rearrangement."
-      },
-      {
-        "prompt": "Show the student two photographs of the same street taken at different times of day. Find out which feels safer or more welcoming.",
-        "constraint": "Justify the choice with a reason."
-      },
-      {
-        "prompt": "Ask the student to describe the customer service at a shop or restaurant they visit. Find out what works well, and what doesn't.",
-        "constraint": "Mention at least one strength and one weakness."
-      },
-      {
-        "prompt": "Ask the student to describe their home, or one they know well. Find out which room would benefit most from renovation, and why.",
-        "constraint": "Name one room and justify the choice."
-      },
-      {
-        "prompt": "Talk about how the design of a website or app has changed over the years. Find out if the current version is easier to use.",
-        "constraint": "Give a reason based on usability."
-      },
-      {
-        "prompt": "Ask the student to compare two offices or classrooms they've worked or studied in. Find out which helps people concentrate more, and why.",
-        "constraint": "Compare at least two aspects."
-      },
-      {
-        "prompt": "Ask the student to describe a service they use regularly, like a gym, salon, or delivery service. Find out one improvement that would make it better.",
-        "constraint": "Suggest exactly one improvement."
-      },
-      {
-        "prompt": "Show the student two versions of the same product's packaging. Find out which is more effective at catching attention, and why.",
-        "constraint": "Justify the choice with a reason."
-      },
-      {
-        "prompt": "Talk about how traffic or crowding has changed on a street the student knows well. Find out if it's better or worse now.",
-        "constraint": "Mention at least one specific change."
-      },
-      {
-        "prompt": "Ask the student to imagine they can only prioritise one improvement for their local public transport system. Find out what matters most, and why.",
-        "constraint": "Choose only one priority and justify it."
-      },
-      {
-        "prompt": "Ask the student to compare a physical shop with its online store. Find out which gives a better experience, and why.",
-        "constraint": "Compare at least two aspects."
+        "prompt": "🕵️ Your partner detective is sure it's an inside job. You think it's an outsider.\nAsk: \"Convince me it was someone from outside!\"\nTeacher: Argue the inside-job theory with real objections; don't concede too fast.\nQuick: What could change the case completely?\nStuck: Easier: what's one clue that points outside?",
+        "constraint": "Student uses comparatives and 'might' / 'could' to persuade."
       }
     ],
-    "Explain and Show": [
+    "Future Tech": [
       {
-        "prompt": "Ask the student to explain how to submit expense claims at their company, for a new colleague who doesn't know the process. Have them include one useful tip.",
-        "constraint": "Student explains the process in a logical order and adds one practical tip."
+        "prompt": "🤖 Scientists can change ONE thing about robot helpers to make them safer.\nAsk: \"What's the one change, and what might happen because of it?\"\nTeacher: Enforce one change only; push for a predicted side effect.\nQuick: What could go wrong even with your change?\nStuck: Easier: faster reactions or better eyesight — pick one.",
+        "constraint": "Student predicts using 'might' / 'could' and compares ideas."
       },
       {
-        "prompt": "Ask the student to explain what a friend should check before signing a lease on their first apartment, and why.",
-        "constraint": "Student organises key points to check and gives a reason for each."
+        "prompt": "🚗 Your friend says self-driving cars will take away too many jobs. You disagree.\nAsk: \"Convince me self-driving cars are still a good idea!\"\nTeacher: Push back with real job-loss concerns; don't concede quickly.\nQuick: What new jobs might appear instead?\nStuck: Easier: is safety more important than jobs — yes or no?",
+        "constraint": "Student uses 'might' / 'could' and comparatives to persuade."
       },
       {
-        "prompt": "Ask the student to explain how to use a train ticket machine to a confused tourist, and recommend the fastest option.",
-        "constraint": "Student explains the steps clearly and recommends one option with a reason."
+        "prompt": "⚡ Your new smart glasses translate any language perfectly... but suddenly they start translating people's thoughts too.\nAsk: \"What do you do?\"\nTeacher: Let them answer, then twist again ('...and everyone can see you're using them'). Keep expanding.\nQuick: What might people think of you now?\nStuck: Easier: keep using them or take them off — choose.",
+        "constraint": "Student predicts using 'might' / 'could' and compares ideas."
       },
       {
-        "prompt": "Ask the student to explain, step by step, how to set up a video call for a grandparent who finds the app confusing.",
-        "constraint": "Student explains the setup in a clear step-by-step order suitable for a beginner."
+        "prompt": "📱 A city is designing one piece of tech to fix traffic forever.\nAsk: \"Let's build it together — what's your first idea?\"\nTeacher: Add a complication each round ('...but it needs electricity from somewhere').\nQuick: What could stop this idea from working?\nStuck: Easier: focus on just buses — what would help them most?",
+        "constraint": "Student uses 'could' / 'might' and comparatives to build the idea."
       },
       {
-        "prompt": "Ask the student to compare two savings account options for a friend and recommend one.",
-        "constraint": "Student compares two options and justifies a recommendation based on the friend's needs."
-      },
-      {
-        "prompt": "Ask the student to explain the method for referencing sources correctly to a classmate who missed the lesson, and warn them about a common mistake.",
-        "constraint": "Student explains the method clearly and highlights one common mistake to avoid."
-      },
-      {
-        "prompt": "Ask the student to explain, step by step, how to assemble flat-pack furniture for a nervous neighbour.",
-        "constraint": "Student explains the process in a logical step-by-step order."
-      },
-      {
-        "prompt": "Ask the student to compare emailing versus messaging a client about an urgent issue, and recommend one for a colleague.",
-        "constraint": "Student compares both methods and recommends one with a clear reason."
-      },
-      {
-        "prompt": "Ask the student to explain the recycling rules to a friend who wants to start recycling properly, and give a tip to avoid mistakes.",
-        "constraint": "Student organises the explanation clearly and adds a practical tip."
-      },
-      {
-        "prompt": "Ask the student to compare two ways to get from the airport to the city centre and recommend one for a tourist, with reasons.",
-        "constraint": "Student compares two options and justifies their recommendation."
-      },
-      {
-        "prompt": "Ask the student to explain how to book a meeting room to a new employee, mentioning one thing people often forget.",
-        "constraint": "Student explains the process step by step and mentions a common oversight."
-      },
-      {
-        "prompt": "Ask the student to teach a cousin how to cook rice without a rice cooker, step by step, with one common mistake to avoid.",
-        "constraint": "Student teaches the method in order and warns about one common mistake."
-      },
-      {
-        "prompt": "Ask the student to explain the difference between two phone contracts and recommend the better one for a light user.",
-        "constraint": "Student explains both contracts and recommends one based on the user's needs."
-      },
-      {
-        "prompt": "Ask the student to explain how tipping works to a visitor unfamiliar with the custom, with practical advice to avoid awkwardness.",
-        "constraint": "Student explains the custom clearly and gives practical advice."
-      },
-      {
-        "prompt": "Ask the student to explain the steps for returning an item bought online to a friend, and warn them about the deadline.",
-        "constraint": "Student explains the steps in order and highlights a time-sensitive warning."
-      },
-      {
-        "prompt": "Ask the student to explain, step by step, how to use a washing machine to a younger sibling, pointing out one common mistake.",
-        "constraint": "Student explains the process in a clear step-by-step order and names one common mistake."
-      },
-      {
-        "prompt": "Ask the student to compare taking the bus versus cycling to work, and recommend the best option for a colleague.",
-        "constraint": "Student compares both options and gives a reasoned recommendation."
-      },
-      {
-        "prompt": "Ask the student to explain what's needed to apply for a first library card, for a friend who isn't sure.",
-        "constraint": "Student explains the required steps in a clear, logical order."
-      },
-      {
-        "prompt": "Ask the student to explain how a new tenant should report a maintenance problem to the landlord, and why reporting it clearly matters.",
-        "constraint": "Student explains the process and gives a reason why clear reporting matters."
-      },
-      {
-        "prompt": "Ask the student to recommend an approach for a friend who wants to become more organised, and explain why it works.",
-        "constraint": "Student recommends a clear approach and justifies why it would be effective."
-      },
-      {
-        "prompt": "Ask the student to explain, step by step, how to set up parental controls on a tablet for a confused parent.",
-        "constraint": "Student explains the setup process in a clear step-by-step order."
-      },
-      {
-        "prompt": "Ask the student to explain a method for packing for a long trip, for a cousin who always forgets something important.",
-        "constraint": "Student explains the method in a logical order and gives one practical tip for avoiding forgotten items."
-      },
-      {
-        "prompt": "Ask the student to explain how the local bus payment system works to a confused tourist, with one useful tip.",
-        "constraint": "Student explains the system clearly and adds one practical tip."
-      },
-      {
-        "prompt": "Ask the student to explain how to back up files before a computer update, for a coworker, and warn what could go wrong if skipped.",
-        "constraint": "Student explains the process step by step and warns of a consequence if skipped."
-      },
-      {
-        "prompt": "Ask the student to explain how to start planting vegetables on a balcony for a friend, and what mistakes to avoid.",
-        "constraint": "Student explains how to begin and highlights mistakes to avoid."
-      },
-      {
-        "prompt": "Ask the student to explain how to register for classes online to a new student, mentioning a common problem to watch for.",
-        "constraint": "Student explains the steps in order and flags a common problem."
-      },
-      {
-        "prompt": "Ask the student to compare fixing an old laptop versus buying a new one for a friend, and recommend the better choice.",
-        "constraint": "Student compares both options and justifies a recommendation."
-      },
-      {
-        "prompt": "Ask the student to explain the safest ways to carry money while travelling in their city, and recommend one to a visitor.",
-        "constraint": "Student explains the options and recommends one with a clear reason."
-      },
-      {
-        "prompt": "Ask the student to explain, step by step, how a friend should prepare for their first job interview.",
-        "constraint": "Student explains preparation steps in a clear, logical order."
-      },
-      {
-        "prompt": "Ask the student to explain two changes a neighbour could make to reduce their energy bill, and recommend the more effective one.",
-        "constraint": "Student explains two options and recommends the more effective one with reasoning."
+        "prompt": "🔋 Two tech problems for a school: internet that crashes every class, or laptops that are always half-charged.\nAsk: \"Which is worse, and what could the school do about each?\"\nTeacher: Push comparatives and predicted fixes.\nQuick: What could happen if nothing changes?\nStuck: Easier: which stops learning faster — no internet or no battery?",
+        "constraint": "Student compares using comparatives and predicts with 'could'."
       }
     ],
-    "Choose and Create": [
+    "Weird & Gross": [
       {
-        "prompt": "Ask the student to decide what three new items a small café should add to its menu, given a limited kitchen budget, and explain why.",
-        "constraint": "You must stay within the limited kitchen budget and justify each choice."
+        "prompt": "🐜🍄🧟 Three symbols: ant, mushroom, zombie.\nAsk: \"What real (or nearly real) creature story could connect these?\"\nTeacher: Push them to build a mini explanation; if they know the real zombie-ant fungus, ask them to predict what happens next.\nQuick: What might happen to the ants nearby?\nStuck: Easier: pick two emojis and connect just those.",
+        "constraint": "Student predicts using 'might' / 'could' and compares ideas."
       },
       {
-        "prompt": "Ask the student to decide how to divide a small school library space for quiet study and group work, and justify their choices.",
-        "constraint": "The layout must fit within the existing room size."
+        "prompt": "🤢 A jellyfish can turn back into a baby version of itself and basically never dies.\nAsk: \"Give me the wildest theory for why evolution allowed this!\"\nTeacher: Reward creative, even wrong, theories — build on them, don't correct.\nQuick: What could go wrong if humans could do this too?\nStuck: Easier: good superpower or bad superpower — pick one.",
+        "constraint": "Student predicts using 'could' / 'might' and compares ideas."
       },
       {
-        "prompt": "Ask the student to decide what furniture a family should keep when moving into a smaller apartment, keeping only half.",
-        "constraint": "You may only keep half of the original furniture."
+        "prompt": "🐍 Two survival strategies: a snake that swallows prey bigger than its head, or a rabbit that eats its own droppings to digest food twice.\nAsk: \"Which is grosser, and which is more useful for survival?\"\nTeacher: Push comparatives for both grossness and usefulness.\nQuick: What could happen if the strategy failed?\nStuck: Easier: just compare — snake or rabbit, which wins?",
+        "constraint": "Student compares using comparatives and predicts using 'could'."
       },
       {
-        "prompt": "Ask the student to decide how a local sports club should spend a small budget to improve its training equipment, and justify their choices.",
-        "constraint": "You must stay within the club's small budget."
+        "prompt": "🦠 A frog that breathes through its skin needs ONE evolutionary change to survive a drier climate.\nAsk: \"What's the one change, and what might happen because of it?\"\nTeacher: One change only; push for a predicted trade-off.\nQuick: What could the frog lose by gaining this?\nStuck: Easier: thicker skin or new lungs — pick one.",
+        "constraint": "Student predicts using 'might' / 'could' and compares ideas."
       },
       {
-        "prompt": "Ask the student to plan a workplace team lunch limited to one hour and a modest budget, and explain their decisions.",
-        "constraint": "The event must fit within one hour and the modest budget."
-      },
-      {
-        "prompt": "Ask the student to design a bike parking area outside a community centre with room for only ten bikes, and explain their design choices.",
-        "constraint": "Your design must fit within the limited space and explain why your layout works best."
-      },
-      {
-        "prompt": "Ask the student to help a friend plan a weekend trip itinerary with only two free days and a tight budget, and explain their choices.",
-        "constraint": "The plan must fit within two days and a tight budget."
-      },
-      {
-        "prompt": "Ask the student to propose a solution for a small office that keeps running out of meeting room space, using only rooms and equipment they already have.",
-        "constraint": "You may not add new rooms or buy new equipment."
-      },
-      {
-        "prompt": "Ask the student to plan a neighbourhood weekend market that must fit in a small parking lot, and explain their reasoning.",
-        "constraint": "The market must fit within the small parking lot."
-      },
-      {
-        "prompt": "Ask the student to decide what a new after-school club should focus on, given only one hour per week, and justify their choice.",
-        "constraint": "The club can only run for one hour per week."
-      },
-      {
-        "prompt": "Ask the student to decide how a family should reorganise their kitchen storage within limited cabinet space, and explain their reasoning.",
-        "constraint": "The plan must fit within the existing cabinet space."
-      },
-      {
-        "prompt": "Ask the student to decide what a charity shop should display from a large donation, given very limited shelf space, and explain their choices.",
-        "constraint": "Choose what deserves priority and justify your decisions."
-      },
-      {
-        "prompt": "Ask the student to propose a system for organising shared files at an office where not everyone is comfortable with new technology.",
-        "constraint": "The solution must be usable by people who are not comfortable with new technology."
-      },
-      {
-        "prompt": "Ask the student to decide on activities for a weekend teen program at a community centre with limited staff, and explain their reasoning.",
-        "constraint": "The plan must work with the limited number of staff available."
-      },
-      {
-        "prompt": "Ask the student to decide how a small hotel could improve its breakfast service without increasing costs, and justify their choices.",
-        "constraint": "The changes must not increase current costs."
-      },
-      {
-        "prompt": "Ask the student to design a small seating area for a public square with very limited space, and explain their design choices.",
-        "constraint": "Your design must stay within the available space."
-      },
-      {
-        "prompt": "Ask the student to propose a simple solution for a community centre that keeps losing track of shared meeting room bookings, using materials they already have.",
-        "constraint": "Do not rely on buying new software or equipment."
-      },
-      {
-        "prompt": "Ask the student to organise the layout for a school science fair with a limited number of tables and rooms, and explain their reasoning.",
-        "constraint": "The layout must fit within the limited tables and rooms."
-      },
-      {
-        "prompt": "Ask the student to decide what their team should buy to decorate a shared workspace on a small budget, and justify their choices.",
-        "constraint": "You must stay within the small budget."
-      },
-      {
-        "prompt": "Ask the student to decide what to prioritise when improving a small public park with a budget that only covers a few changes.",
-        "constraint": "You may only choose a few changes within the limited budget."
-      },
-      {
-        "prompt": "Ask the student to propose a solution for a small delivery company struggling to cross town during rush hour, within its current budget.",
-        "constraint": "You cannot increase the budget or hire more staff."
-      },
-      {
-        "prompt": "Ask the student to propose how a small restaurant could reduce food waste without changing suppliers, and justify their choices.",
-        "constraint": "The solution must work with the current suppliers."
-      },
-      {
-        "prompt": "Ask the student to plan a children's reading event for a local library with a limited number of volunteers, and explain their decisions.",
-        "constraint": "The event must work with the limited number of volunteers."
-      },
-      {
-        "prompt": "Ask the student to decide what to include in a child's birthday party on a strict budget, and justify their choices.",
-        "constraint": "You must stay within the strict budget."
-      },
-      {
-        "prompt": "Ask the student to decide on a new layout for a small clothing shop to improve customer flow, without expanding the space.",
-        "constraint": "The layout must fit within the current store space."
-      },
-      {
-        "prompt": "Ask the student to organise a half-day training schedule for new employees, and justify their priorities.",
-        "constraint": "The schedule must fit within half a day."
-      },
-      {
-        "prompt": "Ask the student to plan a park clean-up event with limited volunteers and equipment, and explain their decisions.",
-        "constraint": "The plan must work with the limited volunteers and equipment."
-      },
-      {
-        "prompt": "Ask the student to decide how a family could improve their weekly grocery shopping to save money, without changing stores.",
-        "constraint": "You must continue shopping at the same store."
-      },
-      {
-        "prompt": "Ask the student to reorganise a school sports day schedule around limited field space, and explain their reasoning.",
-        "constraint": "The schedule must fit within the limited field space."
-      },
-      {
-        "prompt": "Ask the student to decide what a hobby club newsletter should include, given only one volunteer to produce it.",
-        "constraint": "Keep the newsletter realistic for one volunteer to produce regularly."
+        "prompt": "🤮 Four 'extreme' animal survival tricks, all real: liquefying inside a cocoon, freezing solid all winter, glowing from bacteria, tasting with its feet.\nAsk: \"Rank these from strangest to least strange.\"\nTeacher: Push comparatives; challenge with 'which could actually help humans?'\nQuick: What could scientists learn from your top pick?\nStuck: Easier: just top two — compare them directly.",
+        "constraint": "Student ranks using comparatives and predicts using 'could'."
       }
     ],
-    "Guided Stories": [
+    "Stories": [
       {
-        "prompt": "Ask the student to imagine they were supposed to pick up their younger sibling from school but got stuck in traffic and arrived 40 minutes late. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains the reason for the delay and how they resolved the situation with their sibling."
+        "prompt": "⏰ An old watch in the attic always runs exactly one hour backwards. Clue one: it was your grandmother's.\nAsk: \"What might happen when the character wears it?\"\nTeacher: Reveal clues gradually ('next: things start happening exactly as it shows', then 'she disappeared for one hour, once'). Push predictions each time.\nQuick: What could the character do with this power?\nStuck: Easier: good power or dangerous power — pick one.",
+        "constraint": "Student predicts using 'might' / 'could' and compares ideas."
       },
       {
-        "prompt": "Ask the student to imagine they accidentally posted a private message into a public work group chat. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains the immediate action they took and how they handled any consequences."
+        "prompt": "✉️ Two texts arrive the same night: 'meet me at the old bridge' and 'don't go, it's not safe.'\nAsk: \"Let's build the story together — who sent each one?\"\nTeacher: Add a detail each round ('...and the second text came from an unknown number'). Push predictions.\nQuick: What could happen if the character goes anyway?\nStuck: Easier: focus on just one text — who sent it?",
+        "constraint": "Student compares theories and predicts using 'could' / 'might'."
       },
       {
-        "prompt": "Ask the student to imagine their flight was cancelled the night before an important event. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student describes at least one alternative they considered before deciding."
+        "prompt": "🗺️ A torn map shows two forest paths: one marked with a skull, one with a question mark.\nAsk: \"Give me the most unexpected reason someone chose the skull path!\"\nTeacher: Reward bold, unexpected reasoning; build on it rather than correcting.\nQuick: What could be waiting at the end?\nStuck: Easier: brave or curious — which reason fits better?",
+        "constraint": "Student predicts using 'could' / 'might' and compares ideas."
       },
       {
-        "prompt": "Ask the student to imagine they bought a used bike online that arrived in worse condition than described. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains the outcome of their decision, whether they got a refund, repair, or kept it."
+        "prompt": "💬 A mysterious message arrives at exactly midnight every night, with no sender name.\nAsk: \"What might the character do when they finally reply?\"\nTeacher: Let them predict, then twist ('...but the reply comes back from their own phone number'). Push a revised prediction.\nQuick: What could that mean?\nStuck: Easier: reply or ignore — which is safer?",
+        "constraint": "Student predicts using 'might' / 'could' and compares ideas."
       },
       {
-        "prompt": "Ask the student to imagine they realised the night before a big exam that they'd studied the wrong chapter. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains the reasoning behind their last-minute decision."
-      },
-      {
-        "prompt": "Ask the student to recall a time they changed their diet suddenly for health reasons and it caused problems at first. Have them tell the story and reflect on why it turned out that way.",
-        "constraint": "Student reflects on the outcome using \"I think the reason was...\" and explains what they would do differently."
-      },
-      {
-        "prompt": "Ask the student to imagine a neighbour asked to borrow their car for a weekend they had plans of their own. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains how they handled saying yes or no and the consequence."
-      },
-      {
-        "prompt": "Ask the student to imagine they went to renew their ID card but were told a document was missing. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains the steps they took to solve the problem and the result."
-      },
-      {
-        "prompt": "Ask the student to imagine they had two ways to reach an important meeting — a faster risky route or a slower reliable one. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains the reasoning behind choosing one option over another, not just what went wrong."
-      },
-      {
-        "prompt": "Ask the student to imagine they signed up for a local sports team but found their skill level much lower than everyone else's. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains their decision to continue, adapt, or leave, with a reason."
-      },
-      {
-        "prompt": "Ask the student to imagine they were organising a neighbourhood event and two people disagreed strongly about the shared budget. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student negotiates or mediates between the two views and explains the final decision."
-      },
-      {
-        "prompt": "Ask the student to imagine they promised to help a family member move house, but got an unexpected job interview at the same time. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains how they prioritised and what the outcome was."
-      },
-      {
-        "prompt": "Ask the student to imagine they accidentally sent a private email to the wrong person at their company. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains the immediate action they took and the consequence."
-      },
-      {
-        "prompt": "Ask the student to imagine they lost their wallet on the second day of a trip abroad. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains at least two steps they took to solve the problem."
-      },
-      {
-        "prompt": "Ask the student to imagine they were at the checkout and realised they didn't have enough money for everything in their basket. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains how they decided what to keep or remove and why."
-      },
-      {
-        "prompt": "Ask the student to imagine that during a group project, one teammate stopped doing their share close to the deadline. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains how the group's decision affected the final result."
-      },
-      {
-        "prompt": "Ask the student to imagine they noticed a colleague seemed unwell but insisted on continuing demanding physical work. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains their decision to step in or not, and the reasoning behind it."
-      },
-      {
-        "prompt": "Ask the student to imagine they noticed water leaking from the ceiling, coming from the neighbour's flat above. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains the sequence of actions taken to resolve the issue."
-      },
-      {
-        "prompt": "Ask the student to imagine they reported a broken streetlight, but nothing happened for weeks and it became dangerous. Have them tell the story: what happened, what they decided to do next, and why.",
-        "constraint": "Student explains what further action they took and why."
-      },
-      {
-        "prompt": "Ask the student to imagine that during a long train delay, two passengers near them argued over the last empty seat. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains any action taken to ease the situation and the reasoning behind it."
-      },
-      {
-        "prompt": "Ask the student to recall giving up a hobby a year ago because of a scheduling conflict. Have them tell the story and reflect on whether it was the right call.",
-        "constraint": "Student reflects on the long-term outcome of a past decision, not just the immediate event."
-      },
-      {
-        "prompt": "Ask the student to imagine they saw an elderly neighbour struggling to carry groceries up the stairs. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains their decision and the effect it had."
-      },
-      {
-        "prompt": "Ask the student to imagine two family members argued right before an important family dinner they'd organised. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains how they tried to resolve the tension and what happened as a result."
-      },
-      {
-        "prompt": "Ask the student to imagine their manager asked for an urgent task while they already had another deadline that day. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains how they managed the competing priorities."
-      },
-      {
-        "prompt": "Ask the student to imagine they arrived at a hotel to find the room didn't match what was advertised. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains their decision and how the situation was resolved."
-      },
-      {
-        "prompt": "Ask the student to imagine a cashier gave them too much change. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains the reasoning behind their decision and its outcome."
-      },
-      {
-        "prompt": "Ask the student to imagine they had a choice between completing a class assignment alone or with a partner. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains the trade-offs they considered before deciding."
-      },
-      {
-        "prompt": "Ask the student to imagine they forgot to take an important medication before a long day of work. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains the decision made to manage the situation safely."
-      },
-      {
-        "prompt": "Ask the student to imagine they accidentally damaged a neighbour's fence while parking. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains how they took responsibility and the result."
-      },
-      {
-        "prompt": "Ask the student to imagine they noticed their workplace throwing away large amounts of recyclable material every day. Have them tell the story: what happened, what they decided to do, and why.",
-        "constraint": "Student explains the action they took and whether it changed the situation."
+        "prompt": "📓 An old diary has three entries that all came true exactly as written.\nAsk: \"Convince me the character should read the next entry!\"\nTeacher: Push back with the 'some things shouldn't be known' position; resist agreeing.\nQuick: What could the next entry predict?\nStuck: Easier: read it or burn it — pick one and defend it.",
+        "constraint": "Student uses 'might' / 'could' and comparatives to persuade."
       }
     ]
   },
   "B2+": {
-    "Everyday Situations": [
+    "Weird Creatures": [
       {
-        "prompt": "Ask the student to imagine their neighbor's dog barks loudly most evenings, probably because it's left alone too long. Find out how they'd raise this without damaging the relationship.",
-        "constraint": "Explain exactly how you'd start the conversation and why that approach is less likely to cause conflict."
+        "prompt": "🐺 A dying species can only be saved by choosing ONE of three rescue plans — the other two mean it disappears forever.\nAsk: \"Which plan do you save, and how do you defend that choice to the two teams you rejected?\"\nTeacher: Push for justification, then play devil's advocate for a rejected plan to force a counterargument.\nQuick: What's the strongest argument against your choice, and how do you answer it?\nStuck: Simplify: cheap-and-risky versus expensive-and-safe — which wins?",
+        "constraint": "Student defends a choice with justified reasoning and responds to a counterargument."
       },
       {
-        "prompt": "Talk about a situation where the student shares an apartment with a roommate, and chores have become unevenly split, with the student doing more. Ask them to design a fairer system going forward.",
-        "constraint": "Justify why your system is fair to both people, not just convenient for you."
+        "prompt": "🦠 A lab must release one of two flawed 'protective' creatures into the wild: one that breeds out of control, one that might wipe out a native species by accident.\nAsk: \"Which risk is worse, and can you defend that against someone who disagrees?\"\nTeacher: Argue the opposite side briefly to force justification and counterargument.\nQuick: What condition would change your mind?\nStuck: Simplify: too many babies or an extinction — which sounds worse?",
+        "constraint": "Student persuades with justified reasoning and responds to a counterargument."
       },
       {
-        "prompt": "Explore a scenario where a friend of the student's has tried to start exercising regularly three times this year and quit each time within a month. Ask the student what advice they'd give.",
-        "constraint": "Explain what you think is actually causing the pattern before suggesting a fix."
+        "prompt": "📸 A panel of five 'expert' theories tries to explain the same strange creature footage, from total hoax to genuinely new species.\nAsk: \"Rank the theories from most to least believable, and defend your top pick.\"\nTeacher: Challenge the ranking — push for justification and a response to the weakest theory's supporters.\nQuick: What single piece of evidence would move a theory up your list?\nStuck: Simplify: hoax or real animal — defend one.",
+        "constraint": "Student ranks with justified reasoning and defends the top choice against a counterargument."
       },
       {
-        "prompt": "Discuss a situation where the student has noticed their child, or a younger relative, spends most of their free time on their phone instead of other activities. Find out how they'd address it without starting a fight.",
-        "constraint": "Prioritise the single most effective approach and explain why it beats the alternatives."
+        "prompt": "🧪 Conservationists can genetically tweak an endangered creature in exactly one way to help it survive climate change — nothing else.\nAsk: \"What's the one change, and how do you justify it against the risk it creates?\"\nTeacher: Push hard on trade-offs — every change has a cost. Ask them to defend against an ethical objection.\nQuick: What unintended consequence could this one change cause?\nStuck: Simplify: change its diet or change its habitat tolerance — pick and defend.",
+        "constraint": "Student justifies one change with complex reasoning and addresses a possible risk or counterargument."
       },
       {
-        "prompt": "Invite the student to imagine a close friend has asked them to stop posting photos of them on social media without asking first. Find out how they'd respond, even if they think the friend is overreacting slightly.",
-        "constraint": "Consider both your friend's perspective and your own before explaining how you'd respond."
-      },
-      {
-        "prompt": "Explore a scenario where the student's local council has a small budget and must choose one improvement for the neighborhood park — new lighting, better play equipment, or more benches. Ask the student to decide.",
-        "constraint": "Prioritise the three options and justify your ranking."
-      },
-      {
-        "prompt": "Encourage the student to imagine they bought a kitchen appliance that broke after two weeks, and the store's return policy is unclear about whether it covers this. Find out how they'd handle getting it resolved.",
-        "constraint": "Explain your reasoning at each step, not just the final outcome."
-      },
-      {
-        "prompt": "Talk about a situation where the student is hosting a dinner for a few friends and has just remembered one of them has a dietary restriction they don't know the details of — and it's too late to ask.",
-        "constraint": "Explain how you'd solve this and what risks you're managing."
-      },
-      {
-        "prompt": "Ask the student to imagine they're considering adopting a dog, but live in a small apartment and work long hours some days. Find out whether they think it's a good idea right now.",
-        "constraint": "Consider both the animal's wellbeing and your own lifestyle before deciding."
-      },
-      {
-        "prompt": "Explore a situation where two things the student cares about are scheduled at the same time next weekend — a close friend's birthday and a family gathering they rarely get to attend.",
-        "constraint": "Explain what factors influenced your decision, not just which one you picked."
-      },
-      {
-        "prompt": "Discuss a scenario where a friend of the student's is consistently 20-30 minutes late whenever they meet, and it's starting to bother the student. Find out how they'd keep the friendship strong.",
-        "constraint": "Explain how you'd raise it in a way that addresses the behavior without sounding like an accusation."
-      },
-      {
-        "prompt": "Ask the student to imagine their apartment building wants to start a recycling program, but residents have very different habits and some are resistant. Ask them to propose how it should work.",
-        "constraint": "Explain how your plan accounts for the more resistant residents, not just the cooperative ones."
-      },
-      {
-        "prompt": "Talk about a situation where the student's parent lives alone and increasingly forgets small things, like turning off the stove. Find out whether the student thinks it's a serious issue or normal aging.",
-        "constraint": "Explain how you'd evaluate the situation before deciding what to do."
-      },
-      {
-        "prompt": "Encourage the student to imagine they've noticed they check their phone the moment they wake up and often lose an hour without realizing it. Find out how they'd change this.",
-        "constraint": "Diagnose why you think this habit formed before explaining your plan to change it."
-      },
-      {
-        "prompt": "Explore a scenario where, at a town meeting, some residents want a strict quiet hours rule after 9pm, while others feel it's excessive for a lively neighborhood. Ask the student for their view.",
-        "constraint": "Explain what would make the rule fair to both groups."
-      },
-      {
-        "prompt": "Discuss a situation where a friend of the student's has seemed stressed and withdrawn lately, but hasn't said anything is wrong. Find out how, or whether, the student would bring it up.",
-        "constraint": "Explain the reasoning behind your approach and what you're trying to avoid."
-      },
-      {
-        "prompt": "Ask the student to imagine there's a small leak under their kitchen sink. Find out whether they'd try fixing it themselves or wait for the landlord, who is usually slow to respond.",
-        "constraint": "Weigh the risks of each option before explaining your decision."
-      },
-      {
-        "prompt": "Talk about a situation where the student is organizing a weekend trip with friends who have very different ideas about pace — some want a packed schedule, others want to relax.",
-        "constraint": "Explain how you'd design a plan that keeps most people satisfied, and what compromises it requires."
-      },
-      {
-        "prompt": "Invite the student to imagine they want to pick up a new hobby, but only have a few hours a week free, and several options are competing for their attention.",
-        "constraint": "Prioritise based on what you'd actually sustain long-term, not just what sounds appealing now."
-      },
-      {
-        "prompt": "Explore a scenario where the student and their sibling disagree about how to divide responsibility for caring for an aging parent, and it's starting to cause tension.",
-        "constraint": "Propose a solution and explain why it's fair to both of you, not only convenient for one side."
-      },
-      {
-        "prompt": "Discuss a situation where a family member of the student's keeps sharing news articles online that the student is fairly sure are inaccurate or misleading. Find out how they'd say something without causing a family conflict.",
-        "constraint": "Explain how you'd approach it and why that method is more likely to be effective than direct confrontation."
-      },
-      {
-        "prompt": "Ask the student to imagine they've been offered a small amount of freelance work on the side, but it would mean giving up their one evening a week of downtime, which they protect carefully. Find out whether they think it's worth it.",
-        "constraint": "Explain what you're actually weighing, not just the time cost."
-      },
-      {
-        "prompt": "Talk about a situation where the student reads two news articles about the same local event that describe it quite differently. Find out how they'd figure out what actually happened.",
-        "constraint": "Explain your reasoning process, not just your conclusion."
-      },
-      {
-        "prompt": "Encourage the student to imagine they've realized they procrastinate on tasks they actually care about, not just boring ones, and it's starting to frustrate them.",
-        "constraint": "Explain what you think is really causing this before describing your plan to address it."
-      },
-      {
-        "prompt": "Explore a scenario where package theft has increased in the student's neighborhood recently, and neighbors are discussing possible solutions, from cameras to a shared delivery locker.",
-        "constraint": "Consider the advantages and disadvantages of at least two approaches before recommending one."
-      },
-      {
-        "prompt": "Ask the student to imagine they're trying to decide whether to repair an old but sentimental piece of furniture or replace it with something more practical.",
-        "constraint": "Explain what factors matter most to you and why they outweigh the others."
-      },
-      {
-        "prompt": "Discuss a situation where a close friend of the student's just went through a breakup, and the student isn't sure whether they want advice, distraction, or just someone to listen.",
-        "constraint": "Explain how you'd figure out what they need and why that matters more than guessing."
-      },
-      {
-        "prompt": "Talk about a situation where the student is decluttering a shared living space, but a family member wants to keep several items the student thinks are unnecessary.",
-        "constraint": "Explain how you'd navigate the disagreement and what a fair compromise would look like."
-      },
-      {
-        "prompt": "Explore a scenario where three generations live in the same house as the student, and everyone has different routines around meal times, noise, and shared spaces, causing friction.",
-        "constraint": "Propose a compromise and explain what makes it realistic, not just ideal."
-      },
-      {
-        "prompt": "Invite the student to imagine a friend has a habit — interrupting, canceling plans last-minute, something similar — that's been quietly bothering them for months. Find out whether they'd say something or let it go.",
-        "constraint": "Weigh what you'd gain and lose either way before explaining your decision."
+        "prompt": "🧊 A biotech company drip-feeds details about a 'new' creature they've engineered, one clue at a time, and public opinion keeps shifting.\nAsk: \"Based on each new clue, how does your theory change — and what's your final judgement?\"\nTeacher: Reveal clues slowly (next: 'it was designed to survive in cities', then 'it can reproduce without a mate'). Push them to revise their argument each time.\nQuick: Which single clue changed your opinion the most, and why?\nStuck: Simplify: is this good news or bad news for cities — defend one.",
+        "constraint": "Student updates a speculative argument with each clue and defends a final conclusion with justification."
       }
     ],
-    "Simple Roleplay": [
+    "Gaming": [
       {
-        "prompt": "Ask the student to roleplay raising the issue of a neighbour who keeps parking in their usual spot, even though it's not officially assigned to anyone.",
-        "constraint": "Propose a fair long-term solution, not just a one-time complaint."
+        "prompt": "🎮 A studio can fund development of only ONE sequel: a beloved but risky experimental game, a safe guaranteed hit, or a bold new IP.\nAsk: \"Which do you greenlight, and how do you defend it to the board?\"\nTeacher: Play a skeptical investor. Push justification and a response to the financial risk.\nQuick: What's the strongest argument against your choice?\nStuck: Simplify: safe money or creative risk — pick one.",
+        "constraint": "Student justifies a decision with complex reasoning and responds to a counterargument."
       },
       {
-        "prompt": "Invite the student to roleplay a conversation with a close friend who wants them to invest in a business idea they have doubts about.",
-        "constraint": "Support each concern with a specific reason, not a general feeling."
+        "prompt": "🕹️ A politician wants to ban a hit game for being 'too violent.' You think that's wrong.\nAsk: \"Convince me the ban is a mistake!\"\nTeacher: Argue the politician's side seriously — cite real concerns. Don't fully concede.\nQuick: What would satisfy both sides?\nStuck: Simplify: does banning it actually solve the problem — yes or no?",
+        "constraint": "Student persuades using conditionals and responds to a counterargument."
       },
       {
-        "prompt": "Explore a roleplay where the student has a private conversation with a colleague who took credit for their idea in a meeting.",
-        "constraint": "Address the issue without accusing them outright of lying."
+        "prompt": "🏆 Five factors decide if a game 'ages well': story, graphics, gameplay, community, nostalgia.\nAsk: \"Rank these, then defend your #1 against someone who disagrees.\"\nTeacher: Challenge each ranking choice; push for justification against a competing view.\nQuick: Which factor could change most in ten years?\nStuck: Simplify: gameplay or story — which matters more, and why?",
+        "constraint": "Student ranks with justification and comparatives, and handles a counterargument."
       },
       {
-        "prompt": "Ask the student to roleplay returning a piece of furniture that broke after normal use, without a receipt, to a store manager.",
-        "constraint": "Build your case using at least two different types of evidence or argument."
+        "prompt": "🌩️ A player is about to win a huge prize... then officials discover a rules loophole they used — technically legal, clearly not intended.\nAsk: \"Should they keep the prize?\"\nTeacher: Let them decide, then twist: '...but the loophole was in the official rulebook the whole time.' Push them to revise their argument.\nQuick: How would you rewrite the rule to prevent this next time?\nStuck: Simplify: is 'legal' the same as 'fair'? Yes or no, then why.",
+        "constraint": "Student justifies a position using conditionals and complex reasoning."
       },
       {
-        "prompt": "Talk through a roleplay where the student helps their teenage nephew think through convincing his parents to let him take a gap year.",
-        "constraint": "Raise both a potential benefit and a potential risk before offering your opinion."
-      },
-      {
-        "prompt": "Discuss a roleplay negotiation where the student, as a landlord, responds to a tenant asking for a rent reduction because of ongoing construction noise.",
-        "constraint": "Offer a compromise that isn't simply \"yes\" or \"no.\""
-      },
-      {
-        "prompt": "Ask the student to roleplay setting a boundary with a roommate who has started inviting people over late at night without asking first.",
-        "constraint": "Explain the impact on you before stating what you'd like to change."
-      },
-      {
-        "prompt": "Invite the student to roleplay deciding how to respond when a close friend asks to borrow a significant amount of money for the second time.",
-        "constraint": "Justify your decision using reasoning, not just an emotional reaction."
-      },
-      {
-        "prompt": "Explore a roleplay where the student, as a travel agent, tries to convince a client to choose a less obvious destination than the one they originally wanted.",
-        "constraint": "Anticipate one objection they might raise and address it directly."
-      },
-      {
-        "prompt": "Ask the student to roleplay bringing up their concern that an adult sibling skipping family gatherings is hurting their parents' feelings.",
-        "constraint": "Avoid sounding like you're lecturing them."
-      },
-      {
-        "prompt": "Discuss a roleplay where the student handles a client's complaint about a service that was delivered on time but wasn't what they expected.",
-        "constraint": "Clarify the misunderstanding before offering any solution."
-      },
-      {
-        "prompt": "Ask the student to roleplay convincing an older relative to finally start using a smartphone for video calls.",
-        "constraint": "Frame your argument around what matters to them, not what's convenient for you."
-      },
-      {
-        "prompt": "Invite the student to roleplay mediating a falling-out between two friends, after being asked by one of them to talk to the other.",
-        "constraint": "Stay neutral and represent both sides fairly."
-      },
-      {
-        "prompt": "Explore a roleplay negotiation where the student is booking a package holiday and the travel agent's offer doesn't quite match what they need.",
-        "constraint": "Reach an agreement where both sides give something up, not just you."
-      },
-      {
-        "prompt": "Ask the student to roleplay convincing their partner to try a completely different type of holiday than they usually take.",
-        "constraint": "Acknowledge what they'll be giving up before making your case."
-      },
-      {
-        "prompt": "Discuss a roleplay where the student, as a tutor, responds to a student who asks for a better grade than they earned, arguing they tried hard.",
-        "constraint": "Separate effort from outcome clearly in your explanation."
-      },
-      {
-        "prompt": "Talk through a roleplay negotiation where the student discusses a contractor who wants to charge more than originally agreed, citing unexpected complications.",
-        "constraint": "Question the reasoning before accepting or rejecting the new price."
-      },
-      {
-        "prompt": "Ask the student to roleplay finally bringing up a friend's habit of cancelling plans at the last minute.",
-        "constraint": "Give them a genuine chance to explain before reacting."
-      },
-      {
-        "prompt": "Invite the student to roleplay convincing a stubborn family member to see a doctor about a health issue they keep dismissing.",
-        "constraint": "Use a mix of concern and practical reasoning, not pressure alone."
-      },
-      {
-        "prompt": "Explore a roleplay where the student corrects a new employee who keeps doing a task in a way that used to work but no longer fits the current process.",
-        "constraint": "Explain the reasoning behind the current process, not just the rule itself."
-      },
-      {
-        "prompt": "Ask the student to roleplay negotiating with their manager to work from home two extra days a week, despite the company generally discouraging it.",
-        "constraint": "Offer something in return rather than only asking for the change."
-      },
-      {
-        "prompt": "Discuss a roleplay where the student mediates an ongoing dispute between two colleagues over how to split a shared project.",
-        "constraint": "Guide both sides toward a solution without taking either side."
-      },
-      {
-        "prompt": "Ask the student to roleplay responding honestly when a friend asks for their opinion on a big life decision they privately disagree with.",
-        "constraint": "Be honest without being harsh or dismissive."
-      },
-      {
-        "prompt": "Talk through a roleplay negotiation where the student and a housemate discuss who takes on more shared chores, since their schedules have changed.",
-        "constraint": "Propose a system, not just a one-off fix."
-      },
-      {
-        "prompt": "Invite the student to roleplay responding to a colleague who wants their help covering up a small mistake at work.",
-        "constraint": "Explain your reasoning for whatever you decide to do."
-      },
-      {
-        "prompt": "Explore a roleplay where the student makes their case to a university housing officer who suggests moving them, rather than their roommate, to resolve a conflict.",
-        "constraint": "Support your position with reasoning the officer can actually act on."
-      },
-      {
-        "prompt": "Ask the student to roleplay holding their ground with a close friend who keeps asking to stay at their place for extended periods.",
-        "constraint": "Maintain your decision even if they push back or offer alternatives."
-      },
-      {
-        "prompt": "Discuss a roleplay where the student explains to a friend why they weren't invited to something.",
-        "constraint": "Acknowledge their feelings before explaining your reasoning."
-      },
-      {
-        "prompt": "Ask the student to roleplay convincing a group of friends to change a long-standing tradition that no longer works well for everyone.",
-        "constraint": "Address why the change is worth the disruption it will cause."
-      },
-      {
-        "prompt": "Invite the student to roleplay responding to a close friend who confides they're thinking of ending a long relationship and asks what the student honestly thinks.",
-        "constraint": "Offer perspective without telling them what to do."
+        "prompt": "🎮🧠📉 Three symbols: game, brain, decline.\nAsk: \"What real issue in gaming do these three suggest, and what should be done about it?\"\nTeacher: Push them to connect the emojis to a real debate — like addiction or attention spans — and argue for a solution; challenge its downside.\nQuick: What's one argument against your solution?\nStuck: Simplify: is this the players' responsibility or the companies'? Pick one and defend it.",
+        "constraint": "Student persuades with justification and responds to a counterargument."
       }
     ],
-    "Describe": [
+    "Mysteries": [
       {
-        "prompt": "Ask the student to describe someone they know who is very good at handling stressful situations calmly.",
-        "constraint": "Explain what specifically they do differently from people who don't cope well."
+        "prompt": "🔍 Two forensic theories contradict each other: the break-in was staged from inside, or genuinely forced from outside.\nAsk: \"Which theory is more convincing, and how do you defend it against the other?\"\nTeacher: Argue the opposing theory to force justification.\nQuick: What single piece of evidence would settle it?\nStuck: Simplify: which theory has fewer holes?",
+        "constraint": "Student defends a theory with justification and responds to a counterargument."
       },
       {
-        "prompt": "Ask the student to describe the neighbourhood or area where they grew up.",
-        "constraint": "Explain how it shaped the kind of person you became."
+        "prompt": "🕵️ A leaked memo, an anonymous tip, and a suspicious payment are the only leads in a corporate cover-up.\nAsk: \"Let's build the case together — what's your opening theory?\"\nTeacher: Add a twist detail each round, pushing the student to revise and justify their theory.\nQuick: What's the weakest link in your theory so far?\nStuck: Simplify: focus only on the payment — where did it come from?",
+        "constraint": "Student speculates using modals and justifies a developing theory."
       },
       {
-        "prompt": "Talk about an object in the student's home that they'd genuinely be upset to lose.",
-        "constraint": "Go beyond what it looks like — explain why it matters more than its price would suggest."
+        "prompt": "🔎 Five suspects each have a motive, but two alibis directly contradict each other.\nAsk: \"Rank the suspects and defend your #1 against the contradiction.\"\nTeacher: Challenge them to explain away the contradiction; push counterargument handling.\nQuick: How do you explain the contradicting alibi?\nStuck: Simplify: forget the contradiction — who has the strongest motive alone?",
+        "constraint": "Student defends a ranking with justification and addresses counter-evidence."
       },
       {
-        "prompt": "Explore how the student's eating habits have changed since they were a teenager.",
-        "constraint": "Compare then and now, and explain what caused the shift."
+        "prompt": "🔦 A famous unsolved case gets a new clue every year. This year's clue: a name, redacted everywhere except one leaked document.\nAsk: \"How does this clue change your theory of what happened?\"\nTeacher: Reveal a further twist ('...but the name doesn't match any known suspect'). Push them to keep revising.\nQuick: What would it take to confirm this new theory?\nStuck: Simplify: does this clue help or hurt the original suspect? Pick one.",
+        "constraint": "Student speculates and defends a justified, evolving conclusion."
       },
       {
-        "prompt": "Ask the student to describe a piece of technology that annoys them every time they use it.",
-        "constraint": "Explain exactly what design choice causes the frustration, not just that it's \"bad.\""
-      },
-      {
-        "prompt": "Discuss the atmosphere of a place the student goes to relax.",
-        "constraint": "Explain which specific elements create that atmosphere — sound, light, people, pace."
-      },
-      {
-        "prompt": "Explore how the student's city or town changes between day and night.",
-        "constraint": "Explain what this shift reveals about the people who live there."
-      },
-      {
-        "prompt": "Ask the student to describe a skill they have that most people don't realize takes real effort.",
-        "constraint": "Explain what non-experts typically get wrong about it."
-      },
-      {
-        "prompt": "Talk about the way a close friend or family member of the student's expresses affection.",
-        "constraint": "Compare their style to how you express it, and explain the difference."
-      },
-      {
-        "prompt": "Ask the student to describe a meal that reminds them of a specific period in their life.",
-        "constraint": "Explain the connection between the food and the memory, not just the taste."
-      },
-      {
-        "prompt": "Find out how weather affects the student's mood or productivity.",
-        "constraint": "Give specific examples that support your explanation."
-      },
-      {
-        "prompt": "Discuss the personality of someone the student finds difficult to work or study with.",
-        "constraint": "Explain the underlying reason the dynamic is difficult, not just a list of traits."
-      },
-      {
-        "prompt": "Invite the student to describe a habit they have that other people find strange.",
-        "constraint": "Explain the logic behind it from your own point of view."
-      },
-      {
-        "prompt": "Explore how the student's taste in music or films has evolved over the years.",
-        "constraint": "Explain what triggered the change at each stage."
-      },
-      {
-        "prompt": "Ask the student to describe a public space — a park, square, or station — that works surprisingly well for the people who use it.",
-        "constraint": "Explain the specific design or social factors that make it succeed."
-      },
-      {
-        "prompt": "Discuss how communication styles differ between the student's closest colleagues or classmates at work or in study.",
-        "constraint": "Explain what makes one style more effective than the other in that setting."
-      },
-      {
-        "prompt": "Ask the student to describe a piece of clothing or accessory that says something about who they are.",
-        "constraint": "Explain what it communicates and whether that's intentional."
-      },
-      {
-        "prompt": "Explore how a family tradition has changed across generations in the student's family.",
-        "constraint": "Explain what stayed the same in meaning even as the form changed."
-      },
-      {
-        "prompt": "Talk about someone whose sense of humour the student finds genuinely funny.",
-        "constraint": "Explain what makes their humour work, using a specific example."
-      },
-      {
-        "prompt": "Find out how the student's energy levels shift throughout a typical day.",
-        "constraint": "Explain what causes the pattern and how you work around it."
-      },
-      {
-        "prompt": "Discuss how the student typically makes decisions under time pressure at work or when studying.",
-        "constraint": "Explain what this reveals about your priorities compared to when you have plenty of time."
-      },
-      {
-        "prompt": "Explore how noise or silence affects the way the student thinks or works.",
-        "constraint": "Explain the difference with reference to a specific situation."
-      },
-      {
-        "prompt": "Ask the student to describe a place that felt completely different the second time they visited it.",
-        "constraint": "Explain whether the place changed, you changed, or both."
-      },
-      {
-        "prompt": "Invite the student to describe a moment when they clearly noticed they were more tired or run-down than usual.",
-        "constraint": "Explain the specific signs your body or mind gave you before you consciously realized it."
-      },
-      {
-        "prompt": "Explore how the student's relationship with money has changed as they've gotten older.",
-        "constraint": "Explain the experience or realization that triggered the biggest shift."
-      },
-      {
-        "prompt": "Ask the student to describe a smell or sound that instantly takes them back to a particular time in their life.",
-        "constraint": "Explain why you think that specific sense is so strongly linked to memory for you."
-      },
-      {
-        "prompt": "Discuss how two people the student knows handle the same type of stress in very different ways.",
-        "constraint": "Explain what each approach reveals about their personality."
-      },
-      {
-        "prompt": "Talk about a routine the student follows that other people would probably find boring.",
-        "constraint": "Explain what value it actually gives you."
-      },
-      {
-        "prompt": "Explore how travelling somewhere new has changed the way the student plans a trip now, compared to their first ever trip alone.",
-        "constraint": "Evaluate whether the change has made your travel experiences better or simply different."
-      },
-      {
-        "prompt": "Ask the student to describe a first impression they had of someone that turned out to be completely wrong.",
-        "constraint": "Explain what specifically caused you to misjudge them."
+        "prompt": "🕵️ A colleague believes the whistleblower should have stayed silent to protect their job. You disagree.\nAsk: \"Convince me the whistleblower did the right thing!\"\nTeacher: Argue the 'silence was safer' position with genuine points; resist conceding.\nQuick: What would you have risked in their position?\nStuck: Simplify: is loyalty to a company more important than the truth? Yes or no, then why.",
+        "constraint": "Student persuades and responds to a counterargument."
       }
     ],
-    "Explain and Show": [
+    "Future Tech": [
       {
-        "prompt": "Ask the student to explain to someone who has never used public transport in a big city how to figure out which bus or train to take to get somewhere unfamiliar.",
-        "constraint": "Include what to do if you make a mistake and end up on the wrong route."
+        "prompt": "🤖 A hospital can make exactly ONE change to how AI assists doctors in emergencies.\nAsk: \"What's your one change, and how do you defend it against the risk it creates?\"\nTeacher: Push hard on trade-offs; challenge with an ethical objection.\nQuick: What's the strongest argument against your change?\nStuck: Simplify: give AI more power or less power — pick and defend.",
+        "constraint": "Student justifies a decision with complex reasoning and responds to a counterargument."
       },
       {
-        "prompt": "Encourage the student to explain how they'd help a friend who wants to start cooking for themselves but feels intimidated by the kitchen get comfortable with basic cooking.",
-        "constraint": "Focus on building confidence, not just listing techniques."
+        "prompt": "🚗 A colleague argues driverless public transport should replace all human drivers within five years, despite the job losses. You think it's too fast.\nAsk: \"Convince me to slow this down!\"\nTeacher: Argue the 'full speed ahead' position with real efficiency points; resist.\nQuick: What compromise could satisfy both sides?\nStuck: Simplify: is five years too fast — yes or no, then why.",
+        "constraint": "Student persuades using conditionals and responds to a counterargument."
       },
       {
-        "prompt": "Invite the student to show a younger family member how to tell if a piece of information online is trustworthy or not.",
-        "constraint": "Use a specific example to illustrate your reasoning process."
+        "prompt": "⚡ Society agrees to let AI read private thoughts, but only with full consent... then someone discovers consent can be quietly withdrawn without anyone noticing.\nAsk: \"Does this change your opinion of the technology?\"\nTeacher: Let them respond, then twist again ('...and companies profit from data collected before withdrawal'). Push them to revise their stance.\nQuick: What law would you write to fix this?\nStuck: Simplify: is the risk worth the benefit — yes or no, then why.",
+        "constraint": "Student justifies an opinion using conditionals and complex reasoning."
       },
       {
-        "prompt": "Ask the student to explain how to negotiate a lower price when buying something secondhand, like a car or furniture.",
-        "constraint": "Describe the tone and approach that works, not just the words to say."
+        "prompt": "📱 A team is designing one piece of technology to solve loneliness in cities.\nAsk: \"Let's build it together — what's your first design idea?\"\nTeacher: Add a realistic complication each round ('...but it could make people even more isolated'). Push them to adapt.\nQuick: What's the biggest flaw in the current design?\nStuck: Simplify: focus only on elderly users — what would help them most?",
+        "constraint": "Student speculates and justifies design choices with complex reasoning."
       },
       {
-        "prompt": "Explore how the student would help a colleague who is nervous about giving their first presentation at work prepare for it.",
-        "constraint": "Address both the practical preparation and the mental side of it."
-      },
-      {
-        "prompt": "Ask the student to explain how to read a room during a conversation and tell whether someone is genuinely interested or just being polite.",
-        "constraint": "Give examples of the subtle signals involved."
-      },
-      {
-        "prompt": "Invite the student to show someone how to plan a trip on a tight budget without feeling like they're missing out.",
-        "constraint": "Explain the trade-offs you'd suggest they consider."
-      },
-      {
-        "prompt": "Ask the student to explain to a teenager how compound interest works and why starting to save early matters.",
-        "constraint": "Use an everyday comparison rather than technical financial terms."
-      },
-      {
-        "prompt": "Find out how the student would help a friend who keeps overwatering or underwatering their houseplants figure out what a plant actually needs.",
-        "constraint": "Describe how you'd notice and interpret the plant's signals."
-      },
-      {
-        "prompt": "Explore how the student would defuse a tense moment when two people are arguing at a family gathering.",
-        "constraint": "Focus on what you'd say and do in the first thirty seconds."
-      },
-      {
-        "prompt": "Invite the student to show someone how to organize their week when they have too many tasks and not enough time.",
-        "constraint": "Explain the reasoning behind how you'd prioritize, not just a list of steps."
-      },
-      {
-        "prompt": "Ask the student to explain to a visitor from another country an unwritten social rule in their culture that often confuses outsiders.",
-        "constraint": "Explain why the rule exists, not just what it is."
-      },
-      {
-        "prompt": "Encourage the student to explain how they'd help a friend figure out why their phone or laptop is running slowly.",
-        "constraint": "Walk through your thinking step by step as if diagnosing the problem live."
-      },
-      {
-        "prompt": "Ask the student to explain how to comfort a friend who is upset without making them feel like you're trying to fix everything immediately.",
-        "constraint": "Describe what you would say and, just as importantly, what you would avoid saying."
-      },
-      {
-        "prompt": "Invite the student to show someone how to choose good produce at a market or grocery store — what to look and feel for.",
-        "constraint": "Explain the reasoning behind each sign you look for."
-      },
-      {
-        "prompt": "Discuss how the student would explain to a new colleague or classmate how to adapt their communication style depending on who they're talking to.",
-        "constraint": "Use specific examples of what changes and why."
-      },
-      {
-        "prompt": "Encourage the student to explain how they'd help a friend who wants to get fitter but has failed at gym memberships before build a routine that actually sticks.",
-        "constraint": "Focus on the psychological reasons past attempts failed, not just an exercise plan."
-      },
-      {
-        "prompt": "Ask the student to explain how to spot when an online deal or advertisement is too good to be true.",
-        "constraint": "Give the specific warning signs and explain the logic behind each one."
-      },
-      {
-        "prompt": "Invite the student to show someone how to fold a fitted sheet, or another everyday task that looks harder than it is.",
-        "constraint": "Describe it clearly enough that someone could follow along without seeing you do it."
-      },
-      {
-        "prompt": "Ask the student to explain to a child why it's important to apologise properly, and what makes an apology feel genuine versus empty.",
-        "constraint": "Use a concrete example of a good and a bad apology."
-      },
-      {
-        "prompt": "Explore how the student would coach someone on making good decisions quickly when they're under time pressure at work or while studying.",
-        "constraint": "Explain how this differs from decision-making when there's no rush, and why that matters."
-      },
-      {
-        "prompt": "Ask the student to explain how to tell if a used item, like a phone or a bike, is actually in good condition before buying it.",
-        "constraint": "Describe your inspection process in the order you'd actually do it."
-      },
-      {
-        "prompt": "Invite the student to show someone unfamiliar with recycling rules how to figure out what can and can't be recycled in general.",
-        "constraint": "Explain the underlying logic rather than a memorised list."
-      },
-      {
-        "prompt": "Ask the student to explain how to recognise the early warning signs that someone is more tired or run-down than they realise.",
-        "constraint": "Describe the specific signs to watch for and why people often miss them."
-      },
-      {
-        "prompt": "Encourage the student to explain how they'd help a friend who keeps missing deadlines estimate time more realistically.",
-        "constraint": "Use a real example of a task and how you'd break it down."
-      },
-      {
-        "prompt": "Ask the student to explain how to politely decline an invitation without damaging the relationship.",
-        "constraint": "Give an example of wording that manages to be both honest and kind."
-      },
-      {
-        "prompt": "Invite the student to show someone how to take care of a small cut or minor injury safely at home.",
-        "constraint": "Explain how you'd know when it's serious enough to need a doctor instead."
-      },
-      {
-        "prompt": "Discuss how the student would choose between two similar job offers when the salary is almost the same.",
-        "constraint": "Walk through the less obvious factors you'd weigh up."
-      },
-      {
-        "prompt": "Ask the student to teach someone planning their first solo trip how to prepare in ways a first-timer usually wouldn't think of.",
-        "constraint": "Explain the reasoning behind each piece of advice, not just what to do."
-      },
-      {
-        "prompt": "Explore how the student would teach someone to give and receive constructive feedback without either person feeling defensive.",
-        "constraint": "Give an example of how you'd phrase difficult feedback well."
+        "prompt": "🔋 Two rollout plans for a life-extending treatment: release it now for the wealthy only, or delay it years until it's affordable for everyone.\nAsk: \"Which is worse, and can you defend your answer against the opposite view?\"\nTeacher: Argue the other position to force a real counterargument response.\nQuick: What compromise might satisfy both sides?\nStuck: Simplify: is delay a form of unfairness too — yes or no, then why.",
+        "constraint": "Student persuades and responds to a counterargument."
       }
     ],
-    "Choose and Create": [
+    "Weird & Gross": [
       {
-        "prompt": "Ask the student to redesign a public park that nobody uses anymore, deciding what to remove, what to keep, and what to add.",
-        "constraint": "Justify each decision by explaining what problem it solves."
+        "prompt": "🦟🧬🌍 Three symbols: mosquito, DNA, globe.\nAsk: \"What global health decision do these three suggest, and what's your position on it?\"\nTeacher: Push them to connect the emojis to a real debate — like releasing modified mosquitoes — and defend a stance.\nQuick: What's the strongest objection to your position?\nStuck: Simplify: is this worth the risk — yes or no, then why.",
+        "constraint": "Student justifies a position and responds to a counterargument."
       },
       {
-        "prompt": "Invite the student to invent a new rule for their workplace or school that would actually improve daily life there.",
-        "constraint": "Explain why people would resist it at first and how you'd win them over."
+        "prompt": "🤢 A disgusting compound from a venomous animal becomes the source of a life-saving medicine.\nAsk: \"Give me the boldest possible argument for why the source shouldn't matter to patients at all!\"\nTeacher: Push for the most extreme, confident version of the argument; then challenge it.\nQuick: What's one case where the source really would matter?\nStuck: Simplify: does it work — yes or no? That's the whole argument.",
+        "constraint": "Student persuades with justification and complex reasoning."
       },
       {
-        "prompt": "Ask the student to design a morning routine for someone who is chronically late to everything.",
-        "constraint": "Prioritise the three changes that would matter most and explain why those first."
+        "prompt": "🐛 Two proposals to fight disease-carrying insects: releasing sterile modified insects, or spraying whole regions with pesticide.\nAsk: \"Which approach is worse overall, and defend it against the opposite view.\"\nTeacher: Argue the opposing approach to force a real counterargument response.\nQuick: What evidence would change your ranking?\nStuck: Simplify: which risk is more reversible if it goes wrong?",
+        "constraint": "Student persuades and responds to a counterargument."
       },
       {
-        "prompt": "Encourage the student to create a new tradition for their family or friend group.",
-        "constraint": "Compare it with an existing tradition and explain what gap it fills."
+        "prompt": "🦠 Genetic engineers can make exactly ONE change to a disease-carrying species to stop it from spreading disease — nothing else.\nAsk: \"What's your one change, and how do you defend the ecological risk?\"\nTeacher: Push hard on trade-offs; challenge with an ecological objection.\nQuick: What's the strongest argument against your change?\nStuck: Simplify: block reproduction or block disease transmission — pick and defend.",
+        "constraint": "Student justifies one change with complex reasoning and responds to a counterargument."
       },
       {
-        "prompt": "Ask the student to choose three items to put in a time capsule that represents life today.",
-        "constraint": "Defend your choices against someone who thinks you picked the wrong things."
-      },
-      {
-        "prompt": "Invite the student to invent a fairer way to split household chores between people who have very different schedules.",
-        "constraint": "Address what happens when the system breaks down."
-      },
-      {
-        "prompt": "Ask the student to design a farewell event for a colleague who dislikes attention.",
-        "constraint": "Balance their preferences against the group's desire to celebrate them."
-      },
-      {
-        "prompt": "Encourage the student to create a plan to convince a stubborn friend to try something new.",
-        "constraint": "Rank your strategies from most to least likely to work, and explain your ranking."
-      },
-      {
-        "prompt": "Ask the student to design a small business that solves a problem in their neighbourhood.",
-        "constraint": "Identify the biggest risk it faces and how you'd reduce it."
-      },
-      {
-        "prompt": "Explore how the student would choose between three ways to spend an unexpected day off.",
-        "constraint": "Weigh the trade-offs of each option before settling on one."
-      },
-      {
-        "prompt": "Invite the student to invent a new way to welcome new employees that avoids the usual awkward introductions.",
-        "constraint": "Justify why your approach is better than the standard method."
-      },
-      {
-        "prompt": "Ask the student to imagine they have one free afternoon to reduce food waste in their household for good, but can only take one action: a shopping change, a storage change, or a cooking-habit change.",
-        "constraint": "Choose one and explain what you're deliberately giving up by not doing the other two."
-      },
-      {
-        "prompt": "Ask the student to design a weekend trip structure that lets group members with very different budgets and energy levels each get what they need.",
-        "constraint": "Explain which parts of the trip are fixed for everyone and which parts flex, and justify where you drew that line."
-      },
-      {
-        "prompt": "Explore how the student would choose which of three friends to ask for a favour that requires trust.",
-        "constraint": "Compare their strengths and weaknesses before deciding."
-      },
-      {
-        "prompt": "Invite the student to invent a fair method for choosing who gets the last seat on a fully booked group trip.",
-        "constraint": "Defend your method against accusations of unfairness."
-      },
-      {
-        "prompt": "Ask the student to design an ideal waiting room for a place people usually dread visiting.",
-        "constraint": "Explain which changes address the real source of discomfort, not just the surface annoyance."
-      },
-      {
-        "prompt": "Encourage the student to create a plan to help a shy person make more friends in a new city.",
-        "constraint": "Order your suggestions from easiest to hardest and justify the order."
-      },
-      {
-        "prompt": "Discuss how the student would choose to spend a small unexpected windfall between saving, spending, and giving.",
-        "constraint": "Justify the proportions you'd choose and what would change your mind."
-      },
-      {
-        "prompt": "Invite the student to invent a new format for team meetings that people won't dread attending.",
-        "constraint": "Anticipate one objection and respond to it."
-      },
-      {
-        "prompt": "Ask the student to design a system for resolving noise complaints between neighbours without involving authorities.",
-        "constraint": "Explain why your system avoids escalation."
-      },
-      {
-        "prompt": "Ask the student to design a surprise for someone who says they hate surprises, built around three elements: how they find out, where it happens, and what makes it feel personal.",
-        "constraint": "Decide how much of the \"surprise\" element to keep versus soften, and justify the balance you chose."
-      },
-      {
-        "prompt": "Encourage the student to create a plan to repurpose an unused room in a house.",
-        "constraint": "Compare at least two possible uses before choosing one."
-      },
-      {
-        "prompt": "Ask the student to redesign how a long queue works, choosing from three possible approaches: a numbered ticket system, a mobile app that lets people wait elsewhere, or entertainment placed along the line.",
-        "constraint": "Rank the three options and justify your top choice over the other two."
-      },
-      {
-        "prompt": "Ask the student to design a mentorship pairing system for new and experienced staff.",
-        "constraint": "Explain what you'd do about a pairing that isn't working."
-      },
-      {
-        "prompt": "Explore which three skills the student thinks someone should learn to become more self-sufficient at home.",
-        "constraint": "Defend your selection against someone who thinks different skills matter more."
-      },
-      {
-        "prompt": "Encourage the student to create a plan to revive a friendship that has quietly faded over the years.",
-        "constraint": "Weigh the risk of rejection against the value of trying."
-      },
-      {
-        "prompt": "Ask the student to design a feature for an app that helps people stick to small daily habits.",
-        "constraint": "Choose which single feature matters most and explain why you'd build that before anything else."
-      },
-      {
-        "prompt": "Ask the student to design a fairer way to divide an inheritance of sentimental objects with no clear monetary value.",
-        "constraint": "Address how you'd handle disagreement between siblings."
-      },
-      {
-        "prompt": "Discuss how the student would choose one habit to eliminate and one to build, given limited willpower.",
-        "constraint": "Explain the trade-off and why you prioritised as you did."
-      },
-      {
-        "prompt": "Encourage the student to create a plan for a community skill-share event where neighbours teach each other things.",
-        "constraint": "Decide how you'd handle someone who wants to teach something nobody wants to learn."
+        "prompt": "🤮 Five real 'gross but useful' biological tricks are being considered for medical research funding.\nAsk: \"Rank them by research priority and defend your top choice.\"\nTeacher: Challenge the ranking; push justification against a competing priority.\nQuick: What could make a lower-ranked one suddenly become urgent?\nStuck: Simplify: just top two — which deserves funding more, and why?",
+        "constraint": "Student ranks and defends choices with justification and comparatives."
       }
     ],
-    "Guided Stories": [
+    "Stories": [
       {
-        "prompt": "Ask the student to tell a story about a time a stranger's small act of kindness changed the direction of their day.",
-        "constraint": "Reveal the key information only near the end."
+        "prompt": "🕯️ A secret letter, a photo of two people together, and a newspaper headline about a scandal land on the table, one at a time.\nAsk: \"How does your theory of the story change with each new piece?\"\nTeacher: Reveal them one by one, pushing revision each time; end by asking what the character should do with the letter and why.\nQuick: What's the biggest risk in that decision?\nStuck: Simplify: is the truth worth the damage it causes — yes or no, then why.",
+        "constraint": "Student speculates and defends a conclusion with justification."
       },
       {
-        "prompt": "Invite the student to tell a story about a trip that went completely differently than planned.",
-        "constraint": "Tell the story in chronological order."
+        "prompt": "💰 A wallet turns up stuffed with cash and no ID.\nAsk: \"Let's build both characters' points of view — what does each one argue?\"\nTeacher: Add a complication each round ('...but one of them is secretly in debt'). Push both perspectives before a final opinion.\nQuick: Which argument is genuinely stronger, and why?\nStuck: Simplify: keep it or hand it in — defend just one side.",
+        "constraint": "Student presents both arguments and defends a final opinion with justification."
       },
       {
-        "prompt": "Ask the student to tell a story about a misunderstanding between them and a friend or colleague that escalated before it was resolved.",
-        "constraint": "Include a moment where your opinion completely changes."
+        "prompt": "📷 A half-burned photograph is the only clue to a story that begins: 'If I hadn't kept that photograph...'\nAsk: \"Give me the most dramatic possible reason that photograph mattered!\"\nTeacher: Reward the boldest, most theatrical version; push them to escalate it further.\nQuick: What would have happened if they'd burned it completely?\nStuck: Simplify: good secret or dangerous secret — pick one and build from there.",
+        "constraint": "Student uses conditionals and justifies a dramatic story choice."
       },
       {
-        "prompt": "Encourage the student to tell a story about a time they had to make a difficult decision with very little time to think.",
-        "constraint": "Explain why one decision made everything else happen."
+        "prompt": "🧾 A receipt, a screenshot, and a witness's name are a character's only proof of an unbelievable truth, and a skeptical friend refuses to believe any of it.\nAsk: \"How do you persuade the friend?\"\nTeacher: Let them argue, then twist ('...but the witness suddenly denies ever seeing anything'). Push them to adapt their argument.\nQuick: What's your strongest remaining piece of evidence now?\nStuck: Simplify: focus on just the receipt — what does it prove alone?",
+        "constraint": "Student persuades and responds to a counterargument."
       },
       {
-        "prompt": "Ask the student to tell a story about a message, call, or video online that led to a real, unexpected event in their life.",
-        "constraint": "Let the true cause come out through something someone said, reported as dialogue, rather than stated directly."
-      },
-      {
-        "prompt": "Invite the student to tell a story about a family member whose actions they completely misunderstood at the time.",
-        "constraint": "Tell it first the way you understood it back then, then stop and correct yourself with what you know now."
-      },
-      {
-        "prompt": "Ask the student to tell a story about a coincidence so unlikely that people didn't believe them when they told it.",
-        "constraint": "Finish by explaining what you learned."
-      },
-      {
-        "prompt": "Encourage the student to tell a story about a small problem at work or school that got worse because of what they did next, and worse again after that.",
-        "constraint": "Show clearly how each step caused the next."
-      },
-      {
-        "prompt": "Ask the student to tell a story about a long trip or period of travel that led to one specific moment they still remember clearly.",
-        "constraint": "Cover the wider period quickly, then slow right down for the final scene."
-      },
-      {
-        "prompt": "Explore a story the student can tell about a moment when they had to choose between honesty and loyalty.",
-        "constraint": "Explain why one decision made everything else happen."
-      },
-      {
-        "prompt": "Invite the student to tell a story about an argument that ended in an outcome nobody expected.",
-        "constraint": "Include a moment where your opinion completely changes."
-      },
-      {
-        "prompt": "Ask the student to tell a story about a time they helped a stranger and later discovered something surprising about them.",
-        "constraint": "Include two moments that seemed unrelated but later connected."
-      },
-      {
-        "prompt": "Encourage the student to tell a story about a competition or challenge where the result surprised everyone, including them.",
-        "constraint": "Reveal the key information only near the end."
-      },
-      {
-        "prompt": "Ask the student to tell a story about a plan involving money or a possession that they gave up on, then picked up again later.",
-        "constraint": "Show why you abandoned it and what brought you back to it."
-      },
-      {
-        "prompt": "Invite the student to tell a story about a time a small lie grew into a bigger problem.",
-        "constraint": "Explain why one decision made everything else happen."
-      },
-      {
-        "prompt": "Ask the student to tell a story about a person they initially disliked who they later came to respect.",
-        "constraint": "Make the listener sympathise with someone who first seemed unlikeable."
-      },
-      {
-        "prompt": "Encourage the student to tell a story about a local event or piece of community news, and separately, something happening in their own life at the same time, until the two came together.",
-        "constraint": "Tell both threads side by side until they meet."
-      },
-      {
-        "prompt": "Ask the student to tell a story about a time they had to trust someone they barely knew.",
-        "constraint": "Include a moment where your opinion completely changes."
-      },
-      {
-        "prompt": "Invite the student to tell a story about a piece of advice they ignored, and what happened as a result.",
-        "constraint": "Finish by explaining what you learned."
-      },
-      {
-        "prompt": "Ask the student to tell a story about a time two separate events in their life turned out to be connected.",
-        "constraint": "Include two moments that seemed unrelated but later connected."
-      },
-      {
-        "prompt": "Explore a story the student can tell about a moment when they realized they had misjudged a situation completely.",
-        "constraint": "Reveal the key information only near the end."
-      },
-      {
-        "prompt": "Invite the student to tell a story about an unusual encounter with someone from a very different background than theirs.",
-        "constraint": "Make the listener sympathise with someone who first seemed unlikeable."
-      },
-      {
-        "prompt": "Ask the student to tell a story about a time they had to give up something important to gain something else.",
-        "constraint": "Explain why one decision made everything else happen."
-      },
-      {
-        "prompt": "Encourage the student to tell a story about a celebration or event that was ruined, then unexpectedly saved.",
-        "constraint": "Tell the story in chronological order."
-      },
-      {
-        "prompt": "Ask the student to tell a story about a time they discovered a secret that changed how they saw someone.",
-        "constraint": "Include a moment where your opinion completely changes."
-      },
-      {
-        "prompt": "Invite the student to tell a story about a mistake at work or school that turned into an unexpected opportunity.",
-        "constraint": "Finish by explaining what you learned."
-      },
-      {
-        "prompt": "Ask the student to tell a story about a time they had to choose between two people they cared about.",
-        "constraint": "Explain why one decision made everything else happen."
-      },
-      {
-        "prompt": "Encourage the student to tell a story about an old friendship that ended, then unexpectedly started again years later.",
-        "constraint": "Include two moments that seemed unrelated but later connected."
-      },
-      {
-        "prompt": "Ask the student to tell a story about a time they stood up for someone even though it cost them something.",
-        "constraint": "Make the listener sympathise with someone who first seemed unlikeable."
-      },
-      {
-        "prompt": "Invite the student to tell a story about a journey (real or figurative) where the destination turned out to matter less than what happened along the way.",
-        "constraint": "Reveal the key information only near the end."
+        "prompt": "🌫️ One final ambiguous photograph leaves the story's ending open to three interpretations.\nAsk: \"Convince me your interpretation is the right one!\"\nTeacher: Argue for a rival interpretation with real textual points; don't concede easily.\nQuick: What detail in the photo best supports your reading?\nStuck: Simplify: happy ending or sad ending — pick one and defend it.",
+        "constraint": "Student speculates and defends an interpretation with justification, responding to a counterargument."
       }
     ]
   }
