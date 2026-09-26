@@ -1,21 +1,22 @@
 // ─────────────────────────────────────────────
 //  WaffleBrain — engine.js
-//  Shared prompt engine. No DOM dependencies.
+//  Shared Waffle engine. No DOM dependencies.
 //  Exposes a single global: WB
 //
-//  Prompt selection is driven entirely by
-//  data/prompts.json — no text rewriting,
-//  no fallback generation, no overrides.
+//  Waffle selection is driven entirely by
+//  data/waffles.json (the canonical Waffle data) —
+//  no text rewriting, no fallback generation, no overrides.
 // ─────────────────────────────────────────────
 
 const WB = (() => {
 
   // ── Private state ─────────────────────────
-  let raw           = {};  // full dataset after fetch: { level: { group: [prompts] } }
-  let prompts       = [];  // flattened pool for the *current level* (rebuilt on level change)
-  let poolLevel     = null;// which level `prompts` was flattened for
-  let bag           = [];  // shuffle-bag (indices into filtered pool)
-  let shown         = 0;   // running count of prompts drawn this session
+  let all           = [];  // every Waffle record from waffles.json, in file order
+  let byId          = new Map(); // id → Waffle record
+  let waffles       = [];  // pool for the *current collection + level* (rebuilt on change)
+  let poolKey       = null;// which collection|level `waffles` was built for
+  let bag           = [];  // shuffle-bag (indices into `waffles`)
+  let shown         = 0;   // running count of Waffles drawn this session
   let currentLevel  = 'B1';// stored for callers
 
   // ── Fisher-Yates shuffle ──────────────────
@@ -27,50 +28,41 @@ const WB = (() => {
     return arr;
   }
 
-  // ── Flatten a level's groups into one array ─
-  // raw[level] is { groupName: [promptObj, ...], ... }.
-  // The group/topic key itself IS the category — prompt objects
-  // do not carry their own `category` field in the JSON, so it is
-  // injected here from the group key as each level is flattened.
-  function flattenGroups(groups) {
-    return Object.entries(groups).flatMap(([groupName, groupPrompts]) =>
-      groupPrompts.map(p => ({ ...p, category: groupName }))
-    );
-  }
-
-  function flattenLevel(levelFilter) {
-    const levelData = raw[levelFilter];
-    if (levelData) return flattenGroups(levelData);
+  // ── All Waffles for one collection + level ─
+  function poolFor(collection, levelFilter) {
+    const pool = all.filter(w => w.collection === collection && w.level === levelFilter);
+    if (pool.length) return pool;
 
     // Level not found. This means the caller (UI) passed a level
-    // string that doesn't exist as a key in prompts.json — e.g. a
-    // mismatch between a <select> option's value and the JSON's
-    // top-level keys. We deliberately do NOT fall back to combining
-    // every level here: that fallback previously caused prompts from
+    // string that doesn't exist in waffles.json — e.g. a mismatch
+    // between a <select> option's value and the records' `level`
+    // field. We deliberately do NOT fall back to combining every
+    // level here: that fallback previously caused Waffles from
     // every level (including B2+) to leak into filters like A1/A2.
     // Fail loudly instead so mismatches are caught immediately.
-    const validLevels = Object.keys(raw).join(', ');
+    const validLevels = [...new Set(all.filter(w => w.collection === collection).map(w => w.level))].join(', ');
     throw new Error(
-      `WB.draw/prime: unknown level "${levelFilter}". ` +
-      `Valid levels in prompts.json are: ${validLevels}. ` +
-      `Check that the <select> option value and prompts.json key match exactly.`
+      `WB.draw/prime: unknown level "${levelFilter}" in collection "${collection}". ` +
+      `Valid levels in waffles.json are: ${validLevels}. ` +
+      `Check that the <select> option value and waffles.json level match exactly.`
     );
   }
 
-  function ensurePool(levelFilter) {
-    if (poolLevel !== levelFilter) {
-      prompts = flattenLevel(levelFilter);
-      poolLevel = levelFilter;
+  function ensurePool(levelFilter, collection) {
+    const key = `${collection}|${levelFilter}`;
+    if (poolKey !== key) {
+      waffles = poolFor(collection, levelFilter);
+      poolKey = key;
     }
   }
 
   // ── Build index pool from filter ──────────
-  // Returns an array of indices into `prompts`
+  // Returns an array of indices into `waffles`
   // matching the given category (or all if empty).
   function buildPool(categoryFilter) {
-    if (!categoryFilter) return [...Array(prompts.length).keys()];
-    return prompts.reduce((acc, p, i) => {
-      if (p.category === categoryFilter) acc.push(i);
+    if (!categoryFilter) return [...Array(waffles.length).keys()];
+    return waffles.reduce((acc, w, i) => {
+      if (w.category === categoryFilter) acc.push(i);
       return acc;
     }, []);
   }
@@ -84,29 +76,28 @@ const WB = (() => {
   return {
 
     /**
-     * Fetch and initialise prompt data from JSON.
-     * Returns a Promise that resolves with the raw dataset.
+     * Fetch and initialise Waffle data from JSON.
+     * Returns a Promise that resolves with the array of Waffle records.
      *
-     * The JSON must be an object keyed by level, each level an
-     * object keyed by group/category name, each group an array of
-     * prompt objects with at minimum: { prompt, constraint }.
-     * The group key itself is used as the category — it does not
-     * need to be repeated inside each prompt object.
-     *   { "A1A2": { "Everyday Situations": [ {prompt, constraint, ...} ] } }
+     * The JSON must be an array of Waffle records:
+     *   [ { id, collection, level, category,
+     *       teacher: { prompt, constraint },
+     *       student: { prompt, constraint } }, ... ]
      */
-    load(url = 'data/prompts.json') {
+    load(url = 'data/waffles.json') {
       return fetch(url)
         .then(res => {
           if (!res.ok) throw new Error(`HTTP ${res.status} — could not load ${url}`);
           return res.json();
         })
         .then(data => {
-          if (!data || typeof data !== 'object' || Array.isArray(data) || Object.keys(data).length === 0) {
-            throw new Error('prompts.json is empty or not a JSON object keyed by level');
+          if (!Array.isArray(data) || data.length === 0) {
+            throw new Error('waffles.json is empty or not a JSON array of Waffle records');
           }
-          raw = data;
-          poolLevel = null; // force pool rebuild on next prime/draw
-          return raw;
+          all = data;
+          byId = new Map(data.map(w => [w.id, w]));
+          poolKey = null; // force pool rebuild on next prime/draw
+          return all;
         });
     },
 
@@ -114,34 +105,41 @@ const WB = (() => {
      * Prime the shuffle-bag.
      * Call after load(), and whenever the category filter changes.
      *
-     * categoryFilter — category string, or '' for all prompts.
-     * levelFilter    — selects which level pool prompts are drawn from.
+     * categoryFilter — category string, or '' for all Waffles.
+     * levelFilter    — selects which level pool Waffles are drawn from.
+     * collection     — Collection id (default 'general').
      */
-    prime(categoryFilter = '', levelFilter = 'B1') {
+    prime(categoryFilter = '', levelFilter = 'B1', collection = 'general') {
       currentLevel = levelFilter;
-      ensurePool(levelFilter);
+      ensurePool(levelFilter, collection);
       bag = [];
       refillBag(categoryFilter);
     },
 
     /**
-     * Draw the next prompt object from the bag.
+     * Draw the next Waffle record from the bag.
      * Automatically refills when the bag is exhausted.
-     * Returns the raw prompt object from JSON — no text modification.
+     * Returns the Waffle record from JSON — no text modification.
      *
-     * categoryFilter — category string, or '' for all prompts.
-     * levelFilter    — selects which level pool prompts are drawn from.
+     * categoryFilter — category string, or '' for all Waffles.
+     * levelFilter    — selects which level pool Waffles are drawn from.
+     * collection     — Collection id (default 'general').
      */
-    draw(categoryFilter = '', levelFilter = 'B1') {
+    draw(categoryFilter = '', levelFilter = 'B1', collection = 'general') {
       const levelChanged = levelFilter !== currentLevel;
       currentLevel = levelFilter;
-      ensurePool(levelFilter);
+      ensurePool(levelFilter, collection);
       if (bag.length === 0 || levelChanged) refillBag(categoryFilter);
       shown++;
-      return { ...prompts[bag.pop()] };
+      return waffles[bag.pop()];
     },
 
-    /** Running count of prompts drawn this session. */
+    /** Look up one Waffle record by its permanent id (or undefined). */
+    getById(id) {
+      return byId.get(id);
+    },
+
+    /** Running count of Waffles drawn this session. */
     getShown() {
       return shown;
     },
@@ -151,9 +149,9 @@ const WB = (() => {
       return currentLevel;
     },
 
-    /** All unique category names from the loaded data. */
+    /** All unique category names in the current pool. */
     getCategories() {
-      return [...new Set(prompts.map(p => p.category))];
+      return [...new Set(waffles.map(w => w.category))];
     },
 
   };

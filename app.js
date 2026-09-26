@@ -23,13 +23,16 @@ const waffleTriggerIcon  = document.getElementById('waffle-trigger-icon');
 const waffleTriggerLabel = document.getElementById('waffle-trigger-label');
 const waffleList         = document.getElementById('waffle-list');
 
-// ── Waffle selector ────────────────────────────
+// ── Collection selector ────────────────────────
+// A Collection is a group of Waffles (General English, IELTS, …).
+// The DOM ids/classes below (waffle-select, waffle-list, …) are legacy
+// names that refer to this Collection dropdown.
 // Stage 1: rendering only. Selecting "General English" does not change
-// app behaviour — it is the only unlocked Waffle and the app already
-// behaves as if it were selected. Locked Waffles are inert (no modal
-// yet — that's a later stage). Adding a future Waffle should mean
+// app behaviour — it is the only unlocked Collection and the app already
+// behaves as if it were selected. Locked Collections are inert (no modal
+// yet — that's a later stage). Adding a future Collection should mean
 // adding an entry here, not touching the markup or render logic.
-const WAFFLES = [
+const COLLECTIONS = [
   { id: 'general',           name: 'General English',  icon: '🧇', locked: false, comingSoon: false },
   { id: 'ielts',              name: 'IELTS',             locked: true,  comingSoon: true },
   { id: 'kids',               name: 'Kids',              locked: true,  comingSoon: true },
@@ -41,13 +44,13 @@ const WAFFLES = [
   { id: 'conversation-club',  name: 'Conversation Club', locked: true,  comingSoon: true },
 ];
 
-let currentWaffle = 'general';
+let currentCollection = 'general';
 
-function renderWaffleList() {
+function renderCollectionList() {
   waffleList.innerHTML = '';
   let separatorAdded = false;
 
-  WAFFLES.forEach(w => {
+  COLLECTIONS.forEach(w => {
     if (w.locked && !separatorAdded) {
       const sep = document.createElement('li');
       sep.className = 'waffle-separator';
@@ -60,7 +63,7 @@ function renderWaffleList() {
     const li = document.createElement('li');
     li.className = 'waffle-option' + (w.locked ? ' locked' : '');
     li.setAttribute('role', 'option');
-    li.setAttribute('aria-selected', String(w.id === currentWaffle));
+    li.setAttribute('aria-selected', String(w.id === currentCollection));
     if (w.locked) li.setAttribute('aria-disabled', 'true');
 
     const icon = document.createElement('span');
@@ -83,23 +86,23 @@ function renderWaffleList() {
     }
 
     li.addEventListener('click', () => {
-      // Locked Waffles do nothing yet — no navigation, no modal.
+      // Locked Collections do nothing yet — no navigation, no modal.
       if (w.locked) return;
-      selectWaffle(w.id);
+      selectCollection(w.id);
     });
 
     waffleList.appendChild(li);
   });
 }
 
-function selectWaffle(id) {
-  const waffle = WAFFLES.find(w => w.id === id);
-  if (!waffle || waffle.locked) return;
-  currentWaffle = id;
-  waffleTriggerIcon.textContent = waffle.icon || '🧇';
-  waffleTriggerLabel.textContent = waffle.name;
+function selectCollection(id) {
+  const collection = COLLECTIONS.find(c => c.id === id);
+  if (!collection || collection.locked) return;
+  currentCollection = id;
+  waffleTriggerIcon.textContent = collection.icon || '🧇';
+  waffleTriggerLabel.textContent = collection.name;
   closeWaffleList();
-  renderWaffleList();
+  renderCollectionList();
 }
 
 function openWaffleList() {
@@ -121,10 +124,11 @@ document.addEventListener('click', (e) => {
   if (!waffleSelect.contains(e.target)) closeWaffleList();
 });
 
-renderWaffleList();
+renderCollectionList();
 
 // ── History ───────────────────────────────────
-// Each entry: { category, prompt, constraint, shown }
+// Each entry: { id, shown } — id is the permanent Waffle ID;
+// the record itself is looked up with WB.getById(id).
 const history = [];
 let historyIndex = -1;
 
@@ -136,7 +140,7 @@ function getFilter() {
 // ── Student level ─────────────────────────────
 // Reflects the teacher's current selection. Default: A1A2.
 // Must exactly match both the option values in index.html AND the
-// top-level keys in data/prompts.json. These three strings are the
+// `level` values in data/waffles.json. These three strings are the
 // single source of truth for valid levels.
 const LEVELS = ['A1A2', 'B1', 'B2+'];
 
@@ -194,13 +198,15 @@ function formatPrompt(text) {
   return html;
 }
 
-// ── Render a prompt object to the UI ──────────
-function renderPrompt(p) {
-  modeLabel.textContent      = p.category;
-  promptText.innerHTML       = formatPrompt(p.prompt);
-  constraintText.textContent = p.constraint;
+// ── Render a history entry's Teacher Waffle to the UI ──
+function renderPrompt(entry) {
+  const w = WB.getById(entry.id);
+  modeLabel.textContent      = w.category;
+  promptText.innerHTML       = formatPrompt(w.teacher.prompt);
+  constraintText.textContent = w.teacher.constraint;
 
-  promptCard.setAttribute('data-mode', p.category);
+  promptCard.setAttribute('data-mode', w.category);
+  promptCard.setAttribute('data-waffle-id', w.id);
 
   promptCard.classList.remove('flash');
   void promptCard.offsetWidth;
@@ -212,12 +218,10 @@ function renderPrompt(p) {
 
 // ── Draw a new prompt and push to history ─────
 function showPrompt() {
-  const p = WB.draw(getFilter(), getLevel());
+  const w = WB.draw(getFilter(), getLevel(), currentCollection);
   const entry = {
-    category:   p.category,
-    prompt:     p.prompt,
-    constraint: p.constraint,
-    shown:      WB.getShown()
+    id:    w.id,
+    shown: WB.getShown()
   };
 
   // If we went back and now go forward again, discard the forward branch
@@ -243,13 +247,13 @@ WB.load()
     levelSelect.value = currentLevel;
     localStorage.setItem('wb_level', currentLevel);
     updateLevelDisplay();
-    WB.prime(getFilter(), getLevel());
+    WB.prime(getFilter(), getLevel(), currentCollection);
     showPrompt();
   })
   .catch(err => {
     modeLabel.textContent      = 'Error';
     promptText.textContent     = 'Could not load prompts.';
-    constraintText.textContent = err.message + ' — Check that data/prompts.json exists and the app is served over HTTP.';
+    constraintText.textContent = err.message + ' — Check that data/waffles.json exists and the app is served over HTTP.';
     promptCard.setAttribute('data-mode', '');
     console.error('[WaffleBrain]', err);
   });
@@ -262,7 +266,7 @@ levelSelect.addEventListener('change', () => {
   currentLevel = levelSelect.value;
   localStorage.setItem('wb_level', currentLevel);
   updateLevelDisplay();
-  WB.prime(getFilter(), getLevel());
+  WB.prime(getFilter(), getLevel(), currentCollection);
 });
 
 categorySelect.addEventListener('change', () => {
@@ -271,7 +275,7 @@ categorySelect.addEventListener('change', () => {
   // Reset history when filter changes — back would cross category contexts
   history.length = 0;
   historyIndex = -1;
-  WB.prime(getFilter(), getLevel());
+  WB.prime(getFilter(), getLevel(), currentCollection);
   showPrompt();
 });
 
