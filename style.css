@@ -720,6 +720,16 @@ body:not(.student) .mode-badge {
   color: var(--student-btn-bg);
 }
 
+/* Collection name after "🧇 Waffle" (Collection views only, set by
+   student.js) — secondary to the Waffle itself. */
+.waffle-collection {
+  font-weight: 500;
+  color: var(--text-tertiary);
+}
+.waffle-collection::before {
+  content: ' · ';
+}
+
 .waffle-text {
   font-family: 'Lora', Georgia, serif;
   font-weight: 500;

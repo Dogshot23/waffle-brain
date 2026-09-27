@@ -120,6 +120,19 @@ const params          = new URLSearchParams(location.search);
 const collectionParam = params.get('collection');
 const levelParam      = params.get('level');
 
+// Display names for Collection views (a small label next to "🧇 Waffle").
+const COLLECTION_NAMES = { business: 'Business English' };
+
+function showCollectionLabel(id) {
+  const name  = COLLECTION_NAMES[id];
+  const label = waffleSection.querySelector('.waffle-label');
+  if (!name || !label) return;
+  const span = document.createElement('span');
+  span.className   = 'waffle-collection';
+  span.textContent = name;
+  label.appendChild(span);
+}
+
 if (collectionParam && collectionParam !== 'general') {
   fetch('data/waffles.json')
     .then(res => {
@@ -132,6 +145,7 @@ if (collectionParam && collectionParam !== 'general') {
       if (inCollection.length) {   // unknown Collection → standalone Waffles
         pool = (atLevel.length ? atLevel : inCollection)
           .map(w => ({ id: w.id, waffle: w.student.prompt }));
+        showCollectionLabel(collectionParam);
       }
       start();
     })
