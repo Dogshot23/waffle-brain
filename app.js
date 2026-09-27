@@ -27,16 +27,16 @@ const waffleList         = document.getElementById('waffle-list');
 // A Collection is a group of Waffles (General English, IELTS, …).
 // The DOM ids/classes below (waffle-select, waffle-list, …) are legacy
 // names that refer to this Collection dropdown.
-// Stage 1: rendering only. Selecting "General English" does not change
-// app behaviour — it is the only unlocked Collection and the app already
-// behaves as if it were selected. Locked Collections are inert (no modal
-// yet — that's a later stage). Adding a future Collection should mean
-// adding an entry here, not touching the markup or render logic.
+// Unlocked Collections are selectable and draw their own Waffles; locked
+// Collections are inert (no modal yet — that's a later stage). Unlocked
+// entries must come before locked ones: the "Coming Soon" heading is
+// inserted before the first locked entry. Adding a future Collection
+// should mean adding an entry here, not touching the markup or render logic.
 const COLLECTIONS = [
   { id: 'general',           name: 'General English',  icon: '🧇', locked: false, comingSoon: false },
+  { id: 'business',           name: 'Business English',  locked: false, comingSoon: false },
   { id: 'ielts',              name: 'IELTS',             locked: true,  comingSoon: true },
   { id: 'kids',               name: 'Kids',              locked: true,  comingSoon: true },
-  { id: 'business',           name: 'Business English',  locked: true,  comingSoon: true },
   { id: 'cambridge',          name: 'Cambridge',         locked: true,  comingSoon: true },
   { id: 'travel',             name: 'Travel',            locked: true,  comingSoon: true },
   { id: 'debate',             name: 'Debate',            locked: true,  comingSoon: true },
