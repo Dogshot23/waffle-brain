@@ -16,6 +16,7 @@ const categorySelect = document.getElementById('category-select');
 const levelSelect    = document.getElementById('level-select');
 
 const levelDisplay    = document.getElementById('level-display');
+const studentLink     = document.querySelector('.version-link[href^="student.html"]');
 
 const waffleSelect       = document.getElementById('waffle-select');
 const waffleTrigger      = document.getElementById('waffle-trigger');
@@ -230,6 +231,18 @@ function renderPrompt(entry) {
 
   backBtn.disabled = historyIndex <= 0;
   saveTeacherState();
+  updateStudentLink();
+}
+
+// ── Student link ──────────────────────────────
+// For a Collection other than General English, the "Student" link opens
+// that Collection's Student Waffles at the current level. General English
+// keeps the plain link (the standalone Student Waffles).
+function updateStudentLink() {
+  if (!studentLink) return;
+  studentLink.href = currentCollection === 'general'
+    ? 'student.html'
+    : `student.html?collection=${encodeURIComponent(currentCollection)}&level=${encodeURIComponent(currentLevel)}`;
 }
 
 // ── Empty state ───────────────────────────────
@@ -246,6 +259,7 @@ function renderEmpty() {
   promptCard.removeAttribute('data-waffle-id');
   nextBtn.disabled = true;
   backBtn.disabled = true;
+  updateStudentLink();
 }
 
 // ── Keep the teacher's place for this browser tab ──
