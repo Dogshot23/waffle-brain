@@ -146,6 +146,9 @@ if (collectionParam && collectionParam !== 'general') {
           .map(w => ({ id: w.id, waffle: w.student.prompt,
                        goal: w.student.goal, starters: w.student.starters }));
         showCollectionLabel(collectionParam);
+        // Keep this Collection view when the page's own "Student" tab is clicked.
+        const selfLink = document.querySelector('.version-link[href="student.html"]');
+        if (selfLink) selfLink.href = 'student.html' + location.search;
       }
       start();
     })
