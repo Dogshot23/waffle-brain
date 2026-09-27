@@ -41,8 +41,10 @@ array with one record per Waffle:
   `index.html` and `LEVELS` in `app.js`).
 - `constraint` is shown in the Teacher app as "Language Focus". At migration it
   was identical on both sides; the two sides may diverge later.
-- Titles, student goals and starters do not exist yet. Do not invent them
-  unless asked.
+- Business English records (521–550) also have `student.goal` (one short
+  sentence) and `student.starters` (exactly 3 sentence stems), shown on the
+  Student page. General English records have neither — do not invent Goals,
+  Starters or titles for them unless asked.
 
 ### Permanent IDs — rules
 
@@ -82,9 +84,11 @@ delete, move or rename them without the owner's instruction):
   loads `data/waffles.json`, filters by collection + level + category, and draws
   with a shuffle-bag. `WB.getById(id)` looks up a Waffle. Teacher history stores
   Waffle IDs.
-- `student.html` + `student.js` + `studentSupport.js` — Student app. Currently
-  shows 30 separate standalone student activities hard-coded in
-  `studentSupport.js`; NOT yet connected to `waffles.json`.
+- `student.html` + `student.js` + `studentSupport.js` — Student app. By
+  default shows 30 separate standalone student activities hard-coded in
+  `studentSupport.js`. With `?collection=business&level=…` (the Teacher
+  page's "Student" link adds this) it instead shows that Collection's
+  Student Waffles from `waffles.json`, with a small collection label.
 - `wafflebrain-kids/` — separate copy of the app with its own data. Live at
   `/wafflebrain-kids/`. Do not modify unless asked.
 

@@ -7290,6 +7290,12 @@
     },
     "student": {
       "prompt": "Your office gets a new coffee machine. The coffee used to be free. Now it costs €1 a cup.",
+      "goal": "Say how you feel about paying for office coffee.",
+      "starters": [
+        "I would pay, because...",
+        "Free coffee is important because...",
+        "At my work, we..."
+      ],
       "constraint": "Giving opinions and reasons; would / wouldn't."
     }
   },
@@ -7304,6 +7310,12 @@
     },
     "student": {
       "prompt": "From Monday, nobody in your office has their own desk. Every morning, you sit at any free desk. At the end of the day, the desk must be completely empty.",
+      "goal": "Talk about losing your own desk.",
+      "starters": [
+        "I like my own desk because...",
+        "Every morning, I would...",
+        "The problem is..."
+      ],
       "constraint": "Giving opinions about workplace arrangements; would / wouldn't."
     }
   },
@@ -7318,6 +7330,12 @@
     },
     "student": {
       "prompt": "A new colleague starts on Monday. On their first day, they get a laptop and a password — and nothing else. Nobody shows them anything.",
+      "goal": "Talk about what a new colleague needs on day one.",
+      "starters": [
+        "On the first day, they need...",
+        "Someone should show them...",
+        "When I started my job, ..."
+      ],
       "constraint": "Simple advice; should / can."
     }
   },
@@ -7332,6 +7350,12 @@
     },
     "student": {
       "prompt": "Your team wins a prize. Everyone has to agree on one: an extra day off, a team dinner, or €100 each.",
+      "goal": "Choose a team prize and say why.",
+      "starters": [
+        "I'd prefer the..., because...",
+        "Most people in my team would...",
+        "€100 is nice, but..."
+      ],
       "constraint": "Explaining a preference; I'd like / I'd prefer."
     }
   },
@@ -7346,6 +7370,12 @@
     },
     "student": {
       "prompt": "Your company has a new rule: everyone must wear a name badge every day — even people who have worked there for ten years.",
+      "goal": "Give your opinion on a new work rule.",
+      "starters": [
+        "For new people, badges are...",
+        "After ten years, everyone...",
+        "At my work, we have to..."
+      ],
       "constraint": "Giving opinions; I think / I don't think."
     }
   },
@@ -7360,6 +7390,12 @@
     },
     "student": {
       "prompt": "Your new manager says 'thank you' to everyone, every day, for everything — even for answering a simple email.",
+      "goal": "Talk about a very polite manager.",
+      "starters": [
+        "I like a manager who...",
+        "It's nice, but...",
+        "My manager usually says..."
+      ],
       "constraint": "Describing people; personality adjectives."
     }
   },
@@ -7374,6 +7410,12 @@
     },
     "student": {
       "prompt": "Your company has a new rule: no emails before 10am. The first hour of the day is only for 'real work'.",
+      "goal": "Talk about a new rule for the morning.",
+      "starters": [
+        "In the morning, I usually...",
+        "This rule is good for me because...",
+        "The problem is that..."
+      ],
       "constraint": "Talking about routines and workplace rules; usually / normally."
     }
   },
@@ -7388,6 +7430,12 @@
     },
     "student": {
       "prompt": "Your company offers two options for Fridays: work from home all day, or come to the office but finish at 3pm.",
+      "goal": "Choose your perfect Friday.",
+      "starters": [
+        "I'd choose..., because...",
+        "At home, I can...",
+        "If I finish at 3pm, I..."
+      ],
       "constraint": "Explaining preferences and trade-offs; because / but."
     }
   },
@@ -7402,6 +7450,12 @@
     },
     "student": {
       "prompt": "A colleague eats very strong-smelling food at their desk every lunchtime. It isn't against any rules.",
+      "goal": "Talk about an annoying lunch habit.",
+      "starters": [
+        "It bothers me when...",
+        "I don't mind, because...",
+        "Maybe I would say..."
+      ],
       "constraint": "Talking about feelings; it bothers me / I don't mind."
     }
   },
@@ -7416,6 +7470,12 @@
     },
     "student": {
       "prompt": "Some companies give new people a welcome gift on their first day — a T-shirt, flowers, even a cake. Other companies just give them a desk.",
+      "goal": "Talk about first days at work.",
+      "starters": [
+        "On my first day, I got...",
+        "A welcome gift is nice because...",
+        "I remember my first day. It was..."
+      ],
       "constraint": "Talking about workplace experiences and first impressions."
     }
   },
@@ -7430,6 +7490,12 @@
     },
     "student": {
       "prompt": "Your manager sends you a calendar invite for 9:00 tomorrow called 'Quick chat'. There's no description, and nobody else is invited.",
+      "goal": "Guess what the meeting is about.",
+      "starters": [
+        "It might be about...",
+        "I'd probably feel...",
+        "Before the meeting, I would..."
+      ],
       "constraint": "Speculating; might / could / must be."
     }
   },
@@ -7444,6 +7510,12 @@
     },
     "student": {
       "prompt": "A colleague is ten minutes late to everything — but their work is always excellent and always on time.",
+      "goal": "Discuss a colleague who is always late.",
+      "starters": [
+        "It doesn't matter if...",
+        "Being late is still a problem because...",
+        "I've worked with someone who..."
+      ],
       "constraint": "Describing people and habits; always / tends to / even though."
     }
   },
@@ -7458,6 +7530,12 @@
     },
     "student": {
       "prompt": "In your team's video meetings, one person always has their camera off and only speaks when someone asks them a direct question. You lead the meetings.",
+      "goal": "Decide whether the camera really matters.",
+      "starters": [
+        "Maybe they keep it off because...",
+        "As the leader, I would...",
+        "In my meetings, most people..."
+      ],
       "constraint": "Giving opinions; talking about expectations at work."
     }
   },
@@ -7472,6 +7550,12 @@
     },
     "student": {
       "prompt": "Your company will pay for any course you want. But if you leave the company in the next two years, you have to pay all the money back.",
+      "goal": "Decide whether the offer is fair.",
+      "starters": [
+        "I'd accept it if...",
+        "Two years is a long time, because...",
+        "The course I'd choose is..."
+      ],
       "constraint": "Talking about conditions; if / unless / would."
     }
   },
@@ -7486,6 +7570,12 @@
     },
     "student": {
       "prompt": "A colleague has an automatic reply on every email: 'I check my email twice a day, at 11:00 and 16:00. If it's urgent, call me.'",
+      "goal": "React to a colleague's email rule.",
+      "starters": [
+        "Honestly, I'd find it...",
+        "I usually check my email...",
+        "It only works if..."
+      ],
       "constraint": "Describing habits; if / unless; urgent / can wait."
     }
   },
@@ -7500,6 +7590,12 @@
     },
     "student": {
       "prompt": "Most people at your company work from home. From next month, everyone must come to the office three days a week.",
+      "goal": "Predict how people will react.",
+      "starters": [
+        "Some people will be happy because...",
+        "Others might...",
+        "If it were me, I'd..."
+      ],
       "constraint": "Predicting reactions; will / might / probably."
     }
   },
@@ -7514,6 +7610,12 @@
     },
     "student": {
       "prompt": "On your first day in a new office, you sit down at an empty desk by the window. The whole room goes quiet.",
+      "goal": "Talk about the unwritten rules of an office.",
+      "starters": [
+        "I guess that desk belongs to...",
+        "In my office, you're not supposed to...",
+        "Nobody tells you that..."
+      ],
       "constraint": "Describing workplace habits; supposed to / expected to / not allowed to."
     }
   },
@@ -7528,6 +7630,12 @@
     },
     "student": {
       "prompt": "Someone you know starts their first office job on Monday. Their plan is simple: arrive early, stay late, and say yes to everything.",
+      "goal": "Give advice about a first office job.",
+      "starters": [
+        "Arriving early is fine, but...",
+        "Saying yes to everything could...",
+        "My advice would be..."
+      ],
       "constraint": "Giving advice; should / shouldn't / it's better to."
     }
   },
@@ -7542,6 +7650,12 @@
     },
     "student": {
       "prompt": "You send your manager a long, careful email about a problem. The whole reply is: 'OK.'",
+      "goal": "Work out what 'OK.' really means.",
+      "starters": [
+        "It could mean...",
+        "I'd probably reply...",
+        "Something similar happened to me when..."
+      ],
       "constraint": "Interpreting tone; might mean / could mean; past tenses for similar experiences."
     }
   },
@@ -7556,6 +7670,12 @@
     },
     "student": {
       "prompt": "Your team is choosing one new rule for work group chats: no messages after 7pm, no voice messages, or no replies expected at weekends.",
+      "goal": "Pick the most useful group chat rule.",
+      "starters": [
+        "I'd vote for..., because...",
+        "The people who'd complain are...",
+        "Voice messages are..."
+      ],
       "constraint": "Discussing rules and their consequences; would / wouldn't."
     }
   },
@@ -7570,6 +7690,12 @@
     },
     "student": {
       "prompt": "Your company decides that every employee's salary will be visible to everyone on the internal website.",
+      "goal": "Explore what would change if pay were public.",
+      "starters": [
+        "The first thing that would happen is...",
+        "It might actually be fairer, because...",
+        "I can imagine some people feeling..."
+      ],
       "constraint": "Discussing consequences; hypothetical conditionals."
     }
   },
@@ -7584,6 +7710,12 @@
     },
     "student": {
       "prompt": "A new employee is excellent at their job — but wears shorts to the office, uses emojis in emails to clients, and calls the CEO by their first name.",
+      "goal": "Decide what really counts as unprofessional.",
+      "starters": [
+        "The emojis bother me more than...",
+        "As long as the work is good, ...",
+        "It depends a lot on the industry —"
+      ],
       "constraint": "Separating what really matters from convention; expected / acceptable / inappropriate."
     }
   },
@@ -7598,6 +7730,12 @@
     },
     "student": {
       "prompt": "Your manager often says, 'My door is always open.' But whenever you go in, they keep looking at their laptop while you talk.",
+      "goal": "Discuss how to deal with a distracted manager.",
+      "starters": [
+        "I'd probably start by saying...",
+        "They might not even realise that...",
+        "Is it worth raising, or..."
+      ],
       "constraint": "Diplomatic language; raising a sensitive issue."
     }
   },
@@ -7612,6 +7750,12 @@
     },
     "student": {
       "prompt": "A company's website says: 'We have a flat structure — everyone's voice matters equally.' In practice, the same three people make every decision.",
+      "goal": "Compare what companies say with what they do.",
+      "starters": [
+        "On paper it sounds..., but in practice...",
+        "I've seen something similar where...",
+        "A truly flat structure would mean..."
+      ],
       "constraint": "Describing culture; officially / in practice / on paper."
     }
   },
@@ -7626,6 +7770,12 @@
     },
     "student": {
       "prompt": "Two job offers. Job A pays 20% more, but you're expected to answer messages in the evenings. Job B pays less, but nobody contacts you after 5pm.",
+      "goal": "Weigh money against free time.",
+      "starters": [
+        "At this stage of my life, I'd...",
+        "20% sounds like a lot, but...",
+        "Five years ago, I would have..."
+      ],
       "constraint": "Weighing up trade-offs; would / would have."
     }
   },
@@ -7640,6 +7790,12 @@
     },
     "student": {
       "prompt": "A company starts using AI to write the first reply to every customer email. Staff check the reply and send it, and customers aren't told.",
+      "goal": "Discuss whether customers should be told.",
+      "starters": [
+        "If a person checks every reply, then...",
+        "Customers have a right to know when...",
+        "What worries me is..."
+      ],
       "constraint": "Discussing ethics and transparency; should / shouldn't."
     }
   },
@@ -7654,6 +7810,12 @@
     },
     "student": {
       "prompt": "A company removes every private office — including the managers' — and puts everyone in one big open-plan space. Most staff hate it at first. A year later, many say they wouldn't go back.",
+      "goal": "Talk about changes people hate at first.",
+      "starters": [
+        "I'm not surprised they hated it, because...",
+        "By the end of the year, maybe they...",
+        "Something at work I didn't like at first was..."
+      ],
       "constraint": "Reflecting on change; looking back / in hindsight / at first."
     }
   },
@@ -7668,6 +7830,12 @@
     },
     "student": {
       "prompt": "A project for an important client is going to be two weeks late, and you're the one who has to tell them.",
+      "goal": "Discuss how to give a client bad news.",
+      "starters": [
+        "I'd tell them as early as possible, because...",
+        "The worst thing to say would be...",
+        "I'd try to soften it by..."
+      ],
       "constraint": "Delivering bad news; softening language."
     }
   },
@@ -7682,6 +7850,12 @@
     },
     "student": {
       "prompt": "Job adverts and managers often say, 'We're like a family here.' Good sign or warning sign?",
+      "goal": "Decide what 'like a family' really means.",
+      "starters": [
+        "To me, it sounds like...",
+        "It could be a warning sign if...",
+        "The best teams I've worked in were..."
+      ],
       "constraint": "Interpreting what people really mean; speculating."
     }
   },
@@ -7696,6 +7870,12 @@
     },
     "student": {
       "prompt": "Your company offers a four-day week at the same salary — but each day is ten hours instead of eight.",
+      "goal": "Weigh a shorter week against longer days.",
+      "starters": [
+        "Ten-hour days would be... for me.",
+        "People with children might...",
+        "I'd sign up if..."
+      ],
       "constraint": "Discussing trade-offs; hypothetical would."
     }
   }

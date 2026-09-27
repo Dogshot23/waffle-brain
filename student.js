@@ -12,10 +12,10 @@
 //  Collections: opened as student.html?collection=business&level=B1
 //  (the Teacher page's "Student" link adds these), the page instead
 //  shows the Student Waffles of that Collection + level from
-//  data/waffles.json — the student text only, never the teacher text
-//  or Language Focus. Those records have no Goal or Starters, so those
-//  sections are hidden. Without a Collection (or for General English)
-//  the standalone Waffles above are shown, as before.
+//  data/waffles.json — the student text, Goal and Starters, never the
+//  teacher text or Language Focus. (A record without a Goal or Starters
+//  has those sections hidden.) Without a Collection (or for General
+//  English) the standalone Waffles above are shown, as before.
 // ─────────────────────────────────────────────
 
 // ── DOM refs ─────────────────────────────────
@@ -61,8 +61,7 @@ function renderWaffle(w) {
   // 🧇 Waffle — the speaking mission
   waffleText.textContent = w.waffle;
 
-  // 🎯 Goal and 💬 Starters exist only on the standalone Waffles;
-  // Collection Waffles have neither, so their sections are hidden.
+  // 🎯 Goal and 💬 Starters: hidden for any Waffle that has none.
   goalSection.style.display     = w.goal ? '' : 'none';
   startersSection.style.display = w.starters ? '' : 'none';
 
@@ -144,7 +143,8 @@ if (collectionParam && collectionParam !== 'general') {
       const atLevel      = inCollection.filter(w => w.level === levelParam);
       if (inCollection.length) {   // unknown Collection → standalone Waffles
         pool = (atLevel.length ? atLevel : inCollection)
-          .map(w => ({ id: w.id, waffle: w.student.prompt }));
+          .map(w => ({ id: w.id, waffle: w.student.prompt,
+                       goal: w.student.goal, starters: w.student.starters }));
         showCollectionLabel(collectionParam);
       }
       start();

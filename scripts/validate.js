@@ -67,6 +67,15 @@ waffles.forEach((w, i) => {
     else if (!nonEmpty(p.prompt))      err(`${at}: ${side}.prompt is missing or empty`);
   }
   if (w.teacher && !nonEmpty(w.teacher.constraint)) err(`${at}: teacher.constraint is missing or empty`);
+
+  // Optional Student Goal + Starters (shown on the Student page): if a
+  // record has either, it must have a Goal and exactly 3 Starters.
+  const s = w.student;
+  if (s && (s.goal !== undefined || s.starters !== undefined)) {
+    if (!nonEmpty(s.goal)) err(`${at}: student.goal is missing or empty`);
+    if (!Array.isArray(s.starters) || s.starters.length !== 3 || !s.starters.every(nonEmpty))
+      err(`${at}: student.starters must be exactly 3 non-empty strings`);
+  }
 });
 
 // ── Permanent migrated IDs 1–520 all present ──
