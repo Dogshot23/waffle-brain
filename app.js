@@ -36,7 +36,7 @@ const COLLECTIONS = [
   { id: 'general',           name: 'General English',  icon: '🧇', locked: false, comingSoon: false },
   { id: 'ielts',              name: 'IELTS',             locked: true,  comingSoon: true },
   { id: 'kids',               name: 'Kids',              locked: true,  comingSoon: true },
-  { id: 'business',           name: 'Business',          locked: true,  comingSoon: true },
+  { id: 'business',           name: 'Business English',  locked: true,  comingSoon: true },
   { id: 'cambridge',          name: 'Cambridge',         locked: true,  comingSoon: true },
   { id: 'travel',             name: 'Travel',            locked: true,  comingSoon: true },
   { id: 'debate',             name: 'Debate',            locked: true,  comingSoon: true },
@@ -95,14 +95,26 @@ function renderCollectionList() {
   });
 }
 
-function selectCollection(id) {
+function selectCollection(id, { resetDraw = true } = {}) {
   const collection = COLLECTIONS.find(c => c.id === id);
   if (!collection || collection.locked) return;
+  const changed = id !== currentCollection;
   currentCollection = id;
   waffleTriggerIcon.textContent = collection.icon || '🧇';
   waffleTriggerLabel.textContent = collection.name;
   closeWaffleList();
   renderCollectionList();
+
+  // A different Collection is a different pool of Waffles: reset history
+  // and the shuffle-bag, and show a Waffle from the new Collection straight
+  // away — the same as a level or category change. Skipped when restoring
+  // a saved place, because init primes and renders that itself.
+  if (changed && resetDraw) {
+    history.length = 0;
+    historyIndex = -1;
+    WB.prime(getFilter(), getLevel(), currentCollection);
+    showPrompt();
+  }
 }
 
 function openWaffleList() {
@@ -202,6 +214,8 @@ function formatPrompt(text) {
 // ── Render a history entry's Teacher Waffle to the UI ──
 function renderPrompt(entry) {
   const w = WB.getById(entry.id);
+  promptCard.classList.remove('empty');
+  nextBtn.disabled = false;
   modeLabel.textContent      = w.category;
   promptText.innerHTML       = formatPrompt(w.teacher.prompt);
   constraintText.textContent = w.teacher.constraint;
@@ -216,6 +230,22 @@ function renderPrompt(entry) {
 
   backBtn.disabled = historyIndex <= 0;
   saveTeacherState();
+}
+
+// ── Empty state ───────────────────────────────
+// The current Collection + level + category has no Waffles (e.g. a
+// category a Collection doesn't use yet). Clear the card so no Waffle from
+// another filter stays on screen, and disable Next/Back until the teacher
+// picks a filter that has Waffles (renderPrompt restores everything).
+function renderEmpty() {
+  promptCard.classList.add('empty');
+  modeLabel.textContent      = getFilter();
+  promptText.innerHTML       = formatPrompt('No Waffles in this category yet.');
+  constraintText.textContent = '';
+  promptCard.setAttribute('data-mode', getFilter());
+  promptCard.removeAttribute('data-waffle-id');
+  nextBtn.disabled = true;
+  backBtn.disabled = true;
 }
 
 // ── Keep the teacher's place for this browser tab ──
@@ -260,7 +290,7 @@ function loadTeacherState() {
 // ── Draw a new prompt and push to history ─────
 function showPrompt() {
   let w = WB.draw(getFilter(), getLevel(), currentCollection);
-  if (!w) return; // no Waffles match the current filters
+  if (!w) { renderEmpty(); return; } // no Waffles match the current filters
 
   // Never show the same Waffle twice in a row (can happen when the
   // shuffle-bag refills, or after restoring a saved place).
@@ -298,7 +328,7 @@ WB.load()
     // Returning to this page in the same tab? Restore the teacher's place.
     const saved = loadTeacherState();
     if (saved) {
-      selectCollection(saved.collection);
+      selectCollection(saved.collection, { resetDraw: false });
       currentLevel = saved.level;
       categorySelect.value = saved.category;
       categorySelect.classList.toggle('filtered', saved.category !== '');

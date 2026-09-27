@@ -7278,5 +7278,425 @@
       "prompt": "Tell a story about a journey where the destination turned out to matter less than what happened along the way.",
       "constraint": "Reveal the key information only near the end."
     }
+  },
+  {
+    "id": 521,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "The student's office gets a new coffee machine. The coffee used to be free — now it costs €1 a cup.",
+      "constraint": "Giving opinions and reasons; would / wouldn't."
+    },
+    "student": {
+      "prompt": "Your office gets a new coffee machine. The coffee used to be free. Now it costs €1 a cup.",
+      "constraint": "Giving opinions and reasons; would / wouldn't."
+    }
+  },
+  {
+    "id": 522,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "From Monday, nobody in the student's office has their own desk. Every morning, people sit at any free desk, and at the end of the day the desk must be completely empty.",
+      "constraint": "Giving opinions about workplace arrangements; would / wouldn't."
+    },
+    "student": {
+      "prompt": "From Monday, nobody in your office has their own desk. Every morning, you sit at any free desk. At the end of the day, the desk must be completely empty.",
+      "constraint": "Giving opinions about workplace arrangements; would / wouldn't."
+    }
+  },
+  {
+    "id": 523,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Explain and Show",
+    "teacher": {
+      "prompt": "A new colleague starts on Monday. On their first day, they get a laptop and a password — and nothing else. Nobody shows them anything.",
+      "constraint": "Simple advice; should / can."
+    },
+    "student": {
+      "prompt": "A new colleague starts on Monday. On their first day, they get a laptop and a password — and nothing else. Nobody shows them anything.",
+      "constraint": "Simple advice; should / can."
+    }
+  },
+  {
+    "id": 524,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Choose and Create",
+    "teacher": {
+      "prompt": "The team wins a prize, and everyone has to agree on one: an extra day off, a team dinner, or €100 each.",
+      "constraint": "Explaining a preference; I'd like / I'd prefer."
+    },
+    "student": {
+      "prompt": "Your team wins a prize. Everyone has to agree on one: an extra day off, a team dinner, or €100 each.",
+      "constraint": "Explaining a preference; I'd like / I'd prefer."
+    }
+  },
+  {
+    "id": 525,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "The company introduces a new rule: everyone must wear a name badge every day — even people who have worked there for ten years.",
+      "constraint": "Giving opinions; I think / I don't think."
+    },
+    "student": {
+      "prompt": "Your company has a new rule: everyone must wear a name badge every day — even people who have worked there for ten years.",
+      "constraint": "Giving opinions; I think / I don't think."
+    }
+  },
+  {
+    "id": 526,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "The student's new manager says 'thank you' to everyone, every day, for everything — even for answering a simple email.",
+      "constraint": "Describing people; personality adjectives."
+    },
+    "student": {
+      "prompt": "Your new manager says 'thank you' to everyone, every day, for everything — even for answering a simple email.",
+      "constraint": "Describing people; personality adjectives."
+    }
+  },
+  {
+    "id": 527,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Explain and Show",
+    "teacher": {
+      "prompt": "The company has a new rule: no emails before 10am. The first hour of the day is only for 'real work'.",
+      "constraint": "Talking about routines and workplace rules; usually / normally."
+    },
+    "student": {
+      "prompt": "Your company has a new rule: no emails before 10am. The first hour of the day is only for 'real work'.",
+      "constraint": "Talking about routines and workplace rules; usually / normally."
+    }
+  },
+  {
+    "id": 528,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Choose and Create",
+    "teacher": {
+      "prompt": "The company offers two options for Fridays: work from home all day, or come to the office but finish at 3pm.",
+      "constraint": "Explaining preferences and trade-offs; because / but."
+    },
+    "student": {
+      "prompt": "Your company offers two options for Fridays: work from home all day, or come to the office but finish at 3pm.",
+      "constraint": "Explaining preferences and trade-offs; because / but."
+    }
+  },
+  {
+    "id": 529,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "A colleague eats very strong-smelling food at their desk every lunchtime. It isn't against any rules.",
+      "constraint": "Talking about feelings; it bothers me / I don't mind."
+    },
+    "student": {
+      "prompt": "A colleague eats very strong-smelling food at their desk every lunchtime. It isn't against any rules.",
+      "constraint": "Talking about feelings; it bothers me / I don't mind."
+    }
+  },
+  {
+    "id": 530,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Guided Stories",
+    "teacher": {
+      "prompt": "Some companies give new people a welcome gift on their first day — a T-shirt, flowers, even a cake. Other companies just give them a desk.",
+      "constraint": "Talking about workplace experiences and first impressions."
+    },
+    "student": {
+      "prompt": "Some companies give new people a welcome gift on their first day — a T-shirt, flowers, even a cake. Other companies just give them a desk.",
+      "constraint": "Talking about workplace experiences and first impressions."
+    }
+  },
+  {
+    "id": 531,
+    "collection": "business",
+    "level": "B1",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "The student's manager sends a calendar invite for 9:00 tomorrow called 'Quick chat'. There's no description, and nobody else is invited.",
+      "constraint": "Speculating; might / could / must be."
+    },
+    "student": {
+      "prompt": "Your manager sends you a calendar invite for 9:00 tomorrow called 'Quick chat'. There's no description, and nobody else is invited.",
+      "constraint": "Speculating; might / could / must be."
+    }
+  },
+  {
+    "id": 532,
+    "collection": "business",
+    "level": "B1",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "A colleague is ten minutes late to everything — but their work is always excellent and always on time.",
+      "constraint": "Describing people and habits; always / tends to / even though."
+    },
+    "student": {
+      "prompt": "A colleague is ten minutes late to everything — but their work is always excellent and always on time.",
+      "constraint": "Describing people and habits; always / tends to / even though."
+    }
+  },
+  {
+    "id": 533,
+    "collection": "business",
+    "level": "B1",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "In the student's team video meetings, one person always has their camera off and only speaks when someone asks them a direct question. The student leads the meetings.",
+      "constraint": "Giving opinions; talking about expectations at work."
+    },
+    "student": {
+      "prompt": "In your team's video meetings, one person always has their camera off and only speaks when someone asks them a direct question. You lead the meetings.",
+      "constraint": "Giving opinions; talking about expectations at work."
+    }
+  },
+  {
+    "id": 534,
+    "collection": "business",
+    "level": "B1",
+    "category": "Choose and Create",
+    "teacher": {
+      "prompt": "The company will pay for any course the student wants. But if they leave the company in the next two years, they have to pay all the money back.",
+      "constraint": "Talking about conditions; if / unless / would."
+    },
+    "student": {
+      "prompt": "Your company will pay for any course you want. But if you leave the company in the next two years, you have to pay all the money back.",
+      "constraint": "Talking about conditions; if / unless / would."
+    }
+  },
+  {
+    "id": 535,
+    "collection": "business",
+    "level": "B1",
+    "category": "Explain and Show",
+    "teacher": {
+      "prompt": "A colleague has an automatic reply on every email: 'I check my email twice a day, at 11:00 and 16:00. If it's urgent, call me.'",
+      "constraint": "Describing habits; if / unless; urgent / can wait."
+    },
+    "student": {
+      "prompt": "A colleague has an automatic reply on every email: 'I check my email twice a day, at 11:00 and 16:00. If it's urgent, call me.'",
+      "constraint": "Describing habits; if / unless; urgent / can wait."
+    }
+  },
+  {
+    "id": 536,
+    "collection": "business",
+    "level": "B1",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "Most people at the company work from home. From next month, everyone must come to the office three days a week.",
+      "constraint": "Predicting reactions; will / might / probably."
+    },
+    "student": {
+      "prompt": "Most people at your company work from home. From next month, everyone must come to the office three days a week.",
+      "constraint": "Predicting reactions; will / might / probably."
+    }
+  },
+  {
+    "id": 537,
+    "collection": "business",
+    "level": "B1",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "On their first day in a new office, the student sits down at an empty desk by the window. The whole room goes quiet.",
+      "constraint": "Describing workplace habits; supposed to / expected to / not allowed to."
+    },
+    "student": {
+      "prompt": "On your first day in a new office, you sit down at an empty desk by the window. The whole room goes quiet.",
+      "constraint": "Describing workplace habits; supposed to / expected to / not allowed to."
+    }
+  },
+  {
+    "id": 538,
+    "collection": "business",
+    "level": "B1",
+    "category": "Explain and Show",
+    "teacher": {
+      "prompt": "Someone the student knows starts their first office job on Monday. Their plan is simple: arrive early, stay late, and say yes to everything.",
+      "constraint": "Giving advice; should / shouldn't / it's better to."
+    },
+    "student": {
+      "prompt": "Someone you know starts their first office job on Monday. Their plan is simple: arrive early, stay late, and say yes to everything.",
+      "constraint": "Giving advice; should / shouldn't / it's better to."
+    }
+  },
+  {
+    "id": 539,
+    "collection": "business",
+    "level": "B1",
+    "category": "Guided Stories",
+    "teacher": {
+      "prompt": "The student sends their manager a long, careful email about a problem. The whole reply is: 'OK.'",
+      "constraint": "Interpreting tone; might mean / could mean; past tenses for similar experiences."
+    },
+    "student": {
+      "prompt": "You send your manager a long, careful email about a problem. The whole reply is: 'OK.'",
+      "constraint": "Interpreting tone; might mean / could mean; past tenses for similar experiences."
+    }
+  },
+  {
+    "id": 540,
+    "collection": "business",
+    "level": "B1",
+    "category": "Choose and Create",
+    "teacher": {
+      "prompt": "The team is choosing one new rule for work group chats: no messages after 7pm, no voice messages, or no replies expected at weekends.",
+      "constraint": "Discussing rules and their consequences; would / wouldn't."
+    },
+    "student": {
+      "prompt": "Your team is choosing one new rule for work group chats: no messages after 7pm, no voice messages, or no replies expected at weekends.",
+      "constraint": "Discussing rules and their consequences; would / wouldn't."
+    }
+  },
+  {
+    "id": 541,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "The company decides that every employee's salary will be visible to everyone on the internal website.",
+      "constraint": "Discussing consequences; hypothetical conditionals."
+    },
+    "student": {
+      "prompt": "Your company decides that every employee's salary will be visible to everyone on the internal website.",
+      "constraint": "Discussing consequences; hypothetical conditionals."
+    }
+  },
+  {
+    "id": 542,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Explain and Show",
+    "teacher": {
+      "prompt": "A new employee is excellent at their job — but wears shorts to the office, uses emojis in emails to clients, and calls the CEO by their first name.",
+      "constraint": "Separating what really matters from convention; expected / acceptable / inappropriate."
+    },
+    "student": {
+      "prompt": "A new employee is excellent at their job — but wears shorts to the office, uses emojis in emails to clients, and calls the CEO by their first name.",
+      "constraint": "Separating what really matters from convention; expected / acceptable / inappropriate."
+    }
+  },
+  {
+    "id": 543,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "The student's manager often says, 'My door is always open.' But whenever someone goes in, the manager keeps looking at their laptop while they talk.",
+      "constraint": "Diplomatic language; raising a sensitive issue."
+    },
+    "student": {
+      "prompt": "Your manager often says, 'My door is always open.' But whenever you go in, they keep looking at their laptop while you talk.",
+      "constraint": "Diplomatic language; raising a sensitive issue."
+    }
+  },
+  {
+    "id": 544,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "A company's website says: 'We have a flat structure — everyone's voice matters equally.' In practice, the same three people make every decision.",
+      "constraint": "Describing culture; officially / in practice / on paper."
+    },
+    "student": {
+      "prompt": "A company's website says: 'We have a flat structure — everyone's voice matters equally.' In practice, the same three people make every decision.",
+      "constraint": "Describing culture; officially / in practice / on paper."
+    }
+  },
+  {
+    "id": 545,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Choose and Create",
+    "teacher": {
+      "prompt": "Two job offers. Job A pays 20% more, but the student would be expected to answer messages in the evenings. Job B pays less, but nobody contacts them after 5pm.",
+      "constraint": "Weighing up trade-offs; would / would have."
+    },
+    "student": {
+      "prompt": "Two job offers. Job A pays 20% more, but you're expected to answer messages in the evenings. Job B pays less, but nobody contacts you after 5pm.",
+      "constraint": "Weighing up trade-offs; would / would have."
+    }
+  },
+  {
+    "id": 546,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "A company starts using AI to write the first reply to every customer email. Staff check the reply and send it, and customers aren't told.",
+      "constraint": "Discussing ethics and transparency; should / shouldn't."
+    },
+    "student": {
+      "prompt": "A company starts using AI to write the first reply to every customer email. Staff check the reply and send it, and customers aren't told.",
+      "constraint": "Discussing ethics and transparency; should / shouldn't."
+    }
+  },
+  {
+    "id": 547,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Guided Stories",
+    "teacher": {
+      "prompt": "A company removes every private office — including the managers' — and puts everyone in one big open-plan space. Most staff hate it at first. A year later, many say they wouldn't go back.",
+      "constraint": "Reflecting on change; looking back / in hindsight / at first."
+    },
+    "student": {
+      "prompt": "A company removes every private office — including the managers' — and puts everyone in one big open-plan space. Most staff hate it at first. A year later, many say they wouldn't go back.",
+      "constraint": "Reflecting on change; looking back / in hindsight / at first."
+    }
+  },
+  {
+    "id": 548,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "A project for an important client is going to be two weeks late, and the student is the one who has to tell them.",
+      "constraint": "Delivering bad news; softening language."
+    },
+    "student": {
+      "prompt": "A project for an important client is going to be two weeks late, and you're the one who has to tell them.",
+      "constraint": "Delivering bad news; softening language."
+    }
+  },
+  {
+    "id": 549,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Explain and Show",
+    "teacher": {
+      "prompt": "Job adverts and managers often say, 'We're like a family here.'",
+      "constraint": "Interpreting what people really mean; speculating."
+    },
+    "student": {
+      "prompt": "Job adverts and managers often say, 'We're like a family here.' Good sign or warning sign?",
+      "constraint": "Interpreting what people really mean; speculating."
+    }
+  },
+  {
+    "id": 550,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Choose and Create",
+    "teacher": {
+      "prompt": "The company offers a four-day week at the same salary — but each day is ten hours instead of eight.",
+      "constraint": "Discussing trade-offs; hypothetical would."
+    },
+    "student": {
+      "prompt": "Your company offers a four-day week at the same salary — but each day is ten hours instead of eight.",
+      "constraint": "Discussing trade-offs; hypothetical would."
+    }
   }
 ]

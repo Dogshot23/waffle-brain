@@ -670,6 +670,18 @@ body:not(.student) .mode-badge {
   outline-offset: 2px;
 }
 
+/* Empty state: no Waffles match the current filters (set by app.js).
+   Hide the Waffle-only parts and show Next as unavailable. */
+#prompt-card.empty .divider,
+#prompt-card.empty .constraint-block,
+#prompt-card.empty #copy-btn { display: none; }
+
+#prompt-card.empty + .btn-wrap #next-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 
 /* ── 6. Student-only ──────────────────────────────────────── */
 /* Fresh architecture: the student page shows one standalone Waffle

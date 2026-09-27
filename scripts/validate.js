@@ -24,7 +24,7 @@ const STUDENT_FILE  = path.join(ROOT, 'data', 'prompts_original.json');
 // every one of them must always exist (never deleted, renumbered or reused).
 const MIGRATED_ID_MAX = 520;
 
-const COLLECTIONS = ['general'];
+const COLLECTIONS = ['general', 'business'];
 const LEVELS      = ['A1A2', 'B1', 'B2+'];
 
 const errors = [];
