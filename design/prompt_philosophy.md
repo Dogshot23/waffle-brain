@@ -1,91 +1,66 @@
-# Waffle Brain Prompt Philosophy
+# WaffleBrain Prompt Philosophy
 
-## Our Goal
+WaffleBrain is a simple tool that gives teachers interesting speaking prompts they can use straight away.
 
-Waffle Brain is designed to help ESL teachers create better speaking activities with less preparation.
+A **Waffle** is one designed conversation starter. **The conversation is the activity.**
 
-It is not a list of conversation questions.
+A **Collection** is a group of Waffles, such as General English or a future specialist collection.
 
-The goal is to create activities that make students speak naturally by giving them a reason to communicate, decide, explain, solve, create, or help.
-
-A good Waffle Brain activity should feel different from a normal ESL lesson while still being practical, teachable, and suitable for the student's level.
+A Waffle is not something the student must complete, solve or achieve. Its job is to get the teacher and student talking naturally about something interesting, and to give the conversation somewhere to go.
 
 
-## What Makes Waffle Brain Different
+## The Core Test
 
-Most ESL conversation practice relies on repeated interview questions:
+> Does this give the student something interesting to say, with natural openings for follow-up?
 
-"What is your favourite food?"
-"What did you do at the weekend?"
-"Tell me about your family."
-
-These questions are easy to create but often produce short, predictable answers.
-
-Waffle Brain creates structured speaking activities instead.
-
-Each activity should include:
-
-- a clear situation
-- a reason to speak
-- enough support to reduce cognitive load
-- opportunities for follow-up conversation
-- a natural role for the teacher and student
+A strong Waffle creates a conversation. It does not simply ask for information.
 
 
-## What We Never Do
+## Principles
 
-Waffle Brain avoids:
+1. **A Waffle is a designed conversation starter.** The conversation itself is the activity.
+
+2. **Apply the core test.** Every Waffle should give the student something interesting to say, with natural openings for follow-up.
+
+3. **More than an interview question.** Generic questions such as "What is your favourite food?" or "What did you do at the weekend?" are easy to write but produce short, predictable answers. A Waffle needs a specific angle, hook, situation, detail or perspective that gives the conversation somewhere to go.
+   *"What's your favourite food?"* → *"Tell the teacher about a meal that reminds you of a particular time in your life."*
+
+4. **Real before invented.** Prefer the student's own experience, knowledge, opinions and memories. Imagined situations are fine when they genuinely improve the conversation.
+
+5. **Quick to understand, ready to use.** A teacher should grasp a Waffle in seconds and use it with little or no preparation.
+
+6. **Structure is optional.** Roles, situations, choices, problems and information gaps are tools, not requirements. A Waffle never needs a goal, outcome, checklist, puzzle, correct answer or mechanic.
+
+7. **Teacher and Student versions serve different purposes.** They can be worded differently and do not need to be symmetrical.
+
+8. **Use natural differences, never forced ones.** A genuine difference between the teacher's and the student's position can make a Waffle more interesting. Do not force information gaps or "two-sided" structures.
+
+9. **Quality over formula.** Judge a Waffle by whether it produces good conversation, not by whether it fits a particular structure. Do not retrofit existing Waffles to satisfy a theory.
+
+
+## Teacher and Student
+
+**The Teacher version** gives the teacher enough to start the conversation and extend it: what to ask about, and where to take it next. The teacher should feel the Waffle is ready to use, not something to prepare.
+
+**Language Focus** describes the language function the conversation naturally practises, with example forms where useful. For example: *describing change (used to, no longer, these days)*. It is guidance for the teacher, not a success criterion or a test. Some older Waffles phrase this as a target; new Waffles should name the function.
+
+**The Student version** tells the student what to talk about, with enough support to join in comfortably. The student should feel they are sharing, explaining and talking about things they know, not being interviewed or tested, and they should come away feeling successful.
+
+
+## What We Avoid
 
 - generic interview questions
-- questions with predictable one-word answers
-- abstract topics without support
-- activities where students must invent everything themselves
-- unrealistic situations without a learning purpose
-- textbook-style prompts that feel repetitive
-- activities that require the teacher to explain complicated rules before starting
+- prompts that invite one-word or predictable answers
+- abstract topics with no angle or support
+- prompts that make the student invent everything from nothing
+- unrealistic situations that add nothing to the conversation
+- repetitive, textbook-style wording
+- anything that needs rules or setup explained before the talking can start
+- requirements the conversation doesn't need: goals, outcomes, checklists, puzzles, correct answers, mechanics
 
 
-## What Every Prompt Must Achieve
+## Note: "Two-Sided Waffles"
 
-Every prompt should:
+In September 2026 we investigated giving the teacher and student deliberately different information. Conclusion: this is an editorial technique, not a product feature. There is no Two-Sided collection, filter, mode, mechanic or data field, and existing Waffles are not retrofitted.
 
-- be usable immediately by a teacher
-- create at least a few minutes of speaking
-- encourage natural follow-up discussion
-- help students use useful vocabulary and grammar
-- make the student feel successful
-- have a clear purpose beyond simply answering a question
-
-A strong prompt creates a conversation.
-
-It does not simply ask for information.
-
-
-## Teacher First
-
-Prompts are written for teachers, not students.
-
-The teacher should immediately understand:
-
-- what to do
-- how to start
-- what the student needs to achieve
-- how to extend the conversation
-
-The teacher should feel that Waffle Brain has prepared the activity for them.
-
-
-## Student Experience
-
-Students should feel like they are:
-
-- solving a small problem
-- making decisions
-- sharing useful information
-- helping someone
-- explaining something they know
-- completing a realistic task
-
-They should not feel like they are being interviewed or tested.
-
-The aim is to create the feeling of a real conversation while providing the structure needed for successful language practice.
+It helps only when the teacher and student genuinely occupy different positions that already exist in the lesson (teacher/learner, native speaker/learner, past/present, owner/observer), so that each has a natural reason to be interested in the other's side. Artificial gaps (invented secrets or relatives, problems needing advice, puzzles, negotiations, debates) made Waffles worse. On most everyday topics, attempts produced two related prompts rather than a two-sided conversation. Use it only when it arises naturally.

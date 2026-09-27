@@ -118,6 +118,7 @@ function closeWaffleList() {
 waffleTrigger.addEventListener('click', (e) => {
   e.stopPropagation();
   if (waffleList.hidden) openWaffleList(); else closeWaffleList();
+  releaseFocusAfterPointer(waffleTrigger);
 });
 
 document.addEventListener('click', (e) => {
@@ -214,11 +215,60 @@ function renderPrompt(entry) {
   setTimeout(() => promptCard.classList.remove('flash'), 350);
 
   backBtn.disabled = historyIndex <= 0;
+  saveTeacherState();
+}
+
+// ── Keep the teacher's place for this browser tab ──
+// Saved on every render so that Teacher → Student → Teacher (or a
+// reload) returns to the same Waffle, filters and Back history.
+// sessionStorage is per-tab and is cleared when the tab is closed.
+const STATE_KEY = 'wb_teacher_state';
+
+function saveTeacherState() {
+  try {
+    sessionStorage.setItem(STATE_KEY, JSON.stringify({
+      collection: currentCollection,
+      level:      currentLevel,
+      category:   getFilter(),
+      history,
+      historyIndex,
+    }));
+  } catch (e) { /* storage unavailable — keep working without it */ }
+}
+
+// Returns the saved state only if every part of it is still valid.
+function loadTeacherState() {
+  try {
+    const s = JSON.parse(sessionStorage.getItem(STATE_KEY));
+    if (!s || !LEVELS.includes(s.level)) return null;
+    const collection = COLLECTIONS.find(c => c.id === s.collection && !c.locked);
+    const categoryOk = [...categorySelect.options].some(o => o.value === s.category);
+    if (!collection || !categoryOk || !Array.isArray(s.history) || !s.history.length) return null;
+    const allValid = s.history.every(h => {
+      const w = h && WB.getById(h.id);
+      return w && w.level === s.level && w.collection === s.collection &&
+             (!s.category || w.category === s.category);
+    });
+    if (!allValid) return null;
+    if (!Number.isInteger(s.historyIndex) || s.historyIndex < 0 || s.historyIndex >= s.history.length) return null;
+    return s;
+  } catch (e) {
+    return null;
+  }
 }
 
 // ── Draw a new prompt and push to history ─────
 function showPrompt() {
-  const w = WB.draw(getFilter(), getLevel(), currentCollection);
+  let w = WB.draw(getFilter(), getLevel(), currentCollection);
+  if (!w) return; // no Waffles match the current filters
+
+  // Never show the same Waffle twice in a row (can happen when the
+  // shuffle-bag refills, or after restoring a saved place).
+  const current = history[historyIndex];
+  if (current && w.id === current.id) {
+    w = WB.draw(getFilter(), getLevel(), currentCollection) || w;
+  }
+
   const entry = {
     id:    w.id,
     shown: WB.getShown()
@@ -244,11 +294,28 @@ function showPrev() {
 WB.load()
   .then(() => {
     nextBtn.disabled = false;
+
+    // Returning to this page in the same tab? Restore the teacher's place.
+    const saved = loadTeacherState();
+    if (saved) {
+      selectCollection(saved.collection);
+      currentLevel = saved.level;
+      categorySelect.value = saved.category;
+      categorySelect.classList.toggle('filtered', saved.category !== '');
+    }
+
     levelSelect.value = currentLevel;
     localStorage.setItem('wb_level', currentLevel);
     updateLevelDisplay();
     WB.prime(getFilter(), getLevel(), currentCollection);
-    showPrompt();
+
+    if (saved) {
+      history.push(...saved.history);
+      historyIndex = saved.historyIndex;
+      renderPrompt(history[historyIndex]);
+    } else {
+      showPrompt();
+    }
   })
   .catch(err => {
     modeLabel.textContent      = 'Error';
@@ -258,15 +325,41 @@ WB.load()
     console.error('[WaffleBrain]', err);
   });
 
+// ── Keyboard focus after mouse use ────────────
+// Space means "Next Waffle". After a control is used with the mouse,
+// focus is released so the next Space press isn't swallowed by that
+// control (e.g. copying again, or reopening a dropdown). Keyboard users
+// (Tab/Enter/arrow keys) keep normal focus behaviour.
+let lastInput = 'keyboard';
+document.addEventListener('pointerdown', () => { lastInput = 'pointer'; }, true);
+document.addEventListener('keydown',     () => { lastInput = 'keyboard'; }, true);
+
+function releaseFocusAfterPointer(el) {
+  if (lastInput === 'pointer') el.blur();
+}
+
+// A dropdown focused by the mouse should not grab Space either.
+[levelSelect, categorySelect].forEach(sel => {
+  sel.addEventListener('focus', () => {
+    sel.dataset.pointerFocus = lastInput === 'pointer' ? '1' : '0';
+  });
+});
+
 // ── Event listeners ───────────────────────────
-nextBtn.addEventListener('click', showPrompt);
-backBtn.addEventListener('click', showPrev);
+nextBtn.addEventListener('click', () => { showPrompt(); releaseFocusAfterPointer(nextBtn); });
+backBtn.addEventListener('click', () => { showPrev();   releaseFocusAfterPointer(backBtn); });
 
 levelSelect.addEventListener('change', () => {
   currentLevel = levelSelect.value;
   localStorage.setItem('wb_level', currentLevel);
   updateLevelDisplay();
+  // Reset history when the level changes — back would cross levels —
+  // and show a Waffle from the new level straight away.
+  history.length = 0;
+  historyIndex = -1;
   WB.prime(getFilter(), getLevel(), currentCollection);
+  showPrompt();
+  releaseFocusAfterPointer(levelSelect);
 });
 
 categorySelect.addEventListener('change', () => {
@@ -277,22 +370,26 @@ categorySelect.addEventListener('change', () => {
   historyIndex = -1;
   WB.prime(getFilter(), getLevel(), currentCollection);
   showPrompt();
+  releaseFocusAfterPointer(categorySelect);
 });
 
 let copyResetTimer = null;
 
 copyBtn.addEventListener('click', () => {
-  const category   = modeLabel.textContent;
-  const prompt     = promptText.textContent;
-  const constraint = constraintText.textContent;
-  const text = `${category}\n\n${prompt}\n\nLanguage Focus: ${constraint}`;
+  // Copy the STUDENT wording of the current Waffle, looked up by its ID,
+  // so the teacher can paste it straight into the lesson chat.
+  const entry = history[historyIndex];
+  const waffle = entry && WB.getById(entry.id);
+  if (!waffle) return;
+  const text = waffle.student.prompt;
+  releaseFocusAfterPointer(copyBtn);
 
   const resetCopyBtn = () => {
     copyBtn.classList.remove('copied');
     copyBtn.innerHTML = `<svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <rect x="4" y="4" width="7" height="7" rx="1.2" stroke="currentColor" stroke-width="1.2"/>
       <path d="M8 4V2.8A.8.8 0 0 0 7.2 2H1.8A.8.8 0 0 0 1 2.8v5.4c0 .44.36.8.8.8H4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-    </svg> Copy prompt`;
+    </svg> Copy for student`;
   };
 
   const setCopied = () => {
@@ -316,10 +413,26 @@ copyBtn.addEventListener('click', () => {
   });
 });
 
+// True for places where Space must type a space, never trigger Next.
+function isTypingTarget(el) {
+  if (!el) return false;
+  if (el.isContentEditable) return true;
+  if (el.tagName === 'TEXTAREA') return true;
+  if (el.tagName === 'INPUT') {
+    return !['button', 'checkbox', 'radio', 'submit', 'reset', 'range', 'color', 'file'].includes(el.type);
+  }
+  return false;
+}
+
 document.addEventListener('keydown', (e) => {
-  if (e.code === 'Space' && e.target === document.body) {
-    e.preventDefault();
-    if (!nextBtn.disabled) showPrompt();
+  if (e.code === 'Space' && !isTypingTarget(e.target)) {
+    const t = e.target;
+    const pointerFocusedSelect = t.tagName === 'SELECT' && t.dataset.pointerFocus === '1';
+    if (t === document.body || pointerFocusedSelect) {
+      e.preventDefault();
+      if (pointerFocusedSelect) t.blur();
+      if (!nextBtn.disabled) showPrompt();
+    }
   }
   if (e.key === 'Escape') {
     closeWaffleList();
