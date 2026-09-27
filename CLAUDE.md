@@ -88,7 +88,9 @@ delete, move or rename them without the owner's instruction):
   default shows 30 separate standalone student activities hard-coded in
   `studentSupport.js`. With `?collection=business&level=…` (the Teacher
   page's "Student" link adds this) it instead shows that Collection's
-  Student Waffles from `waffles.json`, with a small collection label.
+  Student Waffles from `waffles.json`.
+- Both pages show the current Collection name in the header and set
+  `body[data-collection]`; `style.css` uses it for the Business English look.
 - `wafflebrain-kids/` — separate copy of the app with its own data. Live at
   `/wafflebrain-kids/`. Do not modify unless asked.
 

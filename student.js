@@ -119,17 +119,14 @@ const params          = new URLSearchParams(location.search);
 const collectionParam = params.get('collection');
 const levelParam      = params.get('level');
 
-// Display names for Collection views (a small label next to "🧇 Waffle").
+// Display names for Collection views (shown in the header).
 const COLLECTION_NAMES = { business: 'Business English' };
 
-function showCollectionLabel(id) {
-  const name  = COLLECTION_NAMES[id];
-  const label = waffleSection.querySelector('.waffle-label');
-  if (!name || !label) return;
-  const span = document.createElement('span');
-  span.className   = 'waffle-collection';
-  span.textContent = name;
-  label.appendChild(span);
+// Header label + per-Collection styling hook (body[data-collection] in
+// style.css), set straight away so the page doesn't flash General first.
+if (COLLECTION_NAMES[collectionParam]) {
+  document.getElementById('collection-name').textContent = COLLECTION_NAMES[collectionParam];
+  document.body.dataset.collection = collectionParam;
 }
 
 if (collectionParam && collectionParam !== 'general') {
@@ -145,7 +142,6 @@ if (collectionParam && collectionParam !== 'general') {
         pool = (atLevel.length ? atLevel : inCollection)
           .map(w => ({ id: w.id, waffle: w.student.prompt,
                        goal: w.student.goal, starters: w.student.starters }));
-        showCollectionLabel(collectionParam);
         // Keep this Collection view when the page's own "Student" tab is clicked.
         const selfLink = document.querySelector('.version-link[href="student.html"]');
         if (selfLink) selfLink.href = 'student.html' + location.search;

@@ -96,6 +96,12 @@ function renderCollectionList() {
   });
 }
 
+// Header label + per-Collection styling hook (body[data-collection] in style.css)
+function applyCollectionLook(collection) {
+  document.getElementById('collection-name').textContent = collection.name;
+  document.body.dataset.collection = collection.id;
+}
+
 function selectCollection(id, { resetDraw = true } = {}) {
   const collection = COLLECTIONS.find(c => c.id === id);
   if (!collection || collection.locked) return;
@@ -103,6 +109,7 @@ function selectCollection(id, { resetDraw = true } = {}) {
   currentCollection = id;
   waffleTriggerIcon.textContent = collection.icon || '🧇';
   waffleTriggerLabel.textContent = collection.name;
+  applyCollectionLook(collection);
   closeWaffleList();
   renderCollectionList();
 
@@ -335,6 +342,15 @@ function showPrev() {
 }
 
 // ── Init ──────────────────────────────────────
+// Returning to a non-General Collection in this tab? Show its look now,
+// while the Waffles load, so the page doesn't flash General English first.
+// The full check of the saved place (below) then keeps or reverts it.
+try {
+  const early = COLLECTIONS.find(c =>
+    c.id === JSON.parse(sessionStorage.getItem(STATE_KEY)).collection && !c.locked);
+  if (early) applyCollectionLook(early);
+} catch (e) { /* no saved place — stay General */ }
+
 WB.load()
   .then(() => {
     nextBtn.disabled = false;
@@ -346,6 +362,8 @@ WB.load()
       currentLevel = saved.level;
       categorySelect.value = saved.category;
       categorySelect.classList.toggle('filtered', saved.category !== '');
+    } else {
+      applyCollectionLook(COLLECTIONS.find(c => c.id === currentCollection));
     }
 
     levelSelect.value = currentLevel;
