@@ -7889,7 +7889,7 @@
       "constraint": "Student says what they'd do with 'I'd' and says what might happen with 'If..., ...' or 'maybe'."
     },
     "student": {
-      "prompt": "🕷️ It's a quiet lesson. Your teacher is writing on the board. A big spider is walking slowly across her back. She doesn't know. Everyone in the class has seen it, and some people are laughing quietly. What do you do?",
+      "prompt": "Tell your teacher what you would do if you saw a big spider walking across your teacher's back in the middle of a lesson.",
       "goal": "Decide if you tell your teacher — and how — with the whole class watching.",
       "starters": [
         "I'd just say, really quietly...",
@@ -7909,7 +7909,7 @@
       "constraint": "Student ranks ideas ('first', 'last', 'worse than') and explains a rule with 'It's OK if...'."
     },
     "student": {
-      "prompt": "🐱 Your cousin's cat has 50,000 followers online! She has five ideas for new videos: film the cat sleeping; put the cat in a funny costume; wake the cat up for a funny moment; make a cat-food advert for €200; post a new video every day. Put the ideas in order, from OK to NOT OK.",
+      "prompt": "Your cousin's cat is famous online. Put these video ideas in order, from OK to not OK: filming it asleep, a funny costume, waking it up for a laugh, a cat-food advert, a new video every day.",
       "goal": "Put the ideas in order and explain your rule for what's OK.",
       "starters": [
         "My rule is: it's OK if the cat...",
@@ -7929,7 +7929,7 @@
       "constraint": "Student guesses with 'It's probably...' or 'maybe' and says what they'd do with 'I'd'."
     },
     "student": {
-      "prompt": "🌳 You take a photo in the park at night. Behind a tree, there are two shining eyes. You post the photo, and now everyone at school says: \"It's a wolf!\" What do you think it is? What do you tell everyone?",
+      "prompt": "You took a photo in the park at night, and now everyone at school says the shining eyes in it belong to a wolf. Tell your teacher what you think it really was.",
       "goal": "Decide what the animal probably is, and what you tell people.",
       "starters": [
         "It's probably just a...",
@@ -7949,7 +7949,7 @@
       "constraint": "Student gives advice using 'should' or 'could' and a reason using 'because'."
     },
     "student": {
-      "prompt": "🎮 Your friend always leaves the game when they're losing. Now nobody wants to play with them. What do you say to your friend?",
+      "prompt": "Tell your teacher what you would say to a friend who always leaves the game when they're losing.",
       "goal": "Find the right words to tell your friend, without starting a fight.",
       "starters": [
         "Hey, can I tell you something?",
@@ -7969,7 +7969,7 @@
       "constraint": "Student says what should happen using 'should' and gives reasons with 'because'."
     },
     "student": {
-      "prompt": "💳 Your little brother is 8. He used your mum's card to buy things in a game, and spent €40! He says he didn't know it was real money. What should happen now?",
+      "prompt": "Tell your teacher what should happen when your 8-year-old brother spends €40 in a game by mistake.",
       "goal": "Decide what's fair for your brother, and explain your idea.",
       "starters": [
         "He's only 8, so...",
@@ -7989,7 +7989,7 @@
       "constraint": "Student makes offers with 'I can...' or 'What if I...?' and gives reasons with 'because'."
     },
     "student": {
-      "prompt": "⏰ Your parents say: \"One hour of games on school days. That's it.\" You want two hours. Make a deal with your parent!",
+      "prompt": "Your parents allow one hour of games on school days, but you want two. Tell your teacher what deal you would offer them.",
       "goal": "Make a deal that you and your parent can both accept.",
       "starters": [
         "What if I...?",
@@ -8009,7 +8009,7 @@
       "constraint": "Student says what they'd do with 'I'd' and predicts results with 'If..., they might...'."
     },
     "student": {
-      "prompt": "🎧 You play online with a team you really like. They're good, and they're funny. But today they're being mean to a new player in the chat. If you say something, they might kick you out of the team. What do you do?",
+      "prompt": "Tell your teacher what you would do if your online team started being mean to a new player, and speaking up could get you kicked out.",
       "goal": "Decide what to do — knowing what it might cost you.",
       "starters": [
         "I don't want to lose the team, but...",
@@ -8029,7 +8029,7 @@
       "constraint": "Student guesses using 'I think' or 'maybe' and gives a reason with 'because'."
     },
     "student": {
-      "prompt": "✏️ Every Monday morning, there's a small drawing on your desk. There's no name. Today, it's a drawing of you! Who do you think it is? What do you do?",
+      "prompt": "Someone leaves a small drawing on your desk every Monday. Today it's a drawing of you. Tell your teacher who you think it is.",
       "goal": "Work out who's leaving the drawings, and decide what to do about it.",
       "starters": [
         "Maybe it's someone who...",
@@ -8049,7 +8049,7 @@
       "constraint": "Student says who they believe with 'I think' and gives reasons with 'because'."
     },
     "student": {
-      "prompt": "📱 Your friend Alex's phone screen is broken. Alex says Jo dropped it. Jo says Alex sat on it. You were there, but you didn't see it happen. Who do you believe?",
+      "prompt": "Alex says Jo broke his phone screen. Jo says Alex sat on it. Tell your teacher who you believe.",
       "goal": "Decide who is probably telling the truth, and what you say to your friends.",
       "starters": [
         "I believe ___, because...",
@@ -8069,7 +8069,7 @@
       "constraint": "Student suggests reasons with 'maybe' or 'it could be' and says what they'd do with 'I'd'."
     },
     "student": {
-      "prompt": "🪑 On Monday, your teacher moves you to a new seat, next to someone you don't know well. The teacher doesn't say why. Why do you think it happened? What do you do?",
+      "prompt": "Explain why you think a teacher might suddenly move you next to someone you don't know well.",
       "goal": "Think of different reasons, choose the most likely one, and decide what to do.",
       "starters": [
         "Maybe the teacher wants...",
@@ -8089,7 +8089,7 @@
       "constraint": "Student responds in the moment, guesses with 'maybe' or 'she could be', and explains their choices simply."
     },
     "student": {
-      "prompt": "👋 You're in the busy town centre. A friendly woman waves and calls your name. \"It's you! You're so tall now! How's your grandma's dog? Did you win the competition?\" Your grandma really does have a dog, and you were in a competition two years ago. But you have no idea who this woman is. She's smiling and waiting for your answer. What do you say?",
+      "prompt": "A friendly woman in town calls your name and asks about your grandma's dog, but you have no idea who she is. Tell your teacher what you would say to her.",
       "goal": "Get through the conversation without being rude — and work out who she might be.",
       "starters": [
         "Oh, hi! Um... yes, the dog is...",
@@ -8109,7 +8109,7 @@
       "constraint": "Student gives an opinion with 'I think' and a reason with 'because'; may use 'should'."
     },
     "student": {
-      "prompt": "🤖 Your friend uses AI to do all their homework. They always get good marks. You do your homework yourself, and your marks are OK. Is that fair?",
+      "prompt": "Your friend uses AI for all their homework and always gets great marks. Tell your teacher if you think that's fair.",
       "goal": "Tell your teacher what you think about AI homework, and what should happen.",
       "starters": [
         "It's not fair, but...",
@@ -8129,7 +8129,7 @@
       "constraint": "Student agrees or disagrees with 'I think' or 'I don't think' and gives reasons."
     },
     "student": {
-      "prompt": "🎧 New earbuds can translate any language, right in your ear. Your friend says: \"Great! Now we don't need English lessons!\" Is she right?",
+      "prompt": "Imagine earbuds that can translate any language. Tell your teacher if we would still need English lessons.",
       "goal": "Decide if we still need to learn languages, and tell your teacher why.",
       "starters": [
         "That's true for...",
@@ -8149,7 +8149,7 @@
       "constraint": "Student says what they'd do with 'I'd', gives opinions with 'I think', and uses 'but' to show two sides."
     },
     "student": {
-      "prompt": "🤖 On your way to school, you see a small delivery robot on the pavement. One wheel is stuck in a hole. It's beeping and saying, \"Help, please.\" People walk around it. A boy starts kicking it, and his friends film him. What do you do?",
+      "prompt": "Tell your teacher what you would do if you saw a boy kicking a stuck delivery robot that keeps saying \"Help, please.\"",
       "goal": "Decide what you do, and say what you think about how people treat robots.",
       "starters": [
         "It's only a robot, but...",
@@ -8169,7 +8169,7 @@
       "constraint": "Student says what they would do using 'I'd' and gives a reason with 'because'."
     },
     "student": {
-      "prompt": "🦗 The school shop has a new snack: cricket crisps. They're made from real insects. The shop says they're healthy and good for the planet. Would you try them?",
+      "prompt": "Tell your teacher if you would eat crisps made from real crickets.",
       "goal": "Tell your teacher if you'd try them, and why or why not.",
       "starters": [
         "No way! I...",
@@ -8189,7 +8189,7 @@
       "constraint": "Student says what they'd do with 'I'd' and predicts what could happen with 'If..., ...' or 'maybe'."
     },
     "student": {
-      "prompt": "😴 You're on a school trip, sharing a room with a friend. At 2am, your friend talks in their sleep — very clearly. They say: \"I really like...\" and then the name of someone in your class! In the morning, your friend doesn't remember anything. What do you do?",
+      "prompt": "On a school trip, your friend says in their sleep who they really like. Tell your teacher what you would do in the morning.",
       "goal": "Decide what to do with what you heard — and what happens next.",
       "starters": [
         "I wouldn't say anything, because...",
@@ -8209,7 +8209,7 @@
       "constraint": "Student describes feelings and sounds with adjectives and says what they'd do with 'I'd' or 'Can I...?'."
     },
     "student": {
-      "prompt": "🎙️ Your class made a video project, and you're the voice in it. When you hear the video, you hate your voice. It doesn't sound like you! Your friends say: \"That's how you always sound.\" The teacher wants to show the video to parents on Friday. What do you do?",
+      "prompt": "You hate how your voice sounds in a class video that parents are going to watch. Tell your teacher what you would do.",
       "goal": "Decide what to do about the video, and explain how it feels to hear your own voice.",
       "starters": [
         "It sounds so strange, like...",
@@ -8229,7 +8229,7 @@
       "constraint": "Student says what they'd do with 'I'd' and describes feelings with 'I feel' plus an adjective."
     },
     "student": {
-      "prompt": "📸 The new class photo is on the school website. Everyone looks great, except you. Your eyes are closed and your mouth is open! What do you do?",
+      "prompt": "In the class photo on the school website, your eyes are closed and your mouth is open. Tell your teacher what you would do.",
       "goal": "Decide what to do about the photo, and tell your teacher how you feel.",
       "starters": [
         "The first thing I'd do is...",
@@ -8249,7 +8249,7 @@
       "constraint": "Student tells the story in the present simple and says what they'd do with 'I'd'."
     },
     "student": {
-      "prompt": "📱 You find a phone on the bus. Suddenly, it rings. The screen says: \"MUM\". Do you answer? What happens next?",
+      "prompt": "You find a phone on the bus, and it starts ringing. The screen says \"MUM\". Tell your teacher what you would do.",
       "goal": "Decide what you do, and build the story with your teacher.",
       "starters": [
         "I'd answer and say...",
@@ -8269,7 +8269,7 @@
       "constraint": "Student tells a story in the present simple using 'first', 'then' and 'next'."
     },
     "student": {
-      "prompt": "💬 You write a message about your birthday party: \"Only 5 people, don't tell anyone!\" But you send it to the class group chat — 28 people! What happens next?",
+      "prompt": "By mistake, you send a secret party message to the whole class group chat. Tell your teacher what happens next.",
       "goal": "Tell the story of what happens next, and how you try to fix it.",
       "starters": [
         "Oh no! First, I...",
@@ -8289,7 +8289,7 @@
       "constraint": "Student explains behaviour using 'might' or 'could' and suggests solutions with 'should'."
     },
     "student": {
-      "prompt": "🐙 An aquarium has a problem: at night, its octopus escapes from its tank, crosses the floor and eats fish from other tanks — then goes back before morning. Why might it do this, and what should the aquarium do?",
+      "prompt": "An aquarium octopus keeps escaping from its tank at night. Explain why you think it does it.",
       "goal": "Explain why the octopus might be doing this, and suggest what the aquarium should do.",
       "starters": [
         "It might be bored, because...",
@@ -8309,7 +8309,7 @@
       "constraint": "Student defines a criterion, compares using comparatives and superlatives, and defends choices when criteria clash."
     },
     "student": {
-      "prompt": "🏛️ A museum is planning an exhibition called \"Animals That Changed Human History\". There's only space for THREE of these six: the dog, the horse, the cow, the sheep, the chicken and the cat. First decide what \"changed human history\" means. Then choose your three.",
+      "prompt": "Choose the three animals that changed human history most: the dog, horse, cow, sheep, chicken or cat. Explain your choice.",
       "goal": "Decide what 'changing history' means, then choose and defend your three.",
       "starters": [
         "For me, 'changing history' means...",
@@ -8329,7 +8329,7 @@
       "constraint": "Student compares imperfect options, weighs trade-offs using comparatives and conditionals, and justifies a decision."
     },
     "student": {
-      "prompt": "🐝 Your school has €1,000 for a nature project. Option 1: two beehives on the roof — students look after the bees and sell the honey. Option 2: turn part of the school field into a wildflower area for wild bees and other insects. You can choose one, or split the money. What do you do?",
+      "prompt": "Your school has €1,000 for either beehives on the roof or a wildflower area for wild bees. Tell your teacher how you would spend it.",
       "goal": "Decide how to use the money — and explain what you gave up.",
       "starters": [
         "The honey project is more exciting, but...",
@@ -8349,7 +8349,7 @@
       "constraint": "Student compares players using comparatives and explains consequences with 'if'."
     },
     "student": {
-      "prompt": "🏆 You're captain of your class team in a school gaming tournament. You need one more player: your best friend, who's OK at the game; a brilliant player nobody likes; or someone who practises a lot but panics under pressure. Who do you pick?",
+      "prompt": "You need one more player for your gaming team: your best friend, a brilliant player nobody likes, or a hard worker who panics. Tell your teacher who you would pick.",
       "goal": "Choose your player, and work out what to say to the people you didn't pick.",
       "starters": [
         "It's a hard choice, because...",
@@ -8369,7 +8369,7 @@
       "constraint": "Student explains a plan using 'could' or 'would' and predicts reactions ('He might...')."
     },
     "student": {
-      "prompt": "🤐 You finished a new game before your friends. One friend keeps asking: \"Just tell me the ending!\" Another says: \"If you spoil it in the group chat, I'll never forgive you!\" What do you do?",
+      "prompt": "One friend wants you to tell them the ending of a new game. Another friend will be furious if you spoil it. Tell your teacher what you would do.",
       "goal": "Find a way to keep both friends happy — if that's possible.",
       "starters": [
         "I could tell him privately, but...",
@@ -8389,7 +8389,7 @@
       "constraint": "Student gives opinions with 'I think' or 'It depends' and compares situations."
     },
     "student": {
-      "prompt": "🔞 All your friends play a game rated 16+. You're 12, and your parents say no because of the rating. Your friends talk about it every day. Do age ratings make sense?",
+      "prompt": "Your friends play a game rated 16+, but you're 12. Tell your teacher if age ratings make sense.",
       "goal": "Explain what you think about age ratings, and when they're useful.",
       "starters": [
         "Ratings are useful for...",
@@ -8409,7 +8409,7 @@
       "constraint": "Student speculates using 'might', 'could' or 'must' and explains a decision."
     },
     "student": {
-      "prompt": "📊 Yesterday, your test mark on the school website was 6/10. This morning it says 8/10. You didn't do anything. What do you think happened — and do you tell your teacher?",
+      "prompt": "Overnight, your test mark on the school website changed from 6/10 to 8/10. Tell your teacher what you think happened.",
       "goal": "Work out the most likely explanation, and decide what to do.",
       "starters": [
         "It might just be a mistake, because...",
@@ -8429,7 +8429,7 @@
       "constraint": "Student speculates with 'must', 'might' and 'could' and explains a decision."
     },
     "student": {
-      "prompt": "🎁 For a whole week, your older brother or sister has been really nice to you. They lent you their headphones, helped with your homework and even said \"good morning\". This NEVER happens! What's going on?",
+      "prompt": "Your older brother or sister has been really nice to you all week. Tell your teacher what you think is going on.",
       "goal": "Work out the most likely explanation — and decide how to react.",
       "starters": [
         "They must want something, like...",
@@ -8449,7 +8449,7 @@
       "constraint": "Student evaluates information using 'probably' or 'might' and explains how they'd check it."
     },
     "student": {
-      "prompt": "📲 A message is going around: \"School closed next week! Problem with the water!\" Everyone is sharing it, but there's nothing on the school website. Is it true? How could you find out?",
+      "prompt": "A message says school will close next week because of a water problem. Explain how you would find out if it's true.",
       "goal": "Decide how true the message is, and how you'd check.",
       "starters": [
         "I'd check who sent it first...",
@@ -8469,7 +8469,7 @@
       "constraint": "Student speculates about the past using 'might have' or 'must have' and tells a story in the past simple."
     },
     "student": {
-      "prompt": "📚 A library book is returned — 40 years late! Inside there's a note: \"Sorry. I had to leave in a hurry. — J.\" What's the story?",
+      "prompt": "A library book comes back 40 years late with a note: \"Sorry. I had to leave in a hurry. — J.\" Tell your teacher the story behind it.",
       "goal": "Work out the story behind the book, and who J might be.",
       "starters": [
         "Maybe J had to leave because...",
@@ -8489,7 +8489,7 @@
       "constraint": "Student compares AI and human friends using comparatives and gives conditions with 'if'."
     },
     "student": {
-      "prompt": "🤖 Your cousin talks to an AI chatbot every night. She says it's her best friend, because it always listens and never judges her. Her mum is worried. Should she be?",
+      "prompt": "Your cousin says an AI chatbot is her best friend. Tell your teacher if you think that's a problem.",
       "goal": "Decide if the AI friend is a problem, and what you'd say to your cousin.",
       "starters": [
         "I can see why she likes it, but...",
@@ -8509,7 +8509,7 @@
       "constraint": "Student describes consequences using 'could' or 'might' and gives opinions with 'should'."
     },
     "student": {
-      "prompt": "🎬 Someone makes a fake video of your maths teacher dancing badly. It looks completely real. It's all over the school, and everyone thinks it's hilarious. Is it just a joke?",
+      "prompt": "Someone made a realistic fake video of a teacher at your school dancing badly. Tell your teacher if you think it's just a joke.",
       "goal": "Decide if the video is harmless, and what should happen now.",
       "starters": [
         "It's funny, but...",
@@ -8529,7 +8529,7 @@
       "constraint": "Student predicts using 'will', 'might' or 'probably' and describes cause and effect."
     },
     "student": {
-      "prompt": "🛵 A new app in your town delivers anything in 10 minutes — snacks, games, batteries, anything. Everyone loves it. What will your town look like in five years?",
+      "prompt": "Imagine an app that delivers anything to your door in 10 minutes. Tell your teacher how it would change your town.",
       "goal": "Predict how the app will change your town — the good and the bad.",
       "starters": [
         "Small shops might...",
@@ -8549,7 +8549,7 @@
       "constraint": "Student uses the second conditional ('If school started later, I would...') and compares options."
     },
     "student": {
-      "prompt": "😴 Scientists say many teenagers' body clocks are different: they naturally feel sleepy later at night and want to wake up later in the morning. But school starts at 8:00. Should school start later for teenagers?",
+      "prompt": "Explain whether school should start later for teenagers.",
       "goal": "Decide if school should start later — and deal with the problems it would cause.",
       "starters": [
         "If school started at 10,...",
@@ -8569,7 +8569,7 @@
       "constraint": "Student makes suggestions with 'could' or 'should' and explains priorities using comparatives."
     },
     "student": {
-      "prompt": "🚽 Nobody likes the school toilets. They're dirty, there's never any soap, and the locks are broken. Some students don't use them all day. The head teacher asks your class for ideas — but there's very little money. What do you suggest?",
+      "prompt": "Tell your teacher how you would fix the school toilets with very little money.",
       "goal": "Suggest realistic ways to fix the toilets without much money.",
       "starters": [
         "The cheapest thing to do is...",
@@ -8589,7 +8589,7 @@
       "constraint": "Student explains behaviour with 'might', 'could' or 'probably', predicts with 'will' and 'going to', and compares with other situations."
     },
     "student": {
-      "prompt": "🧍 Outside a small shop in your town, about 30 people are standing in a long queue. You ask three of them what they're waiting for. Nobody knows! One says: \"I don't know — but if everyone's waiting, it must be good.\" More people keep joining. Do you join the queue? And what do you think will happen next?",
+      "prompt": "Thirty people are queueing outside a shop, but nobody knows what for. Tell your teacher if you would join the queue.",
       "goal": "Explain why people are joining, decide what you'd do, and predict how it ends.",
       "starters": [
         "I'd probably join, just in case...",
@@ -8609,7 +8609,7 @@
       "constraint": "Student compares explanations with comparatives, speculates with 'might' or 'could', and describes a test."
     },
     "student": {
-      "prompt": "🤭 Try to tickle yourself. Now imagine someone else doing it. Why is it so different? Here are two ideas: A) \"Your brain knows exactly what your own hand will do.\" B) \"Tickling only works when you're surprised.\" Which explanation is better? How could you test it?",
+      "prompt": "Explain why you can't tickle yourself. Is it A) your brain knows what your hand will do, or B) tickling only works when you're surprised?",
       "goal": "Choose the better explanation, and design a quick test.",
       "starters": [
         "When I try it, I feel...",
@@ -8629,7 +8629,7 @@
       "constraint": "Student narrates events and explains choices using 'would' and 'because'."
     },
     "student": {
-      "prompt": "🎤 You find out that a quiet girl in your class is secretly a singer online, with thousands of fans. Nobody at school knows. She asks you: \"Please don't tell anyone.\" Then your class needs someone to sing at the school show...",
+      "prompt": "You find out a quiet classmate is secretly a popular singer online, and she asks you not to tell anyone. Tell your teacher what you would do.",
       "goal": "Decide what you do with the secret, and tell the story of what happens.",
       "starters": [
         "I'd keep it secret, even if...",
@@ -8649,7 +8649,7 @@
       "constraint": "Student narrates and predicts consequences with 'will' or 'might'."
     },
     "student": {
-      "prompt": "🤥 On his first day at a new club, a boy says: \"I've been to Japan.\" It isn't true. Everyone is impressed and asks more questions. What happens next?",
+      "prompt": "A boy tells everyone at his new club, \"I've been to Japan,\" but it isn't true. Tell your teacher what happens next.",
       "goal": "Build the story — and decide how it ends.",
       "starters": [
         "He probably thinks...",
@@ -8669,7 +8669,7 @@
       "constraint": "Student explains and compares past and present using comparatives and 'used to'."
     },
     "student": {
-      "prompt": "⏳ A student wrote a letter 25 years ago: \"Is life better in the future? Tell me the truth — and explain it so I understand. I've never used a smartphone.\" Answer them out loud.",
+      "prompt": "A student from 25 years ago asks you: \"Is life better in the future?\" Answer them and explain what your life is like today.",
       "goal": "Explain your life today to someone from 25 years ago — honestly, good and bad.",
       "starters": [
         "You won't believe this, but...",
@@ -8689,7 +8689,7 @@
       "constraint": "Student challenges a definition, draws distinctions between cases and responds to a counterargument."
     },
     "student": {
-      "prompt": "🐘 An elephant has lived alone in a city zoo for many years. Campaigners go to court. They argue she's so intelligent and social that the law should treat her as a 'person', with a right to leave the zoo. Should animals ever have rights like people?",
+      "prompt": "Tell your teacher if a very intelligent animal, like an elephant, should ever have the same rights as a person.",
       "goal": "Decide whether some animals should have legal rights — and where you'd draw the line.",
       "starters": [
         "Calling an elephant a 'person' sounds strange, but...",
@@ -8709,7 +8709,7 @@
       "constraint": "Student evaluates evidence, uses hedging ('It's possible that...', 'This doesn't prove...') and proposes a fair test."
     },
     "student": {
-      "prompt": "🐕 In viral videos, dogs press buttons that say words like \"outside\", \"play\" and \"love you\". Some owners say their dogs are having real conversations. Others say we're seeing what we want to see. What do you think is really going on — and how could anyone find out?",
+      "prompt": "Some dogs press talking buttons that say words like \"outside\" and \"play\". Explain what you think the dogs really understand.",
       "goal": "Weigh up what these videos really show — and how sure anyone can be.",
       "starters": [
         "The videos are convincing, but...",
@@ -8729,7 +8729,7 @@
       "constraint": "Student weighs options, uses conditionals and addresses opposing views."
     },
     "student": {
-      "prompt": "🦌 A forest has too many deer. They eat all the young trees, so the forest can't grow back. The options: allow hunting, give the deer birth control, or bring back wolves. Every option has people who hate it. What's the least bad choice?",
+      "prompt": "A forest has too many deer. Tell your teacher which is the least bad solution: hunting, birth control or bringing back wolves.",
       "goal": "Choose the least bad option and defend it to the people who'll be angry.",
       "starters": [
         "None of these is perfect, but...",
@@ -8749,7 +8749,7 @@
       "constraint": "Student defines terms, draws comparisons and defends a position against a counterexample."
     },
     "student": {
-      "prompt": "🎁 In many games you can pay for a 'loot box' — you don't know what's inside until you open it. Some countries have treated some loot boxes as a kind of gambling. Are they gambling, or just a fun surprise?",
+      "prompt": "Tell your teacher if you think paying for loot boxes in games is a kind of gambling.",
       "goal": "Decide whether loot boxes are gambling, and what — if anything — should change.",
       "starters": [
         "It's not gambling if...",
@@ -8769,7 +8769,7 @@
       "constraint": "Student evaluates fairness, proposes alternatives and responds to new evidence."
     },
     "student": {
-      "prompt": "⛔ Your friend's gaming account has been banned forever. He made one joke in the chat, and someone reported it as an insult. He's lost years of progress. Was the punishment fair?",
+      "prompt": "Your friend's gaming account was banned forever because of one joke in the chat. Tell your teacher if that's fair.",
       "goal": "Judge whether the ban was fair, and design a better system.",
       "starters": [
         "Context matters, because...",
@@ -8789,7 +8789,7 @@
       "constraint": "Student weighs perspectives, uses conditionals to consider future consequences and justifies a position."
     },
     "student": {
-      "prompt": "📹 A dad streams his 11-year-old son playing games. Thousands of people watch, and the family earns good money. The son says he enjoys it. Is there a problem — and if so, whose decision should it be?",
+      "prompt": "A dad streams his 11-year-old son playing games and earns money from it. Tell your teacher if you think that's a problem.",
       "goal": "Decide whether there's a problem, and who should protect a child's choices online.",
       "starters": [
         "He enjoys it now, but...",
@@ -8809,7 +8809,7 @@
       "constraint": "Student challenges an assumption and defends a definition with justification."
     },
     "student": {
-      "prompt": "💎 A rare game skin is worth €1,000 on trading sites. Your friend borrowed yours for a tournament, then traded it away by mistake. He says: \"It's not real — it's just pixels.\" Is he right?",
+      "prompt": "Your friend lost your €1,000 game skin and says, \"It's just pixels.\" Tell your teacher if he's right.",
       "goal": "Decide whether virtual items are real property — and what your friend owes you.",
       "starters": [
         "It's 'just pixels' until...",
@@ -8829,7 +8829,7 @@
       "constraint": "Student speculates about causes using modals and evaluates the reliability of evidence."
     },
     "student": {
-      "prompt": "👀 There was a fight in the corridor, and three students saw it. One says it started with a push. One says it started with an insult. One says it was a joke that went wrong. They all seem honest. How is that possible?",
+      "prompt": "Three honest students saw the same fight in the corridor, but they tell three different stories. Explain how that's possible.",
       "goal": "Explain how honest people can remember the same event differently — and decide what probably happened.",
       "starters": [
         "They're probably not lying; they just...",
@@ -8849,7 +8849,7 @@
       "constraint": "Student evaluates evidence, avoids premature conclusions and uses hedging modals."
     },
     "student": {
-      "prompt": "🗳️ During the student council election, one candidate's posters keep getting torn down — only hers. Everyone blames her rival. Is that fair?",
+      "prompt": "Someone keeps tearing down one candidate's election posters, and everyone blames her rival. Tell your teacher if that's fair.",
       "goal": "Work out what probably happened, without jumping to conclusions.",
       "starters": [
         "The obvious suspect isn't always...",
@@ -8869,7 +8869,7 @@
       "constraint": "Student evaluates competing explanations using hedging and modals."
     },
     "student": {
-      "prompt": "📱 You talked to a friend about skateboards — out loud, not online. The next day, your video app shows you skateboard videos. Coincidence? Is your phone listening?",
+      "prompt": "You talked about skateboards out loud, and the next day your app showed you skateboard videos. Explain what you think happened.",
       "goal": "Find the most convincing explanation — and decide how much it worries you.",
       "starters": [
         "There's probably a simpler explanation...",
@@ -8889,7 +8889,7 @@
       "constraint": "Student argues from a personal perspective, anticipates objections and proposes alternatives."
     },
     "student": {
-      "prompt": "📵 Some governments want to ban social media for everyone under 16. Supporters say it would protect young people's mental health. Critics say teenagers will just lie about their age. What do you think?",
+      "prompt": "Tell your teacher what you think about banning social media for everyone under 16.",
       "goal": "Take a position on the age limit, and deal with the strongest argument against you.",
       "starters": [
         "As someone under 16,...",
@@ -8909,7 +8909,7 @@
       "constraint": "Student ranks cases, draws distinctions using criteria and justifies a line with concession and conditionals."
     },
     "student": {
-      "prompt": "🗑️ Should the internet be able to 'forget' things? Rank these five imaginary cases, from 'should definitely be deletable' to 'should never be deleted': a silly video someone posted at 11; an unkind comment someone wrote about a classmate at 14; a local news report that someone was fined for shoplifting at 19; a now-famous YouTuber's cruel post from when they were 18; baby photos that someone's parents posted.",
+      "prompt": "Rank these from most to least deletable from the internet: a silly video posted at 11, an unkind comment written at 14, a news report of shoplifting at 19, a famous YouTuber's cruel post from age 18, and baby photos posted by parents.",
       "goal": "Rank the cases and explain where you'd draw the line — and why.",
       "starters": [
         "The difference between these is...",
@@ -8929,7 +8929,7 @@
       "constraint": "Student designs a system, justifies trade-offs with conditionals and concession, and responds to objections from the people affected."
     },
     "student": {
-      "prompt": "🛴 Your town is starting a rental e-scooter system, and you're on the design team. You decide the top speed, the minimum age, where people can ride and park, and the price. Safety, freedom, pedestrians and the company's profit all pull in different directions. What does your system look like?",
+      "prompt": "Tell your teacher what rules you would make for your town's new rental e-scooters.",
       "goal": "Design the system, explain what you gave up, and defend it to the people who'll complain.",
       "starters": [
         "The rule I'd refuse to compromise on is...",
@@ -8949,7 +8949,7 @@
       "constraint": "Student weighs ethics against outcomes and responds to new evidence."
     },
     "student": {
-      "prompt": "💊 A pill with nothing in it — just sugar — can sometimes make people feel better, if they believe it's real medicine. This is called the placebo effect. Should doctors ever give patients a placebo?",
+      "prompt": "Tell your teacher if doctors should ever give patients a sugar pill that only works because they believe it's medicine.",
       "goal": "Decide whether using placebos is helpful or dishonest, and defend your view.",
       "starters": [
         "If it works, does it matter...",
@@ -8969,7 +8969,7 @@
       "constraint": "Student distinguishes feelings from reasons and uses conditionals to consider situations."
     },
     "student": {
-      "prompt": "🧫 Doctors can treat some serious gut infections by transplanting poo from a healthy donor into a patient. It sounds disgusting — but it can work very well. Would you accept it? Should people be encouraged to donate, like blood?",
+      "prompt": "Tell your teacher what you think about using poo from a healthy person to treat someone who is ill.",
       "goal": "Decide whether disgust should matter when something works — and what you'd do.",
       "starters": [
         "Knowing it works, I'd...",
@@ -8989,7 +8989,7 @@
       "constraint": "Student defines a concept, draws a line between cases and justifies it."
     },
     "student": {
-      "prompt": "👃 Some shops pump special smells into the air — fresh bread, vanilla, 'new clothes' — because they hope smells will affect how we feel and what we buy. Is that clever marketing, or manipulation?",
+      "prompt": "Some shops fill the air with smells like fresh bread, hoping you'll buy more. Tell your teacher if that's clever or unfair.",
       "goal": "Decide where marketing ends and manipulation begins.",
       "starters": [
         "Every shop tries to...",
@@ -9009,7 +9009,7 @@
       "constraint": "Student interprets motives and evaluates choices using conditionals and hedging."
     },
     "student": {
-      "prompt": "💡 Your friend had the idea for your group project, but in class the teacher praises you for it. Everyone thinks it was yours. Your friend says: \"It's fine, don't worry.\" Is it fine?",
+      "prompt": "The teacher praised you for a project idea that was really your friend's, and your friend says, \"It's fine.\" Tell your teacher if it really is fine.",
       "goal": "Decide what you should do — and whether your friend really means 'It's fine'.",
       "starters": [
         "When people say 'it's fine', they...",
@@ -9029,7 +9029,7 @@
       "constraint": "Student narrates from a different perspective and reinterprets events."
     },
     "student": {
-      "prompt": "🔁 Your teacher is going to tell you about an argument between two friends — from one friend's point of view. Your job: retell it from the other friend's side. Does the story change?",
+      "prompt": "Your teacher will tell you about an argument between two friends from one side. Retell it from the other friend's side.",
       "goal": "Retell the story from the other side, and decide who was really in the wrong — if anyone.",
       "starters": [
         "From his point of view,...",
@@ -9049,7 +9049,7 @@
       "constraint": "Student interprets meaning and argues a position on ownership, responding to a counterargument."
     },
     "student": {
-      "prompt": "📺 A hugely popular series ends with the main character walking away from everyone and everything. Millions of fans hate it and sign a petition to change the ending. Should the writers change it?",
+      "prompt": "Millions of fans hate the ending of a popular series and want it changed. Tell your teacher if the writers should change it.",
       "goal": "Decide who a story belongs to — the people who make it, or the fans.",
       "starters": [
         "Fans made it popular, so...",
@@ -9069,7 +9069,7 @@
       "constraint": "Student weighs competing obligations, predicts consequences using conditionals and explains a decision."
     },
     "student": {
-      "prompt": "🤝 Your friend tells you a secret: after next month's big band competition, she's leaving to join a different band. She makes you promise not to tell anyone yet. Meanwhile, the others are planning next year's songs — and one of them is about to spend €300 on new equipment for the band. Do you keep the promise?",
+      "prompt": "Your friend makes you promise not to tell anyone she's leaving the band, but another member is about to spend €300 on band equipment. Tell your teacher if you would keep the promise.",
       "goal": "Decide whether to keep the promise, and how you'd explain your choice to your friend.",
       "starters": [
         "A promise is a promise, but...",
