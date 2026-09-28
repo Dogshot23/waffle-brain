@@ -120,7 +120,7 @@ const collectionParam = params.get('collection');
 const levelParam      = params.get('level');
 
 // Display names for Collection views (shown in the header).
-const COLLECTION_NAMES = { business: 'Business English' };
+const COLLECTION_NAMES = { business: 'Business English', kids: 'Kids' };
 
 // Header label + per-Collection styling hook (body[data-collection] in
 // style.css), set straight away so the page doesn't flash General first.

@@ -36,8 +36,8 @@ const waffleList         = document.getElementById('waffle-list');
 const COLLECTIONS = [
   { id: 'general',           name: 'General English',  icon: '🧇', locked: false, comingSoon: false },
   { id: 'business',           name: 'Business English',  locked: false, comingSoon: false },
+  { id: 'kids',               name: 'Kids',              locked: false, comingSoon: false },
   { id: 'ielts',              name: 'IELTS',             locked: true,  comingSoon: true },
-  { id: 'kids',               name: 'Kids',              locked: true,  comingSoon: true },
   { id: 'cambridge',          name: 'Cambridge',         locked: true,  comingSoon: true },
   { id: 'travel',             name: 'Travel',            locked: true,  comingSoon: true },
   { id: 'debate',             name: 'Debate',            locked: true,  comingSoon: true },
@@ -102,6 +102,31 @@ function applyCollectionLook(collection) {
   document.body.dataset.collection = collection.id;
 }
 
+// Category dropdown options for a Collection. Collections whose categories
+// are all in the default list in index.html (General, Business) keep that
+// list; a Collection with its own categories (Kids) gets those, in the
+// order they appear in waffles.json.
+const DEFAULT_CATEGORIES = [...categorySelect.options].map(o => o.value).filter(Boolean);
+
+function categoriesFor(collectionId) {
+  const own = WB.getCollectionCategories(collectionId);
+  return own.every(c => DEFAULT_CATEGORIES.includes(c)) ? DEFAULT_CATEGORIES : own;
+}
+
+function renderCategoryOptions(collectionId) {
+  const current = categorySelect.value;
+  const list = categoriesFor(collectionId);
+  categorySelect.innerHTML = '';
+  [['', 'All Categories'], ...list.map(c => [c, c])].forEach(([value, label]) => {
+    const opt = document.createElement('option');
+    opt.value = value;
+    opt.textContent = label;
+    categorySelect.appendChild(opt);
+  });
+  categorySelect.value = list.includes(current) ? current : '';
+  categorySelect.classList.toggle('filtered', categorySelect.value !== '');
+}
+
 function selectCollection(id, { resetDraw = true } = {}) {
   const collection = COLLECTIONS.find(c => c.id === id);
   if (!collection || collection.locked) return;
@@ -110,6 +135,7 @@ function selectCollection(id, { resetDraw = true } = {}) {
   waffleTriggerIcon.textContent = collection.icon || '🧇';
   waffleTriggerLabel.textContent = collection.name;
   applyCollectionLook(collection);
+  renderCategoryOptions(id);
   closeWaffleList();
   renderCollectionList();
 
@@ -293,7 +319,7 @@ function loadTeacherState() {
     const s = JSON.parse(sessionStorage.getItem(STATE_KEY));
     if (!s || !LEVELS.includes(s.level)) return null;
     const collection = COLLECTIONS.find(c => c.id === s.collection && !c.locked);
-    const categoryOk = [...categorySelect.options].some(o => o.value === s.category);
+    const categoryOk = s.category === '' || (collection && categoriesFor(collection.id).includes(s.category));
     if (!collection || !categoryOk || !Array.isArray(s.history) || !s.history.length) return null;
     const allValid = s.history.every(h => {
       const w = h && WB.getById(h.id);

@@ -45,6 +45,11 @@ array with one record per Waffle:
   sentence) and `student.starters` (exactly 3 sentence stems), shown on the
   Student page. General English records have neither — do not invent Goals,
   Starters or titles for them unless asked.
+- Kids records (551–610, `collection: "kids"`) use their own categories
+  (Weird Creatures, Gaming, Mysteries, Future Tech, Weird & Gross, Stories)
+  and have `student.goal` + `student.starters`. Their `teacher.prompt` holds
+  the scene plus `Ask:` / `Teacher:` / `Quick:` / `Stuck:` sections. The
+  Teacher category dropdown follows the selected Collection's categories.
 
 ### Permanent IDs — rules
 
