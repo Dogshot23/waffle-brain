@@ -113,6 +113,33 @@ body[data-collection="business"]:not(.student) {
   --flash-ring:    var(--teacher-flash-ring);
 }
 
+/* Kids (body[data-collection="kids"]): same WaffleBrain, a little
+   brighter and friendlier. A soft, slightly cooler page with a faint
+   repeating pattern of line doodles, one per Kids category (controller,
+   chip, magnifying glass, paw print, flask, speech bubble), and a brighter
+   version of each page's accent (bright indigo for Teacher, coral-orange
+   for Student; white-text contrast no lower than the default buttons).
+   Everything else is inherited unchanged. */
+body[data-collection="kids"] {
+  --bg: #F6F7FC;
+  --teacher-btn-bg:        #4263EB;
+  --teacher-btn-bg-hover:  #3A58D6;
+  --teacher-btn-bg-active: #3752C9;
+  --teacher-flash-ring:    rgba(66, 99, 235, 0.18);
+  --student-btn-bg:        #E0542F;
+  --student-btn-bg-hover:  #C94F28;
+  --student-btn-bg-active: #B8431E;
+  --student-flash-ring:    rgba(224, 84, 47, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='none' stroke='%234C5FD5' stroke-opacity='0.08' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='translate(18 20) rotate(-10)'%3E%3Crect x='0' y='3' width='24' height='13' rx='6.5'/%3E%3Cpath d='M6 7.5v5M3.5 10h5'/%3E%3Ccircle cx='16' cy='8.5' r='1'/%3E%3Ccircle cx='19' cy='11.5' r='1'/%3E%3C/g%3E%3Cg transform='translate(118 16) rotate(12)'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M12.5 12.5l6 6'/%3E%3C/g%3E%3Cg transform='translate(64 74) rotate(-6)'%3E%3Cpath d='M5 1h14a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4h-8l-5 4v-4H5a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4z'/%3E%3Cpath d='M7 7.5h10M7 10.5h6'/%3E%3C/g%3E%3Cg transform='translate(146 84) rotate(8)'%3E%3Cpath d='M8 1v7L2 19a2 2 0 0 0 1.8 3h14.4A2 2 0 0 0 20 19L14 8V1M6 1h10'/%3E%3Cpath d='M5 15h12'/%3E%3C/g%3E%3Cg transform='translate(22 128) rotate(14)'%3E%3Cellipse cx='11' cy='15' rx='5.5' ry='4.5'/%3E%3Ccircle cx='4' cy='8' r='2'/%3E%3Ccircle cx='9' cy='3.5' r='2'/%3E%3Ccircle cx='15' cy='3.5' r='2'/%3E%3Ccircle cx='20' cy='8' r='2'/%3E%3C/g%3E%3Cg transform='translate(104 132) rotate(-8)'%3E%3Crect x='4' y='4' width='14' height='14' rx='2.5'/%3E%3Cpath d='M8.5 4V1M13.5 4V1M8.5 21v-3M13.5 21v-3M4 8.5H1M4 13.5H1M21 8.5h-3M21 13.5h-3'/%3E%3C/g%3E%3Cpath d='M88 44v6M85 47h6'/%3E%3Cpath d='M168 40v5M165.5 42.5h5'/%3E%3Cpath d='M60 160v5M57.5 162.5h5'/%3E%3Ccircle cx='160' cy='162' r='1.5'/%3E%3Ccircle cx='44' cy='58' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+body[data-collection="kids"]:not(.student) {
+  --btn-bg:        var(--teacher-btn-bg);
+  --btn-bg-hover:  var(--teacher-btn-bg-hover);
+  --btn-bg-active: var(--teacher-btn-bg-active);
+  --flash-ring:    var(--teacher-flash-ring);
+}
+
 
 /* ── 3. Shared layout ─────────────────────────────────────── */
 
@@ -624,6 +651,11 @@ footer kbd {
 /* Same chevron in the Business accent */
 body[data-collection="business"] #category-select.filtered {
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%2334507E' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+/* Same chevron in the Kids accent */
+body[data-collection="kids"] #category-select.filtered {
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%234263EB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
 /* Teacher prompt text sizing */
