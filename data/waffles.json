@@ -9078,5 +9078,525 @@
       ],
       "constraint": "Student weighs competing obligations, predicts consequences using conditionals and explains a decision."
     }
+  },
+  {
+    "id": 611,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Simple Roleplay",
+    "teacher": {
+      "prompt": "Play the visitor: you arrive at the student's reception desk for a 10:00 meeting with Anna, but Anna isn't in today. Let the student help you. Then ask: what's the most common question visitors ask at their work?",
+      "constraint": "Polite offers; Can I...? / Would you like...?"
+    },
+    "student": {
+      "prompt": "You work at reception. A visitor arrives for a 10:00 meeting with Anna, but Anna isn't in today. Help the visitor.",
+      "goal": "Help a visitor when their contact isn't there.",
+      "starters": [
+        "I'm sorry, but Anna...",
+        "Would you like to...?",
+        "Can I take your..."
+      ],
+      "constraint": "Polite offers; Can I...? / Would you like...?"
+    }
+  },
+  {
+    "id": 612,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Simple Roleplay",
+    "teacher": {
+      "prompt": "Play the customer: you ordered something two weeks ago and it still hasn't arrived. Call the student and be a little annoyed. Then ask: what makes a phone call with a company good or bad?",
+      "constraint": "Apologising; simple questions; will for promises."
+    },
+    "student": {
+      "prompt": "A customer calls you. They ordered something two weeks ago, and it still hasn't arrived. Answer the phone and help them.",
+      "goal": "Help an unhappy customer on the phone.",
+      "starters": [
+        "I'm really sorry about...",
+        "Can you tell me your...?",
+        "I will check and..."
+      ],
+      "constraint": "Apologising; simple questions; will for promises."
+    }
+  },
+  {
+    "id": 613,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Simple Roleplay",
+    "teacher": {
+      "prompt": "Play the colleague: ask the student to swap their day off with you next week. They already have plans. Push a little. Then ask: is it easy for them to say no at work?",
+      "constraint": "Saying no politely; I'm sorry, but... / What about...?"
+    },
+    "student": {
+      "prompt": "A colleague asks you to swap your day off with them next week. You already have plans. Answer them.",
+      "goal": "Say no to a colleague in a friendly way.",
+      "starters": [
+        "I'd like to help, but...",
+        "What about...?",
+        "Maybe next time I can..."
+      ],
+      "constraint": "Saying no politely; I'm sorry, but... / What about...?"
+    }
+  },
+  {
+    "id": 614,
+    "collection": "business",
+    "level": "B1",
+    "category": "Simple Roleplay",
+    "teacher": {
+      "prompt": "Play the manager: it's Wednesday, you want the student's report by Friday, but they've just been given another urgent job. Let them ask you for more time — agree only if they offer something. Then ask: how do people ask for more time in their workplace?",
+      "constraint": "Polite requests; Would it be possible...? / Could I...?"
+    },
+    "student": {
+      "prompt": "It's Wednesday. Your manager wants a report from you by Friday, but you've just been given another urgent job. Go and talk to your manager.",
+      "goal": "Ask your manager for more time.",
+      "starters": [
+        "Have you got a minute? I wanted to...",
+        "Would it be possible to...?",
+        "I could finish it by... if..."
+      ],
+      "constraint": "Polite requests; Would it be possible...? / Could I...?"
+    }
+  },
+  {
+    "id": 615,
+    "collection": "business",
+    "level": "B1",
+    "category": "Simple Roleplay",
+    "teacher": {
+      "prompt": "Play the customer: you want a refund for a jacket, but you've lost the receipt and you've clearly worn it. Be friendly but firm. Then ask: should shops bend the rules for good customers?",
+      "constraint": "Explaining rules politely; normally / what I can do is..."
+    },
+    "student": {
+      "prompt": "You work in a clothes shop. A customer wants a refund for a jacket, but they've lost the receipt and it looks like they've worn it. Deal with the customer.",
+      "goal": "Handle a difficult refund request.",
+      "starters": [
+        "I understand, but normally we...",
+        "What I can do is...",
+        "Do you have any other proof that...?"
+      ],
+      "constraint": "Explaining rules politely; normally / what I can do is..."
+    }
+  },
+  {
+    "id": 616,
+    "collection": "business",
+    "level": "B1",
+    "category": "Simple Roleplay",
+    "teacher": {
+      "prompt": "Play a stranger at a work event: you work for a company the student would love to work with. Let them start the conversation; answer briefly so they have to keep it going. Then ask: do they enjoy events like this, or avoid them?",
+      "constraint": "Small talk; forming questions; showing interest."
+    },
+    "student": {
+      "prompt": "At a work event, you're standing next to someone you don't know. You find out they work for a company you'd really like to work with. Start a conversation.",
+      "goal": "Start a conversation with a useful new contact.",
+      "starters": [
+        "Hi, I don't think we've met...",
+        "So, what brings you here?",
+        "I've heard your company..."
+      ],
+      "constraint": "Small talk; forming questions; showing interest."
+    }
+  },
+  {
+    "id": 617,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Simple Roleplay",
+    "teacher": {
+      "prompt": "Play the client: a competitor has offered you the same service for 15% less, and you want the student to match it today. Don't accept the first offer. Then ask: when is it better to lose a client than cut the price?",
+      "constraint": "Negotiating; conditional offers (if you..., we could...); as long as."
+    },
+    "student": {
+      "prompt": "A long-term client tells you a competitor has offered them the same service for 15% less. They want you to match the price — today. Respond to the client.",
+      "goal": "Keep the client without giving everything away.",
+      "starters": [
+        "I appreciate you telling us...",
+        "Before we talk about price...",
+        "What we could do is..., as long as..."
+      ],
+      "constraint": "Negotiating; conditional offers (if you..., we could...); as long as."
+    }
+  },
+  {
+    "id": 618,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Simple Roleplay",
+    "teacher": {
+      "prompt": "Play the colleague: in front of senior managers, you presented the student's idea as your own. Now you walk up and say, 'Great meeting, wasn't it?' Get a bit defensive if pushed. Then ask: would they have said something in the meeting itself?",
+      "constraint": "Being assertive but diplomatic; softening a complaint."
+    },
+    "student": {
+      "prompt": "In a meeting with senior managers, a colleague presents your idea as their own. Afterwards, they walk up to you and say, 'Great meeting, wasn't it?' Reply to them.",
+      "goal": "Deal with a colleague who took credit for your idea.",
+      "starters": [
+        "Actually, I wanted to mention...",
+        "I was a bit surprised when...",
+        "In future, I'd appreciate it if..."
+      ],
+      "constraint": "Being assertive but diplomatic; softening a complaint."
+    }
+  },
+  {
+    "id": 619,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Simple Roleplay",
+    "teacher": {
+      "prompt": "Play the team member: you're popular and friendly with the student, but your work has slipped over the last two months. The student manages you and has asked for a quick chat. Be a little surprised. Then ask: is it harder to give feedback to someone you like?",
+      "constraint": "Giving difficult feedback; softening language; open questions."
+    },
+    "student": {
+      "prompt": "You manage a friendly, popular team member. Their work has slipped over the last two months, and you've asked them for a quick chat. Start the conversation.",
+      "goal": "Raise a problem without damaging the relationship.",
+      "starters": [
+        "I wanted to check in, because I've noticed...",
+        "Is there anything going on that...?",
+        "What would help you to...?"
+      ],
+      "constraint": "Giving difficult feedback; softening language; open questions."
+    }
+  },
+  {
+    "id": 620,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "Ask the student to describe one thing they use every day at work or school — a phone, an app, a machine, a tool. Then ask: if it broke tomorrow, what would happen?",
+      "constraint": "Describing objects; use it to / it's good for / it's easy to."
+    },
+    "student": {
+      "prompt": "Think of one thing you use every day at work or school — a phone, an app, a machine or a tool. Describe it to your teacher.",
+      "goal": "Describe something you use every day.",
+      "starters": [
+        "I use it to...",
+        "It's good because...",
+        "The bad thing is..."
+      ],
+      "constraint": "Describing objects; use it to / it's good for / it's easy to."
+    }
+  },
+  {
+    "id": 621,
+    "collection": "business",
+    "level": "B1",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "Ask the student to describe someone at work who makes their job easier — a colleague, a manager, someone in IT or at reception. Then ask: does that person get enough credit for what they do?",
+      "constraint": "Describing people; relative clauses (who / that); the kind of person who."
+    },
+    "student": {
+      "prompt": "Think of someone at work who makes your job easier. Describe them and explain why they are so useful.",
+      "goal": "Describe someone at work who makes your job easier.",
+      "starters": [
+        "Someone who really helps me is...",
+        "They are the kind of person who...",
+        "Without them, ..."
+      ],
+      "constraint": "Describing people; relative clauses (who / that); the kind of person who."
+    }
+  },
+  {
+    "id": 622,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "Ask the student to describe a product or service they pay for that is clearly better than its competitors. Then ask: could a competitor copy that easily, or not?",
+      "constraint": "Comparing; describing features and benefits."
+    },
+    "student": {
+      "prompt": "Think of a product or service you pay for that is clearly better than its competitors. Describe what they've got right.",
+      "goal": "Describe what makes a product stand out.",
+      "starters": [
+        "What they've got right is...",
+        "Compared to..., it...",
+        "The detail most people don't notice is..."
+      ],
+      "constraint": "Comparing; describing features and benefits."
+    }
+  },
+  {
+    "id": 623,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "Ask the student to describe a process at work — approvals, expenses, booking travel, getting IT help — that takes far longer than it should. Then ask: why do they think nobody has fixed it?",
+      "constraint": "Describing processes; sequencing; passives (it has to be approved by...)."
+    },
+    "student": {
+      "prompt": "Think of a process at work — approvals, expenses, booking travel, getting IT help — that takes far longer than it should. Describe it.",
+      "goal": "Describe a slow process and what it says about the organisation.",
+      "starters": [
+        "First you have to..., and then...",
+        "The ridiculous part is...",
+        "I suspect it exists because..."
+      ],
+      "constraint": "Describing processes; sequencing; passives (it has to be approved by...)."
+    }
+  },
+  {
+    "id": 624,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "Ask the student to describe the most persuasive person they've worked with. Then ask: have they tried to copy that person, and did it work?",
+      "constraint": "Describing behaviour; would / used to for past habits."
+    },
+    "student": {
+      "prompt": "Think of the most persuasive person you've worked with. Describe what they did that other people didn't.",
+      "goal": "Describe what makes someone persuasive.",
+      "starters": [
+        "What set them apart was...",
+        "They would always..., but never...",
+        "I've tried to copy the way they..."
+      ],
+      "constraint": "Describing behaviour; would / used to for past habits."
+    }
+  },
+  {
+    "id": 625,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Choose and Create",
+    "teacher": {
+      "prompt": "Tell the student there's an empty space in their office building. They can open one small business there: a café, a shop or a service. Ask what they'd open. Then ask: how much would things cost?",
+      "constraint": "Would for imagined plans; because."
+    },
+    "student": {
+      "prompt": "There's an empty space in your office building. You can open one small business there — a café, a shop or a service. What do you open?",
+      "goal": "Choose a small business for your building.",
+      "starters": [
+        "I would open a...",
+        "People would come because...",
+        "It would open at..."
+      ],
+      "constraint": "Would for imagined plans; because."
+    }
+  },
+  {
+    "id": 626,
+    "collection": "business",
+    "level": "B1",
+    "category": "Choose and Create",
+    "teacher": {
+      "prompt": "A small bakery near the student's office is losing customers to a big coffee chain. The owner asks for one idea to win them back. Ask for the student's idea. Then ask: what can small businesses do that big chains can't?",
+      "constraint": "Making suggestions; could / why don't they...? / if."
+    },
+    "student": {
+      "prompt": "A small bakery near your office is losing customers to a big coffee chain. The owner asks you for one idea to win them back. What's your idea?",
+      "goal": "Come up with an idea to help a small business.",
+      "starters": [
+        "My idea is to...",
+        "People would come back if...",
+        "The big chain can't..."
+      ],
+      "constraint": "Making suggestions; could / why don't they...? / if."
+    }
+  },
+  {
+    "id": 627,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Choose and Create",
+    "teacher": {
+      "prompt": "The student gets €10,000 and six months to start a side business with a colleague. Ask what they'd build. Then ask: which colleague would they choose, and why them?",
+      "constraint": "Presenting and justifying a plan; would / could / the risk is."
+    },
+    "student": {
+      "prompt": "You get €10,000 and six months to start a side business with a colleague. What would you build?",
+      "goal": "Create a small business idea and defend it.",
+      "starters": [
+        "The gap in the market is...",
+        "Our first customers would be...",
+        "The biggest risk is..."
+      ],
+      "constraint": "Presenting and justifying a plan; would / could / the risk is."
+    }
+  },
+  {
+    "id": 628,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Explain and Show",
+    "teacher": {
+      "prompt": "A visitor is coming to see the student at work (or school). Ask the student to explain how to get from the front door to their desk. Then ask: what does the visitor see on the way?",
+      "constraint": "Directions; imperatives; first / then / next to."
+    },
+    "student": {
+      "prompt": "A visitor is coming to see you at work or school. Explain how they get from the front door to your desk.",
+      "goal": "Give simple directions around your building.",
+      "starters": [
+        "First, go...",
+        "Then turn...",
+        "My desk is next to..."
+      ],
+      "constraint": "Directions; imperatives; first / then / next to."
+    }
+  },
+  {
+    "id": 629,
+    "collection": "business",
+    "level": "B1",
+    "category": "Explain and Show",
+    "teacher": {
+      "prompt": "Ask the student to explain how they decide what to do first when they have too much work. Then ask: does their system work, or do they just do the easiest thing first?",
+      "constraint": "Explaining a system; if / when / usually."
+    },
+    "student": {
+      "prompt": "You have too much work and not enough time. Explain how you decide what to do first.",
+      "goal": "Explain how you choose your priorities.",
+      "starters": [
+        "The first thing I do is...",
+        "If something is urgent, I...",
+        "Things that can wait usually..."
+      ],
+      "constraint": "Explaining a system; if / when / usually."
+    }
+  },
+  {
+    "id": 630,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Explain and Show",
+    "teacher": {
+      "prompt": "Ask the student to explain how a company they know actually makes money — a free app, a supermarket, an airline. Then ask: are customers aware of it, and should they be?",
+      "constraint": "Explaining cause and effect; which means / so / that's why."
+    },
+    "student": {
+      "prompt": "Choose a company you know — a free app, a supermarket, an airline. Explain where its money really comes from.",
+      "goal": "Explain a business model in plain words.",
+      "starters": [
+        "On the surface, they sell..., but...",
+        "The real money comes from...",
+        "Most customers don't realise that..."
+      ],
+      "constraint": "Explaining cause and effect; which means / so / that's why."
+    }
+  },
+  {
+    "id": 631,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Guided Stories",
+    "teacher": {
+      "prompt": "Start the story for the student: they arrive at work, the lift is broken, their computer won't start, and they have a meeting in ten minutes. Ask them to tell what happened next. Then ask: what's the worst morning they've had at work?",
+      "constraint": "Past simple; first / then / in the end."
+    },
+    "student": {
+      "prompt": "You arrive at work. The lift is broken, your computer won't start, and you have a meeting in ten minutes. Tell the story of what happened next.",
+      "goal": "Tell the story of a very bad morning at work.",
+      "starters": [
+        "First, I...",
+        "Then my colleague...",
+        "In the end, ..."
+      ],
+      "constraint": "Past simple; first / then / in the end."
+    }
+  },
+  {
+    "id": 632,
+    "collection": "business",
+    "level": "A1A2",
+    "category": "Guided Stories",
+    "teacher": {
+      "prompt": "Start the story: at the end of the day, the student finds a customer's bag in their shop or office. Inside there's a phone, a wallet and a birthday card. Ask them to tell what happened. Then ask: have they ever lost something important?",
+      "constraint": "Past simple; time words (then / the next day)."
+    },
+    "student": {
+      "prompt": "At the end of the day, you find a customer's bag in your shop or office. Inside there's a phone, a wallet and a birthday card. Tell the story of what happened.",
+      "goal": "Tell the story of the lost bag.",
+      "starters": [
+        "I opened the bag and saw...",
+        "I called...",
+        "The next day, the customer..."
+      ],
+      "constraint": "Past simple; time words (then / the next day)."
+    }
+  },
+  {
+    "id": 633,
+    "collection": "business",
+    "level": "B1",
+    "category": "Guided Stories",
+    "teacher": {
+      "prompt": "Start the story: the company's biggest client visits tomorrow. At 6pm, the student discovers the office is a mess, a key file won't open, and their boss is on a plane. Ask how they saved the day. Then ask: are they good in a crisis?",
+      "constraint": "Narrative tenses; past simple / past continuous."
+    },
+    "student": {
+      "prompt": "Your company's biggest client is visiting tomorrow. At 6pm, you discover the office is a mess, an important file won't open, and your boss is on a plane. Tell the story of how you saved the day.",
+      "goal": "Tell how you got everything ready in time.",
+      "starters": [
+        "The first thing I did was...",
+        "Luckily, ...",
+        "When the client arrived, ..."
+      ],
+      "constraint": "Narrative tenses; past simple / past continuous."
+    }
+  },
+  {
+    "id": 634,
+    "collection": "business",
+    "level": "B1",
+    "category": "Guided Stories",
+    "teacher": {
+      "prompt": "Start the story: the student presses 'Send' and immediately realises the message went to the wrong person. Let them decide what it said and who got it. Then ask: has anything like this ever happened at their work?",
+      "constraint": "Narrative tenses; as soon as / had already."
+    },
+    "student": {
+      "prompt": "You press 'Send' and immediately realise the message has gone to the wrong person. Tell the story — what did it say, and what happened next?",
+      "goal": "Tell the story of a message sent to the wrong person.",
+      "starters": [
+        "The message said...",
+        "As soon as I pressed 'Send', I...",
+        "By the end of the day, ..."
+      ],
+      "constraint": "Narrative tenses; as soon as / had already."
+    }
+  },
+  {
+    "id": 635,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Guided Stories",
+    "teacher": {
+      "prompt": "Start the story: a small company the student works for gets an order ten times bigger than usual, with a two-week deadline. Ask them to tell how it went. Then ask: should a small company ever say no to a huge order?",
+      "constraint": "Narrative; turned out to be; should have / could have."
+    },
+    "student": {
+      "prompt": "The small company you work for suddenly gets an order ten times bigger than usual — with a two-week deadline. Tell the story of what happened.",
+      "goal": "Tell the story of the order that changed everything.",
+      "starters": [
+        "At first, everyone was...",
+        "The real problem turned out to be...",
+        "Looking back, we should have..."
+      ],
+      "constraint": "Narrative; turned out to be; should have / could have."
+    }
+  },
+  {
+    "id": 636,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Guided Stories",
+    "teacher": {
+      "prompt": "Start the story: after six months of work on a project, a week before launch, a junior colleague spots a serious problem nobody else noticed. Ask the student to tell what happened next. Then ask: in their experience, do people listen when someone junior raises a problem?",
+      "constraint": "Narrative tenses; describing consequences; in hindsight / should have."
+    },
+    "student": {
+      "prompt": "Your team has spent six months on a project. A week before launch, a junior colleague spots a serious problem that nobody else noticed. Tell the story of what happened next.",
+      "goal": "Tell the story of a problem found just before launch.",
+      "starters": [
+        "At first, nobody wanted to hear it, because...",
+        "The decision we had to make was...",
+        "In hindsight, ..."
+      ],
+      "constraint": "Narrative tenses; describing consequences; in hindsight / should have."
+    }
   }
 ]
