@@ -7883,1201 +7883,1200 @@
     "id": 551,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Weird Creatures",
+    "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "A big spider is walking across the teacher's back and the class is giggling. Ask the student whether they'd tell her, and how.",
-      "constraint": "Student explains what they'd do and what might happen."
+      "prompt": "Ask where the best place in the student's town is for people their age, and what's missing for young people there.",
+      "constraint": "Student describes places and says what's missing."
     },
     "student": {
-      "prompt": "Imagine a huge spider walking across a teacher's back in class. Tell your teacher if you'd say something — and how.",
-      "goal": "Find out what your teacher would want you to do.",
+      "prompt": "Where's the best place in your town for people your age — and what's missing? Tell your teacher.",
+      "goal": "See what your teacher's town had for teenagers.",
       "starters": [
-        "I'd just whisper...",
-        "Everyone would laugh...",
-        "Would you want to know?"
+        "Everyone goes to...",
+        "There's nowhere to...",
+        "Where did you hang out?"
       ],
-      "constraint": "Student explains what they'd do and what might happen."
+      "constraint": "Student describes places and says what's missing."
     }
   },
   {
     "id": 552,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Weird Creatures",
+    "category": "Growing Up",
     "teacher": {
-      "prompt": "The student's cousin has a cat that's famous online. Ask what's fine to film — sleeping, costumes, waking it up, adverts — and what's unfair to the cat.",
-      "constraint": "Student gives opinions and explains where the line is."
+      "prompt": "Ask about something the student can do on their own now that felt like a big deal the first time — going out alone, cooking, travelling.",
+      "constraint": "Student tells a short story about a first time."
     },
     "student": {
-      "prompt": "Your cousin's cat is famous online! Talk to your teacher: sleeping videos, costumes, waking it up, adverts — which are OK?",
-      "goal": "Find out which videos your teacher thinks are unfair.",
+      "prompt": "What can you do on your own now that felt like a big deal the first time? Tell your teacher.",
+      "goal": "Hear about your teacher's first taste of freedom.",
       "starters": [
-        "Sleeping videos are fine...",
-        "Waking it up is mean...",
-        "Would you watch them?"
+        "The first time I...",
+        "I was so nervous!",
+        "Do you remember yours?"
       ],
-      "constraint": "Student gives opinions and explains where the line is."
+      "constraint": "Student tells a short story about a first time."
     }
   },
   {
     "id": 553,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Weird Creatures",
+    "category": "Friends & People",
     "teacher": {
-      "prompt": "The student's night photo shows shining eyes in the park, and school says it's a wolf. Ask what they think it really was.",
-      "constraint": "Student guesses and gives reasons."
+      "prompt": "Ask what makes the student and their friends laugh — memes, inside jokes, silly videos — and whether adults ever get it.",
+      "constraint": "Student explains humour and gives examples."
     },
     "student": {
-      "prompt": "Your night photo shows two shining eyes in the park. Everyone says \"Wolf!\" Tell your teacher what you think it was.",
-      "goal": "See what your teacher thinks the eyes were.",
+      "prompt": "What makes you and your friends laugh? Tell your teacher — and see if they get the joke!",
+      "goal": "See if your teacher gets your sense of humour.",
       "starters": [
-        "It's probably just a...",
-        "It can't be a wolf!",
-        "What do you think?"
+        "It's hard to explain, but...",
+        "We have this joke about...",
+        "What makes you laugh?"
       ],
-      "constraint": "Student guesses and gives reasons."
+      "constraint": "Student explains humour and gives examples."
     }
   },
   {
     "id": 554,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Gaming",
+    "category": "Online Life",
     "teacher": {
-      "prompt": "The student's friend always quits online games when they're losing, and now nobody wants to play with them. Ask what they'd say to their friend.",
-      "constraint": "Student gives friendly advice with reasons."
+      "prompt": "Ask which emojis the student uses most, and whether adults use any of them the \"wrong\" way.",
+      "constraint": "Student explains meanings and compares how people use things."
     },
     "student": {
-      "prompt": "Your friend always quits the game when they're losing. Tell your teacher what you'd say to them.",
-      "goal": "Find out what your teacher would say.",
+      "prompt": "Which emojis do you use most? Tell your teacher how adults use them differently.",
+      "goal": "Find out which emojis your teacher uses.",
       "starters": [
-        "I'd just say...",
-        "It's not fun when...",
-        "What would you say?"
+        "I always use the...",
+        "Adults use it to mean...",
+        "Which emoji do you use?"
       ],
-      "constraint": "Student gives friendly advice with reasons."
+      "constraint": "Student explains meanings and compares how people use things."
     }
   },
   {
     "id": 555,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Gaming",
+    "category": "Games & Entertainment",
     "teacher": {
-      "prompt": "The student's 8-year-old brother spent €40 in a game on Mum's card, thinking it wasn't real money. Ask what should happen now.",
-      "constraint": "Student says what should happen and why."
+      "prompt": "Ask the student to explain a game they're really good at — what you do, and the trick to winning.",
+      "constraint": "Student explains how something works, step by step."
     },
     "student": {
-      "prompt": "Your little brother spent €40 of Mum's money in a game. Talk to your teacher about what should happen now.",
-      "goal": "Find out if your teacher thinks he should pay.",
+      "prompt": "Explain to your teacher a game you're really good at. What's the trick to winning?",
+      "goal": "See if your teacher thinks they could play it.",
       "starters": [
-        "He's only 8...",
-        "Mum should...",
-        "Is it his fault?"
+        "First, you have to...",
+        "The trick is...",
+        "Do you want to try?"
       ],
-      "constraint": "Student says what should happen and why."
+      "constraint": "Student explains how something works, step by step."
     }
   },
   {
     "id": 556,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Gaming",
+    "category": "School",
     "teacher": {
-      "prompt": "The student's parents allow one hour of gaming on school days, but they want two. Ask what deal they'd offer their parents.",
-      "constraint": "Student makes offers and gives reasons."
+      "prompt": "Ask about a school rule that the student thinks makes no sense, and what they think the rule is really for.",
+      "constraint": "Student describes rules and gives simple opinions."
     },
     "student": {
-      "prompt": "Your parents say one hour of games on school days. You want two! Tell your teacher what deal you'd offer.",
-      "goal": "Find out what screen rules your teacher had as a kid.",
+      "prompt": "Tell your teacher about a rule at your school that makes no sense to you.",
+      "goal": "See if your teacher can guess why the rule exists.",
       "starters": [
-        "What if I...",
-        "I promise to...",
-        "Did you have rules like that?"
+        "We aren't allowed to...",
+        "It's silly because...",
+        "Did you have silly rules?"
       ],
-      "constraint": "Student makes offers and gives reasons."
+      "constraint": "Student describes rules and gives simple opinions."
     }
   },
   {
     "id": 557,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Gaming",
+    "category": "Games & Entertainment",
     "teacher": {
-      "prompt": "The student's online team starts being mean to a new player, and speaking up could get the student kicked out. Ask what they'd really do.",
-      "constraint": "Student says what they'd do and what might happen."
+      "prompt": "Ask about a song the student can't stop listening to right now, and whether older people would like it.",
+      "constraint": "Student describes music and gives opinions."
     },
     "student": {
-      "prompt": "Your team is mean to a new player. If you help him, they might kick you out. Tell your teacher what you'd do.",
-      "goal": "See what your teacher would do.",
+      "prompt": "Tell your teacher about a song you can't stop listening to. Would your teacher like it?",
+      "goal": "Hear what music your teacher loved at school.",
       "starters": [
-        "I don't want to lose...",
-        "Maybe I could message him...",
-        "Would you help him?"
+        "It's by...",
+        "The best part is...",
+        "What music do you like?"
       ],
-      "constraint": "Student says what they'd do and what might happen."
+      "constraint": "Student describes music and gives opinions."
     }
   },
   {
     "id": 558,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Mysteries",
+    "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "Someone leaves a drawing on the student's desk every Monday, and today it's a drawing of them. Ask who they think it is.",
-      "constraint": "Student guesses and explains their reasons."
+      "prompt": "Ask what adults in the student's life are surprisingly bad at — phones, games, slang, anything.",
+      "constraint": "Student describes other people's habits with humour."
     },
     "student": {
-      "prompt": "Every Monday, someone leaves a drawing on your desk. Today it's a drawing of you! Tell your teacher who you think it is.",
-      "goal": "Find out who your teacher thinks it is.",
+      "prompt": "What are adults in your family surprisingly bad at? Tell your teacher.",
+      "goal": "See if your teacher admits to being bad at it too.",
       "starters": [
-        "Maybe it's the quiet kid...",
-        "It's a bit creepy!",
-        "Who do you think?"
+        "My dad can't...",
+        "It's so funny when...",
+        "Are you good with phones?"
       ],
-      "constraint": "Student guesses and explains their reasons."
+      "constraint": "Student describes other people's habits with humour."
     }
   },
   {
     "id": 559,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Mysteries",
+    "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "Alex says Jo broke his phone screen; Jo says Alex sat on it. Ask who the student believes, and why.",
-      "constraint": "Student gives an opinion and supports it with reasons."
+      "prompt": "Ask about words or phrases everyone at the student's school is saying right now, and what they actually mean.",
+      "constraint": "Student explains meanings and gives examples."
     },
     "student": {
-      "prompt": "Alex says Jo broke his phone. Jo says Alex sat on it! Ask your teacher who they believe.",
-      "goal": "Find out if you and your teacher agree.",
+      "prompt": "What words or phrases does everyone at your school say right now? Teach your teacher one!",
+      "goal": "See if your teacher can use it the right way.",
       "starters": [
-        "I believe Jo...",
-        "Sitting on a phone? Really?",
-        "Who do you believe?"
+        "Everyone says...",
+        "It means something like...",
+        "Can you say it?"
       ],
-      "constraint": "Student gives an opinion and supports it with reasons."
+      "constraint": "Student explains meanings and gives examples."
     }
   },
   {
     "id": 560,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Mysteries",
+    "category": "Friends & People",
     "teacher": {
-      "prompt": "The teacher suddenly moves the student next to someone they don't know well, without saying why. Ask why they think it happened.",
-      "constraint": "Student suggests possible reasons."
+      "prompt": "Ask about something the student's family always does that other families might find unusual — a tradition, a habit, a rule.",
+      "constraint": "Student describes routines and compares families."
     },
     "student": {
-      "prompt": "At school, you suddenly have a new seat next to someone you don't know. Nobody says why! Tell your teacher what you think.",
-      "goal": "Find out if this ever happened to your teacher.",
+      "prompt": "Tell your teacher about something your family always does that other families might find unusual.",
+      "goal": "Hear about your teacher's family traditions.",
       "starters": [
-        "Maybe I talk too much...",
-        "It could be fun...",
-        "Did that happen to you?"
+        "Every Sunday, we...",
+        "My friends think it's weird...",
+        "What does your family do?"
       ],
-      "constraint": "Student suggests possible reasons."
+      "constraint": "Student describes routines and compares families."
     }
   },
   {
     "id": 561,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Mysteries",
+    "category": "Friends & People",
     "teacher": {
-      "prompt": "A friendly woman in town greets the student by name and asks about their grandma's dog. They don't recognise her. Ask what they'd say.",
-      "constraint": "Student says what they'd say and guesses who she is."
+      "prompt": "Ask what the student and their friends always talk about — or always argue about.",
+      "constraint": "Student describes friends and everyday conversations."
     },
     "student": {
-      "prompt": "A friendly woman says your name and asks about Grandma's dog. You don't know her! Tell your teacher what you'd say.",
-      "goal": "Find out if this has happened to your teacher.",
+      "prompt": "What do you and your friends always talk about — or argue about? Tell your teacher.",
+      "goal": "See if your teacher and their friends argued about the same things.",
       "starters": [
-        "Oh, hi! Um...",
-        "I'm really sorry, but...",
-        "Has that happened to you?"
+        "We always talk about...",
+        "We argue about...",
+        "What do your friends talk about?"
       ],
-      "constraint": "Student says what they'd say and guesses who she is."
+      "constraint": "Student describes friends and everyday conversations."
     }
   },
   {
     "id": 562,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Future Tech",
+    "category": "Growing Up",
     "teacher": {
-      "prompt": "The student's friend uses AI for all their homework and gets top marks, while the student gets average marks. Ask if that's fair.",
-      "constraint": "Student gives an opinion and supports it with reasons."
+      "prompt": "Ask about something the student has taught themselves — from videos, practice or just trying — and how they learned it.",
+      "constraint": "Student describes a skill and how they learned it."
     },
     "student": {
-      "prompt": "Your friend uses AI for all their homework and gets great marks. Ask your teacher if that's fair.",
-      "goal": "Find out what your teacher thinks about AI homework.",
+      "prompt": "What have you taught yourself, without a teacher? Tell your teacher how you learned it.",
+      "goal": "Find out what your teacher taught themselves.",
       "starters": [
-        "That's cheating...",
-        "AI is OK for...",
-        "Can you tell when...?"
+        "I learned it from...",
+        "It took me ages to...",
+        "Did you ever teach yourself something?"
       ],
-      "constraint": "Student gives an opinion and supports it with reasons."
+      "constraint": "Student describes a skill and how they learned it."
     }
   },
   {
     "id": 563,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Future Tech",
+    "category": "Online Life",
     "teacher": {
-      "prompt": "Imagine earbuds that translate any language instantly. Ask the student if we'd still need to learn English.",
-      "constraint": "Student agrees or disagrees and gives reasons."
+      "prompt": "Ask whether the student has used an AI chatbot, and about a time it was really helpful — or got something completely wrong.",
+      "constraint": "Student describes an experience and gives a simple opinion."
     },
     "student": {
-      "prompt": "Imagine earbuds that translate every language. Ask your teacher if people will still learn English.",
-      "goal": "Find out if your teacher would still learn languages.",
+      "prompt": "Have you ever used an AI chatbot? Tell your teacher about a time it was really helpful — or totally wrong.",
+      "goal": "See if your teacher trusts AI answers.",
       "starters": [
-        "That's true for...",
-        "But for making friends...",
-        "Would you still learn?"
+        "I asked it...",
+        "It said something totally wrong!",
+        "Do you trust it?"
       ],
-      "constraint": "Student agrees or disagrees and gives reasons."
+      "constraint": "Student describes an experience and gives a simple opinion."
     }
   },
   {
     "id": 564,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Future Tech",
+    "category": "Growing Up",
     "teacher": {
-      "prompt": "A stuck delivery robot keeps saying \"Help, please\" while a boy kicks it. Ask the student what they'd do — and whether kicking a robot is wrong.",
-      "constraint": "Student says what they'd do and gives an opinion."
+      "prompt": "Get the student to ask about the technology the teacher had at their age, and compare it with what they use now.",
+      "constraint": "Student asks questions and compares past and present."
     },
     "student": {
-      "prompt": "Tell your teacher what you'd do if a boy kicked a robot that keeps saying \"Help, please.\"",
-      "goal": "Find out if your teacher thinks robots deserve kindness.",
+      "prompt": "Ask your teacher what technology they had when they were your age.",
+      "goal": "Discover which old gadget your teacher still misses.",
       "starters": [
-        "I'd probably...",
-        "It's only a robot, but...",
-        "Would you stop him?"
+        "Did you have a phone?",
+        "How did you listen to music?",
+        "That sounds so different!"
       ],
-      "constraint": "Student says what they'd do and gives an opinion."
+      "constraint": "Student asks questions and compares past and present."
     }
   },
   {
     "id": 565,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Weird & Gross",
+    "category": "Games & Entertainment",
     "teacher": {
-      "prompt": "The school shop starts selling crisps made from crickets. Ask the student if they'd try them.",
-      "constraint": "Student says what they'd do and why."
+      "prompt": "Ask about a film or show that really scared the student when they were younger, and whether it still would now.",
+      "constraint": "Student tells a short story about the past."
     },
     "student": {
-      "prompt": "Ask your teacher if they'd eat crisps made from real crickets.",
-      "goal": "Find out the strangest food your teacher has eaten.",
+      "prompt": "Tell your teacher about a film or show that scared you when you were little.",
+      "goal": "Hear which film scared your teacher as a kid.",
       "starters": [
-        "I'd never...",
-        "Maybe just one...",
-        "Would you try them?"
+        "I was so scared of...",
+        "Now it's funny because...",
+        "What scared you as a kid?"
       ],
-      "constraint": "Student says what they'd do and why."
+      "constraint": "Student tells a short story about the past."
     }
   },
   {
     "id": 566,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Weird & Gross",
+    "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "On a school trip, the student hears a friend say in their sleep who they like. Ask what they'd do in the morning.",
-      "constraint": "Student says what they'd do and what might happen."
+      "prompt": "Ask about the strangest food combination the student actually enjoys — like chips with ice cream or cereal for dinner.",
+      "constraint": "Student describes food and reacts to other people's tastes."
     },
     "student": {
-      "prompt": "On a school trip, your friend says in their sleep who they like! Tell your teacher what you'd do in the morning.",
-      "goal": "See if your teacher would keep the secret.",
+      "prompt": "What's a strange food mix you actually like? Tell your teacher and see if they'd try it.",
+      "goal": "See if your teacher has a strange food habit too.",
       "starters": [
-        "I wouldn't say anything...",
-        "Maybe a little joke...",
-        "Would you tell them?"
+        "I like to put...",
+        "It sounds weird, but...",
+        "Would you try it?"
       ],
-      "constraint": "Student says what they'd do and what might happen."
+      "constraint": "Student describes food and reacts to other people's tastes."
     }
   },
   {
     "id": 567,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Weird & Gross",
+    "category": "Growing Up",
     "teacher": {
-      "prompt": "The student hates how their voice sounds in a class video that parents will watch. Ask what sounds wrong and what they'd do.",
-      "constraint": "Student describes sounds and feelings and says what they'd do."
+      "prompt": "Ask what adults always say to the student that they're tired of hearing — like \"When I was your age...\" or \"Put your phone away.\"",
+      "constraint": "Student reports what people say and reacts to it."
     },
     "student": {
-      "prompt": "Your class made a video, and parents will watch it. You hate your voice in it! Tell your teacher how it sounds.",
-      "goal": "Find out if your teacher likes their recorded voice.",
+      "prompt": "What do adults always say that you're tired of hearing? Tell your teacher.",
+      "goal": "See if your teacher says it too!",
       "starters": [
-        "It sounds too...",
-        "It's not really me...",
-        "Can I ask to...",
-        "Do you like your voice?"
+        "My mum always says...",
+        "Every single day, they...",
+        "Do you say that?"
       ],
-      "constraint": "Student describes sounds and feelings and says what they'd do."
+      "constraint": "Student reports what people say and reacts to it."
     }
   },
   {
     "id": 568,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Stories",
+    "category": "Growing Up",
     "teacher": {
-      "prompt": "The school website shows the class photo, and the student's eyes are closed and mouth wide open. Ask how they'd feel and what they'd do.",
-      "constraint": "Student describes feelings and says what they'd do."
+      "prompt": "Ask about a time something went wrong — a trip, a party, a plan — that makes a good story now.",
+      "constraint": "Student tells a short story in the past simple."
     },
     "student": {
-      "prompt": "The class photo is online. Your eyes are closed and your mouth is open! Tell your teacher how you'd feel.",
-      "goal": "Find out about your teacher's worst photo.",
+      "prompt": "Tell your teacher about a time something went wrong — but now it's a funny story.",
+      "goal": "Hear your teacher's best \"everything went wrong\" story.",
       "starters": [
-        "I'd feel so...",
-        "Actually, it's funny...",
-        "Do you have a bad photo?"
+        "It started when...",
+        "Then everything...",
+        "Did that ever happen to you?"
       ],
-      "constraint": "Student describes feelings and says what they'd do."
+      "constraint": "Student tells a short story in the past simple."
     }
   },
   {
     "id": 569,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Stories",
+    "category": "Friends & People",
     "teacher": {
-      "prompt": "The student finds a phone on the bus and it starts ringing — the screen says \"MUM\". Ask if they'd answer, and what happens next.",
-      "constraint": "Student says what they'd do and tells what happens."
+      "prompt": "Ask about someone the student admires who isn't famous — a relative, a coach, an older friend — and what they do well.",
+      "constraint": "Student describes a person and explains why they admire them."
     },
     "student": {
-      "prompt": "You find a phone on the bus. It rings, and the screen says \"MUM\". Tell your teacher if you'd answer.",
-      "goal": "Find out what your teacher would say to Mum.",
+      "prompt": "Tell your teacher about someone you admire who isn't famous.",
+      "goal": "Hear who your teacher admires, and why.",
       "starters": [
-        "I'd answer and say...",
-        "Hello? This isn't...",
-        "Would you answer?"
+        "I really admire...",
+        "She always...",
+        "Who do you admire?"
       ],
-      "constraint": "Student says what they'd do and tells what happens."
+      "constraint": "Student describes a person and explains why they admire them."
     }
   },
   {
     "id": 570,
     "collection": "kids",
     "level": "A1A2",
-    "category": "Stories",
+    "category": "Games & Entertainment",
     "teacher": {
-      "prompt": "The student accidentally sends a secret party message to the whole class group chat. Ask what happens next.",
-      "constraint": "Student tells a short story about what happens next."
+      "prompt": "Ask about something that was really cool a couple of years ago but isn't any more — a game, toy, trend or phrase.",
+      "constraint": "Student compares past and present using 'used to'."
     },
     "student": {
-      "prompt": "Oops! You sent a secret party message to the whole class chat. Tell your teacher what happens next.",
-      "goal": "Find out if your teacher ever sent a message by mistake.",
+      "prompt": "What was really cool two years ago but isn't cool now? Tell your teacher.",
+      "goal": "Discover what was cool when your teacher was young.",
       "starters": [
-        "Oh no! First, I...",
-        "Everyone starts writing...",
-        "Did that ever happen to you?"
+        "Everyone used to...",
+        "Now it's kind of...",
+        "What was cool for you?"
       ],
-      "constraint": "Student tells a short story about what happens next."
+      "constraint": "Student compares past and present using 'used to'."
     }
   },
   {
     "id": 571,
     "collection": "kids",
     "level": "B1",
-    "category": "Weird Creatures",
+    "category": "School",
     "teacher": {
-      "prompt": "An aquarium octopus escapes its tank at night, eats fish from other tanks, then goes back before morning. Ask why they think it does it.",
-      "constraint": "Student suggests explanations and gives reasons."
+      "prompt": "Ask what made the best teacher the student has ever had so good — and what makes a lesson boring.",
+      "constraint": "Student describes qualities and gives examples."
     },
     "student": {
-      "prompt": "An aquarium octopus escapes every night, eats fish from other tanks, then goes back. Talk to your teacher about why it does it.",
-      "goal": "Find out your teacher's best explanation.",
+      "prompt": "What makes a really good teacher? Tell your teacher — and be honest!",
+      "goal": "Find out what your teacher tries hardest to get right.",
       "starters": [
-        "It might be bored...",
-        "Maybe it's showing off...",
-        "What's your theory?"
+        "The best teachers...",
+        "It's boring when...",
+        "What makes a good student?"
       ],
-      "constraint": "Student suggests explanations and gives reasons."
+      "constraint": "Student describes qualities and gives examples."
     }
   },
   {
     "id": 572,
     "collection": "kids",
     "level": "B1",
-    "category": "Weird Creatures",
+    "category": "Growing Up",
     "teacher": {
-      "prompt": "Ask which animal the student thinks changed human history the most, and why.",
-      "constraint": "Student compares animals and justifies their choice."
+      "prompt": "Ask which decisions the student thinks they should make for themselves, and which ones they're happy to leave to adults.",
+      "constraint": "Student gives opinions and explains limits."
     },
     "student": {
-      "prompt": "Dogs, horses, chickens, cats... Ask your teacher which animal changed human history the most.",
-      "goal": "See if you and your teacher pick the same animal.",
+      "prompt": "Which decisions should you make yourself, and which should adults make? Talk to your teacher about it.",
+      "goal": "See where your teacher thinks the line is.",
       "starters": [
-        "Without horses, we...",
-        "Dogs were the first...",
-        "Why that one?"
+        "I should decide...",
+        "I'm happy for my parents to...",
+        "What did you decide at 12?"
       ],
-      "constraint": "Student compares animals and justifies their choice."
+      "constraint": "Student gives opinions and explains limits."
     }
   },
   {
     "id": 573,
     "collection": "kids",
     "level": "B1",
-    "category": "Weird Creatures",
+    "category": "Friends & People",
     "teacher": {
-      "prompt": "The school has €1,000 for nature: rooftop beehives with honey, or a wildflower garden for wild bees. It can't afford both. Ask which the student would choose.",
-      "constraint": "Student compares two options and explains what they'd give up."
+      "prompt": "Ask whether the student has ever pretended to like something — a song, a game, a show — just to fit in.",
+      "constraint": "Student describes an experience and explains feelings."
     },
     "student": {
-      "prompt": "Your school has €1,000: rooftop beehives (free honey!) or a wildflower garden for wild bees. Not both! Talk to your teacher about which to choose.",
-      "goal": "Find out which one your teacher would pick.",
+      "prompt": "Have you ever pretended to like something to fit in? Tell your teacher about it.",
+      "goal": "Find out if your teacher has done the same.",
       "starters": [
-        "Free honey sounds great...",
-        "But wild bees need...",
-        "Which would you pick?"
+        "Everyone liked it, so...",
+        "I didn't really like...",
+        "Have you ever done that?"
       ],
-      "constraint": "Student compares two options and explains what they'd give up."
+      "constraint": "Student describes an experience and explains feelings."
     }
   },
   {
     "id": 574,
     "collection": "kids",
     "level": "B1",
-    "category": "Gaming",
+    "category": "Games & Entertainment",
     "teacher": {
-      "prompt": "The student is gaming-team captain and must choose: their best friend, a brilliant player nobody likes, or a hard worker who panics. Ask who they'd pick.",
-      "constraint": "Student compares options and explains their choice."
+      "prompt": "Ask what the student has actually learned from playing games — skills, English, teamwork — and whether adults underestimate games.",
+      "constraint": "Student gives examples and challenges an opinion."
     },
     "student": {
-      "prompt": "Tell your teacher who you'd pick for your team: your best friend, a brilliant player nobody likes, or a hard worker who panics.",
-      "goal": "Find out who your teacher would pick, and why.",
+      "prompt": "Have games ever taught you something useful? Tell your teacher — even if adults don't believe it.",
+      "goal": "See if your teacher thinks games can teach things.",
       "starters": [
-        "It's hard, because...",
-        "Winning matters, but...",
-        "Who would you pick?"
+        "I learned a lot of English...",
+        "Adults think games are...",
+        "Does that count as learning?"
       ],
-      "constraint": "Student compares options and explains their choice."
+      "constraint": "Student gives examples and challenges an opinion."
     }
   },
   {
     "id": 575,
     "collection": "kids",
     "level": "B1",
-    "category": "Gaming",
+    "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "The student has finished a new game first. One friend begs to hear the ending; another will be furious about spoilers. Ask what they'd do.",
-      "constraint": "Student explains what they'd do and predicts reactions."
+      "prompt": "Ask what the student thinks is really worth spending money on — and what's a total waste of money.",
+      "constraint": "Student gives opinions about money and explains priorities."
     },
     "student": {
-      "prompt": "You finished a new game first. One friend wants the ending; another hates spoilers. Tell your teacher what you'd do.",
-      "goal": "Find out how your teacher feels about spoilers.",
+      "prompt": "What's really worth spending money on — and what's a waste? Tell your teacher.",
+      "goal": "Compare what you and your teacher think is worth it.",
       "starters": [
-        "I could tell him quietly...",
-        "If it leaks in the chat...",
-        "Do spoilers annoy you?"
+        "I'd never pay for...",
+        "It's worth it if...",
+        "What was your best buy?"
       ],
-      "constraint": "Student explains what they'd do and predicts reactions."
+      "constraint": "Student gives opinions about money and explains priorities."
     }
   },
   {
     "id": 576,
     "collection": "kids",
     "level": "B1",
-    "category": "Gaming",
+    "category": "Online Life",
     "teacher": {
-      "prompt": "The student's friends play a 16+ game, but they're 12 and their parents say no. Ask whether age ratings make sense.",
-      "constraint": "Student gives opinions and compares situations."
+      "prompt": "Ask whether playing games online with friends counts as really hanging out, and how it compares with meeting up in person.",
+      "constraint": "Student compares experiences and gives reasons."
     },
     "student": {
-      "prompt": "Your friends play a 16+ game, but you're 12. Talk to your teacher about whether age ratings make sense.",
-      "goal": "Find out if your teacher thinks ratings are fair.",
+      "prompt": "Is gaming online with friends the same as hanging out in person? Talk to your teacher about it.",
+      "goal": "Compare how you and your teacher spend time with friends.",
       "starters": [
-        "Ratings are useful for...",
-        "Twelve and sixteen aren't...",
-        "What did you play at 12?"
+        "It's different because...",
+        "Online you can...",
+        "Where did you meet your friends?"
       ],
-      "constraint": "Student gives opinions and compares situations."
+      "constraint": "Student compares experiences and gives reasons."
     }
   },
   {
     "id": 577,
     "collection": "kids",
     "level": "B1",
-    "category": "Mysteries",
+    "category": "Games & Entertainment",
     "teacher": {
-      "prompt": "Overnight, the student's test mark on the school website changed from 6/10 to 8/10. Ask what they think happened — and whether they'd say anything.",
-      "constraint": "Student speculates about what happened and explains a decision."
+      "prompt": "Ask about a trend — online, fashion, music or games — that the student just doesn't get, and why they think it's so popular.",
+      "constraint": "Student describes a trend and suggests reasons for it."
     },
     "student": {
-      "prompt": "Overnight, your test mark online changed from 6/10 to 8/10. Tell your teacher if you'd say anything.",
-      "goal": "Find out what your teacher would do in your place.",
+      "prompt": "Tell your teacher about a trend you don't understand at all. Why is everyone into it?",
+      "goal": "See if your teacher understands it any better.",
       "starters": [
-        "It might be a mistake...",
-        "Two extra marks is nice...",
-        "Would you tell?"
+        "Everyone is obsessed with...",
+        "I just don't get it.",
+        "Do you understand it?"
       ],
-      "constraint": "Student speculates about what happened and explains a decision."
+      "constraint": "Student describes a trend and suggests reasons for it."
     }
   },
   {
     "id": 578,
     "collection": "kids",
     "level": "B1",
-    "category": "Mysteries",
+    "category": "School",
     "teacher": {
-      "prompt": "The student's older sibling has been really nice to them all week. Ask what they think is going on.",
-      "constraint": "Student speculates and gives reasons."
+      "prompt": "Ask which school subject the student doesn't see the point of, and whether they think they'll ever use it as an adult.",
+      "constraint": "Student gives opinions and predicts the future."
     },
     "student": {
-      "prompt": "Your older brother or sister has been really nice to you all week. Tell your teacher what you think is going on.",
-      "goal": "Find out what your teacher suspects.",
+      "prompt": "Is there a school subject you don't see the point of? Ask your teacher if they ever used it.",
+      "goal": "Find out which subject your teacher found useless.",
       "starters": [
-        "They must want something...",
-        "Maybe they broke...",
-        "What do you think?"
+        "I don't know why we learn...",
+        "Maybe it's useful for...",
+        "Did you ever use it?"
       ],
-      "constraint": "Student speculates and gives reasons."
+      "constraint": "Student gives opinions and predicts the future."
     }
   },
   {
     "id": 579,
     "collection": "kids",
     "level": "B1",
-    "category": "Mysteries",
+    "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "A message everyone is sharing says school will close next week because of a water problem, but the website says nothing. Ask if the student believes it.",
-      "constraint": "Student judges if information is true and explains how to check."
+      "prompt": "Ask about something adults told the student when they were younger that turned out not to be true — like swallowed gum staying inside you.",
+      "constraint": "Student tells a story and questions what they were told."
     },
     "student": {
-      "prompt": "A message says school will close next week because of a water problem. The website says nothing. Ask your teacher if they'd believe it.",
-      "goal": "Find out how your teacher checks if news is real.",
+      "prompt": "What did adults tell you when you were younger that turned out to be totally untrue? Tell your teacher.",
+      "goal": "Discover what your teacher was told as a kid.",
       "starters": [
-        "I'd check who...",
-        "It sounds real...",
-        "How would you check?"
+        "My parents told me...",
+        "I really believed it!",
+        "Did you believe that too?"
       ],
-      "constraint": "Student judges if information is true and explains how to check."
+      "constraint": "Student tells a story and questions what they were told."
     }
   },
   {
     "id": 580,
     "collection": "kids",
     "level": "B1",
-    "category": "Mysteries",
+    "category": "Growing Up",
     "teacher": {
-      "prompt": "A library book comes back 40 years late with a note: \"Sorry. I had to leave in a hurry. — J.\" Ask the student for the story behind it.",
-      "constraint": "Student imagines and tells a story about the past."
+      "prompt": "Ask about something the student has changed their mind about — a food, a person, a hobby, a rule — and what changed it.",
+      "constraint": "Student compares past and present opinions ('I used to...')."
     },
     "student": {
-      "prompt": "A library book comes back 40 years late with a note: \"Sorry. I had to leave in a hurry. — J.\" Tell your teacher the story.",
-      "goal": "Find out who your teacher thinks J was.",
+      "prompt": "Tell your teacher about something you've changed your mind about. What made you change?",
+      "goal": "Find out what your teacher has changed their mind about.",
       "starters": [
-        "Maybe J had to...",
-        "Forty years ago...",
-        "Who do you think J was?"
+        "I used to think...",
+        "Then I realised...",
+        "Have you ever changed your mind?"
       ],
-      "constraint": "Student imagines and tells a story about the past."
+      "constraint": "Student compares past and present opinions ('I used to...')."
     }
   },
   {
     "id": 581,
     "collection": "kids",
     "level": "B1",
-    "category": "Future Tech",
+    "category": "Online Life",
     "teacher": {
-      "prompt": "The student's cousin says an AI chatbot is her best friend and talks to it every night. Ask if they think that's a problem.",
-      "constraint": "Student gives opinions and compares AI with real friends."
+      "prompt": "Ask whether the student uses AI tools for school or for fun, and where they think using AI turns into cheating.",
+      "constraint": "Student explains opinions and draws limits."
     },
     "student": {
-      "prompt": "Your cousin says an AI chatbot is her best friend. Talk to your teacher about whether that's a problem.",
-      "goal": "Find out if your teacher would ever talk to an AI friend.",
+      "prompt": "Do you use AI for homework or for fun? Talk to your teacher about when it becomes cheating.",
+      "goal": "Find out how your teacher feels about students using AI.",
       "starters": [
-        "I can see why...",
-        "A real friend can...",
-        "Do you ever chat with AI?"
+        "I sometimes use it for...",
+        "It's cheating when...",
+        "Do you use AI?"
       ],
-      "constraint": "Student gives opinions and compares AI with real friends."
+      "constraint": "Student explains opinions and draws limits."
     }
   },
   {
     "id": 582,
     "collection": "kids",
     "level": "B1",
-    "category": "Future Tech",
+    "category": "Games & Entertainment",
     "teacher": {
-      "prompt": "A realistic AI video of a teacher at school dancing badly is spreading, but it's fake. Ask if it's just a joke.",
-      "constraint": "Student gives opinions and describes possible consequences."
+      "prompt": "Ask what makes an online creator worth following, and what makes the student stop watching someone.",
+      "constraint": "Student explains preferences and gives examples."
     },
     "student": {
-      "prompt": "Someone made a fake video of a teacher dancing badly, and everyone's sharing it. Ask your teacher if it's just a joke.",
-      "goal": "Find out how your teacher would feel if it was them.",
+      "prompt": "What makes a YouTuber or streamer worth watching — and what makes you stop? Tell your teacher.",
+      "goal": "See if your teacher follows anyone online.",
       "starters": [
-        "It's funny, but...",
-        "Imagine if someone made...",
-        "How would you feel?"
+        "I like creators who...",
+        "I stopped watching because...",
+        "Who do you follow?"
       ],
-      "constraint": "Student gives opinions and describes possible consequences."
+      "constraint": "Student explains preferences and gives examples."
     }
   },
   {
     "id": 583,
     "collection": "kids",
     "level": "B1",
-    "category": "Future Tech",
+    "category": "Growing Up",
     "teacher": {
-      "prompt": "A new app delivers anything to your door in 10 minutes. Ask the student how it would change their town.",
-      "constraint": "Student makes predictions and explains causes and effects."
+      "prompt": "Ask what's completely normal today that the student thinks will seem really old-fashioned by the time they're an adult.",
+      "constraint": "Student makes predictions with 'will', 'might' and 'probably'."
     },
     "student": {
-      "prompt": "Imagine an app that brings anything to your door in 10 minutes. Talk to your teacher about how it would change your town.",
-      "goal": "Find out if your teacher would use it.",
+      "prompt": "What's normal today that will seem old-fashioned when you're an adult? Tell your teacher.",
+      "goal": "Hear what seemed modern when your teacher was young.",
       "starters": [
-        "Small shops might...",
-        "People will probably stop...",
-        "What would you order first?"
+        "I bet nobody will...",
+        "People will laugh at...",
+        "What seemed modern to you?"
       ],
-      "constraint": "Student makes predictions and explains causes and effects."
+      "constraint": "Student makes predictions with 'will', 'might' and 'probably'."
     }
   },
   {
     "id": 584,
     "collection": "kids",
     "level": "B1",
-    "category": "Weird & Gross",
+    "category": "Friends & People",
     "teacher": {
-      "prompt": "Teenagers' body clocks often make them sleepy early in the morning. Ask the student whether school should start later.",
-      "constraint": "Student imagines changes and compares options."
+      "prompt": "Ask how the student and their friends sort things out after an argument, and whether arguments online are harder to fix.",
+      "constraint": "Student describes what usually happens and compares situations."
     },
     "student": {
-      "prompt": "Tell your teacher whether school should start later for teenagers, and what your mornings are like.",
-      "goal": "Find out what time your teacher's school started.",
+      "prompt": "How do you fix things after an argument with a friend? Talk to your teacher about it.",
+      "goal": "Hear how your teacher makes up after an argument.",
       "starters": [
-        "If school started at 10...",
-        "In the morning, I feel...",
-        "What time did you start?"
+        "Usually we just...",
+        "Online it's harder because...",
+        "How do you say sorry?"
       ],
-      "constraint": "Student imagines changes and compares options."
+      "constraint": "Student describes what usually happens and compares situations."
     }
   },
   {
     "id": 585,
     "collection": "kids",
     "level": "B1",
-    "category": "Weird & Gross",
+    "category": "School",
     "teacher": {
-      "prompt": "The school toilets are dirty, with no soap and broken locks. Ask the student how they'd fix them without much money.",
-      "constraint": "Student makes suggestions and explains what matters most."
+      "prompt": "Ask what the student wishes teachers understood about being a student today.",
+      "constraint": "Student explains a point of view with examples."
     },
     "student": {
-      "prompt": "Your school toilets are dirty, with no soap and broken locks. Tell your teacher how you'd fix them with very little money.",
-      "goal": "Find out what your teacher's school toilets were like.",
+      "prompt": "What do you wish teachers understood about students? Tell your teacher — they'll have an answer!",
+      "goal": "Find out what your teacher wishes students understood.",
       "starters": [
-        "The cheapest thing is...",
-        "First, I'd fix...",
-        "Were yours this bad?"
+        "Teachers don't realise...",
+        "Sometimes we're tired because...",
+        "What don't students get?"
       ],
-      "constraint": "Student makes suggestions and explains what matters most."
+      "constraint": "Student explains a point of view with examples."
     }
   },
   {
     "id": 586,
     "collection": "kids",
     "level": "B1",
-    "category": "Weird & Gross",
+    "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "Thirty people are queueing outside a shop, and nobody knows what for. More keep joining. Ask if the student would join.",
-      "constraint": "Student explains behaviour and predicts what happens next."
+      "prompt": "Ask about tiny everyday things that annoy the student much more than they should — slow Wi-Fi, the wrong emoji, a squeaky chair.",
+      "constraint": "Student describes everyday details and reacts with humour."
     },
     "student": {
-      "prompt": "Thirty people are queueing outside a shop, and nobody knows what for. Tell your teacher if you'd join the queue.",
-      "goal": "Find out if your teacher ever joined a mystery queue.",
+      "prompt": "What's a tiny thing that annoys you way more than it should? Tell your teacher.",
+      "goal": "Discover your teacher's biggest tiny annoyance.",
       "starters": [
-        "I'd probably join, just in case...",
-        "People join because...",
-        "Would you join?"
+        "It's so small, but...",
+        "It drives me crazy when...",
+        "What annoys you?"
       ],
-      "constraint": "Student explains behaviour and predicts what happens next."
+      "constraint": "Student describes everyday details and reacts with humour."
     }
   },
   {
     "id": 587,
     "collection": "kids",
     "level": "B1",
-    "category": "Weird & Gross",
+    "category": "Online Life",
     "teacher": {
-      "prompt": "Nobody can tickle themselves. Is it because the brain knows what your hand will do, or because tickling only works as a surprise? Ask what the student thinks.",
-      "constraint": "Student compares two explanations and gives examples."
+      "prompt": "Ask about the student's group chats — what's great about them, and what makes them stressful or annoying.",
+      "constraint": "Student describes pros and cons with examples."
     },
     "student": {
-      "prompt": "Talk to your teacher about why you can't tickle yourself. Does your brain know what's coming, or does tickling need a surprise?",
-      "goal": "Find out which explanation your teacher believes.",
+      "prompt": "Tell your teacher about your group chats. What's the best thing about them — and the worst?",
+      "goal": "See if your teacher's group chats are any different.",
       "starters": [
-        "When I try it, I...",
-        "If someone surprises me...",
-        "Which idea do you believe?"
+        "There are so many messages...",
+        "The funniest thing was...",
+        "Are you in any group chats?"
       ],
-      "constraint": "Student compares two explanations and gives examples."
+      "constraint": "Student describes pros and cons with examples."
     }
   },
   {
     "id": 588,
     "collection": "kids",
     "level": "B1",
-    "category": "Stories",
+    "category": "Growing Up",
     "teacher": {
-      "prompt": "A quiet classmate is secretly a popular singer online and asked the student not to tell — but the class show needs a singer. Ask what they'd do.",
-      "constraint": "Student weighs a promise against helping the class and explains a choice."
+      "prompt": "Ask about something the student gave up — an instrument, a sport, a hobby — and whether they're glad or wish they'd kept going.",
+      "constraint": "Student explains a decision and reflects on it."
     },
     "student": {
-      "prompt": "A shy classmate secretly sings online, but she asked you not to tell. The class show needs a singer! Tell your teacher what you'd do.",
-      "goal": "Find out if your teacher would keep the secret.",
+      "prompt": "Have you ever given up a hobby, sport or instrument? Tell your teacher if you're glad or sorry.",
+      "goal": "See if your teacher regrets giving something up.",
       "starters": [
-        "She'd be amazing, but...",
-        "It's her secret...",
-        "What would you do?"
+        "I used to play...",
+        "I stopped because...",
+        "Do you regret stopping anything?"
       ],
-      "constraint": "Student weighs a promise against helping the class and explains a choice."
+      "constraint": "Student explains a decision and reflects on it."
     }
   },
   {
     "id": 589,
     "collection": "kids",
     "level": "B1",
-    "category": "Stories",
+    "category": "Friends & People",
     "teacher": {
-      "prompt": "A boy tells everyone at his new club he's been to Japan, but it isn't true — and the questions keep coming. Ask what happens next.",
-      "constraint": "Student tells a story and predicts what happens."
+      "prompt": "Ask how the student knows whether they can trust someone — with a secret, a problem or something important.",
+      "constraint": "Student explains qualities and gives examples."
     },
     "student": {
-      "prompt": "A boy at a new club says, \"I've been to Japan!\" It isn't true, and everyone has questions. Tell your teacher what happens next.",
-      "goal": "Find out if your teacher ever told a small lie to impress.",
+      "prompt": "How do you know if you can trust someone? Talk to your teacher about it.",
+      "goal": "Hear how your teacher decides who to trust.",
       "starters": [
-        "He probably thinks...",
-        "Then someone asks...",
-        "Have you ever done that?"
+        "You can trust someone who...",
+        "I stopped trusting someone when...",
+        "How do you decide?"
       ],
-      "constraint": "Student tells a story and predicts what happens."
+      "constraint": "Student explains qualities and gives examples."
     }
   },
   {
     "id": 590,
     "collection": "kids",
     "level": "B1",
-    "category": "Stories",
+    "category": "Games & Entertainment",
     "teacher": {
-      "prompt": "A student from 25 years ago, who has never used a smartphone, asks: \"Is life better in the future?\" Ask how the student would answer.",
-      "constraint": "Student compares life then and now."
+      "prompt": "Ask about a sequel or remake — film, game or series — that the student thinks was worse (or better) than the original.",
+      "constraint": "Student compares two things and gives reasons."
     },
     "student": {
-      "prompt": "A student from 25 years ago asks you: \"Is life better in the future?\" Talk to your teacher about your answer.",
-      "goal": "Find out what your teacher's life was like back then.",
+      "prompt": "Tell your teacher about a sequel or remake that was worse — or better — than the original.",
+      "goal": "See if your teacher agrees about the original.",
       "starters": [
-        "You won't believe this, but...",
-        "Imagine a phone that...",
-        "What was it like then?"
+        "The first one was...",
+        "They ruined it by...",
+        "Have you seen both?"
       ],
-      "constraint": "Student compares life then and now."
+      "constraint": "Student compares two things and gives reasons."
     }
   },
   {
     "id": 591,
     "collection": "kids",
     "level": "B2+",
-    "category": "Weird Creatures",
+    "category": "Online Life",
     "teacher": {
-      "prompt": "Some people want a court to call a lonely zoo elephant a legal \"person\" with a right to freedom. Ask if animals should ever have rights like people.",
-      "constraint": "Student argues a position and considers where to draw the line."
+      "prompt": "Ask which jobs the student thinks AI will change or replace, and what that means for the jobs they're interested in.",
+      "constraint": "Student speculates about the future and weighs possibilities."
     },
     "student": {
-      "prompt": "Some people want a zoo elephant declared a legal \"person\". Ask your teacher where they'd draw the line on animal rights.",
-      "goal": "See whether you and your teacher draw the same line.",
+      "prompt": "Which jobs will AI change the most? Talk to your teacher about what it means for you.",
+      "goal": "Find out if AI could change your teacher's job.",
       "starters": [
-        "Calling an elephant a person...",
-        "If elephants get rights...",
-        "Where would you stop?"
+        "AI could easily do...",
+        "Some jobs will always need...",
+        "Could AI do your job?"
       ],
-      "constraint": "Student argues a position and considers where to draw the line."
+      "constraint": "Student speculates about the future and weighs possibilities."
     }
   },
   {
     "id": 592,
     "collection": "kids",
     "level": "B2+",
-    "category": "Weird Creatures",
+    "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "Some dogs press buttons that say words like \"outside\" and \"play\". Ask what the student thinks the dogs really understand.",
-      "constraint": "Student evaluates evidence and expresses how sure they are."
+      "prompt": "Ask what the student thinks is overrated — a food, a trend, a film, a hobby — and why everyone else seems to love it.",
+      "constraint": "Student gives contrasting opinions and justifies them."
     },
     "student": {
-      "prompt": "Some dogs press buttons that say \"outside\" and \"play\". Talk to your teacher about whether they really understand the words.",
-      "goal": "Find out how your teacher would test it.",
+      "prompt": "What do you think is totally overrated? Tell your teacher — and see if they agree.",
+      "goal": "Discover what your teacher thinks is overrated.",
       "starters": [
-        "The videos are convincing, but...",
-        "Maybe they just learn...",
-        "How could we prove it?"
+        "Everyone loves it, but...",
+        "Honestly, it's just...",
+        "What's overrated for you?"
       ],
-      "constraint": "Student evaluates evidence and expresses how sure they are."
+      "constraint": "Student gives contrasting opinions and justifies them."
     }
   },
   {
     "id": 593,
     "collection": "kids",
     "level": "B2+",
-    "category": "Weird Creatures",
+    "category": "Friends & People",
     "teacher": {
-      "prompt": "A forest has too many deer eating young trees. The options are hunting, birth control, or bringing back wolves. Ask which is the least bad.",
-      "constraint": "Student weighs options and responds to objections."
+      "prompt": "Ask what makes someone genuinely interesting to talk to, and whether being popular and being interesting are the same thing.",
+      "constraint": "Student defines qualities and makes careful distinctions."
     },
     "student": {
-      "prompt": "A forest has too many deer: hunting, birth control, or bringing back wolves? Discuss the least bad choice with your teacher.",
-      "goal": "Find out which option your teacher could live with.",
+      "prompt": "What makes someone really interesting? Talk to your teacher about whether popular people always are.",
+      "goal": "See if you and your teacher value the same things in people.",
       "starters": [
-        "None of these is perfect...",
-        "Wolves sound natural, until...",
-        "Which would you choose?"
+        "Interesting people usually...",
+        "Popular isn't the same as...",
+        "Who's interesting to you?"
       ],
-      "constraint": "Student weighs options and responds to objections."
+      "constraint": "Student defines qualities and makes careful distinctions."
     }
   },
   {
     "id": 594,
     "collection": "kids",
     "level": "B2+",
-    "category": "Gaming",
+    "category": "Games & Entertainment",
     "teacher": {
-      "prompt": "Ask the student whether paying for loot boxes — random rewards in games — is a kind of gambling.",
-      "constraint": "Student defines an idea and defends a position."
+      "prompt": "Ask whether a game can be as meaningful as a great book or film, and which game the student would use to prove it.",
+      "constraint": "Student makes comparisons and supports an argument with examples."
     },
     "student": {
-      "prompt": "Ask your teacher whether paying for loot boxes — random prizes in games — is a kind of gambling.",
-      "goal": "See if your teacher's idea of gambling matches yours.",
+      "prompt": "Can a game be as meaningful as a great book or film? Tell your teacher which game proves it.",
+      "goal": "See if you can convince your teacher.",
       "starters": [
-        "It's not gambling if...",
-        "Kids spend money because...",
-        "Is it like a lottery?"
+        "Some games tell amazing stories...",
+        "People who don't play...",
+        "Have you ever played one?"
       ],
-      "constraint": "Student defines an idea and defends a position."
+      "constraint": "Student makes comparisons and supports an argument with examples."
     }
   },
   {
     "id": 595,
     "collection": "kids",
     "level": "B2+",
-    "category": "Gaming",
+    "category": "Online Life",
     "teacher": {
-      "prompt": "The student's friend was banned from a game forever because of one joke in the chat. Ask if that's fair.",
-      "constraint": "Student judges fairness and suggests a better alternative."
+      "prompt": "Ask what the student would never post online, and why some people seem happy to share everything.",
+      "constraint": "Student explains personal limits and speculates about others."
     },
     "student": {
-      "prompt": "Your friend's gaming account was banned forever for one joke in the chat. Talk to your teacher about whether that's fair.",
-      "goal": "Find out what punishment your teacher thinks would be fair.",
+      "prompt": "What would you never post online? Tell your teacher why some people share everything.",
+      "goal": "Find out where your teacher draws the line online.",
       "starters": [
-        "Context matters...",
-        "One mistake shouldn't...",
-        "What would you do instead?"
+        "I'd never post...",
+        "Some people share their whole...",
+        "Do you post much?"
       ],
-      "constraint": "Student judges fairness and suggests a better alternative."
+      "constraint": "Student explains personal limits and speculates about others."
     }
   },
   {
     "id": 596,
     "collection": "kids",
     "level": "B2+",
-    "category": "Gaming",
+    "category": "Online Life",
     "teacher": {
-      "prompt": "A dad streams his 11-year-old son gaming and earns money from it. The boy says he enjoys it. Ask if there's a problem.",
-      "constraint": "Student weighs different viewpoints and justifies their opinion."
+      "prompt": "Ask whether some games and apps are designed to be hard to stop — daily rewards, streaks — and whether that's clever or unfair.",
+      "constraint": "Student analyses design choices and gives balanced opinions."
     },
     "student": {
-      "prompt": "A dad streams his 11-year-old son gaming and earns money from it. The boy enjoys it. Ask your teacher if that's a problem.",
-      "goal": "Find out whose side your teacher is on.",
+      "prompt": "Are some games designed so you can't stop playing? Talk to your teacher about whether that's fair.",
+      "goal": "Find out what your teacher finds hard to put down.",
       "starters": [
-        "He enjoys it now, but...",
-        "When he's older, he...",
-        "Should the dad stop?"
+        "Daily rewards make you...",
+        "It's clever, but...",
+        "What keeps you scrolling?"
       ],
-      "constraint": "Student weighs different viewpoints and justifies their opinion."
+      "constraint": "Student analyses design choices and gives balanced opinions."
     }
   },
   {
     "id": 597,
     "collection": "kids",
     "level": "B2+",
-    "category": "Gaming",
+    "category": "Growing Up",
     "teacher": {
-      "prompt": "A friend borrowed the student's €1,000 game skin, lost it in a trade, and says, \"It's just pixels.\" Ask if he's right.",
-      "constraint": "Student challenges an idea and defends their view."
+      "prompt": "Ask what the student thinks adults most often get wrong about people their age.",
+      "constraint": "Student generalises carefully and supports points with examples."
     },
     "student": {
-      "prompt": "You lent a friend your €1,000 game skin. He lost it and says, \"It's just pixels.\" Ask your teacher if he's right.",
-      "goal": "Find out if your teacher thinks he owes you.",
+      "prompt": "What do adults most often get wrong about people your age? Tell your teacher honestly.",
+      "goal": "See if your teacher remembers feeling the same way.",
       "starters": [
-        "It's 'just pixels' until...",
-        "If it cost real money...",
-        "Would you want it back?"
+        "Adults think we...",
+        "Actually, most of us...",
+        "Did adults get you wrong?"
       ],
-      "constraint": "Student challenges an idea and defends their view."
+      "constraint": "Student generalises carefully and supports points with examples."
     }
   },
   {
     "id": 598,
     "collection": "kids",
     "level": "B2+",
-    "category": "Mysteries",
+    "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "Three honest students saw the same corridor fight, but each tells a different story. Ask how that's possible.",
-      "constraint": "Student suggests explanations and judges which account to trust."
+      "prompt": "Ask about something the student has done, seen or learned that most people their age haven't.",
+      "constraint": "Student tells a story and explains why it matters."
     },
     "student": {
-      "prompt": "Three honest students saw the same corridor fight but tell three different stories. Talk to your teacher about how that's possible.",
-      "goal": "Find out if your teacher trusts eyewitnesses.",
+      "prompt": "What have you done or seen that most people your age haven't? Tell your teacher about it.",
+      "goal": "Find out your teacher's most unusual experience.",
       "starters": [
-        "They're not lying, they just...",
-        "It depends where...",
-        "Have you ever remembered differently?"
+        "Not many people have...",
+        "It happened when...",
+        "What's the strangest thing you've done?"
       ],
-      "constraint": "Student suggests explanations and judges which account to trust."
+      "constraint": "Student tells a story and explains why it matters."
     }
   },
   {
     "id": 599,
     "collection": "kids",
     "level": "B2+",
-    "category": "Mysteries",
+    "category": "School",
     "teacher": {
-      "prompt": "Someone keeps tearing down one candidate's election posters, and everyone blames her rival. Ask if that's fair.",
-      "constraint": "Student evaluates evidence without jumping to conclusions."
+      "prompt": "Ask what the student would change about how school works — timetable, homework, subjects, tests — and what they'd keep.",
+      "constraint": "Student proposes changes and justifies priorities."
     },
     "student": {
-      "prompt": "Someone keeps tearing down one candidate's posters, and everyone blames her rival. Ask your teacher if that's fair.",
-      "goal": "Find out who else your teacher would suspect.",
+      "prompt": "If you could change one thing about how school works, what would it be? Explain it to your teacher.",
+      "goal": "Find out what your teacher would change about school.",
       "starters": [
-        "The obvious suspect isn't...",
-        "Until there's proof...",
-        "Who else could it be?"
+        "I'd get rid of...",
+        "Homework should be...",
+        "What was your school like?"
       ],
-      "constraint": "Student evaluates evidence without jumping to conclusions."
+      "constraint": "Student proposes changes and justifies priorities."
     }
   },
   {
     "id": 600,
     "collection": "kids",
     "level": "B2+",
-    "category": "Mysteries",
+    "category": "School",
     "teacher": {
-      "prompt": "The student talked about skateboards out loud, and the next day their app showed skateboard videos. Ask what they think happened.",
-      "constraint": "Student compares possible explanations and says how sure they are."
+      "prompt": "Ask whether school is really fair when some students have tutors, better tech or a quiet place to study — and what could make it fairer.",
+      "constraint": "Student discusses fairness and weighs different situations."
     },
     "student": {
-      "prompt": "You talked about skateboards out loud, and the next day your app showed skateboard videos. Tell your teacher what you think happened.",
-      "goal": "Find out if this has happened to your teacher.",
+      "prompt": "Is school really fair if some students have tutors and others don't? Talk to your teacher about it.",
+      "goal": "Hear what your teacher has noticed as a teacher.",
       "starters": [
-        "It's probably just...",
-        "What worries me is...",
-        "Has that happened to you?"
+        "It's not really fair that...",
+        "School can't fix everything...",
+        "Did you ever have a tutor?"
       ],
-      "constraint": "Student compares possible explanations and says how sure they are."
+      "constraint": "Student discusses fairness and weighs different situations."
     }
   },
   {
     "id": 601,
     "collection": "kids",
     "level": "B2+",
-    "category": "Future Tech",
+    "category": "Friends & People",
     "teacher": {
-      "prompt": "Ask the student what they think about banning social media for everyone under 16.",
-      "constraint": "Student argues from their own experience and answers objections."
+      "prompt": "Ask whether the student acts differently with family, friends and teachers — and whether that's being fake or just normal.",
+      "constraint": "Student reflects on behaviour and makes distinctions."
     },
     "student": {
-      "prompt": "Talk to your teacher about banning social media for everyone under 16 — and what it would change for you.",
-      "goal": "Find out if your teacher would have wanted that rule.",
+      "prompt": "Do you act differently with friends, family and teachers? Talk to your teacher about whether that's fake.",
+      "goal": "Find out how your teacher changes between work and home.",
       "starters": [
-        "As someone under 16...",
-        "It would work if...",
-        "Would it have helped you?"
+        "With my friends, I'm...",
+        "It's not fake, it's just...",
+        "Are you different outside class?"
       ],
-      "constraint": "Student argues from their own experience and answers objections."
+      "constraint": "Student reflects on behaviour and makes distinctions."
     }
   },
   {
     "id": 602,
     "collection": "kids",
     "level": "B2+",
-    "category": "Future Tech",
+    "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "Ask whether people should be able to delete things they posted when younger — like a silly video at 11 or an unkind comment at 14.",
-      "constraint": "Student draws a line between cases and justifies it."
+      "prompt": "Ask what the student thinks should become cool — a hobby, habit or skill that deserves more respect from people their age.",
+      "constraint": "Student argues for an idea and gives reasons."
     },
     "student": {
-      "prompt": "A silly video you posted at 11. An unkind comment you wrote at 14. Ask your teacher: should you be able to delete them forever?",
-      "goal": "See where your teacher draws the line.",
+      "prompt": "What should be cool but isn't — yet? Tell your teacher what deserves more respect.",
+      "goal": "See if your teacher can think of one too.",
       "starters": [
-        "The silly video is fine, but...",
-        "People can change...",
-        "Is there anything you'd delete?"
+        "More people should...",
+        "It's not cool yet, but...",
+        "What should be cool?"
       ],
-      "constraint": "Student draws a line between cases and justifies it."
+      "constraint": "Student argues for an idea and gives reasons."
     }
   },
   {
     "id": 603,
     "collection": "kids",
     "level": "B2+",
-    "category": "Future Tech",
+    "category": "Growing Up",
     "teacher": {
-      "prompt": "Rental e-scooters are coming to the student's town. Ask what one rule they'd make, and who would complain about it.",
-      "constraint": "Student justifies a rule and responds to objections."
+      "prompt": "Ask when the student thinks someone really becomes an adult — at 18, when they get a job, or something else entirely.",
+      "constraint": "Student defines an idea and challenges simple answers."
     },
     "student": {
-      "prompt": "Your town is getting rental e-scooters. Tell your teacher the one rule you'd make — and who would hate it.",
-      "goal": "Find out what rule your teacher would add.",
+      "prompt": "When does someone really become an adult? Talk to your teacher — is it just about age?",
+      "goal": "Find out when your teacher first felt like an adult.",
       "starters": [
-        "Speed is the big problem...",
-        "Pedestrians won't...",
-        "What rule would you make?"
+        "It's not about age, it's...",
+        "You're an adult when...",
+        "When did you feel grown up?"
       ],
-      "constraint": "Student justifies a rule and responds to objections."
+      "constraint": "Student defines an idea and challenges simple answers."
     }
   },
   {
     "id": 604,
     "collection": "kids",
     "level": "B2+",
-    "category": "Weird & Gross",
+    "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "Ask whether doctors should ever give patients a sugar pill that only works because they believe it's medicine.",
-      "constraint": "Student weighs honesty against results and defends their view."
+      "prompt": "Ask about something that's completely normal in one culture but seems strange or even gross in another — food, manners or habits.",
+      "constraint": "Student compares cultures and avoids stereotypes."
     },
     "student": {
-      "prompt": "A sugar pill can make people feel better just because they believe it's medicine. Ask your teacher if doctors should use them.",
-      "goal": "Find out if your teacher would want to know it's a placebo.",
+      "prompt": "Tell your teacher about something that's normal in one country but seems strange in another.",
+      "goal": "Hear what surprised your teacher in another culture.",
       "starters": [
-        "If it works, who cares...",
-        "It's still a kind of lie...",
-        "Has a placebo worked on you?"
+        "In my country, people...",
+        "Some people find it strange...",
+        "What surprised you abroad?"
       ],
-      "constraint": "Student weighs honesty against results and defends their view."
+      "constraint": "Student compares cultures and avoids stereotypes."
     }
   },
   {
     "id": 605,
     "collection": "kids",
     "level": "B2+",
-    "category": "Weird & Gross",
+    "category": "Online Life",
     "teacher": {
-      "prompt": "Doctors can treat some serious gut infections using poo from a healthy donor. Ask the student what they think — and whether they'd accept it.",
-      "constraint": "Student separates feelings from reasons and explains a view."
+      "prompt": "Ask whether songs, art or stories made by AI count as 'real' art — and whether the student would care if a favourite song was AI-made.",
+      "constraint": "Student weighs a new idea and explains what matters to them."
     },
     "student": {
-      "prompt": "Doctors can treat some illnesses with poo from a healthy person. Gross or genius? Ask your teacher if they'd accept it.",
-      "goal": "Find out if your teacher could get past the disgust.",
+      "prompt": "If your favourite song turned out to be made by AI, would it matter? Talk to your teacher about it.",
+      "goal": "See whether your teacher thinks AI art counts.",
       "starters": [
-        "That's disgusting, but...",
-        "If it works...",
-        "Would you do it?"
+        "It would feel less...",
+        "A song is a song...",
+        "Would it matter to you?"
       ],
-      "constraint": "Student separates feelings from reasons and explains a view."
+      "constraint": "Student weighs a new idea and explains what matters to them."
     }
   },
   {
     "id": 606,
     "collection": "kids",
     "level": "B2+",
-    "category": "Weird & Gross",
+    "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "Some shops fill the air with smells like fresh bread, hoping people buy more. Ask whether that's clever marketing or unfair.",
-      "constraint": "Student draws a line between persuasion and manipulation."
+      "prompt": "Ask why people pay so much more for famous brands — trainers, phones, clothes — and whether brands matter to the student.",
+      "constraint": "Student explains motives and gives an honest opinion."
     },
     "student": {
-      "prompt": "Some shops fill the air with the smell of fresh bread, hoping you'll buy more. Talk to your teacher: clever or unfair?",
-      "goal": "Find out if a smell has ever tempted your teacher.",
+      "prompt": "Why do people pay so much more for brands? Tell your teacher if brands matter to you.",
+      "goal": "Compare how much brands matter to you and your teacher.",
       "starters": [
-        "Every shop tries to...",
-        "It becomes unfair when...",
-        "Has a smell ever got you?"
+        "Honestly, brands do...",
+        "You're paying for the name...",
+        "Do you care about brands?"
       ],
-      "constraint": "Student draws a line between persuasion and manipulation."
+      "constraint": "Student explains motives and gives an honest opinion."
     }
   },
   {
     "id": 607,
     "collection": "kids",
     "level": "B2+",
-    "category": "Stories",
+    "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "The student was praised for a project idea that was really their friend's. The friend says, \"It's fine.\" Ask if it really is.",
-      "constraint": "Student interprets feelings and explains what they'd do."
+      "prompt": "Ask about a big question the student would love a real answer to — about space, the brain, history, the future, anything.",
+      "constraint": "Student asks big questions and explores possible answers."
     },
     "student": {
-      "prompt": "You got praised for your friend's idea. Your friend says, \"It's fine.\" Talk to your teacher about whether it really is.",
-      "goal": "Find out what your teacher thinks \"it's fine\" really means.",
+      "prompt": "What big question would you love a real answer to? Ask your teacher what they think.",
+      "goal": "See if you and your teacher can work it out together.",
       "starters": [
-        "When people say 'it's fine'...",
-        "I should probably...",
-        "What would you do?"
+        "I've always wondered...",
+        "Nobody really knows why...",
+        "What's your big question?"
       ],
-      "constraint": "Student interprets feelings and explains what they'd do."
+      "constraint": "Student asks big questions and explores possible answers."
     }
   },
   {
     "id": 608,
     "collection": "kids",
     "level": "B2+",
-    "category": "Stories",
+    "category": "Friends & People",
     "teacher": {
-      "prompt": "Sam missed Maya's birthday saying he was ill, but she saw him gaming online all evening. Ask the student to explain it from Sam's side.",
-      "constraint": "Student retells events from another perspective."
+      "prompt": "Ask about someone who has changed how the student thinks — a friend, family member, creator or teacher — and how they did it.",
+      "constraint": "Student describes influence and reflects on change."
     },
     "student": {
-      "prompt": "Sam said he was ill and missed Maya's birthday, but she saw him gaming online. Tell your teacher Sam's side of the story.",
-      "goal": "See if your teacher imagines the same story.",
+      "prompt": "Tell your teacher about someone who changed the way you think about something.",
+      "goal": "Hear about someone who influenced your teacher.",
       "starters": [
-        "From Sam's point of view...",
-        "Maybe he didn't want...",
-        "Whose side are you on?"
+        "They showed me that...",
+        "Because of them, I...",
+        "Who influenced you most?"
       ],
-      "constraint": "Student retells events from another perspective."
+      "constraint": "Student describes influence and reflects on change."
     }
   },
   {
     "id": 609,
     "collection": "kids",
     "level": "B2+",
-    "category": "Stories",
+    "category": "Friends & People",
     "teacher": {
-      "prompt": "Millions of fans hate the ending of a popular series and want it changed. Ask if the writers should change it.",
-      "constraint": "Student argues who a story belongs to, answering the other side."
+      "prompt": "Ask what makes someone a really good friend, and whether friendships change as people get older.",
+      "constraint": "Student defines qualities and reflects on experience."
     },
     "student": {
-      "prompt": "Millions of fans hate the ending of a popular series. Ask your teacher if the writers should change it.",
-      "goal": "Find out which ending your teacher would change.",
+      "prompt": "What makes someone a really good friend? Talk to your teacher about how friendships change.",
+      "goal": "Find out if your teacher still has childhood friends.",
       "starters": [
-        "Fans made it popular, so...",
-        "If writers listened to everyone...",
-        "Which ending would you change?"
+        "A good friend is someone who...",
+        "Some friends just drift apart...",
+        "Are you still friends with anyone?"
       ],
-      "constraint": "Student argues who a story belongs to, answering the other side."
+      "constraint": "Student defines qualities and reflects on experience."
     }
   },
   {
     "id": 610,
     "collection": "kids",
     "level": "B2+",
-    "category": "Stories",
+    "category": "Growing Up",
     "teacher": {
-      "prompt": "The student's friend is secretly leaving the band and asks them to keep quiet — but another member is about to spend €300 on equipment. Ask what they'd do.",
-      "constraint": "Student weighs a promise against its consequences and explains a decision."
+      "prompt": "Ask whether the student thinks it's harder or easier to be young now than when the teacher was their age — and why.",
+      "constraint": "Student compares generations and supports opinions with examples."
     },
     "student": {
-      "prompt": "Your friend made you promise not to tell she's leaving the band. Another member is about to spend €300. Ask your teacher what they'd do.",
-      "goal": "Find out if your teacher would break the promise.",
+      "prompt": "Is it harder to be young now than when your teacher was young? Discuss it with your teacher.",
+      "goal": "Compare your childhood with your teacher's.",
       "starters": [
-        "A promise is a promise, but...",
-        "It's not my secret...",
-        "Have you kept a hard secret?"
+        "You didn't have to worry about...",
+        "At least we have...",
+        "Was it easier for you?"
       ],
-      "constraint": "Student weighs a promise against its consequences and explains a decision."
+      "constraint": "Student compares generations and supports opinions with examples."
     }
   },
   {
