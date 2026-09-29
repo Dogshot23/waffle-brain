@@ -8,8 +8,10 @@
 //    node scripts/validate.js --check-sources   (also compare against the
 //                                                 legacy files the 520 were
 //                                                 migrated from)
+//    node scripts/validate.js --warnings         (list every content warning)
 //
-//  Exits with code 1 if any check fails.
+//  Exits with code 1 if any check fails. Content warnings (from
+//  docs/waffle-content-rules.md) are printed as a summary and never fail.
 // ─────────────────────────────────────────────
 
 const fs   = require('fs');
@@ -68,14 +70,15 @@ waffles.forEach((w, i) => {
   }
   if (w.teacher && !nonEmpty(w.teacher.constraint)) err(`${at}: teacher.constraint is missing or empty`);
 
-  // Optional Student Goal + Starters (shown on the Student page): if a
-  // record has either, it must have a Goal and exactly 3 Starters.
+  // Student Starters (shown on the Student page): if present, 2–4 non-empty
+  // strings. Student Goal is legacy (not in the content model): optional, but
+  // must not be empty if present. See docs/waffle-content-rules.md.
   const s = w.student;
-  if (s && (s.goal !== undefined || s.starters !== undefined)) {
-    if (!nonEmpty(s.goal)) err(`${at}: student.goal is missing or empty`);
-    if (!Array.isArray(s.starters) || s.starters.length !== 3 || !s.starters.every(nonEmpty))
-      err(`${at}: student.starters must be exactly 3 non-empty strings`);
+  if (s && s.starters !== undefined) {
+    if (!Array.isArray(s.starters) || s.starters.length < 2 || s.starters.length > 4 || !s.starters.every(nonEmpty))
+      err(`${at}: student.starters must be 2–4 non-empty strings`);
   }
+  if (s && s.goal !== undefined && !nonEmpty(s.goal)) err(`${at}: student.goal is empty`);
 });
 
 // ── Permanent migrated IDs 1–520 all present ──
@@ -126,6 +129,64 @@ if (process.argv.includes('--check-sources')) {
   if (id !== MIGRATED_ID_MAX) err(`Legacy sources contain ${id} activities, expected ${MIGRATED_ID_MAX}`);
 }
 
+// ── Content warnings (never fail the run) ─────
+// Checks against docs/waffle-content-rules.md: "A Waffle should start a
+// conversation, not conduct one." Word limits are guidance, not gates.
+// Every record is counted in the per-collection summary; warnings for NEW
+// Waffles (id above CONTENT_BASELINE_MAX_ID) are always listed in full.
+// Use --warnings to list every warning, including existing content.
+const CONTENT_BASELINE_MAX_ID = 636; // last id that existed when the rules were introduced
+const LIMITS = { teacherPrompt: 30, languageFocus: 12, studentPrompt: 25, starter: 6 };
+const words = (t) => (typeof t === 'string' ? t.split(/\s+/).filter(Boolean).length : 0);
+const SECTION_LABEL = /^\s*(Ask|Teacher|Quick|Stuck|Hook|Task|Extension|Rules?|Step \d+|Round \d+)\s*:/im;
+const LIST_LINE     = /(^|\n)\s*(\d+[.)]|[-•*])\s+\S/;
+const MECHANICS     = /\b(rules of the game|game rules|rounds?|points|score|scoring|stages?|grid|scavenger hunt|worksheet|bingo|timer|winner|take turns|step \d)\b/i;
+
+const CHECKS = {
+  'teacher-prompt-long':  'Teacher Prompt over ' + LIMITS.teacherPrompt + ' words',
+  'language-focus-long':  'Language Focus over ' + LIMITS.languageFocus + ' words',
+  'student-prompt-long':  'Student Prompt over ' + LIMITS.studentPrompt + ' words',
+  'starter-long':         'a Starter over ' + LIMITS.starter + ' words',
+  'section-labels':       'Teacher Prompt has section labels (Ask:/Teacher:/Quick:/Stuck:…)',
+  'list-steps':           'numbered or bulleted steps in a prompt',
+  'activity-mechanics':   'activity-mechanics language (rules, rounds, points, score…)',
+  'new-missing-starters': 'NEW Waffle without Student Starters',
+  'new-has-goal':         'NEW Waffle has a Student Goal (not in the content model)',
+};
+
+const warnings = [];
+const summary = {}; // collection → check → count
+waffles.forEach(w => {
+  if (!w || !w.teacher || !w.student) return;
+  const isNew = Number.isInteger(w.id) && w.id > CONTENT_BASELINE_MAX_ID;
+  const hits = [];
+  const hit = (check, detail) => hits.push({ check, detail });
+
+  const tp = w.teacher.prompt, lf = w.teacher.constraint, sp = w.student.prompt;
+  if (words(tp) > LIMITS.teacherPrompt) hit('teacher-prompt-long', `${words(tp)} words`);
+  if (words(lf) > LIMITS.languageFocus) hit('language-focus-long', `${words(lf)} words`);
+  if (words(sp) > LIMITS.studentPrompt) hit('student-prompt-long', `${words(sp)} words`);
+  const longStarters = (Array.isArray(w.student.starters) ? w.student.starters : []).filter(st => words(st) > LIMITS.starter);
+  if (longStarters.length) hit('starter-long', longStarters.map(st => `"${st}"`).join(', '));
+  const label = typeof tp === 'string' && tp.match(SECTION_LABEL);
+  if (label) hit('section-labels', `"${label[0].trim()}"`);
+  const list = [tp, sp].find(t => typeof t === 'string' && LIST_LINE.test(t));
+  if (list) hit('list-steps', `"${list.split('\n').find(l => LIST_LINE.test(l)).trim().slice(0, 50)}"`);
+  const mech = [tp, sp].map(t => typeof t === 'string' && t.match(MECHANICS)).find(Boolean);
+  if (mech) hit('activity-mechanics', `"${mech[0]}"`);
+  if (isNew && !Array.isArray(w.student.starters)) hit('new-missing-starters', '');
+  if (isNew && w.student.goal !== undefined) hit('new-has-goal', '');
+
+  const col = w.collection || '(none)';
+  summary[col] = summary[col] || { waffles: 0, flagged: 0 };
+  summary[col].waffles++;
+  if (hits.length) summary[col].flagged++;
+  hits.forEach(h => {
+    summary[col][h.check] = (summary[col][h.check] || 0) + 1;
+    warnings.push({ id: w.id, collection: col, isNew, ...h });
+  });
+});
+
 // ── Report ────────────────────────────────────
 const count = (key) => waffles.reduce((m, w) => (m[w[key]] = (m[w[key]] || 0) + 1, m), {});
 console.log(`Waffles in data/waffles.json: ${waffles.length}`);
@@ -134,6 +195,27 @@ console.log('By collection:', count('collection'));
 console.log('By level:     ', count('level'));
 console.log('By category:  ', count('category'));
 if (sourceSummary) console.log(`Legacy source pairs: ${sourceSummary.sourcePairs}, matched exactly: ${sourceSummary.matched}`);
+
+console.log('\nContent warnings (docs/waffle-content-rules.md — guidance only, never a failure):');
+const cols = Object.keys(summary);
+const pad = (v, n) => String(v).padStart(n);
+console.log('  ' + 'check'.padEnd(66) + cols.map(c => pad(c, 10)).join(''));
+console.log('  ' + 'Waffles'.padEnd(66) + cols.map(c => pad(summary[c].waffles, 10)).join(''));
+console.log('  ' + 'Waffles with at least one warning'.padEnd(66) + cols.map(c => pad(summary[c].flagged, 10)).join(''));
+Object.entries(CHECKS).forEach(([key, label]) => {
+  if (!cols.some(c => summary[c][key])) return;
+  console.log('  ' + ('- ' + label).padEnd(66) + cols.map(c => pad(summary[c][key] || 0, 10)).join(''));
+});
+const newWarnings = warnings.filter(x => x.isNew);
+const listed = process.argv.includes('--warnings') ? warnings : newWarnings;
+const newCount = waffles.filter(w => w && Number.isInteger(w.id) && w.id > CONTENT_BASELINE_MAX_ID).length;
+console.log(`  New Waffles (id > ${CONTENT_BASELINE_MAX_ID}): ${newCount}, with warnings: ${new Set(newWarnings.map(x => x.id)).size}`);
+if (listed.length) {
+  console.log(process.argv.includes('--warnings') ? '\n  All content warnings:' : '\n  Content warnings on NEW Waffles — please review:');
+  listed.forEach(x => console.log(`  ⚠ id ${x.id} (${x.collection}): ${CHECKS[x.check]}${x.detail ? ' — ' + x.detail : ''}`));
+} else if (!process.argv.includes('--warnings')) {
+  console.log('  (Run with --warnings to list every warning on existing content.)');
+}
 
 if (errors.length) {
   console.error(`\n✗ VALIDATION FAILED — ${errors.length} problem(s):`);
