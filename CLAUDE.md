@@ -24,22 +24,42 @@ refer to the **Collection** dropdown; they have not been renamed yet.
 ## Waffle content rules — read first: `docs/waffle-content-rules.md`
 
 **"A Waffle should start a conversation, not conduct a conversation."**
+**"Every Student Waffle should clearly initiate a conversation between the
+student and the teacher."**
 
 - `docs/waffle-content-rules.md` is the canonical Waffle content specification.
   Read it before creating, editing, reviewing or generating any Waffle.
-- It applies to General English, Kids, Business and every future Collection.
-- New Waffles have exactly four content elements: a short Teacher Prompt, a
-  short Language Focus, a short Student Prompt and 2–4 short Conversation
-  Starters. No Student Goal, no section labels, no steps, rules or scripts.
+- It applies to General English, Kids, Business and every future Collection,
+  at every level and on every theme.
+- New Waffles have exactly five content elements: a short Teacher Prompt, a
+  short Language Focus, a Student Prompt, a Student Goal and 2–4 Conversation
+  Starters. No section labels, no steps, rules or scripts.
+- The Teacher side creates the interesting situation; the Student side turns
+  it into a student → teacher conversation. The model for the Student side is
+  the 30 standalone Student Waffles in `studentSupport.js` ("Ask your teacher
+  about the best meal they've ever eaten" · Goal "Find out what made it so
+  memorable" · Starters "Where was it?" / "What made it so good?" / "Would you
+  go back?"):
+  - Student Prompt: invites the student to talk WITH the teacher (Ask/Tell/
+    Describe to/Talk to your teacher…, or another natural form) — not a
+    standalone question, exercise or roleplay.
+  - Student Goal: a CONVERSATION goal — what to find out about the teacher's
+    experience, opinion or perspective (about 5–12 words). Not an activity
+    objective. (This replaces the earlier "no Student Goal" rule.)
+  - Starters: natural things to say aloud; at least one normally invites the
+    teacher in (e.g. "What about you?"). No sentence-completion frames.
 - It overrides older content guidance where they conflict. Superseded where
   they conflict: `design/` (incl. `prompt_philosophy.md`, `PROJECT_STATE.md`,
   `level_design.md`, `prompt_plan.md`), `wafflebrain-kids/*.md` (engines,
   Hook/Ask/Teacher/Quick/Stuck), `WaffleBrain Prompt Rewrite/`, and
   `data/waffle_system_spec.md`. Keep those files; do not rewrite them.
 - Do not retrofit existing Waffles to the rules unless a task explicitly asks.
-- `node scripts/validate.js` prints content warnings (word counts, section
-  labels, lists, activity mechanics, missing Starters). Warnings do not fail
-  the run; review them for any Waffle you add or change.
+- `node scripts/validate.js` FAILS if a new Waffle (id 637+) has no Student
+  Goal or not 2–4 Starters, and prints content warnings (word counts, section
+  labels, lists, activity mechanics, Student Prompts not directed at the
+  teacher, activity-style Goals, Starters that never invite the teacher in,
+  worksheet-style Starters). Warnings do not fail the run; review them for any
+  Waffle you add or change.
 
 ## Canonical Waffle data: `data/waffles.json`
 
@@ -61,19 +81,18 @@ array with one record per Waffle:
   `index.html` and `LEVELS` in `app.js`).
 - `constraint` is shown in the Teacher app as "Language Focus". At migration it
   was identical on both sides; the two sides may diverge later.
-- `student.starters` (2–4 short sentence stems) is required for every NEW
-  Waffle (see `docs/waffle-content-rules.md`). Existing General English
-  records have none; do not add Starters to them unless a task asks.
-- `student.goal` is legacy: existing Business (521–550, 611–636) and Kids
-  records have one and the Student page shows it. Do not remove it, and do
-  not give new Waffles a Goal.
+- `student.goal` (a conversation goal) and `student.starters` (2–4) are
+  required for every NEW Waffle (see `docs/waffle-content-rules.md`); the
+  Student page shows both. Existing General English records have neither, and
+  existing Kids records have Starters but no Goal; do not add or change them
+  unless a task asks. Existing Business Goals (521–550, 611–636) pre-date the
+  conversation-goal rule; leave them unless a task asks.
 - Kids records (551–610, `collection: "kids"`) use their own categories
   (Weird Creatures, Gaming, Mysteries, Future Tech, Weird & Gross, Stories)
-  and have `student.goal` + `student.starters`. Their `teacher.prompt`
-  currently holds the scene plus `Ask:` / `Teacher:` / `Quick:` / `Stuck:`
-  sections — a legacy format that does NOT follow the content rules and is due
-  for a separate rewrite; do not copy it for new Waffles. The Teacher category
-  dropdown follows the selected Collection's categories.
+  and follow the Teacher-side rules (rewritten 2026-09-29). Their Student
+  sides are still scenario questions without a Goal — due for a separate
+  rewrite to the student → teacher model; do not copy them for new Waffles.
+  The Teacher category dropdown follows the selected Collection's categories.
 
 ### Permanent IDs — rules
 

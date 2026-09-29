@@ -7889,11 +7889,12 @@
       "constraint": "Student explains what they'd do and what might happen."
     },
     "student": {
-      "prompt": "A huge spider is walking across your teacher's back in the middle of a lesson. Would you tell her? How?",
+      "prompt": "Imagine a huge spider walking across a teacher's back in class. Tell your teacher if you'd say something — and how.",
+      "goal": "Find out what your teacher would want you to do.",
       "starters": [
         "I'd just whisper...",
-        "Nobody wants to...",
-        "If I shout, she..."
+        "Everyone would laugh...",
+        "Would you want to know?"
       ],
       "constraint": "Student explains what they'd do and what might happen."
     }
@@ -7908,11 +7909,12 @@
       "constraint": "Student gives opinions and explains where the line is."
     },
     "student": {
-      "prompt": "Your cousin's cat is famous online. Sleeping videos? Funny costumes? Waking it up for a laugh? Adverts? What's OK, and what's unfair?",
+      "prompt": "Your cousin's cat is famous online! Talk to your teacher: sleeping videos, costumes, waking it up, adverts — which are OK?",
+      "goal": "Find out which videos your teacher thinks are unfair.",
       "starters": [
-        "Sleeping videos are...",
-        "Waking it up is...",
-        "The costume is OK if..."
+        "Sleeping videos are fine...",
+        "Waking it up is mean...",
+        "Would you watch them?"
       ],
       "constraint": "Student gives opinions and explains where the line is."
     }
@@ -7927,11 +7929,12 @@
       "constraint": "Student guesses and gives reasons."
     },
     "student": {
-      "prompt": "Your photo from the park at night shows two shining eyes. Everyone says it's a wolf. What do you think it was?",
+      "prompt": "Your night photo shows two shining eyes in the park. Everyone says \"Wolf!\" Tell your teacher what you think it was.",
+      "goal": "See what your teacher thinks the eyes were.",
       "starters": [
         "It's probably just a...",
-        "It can't be a wolf because...",
-        "My friends think..."
+        "It can't be a wolf!",
+        "What do you think?"
       ],
       "constraint": "Student guesses and gives reasons."
     }
@@ -7946,11 +7949,12 @@
       "constraint": "Student gives friendly advice with reasons."
     },
     "student": {
-      "prompt": "Your friend always quits the game when they're losing. Now nobody plays with them. What do you say?",
+      "prompt": "Your friend always quits the game when they're losing. Tell your teacher what you'd say to them.",
+      "goal": "Find out what your teacher would say.",
       "starters": [
-        "Hey, can I say something?",
+        "I'd just say...",
         "It's not fun when...",
-        "Next time, you could..."
+        "What would you say?"
       ],
       "constraint": "Student gives friendly advice with reasons."
     }
@@ -7965,11 +7969,12 @@
       "constraint": "Student says what should happen and why."
     },
     "student": {
-      "prompt": "Your little brother spent €40 of Mum's money in a game. He thought it wasn't real! What should happen now?",
+      "prompt": "Your little brother spent €40 of Mum's money in a game. Talk to your teacher about what should happen now.",
+      "goal": "Find out if your teacher thinks he should pay.",
       "starters": [
-        "He's only 8, so...",
-        "I think he should...",
-        "The game shouldn't..."
+        "He's only 8...",
+        "Mum should...",
+        "Is it his fault?"
       ],
       "constraint": "Student says what should happen and why."
     }
@@ -7984,11 +7989,12 @@
       "constraint": "Student makes offers and gives reasons."
     },
     "student": {
-      "prompt": "Your parents say one hour of games on school days. You want two. What deal would you offer them?",
+      "prompt": "Your parents say one hour of games on school days. You want two! Tell your teacher what deal you'd offer.",
+      "goal": "Find out what screen rules your teacher had as a kid.",
       "starters": [
-        "What if I...?",
-        "One hour isn't enough because...",
-        "I promise to..."
+        "What if I...",
+        "I promise to...",
+        "Did you have rules like that?"
       ],
       "constraint": "Student makes offers and gives reasons."
     }
@@ -8003,11 +8009,12 @@
       "constraint": "Student says what they'd do and what might happen."
     },
     "student": {
-      "prompt": "Your team is mean to a new player. If you help him, they might kick you out. What do you do?",
+      "prompt": "Your team is mean to a new player. If you help him, they might kick you out. Tell your teacher what you'd do.",
+      "goal": "See what your teacher would do.",
       "starters": [
         "I don't want to lose...",
-        "Maybe I could message...",
-        "If they kick me out..."
+        "Maybe I could message him...",
+        "Would you help him?"
       ],
       "constraint": "Student says what they'd do and what might happen."
     }
@@ -8022,11 +8029,12 @@
       "constraint": "Student guesses and explains their reasons."
     },
     "student": {
-      "prompt": "Every Monday, someone leaves a drawing on your desk. Today, it's a drawing of you! Who do you think it is?",
+      "prompt": "Every Monday, someone leaves a drawing on your desk. Today it's a drawing of you! Tell your teacher who you think it is.",
+      "goal": "Find out who your teacher thinks it is.",
       "starters": [
         "Maybe it's the quiet kid...",
-        "It's a bit creepy, but...",
-        "Next Monday, I'd wait and..."
+        "It's a bit creepy!",
+        "Who do you think?"
       ],
       "constraint": "Student guesses and explains their reasons."
     }
@@ -8041,11 +8049,12 @@
       "constraint": "Student gives an opinion and supports it with reasons."
     },
     "student": {
-      "prompt": "Alex says Jo broke his phone screen. Jo says Alex sat on it. Who do you believe?",
+      "prompt": "Alex says Jo broke his phone. Jo says Alex sat on it! Ask your teacher who they believe.",
+      "goal": "Find out if you and your teacher agree.",
       "starters": [
-        "Jo sounds more honest...",
+        "I believe Jo...",
         "Sitting on a phone? Really?",
-        "Maybe it was both..."
+        "Who do you believe?"
       ],
       "constraint": "Student gives an opinion and supports it with reasons."
     }
@@ -8060,11 +8069,12 @@
       "constraint": "Student suggests possible reasons."
     },
     "student": {
-      "prompt": "Your teacher suddenly moves you next to someone you don't know well. Why do you think she did it?",
+      "prompt": "At school, you suddenly have a new seat next to someone you don't know. Nobody says why! Tell your teacher what you think.",
+      "goal": "Find out if this ever happened to your teacher.",
       "starters": [
-        "Maybe the teacher wants...",
         "Maybe I talk too much...",
-        "It could be fun..."
+        "It could be fun...",
+        "Did that happen to you?"
       ],
       "constraint": "Student suggests possible reasons."
     }
@@ -8079,11 +8089,12 @@
       "constraint": "Student says what they'd say and guesses who she is."
     },
     "student": {
-      "prompt": "A friendly woman says your name and asks about Grandma's dog. You don't know her! What do you say?",
+      "prompt": "A friendly woman says your name and asks about Grandma's dog. You don't know her! Tell your teacher what you'd say.",
+      "goal": "Find out if this has happened to your teacher.",
       "starters": [
         "Oh, hi! Um...",
         "I'm really sorry, but...",
-        "Maybe she's a friend of..."
+        "Has that happened to you?"
       ],
       "constraint": "Student says what they'd say and guesses who she is."
     }
@@ -8098,11 +8109,12 @@
       "constraint": "Student gives an opinion and supports it with reasons."
     },
     "student": {
-      "prompt": "Your friend uses AI for all their homework and always gets great marks. You do your own. Is that fair?",
+      "prompt": "Your friend uses AI for all their homework and gets great marks. Ask your teacher if that's fair.",
+      "goal": "Find out what your teacher thinks about AI homework.",
       "starters": [
         "That's cheating...",
         "AI is OK for...",
-        "But I learn more..."
+        "Can you tell when...?"
       ],
       "constraint": "Student gives an opinion and supports it with reasons."
     }
@@ -8117,11 +8129,12 @@
       "constraint": "Student agrees or disagrees and gives reasons."
     },
     "student": {
-      "prompt": "Imagine earbuds that translate any language, instantly. Would we still need to learn English? Why or why not?",
+      "prompt": "Imagine earbuds that translate every language. Ask your teacher if people will still learn English.",
+      "goal": "Find out if your teacher would still learn languages.",
       "starters": [
         "That's true for...",
-        "But when you make friends...",
-        "Earbuds can't..."
+        "But for making friends...",
+        "Would you still learn?"
       ],
       "constraint": "Student agrees or disagrees and gives reasons."
     }
@@ -8136,11 +8149,12 @@
       "constraint": "Student says what they'd do and gives an opinion."
     },
     "student": {
-      "prompt": "A delivery robot is stuck and keeps saying \"Help, please.\" A boy is kicking it. What would you do?",
+      "prompt": "Tell your teacher what you'd do if a boy kicked a robot that keeps saying \"Help, please.\"",
+      "goal": "Find out if your teacher thinks robots deserve kindness.",
       "starters": [
+        "I'd probably...",
         "It's only a robot, but...",
-        "I'd say to the boy...",
-        "Robots can't feel, so..."
+        "Would you stop him?"
       ],
       "constraint": "Student says what they'd do and gives an opinion."
     }
@@ -8155,11 +8169,12 @@
       "constraint": "Student says what they'd do and why."
     },
     "student": {
-      "prompt": "Your school shop is selling crisps made from real crickets. Would you try them?",
+      "prompt": "Ask your teacher if they'd eat crisps made from real crickets.",
+      "goal": "Find out the strangest food your teacher has eaten.",
       "starters": [
-        "No way! I...",
-        "Maybe I'd try one if...",
-        "It's not so different from..."
+        "I'd never...",
+        "Maybe just one...",
+        "Would you try them?"
       ],
       "constraint": "Student says what they'd do and why."
     }
@@ -8174,11 +8189,12 @@
       "constraint": "Student says what they'd do and what might happen."
     },
     "student": {
-      "prompt": "On a school trip, your friend talks in their sleep and says who they like! What would you do in the morning?",
+      "prompt": "On a school trip, your friend says in their sleep who they like! Tell your teacher what you'd do in the morning.",
+      "goal": "See if your teacher would keep the secret.",
       "starters": [
         "I wouldn't say anything...",
-        "Maybe I'd joke...",
-        "What if they..."
+        "Maybe a little joke...",
+        "Would you tell them?"
       ],
       "constraint": "Student says what they'd do and what might happen."
     }
@@ -8193,12 +8209,13 @@
       "constraint": "Student describes sounds and feelings and says what they'd do."
     },
     "student": {
-      "prompt": "Your class made a video, and parents will watch it. You hate how your voice sounds! What sounds wrong? What would you do?",
+      "prompt": "Your class made a video, and parents will watch it. You hate your voice in it! Tell your teacher how it sounds.",
+      "goal": "Find out if your teacher likes their recorded voice.",
       "starters": [
         "It sounds too...",
         "It's not really me...",
         "Can I ask to...",
-        "Maybe everyone hates..."
+        "Do you like your voice?"
       ],
       "constraint": "Student describes sounds and feelings and says what they'd do."
     }
@@ -8213,11 +8230,12 @@
       "constraint": "Student describes feelings and says what they'd do."
     },
     "student": {
-      "prompt": "The class photo is online. Your eyes are closed and your mouth is open! How do you feel?",
+      "prompt": "The class photo is online. Your eyes are closed and your mouth is open! Tell your teacher how you'd feel.",
+      "goal": "Find out about your teacher's worst photo.",
       "starters": [
         "I'd feel so...",
-        "First, I'd...",
-        "Actually, it's kind of funny..."
+        "Actually, it's funny...",
+        "Do you have a bad photo?"
       ],
       "constraint": "Student describes feelings and says what they'd do."
     }
@@ -8232,11 +8250,12 @@
       "constraint": "Student says what they'd do and tells what happens."
     },
     "student": {
-      "prompt": "You find a phone on the bus. It starts ringing, and the screen says \"MUM\". Do you answer?",
+      "prompt": "You find a phone on the bus. It rings, and the screen says \"MUM\". Tell your teacher if you'd answer.",
+      "goal": "Find out what your teacher would say to Mum.",
       "starters": [
         "I'd answer and say...",
         "Hello? This isn't...",
-        "She's probably worried..."
+        "Would you answer?"
       ],
       "constraint": "Student says what they'd do and tells what happens."
     }
@@ -8251,11 +8270,12 @@
       "constraint": "Student tells a short story about what happens next."
     },
     "student": {
-      "prompt": "Oops! You sent a secret party message to the whole class group chat by mistake. What happens next?",
+      "prompt": "Oops! You sent a secret party message to the whole class chat. Tell your teacher what happens next.",
+      "goal": "Find out if your teacher ever sent a message by mistake.",
       "starters": [
         "Oh no! First, I...",
         "Everyone starts writing...",
-        "The next day at school..."
+        "Did that ever happen to you?"
       ],
       "constraint": "Student tells a short story about what happens next."
     }
@@ -8270,11 +8290,12 @@
       "constraint": "Student suggests explanations and gives reasons."
     },
     "student": {
-      "prompt": "An aquarium octopus escapes its tank every night, eats fish from other tanks, and goes back before morning. Why do you think it does this?",
+      "prompt": "An aquarium octopus escapes every night, eats fish from other tanks, then goes back. Talk to your teacher about why it does it.",
+      "goal": "Find out your teacher's best explanation.",
       "starters": [
         "It might be bored...",
-        "Maybe it's hungry because...",
-        "I think it's clever because..."
+        "Maybe it's showing off...",
+        "What's your theory?"
       ],
       "constraint": "Student suggests explanations and gives reasons."
     }
@@ -8289,11 +8310,12 @@
       "constraint": "Student compares animals and justifies their choice."
     },
     "student": {
-      "prompt": "Which animal do you think changed human history the most? Dogs? Horses? Chickens? Cats? Why?",
+      "prompt": "Dogs, horses, chickens, cats... Ask your teacher which animal changed human history the most.",
+      "goal": "See if you and your teacher pick the same animal.",
       "starters": [
         "Without horses, we...",
         "Dogs were the first...",
-        "Cats? No way..."
+        "Why that one?"
       ],
       "constraint": "Student compares animals and justifies their choice."
     }
@@ -8308,11 +8330,12 @@
       "constraint": "Student compares two options and explains what they'd give up."
     },
     "student": {
-      "prompt": "Your school has €1,000: beehives on the roof (free honey!) or a wildflower garden for wild bees. Not both. Which do you choose?",
+      "prompt": "Your school has €1,000: rooftop beehives (free honey!) or a wildflower garden for wild bees. Not both! Talk to your teacher about which to choose.",
+      "goal": "Find out which one your teacher would pick.",
       "starters": [
-        "Free honey sounds...",
-        "But wild bees...",
-        "Honestly, I'd go for..."
+        "Free honey sounds great...",
+        "But wild bees need...",
+        "Which would you pick?"
       ],
       "constraint": "Student compares two options and explains what they'd give up."
     }
@@ -8327,11 +8350,12 @@
       "constraint": "Student compares options and explains their choice."
     },
     "student": {
-      "prompt": "You need one more player: your best friend, a brilliant player nobody likes, or a hard worker who panics. Who do you pick?",
+      "prompt": "Tell your teacher who you'd pick for your team: your best friend, a brilliant player nobody likes, or a hard worker who panics.",
+      "goal": "Find out who your teacher would pick, and why.",
       "starters": [
         "It's hard, because...",
-        "My best friend would...",
-        "Winning matters, but..."
+        "Winning matters, but...",
+        "Who would you pick?"
       ],
       "constraint": "Student compares options and explains their choice."
     }
@@ -8346,11 +8370,12 @@
       "constraint": "Student explains what they'd do and predicts reactions."
     },
     "student": {
-      "prompt": "You finished a new game first. One friend wants to know the ending. Another hates spoilers. What do you say?",
+      "prompt": "You finished a new game first. One friend wants the ending; another hates spoilers. Tell your teacher what you'd do.",
+      "goal": "Find out how your teacher feels about spoilers.",
       "starters": [
         "I could tell him quietly...",
-        "Spoilers aren't that bad...",
-        "If it leaks in the chat..."
+        "If it leaks in the chat...",
+        "Do spoilers annoy you?"
       ],
       "constraint": "Student explains what they'd do and predicts reactions."
     }
@@ -8365,11 +8390,12 @@
       "constraint": "Student gives opinions and compares situations."
     },
     "student": {
-      "prompt": "Your friends play a 16+ game. You're 12, and your parents say no. Do age ratings make sense?",
+      "prompt": "Your friends play a 16+ game, but you're 12. Talk to your teacher about whether age ratings make sense.",
+      "goal": "Find out if your teacher thinks ratings are fair.",
       "starters": [
         "Ratings are useful for...",
-        "It depends what's...",
-        "Twelve and sixteen are..."
+        "Twelve and sixteen aren't...",
+        "What did you play at 12?"
       ],
       "constraint": "Student gives opinions and compares situations."
     }
@@ -8384,11 +8410,12 @@
       "constraint": "Student speculates about what happened and explains a decision."
     },
     "student": {
-      "prompt": "Overnight, your test mark on the school website changed from 6/10 to 8/10. What happened? Would you tell your teacher?",
+      "prompt": "Overnight, your test mark online changed from 6/10 to 8/10. Tell your teacher if you'd say anything.",
+      "goal": "Find out what your teacher would do in your place.",
       "starters": [
         "It might be a mistake...",
-        "Maybe someone...",
-        "If I tell the teacher..."
+        "Two extra marks is nice...",
+        "Would you tell?"
       ],
       "constraint": "Student speculates about what happened and explains a decision."
     }
@@ -8403,11 +8430,12 @@
       "constraint": "Student speculates and gives reasons."
     },
     "student": {
-      "prompt": "Your older brother or sister has been really nice to you all week. What do you think is going on?",
+      "prompt": "Your older brother or sister has been really nice to you all week. Tell your teacher what you think is going on.",
+      "goal": "Find out what your teacher suspects.",
       "starters": [
-        "They must want...",
-        "Maybe something happened...",
-        "I'd just wait and..."
+        "They must want something...",
+        "Maybe they broke...",
+        "What do you think?"
       ],
       "constraint": "Student speculates and gives reasons."
     }
@@ -8422,11 +8450,12 @@
       "constraint": "Student judges if information is true and explains how to check."
     },
     "student": {
-      "prompt": "A message says school will close next week because of a water problem. The school website says nothing. Do you believe it?",
+      "prompt": "A message says school will close next week because of a water problem. The website says nothing. Ask your teacher if they'd believe it.",
+      "goal": "Find out how your teacher checks if news is real.",
       "starters": [
         "I'd check who...",
-        "It sounds real because...",
-        "Even if it's fake..."
+        "It sounds real...",
+        "How would you check?"
       ],
       "constraint": "Student judges if information is true and explains how to check."
     }
@@ -8441,11 +8470,12 @@
       "constraint": "Student imagines and tells a story about the past."
     },
     "student": {
-      "prompt": "A library book comes back 40 years late with a note: \"Sorry. I had to leave in a hurry. — J.\" What's the story?",
+      "prompt": "A library book comes back 40 years late with a note: \"Sorry. I had to leave in a hurry. — J.\" Tell your teacher the story.",
+      "goal": "Find out who your teacher thinks J was.",
       "starters": [
         "Maybe J had to...",
         "Forty years ago...",
-        "I think J was..."
+        "Who do you think J was?"
       ],
       "constraint": "Student imagines and tells a story about the past."
     }
@@ -8460,11 +8490,12 @@
       "constraint": "Student gives opinions and compares AI with real friends."
     },
     "student": {
-      "prompt": "Your cousin says an AI chatbot is her best friend. She talks to it every night. Is that a problem?",
+      "prompt": "Your cousin says an AI chatbot is her best friend. Talk to your teacher about whether that's a problem.",
+      "goal": "Find out if your teacher would ever talk to an AI friend.",
       "starters": [
         "I can see why...",
         "A real friend can...",
-        "It's only a problem if..."
+        "Do you ever chat with AI?"
       ],
       "constraint": "Student gives opinions and compares AI with real friends."
     }
@@ -8479,11 +8510,12 @@
       "constraint": "Student gives opinions and describes possible consequences."
     },
     "student": {
-      "prompt": "Someone made a realistic fake video of a teacher at your school dancing badly. Everyone's sharing it. Is it just a joke?",
+      "prompt": "Someone made a fake video of a teacher dancing badly, and everyone's sharing it. Ask your teacher if it's just a joke.",
+      "goal": "Find out how your teacher would feel if it was them.",
       "starters": [
         "It's funny, but...",
         "Imagine if someone made...",
-        "The person who made it..."
+        "How would you feel?"
       ],
       "constraint": "Student gives opinions and describes possible consequences."
     }
@@ -8498,11 +8530,12 @@
       "constraint": "Student makes predictions and explains causes and effects."
     },
     "student": {
-      "prompt": "Imagine an app that brings anything to your door in 10 minutes. How would it change your town?",
+      "prompt": "Imagine an app that brings anything to your door in 10 minutes. Talk to your teacher about how it would change your town.",
+      "goal": "Find out if your teacher would use it.",
       "starters": [
         "Small shops might...",
         "People will probably stop...",
-        "It's great for..."
+        "What would you order first?"
       ],
       "constraint": "Student makes predictions and explains causes and effects."
     }
@@ -8517,11 +8550,12 @@
       "constraint": "Student imagines changes and compares options."
     },
     "student": {
-      "prompt": "Should school start later for teenagers? What would be better — and what would be worse?",
+      "prompt": "Tell your teacher whether school should start later for teenagers, and what your mornings are like.",
+      "goal": "Find out what time your teacher's school started.",
       "starters": [
         "If school started at 10...",
-        "Buses and parents would...",
-        "In the morning, I feel..."
+        "In the morning, I feel...",
+        "What time did you start?"
       ],
       "constraint": "Student imagines changes and compares options."
     }
@@ -8536,11 +8570,12 @@
       "constraint": "Student makes suggestions and explains what matters most."
     },
     "student": {
-      "prompt": "Your school toilets are dirty, there's no soap, and the locks are broken. How would you fix them with very little money?",
+      "prompt": "Your school toilets are dirty, with no soap and broken locks. Tell your teacher how you'd fix them with very little money.",
+      "goal": "Find out what your teacher's school toilets were like.",
       "starters": [
         "The cheapest thing is...",
-        "Students could...",
-        "First, I'd fix..."
+        "First, I'd fix...",
+        "Were yours this bad?"
       ],
       "constraint": "Student makes suggestions and explains what matters most."
     }
@@ -8555,11 +8590,12 @@
       "constraint": "Student explains behaviour and predicts what happens next."
     },
     "student": {
-      "prompt": "Thirty people are queueing outside a shop, but nobody knows what for. Would you join the queue?",
+      "prompt": "Thirty people are queueing outside a shop, and nobody knows what for. Tell your teacher if you'd join the queue.",
+      "goal": "Find out if your teacher ever joined a mystery queue.",
       "starters": [
         "I'd probably join, just in case...",
         "People join because...",
-        "In an hour..."
+        "Would you join?"
       ],
       "constraint": "Student explains behaviour and predicts what happens next."
     }
@@ -8574,11 +8610,12 @@
       "constraint": "Student compares two explanations and gives examples."
     },
     "student": {
-      "prompt": "Why can't you tickle yourself? Does your brain know what your hand will do? Or does tickling only work as a surprise?",
+      "prompt": "Talk to your teacher about why you can't tickle yourself. Does your brain know what's coming, or does tickling need a surprise?",
+      "goal": "Find out which explanation your teacher believes.",
       "starters": [
         "When I try it, I...",
-        "But if someone surprises me...",
-        "I think it's my brain..."
+        "If someone surprises me...",
+        "Which idea do you believe?"
       ],
       "constraint": "Student compares two explanations and gives examples."
     }
@@ -8593,11 +8630,12 @@
       "constraint": "Student weighs a promise against helping the class and explains a choice."
     },
     "student": {
-      "prompt": "A shy classmate is secretly a great singer online. She asked you not to tell. Your class show needs a singer. Do you tell?",
+      "prompt": "A shy classmate secretly sings online, but she asked you not to tell. The class show needs a singer! Tell your teacher what you'd do.",
+      "goal": "Find out if your teacher would keep the secret.",
       "starters": [
         "She'd be amazing, but...",
-        "It's her secret, so...",
-        "Maybe I could ask her..."
+        "It's her secret...",
+        "What would you do?"
       ],
       "constraint": "Student weighs a promise against helping the class and explains a choice."
     }
@@ -8612,11 +8650,12 @@
       "constraint": "Student tells a story and predicts what happens."
     },
     "student": {
-      "prompt": "A boy at a new club says, \"I've been to Japan!\" It isn't true, and now everyone has questions. What happens next?",
+      "prompt": "A boy at a new club says, \"I've been to Japan!\" It isn't true, and everyone has questions. Tell your teacher what happens next.",
+      "goal": "Find out if your teacher ever told a small lie to impress.",
       "starters": [
         "He probably thinks...",
         "Then someone asks...",
-        "The only way out..."
+        "Have you ever done that?"
       ],
       "constraint": "Student tells a story and predicts what happens."
     }
@@ -8631,11 +8670,12 @@
       "constraint": "Student compares life then and now."
     },
     "student": {
-      "prompt": "A student from 25 years ago asks you: \"Is life better in the future?\" What would you tell them?",
+      "prompt": "A student from 25 years ago asks you: \"Is life better in the future?\" Talk to your teacher about your answer.",
+      "goal": "Find out what your teacher's life was like back then.",
       "starters": [
         "You won't believe this, but...",
         "Imagine a phone that...",
-        "One thing was better..."
+        "What was it like then?"
       ],
       "constraint": "Student compares life then and now."
     }
@@ -8650,11 +8690,12 @@
       "constraint": "Student argues a position and considers where to draw the line."
     },
     "student": {
-      "prompt": "Should a very intelligent animal, like an elephant, ever have the same rights as a person? Where would you draw the line?",
+      "prompt": "Some people want a zoo elephant declared a legal \"person\". Ask your teacher where they'd draw the line on animal rights.",
+      "goal": "See whether you and your teacher draw the same line.",
       "starters": [
         "Calling an elephant a person...",
         "If elephants get rights...",
-        "The line should be..."
+        "Where would you stop?"
       ],
       "constraint": "Student argues a position and considers where to draw the line."
     }
@@ -8669,11 +8710,12 @@
       "constraint": "Student evaluates evidence and expresses how sure they are."
     },
     "student": {
-      "prompt": "Some dogs press talking buttons that say \"outside\" and \"play\". Do they really understand the words? How could we know?",
+      "prompt": "Some dogs press buttons that say \"outside\" and \"play\". Talk to your teacher about whether they really understand the words.",
+      "goal": "Find out how your teacher would test it.",
       "starters": [
         "The videos are convincing, but...",
-        "It would prove it if...",
-        "Maybe they just learn..."
+        "Maybe they just learn...",
+        "How could we prove it?"
       ],
       "constraint": "Student evaluates evidence and expresses how sure they are."
     }
@@ -8688,11 +8730,12 @@
       "constraint": "Student weighs options and responds to objections."
     },
     "student": {
-      "prompt": "A forest has too many deer. Hunting, birth control, or bringing back wolves — which is the least bad choice? Why?",
+      "prompt": "A forest has too many deer: hunting, birth control, or bringing back wolves? Discuss the least bad choice with your teacher.",
+      "goal": "Find out which option your teacher could live with.",
       "starters": [
         "None of these is perfect...",
         "Wolves sound natural, until...",
-        "People would be angry..."
+        "Which would you choose?"
       ],
       "constraint": "Student weighs options and responds to objections."
     }
@@ -8707,11 +8750,12 @@
       "constraint": "Student defines an idea and defends a position."
     },
     "student": {
-      "prompt": "Is paying for a loot box in a game — a random prize you can't choose — a kind of gambling?",
+      "prompt": "Ask your teacher whether paying for loot boxes — random prizes in games — is a kind of gambling.",
+      "goal": "See if your teacher's idea of gambling matches yours.",
       "starters": [
         "It's not gambling if...",
         "Kids spend money because...",
-        "It's like a lottery..."
+        "Is it like a lottery?"
       ],
       "constraint": "Student defines an idea and defends a position."
     }
@@ -8726,11 +8770,12 @@
       "constraint": "Student judges fairness and suggests a better alternative."
     },
     "student": {
-      "prompt": "Your friend's gaming account was banned forever because of one joke in the chat. Is that fair?",
+      "prompt": "Your friend's gaming account was banned forever for one joke in the chat. Talk to your teacher about whether that's fair.",
+      "goal": "Find out what punishment your teacher thinks would be fair.",
       "starters": [
-        "Context matters, because...",
+        "Context matters...",
         "One mistake shouldn't...",
-        "But if nobody got banned..."
+        "What would you do instead?"
       ],
       "constraint": "Student judges fairness and suggests a better alternative."
     }
@@ -8745,11 +8790,12 @@
       "constraint": "Student weighs different viewpoints and justifies their opinion."
     },
     "student": {
-      "prompt": "A dad streams his 11-year-old son playing games and makes money from it. The boy enjoys it. Is that a problem?",
+      "prompt": "A dad streams his 11-year-old son gaming and earns money from it. The boy enjoys it. Ask your teacher if that's a problem.",
+      "goal": "Find out whose side your teacher is on.",
       "starters": [
         "He enjoys it now, but...",
-        "The money makes it...",
-        "When he's older, he..."
+        "When he's older, he...",
+        "Should the dad stop?"
       ],
       "constraint": "Student weighs different viewpoints and justifies their opinion."
     }
@@ -8764,11 +8810,12 @@
       "constraint": "Student challenges an idea and defends their view."
     },
     "student": {
-      "prompt": "You lent your friend your €1,000 game skin. He lost it in a trade and says, \"It's just pixels.\" Is he right?",
+      "prompt": "You lent a friend your €1,000 game skin. He lost it and says, \"It's just pixels.\" Ask your teacher if he's right.",
+      "goal": "Find out if your teacher thinks he owes you.",
       "starters": [
         "It's 'just pixels' until...",
         "If it cost real money...",
-        "He owes me..."
+        "Would you want it back?"
       ],
       "constraint": "Student challenges an idea and defends their view."
     }
@@ -8783,11 +8830,12 @@
       "constraint": "Student suggests explanations and judges which account to trust."
     },
     "student": {
-      "prompt": "Three honest students saw the same fight in the corridor, but they tell three different stories. How is that possible?",
+      "prompt": "Three honest students saw the same corridor fight but tell three different stories. Talk to your teacher about how that's possible.",
+      "goal": "Find out if your teacher trusts eyewitnesses.",
       "starters": [
         "They're not lying, they just...",
         "It depends where...",
-        "I'd trust the one who..."
+        "Have you ever remembered differently?"
       ],
       "constraint": "Student suggests explanations and judges which account to trust."
     }
@@ -8802,11 +8850,12 @@
       "constraint": "Student evaluates evidence without jumping to conclusions."
     },
     "student": {
-      "prompt": "Someone keeps tearing down one candidate's election posters. Everyone blames her rival. Is that fair? Who else could it be?",
+      "prompt": "Someone keeps tearing down one candidate's posters, and everyone blames her rival. Ask your teacher if that's fair.",
+      "goal": "Find out who else your teacher would suspect.",
       "starters": [
         "The obvious suspect isn't...",
-        "Who benefits from...?",
-        "Until there's proof..."
+        "Until there's proof...",
+        "Who else could it be?"
       ],
       "constraint": "Student evaluates evidence without jumping to conclusions."
     }
@@ -8821,11 +8870,12 @@
       "constraint": "Student compares possible explanations and says how sure they are."
     },
     "student": {
-      "prompt": "You talked about skateboards out loud. The next day, your app showed you skateboard videos. What do you think happened?",
+      "prompt": "You talked about skateboards out loud, and the next day your app showed skateboard videos. Tell your teacher what you think happened.",
+      "goal": "Find out if this has happened to your teacher.",
       "starters": [
         "It's probably just...",
-        "Maybe my phone...",
-        "What worries me is..."
+        "What worries me is...",
+        "Has that happened to you?"
       ],
       "constraint": "Student compares possible explanations and says how sure they are."
     }
@@ -8840,11 +8890,12 @@
       "constraint": "Student argues from their own experience and answers objections."
     },
     "student": {
-      "prompt": "Should social media be banned for everyone under 16? What would change for you?",
+      "prompt": "Talk to your teacher about banning social media for everyone under 16 — and what it would change for you.",
+      "goal": "Find out if your teacher would have wanted that rule.",
       "starters": [
         "As someone under 16...",
         "It would work if...",
-        "The people who'd lose..."
+        "Would it have helped you?"
       ],
       "constraint": "Student argues from their own experience and answers objections."
     }
@@ -8859,11 +8910,12 @@
       "constraint": "Student draws a line between cases and justifies it."
     },
     "student": {
-      "prompt": "A silly video you posted at 11. An unkind comment you wrote at 14. Should you be able to delete them from the internet forever?",
+      "prompt": "A silly video you posted at 11. An unkind comment you wrote at 14. Ask your teacher: should you be able to delete them forever?",
+      "goal": "See where your teacher draws the line.",
       "starters": [
-        "When you're young...",
         "The silly video is fine, but...",
-        "People can change, so..."
+        "People can change...",
+        "Is there anything you'd delete?"
       ],
       "constraint": "Student draws a line between cases and justifies it."
     }
@@ -8878,11 +8930,12 @@
       "constraint": "Student justifies a rule and responds to objections."
     },
     "student": {
-      "prompt": "Your town is getting rental e-scooters. What's the most important rule you'd make? Who would hate it?",
+      "prompt": "Your town is getting rental e-scooters. Tell your teacher the one rule you'd make — and who would hate it.",
+      "goal": "Find out what rule your teacher would add.",
       "starters": [
         "Speed is the big problem...",
-        "Nobody under...",
-        "Pedestrians won't..."
+        "Pedestrians won't...",
+        "What rule would you make?"
       ],
       "constraint": "Student justifies a rule and responds to objections."
     }
@@ -8897,11 +8950,12 @@
       "constraint": "Student weighs honesty against results and defends their view."
     },
     "student": {
-      "prompt": "A sugar pill can sometimes make people feel better, just because they believe it's medicine. Should doctors use them?",
+      "prompt": "A sugar pill can make people feel better just because they believe it's medicine. Ask your teacher if doctors should use them.",
+      "goal": "Find out if your teacher would want to know it's a placebo.",
       "starters": [
         "If it works, who cares...",
         "It's still a kind of lie...",
-        "What if the patient finds out..."
+        "Has a placebo worked on you?"
       ],
       "constraint": "Student weighs honesty against results and defends their view."
     }
@@ -8916,11 +8970,12 @@
       "constraint": "Student separates feelings from reasons and explains a view."
     },
     "student": {
-      "prompt": "Doctors can treat some illnesses using poo from a healthy person. Gross — or genius? Would you accept it?",
+      "prompt": "Doctors can treat some illnesses with poo from a healthy person. Gross or genius? Ask your teacher if they'd accept it.",
+      "goal": "Find out if your teacher could get past the disgust.",
       "starters": [
         "That's disgusting, but...",
         "If it works...",
-        "I'd never..."
+        "Would you do it?"
       ],
       "constraint": "Student separates feelings from reasons and explains a view."
     }
@@ -8935,11 +8990,12 @@
       "constraint": "Student draws a line between persuasion and manipulation."
     },
     "student": {
-      "prompt": "Some shops fill the air with the smell of fresh bread, hoping you'll buy more. Is that clever, or unfair?",
+      "prompt": "Some shops fill the air with the smell of fresh bread, hoping you'll buy more. Talk to your teacher: clever or unfair?",
+      "goal": "Find out if a smell has ever tempted your teacher.",
       "starters": [
         "Every shop tries to...",
         "It becomes unfair when...",
-        "I wouldn't even notice..."
+        "Has a smell ever got you?"
       ],
       "constraint": "Student draws a line between persuasion and manipulation."
     }
@@ -8954,11 +9010,12 @@
       "constraint": "Student interprets feelings and explains what they'd do."
     },
     "student": {
-      "prompt": "Your teacher praised you for an idea that was really your friend's. Your friend says, \"It's fine.\" Is it really fine?",
+      "prompt": "You got praised for your friend's idea. Your friend says, \"It's fine.\" Talk to your teacher about whether it really is.",
+      "goal": "Find out what your teacher thinks \"it's fine\" really means.",
       "starters": [
         "When people say 'it's fine'...",
         "I should probably...",
-        "My friend might..."
+        "What would you do?"
       ],
       "constraint": "Student interprets feelings and explains what they'd do."
     }
@@ -8973,11 +9030,12 @@
       "constraint": "Student retells events from another perspective."
     },
     "student": {
-      "prompt": "Sam said he was ill and missed Maya's birthday. But she saw him online, gaming all evening. What's Sam's side of the story?",
+      "prompt": "Sam said he was ill and missed Maya's birthday, but she saw him gaming online. Tell your teacher Sam's side of the story.",
+      "goal": "See if your teacher imagines the same story.",
       "starters": [
         "From Sam's point of view...",
         "Maybe he didn't want...",
-        "What Maya didn't know..."
+        "Whose side are you on?"
       ],
       "constraint": "Student retells events from another perspective."
     }
@@ -8992,11 +9050,12 @@
       "constraint": "Student argues who a story belongs to, answering the other side."
     },
     "student": {
-      "prompt": "Millions of fans hate the ending of a popular series. Should the writers change it? Who does a story belong to?",
+      "prompt": "Millions of fans hate the ending of a popular series. Ask your teacher if the writers should change it.",
+      "goal": "Find out which ending your teacher would change.",
       "starters": [
         "Fans made it popular, so...",
         "If writers listened to everyone...",
-        "Maybe the ending is..."
+        "Which ending would you change?"
       ],
       "constraint": "Student argues who a story belongs to, answering the other side."
     }
@@ -9011,11 +9070,12 @@
       "constraint": "Student weighs a promise against its consequences and explains a decision."
     },
     "student": {
-      "prompt": "Your friend is leaving the band and made you promise not to tell. Another member is about to spend €300 on equipment. Do you tell?",
+      "prompt": "Your friend made you promise not to tell she's leaving the band. Another member is about to spend €300. Ask your teacher what they'd do.",
+      "goal": "Find out if your teacher would break the promise.",
       "starters": [
         "A promise is a promise, but...",
         "It's not my secret...",
-        "I'd tell her to..."
+        "Have you kept a hard secret?"
       ],
       "constraint": "Student weighs a promise against its consequences and explains a decision."
     }

@@ -29,6 +29,11 @@ const MIGRATED_ID_MAX = 520;
 const COLLECTIONS = ['general', 'business', 'kids'];
 const LEVELS      = ['A1A2', 'B1', 'B2+'];
 
+// Waffles with an id above this are "new" and must follow the full content
+// model in docs/waffle-content-rules.md (Student Goal + 2–4 Starters are
+// required). Records up to this id pre-date the rules and are not failed.
+const CONTENT_BASELINE_MAX_ID = 636;
+
 const errors = [];
 const err = (msg) => errors.push(msg);
 const nonEmpty = (v) => typeof v === 'string' && v.trim() !== '';
@@ -70,15 +75,17 @@ waffles.forEach((w, i) => {
   }
   if (w.teacher && !nonEmpty(w.teacher.constraint)) err(`${at}: teacher.constraint is missing or empty`);
 
-  // Student Starters (shown on the Student page): if present, 2–4 non-empty
-  // strings. Student Goal is legacy (not in the content model): optional, but
-  // must not be empty if present. See docs/waffle-content-rules.md.
+  // Student Goal + Starters (shown on the Student page). If present: Goal
+  // non-empty, Starters 2–4 non-empty strings. NEW Waffles (id above
+  // CONTENT_BASELINE_MAX_ID) must have both. See docs/waffle-content-rules.md.
   const s = w.student;
-  if (s && s.starters !== undefined) {
+  const isNewWaffle = Number.isInteger(w.id) && w.id > CONTENT_BASELINE_MAX_ID;
+  if (s && (s.starters !== undefined || isNewWaffle)) {
     if (!Array.isArray(s.starters) || s.starters.length < 2 || s.starters.length > 4 || !s.starters.every(nonEmpty))
-      err(`${at}: student.starters must be 2–4 non-empty strings`);
+      err(`${at}: student.starters must be 2–4 non-empty strings${isNewWaffle ? ' (required for new Waffles)' : ''}`);
   }
-  if (s && s.goal !== undefined && !nonEmpty(s.goal)) err(`${at}: student.goal is empty`);
+  if (s && (s.goal !== undefined || isNewWaffle) && !nonEmpty(s.goal))
+    err(`${at}: student.goal is ${s.goal === undefined ? 'missing (required for new Waffles)' : 'empty'}`);
 });
 
 // ── Permanent migrated IDs 1–520 all present ──
@@ -131,16 +138,24 @@ if (process.argv.includes('--check-sources')) {
 
 // ── Content warnings (never fail the run) ─────
 // Checks against docs/waffle-content-rules.md: "A Waffle should start a
-// conversation, not conduct one." Word limits are guidance, not gates.
+// conversation, not conduct one" and "Every Student Waffle should clearly
+// initiate a conversation between the student and the teacher."
+// Word limits and wording checks are guidance, not gates.
 // Every record is counted in the per-collection summary; warnings for NEW
 // Waffles (id above CONTENT_BASELINE_MAX_ID) are always listed in full.
 // Use --warnings to list every warning, including existing content.
-const CONTENT_BASELINE_MAX_ID = 636; // last id that existed when the rules were introduced
-const LIMITS = { teacherPrompt: 30, languageFocus: 12, studentPrompt: 25, starter: 6 };
+const LIMITS = { teacherPrompt: 30, languageFocus: 12, studentPrompt: 25, goal: 12, starter: 6 };
 const words = (t) => (typeof t === 'string' ? t.split(/\s+/).filter(Boolean).length : 0);
 const SECTION_LABEL = /^\s*(Ask|Teacher|Quick|Stuck|Hook|Task|Extension|Rules?|Step \d+|Round \d+)\s*:/im;
 const LIST_LINE     = /(^|\n)\s*(\d+[.)]|[-•*])\s+\S/;
 const MECHANICS     = /\b(rules of the game|game rules|rounds?|points|score|scoring|stages?|grid|scavenger hunt|worksheet|bingo|timer|winner|take turns|step \d)\b/i;
+// Student side: the student should be talking WITH the teacher.
+const WITH_TEACHER  = /\bteacher\b/i;
+const TALK_OPENER   = /^(Ask|Tell|Describe|Explain|Talk|Share|Show)\b/i;
+// A conversation Goal points at the teacher or a shared discovery.
+const GOAL_CONVERSATIONAL = /\b(teacher|you both|each other|together)\b|^(Find out|See |Compare|Discover|Learn|Ask|Hear)/i;
+// Worksheet-style Starters: a blank in the middle of a sentence, or known frames.
+const STARTER_WORKSHEET = /(\.\.\.|…|_{2,})\s*,?\s*[A-Za-z]|^I think\b.*\bbecause\b|^I'd choose\b|^It could be because\b|^The most important (thing|rule|reason)\b/i;
 
 const CHECKS = {
   'teacher-prompt-long':  'Teacher Prompt over ' + LIMITS.teacherPrompt + ' words',
@@ -150,8 +165,12 @@ const CHECKS = {
   'section-labels':       'Teacher Prompt has section labels (Ask:/Teacher:/Quick:/Stuck:…)',
   'list-steps':           'numbered or bulleted steps in a prompt',
   'activity-mechanics':   'activity-mechanics language (rules, rounds, points, score…)',
-  'new-missing-starters': 'NEW Waffle without Student Starters',
-  'new-has-goal':         'NEW Waffle has a Student Goal (not in the content model)',
+  'student-not-with-teacher': 'Student Prompt not directed at the teacher (standalone question?)',
+  'goal-long':            'Student Goal over ' + LIMITS.goal + ' words',
+  'goal-activity-style':  'Student Goal looks like an activity objective, not about the teacher',
+  'goal-repeats-prompt':  'Student Goal repeats the Student Prompt',
+  'starters-no-invite':   'no Starter invites the teacher in (no question)',
+  'starter-worksheet':    'worksheet-style Starter (sentence-completion frame)',
 };
 
 const warnings = [];
@@ -174,8 +193,19 @@ waffles.forEach(w => {
   if (list) hit('list-steps', `"${list.split('\n').find(l => LIST_LINE.test(l)).trim().slice(0, 50)}"`);
   const mech = [tp, sp].map(t => typeof t === 'string' && t.match(MECHANICS)).find(Boolean);
   if (mech) hit('activity-mechanics', `"${mech[0]}"`);
-  if (isNew && !Array.isArray(w.student.starters)) hit('new-missing-starters', '');
-  if (isNew && w.student.goal !== undefined) hit('new-has-goal', '');
+  if (typeof sp === 'string' && !WITH_TEACHER.test(sp) && !TALK_OPENER.test(sp.trim()))
+    hit('student-not-with-teacher', `"${sp.slice(0, 50)}${sp.length > 50 ? '…' : ''}"`);
+  const goal = w.student.goal;
+  if (typeof goal === 'string' && goal.trim()) {
+    if (words(goal) > LIMITS.goal) hit('goal-long', `${words(goal)} words`);
+    if (!GOAL_CONVERSATIONAL.test(goal.trim())) hit('goal-activity-style', `"${goal}"`);
+    const norm = (t) => t.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+    if (typeof sp === 'string' && norm(sp).includes(norm(goal))) hit('goal-repeats-prompt', `"${goal}"`);
+  }
+  const starters = Array.isArray(w.student.starters) ? w.student.starters : [];
+  if (starters.length && !starters.some(st => typeof st === 'string' && st.includes('?'))) hit('starters-no-invite', '');
+  const worksheet = starters.filter(st => typeof st === 'string' && STARTER_WORKSHEET.test(st));
+  if (worksheet.length) hit('starter-worksheet', worksheet.map(st => `"${st}"`).join(', '));
 
   const col = w.collection || '(none)';
   summary[col] = summary[col] || { waffles: 0, flagged: 0 };
