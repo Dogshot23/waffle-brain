@@ -7905,16 +7905,16 @@
     "level": "A1A2",
     "category": "Growing Up",
     "teacher": {
-      "prompt": "Ask about something the student can do on their own now that felt like a big deal the first time — going out alone, cooking, travelling.",
+      "prompt": "Ask about something the student can do alone now, like going to school alone or cooking, and how it felt the first time.",
       "constraint": "Student tells a short story about a first time."
     },
     "student": {
-      "prompt": "What can you do on your own now that felt like a big deal the first time? Tell your teacher.",
-      "goal": "Hear about your teacher's first taste of freedom.",
+      "prompt": "What can you do alone now? How did you feel the first time? Tell your teacher.",
+      "goal": "Hear about your teacher's first time doing something alone.",
       "starters": [
-        "The first time I...",
-        "I was so nervous!",
-        "Do you remember yours?"
+        "Now I can...",
+        "The first time, I was...",
+        "When did you first go alone?"
       ],
       "constraint": "Student tells a short story about a first time."
     }
@@ -8285,16 +8285,16 @@
     "level": "B1",
     "category": "School",
     "teacher": {
-      "prompt": "Ask what made the best teacher the student has ever had so good — and what makes a lesson boring.",
+      "prompt": "Ask about the best teacher the student has ever had, what made their lessons so good, and what makes a lesson boring.",
       "constraint": "Student describes qualities and gives examples."
     },
     "student": {
-      "prompt": "What makes a really good teacher? Tell your teacher — and be honest!",
-      "goal": "Find out what your teacher tries hardest to get right.",
+      "prompt": "Think of the best teacher you've ever had. What made their lessons so good? Tell your teacher.",
+      "goal": "Hear about the best teacher your teacher ever had.",
       "starters": [
-        "The best teachers...",
-        "It's boring when...",
-        "What makes a good student?"
+        "My favourite teacher always...",
+        "Their lessons were never boring because...",
+        "Who was your best teacher?"
       ],
       "constraint": "Student describes qualities and gives examples."
     }
@@ -8825,18 +8825,18 @@
     "level": "B2+",
     "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "Ask about something the student has done, seen or learned that most people their age haven't.",
-      "constraint": "Student tells a story and explains why it matters."
+      "prompt": "Ask about something the student knows a lot about that most people their age don't, such as a hobby, a place, a skill or a topic.",
+      "constraint": "Student explains a topic and why it interests them."
     },
     "student": {
-      "prompt": "What have you done or seen that most people your age haven't? Tell your teacher about it.",
-      "goal": "Find out your teacher's most unusual experience.",
+      "prompt": "What's something you know a lot about that most people your age don't? Tell your teacher about it.",
+      "goal": "See if you can teach your teacher something new.",
       "starters": [
-        "Not many people have...",
-        "It happened when...",
-        "What's the strangest thing you've done?"
+        "Most people don't know that...",
+        "I got into it because...",
+        "What are you an expert on?"
       ],
-      "constraint": "Student tells a story and explains why it matters."
+      "constraint": "Student explains a topic and why it interests them."
     }
   },
   {
@@ -8865,18 +8865,18 @@
     "level": "B2+",
     "category": "School",
     "teacher": {
-      "prompt": "Ask whether school is really fair when some students have tutors, better tech or a quiet place to study — and what could make it fairer.",
-      "constraint": "Student discusses fairness and weighs different situations."
+      "prompt": "Ask whether tests really show what a student knows, and what a better way to show learning might be.",
+      "constraint": "Student weighs pros and cons and suggests alternatives."
     },
     "student": {
-      "prompt": "Is school really fair if some students have tutors and others don't? Talk to your teacher about it.",
-      "goal": "Hear what your teacher has noticed as a teacher.",
+      "prompt": "Do tests really show what you know? Talk to your teacher about a better way to show what you've learned.",
+      "goal": "Find out what your teacher thinks tests miss.",
       "starters": [
-        "It's not really fair that...",
-        "School can't fix everything...",
-        "Did you ever have a tutor?"
+        "Tests don't show...",
+        "A better way would be...",
+        "Did you like tests at school?"
       ],
-      "constraint": "Student discusses fairness and weighs different situations."
+      "constraint": "Student weighs pros and cons and suggests alternatives."
     }
   },
   {
@@ -9005,16 +9005,16 @@
     "level": "B2+",
     "category": "Opinions & Ideas",
     "teacher": {
-      "prompt": "Ask about a big question the student would love a real answer to — about space, the brain, history, the future, anything.",
+      "prompt": "Ask about a big question the student would love a real answer to, about space, the brain, animals, history or the future.",
       "constraint": "Student asks big questions and explores possible answers."
     },
     "student": {
-      "prompt": "What big question would you love a real answer to? Ask your teacher what they think.",
-      "goal": "See if you and your teacher can work it out together.",
+      "prompt": "What big question would you love an answer to, like what's inside a black hole or why we dream? Ask your teacher what they think.",
+      "goal": "See if you and your teacher can find an answer together.",
       "starters": [
-        "I've always wondered...",
-        "Nobody really knows why...",
-        "What's your big question?"
+        "I've always wondered why...",
+        "Maybe it's because...",
+        "What do you wonder about?"
       ],
       "constraint": "Student asks big questions and explores possible answers."
     }
