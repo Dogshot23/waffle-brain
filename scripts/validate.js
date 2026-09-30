@@ -26,7 +26,7 @@ const STUDENT_FILE  = path.join(ROOT, 'data', 'prompts_original.json');
 // every one of them must always exist (never deleted, renumbered or reused).
 const MIGRATED_ID_MAX = 520;
 
-const COLLECTIONS = ['general', 'business', 'kids'];
+const COLLECTIONS = ['general', 'business', 'kids', 'ielts', 'cambridge', 'travel', 'debate', 'medical', 'conversation-club'];
 const LEVELS      = ['A1A2', 'B1', 'B2+'];
 
 // Waffles with an id above this are "new" and must follow the full content

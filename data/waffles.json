@@ -10098,5 +10098,4685 @@
       ],
       "constraint": "Regrets and third conditional ('I should have', 'If I'd known')."
     }
+  },
+  {
+    "id": 662,
+    "collection": "ielts",
+    "level": "A1A2",
+    "category": "Part 1: Interview",
+    "teacher": {
+      "prompt": "Ask Part 1 questions about the student's hometown: where it is, what it's like and what visitors should see.",
+      "constraint": "Present simple and simple adjectives ('It's quite small', 'There are')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about your hometown and one thing a visitor should see.",
+      "goal": "Find out where your teacher grew up.",
+      "starters": [
+        "I come from…",
+        "It's quite…",
+        "Where are you from?"
+      ],
+      "constraint": "Present simple and simple adjectives ('It's quite small', 'There are')."
+    }
+  },
+  {
+    "id": 663,
+    "collection": "ielts",
+    "level": "A1A2",
+    "category": "Part 1: Interview",
+    "teacher": {
+      "prompt": "Ask Part 1 questions about the student's daily routine and their favourite time of day.",
+      "constraint": "Present simple with time phrases ('in the morning', 'after work')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about your daily routine and your favourite part of the day.",
+      "goal": "Find out your teacher's favourite time of day.",
+      "starters": [
+        "I usually get up…",
+        "My favourite time is…",
+        "Are you a morning person?"
+      ],
+      "constraint": "Present simple with time phrases ('in the morning', 'after work')."
+    }
+  },
+  {
+    "id": 664,
+    "collection": "ielts",
+    "level": "A1A2",
+    "category": "Part 1: Interview",
+    "teacher": {
+      "prompt": "Ask Part 1 questions about food: what the student eats every day, and one dish they love.",
+      "constraint": "Likes and dislikes ('I really like', 'I don't often eat')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you usually eat and one dish you really love.",
+      "goal": "Find out your teacher's favourite dish.",
+      "starters": [
+        "I usually eat…",
+        "I really love…",
+        "What do you like to eat?"
+      ],
+      "constraint": "Likes and dislikes ('I really like', 'I don't often eat')."
+    }
+  },
+  {
+    "id": 665,
+    "collection": "ielts",
+    "level": "A1A2",
+    "category": "Part 1: Interview",
+    "teacher": {
+      "prompt": "Ask Part 1 questions about free time: what the student does at the weekend and why they enjoy it.",
+      "constraint": "Giving a simple reason with 'because' and 'so'."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you like doing at the weekend.",
+      "goal": "Find out how your teacher spends their weekends.",
+      "starters": [
+        "At the weekend, I…",
+        "I like it because…",
+        "What do you do?"
+      ],
+      "constraint": "Giving a simple reason with 'because' and 'so'."
+    }
+  },
+  {
+    "id": 666,
+    "collection": "ielts",
+    "level": "A1A2",
+    "category": "Part 2: Long Turn",
+    "teacher": {
+      "prompt": "Part 2 cue: Describe a person in your family you like spending time with. Give the student a minute to think, then let them talk.",
+      "constraint": "Describing people ('He's very kind', 'We often')."
+    },
+    "student": {
+      "prompt": "Describe to your teacher someone in your family you like spending time with.",
+      "goal": "Find out who your teacher is closest to in their family.",
+      "starters": [
+        "I'd like to talk about…",
+        "We often…",
+        "Who are you close to?"
+      ],
+      "constraint": "Describing people ('He's very kind', 'We often')."
+    }
+  },
+  {
+    "id": 667,
+    "collection": "ielts",
+    "level": "A1A2",
+    "category": "Part 2: Long Turn",
+    "teacher": {
+      "prompt": "Part 2 cue: Describe a place in your town you like to go. Give a minute to prepare, then let the student talk.",
+      "constraint": "Describing places ('There is', 'It's near', 'You can')."
+    },
+    "student": {
+      "prompt": "Describe to your teacher a place in your town you really like going to.",
+      "goal": "Find out your teacher's favourite place to relax.",
+      "starters": [
+        "It's near…",
+        "You can…",
+        "Where do you like to go?"
+      ],
+      "constraint": "Describing places ('There is', 'It's near', 'You can')."
+    }
+  },
+  {
+    "id": 668,
+    "collection": "ielts",
+    "level": "A1A2",
+    "category": "Part 2: Long Turn",
+    "teacher": {
+      "prompt": "Part 2 cue: Describe a present that made someone happy. Let the student talk, then ask one short follow-up.",
+      "constraint": "Past simple for a short story ('I gave', 'She said')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a present that made someone really happy.",
+      "goal": "Find out the best present your teacher has received.",
+      "starters": [
+        "It was a…",
+        "I gave it to…",
+        "What's the best present you got?"
+      ],
+      "constraint": "Past simple for a short story ('I gave', 'She said')."
+    }
+  },
+  {
+    "id": 669,
+    "collection": "ielts",
+    "level": "A1A2",
+    "category": "Part 2: Long Turn",
+    "teacher": {
+      "prompt": "Part 2 cue: Describe a special day you remember well. Give a minute to think, then let the student talk.",
+      "constraint": "Past simple and time words ('First', 'Then', 'In the evening')."
+    },
+    "student": {
+      "prompt": "Describe to your teacher a special day you still remember well.",
+      "goal": "Find out about a special day your teacher remembers.",
+      "starters": [
+        "It was my…",
+        "In the evening, we…",
+        "Do you have one too?"
+      ],
+      "constraint": "Past simple and time words ('First', 'Then', 'In the evening')."
+    }
+  },
+  {
+    "id": 670,
+    "collection": "ielts",
+    "level": "A1A2",
+    "category": "Part 3: Discussion",
+    "teacher": {
+      "prompt": "Ask a simple Part 3 question: is it better to live in a big city or a small town?",
+      "constraint": "Simple comparatives ('bigger', 'more expensive', 'quieter than')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you'd rather live in a big city or a small town.",
+      "goal": "Find out where your teacher would rather live.",
+      "starters": [
+        "Big cities are more…",
+        "Small towns are quieter…",
+        "Where would you live?"
+      ],
+      "constraint": "Simple comparatives ('bigger', 'more expensive', 'quieter than')."
+    }
+  },
+  {
+    "id": 671,
+    "collection": "ielts",
+    "level": "A1A2",
+    "category": "Part 3: Discussion",
+    "teacher": {
+      "prompt": "Ask a simple Part 3 question: do children today play outside less than before?",
+      "constraint": "Comparing past and present ('used to', 'now', 'less than')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how children's free time is different now from when you were young.",
+      "goal": "Find out how your teacher played as a child.",
+      "starters": [
+        "When I was young…",
+        "Now children…",
+        "What did you play?"
+      ],
+      "constraint": "Comparing past and present ('used to', 'now', 'less than')."
+    }
+  },
+  {
+    "id": 672,
+    "collection": "ielts",
+    "level": "A1A2",
+    "category": "Part 3: Discussion",
+    "teacher": {
+      "prompt": "Ask a simple Part 3 question: why do people like having pets?",
+      "constraint": "Giving reasons ('because', 'It makes people feel')."
+    },
+    "student": {
+      "prompt": "Tell your teacher why you think people like having pets.",
+      "goal": "Find out if your teacher has ever had a pet.",
+      "starters": [
+        "Pets are good for…",
+        "Some people feel…",
+        "Did you have a pet?"
+      ],
+      "constraint": "Giving reasons ('because', 'It makes people feel')."
+    }
+  },
+  {
+    "id": 673,
+    "collection": "ielts",
+    "level": "A1A2",
+    "category": "Part 3: Discussion",
+    "teacher": {
+      "prompt": "Ask a simple Part 3 question: is it important for everyone to learn to cook?",
+      "constraint": "Giving opinions ('In my opinion', 'It's important to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you think everyone should learn to cook.",
+      "goal": "Find out if your teacher likes cooking.",
+      "starters": [
+        "In my opinion…",
+        "It's important because…",
+        "Do you cook much?"
+      ],
+      "constraint": "Giving opinions ('In my opinion', 'It's important to')."
+    }
+  },
+  {
+    "id": 674,
+    "collection": "ielts",
+    "level": "B1",
+    "category": "Part 1: Interview",
+    "teacher": {
+      "prompt": "Ask Part 1 questions about the student's work or studies — what they do and what they'd change about it.",
+      "constraint": "Present simple vs continuous ('I work', 'I'm studying')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about your work or studies and one thing you'd change.",
+      "goal": "Find out what your teacher would change about their job.",
+      "starters": [
+        "At the moment, I'm…",
+        "I'd change…",
+        "Would you change anything?"
+      ],
+      "constraint": "Present simple vs continuous ('I work', 'I'm studying')."
+    }
+  },
+  {
+    "id": 675,
+    "collection": "ielts",
+    "level": "B1",
+    "category": "Part 1: Interview",
+    "teacher": {
+      "prompt": "Ask Part 1 questions about technology: which app the student uses most, and whether they could live without it.",
+      "constraint": "Habits ('I tend to', 'I hardly ever', 'most days')."
+    },
+    "student": {
+      "prompt": "Tell your teacher which app you use most and if you could live without it.",
+      "goal": "Find out which app your teacher couldn't live without.",
+      "starters": [
+        "I tend to use…",
+        "I probably couldn't…",
+        "Which app do you use most?"
+      ],
+      "constraint": "Habits ('I tend to', 'I hardly ever', 'most days')."
+    }
+  },
+  {
+    "id": 676,
+    "collection": "ielts",
+    "level": "B1",
+    "category": "Part 1: Interview",
+    "teacher": {
+      "prompt": "Ask Part 1 questions about weather: the student's favourite season and how weather affects their mood.",
+      "constraint": "Extending answers with examples ('For example', 'especially when')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about your favourite season and how the weather changes your mood.",
+      "goal": "Find out which season your teacher likes best.",
+      "starters": [
+        "I'm definitely a summer person…",
+        "Especially when…",
+        "Which season do you prefer?"
+      ],
+      "constraint": "Extending answers with examples ('For example', 'especially when')."
+    }
+  },
+  {
+    "id": 677,
+    "collection": "ielts",
+    "level": "B1",
+    "category": "Part 1: Interview",
+    "teacher": {
+      "prompt": "Ask Part 1 questions about reading: what the student reads now compared with when they were a child.",
+      "constraint": "Comparing past and present ('used to', 'these days', 'nowadays')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you read now and what you used to read as a child.",
+      "goal": "Find out what your teacher loved reading as a child.",
+      "starters": [
+        "I used to read…",
+        "These days, I mostly…",
+        "What did you read?"
+      ],
+      "constraint": "Comparing past and present ('used to', 'these days', 'nowadays')."
+    }
+  },
+  {
+    "id": 678,
+    "collection": "ielts",
+    "level": "B1",
+    "category": "Part 2: Long Turn",
+    "teacher": {
+      "prompt": "Part 2 cue: Describe a skill you learned that took a long time. Give a minute to prepare, then let the student talk for up to two minutes.",
+      "constraint": "Linking a long turn ('At first', 'Eventually', 'In the end')."
+    },
+    "student": {
+      "prompt": "Describe to your teacher a skill that took you a long time to learn.",
+      "goal": "Find out what skill your teacher found hardest to learn.",
+      "starters": [
+        "At first, I…",
+        "Eventually…",
+        "What was hard for you?"
+      ],
+      "constraint": "Linking a long turn ('At first', 'Eventually', 'In the end')."
+    }
+  },
+  {
+    "id": 679,
+    "collection": "ielts",
+    "level": "B1",
+    "category": "Part 2: Long Turn",
+    "teacher": {
+      "prompt": "Part 2 cue: Describe a trip that didn't go as planned. Let the student talk, then ask whether they'd go back.",
+      "constraint": "Narrative tenses ('We were driving when', 'had already')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a trip that didn't go as planned.",
+      "goal": "Find out if your teacher has a travel disaster story.",
+      "starters": [
+        "We were supposed to…",
+        "Unfortunately…",
+        "Has that happened to you?"
+      ],
+      "constraint": "Narrative tenses ('We were driving when', 'had already')."
+    }
+  },
+  {
+    "id": 680,
+    "collection": "ielts",
+    "level": "B1",
+    "category": "Part 2: Long Turn",
+    "teacher": {
+      "prompt": "Part 2 cue: Describe a piece of advice that helped you. Give a minute to think, then let the student talk.",
+      "constraint": "Reported speech ('She told me to', 'He said that')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about some advice that really helped you.",
+      "goal": "Find out the best advice your teacher has been given.",
+      "starters": [
+        "Someone once told me…",
+        "It helped because…",
+        "What's the best advice you've had?"
+      ],
+      "constraint": "Reported speech ('She told me to', 'He said that')."
+    }
+  },
+  {
+    "id": 681,
+    "collection": "ielts",
+    "level": "B1",
+    "category": "Part 2: Long Turn",
+    "teacher": {
+      "prompt": "Part 2 cue: Describe a website or online video you learned something useful from. Let the student talk, then ask one follow-up.",
+      "constraint": "Organising a long turn ('The first thing', 'What I liked')."
+    },
+    "student": {
+      "prompt": "Describe to your teacher something useful you learned from a video or website.",
+      "goal": "Find out where your teacher learns new things online.",
+      "starters": [
+        "I found it when…",
+        "What I liked was…",
+        "Do you watch videos like that?"
+      ],
+      "constraint": "Organising a long turn ('The first thing', 'What I liked')."
+    }
+  },
+  {
+    "id": 682,
+    "collection": "ielts",
+    "level": "B1",
+    "category": "Part 3: Discussion",
+    "teacher": {
+      "prompt": "Ask a Part 3 question: should young people be paid for doing housework?",
+      "constraint": "Agreeing and disagreeing ('I see your point, but', 'Not really')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether you think young people should be paid for doing housework.",
+      "goal": "Find out what your teacher's parents expected at home.",
+      "starters": [
+        "I see why, but…",
+        "It teaches them…",
+        "Were you paid for chores?"
+      ],
+      "constraint": "Agreeing and disagreeing ('I see your point, but', 'Not really')."
+    }
+  },
+  {
+    "id": 683,
+    "collection": "ielts",
+    "level": "B1",
+    "category": "Part 3: Discussion",
+    "teacher": {
+      "prompt": "Ask a Part 3 question: why do some people prefer to shop online, and what might we lose?",
+      "constraint": "Advantages and disadvantages ('One advantage is', 'The downside is')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about why people shop online and what we might lose.",
+      "goal": "Find out whether your teacher prefers shops or online.",
+      "starters": [
+        "One advantage is…",
+        "The downside is…",
+        "Where do you prefer to shop?"
+      ],
+      "constraint": "Advantages and disadvantages ('One advantage is', 'The downside is')."
+    }
+  },
+  {
+    "id": 684,
+    "collection": "ielts",
+    "level": "B1",
+    "category": "Part 3: Discussion",
+    "teacher": {
+      "prompt": "Ask a Part 3 question: is it better to have one close friend or many friends?",
+      "constraint": "Supporting opinions ('For me', 'For example', 'That's why')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if it's better to have one close friend or many.",
+      "goal": "See whether your teacher agrees with you.",
+      "starters": [
+        "For me, it's…",
+        "For example…",
+        "What do you think?"
+      ],
+      "constraint": "Supporting opinions ('For me', 'For example', 'That's why')."
+    }
+  },
+  {
+    "id": 685,
+    "collection": "ielts",
+    "level": "B1",
+    "category": "Part 3: Discussion",
+    "teacher": {
+      "prompt": "Ask a Part 3 question: will people still go to cinemas in twenty years?",
+      "constraint": "Future predictions ('will probably', 'might', 'I doubt')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you think people will still go to cinemas in twenty years.",
+      "goal": "Find out when your teacher last went to the cinema.",
+      "starters": [
+        "I doubt that…",
+        "People will probably…",
+        "Do you still go?"
+      ],
+      "constraint": "Future predictions ('will probably', 'might', 'I doubt')."
+    }
+  },
+  {
+    "id": 686,
+    "collection": "ielts",
+    "level": "B2+",
+    "category": "Part 1: Interview",
+    "teacher": {
+      "prompt": "Ask Part 1 questions about neighbours: how well the student knows theirs and whether that's changed over time.",
+      "constraint": "Extending answers naturally ('To be honest', 'mainly because')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how well you know your neighbours and whether that's changed.",
+      "goal": "Find out if your teacher knows their neighbours.",
+      "starters": [
+        "To be honest…",
+        "It's changed since…",
+        "Do you know yours?"
+      ],
+      "constraint": "Extending answers naturally ('To be honest', 'mainly because')."
+    }
+  },
+  {
+    "id": 687,
+    "collection": "ielts",
+    "level": "B2+",
+    "category": "Part 1: Interview",
+    "teacher": {
+      "prompt": "Ask Part 1 questions about punctuality: is the student usually on time, and does lateness annoy them?",
+      "constraint": "Idiomatic language ('running late', 'a stickler for', 'fashionably late')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether you're usually on time and how you feel about lateness.",
+      "goal": "Find out if your teacher is a stickler for time.",
+      "starters": [
+        "I'm a bit of a…",
+        "What really annoys me…",
+        "Are you always on time?"
+      ],
+      "constraint": "Idiomatic language ('running late', 'a stickler for', 'fashionably late')."
+    }
+  },
+  {
+    "id": 688,
+    "collection": "ielts",
+    "level": "B2+",
+    "category": "Part 1: Interview",
+    "teacher": {
+      "prompt": "Ask Part 1 questions about handwriting: does the student still write by hand, and does it matter?",
+      "constraint": "Hedging and range ('I suppose', 'on the odd occasion')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether you still write by hand and if it matters.",
+      "goal": "Find out when your teacher last wrote something by hand.",
+      "starters": [
+        "I hardly ever…",
+        "On the odd occasion…",
+        "Do you still write letters?"
+      ],
+      "constraint": "Hedging and range ('I suppose', 'on the odd occasion')."
+    }
+  },
+  {
+    "id": 689,
+    "collection": "ielts",
+    "level": "B2+",
+    "category": "Part 1: Interview",
+    "teacher": {
+      "prompt": "Ask Part 1 questions about noise: which sounds the student loves and which they can't stand.",
+      "constraint": "Precise vocabulary for sound ('hum', 'buzz', 'deafening', 'soothing')."
+    },
+    "student": {
+      "prompt": "Tell your teacher which sounds you love and which ones you can't stand.",
+      "goal": "Find out which sound drives your teacher mad.",
+      "starters": [
+        "I find it soothing…",
+        "I can't stand…",
+        "What about you?"
+      ],
+      "constraint": "Precise vocabulary for sound ('hum', 'buzz', 'deafening', 'soothing')."
+    }
+  },
+  {
+    "id": 690,
+    "collection": "ielts",
+    "level": "B2+",
+    "category": "Part 2: Long Turn",
+    "teacher": {
+      "prompt": "Part 2 cue: Describe a decision that changed the direction of your life. Let the student talk for two minutes, then probe the outcome.",
+      "constraint": "Reflecting on the past ('Looking back', 'If I hadn't')."
+    },
+    "student": {
+      "prompt": "Describe to your teacher a decision that changed the direction of your life.",
+      "goal": "Find out about a turning point in your teacher's life.",
+      "starters": [
+        "Looking back…",
+        "If I hadn't…",
+        "Did you have one too?"
+      ],
+      "constraint": "Reflecting on the past ('Looking back', 'If I hadn't')."
+    }
+  },
+  {
+    "id": 691,
+    "collection": "ielts",
+    "level": "B2+",
+    "category": "Part 2: Long Turn",
+    "teacher": {
+      "prompt": "Part 2 cue: Describe a time you changed your mind about something important. Let the student speak, then ask what persuaded them.",
+      "constraint": "Contrasting past and present views ('I used to believe', 'whereas now')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a time you changed your mind about something important.",
+      "goal": "Find out what your teacher has changed their mind about.",
+      "starters": [
+        "I used to believe…",
+        "What changed my mind…",
+        "Has that happened to you?"
+      ],
+      "constraint": "Contrasting past and present views ('I used to believe', 'whereas now')."
+    }
+  },
+  {
+    "id": 692,
+    "collection": "ielts",
+    "level": "B2+",
+    "category": "Part 2: Long Turn",
+    "teacher": {
+      "prompt": "Part 2 cue: Describe an object you own that has a story behind it. Give a minute to prepare, then let the student talk.",
+      "constraint": "Less common vocabulary ('sentimental value', 'heirloom', 'battered')."
+    },
+    "student": {
+      "prompt": "Describe to your teacher something you own that has a story behind it.",
+      "goal": "Find out what object your teacher would never throw away.",
+      "starters": [
+        "It's pretty battered, but…",
+        "It has sentimental value…",
+        "What would you never throw away?"
+      ],
+      "constraint": "Less common vocabulary ('sentimental value', 'heirloom', 'battered')."
+    }
+  },
+  {
+    "id": 693,
+    "collection": "ielts",
+    "level": "B2+",
+    "category": "Part 2: Long Turn",
+    "teacher": {
+      "prompt": "Part 2 cue: Describe a public figure you disagree with but respect. Let the student talk, then ask how that's possible.",
+      "constraint": "Concession ('Although', 'Even though', 'I have to admit')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a public figure you disagree with but still respect.",
+      "goal": "See if your teacher respects anyone they disagree with.",
+      "starters": [
+        "Even though I disagree…",
+        "I have to admit…",
+        "Who would you choose?"
+      ],
+      "constraint": "Concession ('Although', 'Even though', 'I have to admit')."
+    }
+  },
+  {
+    "id": 694,
+    "collection": "ielts",
+    "level": "B2+",
+    "category": "Part 3: Discussion",
+    "teacher": {
+      "prompt": "Ask a Part 3 question: should governments limit how much time children spend on screens?",
+      "constraint": "Justifying opinions ('The main reason is', 'This is largely because')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether governments should limit children's screen time.",
+      "goal": "See whether your teacher would support a limit.",
+      "starters": [
+        "The main issue is…",
+        "Realistically…",
+        "Would you support that?"
+      ],
+      "constraint": "Justifying opinions ('The main reason is', 'This is largely because')."
+    }
+  },
+  {
+    "id": 695,
+    "collection": "ielts",
+    "level": "B2+",
+    "category": "Part 3: Discussion",
+    "teacher": {
+      "prompt": "Ask a Part 3 question: is tourism doing more harm than good to famous cities?",
+      "constraint": "Balancing arguments ('That said', 'On balance', 'It depends on')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether tourism does more harm than good to famous cities.",
+      "goal": "Find out which city your teacher thinks is over-touristed.",
+      "starters": [
+        "On balance…",
+        "That said…",
+        "Have you seen that yourself?"
+      ],
+      "constraint": "Balancing arguments ('That said', 'On balance', 'It depends on')."
+    }
+  },
+  {
+    "id": 696,
+    "collection": "ielts",
+    "level": "B2+",
+    "category": "Part 3: Discussion",
+    "teacher": {
+      "prompt": "Ask a Part 3 question: why do some traditions survive while others disappear?",
+      "constraint": "Speculating about causes ('It may well be', 'arguably', 'tend to')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about why some traditions survive and others disappear.",
+      "goal": "Find out which tradition your teacher hopes survives.",
+      "starters": [
+        "It may well be…",
+        "Arguably…",
+        "Which would you keep?"
+      ],
+      "constraint": "Speculating about causes ('It may well be', 'arguably', 'tend to')."
+    }
+  },
+  {
+    "id": 697,
+    "collection": "ielts",
+    "level": "B2+",
+    "category": "Part 3: Discussion",
+    "teacher": {
+      "prompt": "Ask a Part 3 question: should people be judged on their potential or their past achievements?",
+      "constraint": "Abstract nouns and formal linking ('merit', 'Consequently', 'Whereas')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether people should be judged on potential or achievement.",
+      "goal": "Find out which matters more to your teacher.",
+      "starters": [
+        "Achievement is easier to…",
+        "Whereas potential…",
+        "Which matters more to you?"
+      ],
+      "constraint": "Abstract nouns and formal linking ('merit', 'Consequently', 'Whereas')."
+    }
+  },
+  {
+    "id": 698,
+    "collection": "cambridge",
+    "level": "A1A2",
+    "category": "Interview",
+    "teacher": {
+      "prompt": "Ask A2 Key-style questions about the student's school or workplace: where it is, how they get there and what they like.",
+      "constraint": "Short, full answers ('I go by bus', 'It takes')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you get to school or work and what you like about it.",
+      "goal": "Find out how your teacher gets to work.",
+      "starters": [
+        "I go by…",
+        "It takes about…",
+        "How do you get there?"
+      ],
+      "constraint": "Short, full answers ('I go by bus', 'It takes')."
+    }
+  },
+  {
+    "id": 699,
+    "collection": "cambridge",
+    "level": "A1A2",
+    "category": "Interview",
+    "teacher": {
+      "prompt": "Ask A2 Key-style questions about the student's best friend: how they met and what they do together.",
+      "constraint": "Past simple for how you met ('We met at')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about your best friend and how you met.",
+      "goal": "Find out how your teacher met their best friend.",
+      "starters": [
+        "We met at…",
+        "We often…",
+        "How did you meet yours?"
+      ],
+      "constraint": "Past simple for how you met ('We met at')."
+    }
+  },
+  {
+    "id": 700,
+    "collection": "cambridge",
+    "level": "A1A2",
+    "category": "Interview",
+    "teacher": {
+      "prompt": "Ask A2 Key-style questions about shopping: where the student likes to shop and what they bought last.",
+      "constraint": "Past simple ('I bought', 'It cost') and 'I like shopping at'."
+    },
+    "student": {
+      "prompt": "Tell your teacher about the last thing you bought and where you bought it.",
+      "goal": "Find out what your teacher bought last.",
+      "starters": [
+        "Last week, I bought…",
+        "It cost…",
+        "What did you buy last?"
+      ],
+      "constraint": "Past simple ('I bought', 'It cost') and 'I like shopping at'."
+    }
+  },
+  {
+    "id": 701,
+    "collection": "cambridge",
+    "level": "A1A2",
+    "category": "Long Turn",
+    "teacher": {
+      "prompt": "Describe a photo of a family having a picnic in the rain. Ask the student what's happening and how the people feel.",
+      "constraint": "Present continuous for photos ('They're sitting', 'It's raining')."
+    },
+    "student": {
+      "prompt": "Imagine a family picnic in the rain and tell your teacher what's happening.",
+      "goal": "Find out if your teacher likes picnics.",
+      "starters": [
+        "They're sitting…",
+        "It's raining, so…",
+        "Do you like picnics?"
+      ],
+      "constraint": "Present continuous for photos ('They're sitting', 'It's raining')."
+    }
+  },
+  {
+    "id": 702,
+    "collection": "cambridge",
+    "level": "A1A2",
+    "category": "Long Turn",
+    "teacher": {
+      "prompt": "Describe a photo of a busy market. Ask the student what people are doing and what they might buy.",
+      "constraint": "Present continuous and 'maybe' ('He's buying', 'Maybe she wants')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you might see and buy at a busy market.",
+      "goal": "Find out what your teacher likes buying at markets.",
+      "starters": [
+        "People are buying…",
+        "Maybe I'd buy…",
+        "Do you go to markets?"
+      ],
+      "constraint": "Present continuous and 'maybe' ('He's buying', 'Maybe she wants')."
+    }
+  },
+  {
+    "id": 703,
+    "collection": "cambridge",
+    "level": "A1A2",
+    "category": "Long Turn",
+    "teacher": {
+      "prompt": "Describe a photo of a child's messy bedroom. Ask the student what's in it and whether their room was like that.",
+      "constraint": "'There is/are' and prepositions ('on the floor', 'under the bed')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what your bedroom was like when you were a child.",
+      "goal": "Find out if your teacher was a tidy child.",
+      "starters": [
+        "There were toys…",
+        "Under my bed…",
+        "Were you tidy?"
+      ],
+      "constraint": "'There is/are' and prepositions ('on the floor', 'under the bed')."
+    }
+  },
+  {
+    "id": 704,
+    "collection": "cambridge",
+    "level": "A1A2",
+    "category": "Collaborative Task",
+    "teacher": {
+      "prompt": "Play the other candidate. Choose a birthday present for a classmate together: a book, a football or a cinema ticket.",
+      "constraint": "Suggesting and agreeing ('What about…?', 'Good idea', 'Me too')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about the best birthday present for a classmate: a book, a football or a cinema ticket.",
+      "goal": "Find out which present your teacher would choose.",
+      "starters": [
+        "What about…?",
+        "Good idea!",
+        "Which one do you like?"
+      ],
+      "constraint": "Suggesting and agreeing ('What about…?', 'Good idea', 'Me too')."
+    }
+  },
+  {
+    "id": 705,
+    "collection": "cambridge",
+    "level": "A1A2",
+    "category": "Collaborative Task",
+    "teacher": {
+      "prompt": "Play the other candidate. Decide together what a new student in town should visit first: the park, the library or the sports centre.",
+      "constraint": "Making suggestions ('Let's', 'Why not…?', 'I don't agree')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about what a new student in town should visit first.",
+      "goal": "Find out where your teacher would take a newcomer.",
+      "starters": [
+        "Let's say…",
+        "Why not the…?",
+        "Where would you go?"
+      ],
+      "constraint": "Making suggestions ('Let's', 'Why not…?', 'I don't agree')."
+    }
+  },
+  {
+    "id": 706,
+    "collection": "cambridge",
+    "level": "A1A2",
+    "category": "Collaborative Task",
+    "teacher": {
+      "prompt": "Play the other candidate. Decide together what to take on a class trip to the beach.",
+      "constraint": "Asking for opinions ('Do you think…?', 'Yes, because')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about what to take on a class trip to the beach.",
+      "goal": "Find out what your teacher always takes to the beach.",
+      "starters": [
+        "We need…",
+        "Do we need…?",
+        "What do you always take?"
+      ],
+      "constraint": "Asking for opinions ('Do you think…?', 'Yes, because')."
+    }
+  },
+  {
+    "id": 707,
+    "collection": "cambridge",
+    "level": "A1A2",
+    "category": "Discussion",
+    "teacher": {
+      "prompt": "Ask an A2 Key-style follow-up: do you prefer spending free time with family or with friends?",
+      "constraint": "Giving a preference with a reason ('I prefer', 'because')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you prefer free time with family or with friends.",
+      "goal": "Find out who your teacher spends weekends with.",
+      "starters": [
+        "I prefer…",
+        "With my family, we…",
+        "What about you?"
+      ],
+      "constraint": "Giving a preference with a reason ('I prefer', 'because')."
+    }
+  },
+  {
+    "id": 708,
+    "collection": "cambridge",
+    "level": "A1A2",
+    "category": "Discussion",
+    "teacher": {
+      "prompt": "Ask an A2 Key-style follow-up: is it better to learn a sport at school or at a club?",
+      "constraint": "Simple comparatives ('better', 'more fun', 'cheaper')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether it's better to learn a sport at school or at a club.",
+      "goal": "Find out what sport your teacher did at school.",
+      "starters": [
+        "At a club, it's…",
+        "At school, it's cheaper…",
+        "Did you play sports?"
+      ],
+      "constraint": "Simple comparatives ('better', 'more fun', 'cheaper')."
+    }
+  },
+  {
+    "id": 709,
+    "collection": "cambridge",
+    "level": "A1A2",
+    "category": "Discussion",
+    "teacher": {
+      "prompt": "Ask an A2 Key-style follow-up: would you like to live near the sea?",
+      "constraint": "'Would like to' and 'wouldn't like to' with reasons."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you'd like to live near the sea one day.",
+      "goal": "Find out where your teacher dreams of living.",
+      "starters": [
+        "I'd love to…",
+        "I wouldn't like…",
+        "Where would you like to live?"
+      ],
+      "constraint": "'Would like to' and 'wouldn't like to' with reasons."
+    }
+  },
+  {
+    "id": 710,
+    "collection": "cambridge",
+    "level": "B1",
+    "category": "Interview",
+    "teacher": {
+      "prompt": "Ask B1 Preliminary-style questions: tell me about something you really enjoyed learning at school.",
+      "constraint": "Adding detail ('What I enjoyed most was', 'because')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about something you really enjoyed learning at school.",
+      "goal": "Find out your teacher's favourite subject at school.",
+      "starters": [
+        "What I enjoyed most…",
+        "Our teacher always…",
+        "What was your favourite subject?"
+      ],
+      "constraint": "Adding detail ('What I enjoyed most was', 'because')."
+    }
+  },
+  {
+    "id": 711,
+    "collection": "cambridge",
+    "level": "B1",
+    "category": "Interview",
+    "teacher": {
+      "prompt": "Ask B1 Preliminary-style questions about the student's plans for next year.",
+      "constraint": "Future forms ('I'm going to', 'I'm hoping to', 'I might')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about your plans for next year.",
+      "goal": "Find out what your teacher is looking forward to.",
+      "starters": [
+        "I'm hoping to…",
+        "I might…",
+        "What are your plans?"
+      ],
+      "constraint": "Future forms ('I'm going to', 'I'm hoping to', 'I might')."
+    }
+  },
+  {
+    "id": 712,
+    "collection": "cambridge",
+    "level": "B1",
+    "category": "Interview",
+    "teacher": {
+      "prompt": "Ask B1 Preliminary-style questions about a hobby the student has always wanted to try.",
+      "constraint": "Wishes and plans ('I've always wanted to', 'I'd like to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a hobby you've always wanted to try.",
+      "goal": "Find out what hobby your teacher would try.",
+      "starters": [
+        "I've always wanted to…",
+        "It looks…",
+        "Would you try it?"
+      ],
+      "constraint": "Wishes and plans ('I've always wanted to', 'I'd like to')."
+    }
+  },
+  {
+    "id": 713,
+    "collection": "cambridge",
+    "level": "B1",
+    "category": "Long Turn",
+    "teacher": {
+      "prompt": "Describe a photo of people in a big open-plan office. Ask the student to describe it and say what the job might be like.",
+      "constraint": "Speculating about photos ('They might be', 'It looks like')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what it would be like to work in a big open-plan office.",
+      "goal": "Find out where your teacher prefers to work.",
+      "starters": [
+        "It looks like…",
+        "It might be noisy…",
+        "Would you like it?"
+      ],
+      "constraint": "Speculating about photos ('They might be', 'It looks like')."
+    }
+  },
+  {
+    "id": 714,
+    "collection": "cambridge",
+    "level": "B1",
+    "category": "Long Turn",
+    "teacher": {
+      "prompt": "Describe a photo of a family cooking together. Ask the student to describe it and talk about cooking at home.",
+      "constraint": "Present continuous and 'seems to' ('They seem to be enjoying')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about cooking with your family and who does most of it.",
+      "goal": "Find out who cooks in your teacher's home.",
+      "starters": [
+        "In my family…",
+        "They seem to…",
+        "Who cooks at home?"
+      ],
+      "constraint": "Present continuous and 'seems to' ('They seem to be enjoying')."
+    }
+  },
+  {
+    "id": 715,
+    "collection": "cambridge",
+    "level": "B1",
+    "category": "Long Turn",
+    "teacher": {
+      "prompt": "Describe a photo of a crowded train at rush hour. Ask the student to describe it and compare it with their own journeys.",
+      "constraint": "Paraphrasing unknown words ('It's a kind of', 'the thing you use to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about the busiest journey you regularly make.",
+      "goal": "Compare your journeys with your teacher's.",
+      "starters": [
+        "It's always packed…",
+        "It's a kind of…",
+        "Is your journey busy?"
+      ],
+      "constraint": "Paraphrasing unknown words ('It's a kind of', 'the thing you use to')."
+    }
+  },
+  {
+    "id": 716,
+    "collection": "cambridge",
+    "level": "B1",
+    "category": "Collaborative Task",
+    "teacher": {
+      "prompt": "Play the other candidate. A college wants students to exercise more. Discuss which idea works best: a free gym, sports clubs or walking groups.",
+      "constraint": "Discussing options ('That's a good idea, but', 'What do you think about…?')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about the best way to get students exercising more.",
+      "goal": "Find out which idea your teacher thinks works.",
+      "starters": [
+        "What do you think about…?",
+        "That's a good idea, but…",
+        "Which one would work best?"
+      ],
+      "constraint": "Discussing options ('That's a good idea, but', 'What do you think about…?')."
+    }
+  },
+  {
+    "id": 717,
+    "collection": "cambridge",
+    "level": "B1",
+    "category": "Collaborative Task",
+    "teacher": {
+      "prompt": "Play the other candidate. A friend has a free weekend in your city. Discuss together what they should do.",
+      "constraint": "Suggesting and agreeing ('Why don't they…?', 'I agree', 'Maybe not')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about the best way for a friend to spend a weekend in your city.",
+      "goal": "Find out what your teacher would recommend.",
+      "starters": [
+        "Why don't they…?",
+        "Maybe not, because…",
+        "What would you suggest?"
+      ],
+      "constraint": "Suggesting and agreeing ('Why don't they…?', 'I agree', 'Maybe not')."
+    }
+  },
+  {
+    "id": 718,
+    "collection": "cambridge",
+    "level": "B1",
+    "category": "Collaborative Task",
+    "teacher": {
+      "prompt": "Play the other candidate. A school is choosing a new after-school club. Discuss which would be most popular: drama, coding or cooking.",
+      "constraint": "Comparing and choosing ('more popular than', 'I'd go for')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about which after-school club would be most popular: drama, coding or cooking.",
+      "goal": "Find out which club your teacher would join.",
+      "starters": [
+        "I'd go for…",
+        "Coding is more…",
+        "Which would you join?"
+      ],
+      "constraint": "Comparing and choosing ('more popular than', 'I'd go for')."
+    }
+  },
+  {
+    "id": 719,
+    "collection": "cambridge",
+    "level": "B1",
+    "category": "Discussion",
+    "teacher": {
+      "prompt": "Ask a B1 Preliminary-style follow-up: is it better to study alone or with other people?",
+      "constraint": "Advantages and disadvantages ('The good thing is', 'The problem is')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you work better alone or with other people.",
+      "goal": "Find out how your teacher prefers to work.",
+      "starters": [
+        "The good thing is…",
+        "The problem is…",
+        "How do you work best?"
+      ],
+      "constraint": "Advantages and disadvantages ('The good thing is', 'The problem is')."
+    }
+  },
+  {
+    "id": 720,
+    "collection": "cambridge",
+    "level": "B1",
+    "category": "Discussion",
+    "teacher": {
+      "prompt": "Ask a B1 Preliminary-style follow-up: do people spend too much time on their phones?",
+      "constraint": "Agreeing and disagreeing ('I agree up to a point', 'Not really')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether you think people spend too much time on their phones.",
+      "goal": "Find out how long your teacher spends on their phone.",
+      "starters": [
+        "I agree up to a point…",
+        "Not really, because…",
+        "How about you?"
+      ],
+      "constraint": "Agreeing and disagreeing ('I agree up to a point', 'Not really')."
+    }
+  },
+  {
+    "id": 721,
+    "collection": "cambridge",
+    "level": "B1",
+    "category": "Discussion",
+    "teacher": {
+      "prompt": "Ask a B1 Preliminary-style follow-up: should everyone learn to swim at school?",
+      "constraint": "Reasons and examples ('For example', 'That's why')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether everyone should learn to swim at school.",
+      "goal": "Find out when your teacher learned to swim.",
+      "starters": [
+        "For example…",
+        "That's why…",
+        "When did you learn?"
+      ],
+      "constraint": "Reasons and examples ('For example', 'That's why')."
+    }
+  },
+  {
+    "id": 722,
+    "collection": "cambridge",
+    "level": "B2+",
+    "category": "Interview",
+    "teacher": {
+      "prompt": "Ask B2 First-style interview questions: what's one thing you'd like to get better at this year, and how?",
+      "constraint": "Future aims ('I'm aiming to', 'I'm hoping to improve')."
+    },
+    "student": {
+      "prompt": "Tell your teacher one thing you want to get better at this year, and how.",
+      "goal": "Find out what your teacher is working on.",
+      "starters": [
+        "I'm aiming to…",
+        "The plan is…",
+        "What are you working on?"
+      ],
+      "constraint": "Future aims ('I'm aiming to', 'I'm hoping to improve')."
+    }
+  },
+  {
+    "id": 723,
+    "collection": "cambridge",
+    "level": "B2+",
+    "category": "Interview",
+    "teacher": {
+      "prompt": "Ask C1 Advanced-style interview questions: how important is it to you to keep in touch with old friends?",
+      "constraint": "Nuanced opinion ('It matters to me in that', 'not so much')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you keep in touch with old friends, and whether it matters.",
+      "goal": "Find out if your teacher still sees school friends.",
+      "starters": [
+        "It matters to me…",
+        "Not so much…",
+        "Do you still see yours?"
+      ],
+      "constraint": "Nuanced opinion ('It matters to me in that', 'not so much')."
+    }
+  },
+  {
+    "id": 724,
+    "collection": "cambridge",
+    "level": "B2+",
+    "category": "Interview",
+    "teacher": {
+      "prompt": "Ask C1 Advanced-style interview questions: if you could spend a year anywhere in the world, where would you go?",
+      "constraint": "Hypotheticals ('I'd jump at the chance', 'Were I to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher where you'd spend a year if you could go anywhere.",
+      "goal": "Find out where your teacher would spend that year.",
+      "starters": [
+        "I'd jump at the chance…",
+        "Were I to go…",
+        "Where would you go?"
+      ],
+      "constraint": "Hypotheticals ('I'd jump at the chance', 'Were I to')."
+    }
+  },
+  {
+    "id": 725,
+    "collection": "cambridge",
+    "level": "B2+",
+    "category": "Long Turn",
+    "teacher": {
+      "prompt": "Compare two photos: a street musician and an orchestra. Ask why people choose each kind of performance, then which the student would rather watch.",
+      "constraint": "Comparing photos ('Whereas', 'Both show', 'It seems to me')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether you'd rather watch a street musician or an orchestra, and why.",
+      "goal": "Find out which your teacher would rather watch.",
+      "starters": [
+        "Whereas an orchestra…",
+        "There's something about…",
+        "Which would you choose?"
+      ],
+      "constraint": "Comparing photos ('Whereas', 'Both show', 'It seems to me')."
+    }
+  },
+  {
+    "id": 726,
+    "collection": "cambridge",
+    "level": "B2+",
+    "category": "Long Turn",
+    "teacher": {
+      "prompt": "Compare two photos: people working in a busy café and in a quiet library. Ask what's good and difficult about each place.",
+      "constraint": "Speculation and contrast ('might find it hard', 'on the other hand')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether you'd get more done in a busy café or a quiet library.",
+      "goal": "Find out where your teacher concentrates best.",
+      "starters": [
+        "I might find it hard…",
+        "On the other hand…",
+        "Where do you focus best?"
+      ],
+      "constraint": "Speculation and contrast ('might find it hard', 'on the other hand')."
+    }
+  },
+  {
+    "id": 727,
+    "collection": "cambridge",
+    "level": "B2+",
+    "category": "Long Turn",
+    "teacher": {
+      "prompt": "Compare two photos: a family eating together and a person eating alone at a desk. Ask why people eat in each way.",
+      "constraint": "Speculating on feelings ('They must be', 'could be feeling', 'appear to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how eating habits have changed and whether it matters.",
+      "goal": "Find out how often your teacher eats with others.",
+      "starters": [
+        "They must be…",
+        "These days, people…",
+        "Do you eat together much?"
+      ],
+      "constraint": "Speculating on feelings ('They must be', 'could be feeling', 'appear to')."
+    }
+  },
+  {
+    "id": 728,
+    "collection": "cambridge",
+    "level": "B2+",
+    "category": "Collaborative Task",
+    "teacher": {
+      "prompt": "Play the other candidate. A town has money for one project: a skate park, a library upgrade or more trees. Discuss which helps most.",
+      "constraint": "Negotiating agreement ('Shall we agree on', 'I take your point')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about how a town should spend money: a skate park, a library upgrade or more trees.",
+      "goal": "See if you and your teacher can agree.",
+      "starters": [
+        "I take your point, but…",
+        "Shall we agree on…?",
+        "Which would you choose?"
+      ],
+      "constraint": "Negotiating agreement ('Shall we agree on', 'I take your point')."
+    }
+  },
+  {
+    "id": 729,
+    "collection": "cambridge",
+    "level": "B2+",
+    "category": "Collaborative Task",
+    "teacher": {
+      "prompt": "Play the other candidate. Discuss which invention of the last fifty years has changed daily life most.",
+      "constraint": "Evaluating impact ('far-reaching', 'It's had a huge impact on')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about which invention of the last fifty years has changed daily life most.",
+      "goal": "Find out which invention your teacher couldn't do without.",
+      "starters": [
+        "It's had a huge impact…",
+        "I'd argue…",
+        "Which would you pick?"
+      ],
+      "constraint": "Evaluating impact ('far-reaching', 'It's had a huge impact on')."
+    }
+  },
+  {
+    "id": 730,
+    "collection": "cambridge",
+    "level": "B2+",
+    "category": "Collaborative Task",
+    "teacher": {
+      "prompt": "Play the other candidate. A company wants to keep staff happy. Discuss which matters most: flexible hours, training or a friendly team.",
+      "constraint": "Turn-taking ('Would you agree?', 'Sorry, go on', 'Building on that')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about what keeps people happy at work: flexible hours, training or a friendly team.",
+      "goal": "Find out what matters most to your teacher at work.",
+      "starters": [
+        "Building on that…",
+        "Would you agree?",
+        "What matters most to you?"
+      ],
+      "constraint": "Turn-taking ('Would you agree?', 'Sorry, go on', 'Building on that')."
+    }
+  },
+  {
+    "id": 731,
+    "collection": "cambridge",
+    "level": "B2+",
+    "category": "Discussion",
+    "teacher": {
+      "prompt": "Ask a C1 Advanced-style Part 4 question: is it ever right to lie to protect someone's feelings?",
+      "constraint": "Qualifying opinions ('by and large', 'in certain circumstances')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether it's ever right to lie to protect someone's feelings.",
+      "goal": "See where your teacher draws the line.",
+      "starters": [
+        "In certain circumstances…",
+        "By and large…",
+        "Would you ever?"
+      ],
+      "constraint": "Qualifying opinions ('by and large', 'in certain circumstances')."
+    }
+  },
+  {
+    "id": 732,
+    "collection": "cambridge",
+    "level": "B2+",
+    "category": "Discussion",
+    "teacher": {
+      "prompt": "Ask a B2 First-style Part 4 question: do people rely too much on online reviews before buying things?",
+      "constraint": "Expressing degree ('to some extent', 'far too much')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether you trust online reviews before buying something.",
+      "goal": "Find out if your teacher trusts online reviews.",
+      "starters": [
+        "To some extent…",
+        "I once bought…",
+        "Do you read reviews?"
+      ],
+      "constraint": "Expressing degree ('to some extent', 'far too much')."
+    }
+  },
+  {
+    "id": 733,
+    "collection": "cambridge",
+    "level": "B2+",
+    "category": "Discussion",
+    "teacher": {
+      "prompt": "Ask a C1 Advanced-style Part 4 question: should people have to retire at a fixed age?",
+      "constraint": "Formal discussion ('It could be argued that', 'Conversely')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether people should have to retire at a fixed age.",
+      "goal": "Find out when your teacher would like to retire.",
+      "starters": [
+        "It could be argued…",
+        "Conversely…",
+        "When would you stop?"
+      ],
+      "constraint": "Formal discussion ('It could be argued that', 'Conversely')."
+    }
+  },
+  {
+    "id": 734,
+    "collection": "travel",
+    "level": "A1A2",
+    "category": "Getting Around",
+    "teacher": {
+      "prompt": "Play a ticket seller at a train station. The student wants a return ticket to the next city.",
+      "constraint": "Asking for things ('Can I have…?', 'How much is…?')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you'd buy a train ticket in a new country.",
+      "goal": "Find out how your teacher usually travels.",
+      "starters": [
+        "Can I have…?",
+        "How much is it?",
+        "Do you like trains?"
+      ],
+      "constraint": "Asking for things ('Can I have…?', 'How much is…?')."
+    }
+  },
+  {
+    "id": 735,
+    "collection": "travel",
+    "level": "A1A2",
+    "category": "Getting Around",
+    "teacher": {
+      "prompt": "Ask the student how a visitor gets from the airport to the city centre in their town.",
+      "constraint": "Transport words ('take the bus', 'get off at', 'a taxi')."
+    },
+    "student": {
+      "prompt": "Tell your teacher the best way to get from the airport to your city centre.",
+      "goal": "Find out how your teacher gets to the airport.",
+      "starters": [
+        "You can take…",
+        "Get off at…",
+        "How do you get there?"
+      ],
+      "constraint": "Transport words ('take the bus', 'get off at', 'a taxi')."
+    }
+  },
+  {
+    "id": 736,
+    "collection": "travel",
+    "level": "A1A2",
+    "category": "Getting Around",
+    "teacher": {
+      "prompt": "Play a tourist who is lost. Ask the student for directions to the nearest station.",
+      "constraint": "Giving directions ('Go straight', 'Turn left', 'It's next to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how to get from your home to your favourite café.",
+      "goal": "Find out if your teacher gets lost easily.",
+      "starters": [
+        "Go straight…",
+        "Turn left at…",
+        "Do you get lost?"
+      ],
+      "constraint": "Giving directions ('Go straight', 'Turn left', 'It's next to')."
+    }
+  },
+  {
+    "id": 737,
+    "collection": "travel",
+    "level": "A1A2",
+    "category": "Places to Stay",
+    "teacher": {
+      "prompt": "Play a hotel receptionist. The student arrives to check in.",
+      "constraint": "Polite requests ('I have a booking', 'Could I have…?')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about the best hotel or place you've ever stayed in.",
+      "goal": "Find out where your teacher likes to stay on holiday.",
+      "starters": [
+        "It had…",
+        "My room was…",
+        "Where do you like to stay?"
+      ],
+      "constraint": "Polite requests ('I have a booking', 'Could I have…?')."
+    }
+  },
+  {
+    "id": 738,
+    "collection": "travel",
+    "level": "A1A2",
+    "category": "Places to Stay",
+    "teacher": {
+      "prompt": "Ask the student what they really need in a hotel room — and what they don't care about.",
+      "constraint": "Room vocabulary ('wifi', 'balcony', 'kettle') with 'need'."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you really need in a hotel room.",
+      "goal": "Find out what your teacher always needs in a room.",
+      "starters": [
+        "I really need…",
+        "I don't care about…",
+        "What about you?"
+      ],
+      "constraint": "Room vocabulary ('wifi', 'balcony', 'kettle') with 'need'."
+    }
+  },
+  {
+    "id": 739,
+    "collection": "travel",
+    "level": "A1A2",
+    "category": "Places to Stay",
+    "teacher": {
+      "prompt": "Ask whether the student would rather stay in a hotel, a tent or a friend's house on holiday.",
+      "constraint": "Preferences ('I'd rather', 'I prefer', 'It's cheaper')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you'd rather stay in a hotel, a tent or a friend's house.",
+      "goal": "Find out if your teacher likes camping.",
+      "starters": [
+        "I'd rather…",
+        "It's cheaper…",
+        "Do you like camping?"
+      ],
+      "constraint": "Preferences ('I'd rather', 'I prefer', 'It's cheaper')."
+    }
+  },
+  {
+    "id": 740,
+    "collection": "travel",
+    "level": "A1A2",
+    "category": "Eating Out",
+    "teacher": {
+      "prompt": "Play a waiter in a café. The student orders breakfast.",
+      "constraint": "Ordering food ('I'd like', 'Can I have…?', 'The bill, please')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd order for breakfast in a café.",
+      "goal": "Find out what your teacher orders in cafés.",
+      "starters": [
+        "I'd like…",
+        "Can I have…?",
+        "What do you usually order?"
+      ],
+      "constraint": "Ordering food ('I'd like', 'Can I have…?', 'The bill, please')."
+    }
+  },
+  {
+    "id": 741,
+    "collection": "travel",
+    "level": "A1A2",
+    "category": "Eating Out",
+    "teacher": {
+      "prompt": "Ask the student about a food they tried for the first time on holiday.",
+      "constraint": "Past simple and taste words ('It was spicy', 'sweet', 'salty')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a food you tried on holiday for the first time.",
+      "goal": "Find out the strangest food your teacher has tried.",
+      "starters": [
+        "It was very…",
+        "I tried…",
+        "Have you tried it?"
+      ],
+      "constraint": "Past simple and taste words ('It was spicy', 'sweet', 'salty')."
+    }
+  },
+  {
+    "id": 742,
+    "collection": "travel",
+    "level": "A1A2",
+    "category": "Eating Out",
+    "teacher": {
+      "prompt": "Ask the student which dish a visitor must eat in their country.",
+      "constraint": "Recommending food ('You must try', 'It's made with')."
+    },
+    "student": {
+      "prompt": "Tell your teacher which food a visitor must try in your country.",
+      "goal": "Find out if your teacher has tried it.",
+      "starters": [
+        "You must try…",
+        "It's made with…",
+        "Have you had it?"
+      ],
+      "constraint": "Recommending food ('You must try', 'It's made with')."
+    }
+  },
+  {
+    "id": 743,
+    "collection": "travel",
+    "level": "A1A2",
+    "category": "Travel Problems",
+    "teacher": {
+      "prompt": "Play an airline worker. The student's suitcase didn't arrive and they describe it.",
+      "constraint": "Describing objects: colour, size and material ('a big blue bag')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd do if your suitcase didn't arrive.",
+      "goal": "Find out if your teacher has ever lost a bag.",
+      "starters": [
+        "It's a big…",
+        "I'd go to…",
+        "Did you ever lose a bag?"
+      ],
+      "constraint": "Describing objects: colour, size and material ('a big blue bag')."
+    }
+  },
+  {
+    "id": 744,
+    "collection": "travel",
+    "level": "A1A2",
+    "category": "Travel Problems",
+    "teacher": {
+      "prompt": "Ask what the student would do if they missed the last bus in a town where they don't speak the language.",
+      "constraint": "'I would' and 'I could' for simple plans."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd do if you missed the last bus in a new town.",
+      "goal": "Find out what your teacher would do.",
+      "starters": [
+        "I would…",
+        "Maybe I could…",
+        "What would you do?"
+      ],
+      "constraint": "'I would' and 'I could' for simple plans."
+    }
+  },
+  {
+    "id": 745,
+    "collection": "travel",
+    "level": "A1A2",
+    "category": "Travel Problems",
+    "teacher": {
+      "prompt": "Ask the student about a time they felt ill or very tired on holiday.",
+      "constraint": "Past simple and health words ('I had a headache', 'I felt')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a time you felt ill or very tired on holiday.",
+      "goal": "Find out if your teacher has been ill on holiday.",
+      "starters": [
+        "I felt…",
+        "I had a…",
+        "Has that happened to you?"
+      ],
+      "constraint": "Past simple and health words ('I had a headache', 'I felt')."
+    }
+  },
+  {
+    "id": 746,
+    "collection": "travel",
+    "level": "B1",
+    "category": "Getting Around",
+    "teacher": {
+      "prompt": "Ask whether the student would rather explore a new city on foot, by bike or by public transport.",
+      "constraint": "Comparing ways to travel ('It's easier to', 'You see more when')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you like to explore a new city.",
+      "goal": "Find out how your teacher explores new places.",
+      "starters": [
+        "You see more when…",
+        "It's easier to…",
+        "How do you explore?"
+      ],
+      "constraint": "Comparing ways to travel ('It's easier to', 'You see more when')."
+    }
+  },
+  {
+    "id": 747,
+    "collection": "travel",
+    "level": "B1",
+    "category": "Getting Around",
+    "teacher": {
+      "prompt": "Play a car-hire agent who keeps trying to sell extra insurance. The student just wants the basic car.",
+      "constraint": "Politely refusing ('No, thanks, I'll just', 'I don't think I need')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you deal with people trying to sell you extras.",
+      "goal": "Find out if your teacher ever says yes to extras.",
+      "starters": [
+        "No thanks, I'll just…",
+        "I don't think I need…",
+        "Do you ever say yes?"
+      ],
+      "constraint": "Politely refusing ('No, thanks, I'll just', 'I don't think I need')."
+    }
+  },
+  {
+    "id": 748,
+    "collection": "travel",
+    "level": "B1",
+    "category": "Getting Around",
+    "teacher": {
+      "prompt": "Ask the student about the longest journey they've ever made and how they passed the time.",
+      "constraint": "Present perfect and past simple ('I've been', 'It took')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about the longest journey you've ever made.",
+      "goal": "Find out your teacher's longest journey.",
+      "starters": [
+        "It took…",
+        "To pass the time…",
+        "What's your longest trip?"
+      ],
+      "constraint": "Present perfect and past simple ('I've been', 'It took')."
+    }
+  },
+  {
+    "id": 749,
+    "collection": "travel",
+    "level": "B1",
+    "category": "Places to Stay",
+    "teacher": {
+      "prompt": "Play a hotel receptionist. The student's room is next to a noisy lift and they want to move.",
+      "constraint": "Polite complaints ('I'm afraid there's a problem', 'Would it be possible…?')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you'd politely ask to change a hotel room.",
+      "goal": "Find out if your teacher complains in hotels.",
+      "starters": [
+        "I'm afraid there's a problem…",
+        "Would it be possible…?",
+        "Do you complain in hotels?"
+      ],
+      "constraint": "Polite complaints ('I'm afraid there's a problem', 'Would it be possible…?')."
+    }
+  },
+  {
+    "id": 750,
+    "collection": "travel",
+    "level": "B1",
+    "category": "Places to Stay",
+    "teacher": {
+      "prompt": "Ask the student whether they trust online photos and reviews when booking somewhere to stay.",
+      "constraint": "Expectation vs reality ('It looked', 'turned out to be')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a place to stay that looked different from its photos.",
+      "goal": "Find out if your teacher has had a booking surprise.",
+      "starters": [
+        "It looked amazing, but…",
+        "It turned out…",
+        "Has that happened to you?"
+      ],
+      "constraint": "Expectation vs reality ('It looked', 'turned out to be')."
+    }
+  },
+  {
+    "id": 751,
+    "collection": "travel",
+    "level": "B1",
+    "category": "Places to Stay",
+    "teacher": {
+      "prompt": "Ask whether the student would let a stranger stay in their home while they're away.",
+      "constraint": "Conditionals ('I would/wouldn't mind if', 'I'd be worried')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you'd let a stranger stay in your home while you're away.",
+      "goal": "Find out if your teacher would do it.",
+      "starters": [
+        "I wouldn't mind if…",
+        "I'd be worried about…",
+        "Would you do it?"
+      ],
+      "constraint": "Conditionals ('I would/wouldn't mind if', 'I'd be worried')."
+    }
+  },
+  {
+    "id": 752,
+    "collection": "travel",
+    "level": "B1",
+    "category": "Eating Out",
+    "teacher": {
+      "prompt": "Play a waiter who brings the wrong dish. The student politely sends it back.",
+      "constraint": "Polite complaints ('Excuse me, I ordered', 'I think there's a mistake')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you do when a restaurant gets your order wrong.",
+      "goal": "Find out if your teacher sends food back.",
+      "starters": [
+        "Excuse me, I ordered…",
+        "I usually just…",
+        "Do you send food back?"
+      ],
+      "constraint": "Polite complaints ('Excuse me, I ordered', 'I think there's a mistake')."
+    }
+  },
+  {
+    "id": 753,
+    "collection": "travel",
+    "level": "B1",
+    "category": "Eating Out",
+    "teacher": {
+      "prompt": "Ask the student how tipping works in their country and what they do abroad.",
+      "constraint": "Customs and obligation ('You're expected to', 'You don't have to')."
+    },
+    "student": {
+      "prompt": "Explain to your teacher how tipping works in your country.",
+      "goal": "Find out how tipping works where your teacher is from.",
+      "starters": [
+        "You're expected to…",
+        "You don't have to…",
+        "Is it the same for you?"
+      ],
+      "constraint": "Customs and obligation ('You're expected to', 'You don't have to')."
+    }
+  },
+  {
+    "id": 754,
+    "collection": "travel",
+    "level": "B1",
+    "category": "Eating Out",
+    "teacher": {
+      "prompt": "Ask the student to recommend a place to eat in their town for a visitor on a small budget.",
+      "constraint": "Recommending ('You should try', 'It's worth going to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher where a visitor should eat in your town on a small budget.",
+      "goal": "Find out your teacher's favourite cheap place to eat.",
+      "starters": [
+        "It's worth going to…",
+        "You should try…",
+        "Where do you eat out?"
+      ],
+      "constraint": "Recommending ('You should try', 'It's worth going to')."
+    }
+  },
+  {
+    "id": 755,
+    "collection": "travel",
+    "level": "B1",
+    "category": "Travel Problems",
+    "teacher": {
+      "prompt": "Play a gate agent announcing that the student's flight is cancelled until tomorrow.",
+      "constraint": "Asking about options ('What are my options?', 'Will I be…?')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you'd react if your flight was cancelled until tomorrow.",
+      "goal": "Find out how your teacher deals with delays.",
+      "starters": [
+        "What are my options?",
+        "I'd try to stay…",
+        "Has it happened to you?"
+      ],
+      "constraint": "Asking about options ('What are my options?', 'Will I be…?')."
+    }
+  },
+  {
+    "id": 756,
+    "collection": "travel",
+    "level": "B1",
+    "category": "Travel Problems",
+    "teacher": {
+      "prompt": "Ask the student about a time they couldn't make themselves understood abroad.",
+      "constraint": "Past narrative ('I was trying to', 'In the end')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a time you couldn't make yourself understood abroad.",
+      "goal": "Find out how your teacher manages without the language.",
+      "starters": [
+        "I was trying to…",
+        "In the end…",
+        "What do you do?"
+      ],
+      "constraint": "Past narrative ('I was trying to', 'In the end')."
+    }
+  },
+  {
+    "id": 757,
+    "collection": "travel",
+    "level": "B1",
+    "category": "Travel Problems",
+    "teacher": {
+      "prompt": "Ask what the student would do if they lost their passport the day before flying home.",
+      "constraint": "Second conditional ('If I lost it, I'd')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd do if you lost your passport abroad.",
+      "goal": "Find out if your teacher has ever lost their passport.",
+      "starters": [
+        "First, I'd…",
+        "I'd probably panic…",
+        "Have you ever lost yours?"
+      ],
+      "constraint": "Second conditional ('If I lost it, I'd')."
+    }
+  },
+  {
+    "id": 758,
+    "collection": "travel",
+    "level": "B2+",
+    "category": "Getting Around",
+    "teacher": {
+      "prompt": "Ask whether short flights should be banned where a train can do the journey in under five hours.",
+      "constraint": "Weighing trade-offs ('at the expense of', 'It's worth it if')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether short flights should be banned when trains exist.",
+      "goal": "Find out if your teacher would take the train.",
+      "starters": [
+        "It's worth it if…",
+        "At the expense of…",
+        "Would you take the train?"
+      ],
+      "constraint": "Weighing trade-offs ('at the expense of', 'It's worth it if')."
+    }
+  },
+  {
+    "id": 759,
+    "collection": "travel",
+    "level": "B2+",
+    "category": "Getting Around",
+    "teacher": {
+      "prompt": "Ask whether the student plans every detail of a trip or prefers to improvise.",
+      "constraint": "Personality and habit ('I'm the kind of person who', 'tend to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether you plan every detail of a trip or improvise.",
+      "goal": "Find out what kind of traveller your teacher is.",
+      "starters": [
+        "I'm the kind of person…",
+        "I tend to…",
+        "Are you a planner?"
+      ],
+      "constraint": "Personality and habit ('I'm the kind of person who', 'tend to')."
+    }
+  },
+  {
+    "id": 760,
+    "collection": "travel",
+    "level": "B2+",
+    "category": "Getting Around",
+    "teacher": {
+      "prompt": "Play a taxi driver who's clearly taking a long route. The student challenges it without making a scene.",
+      "constraint": "Tactful challenges ('I might be wrong, but', 'Isn't there a quicker way?')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you'd handle a taxi driver taking a long route.",
+      "goal": "Find out if your teacher has ever been overcharged.",
+      "starters": [
+        "I might be wrong, but…",
+        "Isn't there a quicker way?",
+        "Has that happened to you?"
+      ],
+      "constraint": "Tactful challenges ('I might be wrong, but', 'Isn't there a quicker way?')."
+    }
+  },
+  {
+    "id": 761,
+    "collection": "travel",
+    "level": "B2+",
+    "category": "Places to Stay",
+    "teacher": {
+      "prompt": "Ask whether holiday rentals are ruining neighbourhoods for local people.",
+      "constraint": "Cause and consequence ('drives up prices', 'knock-on effect')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether holiday rentals are bad for local people.",
+      "goal": "Find out where your teacher stands on holiday rentals.",
+      "starters": [
+        "It drives up…",
+        "The knock-on effect is…",
+        "Do you use them?"
+      ],
+      "constraint": "Cause and consequence ('drives up prices', 'knock-on effect')."
+    }
+  },
+  {
+    "id": 762,
+    "collection": "travel",
+    "level": "B2+",
+    "category": "Places to Stay",
+    "teacher": {
+      "prompt": "Play a hotel manager who has overbooked and offers the student a room at a worse hotel nearby.",
+      "constraint": "Negotiating compensation ('I'd expect at least', 'That's not acceptable')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd expect if a hotel had given away your room.",
+      "goal": "Find out what compensation your teacher would accept.",
+      "starters": [
+        "I'd expect at least…",
+        "That's not acceptable…",
+        "What would you accept?"
+      ],
+      "constraint": "Negotiating compensation ('I'd expect at least', 'That's not acceptable')."
+    }
+  },
+  {
+    "id": 763,
+    "collection": "travel",
+    "level": "B2+",
+    "category": "Places to Stay",
+    "teacher": {
+      "prompt": "Ask the student to describe the most unusual place they've ever spent a night.",
+      "constraint": "Vivid description ('cramped', 'eerie', 'breathtaking', 'a far cry from')."
+    },
+    "student": {
+      "prompt": "Describe to your teacher the most unusual place you've ever spent a night.",
+      "goal": "Find out your teacher's strangest night away.",
+      "starters": [
+        "It was a far cry from…",
+        "The strangest thing was…",
+        "Where's the oddest place you've slept?"
+      ],
+      "constraint": "Vivid description ('cramped', 'eerie', 'breathtaking', 'a far cry from')."
+    }
+  },
+  {
+    "id": 764,
+    "collection": "travel",
+    "level": "B2+",
+    "category": "Eating Out",
+    "teacher": {
+      "prompt": "Ask whether it's rude for tourists to ask for changes to traditional local dishes.",
+      "constraint": "Opinion and nuance ('It depends on', 'That's a bit much')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether tourists should ask to change local dishes.",
+      "goal": "See whether your teacher thinks it's rude.",
+      "starters": [
+        "It depends on…",
+        "That's a bit much…",
+        "Would you ask?"
+      ],
+      "constraint": "Opinion and nuance ('It depends on', 'That's a bit much')."
+    }
+  },
+  {
+    "id": 765,
+    "collection": "travel",
+    "level": "B2+",
+    "category": "Eating Out",
+    "teacher": {
+      "prompt": "Ask the student about a meal abroad that changed how they saw a place.",
+      "constraint": "Reflective narrative ('It made me realise', 'What struck me')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a meal abroad that changed how you saw a place.",
+      "goal": "Find out your teacher's most memorable meal abroad.",
+      "starters": [
+        "What struck me was…",
+        "It made me realise…",
+        "What about you?"
+      ],
+      "constraint": "Reflective narrative ('It made me realise', 'What struck me')."
+    }
+  },
+  {
+    "id": 766,
+    "collection": "travel",
+    "level": "B2+",
+    "category": "Eating Out",
+    "teacher": {
+      "prompt": "Ask whether the student would rather eat at a famous restaurant or where the locals go.",
+      "constraint": "Contrasting ('Whereas', 'overrated', 'the real thing')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether you'd rather eat somewhere famous or where locals go.",
+      "goal": "Find out how your teacher chooses where to eat.",
+      "starters": [
+        "Famous places are often overrated…",
+        "Whereas locals…",
+        "How do you choose?"
+      ],
+      "constraint": "Contrasting ('Whereas', 'overrated', 'the real thing')."
+    }
+  },
+  {
+    "id": 767,
+    "collection": "travel",
+    "level": "B2+",
+    "category": "Travel Problems",
+    "teacher": {
+      "prompt": "Ask the student about a travel plan that fell apart, and whether it turned out better or worse.",
+      "constraint": "Narrative tenses ('had planned', 'ended up', 'turned out')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a travel plan that fell apart.",
+      "goal": "Find out your teacher's best accidental adventure.",
+      "starters": [
+        "We had planned to…",
+        "We ended up…",
+        "Has a plan failed on you?"
+      ],
+      "constraint": "Narrative tenses ('had planned', 'ended up', 'turned out')."
+    }
+  },
+  {
+    "id": 768,
+    "collection": "travel",
+    "level": "B2+",
+    "category": "Travel Problems",
+    "teacher": {
+      "prompt": "Ask whether travel insurance is worth it or mostly a waste of money.",
+      "constraint": "Evaluating risk ('not worth the risk', 'on the off chance')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether travel insurance is worth paying for.",
+      "goal": "Find out if your teacher has ever needed it.",
+      "starters": [
+        "On the off chance…",
+        "It's not worth…",
+        "Have you ever claimed?"
+      ],
+      "constraint": "Evaluating risk ('not worth the risk', 'on the off chance')."
+    }
+  },
+  {
+    "id": 769,
+    "collection": "travel",
+    "level": "B2+",
+    "category": "Travel Problems",
+    "teacher": {
+      "prompt": "Ask how far the student would go to help a fellow traveller who's been scammed and has no money left.",
+      "constraint": "Offering help ('I'd be willing to', 'provided that')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how far you'd go to help a stranger who's been scammed abroad.",
+      "goal": "Find out how far your teacher would go.",
+      "starters": [
+        "I'd be willing to…",
+        "Provided that…",
+        "What would you do?"
+      ],
+      "constraint": "Offering help ('I'd be willing to', 'provided that')."
+    }
+  },
+  {
+    "id": 770,
+    "collection": "debate",
+    "level": "A1A2",
+    "category": "Society",
+    "teacher": {
+      "prompt": "Ask the student: should shops be open on Sundays? Take the other side.",
+      "constraint": "Agreeing and disagreeing ('I agree', 'I don't agree', 'Yes, but')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if shops should be open on Sundays.",
+      "goal": "Find out if your teacher agrees with you.",
+      "starters": [
+        "I don't agree…",
+        "Yes, but…",
+        "What do you think?"
+      ],
+      "constraint": "Agreeing and disagreeing ('I agree', 'I don't agree', 'Yes, but')."
+    }
+  },
+  {
+    "id": 771,
+    "collection": "debate",
+    "level": "A1A2",
+    "category": "Society",
+    "teacher": {
+      "prompt": "Ask the student: should children have a mobile phone before they're twelve? Take the opposite view.",
+      "constraint": "Simple opinions ('I think', 'I don't think', 'because')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if children should have phones before they're twelve.",
+      "goal": "Find out when your teacher got their first phone.",
+      "starters": [
+        "Children need…",
+        "It's not safe…",
+        "When did you get one?"
+      ],
+      "constraint": "Simple opinions ('I think', 'I don't think', 'because')."
+    }
+  },
+  {
+    "id": 772,
+    "collection": "debate",
+    "level": "A1A2",
+    "category": "Society",
+    "teacher": {
+      "prompt": "Ask the student: are dogs better pets than cats? Disagree with whatever they say.",
+      "constraint": "Comparatives ('better', 'friendlier', 'easier than')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if dogs or cats make better pets.",
+      "goal": "See if you can change your teacher's mind.",
+      "starters": [
+        "Dogs are friendlier…",
+        "Cats are easier…",
+        "Which do you prefer?"
+      ],
+      "constraint": "Comparatives ('better', 'friendlier', 'easier than')."
+    }
+  },
+  {
+    "id": 773,
+    "collection": "debate",
+    "level": "A1A2",
+    "category": "Technology",
+    "teacher": {
+      "prompt": "Ask the student: are video games good or bad for children? Take the other side.",
+      "constraint": "Good and bad ('It's good for', 'It's bad for')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if video games are good or bad for children.",
+      "goal": "Find out if your teacher plays video games.",
+      "starters": [
+        "It's good for…",
+        "It's bad for…",
+        "Do you play games?"
+      ],
+      "constraint": "Good and bad ('It's good for', 'It's bad for')."
+    }
+  },
+  {
+    "id": 774,
+    "collection": "debate",
+    "level": "A1A2",
+    "category": "Technology",
+    "teacher": {
+      "prompt": "Ask the student: is it better to read on paper or on a screen? Disagree politely.",
+      "constraint": "Preferences ('I prefer', 'It's easier to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you prefer reading on paper or on a screen.",
+      "goal": "Find out how your teacher likes to read.",
+      "starters": [
+        "I prefer…",
+        "It's easier to…",
+        "How do you read?"
+      ],
+      "constraint": "Preferences ('I prefer', 'It's easier to')."
+    }
+  },
+  {
+    "id": 775,
+    "collection": "debate",
+    "level": "A1A2",
+    "category": "Technology",
+    "teacher": {
+      "prompt": "Ask the student: should phones be banned at the dinner table? Take the other side.",
+      "constraint": "'Should' and 'shouldn't' for rules."
+    },
+    "student": {
+      "prompt": "Tell your teacher if phones should be banned at the dinner table.",
+      "goal": "Find out if your teacher uses a phone at dinner.",
+      "starters": [
+        "People should…",
+        "We shouldn't…",
+        "Do you use yours?"
+      ],
+      "constraint": "'Should' and 'shouldn't' for rules."
+    }
+  },
+  {
+    "id": 776,
+    "collection": "debate",
+    "level": "A1A2",
+    "category": "Education & Work",
+    "teacher": {
+      "prompt": "Ask the student: should school start later in the morning? Take the opposite view.",
+      "constraint": "Reasons with 'because' and 'so'."
+    },
+    "student": {
+      "prompt": "Tell your teacher if school should start later in the morning.",
+      "goal": "Find out what time your teacher's school started.",
+      "starters": [
+        "Students are tired, so…",
+        "Later is better because…",
+        "When did yours start?"
+      ],
+      "constraint": "Reasons with 'because' and 'so'."
+    }
+  },
+  {
+    "id": 777,
+    "collection": "debate",
+    "level": "A1A2",
+    "category": "Education & Work",
+    "teacher": {
+      "prompt": "Ask the student: is homework useful? Argue the other side.",
+      "constraint": "Opinions ('It's useful', 'It's a waste of time')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if homework is useful or a waste of time.",
+      "goal": "Find out if your teacher gives homework.",
+      "starters": [
+        "It's useful for…",
+        "It's a waste of time…",
+        "Do you give homework?"
+      ],
+      "constraint": "Opinions ('It's useful', 'It's a waste of time')."
+    }
+  },
+  {
+    "id": 778,
+    "collection": "debate",
+    "level": "A1A2",
+    "category": "Education & Work",
+    "teacher": {
+      "prompt": "Ask the student: is it better to work from home or in an office? Disagree with their choice.",
+      "constraint": "Comparing places ('quieter', 'friendlier', 'At home I can')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if it's better to work from home or in an office.",
+      "goal": "Find out where your teacher likes to work.",
+      "starters": [
+        "At home I can…",
+        "In an office…",
+        "Where do you work?"
+      ],
+      "constraint": "Comparing places ('quieter', 'friendlier', 'At home I can')."
+    }
+  },
+  {
+    "id": 779,
+    "collection": "debate",
+    "level": "A1A2",
+    "category": "Environment",
+    "teacher": {
+      "prompt": "Ask the student: should plastic bags be banned? Take the other side.",
+      "constraint": "'Should' with simple reasons ('It's bad for', 'We need')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if plastic bags should be banned.",
+      "goal": "Find out what your teacher uses for shopping.",
+      "starters": [
+        "It's bad for…",
+        "We need…",
+        "What do you use?"
+      ],
+      "constraint": "'Should' with simple reasons ('It's bad for', 'We need')."
+    }
+  },
+  {
+    "id": 780,
+    "collection": "debate",
+    "level": "A1A2",
+    "category": "Environment",
+    "teacher": {
+      "prompt": "Ask the student: could people live without cars? Argue the opposite.",
+      "constraint": "'Can' and 'can't' ('You can walk', 'You can't carry')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you could live without a car.",
+      "goal": "Find out if your teacher has a car.",
+      "starters": [
+        "You can walk…",
+        "You can't carry…",
+        "Do you have a car?"
+      ],
+      "constraint": "'Can' and 'can't' ('You can walk', 'You can't carry')."
+    }
+  },
+  {
+    "id": 781,
+    "collection": "debate",
+    "level": "A1A2",
+    "category": "Environment",
+    "teacher": {
+      "prompt": "Ask the student: should everyone eat less meat? Take the other side.",
+      "constraint": "Opinions with 'We should' and 'We shouldn't'."
+    },
+    "student": {
+      "prompt": "Tell your teacher if people should eat less meat.",
+      "goal": "Find out if your teacher eats meat.",
+      "starters": [
+        "Meat is…",
+        "We should…",
+        "Do you eat meat?"
+      ],
+      "constraint": "Opinions with 'We should' and 'We shouldn't'."
+    }
+  },
+  {
+    "id": 782,
+    "collection": "debate",
+    "level": "B1",
+    "category": "Society",
+    "teacher": {
+      "prompt": "Argue that tourists should pay an extra tax to visit popular cities. Let the student argue back.",
+      "constraint": "Disagreeing politely ('I see what you mean, but', 'That's not fair')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether tourists should pay extra to visit popular cities.",
+      "goal": "See if your teacher can change your mind.",
+      "starters": [
+        "I see what you mean, but…",
+        "That's not fair on…",
+        "Would you pay?"
+      ],
+      "constraint": "Disagreeing politely ('I see what you mean, but', 'That's not fair')."
+    }
+  },
+  {
+    "id": 783,
+    "collection": "debate",
+    "level": "B1",
+    "category": "Society",
+    "teacher": {
+      "prompt": "Argue that everyone should do a year of community service at eighteen. The student argues back.",
+      "constraint": "Reasons and examples ('For one thing', 'For example')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether young people should do a year of community service.",
+      "goal": "Find out what your teacher did at eighteen.",
+      "starters": [
+        "For one thing…",
+        "For example…",
+        "What did you do at eighteen?"
+      ],
+      "constraint": "Reasons and examples ('For one thing', 'For example')."
+    }
+  },
+  {
+    "id": 784,
+    "collection": "debate",
+    "level": "B1",
+    "category": "Society",
+    "teacher": {
+      "prompt": "Argue that famous people deserve to keep their private lives private. The student argues back.",
+      "constraint": "Contrast ('However', 'On the other hand', 'Even so')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether celebrities deserve a private life.",
+      "goal": "Find out which celebrity news your teacher follows.",
+      "starters": [
+        "However…",
+        "Even so…",
+        "Do you follow celebrity news?"
+      ],
+      "constraint": "Contrast ('However', 'On the other hand', 'Even so')."
+    }
+  },
+  {
+    "id": 785,
+    "collection": "debate",
+    "level": "B1",
+    "category": "Technology",
+    "teacher": {
+      "prompt": "Argue that social media does more harm than good. The student argues the other side.",
+      "constraint": "Pros and cons ('The main benefit', 'The biggest problem')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether social media does more good or harm.",
+      "goal": "Find out which apps your teacher uses.",
+      "starters": [
+        "The main benefit is…",
+        "The biggest problem is…",
+        "Which apps do you use?"
+      ],
+      "constraint": "Pros and cons ('The main benefit', 'The biggest problem')."
+    }
+  },
+  {
+    "id": 786,
+    "collection": "debate",
+    "level": "B1",
+    "category": "Technology",
+    "teacher": {
+      "prompt": "Argue that self-driving cars will make roads safer. The student argues back.",
+      "constraint": "Predictions ('will', 'won't', 'might', 'probably')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you'd feel safe in a self-driving car.",
+      "goal": "Find out if your teacher would ride in one.",
+      "starters": [
+        "They'll probably…",
+        "I wouldn't feel safe…",
+        "Would you get in one?"
+      ],
+      "constraint": "Predictions ('will', 'won't', 'might', 'probably')."
+    }
+  },
+  {
+    "id": 787,
+    "collection": "debate",
+    "level": "B1",
+    "category": "Technology",
+    "teacher": {
+      "prompt": "Argue that people should be paid for their personal data. The student argues back.",
+      "constraint": "Conditionals ('If companies use it, they should')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether companies should pay people for their data.",
+      "goal": "Find out how your teacher feels about sharing data.",
+      "starters": [
+        "If companies use it…",
+        "It's only fair…",
+        "Do you worry about it?"
+      ],
+      "constraint": "Conditionals ('If companies use it, they should')."
+    }
+  },
+  {
+    "id": 788,
+    "collection": "debate",
+    "level": "B1",
+    "category": "Education & Work",
+    "teacher": {
+      "prompt": "Argue that university isn't worth the cost any more. The student argues back.",
+      "constraint": "Weighing value ('worth it', 'in the long run', 'not necessarily')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether university is still worth the money.",
+      "goal": "Find out if your teacher thinks it was worth it.",
+      "starters": [
+        "In the long run…",
+        "Not necessarily…",
+        "Was it worth it for you?"
+      ],
+      "constraint": "Weighing value ('worth it', 'in the long run', 'not necessarily')."
+    }
+  },
+  {
+    "id": 789,
+    "collection": "debate",
+    "level": "B1",
+    "category": "Education & Work",
+    "teacher": {
+      "prompt": "Argue that a four-day school week would be better for students. The student argues back.",
+      "constraint": "Partly agreeing ('That's true, but', 'I agree up to a point')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether a four-day school week is a good idea.",
+      "goal": "See whether your teacher would support it.",
+      "starters": [
+        "That's true, but…",
+        "Students would…",
+        "Would you support it?"
+      ],
+      "constraint": "Partly agreeing ('That's true, but', 'I agree up to a point')."
+    }
+  },
+  {
+    "id": 790,
+    "collection": "debate",
+    "level": "B1",
+    "category": "Education & Work",
+    "teacher": {
+      "prompt": "Argue that everyone should change jobs every few years. The student argues back.",
+      "constraint": "Benefits and risks ('It helps you', 'The risk is')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether it's better to stay in one job or change often.",
+      "goal": "Find out how many jobs your teacher has had.",
+      "starters": [
+        "It helps you…",
+        "The risk is…",
+        "How many jobs have you had?"
+      ],
+      "constraint": "Benefits and risks ('It helps you', 'The risk is')."
+    }
+  },
+  {
+    "id": 791,
+    "collection": "debate",
+    "level": "B1",
+    "category": "Environment",
+    "teacher": {
+      "prompt": "Argue that cities should ban cars from their centres. The student argues back.",
+      "constraint": "Consequences ('This would mean', 'As a result')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether cars should be banned from city centres.",
+      "goal": "Find out how your teacher gets around town.",
+      "starters": [
+        "This would mean…",
+        "As a result…",
+        "How do you get around?"
+      ],
+      "constraint": "Consequences ('This would mean', 'As a result')."
+    }
+  },
+  {
+    "id": 792,
+    "collection": "debate",
+    "level": "B1",
+    "category": "Environment",
+    "teacher": {
+      "prompt": "Argue that cheap fast fashion should be taxed. The student argues back.",
+      "constraint": "Suggesting alternatives ('Instead, we could', 'A better idea is')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you think about cheap fast fashion.",
+      "goal": "Find out where your teacher buys clothes.",
+      "starters": [
+        "A better idea is…",
+        "Instead, we could…",
+        "Where do you buy clothes?"
+      ],
+      "constraint": "Suggesting alternatives ('Instead, we could', 'A better idea is')."
+    }
+  },
+  {
+    "id": 793,
+    "collection": "debate",
+    "level": "B1",
+    "category": "Environment",
+    "teacher": {
+      "prompt": "Argue that people should only fly once a year. The student argues back.",
+      "constraint": "Strong disagreement ('That's unrealistic', 'I can't agree')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether people should limit how often they fly.",
+      "goal": "Find out how often your teacher flies.",
+      "starters": [
+        "That's unrealistic…",
+        "Some people need to…",
+        "How often do you fly?"
+      ],
+      "constraint": "Strong disagreement ('That's unrealistic', 'I can't agree')."
+    }
+  },
+  {
+    "id": 794,
+    "collection": "debate",
+    "level": "B2+",
+    "category": "Society",
+    "teacher": {
+      "prompt": "Argue that voting should be compulsory. The student argues the opposite.",
+      "constraint": "Formal argument ('It could be argued', 'Conversely', 'Fundamentally')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether voting should be compulsory.",
+      "goal": "See whether your teacher can defend the other side.",
+      "starters": [
+        "Fundamentally…",
+        "It could be argued…",
+        "Isn't that a freedom issue?"
+      ],
+      "constraint": "Formal argument ('It could be argued', 'Conversely', 'Fundamentally')."
+    }
+  },
+  {
+    "id": 795,
+    "collection": "debate",
+    "level": "B2+",
+    "category": "Society",
+    "teacher": {
+      "prompt": "Argue that the very rich have a moral duty to give away most of their wealth. The student argues back.",
+      "constraint": "Challenging arguments ('That assumes', 'Where do you draw the line?')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether the very rich should give away their wealth.",
+      "goal": "Find out where your teacher draws the line.",
+      "starters": [
+        "That assumes…",
+        "Where do you draw the line?",
+        "Would you, in their place?"
+      ],
+      "constraint": "Challenging arguments ('That assumes', 'Where do you draw the line?')."
+    }
+  },
+  {
+    "id": 796,
+    "collection": "debate",
+    "level": "B2+",
+    "category": "Society",
+    "teacher": {
+      "prompt": "Argue that some historical statues should be removed from public spaces. The student argues back.",
+      "constraint": "Conceding and countering ('Granted, but', 'Even if that's true')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether controversial statues should be removed.",
+      "goal": "Find out how your teacher's country handles this.",
+      "starters": [
+        "Granted, but…",
+        "Even if that's true…",
+        "What happens where you live?"
+      ],
+      "constraint": "Conceding and countering ('Granted, but', 'Even if that's true')."
+    }
+  },
+  {
+    "id": 797,
+    "collection": "debate",
+    "level": "B2+",
+    "category": "Technology",
+    "teacher": {
+      "prompt": "Argue that under-16s should be banned from social media. The student argues back.",
+      "constraint": "Evidence and hedging ('Research suggests', 'There's little evidence that')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether under-16s should be banned from social media.",
+      "goal": "See if your teacher would enforce it at home.",
+      "starters": [
+        "Research suggests…",
+        "In practice…",
+        "How would it work?"
+      ],
+      "constraint": "Evidence and hedging ('Research suggests', 'There's little evidence that')."
+    }
+  },
+  {
+    "id": 798,
+    "collection": "debate",
+    "level": "B2+",
+    "category": "Technology",
+    "teacher": {
+      "prompt": "Argue that AI-made art isn't really art. The student argues back.",
+      "constraint": "Defining terms ('It depends what you mean by', 'By definition')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether art made by AI counts as real art.",
+      "goal": "Find out what counts as art for your teacher.",
+      "starters": [
+        "It depends what you mean…",
+        "By definition…",
+        "What is art to you?"
+      ],
+      "constraint": "Defining terms ('It depends what you mean by', 'By definition')."
+    }
+  },
+  {
+    "id": 799,
+    "collection": "debate",
+    "level": "B2+",
+    "category": "Technology",
+    "teacher": {
+      "prompt": "Argue that facial recognition cameras in public places make us safer. The student argues back.",
+      "constraint": "Weighing rights ('at the cost of', 'a price worth paying')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether public facial recognition cameras are acceptable.",
+      "goal": "See how much privacy your teacher would give up.",
+      "starters": [
+        "At the cost of…",
+        "Is it a price worth paying?",
+        "Would you accept it?"
+      ],
+      "constraint": "Weighing rights ('at the cost of', 'a price worth paying')."
+    }
+  },
+  {
+    "id": 800,
+    "collection": "debate",
+    "level": "B2+",
+    "category": "Education & Work",
+    "teacher": {
+      "prompt": "Argue that exams are an unfair way to measure ability. The student argues back.",
+      "constraint": "Rebuttal ('That's fair, however', 'The flaw in that is')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether exams are a fair way to measure ability.",
+      "goal": "Find out what your teacher thinks exams really test.",
+      "starters": [
+        "The flaw in that is…",
+        "That's fair, however…",
+        "What do exams really test?"
+      ],
+      "constraint": "Rebuttal ('That's fair, however', 'The flaw in that is')."
+    }
+  },
+  {
+    "id": 801,
+    "collection": "debate",
+    "level": "B2+",
+    "category": "Education & Work",
+    "teacher": {
+      "prompt": "Argue that a universal basic income would make people lazy. The student argues back.",
+      "constraint": "Hypothetical consequences ('Were it introduced', 'would inevitably')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about what would happen if everyone got a basic income.",
+      "goal": "Find out what your teacher would do with it.",
+      "starters": [
+        "It would inevitably…",
+        "Were it introduced…",
+        "Would you still work?"
+      ],
+      "constraint": "Hypothetical consequences ('Were it introduced', 'would inevitably')."
+    }
+  },
+  {
+    "id": 802,
+    "collection": "debate",
+    "level": "B2+",
+    "category": "Education & Work",
+    "teacher": {
+      "prompt": "Argue that employers should be allowed to monitor staff who work from home. The student argues back.",
+      "constraint": "Rights and obligations ('entitled to', 'have no right to')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether employers should monitor staff working from home.",
+      "goal": "See whether your teacher would accept being monitored.",
+      "starters": [
+        "They're entitled to…",
+        "They have no right…",
+        "Would you accept it?"
+      ],
+      "constraint": "Rights and obligations ('entitled to', 'have no right to')."
+    }
+  },
+  {
+    "id": 803,
+    "collection": "debate",
+    "level": "B2+",
+    "category": "Environment",
+    "teacher": {
+      "prompt": "Argue that individuals can't solve climate change — only governments and companies can. The student argues back.",
+      "constraint": "Attributing responsibility ('The onus is on', 'It's down to')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether individual choices can make a real difference to climate change.",
+      "goal": "Find out what your teacher does for the environment.",
+      "starters": [
+        "The onus is on…",
+        "It's down to…",
+        "Does it make a difference?"
+      ],
+      "constraint": "Attributing responsibility ('The onus is on', 'It's down to')."
+    }
+  },
+  {
+    "id": 804,
+    "collection": "debate",
+    "level": "B2+",
+    "category": "Environment",
+    "teacher": {
+      "prompt": "Argue that zoos should be closed. The student argues back.",
+      "constraint": "Moral reasoning ('It's hard to justify', 'serves a purpose')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether zoos should still exist.",
+      "goal": "Find out how your teacher feels about zoos.",
+      "starters": [
+        "It's hard to justify…",
+        "They serve a purpose…",
+        "Do you visit zoos?"
+      ],
+      "constraint": "Moral reasoning ('It's hard to justify', 'serves a purpose')."
+    }
+  },
+  {
+    "id": 805,
+    "collection": "debate",
+    "level": "B2+",
+    "category": "Environment",
+    "teacher": {
+      "prompt": "Argue that nuclear power is the only realistic answer to our energy needs. The student argues back.",
+      "constraint": "Weighing risk ('The risks are outweighed by', 'a last resort')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether nuclear power is the answer to our energy needs.",
+      "goal": "See whether your teacher would live near a plant.",
+      "starters": [
+        "The risks are outweighed…",
+        "As a last resort…",
+        "Would you live near one?"
+      ],
+      "constraint": "Weighing risk ('The risks are outweighed by', 'a last resort')."
+    }
+  },
+  {
+    "id": 806,
+    "collection": "medical",
+    "level": "A1A2",
+    "category": "Patient Consultations",
+    "teacher": {
+      "prompt": "Play a patient with a sore throat. The student asks what's wrong and how long it has hurt.",
+      "constraint": "Simple questions ('What's the problem?', 'How long…?', 'Does it hurt?')."
+    },
+    "student": {
+      "prompt": "Tell your teacher which questions you ask when a patient first arrives.",
+      "goal": "Find out what your teacher tells a doctor first.",
+      "starters": [
+        "What's the problem?",
+        "How long…?",
+        "What do you say first?"
+      ],
+      "constraint": "Simple questions ('What's the problem?', 'How long…?', 'Does it hurt?')."
+    }
+  },
+  {
+    "id": 807,
+    "collection": "medical",
+    "level": "A1A2",
+    "category": "Patient Consultations",
+    "teacher": {
+      "prompt": "Play a patient who has hurt their arm. The student asks where it hurts and what happened.",
+      "constraint": "Body parts and 'Where does it hurt?'."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you find out where a patient is hurt.",
+      "goal": "Find out if your teacher has ever broken a bone.",
+      "starters": [
+        "Where does it hurt?",
+        "Show me…",
+        "Did you ever break a bone?"
+      ],
+      "constraint": "Body parts and 'Where does it hurt?'."
+    }
+  },
+  {
+    "id": 808,
+    "collection": "medical",
+    "level": "A1A2",
+    "category": "Patient Consultations",
+    "teacher": {
+      "prompt": "Play a patient checking in at reception. The student asks for your name, date of birth and phone number.",
+      "constraint": "Personal details ('Can I have your…?', 'How do you spell…?')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what information you need when a patient arrives.",
+      "goal": "Find out what your teacher finds hard at the doctor's.",
+      "starters": [
+        "Can I have your…?",
+        "How do you spell…?",
+        "Is it easy for you?"
+      ],
+      "constraint": "Personal details ('Can I have your…?', 'How do you spell…?')."
+    }
+  },
+  {
+    "id": 809,
+    "collection": "medical",
+    "level": "A1A2",
+    "category": "Explaining & Advising",
+    "teacher": {
+      "prompt": "Ask the student to give simple advice to someone with a cold.",
+      "constraint": "Advice with 'should' and imperatives ('Drink water', 'Rest')."
+    },
+    "student": {
+      "prompt": "Tell your teacher your best advice for someone with a cold.",
+      "goal": "Find out what your teacher does when they have a cold.",
+      "starters": [
+        "You should…",
+        "Drink lots of…",
+        "What do you do?"
+      ],
+      "constraint": "Advice with 'should' and imperatives ('Drink water', 'Rest')."
+    }
+  },
+  {
+    "id": 810,
+    "collection": "medical",
+    "level": "A1A2",
+    "category": "Explaining & Advising",
+    "teacher": {
+      "prompt": "Play a patient who doesn't understand when to take their tablets. The student explains.",
+      "constraint": "Times and frequency ('twice a day', 'after meals', 'before bed')."
+    },
+    "student": {
+      "prompt": "Explain to your teacher how you tell patients when to take their medicine.",
+      "goal": "Find out if your teacher forgets to take medicine.",
+      "starters": [
+        "Take it twice a day…",
+        "After meals…",
+        "Do you ever forget?"
+      ],
+      "constraint": "Times and frequency ('twice a day', 'after meals', 'before bed')."
+    }
+  },
+  {
+    "id": 811,
+    "collection": "medical",
+    "level": "A1A2",
+    "category": "Explaining & Advising",
+    "teacher": {
+      "prompt": "Ask the student what people can do every day to stay healthy.",
+      "constraint": "Imperatives and 'can' ('You can walk', 'Eat more')."
+    },
+    "student": {
+      "prompt": "Tell your teacher the easiest way to stay healthy every day.",
+      "goal": "Find out what your teacher does to stay healthy.",
+      "starters": [
+        "You can…",
+        "Every day, I…",
+        "What do you do?"
+      ],
+      "constraint": "Imperatives and 'can' ('You can walk', 'Eat more')."
+    }
+  },
+  {
+    "id": 812,
+    "collection": "medical",
+    "level": "A1A2",
+    "category": "Working in Healthcare",
+    "teacher": {
+      "prompt": "Ask the student about their job: where they work and what they do every day.",
+      "constraint": "Present simple for jobs ('I work in', 'I look after')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about your job and a normal day at work.",
+      "goal": "Find out if your teacher could do your job.",
+      "starters": [
+        "I work in…",
+        "I look after…",
+        "Could you do my job?"
+      ],
+      "constraint": "Present simple for jobs ('I work in', 'I look after')."
+    }
+  },
+  {
+    "id": 813,
+    "collection": "medical",
+    "level": "A1A2",
+    "category": "Working in Healthcare",
+    "teacher": {
+      "prompt": "Ask the student what they like and don't like about working in healthcare.",
+      "constraint": "Likes and dislikes ('I like helping', 'I don't like')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you like most and least about your job.",
+      "goal": "Find out what your teacher likes most about teaching.",
+      "starters": [
+        "I like helping…",
+        "I don't like…",
+        "What do you like about teaching?"
+      ],
+      "constraint": "Likes and dislikes ('I like helping', 'I don't like')."
+    }
+  },
+  {
+    "id": 814,
+    "collection": "medical",
+    "level": "A1A2",
+    "category": "Working in Healthcare",
+    "teacher": {
+      "prompt": "Ask the student to describe the things they use every day at work.",
+      "constraint": "Equipment words ('gloves', 'thermometer', 'mask', 'bandage')."
+    },
+    "student": {
+      "prompt": "Describe to your teacher the things you use every day at work.",
+      "goal": "Find out which words your teacher already knows.",
+      "starters": [
+        "I use a…",
+        "This is for…",
+        "Do you know this word?"
+      ],
+      "constraint": "Equipment words ('gloves', 'thermometer', 'mask', 'bandage')."
+    }
+  },
+  {
+    "id": 815,
+    "collection": "medical",
+    "level": "A1A2",
+    "category": "Health Issues",
+    "teacher": {
+      "prompt": "Ask the student how much sleep people need, and how much they really get.",
+      "constraint": "Numbers and time ('about seven hours', 'not enough')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how much you sleep and if it's enough.",
+      "goal": "Find out how much your teacher sleeps.",
+      "starters": [
+        "I sleep about…",
+        "It's not enough…",
+        "How much do you sleep?"
+      ],
+      "constraint": "Numbers and time ('about seven hours', 'not enough')."
+    }
+  },
+  {
+    "id": 816,
+    "collection": "medical",
+    "level": "A1A2",
+    "category": "Health Issues",
+    "teacher": {
+      "prompt": "Ask the student whether people in their town walk or drive more.",
+      "constraint": "Comparatives ('more than', 'less than', 'healthier')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if people in your town walk or drive more.",
+      "goal": "Find out how much your teacher walks.",
+      "starters": [
+        "People usually…",
+        "It's healthier to…",
+        "Do you walk a lot?"
+      ],
+      "constraint": "Comparatives ('more than', 'less than', 'healthier')."
+    }
+  },
+  {
+    "id": 817,
+    "collection": "medical",
+    "level": "A1A2",
+    "category": "Health Issues",
+    "teacher": {
+      "prompt": "Ask the student which foods are healthy and unhealthy in their country.",
+      "constraint": "Food words and 'healthy / unhealthy'."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a healthy food and an unhealthy food you love.",
+      "goal": "Find out your teacher's favourite unhealthy food.",
+      "starters": [
+        "I love…",
+        "It's not very healthy…",
+        "What's yours?"
+      ],
+      "constraint": "Food words and 'healthy / unhealthy'."
+    }
+  },
+  {
+    "id": 818,
+    "collection": "medical",
+    "level": "B1",
+    "category": "Patient Consultations",
+    "teacher": {
+      "prompt": "Play a patient with headaches who is vague about the details. The student asks clear follow-up questions.",
+      "constraint": "Follow-up questions ('How often…?', 'What makes it worse?')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you get clear answers from a patient who is vague.",
+      "goal": "Find out if your teacher explains symptoms clearly.",
+      "starters": [
+        "How often…?",
+        "What makes it worse?",
+        "Are you good at explaining?"
+      ],
+      "constraint": "Follow-up questions ('How often…?', 'What makes it worse?')."
+    }
+  },
+  {
+    "id": 819,
+    "collection": "medical",
+    "level": "B1",
+    "category": "Patient Consultations",
+    "teacher": {
+      "prompt": "Play a nervous patient before a blood test. The student reassures you.",
+      "constraint": "Reassuring ('Don't worry', 'You'll just feel', 'It won't take long')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you say to calm a nervous patient.",
+      "goal": "Find out if your teacher is scared of needles.",
+      "starters": [
+        "Don't worry…",
+        "It won't take long…",
+        "Are you OK with needles?"
+      ],
+      "constraint": "Reassuring ('Don't worry', 'You'll just feel', 'It won't take long')."
+    }
+  },
+  {
+    "id": 820,
+    "collection": "medical",
+    "level": "B1",
+    "category": "Patient Consultations",
+    "teacher": {
+      "prompt": "Play a patient who wants antibiotics for a cold. The student explains why they won't help.",
+      "constraint": "Polite refusal and explanation ('I'm afraid', 'They won't work for')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you explain that antibiotics won't help a cold.",
+      "goal": "Find out if your teacher knew that.",
+      "starters": [
+        "I'm afraid…",
+        "They won't work for…",
+        "Did you know that?"
+      ],
+      "constraint": "Polite refusal and explanation ('I'm afraid', 'They won't work for')."
+    }
+  },
+  {
+    "id": 821,
+    "collection": "medical",
+    "level": "B1",
+    "category": "Explaining & Advising",
+    "teacher": {
+      "prompt": "Play a patient going home after an operation. The student explains what to do and not do this week.",
+      "constraint": "Instructions with modals ('You must', 'You shouldn't', 'Try to')."
+    },
+    "student": {
+      "prompt": "Explain to your teacher what patients should and shouldn't do after going home.",
+      "goal": "Find out if your teacher follows medical advice.",
+      "starters": [
+        "You shouldn't…",
+        "Try to…",
+        "Do you always follow advice?"
+      ],
+      "constraint": "Instructions with modals ('You must', 'You shouldn't', 'Try to')."
+    }
+  },
+  {
+    "id": 822,
+    "collection": "medical",
+    "level": "B1",
+    "category": "Explaining & Advising",
+    "teacher": {
+      "prompt": "Ask the student to explain a common medical word to someone with no medical knowledge.",
+      "constraint": "Explaining simply ('It means', 'It's when your…')."
+    },
+    "student": {
+      "prompt": "Explain to your teacher a medical word patients often don't understand.",
+      "goal": "Find out which medical words confuse your teacher.",
+      "starters": [
+        "It means…",
+        "It's when your…",
+        "Have you heard it?"
+      ],
+      "constraint": "Explaining simply ('It means', 'It's when your…')."
+    }
+  },
+  {
+    "id": 823,
+    "collection": "medical",
+    "level": "B1",
+    "category": "Explaining & Advising",
+    "teacher": {
+      "prompt": "Ask how the student would advise a patient who wants to stop smoking.",
+      "constraint": "Suggestions ('Have you thought about…?', 'It might help to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher the advice you'd give someone who wants to stop smoking.",
+      "goal": "Find out what your teacher thinks works best.",
+      "starters": [
+        "Have you thought about…?",
+        "It might help to…",
+        "What do you think works?"
+      ],
+      "constraint": "Suggestions ('Have you thought about…?', 'It might help to')."
+    }
+  },
+  {
+    "id": 824,
+    "collection": "medical",
+    "level": "B1",
+    "category": "Working in Healthcare",
+    "teacher": {
+      "prompt": "Ask the student about the hardest shift they've worked and how they got through it.",
+      "constraint": "Past narrative ('It was one of those days', 'By the end')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about the hardest shift you've ever worked.",
+      "goal": "Find out your teacher's hardest day at work.",
+      "starters": [
+        "It was one of those days…",
+        "By the end…",
+        "What was your hardest day?"
+      ],
+      "constraint": "Past narrative ('It was one of those days', 'By the end')."
+    }
+  },
+  {
+    "id": 825,
+    "collection": "medical",
+    "level": "B1",
+    "category": "Working in Healthcare",
+    "teacher": {
+      "prompt": "Play a colleague starting the next shift. The student hands over one patient clearly.",
+      "constraint": "Handover language ('He was admitted with', 'Keep an eye on')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what makes a good handover between shifts.",
+      "goal": "Find out how your teacher hands over to a colleague.",
+      "starters": [
+        "Keep an eye on…",
+        "The main thing is…",
+        "How do you hand over?"
+      ],
+      "constraint": "Handover language ('He was admitted with', 'Keep an eye on')."
+    }
+  },
+  {
+    "id": 826,
+    "collection": "medical",
+    "level": "B1",
+    "category": "Working in Healthcare",
+    "teacher": {
+      "prompt": "Ask the student why they chose to work in healthcare, and whether they'd choose it again.",
+      "constraint": "Past reasons and present feelings ('I wanted to', 'Now I realise')."
+    },
+    "student": {
+      "prompt": "Tell your teacher why you chose to work in healthcare.",
+      "goal": "Find out why your teacher chose teaching.",
+      "starters": [
+        "I always wanted to…",
+        "Now I realise…",
+        "Why did you choose teaching?"
+      ],
+      "constraint": "Past reasons and present feelings ('I wanted to', 'Now I realise')."
+    }
+  },
+  {
+    "id": 827,
+    "collection": "medical",
+    "level": "B1",
+    "category": "Health Issues",
+    "teacher": {
+      "prompt": "Ask whether people look up their symptoms online too much.",
+      "constraint": "Giving opinions ('It can be useful, but', 'The problem is')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you think about patients checking their symptoms online.",
+      "goal": "Find out if your teacher searches symptoms online.",
+      "starters": [
+        "It can be useful, but…",
+        "The problem is…",
+        "Do you look things up?"
+      ],
+      "constraint": "Giving opinions ('It can be useful, but', 'The problem is')."
+    }
+  },
+  {
+    "id": 828,
+    "collection": "medical",
+    "level": "B1",
+    "category": "Health Issues",
+    "teacher": {
+      "prompt": "Ask whether workplaces should do more to keep their staff healthy.",
+      "constraint": "Suggestions ('They could', 'It would help if')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what workplaces could do to keep staff healthy.",
+      "goal": "Find out what your teacher's workplace does.",
+      "starters": [
+        "They could…",
+        "It would help if…",
+        "Does your workplace do anything?"
+      ],
+      "constraint": "Suggestions ('They could', 'It would help if')."
+    }
+  },
+  {
+    "id": 829,
+    "collection": "medical",
+    "level": "B1",
+    "category": "Health Issues",
+    "teacher": {
+      "prompt": "Ask the student about a health habit they've started or stopped, and what changed.",
+      "constraint": "Present perfect ('I've started', 'I've given up', 'since')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a health habit you've started or given up.",
+      "goal": "Find out what habit your teacher would like to change.",
+      "starters": [
+        "I've given up…",
+        "Since then…",
+        "What about you?"
+      ],
+      "constraint": "Present perfect ('I've started', 'I've given up', 'since')."
+    }
+  },
+  {
+    "id": 830,
+    "collection": "medical",
+    "level": "B2+",
+    "category": "Patient Consultations",
+    "teacher": {
+      "prompt": "Play a patient who is clearly hiding how much they drink. The student gets the truth without judging.",
+      "constraint": "Non-judgemental questioning ('Roughly how much…?', 'Many people find')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you get honest answers from patients about sensitive habits.",
+      "goal": "Find out if your teacher is honest with their doctor.",
+      "starters": [
+        "Many people find…",
+        "Roughly how much…?",
+        "Are you honest with your doctor?"
+      ],
+      "constraint": "Non-judgemental questioning ('Roughly how much…?', 'Many people find')."
+    }
+  },
+  {
+    "id": 831,
+    "collection": "medical",
+    "level": "B2+",
+    "category": "Patient Consultations",
+    "teacher": {
+      "prompt": "Play a relative who is angry that their mother has waited six hours. The student calms the situation.",
+      "constraint": "De-escalating ('I completely understand', 'What I can do is')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about how you calm down an angry relative.",
+      "goal": "Find out how your teacher handles angry people.",
+      "starters": [
+        "I completely understand…",
+        "What I can do is…",
+        "How do you stay calm?"
+      ],
+      "constraint": "De-escalating ('I completely understand', 'What I can do is')."
+    }
+  },
+  {
+    "id": 832,
+    "collection": "medical",
+    "level": "B2+",
+    "category": "Patient Consultations",
+    "teacher": {
+      "prompt": "Play a patient about to receive a serious diagnosis. The student breaks the news with care.",
+      "constraint": "Breaking bad news gently ('I'm afraid the results show')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about how you prepare to give a patient bad news.",
+      "goal": "Find out how your teacher would want to hear it.",
+      "starters": [
+        "I'm afraid the results…",
+        "I'd make sure…",
+        "Would you want it straight?"
+      ],
+      "constraint": "Breaking bad news gently ('I'm afraid the results show')."
+    }
+  },
+  {
+    "id": 833,
+    "collection": "medical",
+    "level": "B2+",
+    "category": "Explaining & Advising",
+    "teacher": {
+      "prompt": "Play a patient who refuses a treatment the student recommends. The student explains the risks without pressure.",
+      "constraint": "Explaining risk ('There's a chance that', 'It's entirely your decision')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about how you respond when a patient refuses treatment.",
+      "goal": "See whether your teacher would follow the advice.",
+      "starters": [
+        "It's entirely your decision…",
+        "There's a chance that…",
+        "Would you refuse?"
+      ],
+      "constraint": "Explaining risk ('There's a chance that', 'It's entirely your decision')."
+    }
+  },
+  {
+    "id": 834,
+    "collection": "medical",
+    "level": "B2+",
+    "category": "Explaining & Advising",
+    "teacher": {
+      "prompt": "Ask how the student explains a figure like 'a 1 in 100 risk' so patients really understand it.",
+      "constraint": "Paraphrasing numbers ('In other words', 'Imagine a room of')."
+    },
+    "student": {
+      "prompt": "Explain to your teacher how you make risk numbers clear to patients.",
+      "goal": "Find out how your teacher understands risk.",
+      "starters": [
+        "In other words…",
+        "Imagine a room of…",
+        "Does that make sense?"
+      ],
+      "constraint": "Paraphrasing numbers ('In other words', 'Imagine a room of')."
+    }
+  },
+  {
+    "id": 835,
+    "collection": "medical",
+    "level": "B2+",
+    "category": "Explaining & Advising",
+    "teacher": {
+      "prompt": "Ask how the student would explain a complex condition to a worried eight-year-old.",
+      "constraint": "Simplifying with analogy ('It's a bit like', 'Think of it as')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you'd explain an illness to a worried child.",
+      "goal": "Find out how your teacher explains hard things to children.",
+      "starters": [
+        "It's a bit like…",
+        "Think of it as…",
+        "How would you say it?"
+      ],
+      "constraint": "Simplifying with analogy ('It's a bit like', 'Think of it as')."
+    }
+  },
+  {
+    "id": 836,
+    "collection": "medical",
+    "level": "B2+",
+    "category": "Working in Healthcare",
+    "teacher": {
+      "prompt": "Ask whether the student has ever disagreed with a senior colleague's decision, and what they did.",
+      "constraint": "Raising concerns ('I'm not entirely comfortable with', 'Could we reconsider?')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a time you disagreed with a senior colleague.",
+      "goal": "Find out if your teacher challenges people above them.",
+      "starters": [
+        "I wasn't entirely comfortable…",
+        "Could we reconsider…?",
+        "Would you say something?"
+      ],
+      "constraint": "Raising concerns ('I'm not entirely comfortable with', 'Could we reconsider?')."
+    }
+  },
+  {
+    "id": 837,
+    "collection": "medical",
+    "level": "B2+",
+    "category": "Working in Healthcare",
+    "teacher": {
+      "prompt": "Ask how the student switches off after a difficult day with patients.",
+      "constraint": "Coping language ('unwind', 'leave it at work', 'take a toll')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you switch off after a difficult day at work.",
+      "goal": "Find out how your teacher unwinds.",
+      "starters": [
+        "It takes a toll…",
+        "I try to leave it…",
+        "How do you unwind?"
+      ],
+      "constraint": "Coping language ('unwind', 'leave it at work', 'take a toll')."
+    }
+  },
+  {
+    "id": 838,
+    "collection": "medical",
+    "level": "B2+",
+    "category": "Working in Healthcare",
+    "teacher": {
+      "prompt": "Ask whether AI should help doctors make diagnoses, and who is responsible when it's wrong.",
+      "constraint": "Speculation and responsibility ('It's bound to', 'Who's accountable if')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether AI should help diagnose patients.",
+      "goal": "Find out if your teacher would trust an AI diagnosis.",
+      "starters": [
+        "It's bound to…",
+        "Who's accountable if…?",
+        "Would you trust it?"
+      ],
+      "constraint": "Speculation and responsibility ('It's bound to', 'Who's accountable if')."
+    }
+  },
+  {
+    "id": 839,
+    "collection": "medical",
+    "level": "B2+",
+    "category": "Health Issues",
+    "teacher": {
+      "prompt": "Ask whether unhealthy food should be taxed like cigarettes.",
+      "constraint": "Arguing a position ('There's a strong case for', 'a slippery slope')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether unhealthy food should be taxed.",
+      "goal": "Find out if your teacher would support the tax.",
+      "starters": [
+        "There's a strong case…",
+        "It's a slippery slope…",
+        "Would you pay more?"
+      ],
+      "constraint": "Arguing a position ('There's a strong case for', 'a slippery slope')."
+    }
+  },
+  {
+    "id": 840,
+    "collection": "medical",
+    "level": "B2+",
+    "category": "Health Issues",
+    "teacher": {
+      "prompt": "Ask whether patients should have to pay if they miss appointments without warning.",
+      "constraint": "Weighing fairness ('It seems fair, but', 'What about people who')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether patients should pay for missed appointments.",
+      "goal": "See where your teacher stands on it.",
+      "starters": [
+        "It seems fair, but…",
+        "What about people who…?",
+        "Where do you stand?"
+      ],
+      "constraint": "Weighing fairness ('It seems fair, but', 'What about people who')."
+    }
+  },
+  {
+    "id": 841,
+    "collection": "medical",
+    "level": "B2+",
+    "category": "Health Issues",
+    "teacher": {
+      "prompt": "Ask how the student's country should prepare for an ageing population.",
+      "constraint": "Formal register ('It is essential that', 'will need to')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about how your country should care for older people.",
+      "goal": "Compare your country with your teacher's.",
+      "starters": [
+        "It's essential that…",
+        "We'll need to…",
+        "What's it like where you are?"
+      ],
+      "constraint": "Formal register ('It is essential that', 'will need to')."
+    }
+  },
+  {
+    "id": 842,
+    "collection": "conversation-club",
+    "level": "A1A2",
+    "category": "Life Stories",
+    "teacher": {
+      "prompt": "Ask the student about their favourite place when they were a child.",
+      "constraint": "Past simple ('I went', 'There was', 'I loved')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about your favourite place when you were a child.",
+      "goal": "Find out your teacher's favourite childhood place.",
+      "starters": [
+        "I loved…",
+        "There was a…",
+        "Where did you like to go?"
+      ],
+      "constraint": "Past simple ('I went', 'There was', 'I loved')."
+    }
+  },
+  {
+    "id": 843,
+    "collection": "conversation-club",
+    "level": "A1A2",
+    "category": "Life Stories",
+    "teacher": {
+      "prompt": "Ask the student about the first time they cooked something on their own.",
+      "constraint": "Past simple and 'the first time'."
+    },
+    "student": {
+      "prompt": "Tell your teacher about the first thing you cooked on your own.",
+      "goal": "Find out what your teacher first cooked.",
+      "starters": [
+        "The first time…",
+        "It was terrible…",
+        "Can you cook?"
+      ],
+      "constraint": "Past simple and 'the first time'."
+    }
+  },
+  {
+    "id": 844,
+    "collection": "conversation-club",
+    "level": "A1A2",
+    "category": "Life Stories",
+    "teacher": {
+      "prompt": "Ask the student about a teacher they remember from school.",
+      "constraint": "Describing people in the past ('She was', 'He always')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a teacher you remember from school.",
+      "goal": "Find out about your teacher's favourite teacher.",
+      "starters": [
+        "She was very…",
+        "He always…",
+        "Who was your favourite teacher?"
+      ],
+      "constraint": "Describing people in the past ('She was', 'He always')."
+    }
+  },
+  {
+    "id": 845,
+    "collection": "conversation-club",
+    "level": "A1A2",
+    "category": "Big Questions",
+    "teacher": {
+      "prompt": "Ask the student: what makes a good friend?",
+      "constraint": "Adjectives for people ('kind', 'funny', 'honest')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what makes a good friend.",
+      "goal": "See if your teacher agrees with you.",
+      "starters": [
+        "A good friend is…",
+        "It's important to be…",
+        "What do you think?"
+      ],
+      "constraint": "Adjectives for people ('kind', 'funny', 'honest')."
+    }
+  },
+  {
+    "id": 846,
+    "collection": "conversation-club",
+    "level": "A1A2",
+    "category": "Big Questions",
+    "teacher": {
+      "prompt": "Ask the student what small thing makes them happy on a normal day.",
+      "constraint": "'It makes me happy' and 'I love it when'."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a small thing that makes you happy.",
+      "goal": "Find out what makes your teacher happy.",
+      "starters": [
+        "It makes me happy…",
+        "I love it when…",
+        "What about you?"
+      ],
+      "constraint": "'It makes me happy' and 'I love it when'."
+    }
+  },
+  {
+    "id": 847,
+    "collection": "conversation-club",
+    "level": "A1A2",
+    "category": "Big Questions",
+    "teacher": {
+      "prompt": "Ask the student: is it better to be early or late?",
+      "constraint": "Frequency ('always', 'never', 'sometimes') and 'I hate being'."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you're usually early or late.",
+      "goal": "Find out if your teacher is always on time.",
+      "starters": [
+        "I'm always…",
+        "I hate being…",
+        "Are you ever late?"
+      ],
+      "constraint": "Frequency ('always', 'never', 'sometimes') and 'I hate being'."
+    }
+  },
+  {
+    "id": 848,
+    "collection": "conversation-club",
+    "level": "A1A2",
+    "category": "Culture & Media",
+    "teacher": {
+      "prompt": "Ask the student about their favourite film and why they like it.",
+      "constraint": "Present simple for stories ('It's about', 'The hero is')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about your favourite film.",
+      "goal": "Find out your teacher's favourite film.",
+      "starters": [
+        "It's about…",
+        "My favourite part is…",
+        "What's your favourite film?"
+      ],
+      "constraint": "Present simple for stories ('It's about', 'The hero is')."
+    }
+  },
+  {
+    "id": 849,
+    "collection": "conversation-club",
+    "level": "A1A2",
+    "category": "Culture & Media",
+    "teacher": {
+      "prompt": "Ask the student about a song that makes them want to dance.",
+      "constraint": "'It makes me' and music words ('singer', 'band', 'song')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a song that makes you want to dance.",
+      "goal": "Find out what music your teacher likes.",
+      "starters": [
+        "It's by…",
+        "It makes me want to…",
+        "What do you listen to?"
+      ],
+      "constraint": "'It makes me' and music words ('singer', 'band', 'song')."
+    }
+  },
+  {
+    "id": 850,
+    "collection": "conversation-club",
+    "level": "A1A2",
+    "category": "Culture & Media",
+    "teacher": {
+      "prompt": "Ask the student about a festival or holiday in their country.",
+      "constraint": "Present simple for traditions ('We eat', 'People wear')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about your favourite festival or holiday.",
+      "goal": "Find out your teacher's favourite holiday.",
+      "starters": [
+        "We usually…",
+        "People wear…",
+        "What's your favourite holiday?"
+      ],
+      "constraint": "Present simple for traditions ('We eat', 'People wear')."
+    }
+  },
+  {
+    "id": 851,
+    "collection": "conversation-club",
+    "level": "A1A2",
+    "category": "What If",
+    "teacher": {
+      "prompt": "Ask the student: if you could have any animal as a pet, what would it be?",
+      "constraint": "'I would' with a reason."
+    },
+    "student": {
+      "prompt": "Tell your teacher which animal you'd have as a pet if you could have any.",
+      "goal": "Find out which animal your teacher would choose.",
+      "starters": [
+        "I would have…",
+        "It's so…",
+        "What would you choose?"
+      ],
+      "constraint": "'I would' with a reason."
+    }
+  },
+  {
+    "id": 852,
+    "collection": "conversation-club",
+    "level": "A1A2",
+    "category": "What If",
+    "teacher": {
+      "prompt": "Ask the student: if you could eat only one food for a week, what would it be?",
+      "constraint": "'I would' and food words."
+    },
+    "student": {
+      "prompt": "Tell your teacher which food you'd happily eat for a whole week.",
+      "goal": "Find out what your teacher would eat.",
+      "starters": [
+        "I'd eat…",
+        "I'd never get bored of…",
+        "What about you?"
+      ],
+      "constraint": "'I would' and food words."
+    }
+  },
+  {
+    "id": 853,
+    "collection": "conversation-club",
+    "level": "A1A2",
+    "category": "What If",
+    "teacher": {
+      "prompt": "Ask the student: if you had a free day tomorrow, what would you do?",
+      "constraint": "'I would' and daily activities."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd do with a free day tomorrow.",
+      "goal": "Find out how your teacher would spend it.",
+      "starters": [
+        "First, I'd…",
+        "In the afternoon…",
+        "What would you do?"
+      ],
+      "constraint": "'I would' and daily activities."
+    }
+  },
+  {
+    "id": 854,
+    "collection": "conversation-club",
+    "level": "B1",
+    "category": "Life Stories",
+    "teacher": {
+      "prompt": "Ask the student about a time they got completely lost.",
+      "constraint": "Past simple and past continuous ('I was walking when')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a time you got completely lost.",
+      "goal": "Find out if your teacher has a good sense of direction.",
+      "starters": [
+        "I was walking…",
+        "In the end…",
+        "Do you get lost?"
+      ],
+      "constraint": "Past simple and past continuous ('I was walking when')."
+    }
+  },
+  {
+    "id": 855,
+    "collection": "conversation-club",
+    "level": "B1",
+    "category": "Life Stories",
+    "teacher": {
+      "prompt": "Ask the student about a moment they felt really proud of themselves.",
+      "constraint": "Feelings ('I felt so proud', 'I couldn't believe')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a moment you felt really proud of yourself.",
+      "goal": "Find out your teacher's proudest moment.",
+      "starters": [
+        "I couldn't believe…",
+        "I felt so…",
+        "What are you proud of?"
+      ],
+      "constraint": "Feelings ('I felt so proud', 'I couldn't believe')."
+    }
+  },
+  {
+    "id": 856,
+    "collection": "conversation-club",
+    "level": "B1",
+    "category": "Life Stories",
+    "teacher": {
+      "prompt": "Ask the student about an interesting neighbour or local character they remember.",
+      "constraint": "'Used to' and 'would' for past habits."
+    },
+    "student": {
+      "prompt": "Tell your teacher about an interesting neighbour you remember.",
+      "goal": "Find out about your teacher's neighbours growing up.",
+      "starters": [
+        "He used to…",
+        "Everyone knew her…",
+        "Did you have neighbours like that?"
+      ],
+      "constraint": "'Used to' and 'would' for past habits."
+    }
+  },
+  {
+    "id": 857,
+    "collection": "conversation-club",
+    "level": "B1",
+    "category": "Big Questions",
+    "teacher": {
+      "prompt": "Ask the student: is it better to be honest or kind when a friend asks your opinion?",
+      "constraint": "Tactful opinions ('It depends', 'I'd try to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you'd rather be honest or kind with a friend.",
+      "goal": "Find out which your teacher chooses.",
+      "starters": [
+        "It depends on…",
+        "I'd try to…",
+        "Which do you choose?"
+      ],
+      "constraint": "Tactful opinions ('It depends', 'I'd try to')."
+    }
+  },
+  {
+    "id": 858,
+    "collection": "conversation-club",
+    "level": "B1",
+    "category": "Big Questions",
+    "teacher": {
+      "prompt": "Ask the student: what's the best age to be, and why?",
+      "constraint": "Comparing life stages ('When you're twenty', 'At that age')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you think the best age to be is.",
+      "goal": "Find out what age your teacher would go back to.",
+      "starters": [
+        "When you're twenty…",
+        "At that age…",
+        "What's the best age?"
+      ],
+      "constraint": "Comparing life stages ('When you're twenty', 'At that age')."
+    }
+  },
+  {
+    "id": 859,
+    "collection": "conversation-club",
+    "level": "B1",
+    "category": "Big Questions",
+    "teacher": {
+      "prompt": "Ask the student: do we have too much choice in modern life?",
+      "constraint": "Quantifiers ('too many', 'not enough', 'plenty of')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whether too much choice makes life harder.",
+      "goal": "Find out what your teacher finds hard to choose.",
+      "starters": [
+        "There are too many…",
+        "It takes ages to…",
+        "What's hard for you?"
+      ],
+      "constraint": "Quantifiers ('too many', 'not enough', 'plenty of')."
+    }
+  },
+  {
+    "id": 860,
+    "collection": "conversation-club",
+    "level": "B1",
+    "category": "Culture & Media",
+    "teacher": {
+      "prompt": "Ask the student about a book, film or series everyone loves but they didn't.",
+      "constraint": "Contrast ('Everyone said, but', 'I expected')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about something everyone loves that you didn't enjoy.",
+      "goal": "Find out what your teacher thinks is overrated.",
+      "starters": [
+        "Everyone loved it, but…",
+        "I expected…",
+        "What do you think is overrated?"
+      ],
+      "constraint": "Contrast ('Everyone said, but', 'I expected')."
+    }
+  },
+  {
+    "id": 861,
+    "collection": "conversation-club",
+    "level": "B1",
+    "category": "Culture & Media",
+    "teacher": {
+      "prompt": "Ask the student what visitors often get wrong about their country.",
+      "constraint": "Generalising carefully ('People often think', 'Actually')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what visitors often get wrong about your country.",
+      "goal": "Find out what people get wrong about your teacher's country.",
+      "starters": [
+        "People often think…",
+        "Actually…",
+        "What about your country?"
+      ],
+      "constraint": "Generalising carefully ('People often think', 'Actually')."
+    }
+  },
+  {
+    "id": 862,
+    "collection": "conversation-club",
+    "level": "B1",
+    "category": "Culture & Media",
+    "teacher": {
+      "prompt": "Ask the student about a song or piece of music linked to a memory.",
+      "constraint": "Memories ('It reminds me of', 'Whenever I hear it')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a song that reminds you of a special time.",
+      "goal": "Find out which song brings back memories for your teacher.",
+      "starters": [
+        "It reminds me of…",
+        "Whenever I hear it…",
+        "Do you have one?"
+      ],
+      "constraint": "Memories ('It reminds me of', 'Whenever I hear it')."
+    }
+  },
+  {
+    "id": 863,
+    "collection": "conversation-club",
+    "level": "B1",
+    "category": "What If",
+    "teacher": {
+      "prompt": "Ask the student: if you could live in any decade of the last hundred years, which would it be?",
+      "constraint": "Second conditional ('If I could, I'd')."
+    },
+    "student": {
+      "prompt": "Tell your teacher which decade you'd choose to live in, and why.",
+      "goal": "Find out which decade your teacher would choose.",
+      "starters": [
+        "If I could, I'd…",
+        "Life was…",
+        "Which would you choose?"
+      ],
+      "constraint": "Second conditional ('If I could, I'd')."
+    }
+  },
+  {
+    "id": 864,
+    "collection": "conversation-club",
+    "level": "B1",
+    "category": "What If",
+    "teacher": {
+      "prompt": "Ask the student: if you could instantly master one skill, what would it be?",
+      "constraint": "'I'd love to be able to' and 'so that'."
+    },
+    "student": {
+      "prompt": "Tell your teacher which skill you'd love to master instantly.",
+      "goal": "Find out what skill your teacher wishes they had.",
+      "starters": [
+        "I'd love to be able to…",
+        "So that I could…",
+        "What about you?"
+      ],
+      "constraint": "'I'd love to be able to' and 'so that'."
+    }
+  },
+  {
+    "id": 865,
+    "collection": "conversation-club",
+    "level": "B1",
+    "category": "What If",
+    "teacher": {
+      "prompt": "Ask the student whose life they'd swap with for a week, and what might surprise them.",
+      "constraint": "Speculating ('I bet', 'I'd probably find')."
+    },
+    "student": {
+      "prompt": "Tell your teacher whose life you'd swap with for a week.",
+      "goal": "Find out whose life your teacher would try.",
+      "starters": [
+        "I bet…",
+        "I'd probably find…",
+        "Who would you swap with?"
+      ],
+      "constraint": "Speculating ('I bet', 'I'd probably find')."
+    }
+  },
+  {
+    "id": 866,
+    "collection": "conversation-club",
+    "level": "B2+",
+    "category": "Life Stories",
+    "teacher": {
+      "prompt": "Ask the student about the moment they realised they had grown up.",
+      "constraint": "Reflective language ('It dawned on me', 'Looking back')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about the moment you realised you were an adult.",
+      "goal": "Find out when your teacher felt grown up.",
+      "starters": [
+        "It dawned on me…",
+        "Looking back…",
+        "When was it for you?"
+      ],
+      "constraint": "Reflective language ('It dawned on me', 'Looking back')."
+    }
+  },
+  {
+    "id": 867,
+    "collection": "conversation-club",
+    "level": "B2+",
+    "category": "Life Stories",
+    "teacher": {
+      "prompt": "Ask the student about a stranger who had a lasting effect on them.",
+      "constraint": "Past perfect and impact ('had never', 'It's stuck with me')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a stranger who had a lasting effect on you.",
+      "goal": "Find out if a stranger ever changed your teacher's day.",
+      "starters": [
+        "It's stuck with me…",
+        "I had never…",
+        "Has that happened to you?"
+      ],
+      "constraint": "Past perfect and impact ('had never', 'It's stuck with me')."
+    }
+  },
+  {
+    "id": 868,
+    "collection": "conversation-club",
+    "level": "B2+",
+    "category": "Life Stories",
+    "teacher": {
+      "prompt": "Ask the student about a risk they're glad they took — or one they regret not taking.",
+      "constraint": "Regrets ('I wish I had', 'If only', 'I'm glad I')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a risk you're glad you took, or wish you had.",
+      "goal": "Find out what risk your teacher regrets not taking.",
+      "starters": [
+        "I'm glad I…",
+        "If only…",
+        "Do you regret anything?"
+      ],
+      "constraint": "Regrets ('I wish I had', 'If only', 'I'm glad I')."
+    }
+  },
+  {
+    "id": 869,
+    "collection": "conversation-club",
+    "level": "B2+",
+    "category": "Big Questions",
+    "teacher": {
+      "prompt": "Ask the student: is it possible to be truly happy without ambition?",
+      "constraint": "Abstract nouns ('fulfilment', 'contentment', 'drive')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether you can be happy without ambition.",
+      "goal": "Find out what drives your teacher.",
+      "starters": [
+        "It depends what you mean…",
+        "Contentment is…",
+        "What drives you?"
+      ],
+      "constraint": "Abstract nouns ('fulfilment', 'contentment', 'drive')."
+    }
+  },
+  {
+    "id": 870,
+    "collection": "conversation-club",
+    "level": "B2+",
+    "category": "Big Questions",
+    "teacher": {
+      "prompt": "Ask the student: does personality change with age, or do we just become more ourselves?",
+      "constraint": "Nuanced agreement ('To a degree', 'I'd go further')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether people's personalities really change as they get older.",
+      "goal": "Find out how your teacher has changed.",
+      "starters": [
+        "To a degree…",
+        "I'd go further…",
+        "Have you changed much?"
+      ],
+      "constraint": "Nuanced agreement ('To a degree', 'I'd go further')."
+    }
+  },
+  {
+    "id": 871,
+    "collection": "conversation-club",
+    "level": "B2+",
+    "category": "Big Questions",
+    "teacher": {
+      "prompt": "Ask the student: is nostalgia helpful, or does it stop us moving forward?",
+      "constraint": "Balancing views ('On one level', 'At the same time')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether nostalgia helps us or holds us back.",
+      "goal": "Find out what your teacher feels nostalgic about.",
+      "starters": [
+        "On one level…",
+        "At the same time…",
+        "What are you nostalgic about?"
+      ],
+      "constraint": "Balancing views ('On one level', 'At the same time')."
+    }
+  },
+  {
+    "id": 872,
+    "collection": "conversation-club",
+    "level": "B2+",
+    "category": "Culture & Media",
+    "teacher": {
+      "prompt": "Ask whether we should separate an artist's work from their behaviour.",
+      "constraint": "Moral nuance ('I'm torn', 'That's where it gets tricky')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether you can enjoy art by someone who behaved badly.",
+      "goal": "See if your teacher can separate art from artist.",
+      "starters": [
+        "I'm torn…",
+        "That's where it gets tricky…",
+        "Could you still enjoy it?"
+      ],
+      "constraint": "Moral nuance ('I'm torn', 'That's where it gets tricky')."
+    }
+  },
+  {
+    "id": 873,
+    "collection": "conversation-club",
+    "level": "B2+",
+    "category": "Culture & Media",
+    "teacher": {
+      "prompt": "Ask how streaming has changed the way people watch, listen and talk about culture.",
+      "constraint": "Describing change ('has shifted', 'no longer', 'these days')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about how streaming has changed the way we enjoy films and music.",
+      "goal": "Compare your viewing habits with your teacher's.",
+      "starters": [
+        "It's shifted from…",
+        "We no longer…",
+        "What do you watch?"
+      ],
+      "constraint": "Describing change ('has shifted', 'no longer', 'these days')."
+    }
+  },
+  {
+    "id": 874,
+    "collection": "conversation-club",
+    "level": "B2+",
+    "category": "Culture & Media",
+    "teacher": {
+      "prompt": "Ask which part of the student's culture they'd most want to protect from globalisation.",
+      "constraint": "Evaluating ('irreplaceable', 'worth preserving', 'at risk of')."
+    },
+    "student": {
+      "prompt": "Tell your teacher which part of your culture you'd most want to protect.",
+      "goal": "Find out what your teacher would protect in theirs.",
+      "starters": [
+        "It's at risk of…",
+        "It's worth preserving…",
+        "What about your culture?"
+      ],
+      "constraint": "Evaluating ('irreplaceable', 'worth preserving', 'at risk of')."
+    }
+  },
+  {
+    "id": 875,
+    "collection": "conversation-club",
+    "level": "B2+",
+    "category": "What If",
+    "teacher": {
+      "prompt": "Ask the student: if you could know exactly how long you'll live, would you want to?",
+      "constraint": "Hypotheticals ('Knowing that would', 'Part of me would')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about whether you'd want to know how long you'll live.",
+      "goal": "Find out if your teacher would want to know.",
+      "starters": [
+        "Knowing that would…",
+        "Part of me would…",
+        "Would you want to know?"
+      ],
+      "constraint": "Hypotheticals ('Knowing that would', 'Part of me would')."
+    }
+  },
+  {
+    "id": 876,
+    "collection": "conversation-club",
+    "level": "B2+",
+    "category": "What If",
+    "teacher": {
+      "prompt": "Ask the student: if you could send one message to your younger self, what would it say?",
+      "constraint": "Advice with hindsight ('I'd tell myself to', 'Don't bother')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what message you'd send to your younger self.",
+      "goal": "Find out what your teacher would tell their younger self.",
+      "starters": [
+        "I'd tell myself to…",
+        "Don't bother…",
+        "What would you say?"
+      ],
+      "constraint": "Advice with hindsight ('I'd tell myself to', 'Don't bother')."
+    }
+  },
+  {
+    "id": 877,
+    "collection": "conversation-club",
+    "level": "B2+",
+    "category": "What If",
+    "teacher": {
+      "prompt": "Ask the student: if everyone could read minds for one day, what would happen?",
+      "constraint": "Speculating about consequences ('Chaos would', 'It might actually')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about what would happen if everyone could read minds for a day.",
+      "goal": "Find out what your teacher would hide.",
+      "starters": [
+        "Chaos would…",
+        "It might actually…",
+        "What would you hide?"
+      ],
+      "constraint": "Speculating about consequences ('Chaos would', 'It might actually')."
+    }
+  },
+  {
+    "id": 878,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "School",
+    "teacher": {
+      "prompt": "Play a new pupil on their first day. The student shows you around their classroom.",
+      "constraint": "'This is' and places at school ('the library', 'the playground')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about the best place in your school.",
+      "goal": "Find out your teacher's favourite place at school.",
+      "starters": [
+        "This is…",
+        "I like the…",
+        "What was your school like?"
+      ],
+      "constraint": "'This is' and places at school ('the library', 'the playground')."
+    }
+  },
+  {
+    "id": 879,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Growing Up",
+    "teacher": {
+      "prompt": "Ask the student what they can do now that they couldn't do last year.",
+      "constraint": "'I can' and 'I couldn't' ('I can swim now')."
+    },
+    "student": {
+      "prompt": "Tell your teacher something you can do now that you couldn't do before.",
+      "goal": "Find out what your teacher learned to do as a child.",
+      "starters": [
+        "Now I can…",
+        "Last year I couldn't…",
+        "Can you ride a bike?"
+      ],
+      "constraint": "'I can' and 'I couldn't' ('I can swim now')."
+    }
+  },
+  {
+    "id": 880,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Friends & People",
+    "teacher": {
+      "prompt": "Ask the student to describe their best friend in funny words.",
+      "constraint": "Describing people ('funny', 'kind', 'a bit crazy')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about your best friend and why they're fun.",
+      "goal": "Find out who your teacher's best friend was.",
+      "starters": [
+        "My best friend is…",
+        "We always…",
+        "Who's your best friend?"
+      ],
+      "constraint": "Describing people ('funny', 'kind', 'a bit crazy')."
+    }
+  },
+  {
+    "id": 881,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Online Life",
+    "teacher": {
+      "prompt": "Ask the student about their favourite video to watch online and what happens in it.",
+      "constraint": "Present simple for videos ('He makes', 'They play')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a funny video you like.",
+      "goal": "Find out what videos your teacher watches.",
+      "starters": [
+        "In the video…",
+        "It's so funny…",
+        "What do you watch?"
+      ],
+      "constraint": "Present simple for videos ('He makes', 'They play')."
+    }
+  },
+  {
+    "id": 882,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Games & Entertainment",
+    "teacher": {
+      "prompt": "Play a shop assistant in a toy shop. The student wants to buy a game for a friend.",
+      "constraint": "Shopping ('Can I have…?', 'How much is it?')."
+    },
+    "student": {
+      "prompt": "Tell your teacher which game you'd buy for a friend's birthday.",
+      "goal": "Find out which game your teacher loved as a child.",
+      "starters": [
+        "I'd buy…",
+        "It's really fun…",
+        "What did you play?"
+      ],
+      "constraint": "Shopping ('Can I have…?', 'How much is it?')."
+    }
+  },
+  {
+    "id": 883,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Opinions & Ideas",
+    "teacher": {
+      "prompt": "Ask the student: which is better, summer or winter?",
+      "constraint": "'I like' with a reason and weather words."
+    },
+    "student": {
+      "prompt": "Tell your teacher if summer or winter is better.",
+      "goal": "Find out which season your teacher likes.",
+      "starters": [
+        "Summer is better…",
+        "In winter, you can…",
+        "Which do you like?"
+      ],
+      "constraint": "'I like' with a reason and weather words."
+    }
+  },
+  {
+    "id": 884,
+    "collection": "kids",
+    "level": "B1",
+    "category": "School",
+    "teacher": {
+      "prompt": "Ask the student which school rule they'd change if they were head teacher for a day.",
+      "constraint": "Second conditional ('If I were in charge, I'd')."
+    },
+    "student": {
+      "prompt": "Tell your teacher which school rule you'd change if you were in charge.",
+      "goal": "Find out which rule your teacher hated at school.",
+      "starters": [
+        "If I were in charge…",
+        "I'd get rid of…",
+        "Which rule did you hate?"
+      ],
+      "constraint": "Second conditional ('If I were in charge, I'd')."
+    }
+  },
+  {
+    "id": 885,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Growing Up",
+    "teacher": {
+      "prompt": "Ask the student about something they're now old enough to do at home.",
+      "constraint": "'I'm allowed to' and 'I have to'."
+    },
+    "student": {
+      "prompt": "Tell your teacher about something you're now allowed to do at home.",
+      "goal": "Find out what your teacher was allowed to do at your age.",
+      "starters": [
+        "Now I'm allowed to…",
+        "I have to…",
+        "What about you?"
+      ],
+      "constraint": "'I'm allowed to' and 'I have to'."
+    }
+  },
+  {
+    "id": 886,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Friends & People",
+    "teacher": {
+      "prompt": "Play a friend who is sad because they weren't picked for the team. The student cheers you up.",
+      "constraint": "Cheering someone up ('Don't worry', 'Next time', 'You're good at')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you'd cheer up a friend who wasn't picked for a team.",
+      "goal": "Find out how your teacher cheers people up.",
+      "starters": [
+        "Don't worry…",
+        "You're really good at…",
+        "What would you say?"
+      ],
+      "constraint": "Cheering someone up ('Don't worry', 'Next time', 'You're good at')."
+    }
+  },
+  {
+    "id": 887,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Online Life",
+    "teacher": {
+      "prompt": "Ask the student what they'd do if a stranger online asked where they live.",
+      "constraint": "Safety advice ('You should never', 'Tell an adult')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd do if a stranger online asked where you live.",
+      "goal": "Find out what your teacher would do.",
+      "starters": [
+        "I'd never…",
+        "I'd tell…",
+        "What would you do?"
+      ],
+      "constraint": "Safety advice ('You should never', 'Tell an adult')."
+    }
+  },
+  {
+    "id": 888,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Games & Entertainment",
+    "teacher": {
+      "prompt": "Ask the student to invent a crazy new theme park ride and describe it.",
+      "constraint": "Describing with 'You can', 'It goes', 'It's so'."
+    },
+    "student": {
+      "prompt": "Describe to your teacher a crazy new theme park ride you've invented.",
+      "goal": "Find out if your teacher would dare to ride it.",
+      "starters": [
+        "First, you…",
+        "Then it goes…",
+        "Would you try it?"
+      ],
+      "constraint": "Describing with 'You can', 'It goes', 'It's so'."
+    }
+  },
+  {
+    "id": 889,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Opinions & Ideas",
+    "teacher": {
+      "prompt": "Ask the student: should kids be allowed to choose their own bedtime?",
+      "constraint": "Opinions with 'Kids should' and 'We'd be'."
+    },
+    "student": {
+      "prompt": "Tell your teacher if kids should choose their own bedtime.",
+      "goal": "Find out what time your teacher went to bed as a kid.",
+      "starters": [
+        "Kids should…",
+        "We'd be tired…",
+        "When was your bedtime?"
+      ],
+      "constraint": "Opinions with 'Kids should' and 'We'd be'."
+    }
+  },
+  {
+    "id": 890,
+    "collection": "kids",
+    "level": "B2+",
+    "category": "School",
+    "teacher": {
+      "prompt": "Ask the student whether a robot could ever be a good teacher.",
+      "constraint": "Speculating ('Robots might', 'They'd never be able to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you think a robot could do their job.",
+      "goal": "Find out if your teacher is worried about robots.",
+      "starters": [
+        "Robots might…",
+        "They'd never be able to…",
+        "Could a robot teach me?"
+      ],
+      "constraint": "Speculating ('Robots might', 'They'd never be able to')."
+    }
+  },
+  {
+    "id": 891,
+    "collection": "kids",
+    "level": "B2+",
+    "category": "Growing Up",
+    "teacher": {
+      "prompt": "Ask the student what they can't wait for about being older, and what they'll miss.",
+      "constraint": "Future and contrast ('I can't wait to', 'I'll miss')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you can't wait for about being older, and what you'll miss.",
+      "goal": "Find out what your teacher misses about being a kid.",
+      "starters": [
+        "I can't wait to…",
+        "I'll really miss…",
+        "What do you miss?"
+      ],
+      "constraint": "Future and contrast ('I can't wait to', 'I'll miss')."
+    }
+  },
+  {
+    "id": 892,
+    "collection": "kids",
+    "level": "B2+",
+    "category": "Friends & People",
+    "teacher": {
+      "prompt": "Ask the student what they'd do if their friends were laughing at a new kid.",
+      "constraint": "Moral choices ('I'd probably', 'It's not fair')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd do if your friends were laughing at a new kid.",
+      "goal": "Find out what your teacher would do.",
+      "starters": [
+        "It's not fair…",
+        "I'd probably…",
+        "What would you do?"
+      ],
+      "constraint": "Moral choices ('I'd probably', 'It's not fair')."
+    }
+  },
+  {
+    "id": 893,
+    "collection": "kids",
+    "level": "B2+",
+    "category": "Online Life",
+    "teacher": {
+      "prompt": "Ask the student whether it's OK to post a funny photo of a friend without asking.",
+      "constraint": "Permission ('You should ask first', 'It's OK if')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if it's OK to post a funny photo of a friend without asking.",
+      "goal": "See whether your teacher agrees with you.",
+      "starters": [
+        "You should ask first…",
+        "It's OK if…",
+        "Would you mind?"
+      ],
+      "constraint": "Permission ('You should ask first', 'It's OK if')."
+    }
+  },
+  {
+    "id": 894,
+    "collection": "kids",
+    "level": "B2+",
+    "category": "Games & Entertainment",
+    "teacher": {
+      "prompt": "Ask the student to pitch an idea for a new video game they'd love to play.",
+      "constraint": "Persuading ('It's the best because', 'You'd love')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a video game you'd invent.",
+      "goal": "Find out if your teacher would play it.",
+      "starters": [
+        "In my game…",
+        "You'd love it…",
+        "Would you play it?"
+      ],
+      "constraint": "Persuading ('It's the best because', 'You'd love')."
+    }
+  },
+  {
+    "id": 895,
+    "collection": "kids",
+    "level": "B2+",
+    "category": "Opinions & Ideas",
+    "teacher": {
+      "prompt": "Ask the student: should animals have the same rights as people?",
+      "constraint": "Opinions with reasons ('I don't think so', 'It's different')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if animals should have the same rights as people.",
+      "goal": "Find out what your teacher thinks.",
+      "starters": [
+        "Animals can…",
+        "It's different because…",
+        "What do you think?"
+      ],
+      "constraint": "Opinions with reasons ('I don't think so', 'It's different')."
+    }
   }
 ]
