@@ -1,0 +1,26 @@
+# GitHub Pages (Jekyll) settings for wafflebrain.com.
+#
+# Everything listed under `exclude` stays in the git repository but is NOT
+# published on the website. Keep internal notes, drafts and tooling here.
+# Never exclude anything the app loads at runtime (index.html, student.html,
+# *.js, style.css, data/waffles.json, images/, manifest.json, sw.js, the
+# wafflebrain-kids app files, robots.txt, sitemap.xml).
+
+exclude:
+  - CLAUDE.md
+  - design/
+  - docs/
+  - "WaffleBrain Prompt Rewrite/"
+  - scripts/
+  - data/B2_global_architectural_audit.md
+  - data/waffle_system_spec.md
+  - wafflebrain-kids/00_VISION.md
+  - wafflebrain-kids/01_DESIGN_PRINCIPLES.md
+  - wafflebrain-kids/02_ENGINE_GUIDE.md
+  - wafflebrain-kids/03_PROMPT_CHECKLIST.md
+  - wafflebrain-kids/04_CEFR_GUIDELINES.md
+  - wafflebrain-kids/05_WORLD_DESIGN.md
+  - wafflebrain-kids/06_PROMPT_ARCHITECTURE.md
+  - wafflebrain-kids/07_ENGINE_CHECKLIST.md
+  - .gitignore
+  - .gitattributes

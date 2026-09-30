@@ -18,6 +18,8 @@ const WB = (() => {
   let bag           = [];  // shuffle-bag (indices into `waffles`)
   let shown         = 0;   // running count of Waffles drawn this session
   let currentLevel  = 'B1';// stored for callers
+  let queryTerms    = [];  // keyword search terms (all must match); [] = no search
+  const searchText  = new Map(); // Waffle record → its normalised searchable text
 
   // ── Fisher-Yates shuffle ──────────────────
   function shuffle(arr) {
@@ -56,13 +58,42 @@ const WB = (() => {
     }
   }
 
+  // ── Keyword search ────────────────────────
+  // Lower-case, accents removed, curly quotes straightened, so "cafe"
+  // finds "café" and "I'd" finds "I’d".
+  function normalise(text) {
+    return String(text).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/[\u2018\u2019]/g, "'").replace(/[\u201C\u201D]/g, '"');
+  }
+
+  // Everything a teacher might search for: both prompts, the Language
+  // Focus, the category, the Goal and the Starters.
+  function textOf(w) {
+    if (!searchText.has(w)) {
+      const s = w.student || {}, t = w.teacher || {};
+      searchText.set(w, normalise([t.prompt, t.constraint, w.category, s.prompt, s.goal,
+                                   ...(s.starters || [])].filter(Boolean).join(' \n ')));
+    }
+    return searchText.get(w);
+  }
+
+  function termsOf(query) {
+    return normalise(query || '').split(/\s+/).filter(Boolean);
+  }
+
+  function matches(w, categoryFilter, terms) {
+    if (categoryFilter && w.category !== categoryFilter) return false;
+    if (!terms.length) return true;
+    const text = textOf(w);
+    return terms.every(term => text.includes(term));
+  }
+
   // ── Build index pool from filter ──────────
-  // Returns an array of indices into `waffles`
-  // matching the given category (or all if empty).
+  // Returns an array of indices into `waffles` matching the given
+  // category (or all if empty) and the current keyword search.
   function buildPool(categoryFilter) {
-    if (!categoryFilter) return [...Array(waffles.length).keys()];
     return waffles.reduce((acc, w, i) => {
-      if (w.category === categoryFilter) acc.push(i);
+      if (matches(w, categoryFilter, queryTerms)) acc.push(i);
       return acc;
     }, []);
   }
@@ -132,6 +163,24 @@ const WB = (() => {
       if (bag.length === 0 || levelChanged) refillBag(categoryFilter);
       shown++;
       return waffles[bag.pop()];
+    },
+
+    /**
+     * Set the keyword search ('' clears it). Every word must appear
+     * somewhere in the Waffle. Takes effect at the next prime().
+     */
+    setQuery(query) {
+      queryTerms = termsOf(query);
+    },
+
+    /**
+     * How many Waffles in a Collection match a keyword search, optionally
+     * limited to one level and/or category ('' = any).
+     */
+    countMatches(query, collection, levelFilter = '', categoryFilter = '') {
+      const terms = termsOf(query);
+      return all.filter(w => w.collection === collection &&
+        (!levelFilter || w.level === levelFilter) && matches(w, categoryFilter, terms)).length;
     },
 
     /** Look up one Waffle record by its permanent id (or undefined). */

@@ -1,0 +1,36 @@
+# ── WaffleBrain: files that must never be committed ──
+
+# Secrets and local settings (e.g. Stripe secret keys belong in your
+# hosting provider's settings, never in this repository)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Windows / macOS / editor clutter
+desktop.ini
+Desktop.ini
+Thumbs.db
+ehthumbs.db
+.DS_Store
+._*
+*.swp
+*~
+.vscode/
+.idea/
+
+# Dependencies, build output, logs, archives
+node_modules/
+dist/
+build/
+_site/
+.jekyll-cache/
+.sass-cache/
+*.log
+npm-debug.log*
+*.zip
+*.rar
+*.7z
+*.tmp
+*.bak

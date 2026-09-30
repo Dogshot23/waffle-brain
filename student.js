@@ -183,3 +183,12 @@ document.addEventListener('keydown', (e) => {
     if (!nextBtn.disabled) showWaffle();
   }
 });
+
+// ── Offline support ───────────────────────────
+// Registers sw.js, which saves WaffleBrain (pages + all Waffles) so it keeps
+// working if the connection drops. Silently skipped where unsupported.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(err => console.warn('[WaffleBrain] Offline support unavailable:', err));
+  });
+}

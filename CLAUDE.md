@@ -162,6 +162,31 @@ delete, move or rename them without the owner's instruction):
   badge, the selected menu item, the filtered category and the card's top
   edge all follow from those. General English is the default (no
   `data-collection` needed). A new Collection needs its own block there.
+- Keyword search (Teacher page, `#search-input`): `WB.setQuery()` in
+  `engine.js` filters the current Collection + level + category; every word
+  must appear in the teacher prompt, Language Focus, category, student
+  prompt, Goal or Starters (case, accents and curly quotes ignored). "/"
+  focuses it, Enter shows the next match, Escape clears it.
+- Offline: `sw.js` (service worker, registered at the end of `app.js` and
+  `student.js`) saves the pages and `data/waffles.json`; it fetches from the
+  network first and only uses saved copies offline. If you add, rename or
+  remove a file the pages load, update its `PRECACHE` list and bump
+  `CACHE_VERSION`. It deliberately ignores `/wafflebrain-kids/`.
+- Security headers: `index.html` and `student.html` carry a
+  Content-Security-Policy `<meta>` tag allowing only this site, Google Fonts
+  and Google Analytics. No inline scripts (the Analytics set-up lives in
+  `analytics.js`); the one inline `<style>` in `index.html` is allowed by its
+  sha256 hash, so if you edit that `<style>` block, recompute the hash in the
+  CSP (or move the rules to `style.css`). A new outside service (e.g. Stripe)
+  must be added to the CSP.
+- Publishing: `_config.yml` `exclude:` keeps internal files (this file,
+  `design/`, `docs/`, `WaffleBrain Prompt Rewrite/`, `scripts/`, internal
+  `.md` notes) in git but off the website. Never exclude a file the app
+  loads. `.gitignore` blocks secrets (`.env`), Windows/macOS clutter and
+  build output.
+- SEO / sharing: `robots.txt`, `sitemap.xml`, Open Graph + Twitter tags and
+  JSON-LD (`WebApplication` + `LearningResource`, in `index.html`). The
+  share image is `images/og-image.png` (1200×630).
 - `wafflebrain-kids/` — separate copy of the app with its own data. Live at
   `/wafflebrain-kids/`. Do not modify unless asked.
 

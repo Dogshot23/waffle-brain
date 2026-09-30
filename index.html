@@ -1,17 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-87ZVSS7Q5N"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-87ZVSS7Q5N');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<!-- Security: only this site, Google Fonts and Google Analytics may load
+     scripts, styles, fonts and images. If you add an inline <style>/<script>
+     or a new outside service, update this policy (see CLAUDE.md). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' https://fonts.googleapis.com 'sha256-rbCbdz3NdMic6rCZl7L2VsTJDxS02A8N1lbTK6nUc5g='; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>WaffleBrain — Teacher</title>
+<meta name="description" content="Free speaking prompts for online ESL teachers: nearly 900 conversation-starting Waffles for General English, Business, Kids, IELTS, Cambridge, Travel, Debate, Medical and Conversation Club, from A1 to C1.">
+<link rel="canonical" href="https://wafflebrain.com/">
+<!-- Link previews (Facebook, WhatsApp, LinkedIn, X/Twitter) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WaffleBrain">
+<meta property="og:url" content="https://wafflebrain.com/">
+<meta property="og:title" content="WaffleBrain — Free ESL speaking prompts for online teachers">
+<meta property="og:description" content="Nearly 900 free, ready-to-use speaking prompts for online ESL lessons — 9 collections, every level from A1 to C1. One click and your student is talking.">
+<meta property="og:image" content="https://wafflebrain.com/images/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="WaffleBrain logo with the nine collections: General English, Business, Kids, IELTS, Cambridge, Travel, Debate, Medical and Conversation Club">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WaffleBrain — Free ESL speaking prompts for online teachers">
+<meta name="twitter:description" content="Nearly 900 free, ready-to-use speaking prompts for online ESL lessons — 9 collections, every level from A1 to C1. One click and your student is talking.">
+<meta name="twitter:image" content="https://wafflebrain.com/images/og-image.png">
+<meta name="twitter:image:alt" content="WaffleBrain logo with its nine collections of speaking prompts">
+<!-- Google tag (gtag.js); set-up in analytics.js -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-87ZVSS7Q5N"></script>
+<script src="analytics.js"></script>
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://wafflebrain.com/#app",
+      "name": "WaffleBrain",
+      "url": "https://wafflebrain.com/",
+      "description": "Free speaking prompts for online ESL teachers: nearly 900 conversation-starting Waffles for General English, Business, Kids, IELTS, Cambridge, Travel, Debate, Medical and Conversation Club, from A1 to C1.",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Any (web browser)",
+      "browserRequirements": "Requires JavaScript",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "image": "https://wafflebrain.com/images/og-image.png",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "teacher"
+      }
+    },
+    {
+      "@type": "LearningResource",
+      "@id": "https://wafflebrain.com/#prompts",
+      "name": "WaffleBrain speaking prompts",
+      "description": "Conversation-starting speaking activities (Waffles) for English lessons, each with a teacher prompt, a language focus, and a student prompt with a goal and conversation starters.",
+      "url": "https://wafflebrain.com/",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "learningResourceType": "Speaking activity",
+      "educationalUse": "Speaking practice",
+      "teaches": "Spoken English",
+      "educationalLevel": [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "C1"
+      ],
+      "about": [
+        "General English",
+        "Business English",
+        "English for kids",
+        "IELTS Speaking",
+        "Cambridge English exams",
+        "Travel English",
+        "Debate",
+        "Medical English",
+        "Conversation practice"
+      ],
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "teacher"
+      },
+      "provider": {
+        "@id": "https://wafflebrain.com/#app"
+      }
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -79,6 +164,18 @@
       <option value="Explain and Show">Explain and Show</option>
       <option value="Guided Stories">Guided Stories</option>
     </select>
+  </div>
+
+  <div class="search-bar" role="search">
+    <label for="search-input" class="visually-hidden">Search Waffles in this collection by keyword</label>
+    <svg class="search-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="7" cy="7" r="4.75" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M10.5 10.5 14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+    <input type="search" id="search-input" placeholder="Search topic or grammar…" autocomplete="off"
+           spellcheck="false" enterkeyhint="search" aria-describedby="search-status search-hint">
+    <span class="search-status" id="search-status" aria-live="polite"></span>
+    <span class="visually-hidden" id="search-hint">Searches the current collection, level and category. Enter shows the next match; Escape clears.</span>
   </div>
 
   <div id="prompt-card">
