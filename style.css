@@ -214,10 +214,11 @@ header {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.02em;
+  line-height: 1.25;
   color: var(--text-secondary);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* Long names ("Conversation Club") wrap onto two lines on narrow
+     phones instead of being cut off. */
+  overflow-wrap: break-word;
 }
 
 /* Version nav */
@@ -544,6 +545,13 @@ footer kbd {
 }
 
 .waffle-option:hover:not(.locked) { background: var(--bg); }
+
+/* Keyboard focus inside the Collection list (arrow keys) */
+.waffle-option:focus { outline: none; }
+.waffle-option:focus-visible {
+  outline: 2px solid var(--btn-bg);
+  outline-offset: -2px;
+}
 
 .waffle-option[aria-selected="true"] {
   background: var(--badge-bg);
@@ -883,12 +891,43 @@ body:not(.student) .mode-badge {
     padding: 14px 14px 16px;
   }
 
-  #level-select {
-    width: 120px;
+  .collection-name {
+    padding: 0 6px;
+    font-size: 10.5px;
+    letter-spacing: 0;
+  }
+
+  .version-nav {
+    gap: 4px;
+  }
+
+  .version-link {
+    padding: 4px 7px;
   }
 
   .waffle-text {
     font-size: 22px;
+  }
+}
+
+/* Phones (up to 375px): the level and category dropdowns share the row.
+   The level dropdown sizes to its longest label ("Intermediate (B1)") so
+   it is never cut off, and both use slimmer padding to leave room for
+   long category names. */
+@media (max-width: 375px) {
+  .selector-bar {
+    gap: 6px;
+  }
+
+  #level-select {
+    width: auto;
+  }
+
+  #level-select,
+  #category-select {
+    padding: 8px 24px 8px 9px;
+    font-size: 11.5px;
+    background-position: right 8px center;
   }
 }
 

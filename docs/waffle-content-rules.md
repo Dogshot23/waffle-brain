@@ -224,8 +224,8 @@ the teacher.
 
 ## Category changes the subject, not the mechanics
 
-A Collection or category (Describe, Gaming, Everyday Situations, Weird &
-Gross, meetings, …) changes **what** people talk about. It never changes
+A Collection or category (Describe, Online Life, Everyday Situations,
+Games & Entertainment, meetings, …) changes **what** people talk about. It never changes
 **how** a Waffle works. Every Waffle in every Collection has the same five
 elements and passes the same tests.
 
@@ -274,7 +274,7 @@ model; most existing records pre-date it.
 - Goal: See how your teacher would handle it.
 - Starters: "I'd probably start by…" · "I don't want to sound…" · "Has that happened to you?"
 
-**Kids · A1/A2 · Future Tech**
+**Kids · A1/A2 · Opinions & Ideas**
 - Teacher Prompt: A stuck delivery robot keeps saying "Help, please" while a boy kicks it. Ask the student what they'd do.
 - Language Focus: Saying what you'd do and giving an opinion.
 - Student Prompt: Tell your teacher what you'd do if a boy kicked a robot that keeps saying "Help, please."
@@ -308,9 +308,10 @@ Goal: *Find out what your teacher would say.* · Starters: *"I'd just say…"* �
   to any creation, editing, review or generation of Waffles.
 - Existing Waffles that do not yet match this model are **not** retrofitted
   automatically; they are changed only in an explicit rewrite task. This
-  includes: the Kids Student sides (scenario questions, no Goal), General
-  English records in `data/waffles.json` (no Goal, no Starters), and Business
-  Student sides.
+  includes: General English records in `data/waffles.json` (no Goal, no
+  Starters) and the older Business Student sides (521–550, 611–636). (The
+  Kids Student sides were rewritten to this model on 2026-09-29/30; every
+  Kids Waffle now has a Goal and Starters.)
 - `studentSupport.js` (the 30 standalone Student Waffles) is the reference
   model for the Student side. Do not edit it as part of a content-rules task.
 - **Superseded within this document:** the earlier (2026-09-29) model without

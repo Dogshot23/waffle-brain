@@ -83,19 +83,19 @@ array with one record per Waffle:
   was identical on both sides; the two sides may diverge later.
 - `student.goal` (a conversation goal) and `student.starters` (2–4) are
   required for every NEW Waffle (see `docs/waffle-content-rules.md`); the
-  Student page shows both. Existing General English records have neither, and
-  existing Kids records have Starters but no Goal; do not add or change them
-  unless a task asks. Existing Business Goals (521–550, 611–636) pre-date the
-  conversation-goal rule; leave them unless a task asks.
-- Kids records (551–610, `collection: "kids"`) use their own categories
-  (Weird Creatures, Gaming, Mysteries, Future Tech, Weird & Gross, Stories)
-  and follow the Teacher-side rules (rewritten 2026-09-29). Their Student
-  sides are still scenario questions without a Goal — due for a separate
-  rewrite to the student → teacher model; do not copy them for new Waffles.
+  Student page shows both. Existing General English records have neither; do
+  not add them unless a task asks. Existing Business Goals (521–550, 611–636)
+  pre-date the conversation-goal rule; leave them unless a task asks.
+- Kids records (`collection: "kids"`: 551–610 and 878–895, 78 in all) use
+  their own categories: Opinions & Ideas · Growing Up · Friends & People ·
+  Online Life · Games & Entertainment · School. All of them follow the full
+  five-element model: 551–610 were rewritten as student → teacher
+  conversations with a Goal and Starters (2026-09-29/30), and 878–895 were
+  written that way. They are fine to use as models for new Kids Waffles.
   The Teacher category dropdown follows the selected Collection's categories.
-- IELTS, Cambridge, Travel, Debate, Medical and Conversation Club (662–877)
-  and the newer Kids records (878–895) were written to the full five-element
-  model. Each of these Collections has its own categories:
+- IELTS (662–697), Cambridge (698–733), Travel (734–769), Debate (770–805),
+  Medical (806–841) and Conversation Club (842–877) were written to the full
+  five-element model. Each of these Collections has its own categories:
   - IELTS: Part 1: Interview · Part 2: Long Turn · Part 3: Discussion
   - Cambridge (A1A2 = A2 Key, B1 = B1 Preliminary, B2+ = B2 First / C1
     Advanced): Interview · Long Turn · Collaborative Task · Discussion
@@ -140,6 +140,10 @@ delete, move or rename them without the owner's instruction):
 
 ## App structure
 
+- `collections.js` — the ONE list of Collections (id, display name, locked).
+  `app.js` (Collection menu), `student.js` (Student page header) and
+  `scripts/validate.js` (allowed `collection` values) all read it. To add a
+  Collection, add it here — nowhere else.
 - `index.html` + `app.js` + `engine.js` — Teacher app. `engine.js` (global `WB`)
   loads `data/waffles.json`, filters by collection + level + category, and draws
   with a shuffle-bag. `WB.getById(id)` looks up a Waffle. Teacher history stores
@@ -147,10 +151,12 @@ delete, move or rename them without the owner's instruction):
 - `student.html` + `student.js` + `studentSupport.js` — Student app. By
   default shows 30 separate standalone student activities hard-coded in
   `studentSupport.js`. With `?collection=business&level=…` (the Teacher
-  page's "Student" link adds this) it instead shows that Collection's
-  Student Waffles from `waffles.json`.
+  page's "Student" link adds this, plus `&category=…` when a category is
+  selected) it instead shows that Collection's Student Waffles from
+  `waffles.json` at that level (and in that category).
 - Both pages show the current Collection name in the header and set
-  `body[data-collection]`; `style.css` uses it for the Business English look.
+  `body[data-collection]`; `style.css` uses it for the Business English and
+  Kids looks (other Collections use the default look).
 - `wafflebrain-kids/` — separate copy of the app with its own data. Live at
   `/wafflebrain-kids/`. Do not modify unless asked.
 

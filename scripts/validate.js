@@ -26,7 +26,9 @@ const STUDENT_FILE  = path.join(ROOT, 'data', 'prompts_original.json');
 // every one of them must always exist (never deleted, renumbered or reused).
 const MIGRATED_ID_MAX = 520;
 
-const COLLECTIONS = ['general', 'business', 'kids', 'ielts', 'cambridge', 'travel', 'debate', 'medical', 'conversation-club'];
+// Allowed `collection` values: the shared list in collections.js (the same
+// one the Teacher and Student pages use).
+const COLLECTIONS = require(path.join(ROOT, 'collections.js')).map(c => c.id);
 const LEVELS      = ['A1A2', 'B1', 'B2+'];
 
 // Waffles with an id above this are "new" and must follow the full content
