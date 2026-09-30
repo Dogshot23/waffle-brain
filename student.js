@@ -7,11 +7,12 @@
 //  teacher prompt, topic, or category — the teacher decides what
 //  to discuss; this page just gets the student talking.
 //
-//  Depends on studentSupport.js (WAFFLES).
+//  Depends on studentSupport.js (WAFFLES) and collections.js (COLLECTIONS).
 //
 //  Collections: opened as student.html?collection=business&level=B1
-//  (the Teacher page's "Student" link adds these), the page instead
-//  shows the Student Waffles of that Collection + level from
+//  (optionally &category=…; the Teacher page's "Student" link adds these),
+//  the page instead shows the Student Waffles of that Collection + level
+//  (+ category) from
 //  data/waffles.json — the student text, Goal and Starters, never the
 //  teacher text or Language Focus. (A record without a Goal or Starters
 //  has those sections hidden.) Without a Collection (or for General
@@ -113,22 +114,19 @@ function start() {
   }
 }
 
-// ?collection=…&level=… → that Collection's Student Waffles from
-// data/waffles.json (all levels if the level is missing or unknown).
+// ?collection=…&level=…&category=… → that Collection's Student Waffles
+// from data/waffles.json (all levels if the level is missing or unknown;
+// all categories if the category is missing or has no Waffles at that level).
 const params          = new URLSearchParams(location.search);
 const collectionParam = params.get('collection');
 const levelParam      = params.get('level');
-
-// Display names for Collection views (shown in the header).
-const COLLECTION_NAMES = {
-  business: 'Business English', kids: 'Kids', ielts: 'IELTS', cambridge: 'Cambridge',
-  travel: 'Travel', debate: 'Debate', medical: 'Medical', 'conversation-club': 'Conversation Club',
-};
+const categoryParam   = params.get('category');
 
 // Header label + per-Collection styling hook (body[data-collection] in
 // style.css), set straight away so the page doesn't flash General first.
-if (COLLECTION_NAMES[collectionParam]) {
-  document.getElementById('collection-name').textContent = COLLECTION_NAMES[collectionParam];
+const collectionInfo = COLLECTIONS.find(c => c.id === collectionParam && c.id !== 'general');
+if (collectionInfo) {
+  document.getElementById('collection-name').textContent = collectionInfo.name;
   document.body.dataset.collection = collectionParam;
 }
 
@@ -141,8 +139,9 @@ if (collectionParam && collectionParam !== 'general') {
     .then(data => {
       const inCollection = data.filter(w => w.collection === collectionParam);
       const atLevel      = inCollection.filter(w => w.level === levelParam);
+      const inCategory   = atLevel.filter(w => w.category === categoryParam);
       if (inCollection.length) {   // unknown Collection → standalone Waffles
-        pool = (atLevel.length ? atLevel : inCollection)
+        pool = (inCategory.length ? inCategory : atLevel.length ? atLevel : inCollection)
           .map(w => ({ id: w.id, waffle: w.student.prompt,
                        goal: w.student.goal, starters: w.student.starters }));
         // Keep this Collection view when the page's own "Student" tab is clicked.
@@ -160,9 +159,22 @@ if (collectionParam && collectionParam !== 'general') {
   start();
 }
 
+// ── Keyboard focus after mouse use ────────────
+// Space means "Next Waffle". After a button is clicked with the mouse,
+// focus is released so the next Space press isn't taken by that button
+// (e.g. Space after clicking Back would otherwise go back again).
+// Keyboard users (Tab/Enter) keep normal focus behaviour.
+let lastInput = 'keyboard';
+document.addEventListener('pointerdown', () => { lastInput = 'pointer'; }, true);
+document.addEventListener('keydown',     () => { lastInput = 'keyboard'; }, true);
+
+function releaseFocusAfterPointer(el) {
+  if (lastInput === 'pointer') el.blur();
+}
+
 // ── Event listeners ───────────────────────────
-nextBtn.addEventListener('click', showWaffle);
-backBtn.addEventListener('click', goBack);
+nextBtn.addEventListener('click', () => { showWaffle(); releaseFocusAfterPointer(nextBtn); });
+backBtn.addEventListener('click', () => { goBack();     releaseFocusAfterPointer(backBtn); });
 
 document.addEventListener('keydown', (e) => {
   if (e.code === 'Space' && e.target === document.body) {

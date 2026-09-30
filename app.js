@@ -26,25 +26,10 @@ const waffleList         = document.getElementById('waffle-list');
 
 // ── Collection selector ────────────────────────
 // A Collection is a group of Waffles (General English, IELTS, …).
+// The list itself (COLLECTIONS) lives in collections.js, shared with the
+// Student page and scripts/validate.js.
 // The DOM ids/classes below (waffle-select, waffle-list, …) are legacy
 // names that refer to this Collection dropdown.
-// Unlocked Collections are selectable and draw their own Waffles; locked
-// Collections are inert (no modal yet — that's a later stage). Unlocked
-// entries must come before locked ones: the "Coming Soon" heading is
-// inserted before the first locked entry. Adding a future Collection
-// should mean adding an entry here, not touching the markup or render logic.
-const COLLECTIONS = [
-  { id: 'general',           name: 'General English',  icon: '🧇', locked: false, comingSoon: false },
-  { id: 'business',           name: 'Business English',  locked: false, comingSoon: false },
-  { id: 'kids',               name: 'Kids',              locked: false, comingSoon: false },
-  { id: 'ielts',              name: 'IELTS',             locked: false, comingSoon: false },
-  { id: 'cambridge',          name: 'Cambridge',         locked: false, comingSoon: false },
-  { id: 'travel',             name: 'Travel',            locked: false, comingSoon: false },
-  { id: 'debate',             name: 'Debate',            locked: false, comingSoon: false },
-  { id: 'medical',            name: 'Medical',           locked: false, comingSoon: false },
-  { id: 'conversation-club',  name: 'Conversation Club', locked: false, comingSoon: false },
-];
-
 let currentCollection = 'general';
 
 function renderCollectionList() {
@@ -65,6 +50,9 @@ function renderCollectionList() {
     li.className = 'waffle-option' + (w.locked ? ' locked' : '');
     li.setAttribute('role', 'option');
     li.setAttribute('aria-selected', String(w.id === currentCollection));
+    li.dataset.collection = w.id;
+    // Focusable from the keyboard (arrow keys), but not a Tab stop.
+    li.tabIndex = -1;
     if (w.locked) li.setAttribute('aria-disabled', 'true');
 
     const icon = document.createElement('span');
@@ -86,14 +74,21 @@ function renderCollectionList() {
       li.appendChild(tag);
     }
 
-    li.addEventListener('click', () => {
-      // Locked Collections do nothing yet — no navigation, no modal.
-      if (w.locked) return;
-      selectCollection(w.id);
-    });
+    li.addEventListener('click', () => chooseCollection(w));
 
     waffleList.appendChild(li);
   });
+}
+
+// Choose a Collection from the list (by mouse, tap or keyboard).
+function chooseCollection(w) {
+  // Locked Collections do nothing yet — no navigation, no modal.
+  if (w.locked) return;
+  const byKeyboard = lastInput === 'keyboard';
+  selectCollection(w.id);   // also closes the list
+  // The list is redrawn on every choice, so hand keyboard focus back to
+  // the menu button (a mouse or tap leaves focus free for Space = Next).
+  if (byKeyboard) waffleTrigger.focus();
 }
 
 // Header label + per-Collection styling hook (body[data-collection] in style.css)
@@ -163,12 +158,69 @@ function closeWaffleList() {
 
 waffleTrigger.addEventListener('click', (e) => {
   e.stopPropagation();
-  if (waffleList.hidden) openWaffleList(); else closeWaffleList();
+  if (waffleList.hidden) {
+    openWaffleList();
+    // Opened with Enter/Space: move focus into the list.
+    if (lastInput === 'keyboard') focusOption(currentOptionIndex());
+  } else {
+    closeWaffleList();
+  }
   releaseFocusAfterPointer(waffleTrigger);
 });
 
 document.addEventListener('click', (e) => {
   if (!waffleSelect.contains(e.target)) closeWaffleList();
+});
+
+// ── Collection list: keyboard ──────────────────
+// Standard listbox keys: ↓/↑ open the list from the menu button; inside
+// it ↓/↑ move, Home/End jump, Enter/Space choose, Escape closes and
+// returns to the button, and Tab moves on (closing the list).
+function selectableOptions() {
+  return [...waffleList.querySelectorAll('.waffle-option:not(.locked)')];
+}
+
+function currentOptionIndex() {
+  return Math.max(0, selectableOptions().findIndex(li => li.dataset.collection === currentCollection));
+}
+
+function focusOption(i) {
+  const options = selectableOptions();
+  if (!options.length) return;
+  options[(i + options.length) % options.length].focus();
+}
+
+waffleTrigger.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+    e.preventDefault();
+    openWaffleList();
+    focusOption(currentOptionIndex());
+  }
+});
+
+waffleList.addEventListener('keydown', (e) => {
+  const options = selectableOptions();
+  const i = options.indexOf(document.activeElement);
+  if (e.key === 'ArrowDown')      { e.preventDefault(); focusOption(i + 1); }
+  else if (e.key === 'ArrowUp')   { e.preventDefault(); focusOption(i - 1); }
+  else if (e.key === 'Home')      { e.preventDefault(); focusOption(0); }
+  else if (e.key === 'End')       { e.preventDefault(); focusOption(-1); }
+  else if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    const w = COLLECTIONS.find(c => c.id === document.activeElement.dataset.collection);
+    if (w) chooseCollection(w);
+  } else if (e.key === 'Escape') {
+    e.preventDefault();
+    closeWaffleList();
+    waffleTrigger.focus();
+  }
+});
+
+// Tabbing to another control closes the list. (Focus simply being released
+// after a mouse click has no relatedTarget and must not close it; clicks
+// outside the menu are handled by the document click listener above.)
+waffleSelect.addEventListener('focusout', (e) => {
+  if (e.relatedTarget && !waffleSelect.contains(e.relatedTarget)) closeWaffleList();
 });
 
 renderCollectionList();
@@ -269,13 +321,15 @@ function renderPrompt(entry) {
 
 // ── Student link ──────────────────────────────
 // For a Collection other than General English, the "Student" link opens
-// that Collection's Student Waffles at the current level. General English
-// keeps the plain link (the standalone Student Waffles).
+// that Collection's Student Waffles at the current level — and, when a
+// category is selected, only that category. General English keeps the
+// plain link (the standalone Student Waffles).
 function updateStudentLink() {
   if (!studentLink) return;
-  studentLink.href = currentCollection === 'general'
-    ? 'student.html'
-    : `student.html?collection=${encodeURIComponent(currentCollection)}&level=${encodeURIComponent(currentLevel)}`;
+  if (currentCollection === 'general') { studentLink.href = 'student.html'; return; }
+  const params = new URLSearchParams({ collection: currentCollection, level: currentLevel });
+  if (getFilter()) params.set('category', getFilter());
+  studentLink.href = `student.html?${params}`;
 }
 
 // ── Empty state ───────────────────────────────
