@@ -1,0 +1,7 @@
+# WaffleBrain — https://wafflebrain.com
+# Everything published on this site is public and may be indexed.
+# (Internal notes are not published at all: see _config.yml.)
+User-agent: *
+Allow: /
+
+Sitemap: https://wafflebrain.com/sitemap.xml

@@ -14,6 +14,8 @@ const backBtn        = document.getElementById('back-btn');
 const copyBtn        = document.getElementById('copy-btn');
 const categorySelect = document.getElementById('category-select');
 const levelSelect    = document.getElementById('level-select');
+const searchInput    = document.getElementById('search-input');
+const searchStatus   = document.getElementById('search-status');
 
 const levelDisplay    = document.getElementById('level-display');
 const studentLink     = document.querySelector('.version-link[href^="student.html"]');
@@ -318,6 +320,7 @@ function renderPrompt(entry) {
   backBtn.disabled = historyIndex <= 0;
   saveTeacherState();
   updateStudentLink();
+  updateSearchStatus();
 }
 
 // ── Student link ──────────────────────────────
@@ -340,14 +343,25 @@ function updateStudentLink() {
 // picks a filter that has Waffles (renderPrompt restores everything).
 function renderEmpty() {
   promptCard.classList.add('empty');
-  modeLabel.textContent      = getFilter();
-  promptText.innerHTML       = formatPrompt('No Waffles in this category yet.');
+  const query = getQuery();
+  if (query) {
+    // Keyword search found nothing here: say so, and whether the same
+    // search finds Waffles at another level or in another category.
+    const elsewhere = WB.countMatches(query, currentCollection);
+    modeLabel.textContent = 'No matches';
+    promptText.innerHTML  = formatPrompt(`No Waffles match “${query}” here.` +
+      (elsewhere ? ` Try another level or category (${elsewhere} in this collection).` : ' Try a different word.'));
+  } else {
+    modeLabel.textContent = getFilter();
+    promptText.innerHTML  = formatPrompt('No Waffles in this category yet.');
+  }
   constraintText.textContent = '';
   promptCard.setAttribute('data-mode', getFilter());
   promptCard.removeAttribute('data-waffle-id');
   nextBtn.disabled = true;
   backBtn.disabled = true;
   updateStudentLink();
+  updateSearchStatus();
 }
 
 // ── Keep the teacher's place for this browser tab ──
@@ -388,6 +402,52 @@ function loadTeacherState() {
     return null;
   }
 }
+
+// ── Keyword search ────────────────────────────
+// Filters the Waffles of the current Collection + level + category by
+// keyword (both prompts, Language Focus, Goal and Starters; see
+// WB.setQuery). Every word typed must appear. Not saved between visits.
+function getQuery() {
+  return searchInput.value.trim();
+}
+
+function updateSearchStatus() {
+  const query = getQuery();
+  if (!query) { searchStatus.textContent = ''; return; }
+  const n = WB.countMatches(query, currentCollection, getLevel(), getFilter());
+  searchStatus.textContent = n === 1 ? '1 match' : `${n} matches`;
+}
+
+let searchTimer = null;
+function applySearch() {
+  clearTimeout(searchTimer);
+  searchTimer = null;
+  WB.setQuery(getQuery());
+  searchInput.classList.toggle('filtered', getQuery() !== '');
+  // Same as a category change: reset history, show a matching Waffle now.
+  history.length = 0;
+  historyIndex = -1;
+  WB.prime(getFilter(), getLevel(), currentCollection);
+  showPrompt();
+}
+
+searchInput.addEventListener('input', () => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(applySearch, 150);
+});
+
+searchInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    if (searchTimer) applySearch();          // typed but not yet applied
+    else if (!nextBtn.disabled) showPrompt(); // next match
+  } else if (e.key === 'Escape' && searchInput.value) {
+    e.preventDefault();
+    e.stopPropagation();
+    searchInput.value = '';
+    applySearch();
+  }
+});
 
 // ── Draw a new prompt and push to history ─────
 function showPrompt() {
@@ -580,4 +640,17 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeWaffleList();
   }
+  // "/" jumps to the keyword search, as on many sites.
+  if (e.key === '/' && !isTypingTarget(e.target) && e.target.tagName !== 'SELECT') {
+    e.preventDefault();
+    searchInput.focus();
+  }
 });
+// ── Offline support ───────────────────────────
+// Registers sw.js, which saves WaffleBrain (pages + all Waffles) so it keeps
+// working if the connection drops. Silently skipped where unsupported.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(err => console.warn('[WaffleBrain] Offline support unavailable:', err));
+  });
+}
