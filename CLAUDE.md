@@ -104,13 +104,18 @@ array with one record per Waffle:
   - Medical (for healthcare workers): Patient Consultations · Explaining &
     Advising · Working in Healthcare · Health Issues
   - Conversation Club: Life Stories · Big Questions · Culture & Media · What If
+- Ids 896–2095 (added 2026-09-30) bring every category at every level of the
+  eight non-General Collections up to exactly 15 Waffles (Business, Kids,
+  IELTS, Cambridge, Travel, Debate, Medical, Conversation Club). All follow
+  the five-element model. General English already had 20–30 per
+  category/level. When adding more, keep the counts balanced across levels.
 
 ### Permanent IDs — rules
 
 - The original 520 Waffles were assigned IDs **1–520** once (2026-09-26).
 - An ID is the permanent identity of a Waffle. **Never renumber, reuse or
   delete an ID**, even if the wording, category or level changes.
-- New Waffles get the next unused number (currently 896+), in any Collection.
+- New Waffles get the next unused number (currently 2096+), in any Collection.
 - Teacher and Student content always live in the **same** record. Never store
   them in separate files or link them by position.
 
