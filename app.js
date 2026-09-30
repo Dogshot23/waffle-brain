@@ -37,12 +37,12 @@ const COLLECTIONS = [
   { id: 'general',           name: 'General English',  icon: '🧇', locked: false, comingSoon: false },
   { id: 'business',           name: 'Business English',  locked: false, comingSoon: false },
   { id: 'kids',               name: 'Kids',              locked: false, comingSoon: false },
-  { id: 'ielts',              name: 'IELTS',             locked: true,  comingSoon: true },
-  { id: 'cambridge',          name: 'Cambridge',         locked: true,  comingSoon: true },
-  { id: 'travel',             name: 'Travel',            locked: true,  comingSoon: true },
-  { id: 'debate',             name: 'Debate',            locked: true,  comingSoon: true },
-  { id: 'medical',            name: 'Medical',           locked: true,  comingSoon: true },
-  { id: 'conversation-club',  name: 'Conversation Club', locked: true,  comingSoon: true },
+  { id: 'ielts',              name: 'IELTS',             locked: false, comingSoon: false },
+  { id: 'cambridge',          name: 'Cambridge',         locked: false, comingSoon: false },
+  { id: 'travel',             name: 'Travel',            locked: false, comingSoon: false },
+  { id: 'debate',             name: 'Debate',            locked: false, comingSoon: false },
+  { id: 'medical',            name: 'Medical',           locked: false, comingSoon: false },
+  { id: 'conversation-club',  name: 'Conversation Club', locked: false, comingSoon: false },
 ];
 
 let currentCollection = 'general';

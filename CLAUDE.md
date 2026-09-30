@@ -93,13 +93,24 @@ array with one record per Waffle:
   sides are still scenario questions without a Goal — due for a separate
   rewrite to the student → teacher model; do not copy them for new Waffles.
   The Teacher category dropdown follows the selected Collection's categories.
+- IELTS, Cambridge, Travel, Debate, Medical and Conversation Club (662–877)
+  and the newer Kids records (878–895) were written to the full five-element
+  model. Each of these Collections has its own categories:
+  - IELTS: Part 1: Interview · Part 2: Long Turn · Part 3: Discussion
+  - Cambridge (A1A2 = A2 Key, B1 = B1 Preliminary, B2+ = B2 First / C1
+    Advanced): Interview · Long Turn · Collaborative Task · Discussion
+  - Travel: Getting Around · Places to Stay · Eating Out · Travel Problems
+  - Debate: Society · Technology · Education & Work · Environment
+  - Medical (for healthcare workers): Patient Consultations · Explaining &
+    Advising · Working in Healthcare · Health Issues
+  - Conversation Club: Life Stories · Big Questions · Culture & Media · What If
 
 ### Permanent IDs — rules
 
 - The original 520 Waffles were assigned IDs **1–520** once (2026-09-26).
 - An ID is the permanent identity of a Waffle. **Never renumber, reuse or
   delete an ID**, even if the wording, category or level changes.
-- New Waffles get the next unused number (currently 637+), in any Collection.
+- New Waffles get the next unused number (currently 896+), in any Collection.
 - Teacher and Student content always live in the **same** record. Never store
   them in separate files or link them by position.
 
