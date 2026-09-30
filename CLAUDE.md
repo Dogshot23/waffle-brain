@@ -162,17 +162,6 @@ delete, move or rename them without the owner's instruction):
   badge, the selected menu item, the filtered category and the card's top
   edge all follow from those. General English is the default (no
   `data-collection` needed). A new Collection needs its own block there.
-- Premium Collections (paywall): `isPremium: true` in `collections.js`
-  (currently IELTS, Cambridge, Medical). On the Teacher page they show a 🔒
-  in the Collection menu and choosing one opens the paywall (`<dialog
-  id="paywall">` in `index.html`) unless this browser has Pro access.
-  `js/payment.js` (global `WaffleAccess`) holds Pro status
-  (`localStorage` key `waffle_pro_unlocked`), the testing toggle
-  (`?pro=true` / `?pro=false`) and the Stripe Checkout placeholder
-  (`handleStripeCheckout()`; paste the publishable key and backend
-  endpoint URLs into its CONFIG block). This is front-end only: every
-  Waffle is still public in `data/waffles.json`, and the Student page is not
-  locked (students of a Pro teacher must be able to open the Student link).
 - `wafflebrain-kids/` — separate copy of the app with its own data. Live at
   `/wafflebrain-kids/`. Do not modify unless asked.
 

@@ -32,12 +32,6 @@ const waffleList         = document.getElementById('waffle-list');
 // names that refer to this Collection dropdown.
 let currentCollection = 'general';
 
-// A premium Collection (isPremium in collections.js) this browser has not
-// unlocked (see js/payment.js). Choosing it opens the paywall instead.
-function isLockedPremium(c) {
-  return !!(c && c.isPremium && !WaffleAccess.isProUnlocked());
-}
-
 function renderCollectionList() {
   waffleList.innerHTML = '';
   let separatorAdded = false;
@@ -80,17 +74,6 @@ function renderCollectionList() {
       li.appendChild(tag);
     }
 
-    // Premium: a padlock until unlocked, then a small "Pro" tag.
-    if (w.isPremium) {
-      const locked = isLockedPremium(w);
-      const tag = document.createElement('span');
-      tag.className = locked ? 'waffle-option-lock' : 'waffle-option-tag waffle-option-pro';
-      tag.setAttribute('aria-hidden', 'true');
-      tag.textContent = locked ? '🔒' : 'Pro';
-      li.appendChild(tag);
-      li.setAttribute('aria-label', `${w.name}, premium${locked ? ', locked' : ''}`);
-    }
-
     li.addEventListener('click', () => chooseCollection(w));
 
     waffleList.appendChild(li);
@@ -101,12 +84,6 @@ function renderCollectionList() {
 function chooseCollection(w) {
   // Locked Collections do nothing yet — no navigation, no modal.
   if (w.locked) return;
-  // Premium and not unlocked: show the paywall and stay where we are.
-  if (isLockedPremium(w)) {
-    closeWaffleList();
-    openPaywall();
-    return;
-  }
   const byKeyboard = lastInput === 'keyboard';
   selectCollection(w.id);   // also closes the list
   // The list is redrawn on every choice, so hand keyboard focus back to
@@ -119,56 +96,7 @@ function applyCollectionLook(collection) {
   document.getElementById('collection-name').textContent = collection.name;
   document.getElementById('collection-icon').textContent = collection.icon || '🧇';
   document.body.dataset.collection = collection.id;
-  // Premium marker in the header badge: 🔒 while locked, "Pro" once unlocked.
-  const marker = document.getElementById('collection-lock');
-  marker.hidden = !collection.isPremium;
-  marker.textContent = isLockedPremium(collection) ? '🔒' : 'Pro';
 }
-
-// ── Paywall (premium Collections) ─────────────
-// A <dialog> opened as a modal: it keeps keyboard focus inside, closes on
-// Escape, and makes the page behind it inert. The checkout itself is in
-// js/payment.js (handleStripeCheckout).
-const paywall        = document.getElementById('paywall');
-const paywallCta     = document.getElementById('paywall-cta');
-const paywallBack    = document.getElementById('paywall-back');
-const paywallMessage = document.getElementById('paywall-message');
-const PAYWALL_CTA_TEXT = paywallCta.textContent;
-
-function openPaywall() {
-  paywallMessage.textContent = '';
-  paywallCta.disabled = false;
-  paywallCta.textContent = PAYWALL_CTA_TEXT;
-  if (typeof paywall.showModal === 'function') paywall.showModal();
-  else paywall.setAttribute('open', '');   // very old browsers
-  paywallCta.focus();
-}
-
-function closePaywall() {
-  if (typeof paywall.close === 'function') paywall.close();
-  else paywall.removeAttribute('open');
-}
-
-paywallCta.addEventListener('click', async () => {
-  paywallCta.disabled = true;
-  paywallCta.textContent = 'Opening secure checkout…';
-  const problem = await handleStripeCheckout();   // redirects to Stripe when set up
-  paywallCta.disabled = false;
-  paywallCta.textContent = PAYWALL_CTA_TEXT;
-  paywallMessage.textContent = problem || '';
-});
-
-// "Back to Free Collections": close and go to General English.
-paywallBack.addEventListener('click', () => {
-  closePaywall();
-  selectCollection('general');
-  waffleTrigger.focus();
-});
-
-// A click on the dimmed backdrop (outside the box) closes it too.
-paywall.addEventListener('click', (e) => {
-  if (e.target === paywall) closePaywall();
-});
 
 // Category dropdown options for a Collection. Collections whose categories
 // are all in the default list in index.html (General, Business) keep that
@@ -197,7 +125,7 @@ function renderCategoryOptions(collectionId) {
 
 function selectCollection(id, { resetDraw = true } = {}) {
   const collection = COLLECTIONS.find(c => c.id === id);
-  if (!collection || collection.locked || isLockedPremium(collection)) return;
+  if (!collection || collection.locked) return;
   const changed = id !== currentCollection;
   currentCollection = id;
   waffleTriggerIcon.textContent = collection.icon || '🧇';
@@ -445,7 +373,7 @@ function loadTeacherState() {
   try {
     const s = JSON.parse(sessionStorage.getItem(STATE_KEY));
     if (!s || !LEVELS.includes(s.level)) return null;
-    const collection = COLLECTIONS.find(c => c.id === s.collection && !c.locked && !isLockedPremium(c));
+    const collection = COLLECTIONS.find(c => c.id === s.collection && !c.locked);
     const categoryOk = s.category === '' || (collection && categoriesFor(collection.id).includes(s.category));
     if (!collection || !categoryOk || !Array.isArray(s.history) || !s.history.length) return null;
     const allValid = s.history.every(h => {
@@ -500,7 +428,7 @@ function showPrev() {
 // The full check of the saved place (below) then keeps or reverts it.
 try {
   const early = COLLECTIONS.find(c =>
-    c.id === JSON.parse(sessionStorage.getItem(STATE_KEY)).collection && !c.locked && !isLockedPremium(c));
+    c.id === JSON.parse(sessionStorage.getItem(STATE_KEY)).collection && !c.locked);
   if (early) applyCollectionLook(early);
 } catch (e) { /* no saved place — stay General */ }
 
@@ -539,12 +467,6 @@ WB.load()
     promptCard.setAttribute('data-mode', '');
     console.error('[WaffleBrain]', err);
   });
-
-// Back from Stripe Checkout (?checkout=success&session_id=…): once the
-// payment is confirmed, js/payment.js unlocks Pro; redraw the menu.
-WaffleAccess.handleCheckoutReturn().then(unlocked => {
-  if (unlocked) renderCollectionList();
-});
 
 // ── Keyboard focus after mouse use ────────────
 // Space means "Next Waffle". After a control is used with the mouse,
@@ -646,7 +568,6 @@ function isTypingTarget(el) {
 }
 
 document.addEventListener('keydown', (e) => {
-  if (paywall.open) return;   // the paywall handles its own keys (Escape closes it)
   if (e.code === 'Space' && !isTypingTarget(e.target)) {
     const t = e.target;
     const pointerFocusedSelect = t.tagName === 'SELECT' && t.dataset.pointerFocus === '1';
