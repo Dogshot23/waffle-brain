@@ -94,6 +94,7 @@ function chooseCollection(w) {
 // Header label + per-Collection styling hook (body[data-collection] in style.css)
 function applyCollectionLook(collection) {
   document.getElementById('collection-name').textContent = collection.name;
+  document.getElementById('collection-icon').textContent = collection.icon || '🧇';
   document.body.dataset.collection = collection.id;
 }
 

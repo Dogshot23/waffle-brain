@@ -154,9 +154,14 @@ delete, move or rename them without the owner's instruction):
   page's "Student" link adds this, plus `&category=…` when a category is
   selected) it instead shows that Collection's Student Waffles from
   `waffles.json` at that level (and in that category).
-- Both pages show the current Collection name in the header and set
-  `body[data-collection]`; `style.css` uses it for the Business English and
-  Kids looks (other Collections use the default look).
+- Both pages show the current Collection as a badge (icon + name, from
+  `collections.js`) in the header and set `body[data-collection]`. In
+  `style.css` each of the nine Collections sets only its colours (a Teacher /
+  Student accent pair, `--teacher-btn-*` / `--student-btn-*`), a lightly
+  tinted `--bg` and a subtle background pattern; buttons, focus rings, the
+  badge, the selected menu item, the filtered category and the card's top
+  edge all follow from those. General English is the default (no
+  `data-collection` needed). A new Collection needs its own block there.
 - `wafflebrain-kids/` — separate copy of the app with its own data. Live at
   `/wafflebrain-kids/`. Do not modify unless asked.
 

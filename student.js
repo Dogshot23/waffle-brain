@@ -127,6 +127,7 @@ const categoryParam   = params.get('category');
 const collectionInfo = COLLECTIONS.find(c => c.id === collectionParam && c.id !== 'general');
 if (collectionInfo) {
   document.getElementById('collection-name').textContent = collectionInfo.name;
+  document.getElementById('collection-icon').textContent = collectionInfo.icon || '🧇';
   document.body.dataset.collection = collectionParam;
 }
 
