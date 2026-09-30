@@ -167,11 +167,6 @@ delete, move or rename them without the owner's instruction):
   badge, the selected menu item, the filtered category and the card's top
   edge all follow from those. General English is the default (no
   `data-collection` needed). A new Collection needs its own block there.
-- Keyword search (Teacher page, `#search-input`): `WB.setQuery()` in
-  `engine.js` filters the current Collection + level + category; every word
-  must appear in the teacher prompt, Language Focus, category, student
-  prompt, Goal or Starters (case, accents and curly quotes ignored). "/"
-  focuses it, Enter shows the next match, Escape clears it.
 - Offline: `sw.js` (service worker, registered at the end of `app.js` and
   `student.js`) saves the pages and `data/waffles.json`; it fetches from the
   network first and only uses saved copies offline. If you add, rename or
