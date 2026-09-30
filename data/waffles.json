@@ -9598,5 +9598,505 @@
       ],
       "constraint": "Narrative tenses; describing consequences; in hindsight / should have."
     }
+  },
+  {
+    "id": 637,
+    "collection": "business",
+    "level": "B1",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "Your manager asks the student to stay late on Friday for the third week in a row. Ask how they'd say no politely.",
+      "constraint": "Polite refusals with modals ('I'm afraid I can't', 'Could we…?')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you'd say no to staying late on a Friday again.",
+      "goal": "Find out how your teacher says no at work.",
+      "starters": [
+        "I'm afraid I can't…",
+        "Could we maybe…?",
+        "Do you find that hard?"
+      ],
+      "constraint": "Polite refusals with modals ('I'm afraid I can't', 'Could we…?')."
+    }
+  },
+  {
+    "id": 638,
+    "collection": "business",
+    "level": "B1",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "The student's office is switching to hot-desking — nobody has their own desk any more. Ask what they think.",
+      "constraint": "Preferences and opinions ('I'd rather', 'I prefer', 'It might')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you think about not having your own desk at work.",
+      "goal": "Find out if your teacher would like hot-desking.",
+      "starters": [
+        "I'd rather have…",
+        "It might be good for…",
+        "Where do you like to work?"
+      ],
+      "constraint": "Preferences and opinions ('I'd rather', 'I prefer', 'It might')."
+    }
+  },
+  {
+    "id": 639,
+    "collection": "business",
+    "level": "B1",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "Ask the student to describe the best boss they've ever had, and what made them good to work for.",
+      "constraint": "Describing people ('supportive', 'approachable', 'fair', 'always ready to')."
+    },
+    "student": {
+      "prompt": "Describe to your teacher the best boss you've ever had.",
+      "goal": "Find out what kind of boss your teacher works best with.",
+      "starters": [
+        "She was always…",
+        "What I liked most was…",
+        "Who was your best boss?"
+      ],
+      "constraint": "Describing people ('supportive', 'approachable', 'fair', 'always ready to')."
+    }
+  },
+  {
+    "id": 640,
+    "collection": "business",
+    "level": "B1",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "Ask the student to walk you through a normal working day, and which part they'd happily lose.",
+      "constraint": "Routines with frequency adverbs ('usually', 'hardly ever', 'most days')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a normal working day and the part you enjoy most.",
+      "goal": "Compare your working day with your teacher's.",
+      "starters": [
+        "I usually start by…",
+        "The best part is…",
+        "What's your day like?"
+      ],
+      "constraint": "Routines with frequency adverbs ('usually', 'hardly ever', 'most days')."
+    }
+  },
+  {
+    "id": 641,
+    "collection": "business",
+    "level": "B1",
+    "category": "Explain and Show",
+    "teacher": {
+      "prompt": "Ask the student to explain what their company does to someone who has never heard of it.",
+      "constraint": "Explaining purpose ('It's used for', 'It helps you to', 'We make')."
+    },
+    "student": {
+      "prompt": "Explain to your teacher what your company does, as if they've never heard of it.",
+      "goal": "Find out if your teacher would use it or buy it.",
+      "starters": [
+        "Basically, we…",
+        "It helps people to…",
+        "Have you heard of us?"
+      ],
+      "constraint": "Explaining purpose ('It's used for', 'It helps you to', 'We make')."
+    }
+  },
+  {
+    "id": 642,
+    "collection": "business",
+    "level": "B1",
+    "category": "Explain and Show",
+    "teacher": {
+      "prompt": "Ask the student about one small job at work that new people always get wrong.",
+      "constraint": "Giving instructions ('First', 'Make sure you', 'Don't forget to')."
+    },
+    "student": {
+      "prompt": "Explain to your teacher a small job at work that new people always get wrong.",
+      "goal": "Find out what new people get wrong in your teacher's job.",
+      "starters": [
+        "Everyone forgets to…",
+        "Make sure you…",
+        "What about in your job?"
+      ],
+      "constraint": "Giving instructions ('First', 'Make sure you', 'Don't forget to')."
+    }
+  },
+  {
+    "id": 643,
+    "collection": "business",
+    "level": "B1",
+    "category": "Simple Roleplay",
+    "teacher": {
+      "prompt": "Play a supplier whose delivery is a week late. The student calls to find out what happened and when it will arrive.",
+      "constraint": "Polite requests and complaints ('Could you tell me…?', 'I'd like to know…')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about how you'd complain to a supplier whose delivery is a week late.",
+      "goal": "See how your teacher would complain about a late order.",
+      "starters": [
+        "I'd call and say…",
+        "I'd stay polite, but…",
+        "Would you get angry?"
+      ],
+      "constraint": "Polite requests and complaints ('Could you tell me…?', 'I'd like to know…')."
+    }
+  },
+  {
+    "id": 644,
+    "collection": "business",
+    "level": "B1",
+    "category": "Simple Roleplay",
+    "teacher": {
+      "prompt": "Play a nervous new colleague on their first day. Ask the student for tips about the company.",
+      "constraint": "Giving advice ('You should', 'You'd better', 'If I were you')."
+    },
+    "student": {
+      "prompt": "Tell your teacher the best advice you'd give someone on their first day at your company.",
+      "goal": "Find out what advice your teacher got on their first day.",
+      "starters": [
+        "If I were you, I'd…",
+        "You should definitely…",
+        "What was your first day like?"
+      ],
+      "constraint": "Giving advice ('You should', 'You'd better', 'If I were you')."
+    }
+  },
+  {
+    "id": 645,
+    "collection": "business",
+    "level": "B1",
+    "category": "Choose and Create",
+    "teacher": {
+      "prompt": "The company can offer staff one perk: free lunch, a gym membership or an extra day off. Ask which the student would choose.",
+      "constraint": "Comparing options ('more useful than', 'I'd rather', 'would be better')."
+    },
+    "student": {
+      "prompt": "Tell your teacher which perk you'd choose: free lunch, a gym membership or an extra day off.",
+      "goal": "Find out which perk your teacher would pick.",
+      "starters": [
+        "For me, it's easy…",
+        "An extra day off would…",
+        "Which one would you pick?"
+      ],
+      "constraint": "Comparing options ('more useful than', 'I'd rather', 'would be better')."
+    }
+  },
+  {
+    "id": 646,
+    "collection": "business",
+    "level": "B1",
+    "category": "Choose and Create",
+    "teacher": {
+      "prompt": "Ask the student to plan a team day out that everyone in their team would actually enjoy.",
+      "constraint": "Making suggestions ('How about…?', 'We could', 'Why don't we…?')."
+    },
+    "student": {
+      "prompt": "Tell your teacher your idea for a team day out that everyone would enjoy.",
+      "goal": "Find out about the best team day your teacher has had.",
+      "starters": [
+        "How about…?",
+        "We could all…",
+        "Have you done anything like that?"
+      ],
+      "constraint": "Making suggestions ('How about…?', 'We could', 'Why don't we…?')."
+    }
+  },
+  {
+    "id": 647,
+    "collection": "business",
+    "level": "B1",
+    "category": "Guided Stories",
+    "teacher": {
+      "prompt": "Ask the student about a meeting, presentation or work event that didn't go to plan.",
+      "constraint": "Past simple and past continuous ('While we were…, the…')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a meeting or work event that didn't go to plan.",
+      "goal": "Find out if your teacher has a similar story.",
+      "starters": [
+        "We were in the middle of…",
+        "Suddenly…",
+        "Has that ever happened to you?"
+      ],
+      "constraint": "Past simple and past continuous ('While we were…, the…')."
+    }
+  },
+  {
+    "id": 648,
+    "collection": "business",
+    "level": "B1",
+    "category": "Guided Stories",
+    "teacher": {
+      "prompt": "Ask the student about their very first job and what it taught them.",
+      "constraint": "Past simple and 'used to' for past habits."
+    },
+    "student": {
+      "prompt": "Tell your teacher about your very first job.",
+      "goal": "Find out what your teacher's first job was like.",
+      "starters": [
+        "My first job was…",
+        "I used to…",
+        "What was your first job?"
+      ],
+      "constraint": "Past simple and 'used to' for past habits."
+    }
+  },
+  {
+    "id": 649,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "A colleague presents the student's idea in a meeting as their own. Ask how the student would deal with it.",
+      "constraint": "Raising a problem diplomatically ('I just wanted to mention…', softeners)."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about what you'd do if a colleague took credit for your idea.",
+      "goal": "See how your teacher would handle it.",
+      "starters": [
+        "I wouldn't make a scene…",
+        "I'd probably have a word…",
+        "Has that happened to you?"
+      ],
+      "constraint": "Raising a problem diplomatically ('I just wanted to mention…', softeners)."
+    }
+  },
+  {
+    "id": 650,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "The company offers a four-day week, but with ten-hour days. Ask whether the student would take the deal.",
+      "constraint": "Weighing pros and cons ('On the one hand', 'The downside is')."
+    },
+    "student": {
+      "prompt": "Ask your teacher what they think of a four-day week with longer days.",
+      "goal": "Find out whether your teacher would take the deal.",
+      "starters": [
+        "On the one hand…",
+        "The downside is…",
+        "Would it work for you?"
+      ],
+      "constraint": "Weighing pros and cons ('On the one hand', 'The downside is')."
+    }
+  },
+  {
+    "id": 651,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Everyday Situations",
+    "teacher": {
+      "prompt": "The student must tell an important client their order will be two weeks late. Ask whether they'd call or email, and what they'd say.",
+      "constraint": "Formal register for bad news ('Unfortunately', 'We regret to inform you')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you'd break the news to a client that their order is two weeks late.",
+      "goal": "Find out whether your teacher would call or email.",
+      "starters": [
+        "I'd rather call…",
+        "Unfortunately, we…",
+        "What would you do?"
+      ],
+      "constraint": "Formal register for bad news ('Unfortunately', 'We regret to inform you')."
+    }
+  },
+  {
+    "id": 652,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "Ask the student to describe, honestly, what it's really like to work at their company — the parts a job advert wouldn't mention.",
+      "constraint": "Hedging and tactful description ('tends to', 'fairly', 'can be a bit')."
+    },
+    "student": {
+      "prompt": "Describe to your teacher what it's really like to work at your company.",
+      "goal": "Compare your workplace with places your teacher has worked.",
+      "starters": [
+        "It tends to be…",
+        "It can be a bit…",
+        "What was your best workplace?"
+      ],
+      "constraint": "Hedging and tactful description ('tends to', 'fairly', 'can be a bit')."
+    }
+  },
+  {
+    "id": 653,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Describe",
+    "teacher": {
+      "prompt": "Ask the student to describe a big change at work and how people really reacted to it.",
+      "constraint": "Describing change ('has become', 'used to', 'is getting more')."
+    },
+    "student": {
+      "prompt": "Describe to your teacher a big change at work and how people reacted.",
+      "goal": "Find out how your teacher feels about change at work.",
+      "starters": [
+        "At first, people…",
+        "It's become much…",
+        "Do you like change?"
+      ],
+      "constraint": "Describing change ('has become', 'used to', 'is getting more')."
+    }
+  },
+  {
+    "id": 654,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Explain and Show",
+    "teacher": {
+      "prompt": "Ask the student to explain a decision their company made that surprised people.",
+      "constraint": "Cause and effect ('due to', 'as a result', 'which means')."
+    },
+    "student": {
+      "prompt": "Explain to your teacher a decision at your company that surprised people.",
+      "goal": "See if your teacher agrees with the decision.",
+      "starters": [
+        "It was mainly due to…",
+        "As a result…",
+        "Would you have done the same?"
+      ],
+      "constraint": "Cause and effect ('due to', 'as a result', 'which means')."
+    }
+  },
+  {
+    "id": 655,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Explain and Show",
+    "teacher": {
+      "prompt": "Ask which parts of the student's job AI could do in five years, and which it never could.",
+      "constraint": "Speculating with modals ('might', 'could', 'is bound to', 'won't')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about which parts of your job AI could take over.",
+      "goal": "Find out which part of your teacher's job is safe from AI.",
+      "starters": [
+        "AI could easily…",
+        "It'll never be able to…",
+        "What about teaching?"
+      ],
+      "constraint": "Speculating with modals ('might', 'could', 'is bound to', 'won't')."
+    }
+  },
+  {
+    "id": 656,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Simple Roleplay",
+    "teacher": {
+      "prompt": "Play a manager who can't offer a pay rise. The student asks for one anyway — see what they negotiate instead.",
+      "constraint": "Negotiation verbs ('propose', 'compromise', 'meet halfway', 'agree to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you'd ask for a pay rise, and what you'd accept instead.",
+      "goal": "Find out how your teacher would negotiate a raise.",
+      "starters": [
+        "I'd propose…",
+        "If money's not possible…",
+        "Have you ever asked for one?"
+      ],
+      "constraint": "Negotiation verbs ('propose', 'compromise', 'meet halfway', 'agree to')."
+    }
+  },
+  {
+    "id": 657,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Simple Roleplay",
+    "teacher": {
+      "prompt": "Play a big client who demands a 20% discount or they'll go elsewhere. The student is the supplier.",
+      "constraint": "Conditional bargaining ('If you…, we could…', 'provided that', 'as long as')."
+    },
+    "student": {
+      "prompt": "Talk to your teacher about how you'd respond if a big client demanded a 20% discount.",
+      "goal": "Find out where your teacher would draw the line.",
+      "starters": [
+        "As long as they…",
+        "We could offer…",
+        "Would you just say yes?"
+      ],
+      "constraint": "Conditional bargaining ('If you…, we could…', 'provided that', 'as long as')."
+    }
+  },
+  {
+    "id": 658,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Choose and Create",
+    "teacher": {
+      "prompt": "The student must hire one of two people: experienced but difficult, or keen but inexperienced. Ask who they'd choose.",
+      "constraint": "Evaluating with modals ('might struggle', 'could learn', 'would fit')."
+    },
+    "student": {
+      "prompt": "Tell your teacher who you'd hire: someone experienced but difficult, or keen but inexperienced.",
+      "goal": "Find out who your teacher would hire, and why.",
+      "starters": [
+        "Skills can be taught…",
+        "In a small team…",
+        "Who would you pick?"
+      ],
+      "constraint": "Evaluating with modals ('might struggle', 'could learn', 'would fit')."
+    }
+  },
+  {
+    "id": 659,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Choose and Create",
+    "teacher": {
+      "prompt": "Ask the student what they'd change if they could redesign their workplace from scratch — or whether they'd scrap the office altogether.",
+      "constraint": "Hypotheticals ('If it were up to me', 'I'd get rid of')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd change if you could redesign your workplace.",
+      "goal": "Find out what your teacher's ideal workplace looks like.",
+      "starters": [
+        "If it were up to me…",
+        "I'd get rid of…",
+        "Where do you work best?"
+      ],
+      "constraint": "Hypotheticals ('If it were up to me', 'I'd get rid of')."
+    }
+  },
+  {
+    "id": 660,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Guided Stories",
+    "teacher": {
+      "prompt": "Ask the student about a deal, agreement or plan at work that nearly fell apart at the last minute.",
+      "constraint": "Narrative with past perfect ('We had almost…', 'By the time…')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a deal or plan at work that nearly fell apart.",
+      "goal": "Find out if your teacher has ever rescued a difficult situation.",
+      "starters": [
+        "We had almost agreed when…",
+        "By the time…",
+        "Have you been in that position?"
+      ],
+      "constraint": "Narrative with past perfect ('We had almost…', 'By the time…')."
+    }
+  },
+  {
+    "id": 661,
+    "collection": "business",
+    "level": "B2+",
+    "category": "Guided Stories",
+    "teacher": {
+      "prompt": "Ask the student about a mistake at work that taught them something they still use today.",
+      "constraint": "Regrets and third conditional ('I should have', 'If I'd known')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a mistake at work that taught you something.",
+      "goal": "Find out what your teacher learned from their biggest mistake.",
+      "starters": [
+        "I should have…",
+        "If I'd known…",
+        "What was your worst mistake?"
+      ],
+      "constraint": "Regrets and third conditional ('I should have', 'If I'd known')."
+    }
   }
 ]
