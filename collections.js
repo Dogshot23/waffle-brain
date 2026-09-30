@@ -6,6 +6,9 @@
 //    • scripts/validate.js — the allowed `collection` values in waffles.json
 //
 //  A Collection is a group of Waffles (General English, IELTS, …).
+//  `icon` is shown in the Collection menu and in the header badge on both
+//  pages; the colours and pattern for each id are in style.css
+//  (body[data-collection="…"]).
 //  `id` must match the `collection` field in data/waffles.json.
 //  Unlocked Collections are selectable and draw their own Waffles; locked
 //  Collections are inert (no modal yet — that's a later stage). Unlocked
@@ -16,14 +19,14 @@
 
 const COLLECTIONS = [
   { id: 'general',            name: 'General English',   icon: '🧇', locked: false, comingSoon: false },
-  { id: 'business',           name: 'Business English',  locked: false, comingSoon: false },
-  { id: 'kids',               name: 'Kids',              locked: false, comingSoon: false },
-  { id: 'ielts',              name: 'IELTS',             locked: false, comingSoon: false },
-  { id: 'cambridge',          name: 'Cambridge',         locked: false, comingSoon: false },
-  { id: 'travel',             name: 'Travel',            locked: false, comingSoon: false },
-  { id: 'debate',             name: 'Debate',            locked: false, comingSoon: false },
-  { id: 'medical',            name: 'Medical',           locked: false, comingSoon: false },
-  { id: 'conversation-club',  name: 'Conversation Club', locked: false, comingSoon: false },
+  { id: 'business',           name: 'Business English',  icon: '💼', locked: false, comingSoon: false },
+  { id: 'kids',               name: 'Kids',              icon: '🧸', locked: false, comingSoon: false },
+  { id: 'ielts',              name: 'IELTS',             icon: '🎓', locked: false, comingSoon: false },
+  { id: 'cambridge',          name: 'Cambridge',         icon: '🏛️', locked: false, comingSoon: false },
+  { id: 'travel',             name: 'Travel',            icon: '✈️', locked: false, comingSoon: false },
+  { id: 'debate',             name: 'Debate',            icon: '⚖️', locked: false, comingSoon: false },
+  { id: 'medical',            name: 'Medical',           icon: '🩺', locked: false, comingSoon: false },
+  { id: 'conversation-club',  name: 'Conversation Club', icon: '☕', locked: false, comingSoon: false },
 ];
 
 // Lets scripts/validate.js (Node) read the same list.

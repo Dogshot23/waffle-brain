@@ -77,6 +77,24 @@ button {
   --flash-ring:    var(--teacher-flash-ring);
 }
 
+/* Active button + accent tokens, resolved on <body> so that a Collection
+   (body[data-collection="…"], set by app.js / student.js) only has to set
+   its --teacher-* / --student-* colours below. */
+body {
+  --btn-bg:        var(--teacher-btn-bg);
+  --btn-bg-hover:  var(--teacher-btn-bg-hover);
+  --btn-bg-active: var(--teacher-btn-bg-active);
+  --flash-ring:    var(--teacher-flash-ring);
+  /* Collection accent for badges, highlights and hovers: a light tint of
+     the button colour, with text in its darkest shade (at least 4.5:1). */
+  --accent-tint:   color-mix(in srgb, var(--btn-bg) 12%, #FFFFFF);
+  --accent-border: color-mix(in srgb, var(--btn-bg) 28%, #FFFFFF);
+  --accent-text:   var(--btn-bg-active);
+  /* Category badge for categories without their own colours below */
+  --badge-bg:      var(--accent-tint);
+  --badge-text:    var(--accent-text);
+}
+
 /* Student page overrides button tokens */
 body.student {
   --btn-bg:        var(--student-btn-bg);
@@ -105,13 +123,6 @@ body[data-collection="business"] {
     linear-gradient(90deg, rgba(52, 80, 126, 0.03) 1px, transparent 1px);
   background-size: 22px 22px;
 }
-/* --btn-bg etc. are resolved on :root / body.student, so re-point them here. */
-body[data-collection="business"]:not(.student) {
-  --btn-bg:        var(--teacher-btn-bg);
-  --btn-bg-hover:  var(--teacher-btn-bg-hover);
-  --btn-bg-active: var(--teacher-btn-bg-active);
-  --flash-ring:    var(--teacher-flash-ring);
-}
 
 /* Kids (body[data-collection="kids"]): same WaffleBrain, a little
    brighter and friendlier. A soft, slightly cooler page with a faint
@@ -133,11 +144,98 @@ body[data-collection="kids"] {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cg fill='none' stroke='%234C5FD5' stroke-opacity='0.08' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='translate(18 20) rotate(-10)'%3E%3Crect x='0' y='3' width='24' height='13' rx='6.5'/%3E%3Cpath d='M6 7.5v5M3.5 10h5'/%3E%3Ccircle cx='16' cy='8.5' r='1'/%3E%3Ccircle cx='19' cy='11.5' r='1'/%3E%3C/g%3E%3Cg transform='translate(118 16) rotate(12)'%3E%3Ccircle cx='8' cy='8' r='6'/%3E%3Cpath d='M12.5 12.5l6 6'/%3E%3C/g%3E%3Cg transform='translate(64 74) rotate(-6)'%3E%3Cpath d='M5 1h14a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4h-8l-5 4v-4H5a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4z'/%3E%3Cpath d='M7 7.5h10M7 10.5h6'/%3E%3C/g%3E%3Cg transform='translate(146 84) rotate(8)'%3E%3Cpath d='M8 1v7L2 19a2 2 0 0 0 1.8 3h14.4A2 2 0 0 0 20 19L14 8V1M6 1h10'/%3E%3Cpath d='M5 15h12'/%3E%3C/g%3E%3Cg transform='translate(22 128) rotate(14)'%3E%3Cellipse cx='11' cy='15' rx='5.5' ry='4.5'/%3E%3Ccircle cx='4' cy='8' r='2'/%3E%3Ccircle cx='9' cy='3.5' r='2'/%3E%3Ccircle cx='15' cy='3.5' r='2'/%3E%3Ccircle cx='20' cy='8' r='2'/%3E%3C/g%3E%3Cg transform='translate(104 132) rotate(-8)'%3E%3Crect x='4' y='4' width='14' height='14' rx='2.5'/%3E%3Cpath d='M8.5 4V1M13.5 4V1M8.5 21v-3M13.5 21v-3M4 8.5H1M4 13.5H1M21 8.5h-3M21 13.5h-3'/%3E%3C/g%3E%3Cpath d='M88 44v6M85 47h6'/%3E%3Cpath d='M168 40v5M165.5 42.5h5'/%3E%3Cpath d='M60 160v5M57.5 162.5h5'/%3E%3Ccircle cx='160' cy='162' r='1.5'/%3E%3Ccircle cx='44' cy='58' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
   background-size: 180px 180px;
 }
-body[data-collection="kids"]:not(.student) {
-  --btn-bg:        var(--teacher-btn-bg);
-  --btn-bg-hover:  var(--teacher-btn-bg-hover);
-  --btn-bg-active: var(--teacher-btn-bg-active);
-  --flash-ring:    var(--teacher-flash-ring);
+
+/* The six Collections below follow the same pattern as Business and Kids:
+   a faintly tinted page, a subtle pattern behind the card, and a Teacher /
+   Student accent pair (white-text contrast at least 5.3:1). Everything else
+   is inherited unchanged. */
+/* IELTS: exam-hall crimson, on a fine dot grid. */
+body[data-collection="ielts"] {
+  --bg: #FAF6F7;
+  --teacher-btn-bg:        #C2253D;
+  --teacher-btn-bg-hover:  #AF2137;
+  --teacher-btn-bg-active: #971D30;
+  --teacher-flash-ring:    rgba(194, 37, 61, 0.18);
+  --student-btn-bg:        #9E1F33;
+  --student-btn-bg-hover:  #8E1C2E;
+  --student-btn-bg-active: #7B1828;
+  --student-flash-ring:    rgba(158, 31, 51, 0.18);
+  background-image: radial-gradient(rgba(194, 37, 61, 0.10) 1px, transparent 1.4px);
+  background-size: 16px 16px;
+}
+
+/* Cambridge: collegiate violet, on faint diagonal ruling. */
+body[data-collection="cambridge"] {
+  --bg: #F7F6FC;
+  --teacher-btn-bg:        #6741D9;
+  --teacher-btn-bg-hover:  #5D3BC3;
+  --teacher-btn-bg-active: #5033A9;
+  --teacher-flash-ring:    rgba(103, 65, 217, 0.18);
+  --student-btn-bg:        #5534B0;
+  --student-btn-bg-hover:  #4D2F9E;
+  --student-btn-bg-active: #422989;
+  --student-flash-ring:    rgba(85, 52, 176, 0.18);
+  background-image: repeating-linear-gradient(135deg, rgba(103, 65, 217, 0.045) 0 1px, transparent 1px 14px);
+}
+
+/* Travel: ocean teal, with dashed flight paths and small planes. */
+body[data-collection="travel"] {
+  --bg: #F3F8F9;
+  --teacher-btn-bg:        #0B7285;
+  --teacher-btn-bg-hover:  #0A6778;
+  --teacher-btn-bg-active: #095968;
+  --teacher-flash-ring:    rgba(11, 114, 133, 0.18);
+  --student-btn-bg:        #0A5C6B;
+  --student-btn-bg-hover:  #095360;
+  --student-btn-bg-active: #084853;
+  --student-flash-ring:    rgba(10, 92, 107, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='160' viewBox='0 0 200 160'%3E %3Cg fill='none' stroke='%230B7285' stroke-opacity='0.10' stroke-width='1.4' stroke-linecap='round'%3E %3Cpath d='M-10 120 C 40 60, 90 150, 140 70 S 200 30, 220 40' stroke-dasharray='4 6'/%3E%3C/g%3E %3Cg fill='%230B7285' fill-opacity='0.11'%3E %3Cpath transform='translate(150 58) rotate(-35)' d='M0 5 L7 4 L11 -2 L13 -2 L11 4 L17 4 L19 1 L20 1 L19 5 L20 9 L19 9 L17 6 L11 6 L13 12 L11 12 L7 6 L0 5 Z'/%3E %3Cpath transform='translate(30 22) rotate(15)' d='M0 5 L7 4 L11 -2 L13 -2 L11 4 L17 4 L19 1 L20 1 L19 5 L20 9 L19 9 L17 6 L11 6 L13 12 L11 12 L7 6 L0 5 Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 200px 160px;
+}
+
+/* Debate: berry, with pairs of facing speech bubbles. */
+body[data-collection="debate"] {
+  --bg: #FBF6F9;
+  --teacher-btn-bg:        #B0266B;
+  --teacher-btn-bg-hover:  #9E2260;
+  --teacher-btn-bg-active: #891E53;
+  --teacher-flash-ring:    rgba(176, 38, 107, 0.18);
+  --student-btn-bg:        #8E1D55;
+  --student-btn-bg-hover:  #801A4D;
+  --student-btn-bg-active: #6F1742;
+  --student-flash-ring:    rgba(142, 29, 85, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E %3Cg fill='none' stroke='%23B0266B' stroke-opacity='0.07' stroke-width='1.4' stroke-linejoin='round'%3E %3Cpath d='M14 14h22a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4h-14l-6 5v-5h-2a4 4 0 0 1-4-4V18a4 4 0 0 1 4-4z'/%3E %3Cpath d='M48 26h22a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4h-2v5l-6-5H48a4 4 0 0 1-4-4V30a4 4 0 0 1 4-4z'/%3E %3Cpath d='M74 74h22a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H82l-6 5v-5h-2a4 4 0 0 1-4-4V78a4 4 0 0 1 4-4z'/%3E %3Cpath d='M18 80h22a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4h-2v5l-6-5H18a4 4 0 0 1-4-4V84a4 4 0 0 1 4-4z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 120px 120px;
+}
+
+/* Medical: clinical green, with small plus signs. */
+body[data-collection="medical"] {
+  --bg: #F4F9F7;
+  --teacher-btn-bg:        #0F7A55;
+  --teacher-btn-bg-hover:  #0E6E4D;
+  --teacher-btn-bg-active: #0C5F42;
+  --teacher-flash-ring:    rgba(15, 122, 85, 0.18);
+  --student-btn-bg:        #0B5F42;
+  --student-btn-bg-hover:  #0A563B;
+  --student-btn-bg-active: #094A33;
+  --student-flash-ring:    rgba(11, 95, 66, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E %3Cg fill='%230F7A55' fill-opacity='0.05'%3E%3Cpath d='M15 10h2v5h5v2h-5v5h-2v-5h-5v-2h5z'/%3E %3Cpath d='M47 42h2v5h5v2h-5v5h-2v-5h-5v-2h5z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 64px 64px;
+}
+
+/* Conversation Club: warm coffee brown, with scattered coffee rings. */
+body[data-collection="conversation-club"] {
+  --bg: #FAF7F2;
+  --teacher-btn-bg:        #8B5A2B;
+  --teacher-btn-bg-hover:  #7D5127;
+  --teacher-btn-bg-active: #6C4622;
+  --teacher-flash-ring:    rgba(139, 90, 43, 0.18);
+  --student-btn-bg:        #6F4520;
+  --student-btn-bg-hover:  #643E1D;
+  --student-btn-bg-active: #573619;
+  --student-flash-ring:    rgba(111, 69, 32, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E %3Cg fill='none' stroke='%238B5A2B' stroke-opacity='0.09' stroke-width='1.6'%3E %3Ccircle cx='34' cy='36' r='17'/%3E%3Ccircle cx='36' cy='38' r='14' stroke-width='0.8'/%3E %3Ccircle cx='110' cy='104' r='19'/%3E%3Ccircle cx='108' cy='102' r='16' stroke-width='0.8'/%3E %3Cpath d='M98 26a8 8 0 1 1 10 12' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 150px 150px;
 }
 
 
@@ -150,6 +248,11 @@ html {
 
 body {
   background: var(--bg);
+  /* General English: a very faint diagonal waffle grid. Each Collection
+     above sets its own background-image, which takes precedence. */
+  background-image:
+    repeating-linear-gradient(45deg, rgba(59, 91, 219, 0.035) 0 1px, transparent 1px 22px),
+    repeating-linear-gradient(-45deg, rgba(59, 91, 219, 0.035) 0 1px, transparent 1px 22px);
   color: var(--text-primary);
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   display: flex;
@@ -205,17 +308,41 @@ header {
   padding-left: 1px;
 }
 
-/* Current Collection name, in the space between logo and nav */
-.collection-name {
+/* Current Collection badge (icon + name), in the space between logo and
+   nav, in the Collection's accent colours. */
+.collection-slot {
   flex: 1;
   min-width: 0;
-  padding: 0 10px;
+  padding: 0 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.collection-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 100%;
+  padding: 4px 9px;
+  border-radius: 10px;
+  background: var(--accent-tint);
+  border: 1px solid var(--accent-border);
+  color: var(--accent-text);
+}
+
+.collection-icon {
+  flex-shrink: 0;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.collection-name {
+  min-width: 0;
   text-align: center;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.25;
-  color: var(--text-secondary);
   /* Long names ("Conversation Club") wrap onto two lines on narrow
      phones instead of being cut off. */
   overflow-wrap: break-word;
@@ -263,6 +390,8 @@ header {
   flex: 1;
   min-height: 0;
   background: var(--surface);
+  /* Thin accent line along the top edge (inset: the card's size is unchanged) */
+  box-shadow: inset 0 3px 0 var(--btn-bg);
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 18px 18px 20px;
@@ -491,6 +620,8 @@ footer kbd {
   cursor: pointer;
 }
 
+.waffle-trigger:hover { border-color: var(--accent-border); }
+
 .waffle-trigger:focus-visible {
   outline: 2px solid var(--btn-bg);
   outline-offset: 2px;
@@ -554,8 +685,8 @@ footer kbd {
 }
 
 .waffle-option[aria-selected="true"] {
-  background: var(--badge-bg);
-  color: var(--badge-text);
+  background: var(--accent-tint);
+  color: var(--accent-text);
   font-weight: 600;
 }
 
@@ -666,6 +797,31 @@ body[data-collection="kids"] #category-select.filtered {
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%234263EB' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
+/* Same chevron in each other Collection's accent */
+body[data-collection="ielts"] #category-select.filtered {
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23C2253D' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+body[data-collection="cambridge"] #category-select.filtered {
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%236741D9' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+body[data-collection="travel"] #category-select.filtered {
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%230B7285' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+body[data-collection="debate"] #category-select.filtered {
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23B0266B' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+body[data-collection="medical"] #category-select.filtered {
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%230F7A55' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+body[data-collection="conversation-club"] #category-select.filtered {
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%238B5A2B' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
 /* Teacher prompt text sizing */
 body:not(.student) #prompt-text {
   font-size: 20px;
@@ -740,9 +896,9 @@ body:not(.student) .mode-badge {
 }
 
 #copy-btn:hover {
-  color: var(--text-secondary);
-  border-color: var(--text-tertiary);
-  background: var(--bg);
+  color: var(--accent-text);
+  border-color: var(--accent-border);
+  background: var(--accent-tint);
 }
 
 #copy-btn:active { transform: translateY(1px); }
@@ -891,11 +1047,6 @@ body:not(.student) .mode-badge {
     padding: 14px 14px 16px;
   }
 
-  .collection-name {
-    padding: 0 6px;
-    font-size: 10.5px;
-    letter-spacing: 0;
-  }
 
   .version-nav {
     gap: 4px;
@@ -915,6 +1066,27 @@ body:not(.student) .mode-badge {
    it is never cut off, and both use slimmer padding to leave room for
    long category names. */
 @media (max-width: 375px) {
+  /* Collection badge: icon above the name, so each word of a long name
+     ("Conversation Club", "Cambridge") has the full width. */
+  .collection-slot {
+    padding: 0 4px;
+  }
+
+  .collection-badge {
+    flex-direction: column;
+    gap: 2px;
+    padding: 3px 6px;
+  }
+
+  .collection-icon {
+    font-size: 11px;
+  }
+
+  .collection-name {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+
   .selector-bar {
     gap: 6px;
   }
