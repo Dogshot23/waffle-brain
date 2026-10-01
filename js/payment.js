@@ -39,6 +39,9 @@ const WaffleAccess = (() => {
     DEV_TOGGLE_ENABLED: true,
   };
 
+  // How long to wait for the checkout function before giving up.
+  const CHECKOUT_TIMEOUT_MS = 20000;
+
   // localStorage key that marks this browser as Pro.
   const STORAGE_KEY = 'waffle_pro_unlocked';
 
@@ -80,26 +83,78 @@ const WaffleAccess = (() => {
     if (!CONFIG.CHECKOUT_SESSION_ENDPOINT) {
       return 'Payments aren\u2019t set up yet \u2014 please check back soon.';
     }
+    const TRY_AGAIN = 'Sorry, checkout couldn\u2019t start. Please try again in a moment.';
+    const fail = (detail, message = TRY_AGAIN) => {
+      // Details for whoever is fixing it (browser console, F12); the teacher
+      // only sees the short message.
+      console.error(`[WaffleBrain] Checkout failed: ${detail}`);
+      return message;
+    };
+
+    // 1. Ask the Netlify function to create a Checkout Session.
+    let res;
+    const timer = new AbortController();
+    const timeout = setTimeout(() => timer.abort(), CHECKOUT_TIMEOUT_MS);
     try {
-      // 1. Ask the Netlify function to create a Checkout Session.
-      const res = await fetch(CONFIG.CHECKOUT_SESSION_ENDPOINT, {
+      res = await fetch(CONFIG.CHECKOUT_SESSION_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: '{}',
+        signal: timer.signal,
       });
-      const data = await res.json().catch(() => ({}));
-      if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
-
-      // 2. Go to the Stripe-hosted checkout page (only ever a Stripe URL).
-      if (typeof data.url === 'string' && data.url.startsWith('https://checkout.stripe.com/')) {
-        window.location.href = data.url;
-        return new Promise(() => {});   // the browser is leaving for Stripe
-      }
-      throw new Error('Checkout function did not return a Stripe Checkout URL');
     } catch (err) {
-      console.error('[WaffleBrain] Checkout failed:', err);
-      return 'Sorry, checkout couldn\u2019t start. Please try again in a moment.';
+      return fail(err && err.name === 'AbortError'
+        ? `no answer from ${CONFIG.CHECKOUT_SESSION_ENDPOINT} after ${CHECKOUT_TIMEOUT_MS / 1000}s.`
+        : `could not reach ${CONFIG.CHECKOUT_SESSION_ENDPOINT} (offline or blocked): ${err}`,
+        'Couldn\u2019t reach checkout. Please check your connection and try again.');
+    } finally {
+      clearTimeout(timeout);
     }
+
+    const text = await res.text().catch(() => '');
+    let data = null;
+    try { data = JSON.parse(text); } catch (e) { /* not JSON — handled below */ }
+
+    if (res.status === 404 || res.status === 405) {
+      return fail(`${CONFIG.CHECKOUT_SESSION_ENDPOINT} answered HTTP ${res.status}. ` +
+        'The checkout function is not running on this host: either the site is not ' +
+        'served by Netlify (e.g. still GitHub Pages), or the latest Netlify deploy has ' +
+        'no "create-checkout" function (check Netlify \u2192 Logs \u2192 Functions and the deploy log).');
+    }
+    if (!res.ok) {
+      const why = data && data.error ? `"${data.error}"` : 'no JSON error message';
+      const code = data && data.code ? ` (code: ${data.code})` : '';
+      const hint = data && data.code === 'not_configured'
+        ? ' Set STRIPE_SECRET_KEY and PRICE_ID in Netlify \u2192 Site configuration \u2192 Environment variables, then redeploy.'
+        : ' See Netlify \u2192 Logs \u2192 Functions \u2192 create-checkout for the Stripe error.';
+      return fail(`${CONFIG.CHECKOUT_SESSION_ENDPOINT} answered HTTP ${res.status}: ${why}${code}.${hint}`,
+        data && data.code === 'not_configured'
+          ? 'Payments aren\u2019t set up yet \u2014 please check back soon.'
+          : TRY_AGAIN);
+    }
+    if (!data) {
+      return fail(`${CONFIG.CHECKOUT_SESSION_ENDPOINT} answered HTTP ${res.status} but not with JSON ` +
+        `(got: ${JSON.stringify(text.slice(0, 120))}). Something other than the Netlify function answered.`);
+    }
+
+    // 2. Go to the Stripe-hosted checkout page (only ever a Stripe URL).
+    if (!isStripeCheckoutUrl(data.url)) {
+      return fail(`${CONFIG.CHECKOUT_SESSION_ENDPOINT} did not return a Stripe Checkout URL ` +
+        `(url: ${JSON.stringify(data.url)}).`);
+    }
+    window.location.href = data.url;
+    return new Promise(() => {});   // the browser is leaving for Stripe
+  }
+
+  // Stripe Checkout pages are https://checkout.stripe.com/… (or another
+  // stripe.com address). Anything else is refused so this button can never
+  // send a teacher to a different site.
+  function isStripeCheckoutUrl(value) {
+    if (typeof value !== 'string') return false;
+    let url;
+    try { url = new URL(value); } catch (e) { return false; }
+    return url.protocol === 'https:' &&
+      (url.hostname === 'stripe.com' || url.hostname.endsWith('.stripe.com'));
   }
 
   // ── Return from Stripe ───────────────────────
