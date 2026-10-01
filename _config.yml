@@ -22,5 +22,11 @@ exclude:
   - wafflebrain-kids/05_WORLD_DESIGN.md
   - wafflebrain-kids/06_PROMPT_ARCHITECTURE.md
   - wafflebrain-kids/07_ENGINE_CHECKLIST.md
+  - netlify/
+  - netlify.toml
+  - package.json
+  - package-lock.json
+  - node_modules/
+  - .env.example
   - .gitignore
   - .gitattributes

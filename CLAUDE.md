@@ -195,6 +195,25 @@ delete, move or rename them without the owner's instruction):
   options). Reads `data/waffles.json` only; writes 4-cards-per-page HTML (and
   PDF if Playwright or Puppeteer is installed) to `dist/pdf-packs/`, which is
   git-ignored and never published. The footer text is `FOOTER` at the top.
+- Premium Collections (paywall): `isPremium: true` in `collections.js`
+  (currently IELTS, Cambridge, Medical). On the Teacher page they show a 🔒
+  in the Collection menu and choosing one opens the paywall (`<dialog
+  id="paywall">` in `index.html`) unless this browser has Pro access.
+  `js/payment.js` (global `WaffleAccess`) holds Pro status
+  (`localStorage` key `waffle_pro_unlocked`), the testing toggle
+  (`?pro=true` / `?pro=false`) and checkout: `handleStripeCheckout()` POSTs
+  to `/.netlify/functions/create-checkout` and goes to the returned Stripe
+  Checkout URL; on return (`/?session_id=cs_…`) `verify-checkout` must answer
+  `{ paid: true }` before Pro is unlocked. The two functions are in
+  `netlify/functions/` (Stripe library listed in `package.json`; Netlify
+  settings and internal-file 404s in `netlify.toml`). They need the Netlify
+  environment variables `STRIPE_SECRET_KEY` and `PRICE_ID` (see
+  `.env.example`). NEVER put a secret key (`sk_…`) in any file in this
+  repository; `.env` is git-ignored and for local testing only. The
+  `/.netlify/functions/…` paths only work when the site is deployed on
+  Netlify (not GitHub Pages). This is still front-end gating: every Waffle
+  is public in `data/waffles.json`, and the Student page is not locked
+  (students of a Pro teacher must be able to open the Student link).
 - `wafflebrain-kids/` — separate copy of the app with its own data. Live at
   `/wafflebrain-kids/`. Do not modify unless asked.
 
