@@ -1,7 +1,14 @@
 // ─────────────────────────────────────────────
 //  WaffleBrain — js/payment.js
-//  Pro access (premium Collections) and the Stripe Checkout placeholder.
+//  Pro access (premium Collections) and Stripe Checkout.
 //  Loaded by index.html before app.js. Exposes one global: WaffleAccess.
+//
+//  Checkout runs through two Netlify functions (netlify/functions/):
+//    create-checkout  POST → { url }   (Stripe-hosted checkout page)
+//    verify-checkout  GET ?session_id=… → { paid }
+//  The Stripe SECRET key lives only in Netlify's environment variables;
+//  nothing secret is in this file. These relative paths only work when the
+//  site itself is deployed on Netlify.
 //
 //  ⚠ IMPORTANT — this is FRONT-END ONLY.
 //  All Waffles, including the premium ones, are in data/waffles.json,
@@ -15,26 +22,17 @@
 
 const WaffleAccess = (() => {
 
-  // ── CONFIGURATION — paste your values here later ────────────────────
+  // ── CONFIGURATION (Netlify function paths; no keys belong here) ────────
   const CONFIG = {
-    // Stripe → Developers → API keys → "Publishable key" (starts pk_live_
-    // or pk_test_). Safe to put in front-end code. Never paste the SECRET
-    // key (sk_…) anywhere in this repository.
-    STRIPE_PUBLISHABLE_KEY: '',          // e.g. 'pk_test_51Abc…'
+    // Netlify function that creates a Stripe Checkout Session for the
+    // "Lifetime Access" price and replies { "url": "https://checkout.stripe.com/…" }.
+    // (The publishable key isn't needed: the page simply goes to that URL.)
+    CHECKOUT_SESSION_ENDPOINT: '/.netlify/functions/create-checkout',
 
-    // URL of YOUR backend endpoint that creates a Stripe Checkout Session
-    // (Netlify / Vercel serverless function, Cloudflare Worker, …).
-    // It receives a POST and must reply with JSON: { "url": "https://checkout.stripe.com/…" }
-    // (or, for the older flow, { "sessionId": "cs_…" }). The secret key
-    // lives only in that backend.
-    CHECKOUT_SESSION_ENDPOINT: '',       // e.g. 'https://wafflebrain.netlify.app/.netlify/functions/create-checkout-session'
-
-    // URL of YOUR backend endpoint that confirms a finished payment.
-    // Stripe sends the buyer back to wafflebrain.com/?checkout=success&session_id=cs_…
-    // (set success_url that way when creating the session). This page then
-    // asks the endpoint { "paid": true } before unlocking. Without it, a
-    // return from Stripe does NOT unlock anything.
-    VERIFY_SESSION_ENDPOINT: '',         // e.g. 'https://…/verify-checkout-session'
+    // Netlify function that confirms a finished payment. Stripe sends the
+    // buyer back to https://wafflebrain.com/?session_id=cs_… and this page
+    // only unlocks once the function answers { "paid": true }.
+    VERIFY_SESSION_ENDPOINT: '/.netlify/functions/verify-checkout',
 
     // Developer Pro Access Toggle (?pro=true / ?pro=false and the
     // localStorage key below). Switch to false before charging real money.
@@ -80,69 +78,52 @@ const WaffleAccess = (() => {
   // resolves because the browser has left for Stripe.
   async function handleStripeCheckout() {
     if (!CONFIG.CHECKOUT_SESSION_ENDPOINT) {
-      console.info('[WaffleBrain] Stripe is not configured yet: set CHECKOUT_SESSION_ENDPOINT in js/payment.js.');
-      return 'Payments aren’t set up yet — please check back soon.';
+      return 'Payments aren\u2019t set up yet \u2014 please check back soon.';
     }
     try {
-      // 1. Ask your backend to create a Checkout Session for the
-      //    one-off "Lifetime Access" price.
+      // 1. Ask the Netlify function to create a Checkout Session.
       const res = await fetch(CONFIG.CHECKOUT_SESSION_ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ product: 'lifetime', returnUrl: location.origin + location.pathname }),
+        body: '{}',
       });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
 
-      // 2a. Current Stripe flow: the backend returns the hosted Checkout URL.
-      if (data.url) { location.href = data.url; return new Promise(() => {}); }
-
-      // 2b. Older flow: the backend returns a session id; Stripe.js redirects.
-      if (data.sessionId && CONFIG.STRIPE_PUBLISHABLE_KEY) {
-        await loadStripeJs();
-        const stripe = Stripe(CONFIG.STRIPE_PUBLISHABLE_KEY);
-        const { error } = await stripe.redirectToCheckout({ sessionId: data.sessionId });
-        if (error) throw error;
-        return new Promise(() => {});
+      // 2. Go to the Stripe-hosted checkout page (only ever a Stripe URL).
+      if (typeof data.url === 'string' && data.url.startsWith('https://checkout.stripe.com/')) {
+        window.location.href = data.url;
+        return new Promise(() => {});   // the browser is leaving for Stripe
       }
-      throw new Error('Checkout endpoint returned neither url nor sessionId');
+      throw new Error('Checkout function did not return a Stripe Checkout URL');
     } catch (err) {
       console.error('[WaffleBrain] Checkout failed:', err);
-      return 'Sorry, checkout couldn’t start. Please try again in a moment.';
+      return 'Sorry, checkout couldn\u2019t start. Please try again in a moment.';
     }
-  }
-
-  // Loads https://js.stripe.com/v3/ only when it is actually needed.
-  function loadStripeJs() {
-    if (typeof Stripe !== 'undefined') return Promise.resolve();
-    return new Promise((resolve, reject) => {
-      const s = document.createElement('script');
-      s.src = 'https://js.stripe.com/v3/';
-      s.onload = resolve;
-      s.onerror = () => reject(new Error('Could not load Stripe.js'));
-      document.head.appendChild(s);
-    });
   }
 
   // ── Return from Stripe ───────────────────────
-  // ?checkout=success&session_id=cs_… → confirm with the backend, then
-  // unlock. Resolves true if this browser was just unlocked.
+  // https://wafflebrain.com/?session_id=cs_… → confirm with the Netlify
+  // function, then unlock. The session_id is then removed from the address
+  // bar (so a reload or a shared link doesn't re-check it). Resolves true
+  // if this browser was just unlocked.
   async function handleCheckoutReturn() {
     const params = new URLSearchParams(location.search);
-    if (params.get('checkout') !== 'success') return false;
     const sessionId = params.get('session_id');
-    if (!CONFIG.VERIFY_SESSION_ENDPOINT || !sessionId) {
-      console.info('[WaffleBrain] Returned from checkout, but VERIFY_SESSION_ENDPOINT is not set — not unlocking.');
-      return false;
-    }
+    if (!sessionId || !CONFIG.VERIFY_SESSION_ENDPOINT) return false;
+    let unlocked = false;
     try {
       const res = await fetch(`${CONFIG.VERIFY_SESSION_ENDPOINT}?session_id=${encodeURIComponent(sessionId)}`);
       const data = res.ok ? await res.json() : {};
-      if (data.paid === true) { setProUnlocked(true); return true; }
+      if (data.paid === true) { setProUnlocked(true); unlocked = true; }
     } catch (err) {
       console.error('[WaffleBrain] Could not verify checkout:', err);
     }
-    return false;
+    params.delete('session_id');
+    const rest = params.toString();
+    // window.history: app.js has its own global `history` (the Back list).
+    window.history.replaceState(null, '', location.pathname + (rest ? `?${rest}` : '') + location.hash);
+    return unlocked;
   }
 
   applyDevToggle();

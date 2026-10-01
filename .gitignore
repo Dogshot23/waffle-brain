@@ -22,6 +22,7 @@ ehthumbs.db
 
 # Dependencies, build output, logs, archives
 node_modules/
+.netlify/
 dist/
 build/
 _site/

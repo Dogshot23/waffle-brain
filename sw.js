@@ -16,7 +16,7 @@
 //  change here (network-first always fetches them).
 // ─────────────────────────────────────────────
 
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const CACHE = `wafflebrain-${CACHE_VERSION}`;
 
 const PRECACHE = [
@@ -26,6 +26,7 @@ const PRECACHE = [
   'style.css',
   'analytics.js',
   'collections.js',
+  'js/payment.js',
   'engine.js',
   'app.js',
   'student.js',

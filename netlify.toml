@@ -1,0 +1,61 @@
+# Netlify settings for wafflebrain.com (only used if the site is deployed on
+# Netlify; GitHub Pages ignores this file).
+[build]
+  publish   = "."                  # the site has no build step
+  functions = "netlify/functions"  # create-checkout.js, verify-checkout.js
+
+[functions]
+  node_bundler = "esbuild"
+
+# Keep internal files off the website (the same list as _config.yml's
+# exclude: for GitHub Pages). A 404 is returned instead of the file.
+[[redirects]]
+  from = "/CLAUDE.md"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/design/*"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/docs/*"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/scripts/*"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/WaffleBrain%20Prompt%20Rewrite/*"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/netlify/*"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/data/*.md"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/wafflebrain-kids/*.md"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/package.json"
+  to = "/404"
+  status = 404
+  force = true
+[[redirects]]
+  from = "/package-lock.json"
+  to = "/404"
+  status = 404
+  force = true
