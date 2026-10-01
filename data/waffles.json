@@ -38778,5 +38778,605 @@
       ],
       "constraint": "Third conditional ('If they hadn't', 'would have')."
     }
+  },
+  {
+    "id": 2096,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student what they'd build first in a block-building game world.",
+      "constraint": "'I'd build' and building words ('a house', 'a tower')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd build first in a block-building game.",
+      "goal": "Find out what your teacher would build.",
+      "starters": [
+        "I'd build a…",
+        "It has…",
+        "What would you build?"
+      ],
+      "constraint": "'I'd build' and building words ('a house', 'a tower')."
+    }
+  },
+  {
+    "id": 2097,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student to describe their dream game avatar: hair, clothes and one special item.",
+      "constraint": "Describing appearance ('She has', 'He's wearing')."
+    },
+    "student": {
+      "prompt": "Describe your dream game avatar to your teacher.",
+      "goal": "Find out what your teacher's avatar would look like.",
+      "starters": [
+        "My avatar has…",
+        "She's wearing…",
+        "What would yours look like?"
+      ],
+      "constraint": "Describing appearance ('She has', 'He's wearing')."
+    }
+  },
+  {
+    "id": 2098,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student which pet they'd want in a pixel world: a dragon, a cat or a robot dog.",
+      "constraint": "'I'd want' with 'because'."
+    },
+    "student": {
+      "prompt": "Tell your teacher which game pet you'd want: a dragon, a cat or a robot dog.",
+      "goal": "Find out which pet your teacher would pick.",
+      "starters": [
+        "I'd want the…",
+        "It can…",
+        "Which would you pick?"
+      ],
+      "constraint": "'I'd want' with 'because'."
+    }
+  },
+  {
+    "id": 2099,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student what they'd craft first with wood, stone and string in a game.",
+      "constraint": "'I'd make' and materials ('with wood', 'from stone')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd make with wood, stone and string in a game.",
+      "goal": "Find out what your teacher would make.",
+      "starters": [
+        "I'd make a…",
+        "With the stone…",
+        "What would you make?"
+      ],
+      "constraint": "'I'd make' and materials ('with wood', 'from stone')."
+    }
+  },
+  {
+    "id": 2100,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student whether they like playing games alone or with friends.",
+      "constraint": "'I like playing' with 'alone' and 'with'."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you like playing games alone or with friends.",
+      "goal": "Find out how your teacher likes to play.",
+      "starters": [
+        "I like playing with…",
+        "Alone is…",
+        "How do you like to play?"
+      ],
+      "constraint": "'I like playing' with 'alone' and 'with'."
+    }
+  },
+  {
+    "id": 2101,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student to describe a game world they like: a forest, a city or under the sea.",
+      "constraint": "'There is/are' and place words."
+    },
+    "student": {
+      "prompt": "Describe a game world you like to your teacher.",
+      "goal": "Find out which game world your teacher would visit.",
+      "starters": [
+        "There are lots of…",
+        "You can find…",
+        "Where would you go?"
+      ],
+      "constraint": "'There is/are' and place words."
+    }
+  },
+  {
+    "id": 2102,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student what they do when a night-time monster appears in a game.",
+      "constraint": "Action verbs ('I run', 'I hide', 'I fight')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you do when a monster appears in a game.",
+      "goal": "Find out if your teacher would run or fight.",
+      "starters": [
+        "I run to…",
+        "I hide in…",
+        "Would you run or fight?"
+      ],
+      "constraint": "Action verbs ('I run', 'I hide', 'I fight')."
+    }
+  },
+  {
+    "id": 2103,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student which colours they'd use to build a pixel castle.",
+      "constraint": "Colours and 'I'd use'."
+    },
+    "student": {
+      "prompt": "Tell your teacher what colours you'd use for a pixel castle.",
+      "goal": "Find out which colours your teacher would choose.",
+      "starters": [
+        "I'd use…",
+        "The roof is…",
+        "What colours would you use?"
+      ],
+      "constraint": "Colours and 'I'd use'."
+    }
+  },
+  {
+    "id": 2104,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student when they play games and for how long.",
+      "constraint": "Time phrases ('after school', 'for one hour')."
+    },
+    "student": {
+      "prompt": "Tell your teacher when and how long you play games.",
+      "goal": "Find out when your teacher plays games.",
+      "starters": [
+        "After school I…",
+        "For about…",
+        "When do you play?"
+      ],
+      "constraint": "Time phrases ('after school', 'for one hour')."
+    }
+  },
+  {
+    "id": 2105,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student what they'd keep in their treasure chest in a game.",
+      "constraint": "'I'd put' with 'some' and 'a lot of'."
+    },
+    "student": {
+      "prompt": "Tell your teacher what's in your game treasure chest.",
+      "goal": "Find out what your teacher would keep in theirs.",
+      "starters": [
+        "I'd put…",
+        "There's a lot of…",
+        "What's in yours?"
+      ],
+      "constraint": "'I'd put' with 'some' and 'a lot of'."
+    }
+  },
+  {
+    "id": 2106,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student what they'd name their own pixel world.",
+      "constraint": "Naming and 'It sounds'."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd call your own pixel world.",
+      "goal": "Find out what your teacher would call theirs.",
+      "starters": [
+        "I'd call it…",
+        "Because it sounds…",
+        "What would you call yours?"
+      ],
+      "constraint": "Naming and 'It sounds'."
+    }
+  },
+  {
+    "id": 2107,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student which animal they'd tame in a pixel world.",
+      "constraint": "Animal words and 'It can'."
+    },
+    "student": {
+      "prompt": "Tell your teacher which animal you'd tame in a game.",
+      "goal": "Find out which animal your teacher would tame.",
+      "starters": [
+        "I'd tame a…",
+        "It can…",
+        "Which would you tame?"
+      ],
+      "constraint": "Animal words and 'It can'."
+    }
+  },
+  {
+    "id": 2108,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student whether their avatar would live in a treehouse, a castle or a boat.",
+      "constraint": "'I'd live in' and 'It has'."
+    },
+    "student": {
+      "prompt": "Tell your teacher where your avatar would live.",
+      "goal": "Find out where your teacher's avatar would live.",
+      "starters": [
+        "I'd live in a…",
+        "It has…",
+        "Where would yours live?"
+      ],
+      "constraint": "'I'd live in' and 'It has'."
+    }
+  },
+  {
+    "id": 2109,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student what they'd do if they were inside a game for one day.",
+      "constraint": "'I would' and 'I could'."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd do inside a game for one day.",
+      "goal": "Find out what your teacher would do inside a game.",
+      "starters": [
+        "I would…",
+        "I could fly…",
+        "What would you do?"
+      ],
+      "constraint": "'I would' and 'I could'."
+    }
+  },
+  {
+    "id": 2110,
+    "collection": "kids",
+    "level": "A1A2",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student what food their avatar eats to get energy.",
+      "constraint": "Food words and 'It gives you'."
+    },
+    "student": {
+      "prompt": "Tell your teacher what food gives your avatar energy.",
+      "goal": "Find out what food your teacher would choose.",
+      "starters": [
+        "It eats…",
+        "It gives you…",
+        "What would you choose?"
+      ],
+      "constraint": "Food words and 'It gives you'."
+    }
+  },
+  {
+    "id": 2111,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student to plan a village they'd build with friends in a block world: who builds what?",
+      "constraint": "Planning ('We'd', 'I'd be in charge of')."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you'd build a village with friends in a game.",
+      "goal": "Find out what your teacher would build in the village.",
+      "starters": [
+        "I'd be in charge of…",
+        "We'd need…",
+        "What would you build?"
+      ],
+      "constraint": "Planning ('We'd', 'I'd be in charge of')."
+    }
+  },
+  {
+    "id": 2112,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student about a time someone broke their creation in a game, and how they felt.",
+      "constraint": "Past simple and feelings ('I was so annoyed')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a time someone broke something you built in a game.",
+      "goal": "Find out how your teacher would react.",
+      "starters": [
+        "Someone broke my…",
+        "I was so annoyed…",
+        "What would you do?"
+      ],
+      "constraint": "Past simple and feelings ('I was so annoyed')."
+    }
+  },
+  {
+    "id": 2113,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student whether it's fair to pay real money for avatar outfits.",
+      "constraint": "Opinions ('It's fair if', 'It's a waste')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if paying real money for avatar outfits is fair.",
+      "goal": "Find out whether your teacher would pay.",
+      "starters": [
+        "It's a waste of…",
+        "It's fair if…",
+        "Would you pay?"
+      ],
+      "constraint": "Opinions ('It's fair if', 'It's a waste')."
+    }
+  },
+  {
+    "id": 2114,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student to give survival tips for a first night in a pixel world.",
+      "constraint": "Advice ('You should', 'Don't forget to')."
+    },
+    "student": {
+      "prompt": "Tell your teacher your tips for surviving the first night in a pixel world.",
+      "goal": "Find out if your teacher would survive.",
+      "starters": [
+        "You should build…",
+        "Don't forget to…",
+        "Would you survive?"
+      ],
+      "constraint": "Advice ('You should', 'Don't forget to')."
+    }
+  },
+  {
+    "id": 2115,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student whether they prefer a building game's creative mode or survival mode.",
+      "constraint": "Comparing ('more relaxing', 'more exciting')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if you prefer creative or survival mode.",
+      "goal": "Find out which mode your teacher would choose.",
+      "starters": [
+        "Creative mode is more…",
+        "Survival is…",
+        "Which would you choose?"
+      ],
+      "constraint": "Comparing ('more relaxing', 'more exciting')."
+    }
+  },
+  {
+    "id": 2116,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student about the most amazing thing they've seen someone build in a game.",
+      "constraint": "Present perfect and superlatives ('I've seen', 'the most')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about the most amazing thing you've seen built in a game.",
+      "goal": "Find out what your teacher finds impressive.",
+      "starters": [
+        "The most amazing…",
+        "It had…",
+        "Have you seen anything like it?"
+      ],
+      "constraint": "Present perfect and superlatives ('I've seen', 'the most')."
+    }
+  },
+  {
+    "id": 2117,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student how they'd make a shared game world a friendly place.",
+      "constraint": "Rules with 'should' and 'not allowed to'."
+    },
+    "student": {
+      "prompt": "Tell your teacher how you'd keep a shared game world friendly.",
+      "goal": "Find out what rule your teacher would add.",
+      "starters": [
+        "Everyone should…",
+        "You're not allowed to…",
+        "What rule would you add?"
+      ],
+      "constraint": "Rules with 'should' and 'not allowed to'."
+    }
+  },
+  {
+    "id": 2118,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student what music and sounds make a game world feel exciting or calm.",
+      "constraint": "Describing feelings ('It makes me feel', 'calm', 'tense')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what sounds make a game exciting or calm.",
+      "goal": "Find out what music your teacher would put in a game.",
+      "starters": [
+        "It makes me feel…",
+        "The calm music…",
+        "What music would you choose?"
+      ],
+      "constraint": "Describing feelings ('It makes me feel', 'calm', 'tense')."
+    }
+  },
+  {
+    "id": 2119,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student to describe a secret base they'd build and how to hide it.",
+      "constraint": "Describing location ('It's hidden behind', 'You get in by')."
+    },
+    "student": {
+      "prompt": "Describe to your teacher a secret base you'd build in a game.",
+      "goal": "Find out where your teacher would hide a base.",
+      "starters": [
+        "It's hidden behind…",
+        "You get in by…",
+        "Where would you hide yours?"
+      ],
+      "constraint": "Describing location ('It's hidden behind', 'You get in by')."
+    }
+  },
+  {
+    "id": 2120,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student about a game quest or mission that was really hard to finish.",
+      "constraint": "Past simple and 'In the end'."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a game mission that was really hard.",
+      "goal": "Find out about a challenge your teacher finished.",
+      "starters": [
+        "It was hard because…",
+        "In the end…",
+        "Have you finished something hard?"
+      ],
+      "constraint": "Past simple and 'In the end'."
+    }
+  },
+  {
+    "id": 2121,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student whether their avatar looks like them or completely different.",
+      "constraint": "Comparing ('looks like', 'completely different from')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if your avatar looks like you.",
+      "goal": "Find out whether your teacher's avatar would look like them.",
+      "starters": [
+        "It looks like me…",
+        "It's completely different…",
+        "Would yours look like you?"
+      ],
+      "constraint": "Comparing ('looks like', 'completely different from')."
+    }
+  },
+  {
+    "id": 2122,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student what they'd do if a friend kept taking items from a shared world.",
+      "constraint": "Second conditional ('If they…, I'd')."
+    },
+    "student": {
+      "prompt": "Tell your teacher what you'd do if a friend kept taking your game items.",
+      "goal": "Find out what your teacher would do.",
+      "starters": [
+        "If they kept…",
+        "I'd tell them…",
+        "What would you do?"
+      ],
+      "constraint": "Second conditional ('If they…, I'd')."
+    }
+  },
+  {
+    "id": 2123,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student to design a new block or item for a crafting game.",
+      "constraint": "Describing function ('It lets you', 'You make it by')."
+    },
+    "student": {
+      "prompt": "Tell your teacher about a new item you'd add to a crafting game.",
+      "goal": "Find out if your teacher would use it.",
+      "starters": [
+        "It lets you…",
+        "You make it by…",
+        "Would you use it?"
+      ],
+      "constraint": "Describing function ('It lets you', 'You make it by')."
+    }
+  },
+  {
+    "id": 2124,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student whether simple pixel games are better than new realistic ones.",
+      "constraint": "Comparing ('simpler', 'more realistic', 'better than')."
+    },
+    "student": {
+      "prompt": "Tell your teacher if pixel games or realistic games are better.",
+      "goal": "Find out which your teacher prefers.",
+      "starters": [
+        "Pixel games are simpler…",
+        "Realistic games…",
+        "Which do you prefer?"
+      ],
+      "constraint": "Comparing ('simpler', 'more realistic', 'better than')."
+    }
+  },
+  {
+    "id": 2125,
+    "collection": "kids",
+    "level": "B1",
+    "category": "Gaming & Pixel Worlds",
+    "teacher": {
+      "prompt": "Ask the student how they'd explain a building game to a grandparent.",
+      "constraint": "Explaining simply ('It's like', 'You can')."
+    },
+    "student": {
+      "prompt": "Explain a building game to your teacher as if they were your grandparent.",
+      "goal": "Find out if your teacher would try it.",
+      "starters": [
+        "It's like digital building blocks…",
+        "You can build…",
+        "Would you try it?"
+      ],
+      "constraint": "Explaining simply ('It's like', 'You can')."
+    }
   }
 ]

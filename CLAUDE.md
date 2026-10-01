@@ -88,7 +88,9 @@ array with one record per Waffle:
   pre-date the conversation-goal rule; leave them unless a task asks.
 - Kids records (`collection: "kids"`: 551–610 and 878–895, 78 in all) use
   their own categories: Opinions & Ideas · Growing Up · Friends & People ·
-  Online Life · Games & Entertainment · School. All of them follow the full
+  Online Life · Games & Entertainment · School · Gaming & Pixel Worlds
+  (2096–2125: block-building, pixel worlds, crafting, avatars; A1A2 and B1
+  only, 15 each — no brand names). All of them follow the full
   five-element model: 551–610 were rewritten as student → teacher
   conversations with a Goal and Starters (2026-09-29/30), and 878–895 were
   written that way. They are fine to use as models for new Kids Waffles.
@@ -115,7 +117,7 @@ array with one record per Waffle:
 - The original 520 Waffles were assigned IDs **1–520** once (2026-09-26).
 - An ID is the permanent identity of a Waffle. **Never renumber, reuse or
   delete an ID**, even if the wording, category or level changes.
-- New Waffles get the next unused number (currently 2096+), in any Collection.
+- New Waffles get the next unused number (currently 2126+), in any Collection.
 - Teacher and Student content always live in the **same** record. Never store
   them in separate files or link them by position.
 
@@ -187,6 +189,12 @@ delete, move or rename them without the owner's instruction):
 - SEO / sharing: `robots.txt`, `sitemap.xml`, Open Graph + Twitter tags and
   JSON-LD (`WebApplication` + `LearningResource`, in `index.html`). The
   share image is `images/og-image.png` (1200×630).
+- Printable packs (e.g. Teachers Pay Teachers): `node scripts/export-pdf.js
+  --collection=Kids --subcategory="Gaming & Pixel Worlds" [--level=B1]
+  [--paper=a4|letter|both] [--format=html|pdf|both]` (`--help` lists all
+  options). Reads `data/waffles.json` only; writes 4-cards-per-page HTML (and
+  PDF if Playwright or Puppeteer is installed) to `dist/pdf-packs/`, which is
+  git-ignored and never published. The footer text is `FOOTER` at the top.
 - `wafflebrain-kids/` — separate copy of the app with its own data. Live at
   `/wafflebrain-kids/`. Do not modify unless asked.
 
