@@ -28,7 +28,7 @@ exports.handler = async (event) => {
   const { STRIPE_SECRET_KEY, PRICE_ID } = process.env;
   if (!STRIPE_SECRET_KEY || !PRICE_ID) {
     console.error('[create-checkout] STRIPE_SECRET_KEY or PRICE_ID is not set.');
-    return json(500, { error: 'Payments are not configured yet.' });
+    return json(500, { error: 'Payments are not configured yet.', code: 'not_configured' });
   }
 
   try {
@@ -39,10 +39,22 @@ exports.handler = async (event) => {
       success_url: SUCCESS_URL,
       cancel_url: CANCEL_URL,
     });
+    if (!session || !session.url) {
+      console.error('[create-checkout] Stripe created session', session && session.id, 'but returned no url.');
+      return json(502, { error: 'Stripe did not return a checkout page.', code: 'no_checkout_url' });
+    }
     return json(200, { url: session.url });
   } catch (err) {
-    // Log the detail for you (Netlify → Functions → Logs); never send it to the browser.
-    console.error('[create-checkout] Stripe error:', err && err.message);
-    return json(500, { error: 'Could not start checkout. Please try again.' });
+    // Log the detail for you (Netlify → Functions → Logs); never send the
+    // message to the browser. Common causes: a test-mode PRICE_ID with a
+    // live key (or the other way round) → resource_missing; a monthly/yearly
+    // (recurring) price → this one-off "payment" checkout refuses it; a
+    // rolled or mistyped key → authentication error.
+    console.error('[create-checkout] Stripe error:',
+      err && err.type, err && err.code, err && err.param, '-', err && err.message);
+    // Stripe's short error type/code (e.g. "resource_missing") is safe to
+    // pass on and helps tell these apart in the browser console.
+    const code = (err && (err.code || err.type)) || 'stripe_error';
+    return json(500, { error: 'Could not start checkout. Please try again.', code: String(code) });
   }
 };
