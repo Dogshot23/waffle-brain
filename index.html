@@ -130,6 +130,7 @@
       <span class="collection-badge">
         <span class="collection-icon" id="collection-icon" aria-hidden="true">🧇</span>
         <span class="collection-name" id="collection-name">General English</span>
+        <span class="collection-lock" id="collection-lock" hidden></span>
       </span>
     </span>
     <nav class="version-nav" aria-label="Switch version">
@@ -201,7 +202,24 @@
 
 </div>
 
+<!-- Paywall for premium Collections (IELTS, Cambridge, Medical); opened by app.js -->
+<dialog class="paywall" id="paywall" aria-labelledby="paywall-title" aria-describedby="paywall-intro">
+  <div class="paywall-icons" aria-hidden="true">🎓 🏛️ 🩺</div>
+  <h2 class="paywall-title" id="paywall-title">Unlock Professional &amp; Exam Prep Waffles</h2>
+  <p class="paywall-intro" id="paywall-intro">108+ specialised speaking prompts, ready for your next lesson:</p>
+  <ul class="paywall-points">
+    <li><span aria-hidden="true">🩺</span> <strong>Medical</strong> — patient consultations, explaining &amp; advising, handovers</li>
+    <li><span aria-hidden="true">🎓</span> <strong>IELTS</strong> — Speaking Parts 1, 2 and 3</li>
+    <li><span aria-hidden="true">🏛️</span> <strong>Cambridge</strong> — A2 Key to C1 Advanced exam tasks</li>
+  </ul>
+  <p class="paywall-note">One payment. Every level. Yours for good.</p>
+  <button type="button" class="paywall-cta" id="paywall-cta">Unlock Lifetime Access — $9.99</button>
+  <p class="paywall-message" id="paywall-message" role="status"></p>
+  <button type="button" class="paywall-back" id="paywall-back">Back to Free Collections</button>
+</dialog>
+
 <script src="collections.js"></script>
+<script src="js/payment.js"></script>
 <script src="engine.js"></script>
 <script src="app.js"></script>
 </body>
