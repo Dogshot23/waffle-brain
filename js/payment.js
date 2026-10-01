@@ -36,7 +36,7 @@ const WaffleAccess = (() => {
 
     // Developer Pro Access Toggle (?pro=true / ?pro=false and the
     // localStorage key below). Switch to false before charging real money.
-    DEV_TOGGLE_ENABLED: true,
+    DEV_TOGGLE_ENABLED: false,
   };
 
   // How long to wait for the checkout function before giving up.
