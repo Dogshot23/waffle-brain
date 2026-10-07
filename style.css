@@ -874,8 +874,25 @@ footer kbd {
   background: var(--bg);
 }
 
+.paywall-support {
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.paywall-support a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.paywall-support a:hover {
+  color: var(--text-primary);
+}
+
 .paywall-cta:focus-visible,
-.paywall-back:focus-visible {
+.paywall-back:focus-visible,
+.paywall-support a:focus-visible {
   outline: 2px solid var(--btn-bg);
   outline-offset: 2px;
 }
