@@ -170,20 +170,30 @@ paywall.addEventListener('click', (e) => {
   if (e.target === paywall) closePaywall();
 });
 
-// Category dropdown options for a Collection. Collections whose categories
-// are all in the default list in index.html (General, Business) keep that
-// list; a Collection with its own categories (Kids) gets those, in the
-// order they appear in waffles.json.
+// Category dropdown options for a Collection at a level. Every Collection
+// works the same way: the options are the categories that actually have
+// Waffles in waffles.json for that Collection + level, so an empty choice
+// can never be offered. The list in index.html is only used for ORDER:
+// categories it names come first, in its order (General, Business); any
+// others follow in the order they first appear in the Collection in
+// waffles.json (the same at every level, so the menu order never shuffles).
 const DEFAULT_CATEGORIES = [...categorySelect.options].map(o => o.value).filter(Boolean);
 
-function categoriesFor(collectionId) {
-  const own = WB.getCollectionCategories(collectionId);
-  return own.every(c => DEFAULT_CATEGORIES.includes(c)) ? DEFAULT_CATEGORIES : own;
+function categoriesFor(collectionId, level) {
+  const inOrder = WB.getCollectionCategories(collectionId);   // all levels, file order
+  const rank = (c) => {
+    const i = DEFAULT_CATEGORIES.indexOf(c);
+    return i === -1 ? DEFAULT_CATEGORIES.length + inOrder.indexOf(c) : i;
+  };
+  return WB.getCollectionCategories(collectionId, level).sort((a, b) => rank(a) - rank(b));
 }
 
+// Rebuilds the Category menu for the Collection and the CURRENT level. If
+// the selected category has no Waffles there (e.g. Kids › Gaming & Pixel
+// Worlds, then switching to B2+), the selection falls back to All Categories.
 function renderCategoryOptions(collectionId) {
   const current = categorySelect.value;
-  const list = categoriesFor(collectionId);
+  const list = categoriesFor(collectionId, currentLevel);
   categorySelect.innerHTML = '';
   [['', 'All Categories'], ...list.map(c => [c, c])].forEach(([value, label]) => {
     const opt = document.createElement('option');
@@ -446,7 +456,7 @@ function loadTeacherState() {
     const s = JSON.parse(sessionStorage.getItem(STATE_KEY));
     if (!s || !LEVELS.includes(s.level)) return null;
     const collection = COLLECTIONS.find(c => c.id === s.collection && !c.locked && !isLockedPremium(c));
-    const categoryOk = s.category === '' || (collection && categoriesFor(collection.id).includes(s.category));
+    const categoryOk = s.category === '' || (collection && categoriesFor(collection.id, s.level).includes(s.category));
     if (!collection || !categoryOk || !Array.isArray(s.history) || !s.history.length) return null;
     const allValid = s.history.every(h => {
       const w = h && WB.getById(h.id);
@@ -511,12 +521,13 @@ WB.load()
     // Returning to this page in the same tab? Restore the teacher's place.
     const saved = loadTeacherState();
     if (saved) {
+      currentLevel = saved.level;   // before selectCollection: the category menu is built for this level
       selectCollection(saved.collection, { resetDraw: false });
-      currentLevel = saved.level;
       categorySelect.value = saved.category;
       categorySelect.classList.toggle('filtered', saved.category !== '');
     } else {
       applyCollectionLook(COLLECTIONS.find(c => c.id === currentCollection));
+      renderCategoryOptions(currentCollection);   // categories that exist at the saved level
     }
 
     levelSelect.value = currentLevel;
@@ -574,6 +585,9 @@ levelSelect.addEventListener('change', () => {
   currentLevel = levelSelect.value;
   localStorage.setItem('wb_level', currentLevel);
   updateLevelDisplay();
+  // The new level may not have the selected category: rebuild the menu
+  // (falls back to All Categories if so).
+  renderCategoryOptions(currentCollection);
   // Reset history when the level changes — back would cross levels —
   // and show a Waffle from the new level straight away.
   history.length = 0;

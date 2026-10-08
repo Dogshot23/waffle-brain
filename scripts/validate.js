@@ -106,6 +106,46 @@ for (const side of ['teacher', 'student']) {
   });
 }
 
+// ── Coverage: every Collection × Level × Category ─
+// Mirrors the Teacher page's menus: the Category choices for a Collection +
+// level are the categories that have Waffles there (see categoriesFor in
+// app.js), so a teacher can never pick an empty category. What can still
+// go wrong is a whole Collection × Level being empty, which would leave the
+// page with nothing to draw — that is an ERROR. A category with fewer than
+// COVERAGE_WARN_BELOW Waffles at a level is a WARNING (never fails the run).
+// A category that exists in a Collection but has NO Waffles at some level
+// (e.g. Kids › Gaming & Pixel Worlds at B2+) is intentionally not an error:
+// it is simply not offered there. Those are listed as info for review.
+const COVERAGE_WARN_BELOW = 15;
+const coverage = { cells: 0, pass: 0, warn: [], notOffered: [] };
+{
+  const tally = new Map();   // "collection|level|category" → number of Waffles
+  const levelTotal = new Map();   // "collection|level" → number of Waffles
+  const catsOf = new Map();       // collection → categories (any level), in file order
+  waffles.forEach(w => {
+    if (!w || !COLLECTIONS.includes(w.collection) || !LEVELS.includes(w.level) || !nonEmpty(w.category)) return;
+    const k = `${w.collection}|${w.level}|${w.category}`;
+    tally.set(k, (tally.get(k) || 0) + 1);
+    levelTotal.set(`${w.collection}|${w.level}`, (levelTotal.get(`${w.collection}|${w.level}`) || 0) + 1);
+    if (!catsOf.has(w.collection)) catsOf.set(w.collection, new Set());
+    catsOf.get(w.collection).add(w.category);
+  });
+  for (const col of COLLECTIONS) {
+    if (!catsOf.has(col)) continue;   // a Collection with no Waffles at all is not offered
+    for (const level of LEVELS) {
+      if (!levelTotal.get(`${col}|${level}`))
+        err(`Coverage: ${col} has no Waffles at level ${level} (Collection × Level is empty)`);
+      for (const cat of catsOf.get(col)) {
+        const n = tally.get(`${col}|${level}|${cat}`) || 0;
+        if (n === 0) { coverage.notOffered.push({ collection: col, level, category: cat }); continue; }
+        coverage.cells++;
+        if (n < COVERAGE_WARN_BELOW) coverage.warn.push({ collection: col, level, category: cat, n });
+        else coverage.pass++;
+      }
+    }
+  }
+}
+
 // ── Optional: compare with legacy migration sources ─
 let sourceSummary = null;
 if (process.argv.includes('--check-sources')) {
@@ -226,6 +266,12 @@ console.log(`Unique IDs: ${seenIds.size}  (range ${Math.min(...seenIds.keys())}�
 console.log('By collection:', count('collection'));
 console.log('By level:     ', count('level'));
 console.log('By category:  ', count('category'));
+console.log(`\nCoverage (Collection × Level × Category choices offered on the Teacher page): ${coverage.cells} checked, ${coverage.pass} with ${COVERAGE_WARN_BELOW}+ Waffles, ${coverage.warn.length} warning(s), ${errors.filter(e => e.startsWith('Coverage:')).length} error(s)`);
+coverage.warn.forEach(x => console.log(`  ⚠ ${x.collection} | ${x.level} | ${x.category}: ${x.n} Waffle(s) (fewer than ${COVERAGE_WARN_BELOW})`));
+if (coverage.notOffered.length) {
+  console.log('  Not offered (category exists in the Collection but has no Waffles at this level — by design, not an error):');
+  coverage.notOffered.forEach(x => console.log(`    - ${x.collection} | ${x.level} | ${x.category}`));
+}
 if (sourceSummary) console.log(`Legacy source pairs: ${sourceSummary.sourcePairs}, matched exactly: ${sourceSummary.matched}`);
 
 console.log('\nContent warnings (docs/waffle-content-rules.md — guidance only, never a failure):');

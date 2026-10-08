@@ -149,9 +149,15 @@ const WB = (() => {
       return currentLevel;
     },
 
-    /** All unique category names in one Collection, in file order. */
-    getCollectionCategories(collection) {
-      return [...new Set(all.filter(w => w.collection === collection).map(w => w.category))];
+    /**
+     * All unique category names in one Collection, in file order.
+     * If `level` is given, only categories that have at least one Waffle
+     * at that level (so the category menu never offers an empty choice).
+     */
+    getCollectionCategories(collection, level) {
+      return [...new Set(all
+        .filter(w => w.collection === collection && (level === undefined || w.level === level))
+        .map(w => w.category))];
     },
 
     /** All unique category names in the current pool. */
