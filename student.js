@@ -146,7 +146,8 @@ if (collectionParam && collectionParam !== 'general') {
           .map(w => ({ id: w.id, waffle: w.student.prompt,
                        goal: w.student.goal, starters: w.student.starters }));
         // Keep this Collection view when the page's own "Student" tab is clicked.
-        const selfLink = document.querySelector('.version-link[href="student.html"]');
+        // (Found by id, not by href: Netlify serves href="student.html" as "/student".)
+        const selfLink = document.getElementById('student-link');
         if (selfLink) selfLink.href = 'student.html' + location.search;
       }
       start();

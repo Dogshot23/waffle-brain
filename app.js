@@ -16,7 +16,8 @@ const categorySelect = document.getElementById('category-select');
 const levelSelect    = document.getElementById('level-select');
 
 const levelDisplay    = document.getElementById('level-display');
-const studentLink     = document.querySelector('.version-link[href^="student.html"]');
+// Found by id, not by its href: Netlify's pretty URLs serve href="student.html" as "/student".
+const studentLink     = document.getElementById('student-link');
 
 const waffleSelect       = document.getElementById('waffle-select');
 const waffleTrigger      = document.getElementById('waffle-trigger');
