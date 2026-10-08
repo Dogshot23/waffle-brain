@@ -161,17 +161,22 @@ delete, move or rename them without the owner's instruction):
   page's "Student" link adds this, plus `&category=…` when a category is
   selected) it instead shows that Collection's Student Waffles from
   `waffles.json` at that level (and in that category).
-- The Teacher page shows the current Collection through the Collection
-  control and picker (emoji + name, with a small PREMIUM tag for premium
-  Collections); it has no header badge. The Student page still shows the
-  current Collection as a header badge (icon + name, from `collections.js`).
-  Both pages set `body[data-collection]`. In
-  `style.css` each of the nine Collections sets only its colours (a Teacher /
-  Student accent pair, `--teacher-btn-*` / `--student-btn-*`), a lightly
-  tinted `--bg` and a subtle background pattern; buttons, focus rings, the
-  badge, the selected menu item, the filtered category and the card's top
-  edge all follow from those. General English is the default (no
-  `data-collection` needed). A new Collection needs its own block there.
+- Both pages show the current Collection through a Collection control and
+  picker (emoji + name, with a small PREMIUM tag on the Teacher page and a
+  small Pro tag on the Student page for premium Collections); neither has a
+  header badge. Both pages set `body[data-collection]`. There is ONE
+  Collection accent-colour system, shared by Teacher and Student Mode: in
+  `style.css` each of the nine Collections sets only its colours
+  (`--teacher-btn-*`; despite the name these are the Collection's accent for
+  both pages), a lightly tinted `--bg` and a subtle background pattern;
+  buttons, focus rings, the selected menu item, the filtered category and
+  the card's top edge all follow from those, on both pages. There is no
+  separate Student Collection palette — a Collection looks the same accent
+  colour on Teacher and Student. Student-only styling (for example the
+  Waffle Starters box tint) may exist for elements that are part of the
+  Student experience, but it must not be a second per-Collection palette.
+  General English is the default (no `data-collection` needed). A new
+  Collection needs its own block there.
 - Offline: `sw.js` (service worker, registered at the end of `app.js` and
   `student.js`) saves the pages and `data/waffles.json`; it fetches from the
   network first and only uses saved copies offline. If you add, rename or

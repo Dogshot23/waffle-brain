@@ -527,12 +527,31 @@ function showPrev() {
 }
 
 // ── Init ──────────────────────────────────────
+// Arriving from the Student page? Its "Teacher" tab links here with
+// ?collection=…&level=…&category=… (the same parameters this page's own
+// Student link writes). Only a Collection that is unlocked for this browser
+// counts, so a premium Collection never bypasses the paywall: without Pro the
+// parameters are ignored and the page opens as it normally would.
+function readStudentContext() {
+  const params = new URLSearchParams(location.search);
+  const collection = COLLECTIONS.find(c => c.id === params.get('collection') && !c.locked && !isLockedPremium(c));
+  const level = (params.get('level') || '').replace(' ', '+');   // a typed "B2+" arrives as "B2 "
+  if (!collection || !LEVELS.includes(level)) return null;
+  return { collection: collection.id, level, category: params.get('category') || '' };
+}
+const studentContext = readStudentContext();
+// The parameters have been read; drop them so a later reload goes back to the
+// teacher's own saved place instead of replaying them.
+if (studentContext) window.history.replaceState(null, '', location.pathname);   // (`history` is the Waffle list here)
+
 // Returning to a non-General Collection in this tab? Show its look now,
 // while the Waffles load, so the page doesn't flash General English first.
 // The full check of the saved place (below) then keeps or reverts it.
 try {
-  const early = COLLECTIONS.find(c =>
-    c.id === JSON.parse(sessionStorage.getItem(STATE_KEY)).collection && !c.locked && !isLockedPremium(c));
+  const early = studentContext
+    ? COLLECTIONS.find(c => c.id === studentContext.collection)
+    : COLLECTIONS.find(c =>
+        c.id === JSON.parse(sessionStorage.getItem(STATE_KEY)).collection && !c.locked && !isLockedPremium(c));
   if (early) applyCollectionLook(early);
 } catch (e) { /* no saved place — stay General */ }
 
@@ -541,9 +560,22 @@ WB.load()
     nextBtn.disabled = false;
     renderCollectionList();   // fills in the Waffle counts
 
-    // Returning to this page in the same tab? Restore the teacher's place.
-    const saved = loadTeacherState();
-    if (saved) {
+    // From the Student page: open that Collection + level (+ category).
+    // Otherwise, returning to this page in the same tab? Restore the teacher's place.
+    const saved = studentContext ? null : loadTeacherState();
+    if (studentContext) {
+      currentLevel = studentContext.level;   // before selectCollection: the category menu is built for this level
+      selectCollection(studentContext.collection, { resetDraw: false });
+      const categoryOk = categoriesFor(currentCollection, currentLevel).includes(studentContext.category);
+      categorySelect.value = categoryOk ? studentContext.category : '';
+      categorySelect.classList.toggle('filtered', categoryOk);
+      syncChipSelection();
+      // The student had a Topic with no Waffles at this level (e.g. Kids ›
+      // Gaming & Pixel Worlds at B2+): show All, and say so.
+      if (studentContext.category && !categoryOk) {
+        showSelectorNote('“' + studentContext.category + '” isn’t available at ' + (LEVEL_SHORT[currentLevel] ?? currentLevel) + ' — showing All.');
+      }
+    } else if (saved) {
       currentLevel = saved.level;   // before selectCollection: the category menu is built for this level
       selectCollection(saved.collection, { resetDraw: false });
       categorySelect.value = saved.category;
