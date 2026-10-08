@@ -149,13 +149,28 @@
     <ul class="waffle-list" id="waffle-list" role="listbox" aria-label="Collection" hidden></ul>
   </div>
 
-  <div class="selector-bar">
-    <select id="level-select" aria-label="Student level">
+  <!-- Level + Activity/Topic. The visible controls (segmented Level, scrolling
+       chips) are views of the two hidden native selects below, which remain the
+       state holders: app.js writes to them and fires their normal `change` event. -->
+  <div class="selector-bar" id="selector-bar">
+    <span class="control-label" id="level-label">Level</span>
+    <div class="level-seg" id="level-seg" role="radiogroup" aria-labelledby="level-label"></div>
+
+    <span class="control-label" id="activity-label">Activity</span>
+    <div class="chip-wrap" id="chip-wrap">
+      <div class="chip-scroll" id="chip-scroll" role="radiogroup" aria-labelledby="activity-label">
+        <label class="chip"><input class="chip-input" type="radio" name="activity" value="" checked><span class="chip-text">All</span></label>
+      </div>
+    </div>
+
+    <div class="selector-note" id="selector-note" role="status" aria-live="polite"></div>
+
+    <select id="level-select" hidden aria-label="Student level">
       <option value="A1A2" selected>Beginner (A1/A2)</option>
       <option value="B1">Intermediate (B1)</option>
       <option value="B2+">Advanced (B2+)</option>
     </select>
-    <select id="category-select" aria-label="Filter by category">
+    <select id="category-select" hidden aria-label="Filter by category">
       <option value="">All Categories</option>
       <option value="Everyday Situations">Everyday Situations</option>
       <option value="Simple Roleplay">Simple Roleplay</option>

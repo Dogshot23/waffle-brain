@@ -15,6 +15,13 @@ const copyBtn        = document.getElementById('copy-btn');
 const categorySelect = document.getElementById('category-select');
 const levelSelect    = document.getElementById('level-select');
 
+// Visible Level / Activity controls (views of the two selects above).
+const levelSeg      = document.getElementById('level-seg');
+const chipWrap      = document.getElementById('chip-wrap');
+const chipScroll    = document.getElementById('chip-scroll');
+const activityLabel = document.getElementById('activity-label');
+const selectorNote  = document.getElementById('selector-note');
+
 const levelDisplay    = document.getElementById('level-display');
 // Found by id, not by its href: Netlify's pretty URLs serve href="student.html" as "/student".
 const studentLink     = document.getElementById('student-link');
@@ -213,6 +220,7 @@ function renderCategoryOptions(collectionId) {
   });
   categorySelect.value = list.includes(current) ? current : '';
   categorySelect.classList.toggle('filtered', categorySelect.value !== '');
+  renderActivityChips();   // the visible chip row mirrors these options
 }
 
 function selectCollection(id, { resetDraw = true } = {}) {
@@ -540,12 +548,14 @@ WB.load()
       selectCollection(saved.collection, { resetDraw: false });
       categorySelect.value = saved.category;
       categorySelect.classList.toggle('filtered', saved.category !== '');
+      syncChipSelection();   // the select was set directly, so no change event fired
     } else {
       applyCollectionLook(COLLECTIONS.find(c => c.id === currentCollection));
       renderCategoryOptions(currentCollection);   // categories that exist at the saved level
     }
 
     levelSelect.value = currentLevel;
+    syncLevelUI();
     localStorage.setItem('wb_level', currentLevel);
     updateLevelDisplay();
     WB.prime(getFilter(), getLevel(), currentCollection);
@@ -601,8 +611,12 @@ levelSelect.addEventListener('change', () => {
   localStorage.setItem('wb_level', currentLevel);
   updateLevelDisplay();
   // The new level may not have the selected category: rebuild the menu
-  // (falls back to All Categories if so).
+  // (falls back to All Categories if so, and the teacher is told).
+  const previousCategory = getFilter();
   renderCategoryOptions(currentCollection);
+  if (previousCategory && getFilter() === '') {
+    showSelectorNote('\u201C' + previousCategory + '\u201D isn\u2019t available at ' + (LEVEL_SHORT[currentLevel] ?? currentLevel) + ' \u2014 showing All.');
+  }
   // Reset history when the level changes — back would cross levels —
   // and show a Waffle from the new level straight away.
   history.length = 0;
@@ -622,6 +636,159 @@ categorySelect.addEventListener('change', () => {
   showPrompt();
   releaseFocusAfterPointer(categorySelect);
 });
+
+// ── Level segmented control + Activity/Topic chips ──
+// The visible controls are VIEWS of the native #level-select and
+// #category-select, which stay in the page (hidden) as the single source of
+// truth. Choosing something writes to the select and fires its normal
+// `change` event, so filtering, restore and the Student link are unchanged.
+// After any code sets a select's .value directly (restore, init) the matching
+// sync function below must be called, because that fires no event.
+const LEVEL_SHORT = { A1A2: 'A1/A2', B1: 'B1', 'B2+': 'B2+' };
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+function fireChange(select) {
+  select.dispatchEvent(new Event('change', { bubbles: true }));
+}
+
+// Level: three native radio buttons in a radiogroup (arrow keys work natively)
+function renderLevelSeg() {
+  levelSeg.innerHTML = '';
+  LEVELS.forEach(value => {
+    const label = document.createElement('label');
+    label.className = 'seg-opt';
+    const input = document.createElement('input');
+    input.type = 'radio';
+    input.name = 'level';
+    input.value = value;
+    input.className = 'seg-input';
+    input.setAttribute('aria-label', levelLabels[value] ?? value);
+    const text = document.createElement('span');
+    text.className = 'seg-text';
+    text.textContent = LEVEL_SHORT[value] ?? value;
+    label.append(input, text);
+    levelSeg.appendChild(label);
+  });
+  syncLevelUI();
+}
+
+function syncLevelUI() {
+  levelSeg.querySelectorAll('input').forEach(r => { r.checked = r.value === levelSelect.value; });
+}
+
+levelSeg.addEventListener('change', (e) => {
+  if (!e.target.matches('input')) return;
+  levelSelect.value = e.target.value;
+  fireChange(levelSelect);
+  releaseFocusAfterPointer(e.target);
+});
+
+// Activity / Topic chips: one radio per option of #category-select
+function renderActivityChips() {
+  hideSelectorNote();
+  const collection = COLLECTIONS.find(c => c.id === currentCollection);
+  activityLabel.textContent = (collection && collection.categoryLabel) || 'Topic';
+
+  chipScroll.innerHTML = '';
+  [...categorySelect.options].forEach(opt => {
+    const label = document.createElement('label');
+    label.className = 'chip';
+    const input = document.createElement('input');
+    input.type = 'radio';
+    input.name = 'activity';
+    input.value = opt.value;
+    input.className = 'chip-input';
+    const text = document.createElement('span');
+    text.className = 'chip-text';
+    text.textContent = opt.value === '' ? 'All' : opt.textContent;
+    label.append(input, text);
+    chipScroll.appendChild(label);
+  });
+  syncChipSelection();
+}
+
+function syncChipSelection({ smooth = false } = {}) {
+  chipScroll.querySelectorAll('input').forEach(r => { r.checked = r.value === categorySelect.value; });
+  scrollActiveChipIntoView(smooth);
+  updateChipFades();
+}
+
+// Bring the chosen chip into view, leaving a sliver of the previous chip and
+// the start of the next one visible so it is clear the row scrolls. A chip
+// that is already comfortably visible is left alone (nothing moves under
+// the pointer).
+const CHIP_FADE_L = 22, CHIP_FADE_R = 26, CHIP_LEAD = 30;
+function scrollActiveChipIntoView(smooth) {
+  const input = chipScroll.querySelector('input:checked');
+  const chip = input && input.parentElement;
+  if (!chip) return;
+  const left = chip.offsetLeft, right = left + chip.offsetWidth;
+  const viewL = chipScroll.scrollLeft, viewR = viewL + chipScroll.clientWidth;
+  const visible = left >= viewL + (viewL > 0 ? CHIP_FADE_L : 0) &&
+                  right <= viewR - (viewR < chipScroll.scrollWidth ? CHIP_FADE_R : 0);
+  if (visible) return;
+  const max = chipScroll.scrollWidth - chipScroll.clientWidth;
+  const target = chip.previousElementSibling ? Math.max(0, Math.min(max, left - CHIP_LEAD)) : 0;
+  chipScroll.scrollTo({ left: target, behavior: smooth && !reducedMotion.matches ? 'smooth' : 'auto' });
+}
+
+// Fade the edge(s) that have more chips beyond them
+function updateChipFades() {
+  const max = chipScroll.scrollWidth - chipScroll.clientWidth;
+  chipWrap.classList.toggle('fade-l', chipScroll.scrollLeft > 2);
+  chipWrap.classList.toggle('fade-r', chipScroll.scrollLeft < max - 2);
+}
+
+chipScroll.addEventListener('scroll', updateChipFades, { passive: true });
+window.addEventListener('resize', () => { scrollActiveChipIntoView(false); updateChipFades(); });
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(updateChipFades);
+
+// A mouse wheel has no horizontal axis: turn vertical wheel movement over the
+// row into sideways scrolling (trackpads and touch already scroll sideways).
+chipScroll.addEventListener('wheel', (e) => {
+  if (chipScroll.scrollWidth <= chipScroll.clientWidth) return;
+  if (Math.abs(e.deltaX) >= Math.abs(e.deltaY)) return;
+  const before = chipScroll.scrollLeft;
+  chipScroll.scrollLeft += e.deltaMode === 1 ? e.deltaY * 16 : e.deltaY;
+  if (chipScroll.scrollLeft !== before) e.preventDefault();
+}, { passive: false });
+
+chipScroll.addEventListener('change', (e) => {
+  if (!e.target.matches('input')) return;
+  categorySelect.value = e.target.value;
+  fireChange(categorySelect);
+  // Smooth for a tap/click; instant for the keyboard, so holding an arrow key
+  // never queues up animated scrolls that lag behind the selection.
+  scrollActiveChipIntoView(lastInput === 'pointer');
+  releaseFocusAfterPointer(e.target);
+});
+
+// Re-clicking an already-chosen option fires no change; still release focus
+// after a mouse/tap so Space keeps meaning "Next".
+[levelSeg, chipScroll].forEach(group => {
+  group.addEventListener('click', (e) => {
+    if (e.target.matches('input')) releaseFocusAfterPointer(e.target);
+  });
+});
+
+// A short-lived message under the chips (e.g. the category fallback). It
+// overlays the top of the card instead of pushing the layout around.
+let selectorNoteTimer = null;
+function showSelectorNote(message) {
+  selectorNote.textContent = message;
+  selectorNote.classList.add('is-visible');
+  clearTimeout(selectorNoteTimer);
+  selectorNoteTimer = setTimeout(hideSelectorNote, 4500);
+}
+function hideSelectorNote() {
+  clearTimeout(selectorNoteTimer);
+  selectorNote.classList.remove('is-visible');
+  selectorNote.textContent = '';
+}
+
+// Show the saved level at once (init re-syncs after the Waffles load).
+levelSelect.value = currentLevel;
+renderLevelSeg();
 
 let copyResetTimer = null;
 

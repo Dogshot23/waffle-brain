@@ -14,6 +14,9 @@
 //  `isPremium: true` marks a paid Collection: on the Teacher page it shows
 //  a 🔒 and opens the paywall unless this browser has Pro access (see
 //  js/payment.js). Every other Collection is free.
+//  `categoryLabel` is the teacher-facing name for the `category` field of this
+//  Collection's Waffles (Activity, Topic, Situation, Exam part…), shown beside
+//  the category chips; the data field itself stays `category`.
 //  `group` puts the Collection under a heading in the Teacher menu (see
 //  COLLECTION_GROUPS below). Premium Collections are in the 'pro' group.
 //  Unlocked Collections are selectable and draw their own Waffles; a
@@ -31,15 +34,15 @@ const COLLECTION_GROUPS = [
 
 // Array order is menu order (within each group).
 const COLLECTIONS = [
-  { id: 'general',            name: 'General English',   icon: '🧇', group: 'everyday', locked: false, comingSoon: false },
-  { id: 'business',           name: 'Business English',  icon: '💼', group: 'everyday', locked: false, comingSoon: false },
-  { id: 'kids',               name: 'Kids',              icon: '🧸', group: 'everyday', locked: false, comingSoon: false },
-  { id: 'travel',             name: 'Travel',            icon: '✈️', group: 'everyday', locked: false, comingSoon: false },
-  { id: 'debate',             name: 'Debate',            icon: '⚖️', group: 'everyday', locked: false, comingSoon: false },
-  { id: 'conversation-club',  name: 'Conversation Club', icon: '☕', group: 'everyday', locked: false, comingSoon: false },
-  { id: 'medical',            name: 'Medical',           icon: '🩺', group: 'pro',      locked: false, comingSoon: false, isPremium: true },
-  { id: 'ielts',              name: 'IELTS',             icon: '🎓', group: 'pro',      locked: false, comingSoon: false, isPremium: true },
-  { id: 'cambridge',          name: 'Cambridge',         icon: '🏛️', group: 'pro',      locked: false, comingSoon: false, isPremium: true },
+  { id: 'general',           name: 'General English',   icon: '🧇', group: 'everyday',  categoryLabel: 'Activity',  locked: false, comingSoon: false },
+  { id: 'business',          name: 'Business English',  icon: '💼', group: 'everyday',  categoryLabel: 'Activity',  locked: false, comingSoon: false },
+  { id: 'kids',              name: 'Kids',              icon: '🧸', group: 'everyday',  categoryLabel: 'Topic',     locked: false, comingSoon: false },
+  { id: 'travel',            name: 'Travel',            icon: '✈️', group: 'everyday',  categoryLabel: 'Situation', locked: false, comingSoon: false },
+  { id: 'debate',            name: 'Debate',            icon: '⚖️', group: 'everyday',  categoryLabel: 'Topic',     locked: false, comingSoon: false },
+  { id: 'conversation-club', name: 'Conversation Club', icon: '☕', group: 'everyday',  categoryLabel: 'Topic',     locked: false, comingSoon: false },
+  { id: 'medical',           name: 'Medical',           icon: '🩺', group: 'pro',       categoryLabel: 'Topic',     locked: false, comingSoon: false, isPremium: true },
+  { id: 'ielts',             name: 'IELTS',             icon: '🎓', group: 'pro',       categoryLabel: 'Exam part', locked: false, comingSoon: false, isPremium: true },
+  { id: 'cambridge',         name: 'Cambridge',         icon: '🏛️', group: 'pro',       categoryLabel: 'Exam task', locked: false, comingSoon: false, isPremium: true },
 ];
 
 // Lets scripts/validate.js (Node) read the same list.
