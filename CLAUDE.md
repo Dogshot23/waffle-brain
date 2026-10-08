@@ -161,8 +161,11 @@ delete, move or rename them without the owner's instruction):
   page's "Student" link adds this, plus `&category=…` when a category is
   selected) it instead shows that Collection's Student Waffles from
   `waffles.json` at that level (and in that category).
-- Both pages show the current Collection as a badge (icon + name, from
-  `collections.js`) in the header and set `body[data-collection]`. In
+- The Teacher page shows the current Collection through the Collection
+  control and picker (emoji + name, with a small PREMIUM tag for premium
+  Collections); it has no header badge. The Student page still shows the
+  current Collection as a header badge (icon + name, from `collections.js`).
+  Both pages set `body[data-collection]`. In
   `style.css` each of the nine Collections sets only its colours (a Teacher /
   Student accent pair, `--teacher-btn-*` / `--student-btn-*`), a lightly
   tinted `--bg` and a subtle background pattern; buttons, focus rings, the

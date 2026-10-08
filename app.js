@@ -39,62 +39,74 @@ function isLockedPremium(c) {
   return !!(c && c.isPremium && !WaffleAccess.isProUnlocked());
 }
 
+// The menu: one heading per COLLECTION_GROUPS entry (collections.js), each
+// followed by its Collections in COLLECTIONS order. A row is the emoji, the
+// name, a small PREMIUM tag for premium Collections (never greyed out —
+// choosing a locked one opens the paywall) and, quietly on the right, how
+// many Waffles the Collection has (filled in once waffles.json has loaded).
 function renderCollectionList() {
   waffleList.innerHTML = '';
-  let separatorAdded = false;
 
-  COLLECTIONS.forEach(w => {
-    if (w.locked && !separatorAdded) {
-      const sep = document.createElement('li');
-      sep.className = 'waffle-separator';
-      sep.setAttribute('role', 'presentation');
-      sep.textContent = 'Coming Soon';
-      waffleList.appendChild(sep);
-      separatorAdded = true;
-    }
+  COLLECTION_GROUPS.forEach(group => {
+    const members = COLLECTIONS.filter(c => c.group === group.id);
+    if (!members.length) return;
 
-    const li = document.createElement('li');
-    li.className = 'waffle-option' + (w.locked ? ' locked' : '');
-    li.setAttribute('role', 'option');
-    li.setAttribute('aria-selected', String(w.id === currentCollection));
-    li.dataset.collection = w.id;
-    // Focusable from the keyboard (arrow keys), but not a Tab stop.
-    li.tabIndex = -1;
-    if (w.locked) li.setAttribute('aria-disabled', 'true');
+    const heading = document.createElement('li');
+    heading.className = 'waffle-group';
+    heading.setAttribute('role', 'presentation');
+    heading.textContent = group.title;
+    waffleList.appendChild(heading);
 
-    const icon = document.createElement('span');
-    icon.className = 'waffle-option-icon';
-    icon.setAttribute('aria-hidden', 'true');
-    icon.textContent = w.locked ? '🔒' : (w.icon || '🧇');
+    members.forEach(w => {
+      const li = document.createElement('li');
+      li.className = 'waffle-option' + (w.locked ? ' locked' : '');
+      li.setAttribute('role', 'option');
+      li.setAttribute('aria-selected', String(w.id === currentCollection));
+      li.dataset.collection = w.id;
+      // Focusable from the keyboard (arrow keys), but not a Tab stop.
+      li.tabIndex = -1;
+      if (w.locked) li.setAttribute('aria-disabled', 'true');
 
-    const label = document.createElement('span');
-    label.className = 'waffle-option-label';
-    label.textContent = w.name;
+      const icon = document.createElement('span');
+      icon.className = 'waffle-option-icon';
+      icon.setAttribute('aria-hidden', 'true');
+      icon.textContent = w.icon || '🧇';
 
-    li.appendChild(icon);
-    li.appendChild(label);
+      const label = document.createElement('span');
+      label.className = 'waffle-option-label';
+      label.textContent = w.name;
 
-    if (w.locked && w.comingSoon) {
-      const tag = document.createElement('span');
-      tag.className = 'waffle-option-tag';
-      tag.textContent = 'Soon';
-      li.appendChild(tag);
-    }
+      li.appendChild(icon);
+      li.appendChild(label);
 
-    // Premium: a padlock until unlocked, then a small "Pro" tag.
-    if (w.isPremium) {
-      const locked = isLockedPremium(w);
-      const tag = document.createElement('span');
-      tag.className = locked ? 'waffle-option-lock' : 'waffle-option-tag waffle-option-pro';
-      tag.setAttribute('aria-hidden', 'true');
-      tag.textContent = locked ? '🔒' : 'Pro';
-      li.appendChild(tag);
-      li.setAttribute('aria-label', `${w.name}, premium${locked ? ', locked' : ''}`);
-    }
+      if (w.locked && w.comingSoon) {
+        const tag = document.createElement('span');
+        tag.className = 'waffle-option-tag';
+        tag.textContent = 'Soon';
+        li.appendChild(tag);
+      }
 
-    li.addEventListener('click', () => chooseCollection(w));
+      if (w.isPremium) {
+        const tag = document.createElement('span');
+        tag.className = 'waffle-option-premium';
+        tag.setAttribute('aria-hidden', 'true');
+        tag.textContent = 'Premium';
+        li.appendChild(tag);
+        li.setAttribute('aria-label', `${w.name}, premium${isLockedPremium(w) ? ', locked' : ''}`);
+      }
 
-    waffleList.appendChild(li);
+      const n = WB.getCollectionCount(w.id);
+      if (n) {
+        const count = document.createElement('span');
+        count.className = 'waffle-option-count';
+        count.textContent = String(n);
+        li.appendChild(count);
+      }
+
+      li.addEventListener('click', () => chooseCollection(w));
+
+      waffleList.appendChild(li);
+    });
   });
 }
 
@@ -115,15 +127,12 @@ function chooseCollection(w) {
   if (byKeyboard) waffleTrigger.focus();
 }
 
-// Header label + per-Collection styling hook (body[data-collection] in style.css)
+// Per-Collection styling hook (body[data-collection] in style.css) and the
+// PREMIUM tag above the Collection menu button.
 function applyCollectionLook(collection) {
-  document.getElementById('collection-name').textContent = collection.name;
-  document.getElementById('collection-icon').textContent = collection.icon || '🧇';
   document.body.dataset.collection = collection.id;
-  // Premium marker in the header badge: 🔒 while locked, "Pro" once unlocked.
-  const marker = document.getElementById('collection-lock');
-  marker.hidden = !collection.isPremium;
-  marker.textContent = isLockedPremium(collection) ? '🔒' : 'Pro';
+  // PREMIUM tag beside the "Collection" label above the menu button.
+  document.getElementById('waffle-premium-tag').hidden = !collection.isPremium;
 }
 
 // ── Paywall (premium Collections) ─────────────
@@ -232,11 +241,13 @@ function selectCollection(id, { resetDraw = true } = {}) {
 
 function openWaffleList() {
   waffleList.hidden = false;
+  waffleSelect.classList.add('is-open');
   waffleTrigger.setAttribute('aria-expanded', 'true');
 }
 
 function closeWaffleList() {
   waffleList.hidden = true;
+  waffleSelect.classList.remove('is-open');
   waffleTrigger.setAttribute('aria-expanded', 'false');
 }
 
@@ -253,7 +264,9 @@ waffleTrigger.addEventListener('click', (e) => {
 });
 
 document.addEventListener('click', (e) => {
-  if (!waffleSelect.contains(e.target)) closeWaffleList();
+  // Outside the menu, or on the dimmed backdrop behind the phone sheet
+  // (the backdrop belongs to #waffle-select itself, not to a row or button).
+  if (!waffleSelect.contains(e.target) || e.target === waffleSelect) closeWaffleList();
 });
 
 // ── Collection list: keyboard ──────────────────
@@ -518,6 +531,7 @@ try {
 WB.load()
   .then(() => {
     nextBtn.disabled = false;
+    renderCollectionList();   // fills in the Waffle counts
 
     // Returning to this page in the same tab? Restore the teacher's place.
     const saved = loadTeacherState();

@@ -99,7 +99,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Lora:ital,wght@0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="images/favicon.ico">
@@ -126,13 +126,6 @@
       <img src="images/logo.png" alt="WaffleBrain" class="logo-img">
       <span class="logo-subtitle">For teachers</span>
     </div>
-    <span class="collection-slot">
-      <span class="collection-badge">
-        <span class="collection-icon" id="collection-icon" aria-hidden="true">🧇</span>
-        <span class="collection-name" id="collection-name">General English</span>
-        <span class="collection-lock" id="collection-lock" hidden></span>
-      </span>
-    </span>
     <nav class="version-nav" aria-label="Switch version">
       <a href="index.html"   class="version-link active"   aria-current="page">Teacher</a>
       <a href="student.html" id="student-link" class="version-link inactive">Student</a>
@@ -140,14 +133,20 @@
   </header>
 
   <div class="waffle-select" id="waffle-select">
-    <button type="button" class="waffle-trigger" id="waffle-trigger" aria-haspopup="listbox" aria-expanded="false" aria-label="Choose Waffle">
+    <div class="waffle-select-label">
+      <span class="waffle-eyebrow">Collection</span>
+      <span class="waffle-premium-tag" id="waffle-premium-tag" hidden>Premium</span>
+    </div>
+    <button type="button" class="waffle-trigger" id="waffle-trigger" aria-haspopup="listbox" aria-expanded="false" aria-label="Choose Collection">
       <span class="waffle-trigger-icon" id="waffle-trigger-icon" aria-hidden="true">🧇</span>
       <span class="waffle-trigger-label" id="waffle-trigger-label">General English</span>
-      <svg class="waffle-trigger-chevron" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+      <span class="waffle-trigger-chevron" aria-hidden="true">
+        <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
     </button>
-    <ul class="waffle-list" id="waffle-list" role="listbox" aria-label="Waffle" hidden></ul>
+    <ul class="waffle-list" id="waffle-list" role="listbox" aria-label="Collection" hidden></ul>
   </div>
 
   <div class="selector-bar">

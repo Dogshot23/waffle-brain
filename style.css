@@ -611,32 +611,75 @@ footer kbd {
 
 /* ── 5. Teacher-only ──────────────────────────────────────── */
 
-/* Waffle selector */
+/* Collection menu (legacy ids/classes: "waffle-select" = Collection menu).
+   Teacher page only — student.html has none of these elements.
+   A compact serif button (emoji + name, underlined, small "Collection"
+   label above) that opens a list grouped by COLLECTION_GROUPS: a popover
+   on wider screens, a bottom sheet on phones. */
 .waffle-select {
+  --premium-ink: #A8452E;
+  --emoji-tint:  #EFE6D4;
   position: relative;
   margin-bottom: 8px;
   padding: 0 2px;
   flex-shrink: 0;
 }
 
-.waffle-trigger {
-  width: 100%;
+.waffle-select-label {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 11px;
-  background: var(--surface);
+  gap: 6px;
+  height: 14px;
+  margin-bottom: 2px;
+}
+
+.waffle-eyebrow {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--text-secondary);
+}
+
+/* PREMIUM tag beside the label while a premium Collection is selected */
+.waffle-premium-tag,
+.waffle-option-premium {
+  flex-shrink: 0;
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  white-space: nowrap;
+  color: var(--premium-ink);
+  border: 1px solid rgba(168, 69, 46, 0.35);
+  border-radius: 99px;
+  padding: 2px 6px 2px 7px;
+}
+
+.waffle-premium-tag[hidden] { display: none; }
+
+.waffle-trigger {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 2px 0 1px;
+  background: transparent;
   color: var(--text-primary);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 12px;
+  border: 0;
+  border-bottom: 1.5px solid var(--text-primary);
+  border-radius: 0;
+  font-family: 'Fraunces', 'Lora', Georgia, serif;
+  font-size: 18px;
   font-weight: 500;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.005em;
   cursor: pointer;
 }
 
-.waffle-trigger:hover { border-color: var(--accent-border); }
+.waffle-trigger:hover { border-bottom-color: var(--btn-bg); }
 
 .waffle-trigger:focus-visible {
   outline: 2px solid var(--btn-bg);
@@ -644,7 +687,7 @@ footer kbd {
 }
 
 .waffle-trigger-icon {
-  font-size: 14px;
+  font-size: 22px;
   line-height: 1;
   flex-shrink: 0;
 }
@@ -659,33 +702,63 @@ footer kbd {
 }
 
 .waffle-trigger-chevron {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--btn-bg);
+}
+
+.waffle-trigger-chevron svg {
   width: 10px;
   height: 6px;
-  color: var(--text-tertiary);
-  flex-shrink: 0;
 }
 
 .waffle-list {
   position: absolute;
-  top: calc(100% + 2px);
+  top: calc(100% + 4px);
   left: 2px;
   right: 2px;
   z-index: 20;
-  max-height: 260px;
+  max-height: min(560px, calc(100dvh - 150px));
   overflow-y: auto;
   background: var(--surface);
-  border: 1px solid var(--border);
-  padding: 2px;
+  border: 1px solid var(--text-primary);
+  box-shadow: 6px 6px 0 rgba(38, 35, 43, 0.08);
+  padding: 2px 0 6px;
   list-style: none;
+}
+
+/* Group headings: EVERYDAY / PROFESSIONAL & EXAM PREP */
+.waffle-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px 4px;
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.waffle-group::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
 }
 
 .waffle-option {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 7px 8px;
-  font-size: 12.5px;
-  font-weight: 500;
+  gap: 11px;
+  min-height: 48px;
+  padding: 0 14px;
   color: var(--text-primary);
   cursor: pointer;
   user-select: none;
@@ -702,21 +775,52 @@ footer kbd {
 
 .waffle-option[aria-selected="true"] {
   background: var(--accent-tint);
-  color: var(--accent-text);
-  font-weight: 600;
+  box-shadow: inset 3px 0 0 var(--btn-bg);
 }
 
 .waffle-option-icon {
-  font-size: 13px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
   flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--emoji-tint);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.waffle-option[aria-selected="true"] .waffle-option-icon {
+  background: var(--surface);
+  box-shadow: 0 0 0 1px var(--border);
 }
 
 .waffle-option-label {
-  flex: 1;
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-family: 'Fraunces', 'Lora', Georgia, serif;
+  font-size: 16.5px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.waffle-option[aria-selected="true"] .waffle-option-label::after {
+  content: ' \2713';
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--btn-bg);
+}
+
+/* Waffle count: quiet, right-aligned */
+.waffle-option-count {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-tertiary);
 }
 
 .waffle-option-tag {
@@ -730,33 +834,50 @@ footer kbd {
   padding: 2px 5px;
 }
 
-/* Premium Collections in the menu: padlock until unlocked, then "Pro" */
-.waffle-option-lock {
-  flex-shrink: 0;
-  font-size: 11px;
-  line-height: 1;
-}
-
-.waffle-option-pro {
-  background: var(--accent-tint);
-  color: var(--accent-text);
-}
-
 .waffle-option.locked {
   color: var(--text-tertiary);
   opacity: 0.62;
   cursor: not-allowed;
 }
 
-.waffle-separator {
-  margin: 6px 4px 4px;
-  padding-top: 7px;
-  border-top: 1px solid var(--border-light);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-tertiary);
+/* Phones: the list becomes a bottom sheet over a dimmed page. */
+@media (max-width: 480px) {
+  .waffle-select.is-open::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 19;
+    background: rgba(38, 35, 43, 0.4);
+  }
+
+  .waffle-list {
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 88dvh;
+    border-width: 1px 0 0;
+    border-radius: 14px 14px 0 0;
+    box-shadow: none;
+    padding-bottom: max(14px, env(safe-area-inset-bottom));
+  }
+
+  .waffle-list::before {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 4px;
+    margin: 8px auto 2px;
+    border-radius: 9px;
+    background: var(--border);
+  }
+
+  .waffle-group,
+  .waffle-option {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }
 
 /* ── Paywall (premium Collections; <dialog id="paywall">) ── */

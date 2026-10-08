@@ -14,23 +14,32 @@
 //  `isPremium: true` marks a paid Collection: on the Teacher page it shows
 //  a 🔒 and opens the paywall unless this browser has Pro access (see
 //  js/payment.js). Every other Collection is free.
-//  Unlocked Collections are selectable and draw their own Waffles; locked
-//  Collections are inert (no modal yet — that's a later stage). Unlocked
-//  entries must come before locked ones: the "Coming Soon" heading is
-//  inserted before the first locked entry. Adding a future Collection
-//  should mean adding an entry here, not touching the markup or render logic.
+//  `group` puts the Collection under a heading in the Teacher menu (see
+//  COLLECTION_GROUPS below). Premium Collections are in the 'pro' group.
+//  Unlocked Collections are selectable and draw their own Waffles; a
+//  `locked: true` Collection is inert (none at present). Adding a future
+//  Collection should mean adding an entry here, not touching the markup or
+//  render logic.
 // ─────────────────────────────────────────────
 
+// The Teacher page's Collection menu shows these groups, in this order.
+// A Collection's `group` must be one of these ids.
+const COLLECTION_GROUPS = [
+  { id: 'everyday', title: 'Everyday' },
+  { id: 'pro',      title: 'Professional & Exam Prep' },
+];
+
+// Array order is menu order (within each group).
 const COLLECTIONS = [
-  { id: 'general',            name: 'General English',   icon: '🧇', locked: false, comingSoon: false },
-  { id: 'business',           name: 'Business English',  icon: '💼', locked: false, comingSoon: false },
-  { id: 'kids',               name: 'Kids',              icon: '🧸', locked: false, comingSoon: false },
-  { id: 'ielts',              name: 'IELTS',             icon: '🎓', locked: false, comingSoon: false, isPremium: true },
-  { id: 'cambridge',          name: 'Cambridge',         icon: '🏛️', locked: false, comingSoon: false, isPremium: true },
-  { id: 'travel',             name: 'Travel',            icon: '✈️', locked: false, comingSoon: false },
-  { id: 'debate',             name: 'Debate',            icon: '⚖️', locked: false, comingSoon: false },
-  { id: 'medical',            name: 'Medical',           icon: '🩺', locked: false, comingSoon: false, isPremium: true },
-  { id: 'conversation-club',  name: 'Conversation Club', icon: '☕', locked: false, comingSoon: false },
+  { id: 'general',            name: 'General English',   icon: '🧇', group: 'everyday', locked: false, comingSoon: false },
+  { id: 'business',           name: 'Business English',  icon: '💼', group: 'everyday', locked: false, comingSoon: false },
+  { id: 'kids',               name: 'Kids',              icon: '🧸', group: 'everyday', locked: false, comingSoon: false },
+  { id: 'travel',             name: 'Travel',            icon: '✈️', group: 'everyday', locked: false, comingSoon: false },
+  { id: 'debate',             name: 'Debate',            icon: '⚖️', group: 'everyday', locked: false, comingSoon: false },
+  { id: 'conversation-club',  name: 'Conversation Club', icon: '☕', group: 'everyday', locked: false, comingSoon: false },
+  { id: 'medical',            name: 'Medical',           icon: '🩺', group: 'pro',      locked: false, comingSoon: false, isPremium: true },
+  { id: 'ielts',              name: 'IELTS',             icon: '🎓', group: 'pro',      locked: false, comingSoon: false, isPremium: true },
+  { id: 'cambridge',          name: 'Cambridge',         icon: '🏛️', group: 'pro',      locked: false, comingSoon: false, isPremium: true },
 ];
 
 // Lets scripts/validate.js (Node) read the same list.

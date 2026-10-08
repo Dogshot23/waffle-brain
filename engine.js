@@ -160,6 +160,11 @@ const WB = (() => {
         .map(w => w.category))];
     },
 
+    /** How many Waffles a Collection has, across all levels (0 before load()). */
+    getCollectionCount(collection) {
+      return all.reduce((n, w) => n + (w.collection === collection ? 1 : 0), 0);
+    },
+
     /** All unique category names in the current pool. */
     getCategories() {
       return [...new Set(waffles.map(w => w.category))];
