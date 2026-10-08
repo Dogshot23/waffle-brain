@@ -32,7 +32,7 @@
 <script src="analytics.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Lora:ital,wght@0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="images/favicon.ico">
@@ -47,20 +47,50 @@
       <img src="images/logo.png" alt="WaffleBrain" class="logo-img">
       <span class="logo-subtitle">For students</span>
     </div>
-    <span class="collection-slot">
-      <span class="collection-badge">
-        <span class="collection-icon" id="collection-icon" aria-hidden="true">🧇</span>
-        <span class="collection-name" id="collection-name">General English</span>
-        <span class="collection-lock" id="collection-lock" hidden></span>
-      </span>
-    </span>
     <nav class="version-nav" aria-label="Switch version">
-      <a href="index.html"   class="version-link inactive">Teacher</a>
+      <a href="index.html" id="teacher-link" class="version-link inactive">Teacher</a>
       <a href="student.html" id="student-link" class="version-link active" aria-current="page">Student</a>
     </nav>
   </header>
 
+  <!-- Collection → Level → Topic. State lives in the URL (student.js); the
+       Collection list reuses the Teacher menu's look but has no group
+       headings or counts. -->
+  <div class="waffle-select" id="waffle-select">
+    <button type="button" class="waffle-trigger" id="waffle-trigger" aria-haspopup="listbox" aria-expanded="false" aria-label="Choose Collection">
+      <span class="waffle-trigger-icon" id="waffle-trigger-icon" aria-hidden="true">🧇</span>
+      <span class="waffle-trigger-label" id="waffle-trigger-label">General English</span>
+      <span class="waffle-premium-tag" id="waffle-premium-tag" hidden>Pro</span>
+      <span class="waffle-trigger-chevron" aria-hidden="true">
+        <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </button>
+    <ul class="waffle-list" id="waffle-list" role="listbox" aria-label="Collection" hidden></ul>
+  </div>
+
+  <div class="student-selectors" id="student-selectors">
+    <div class="student-row" id="level-row">
+      <span class="control-label" id="level-label">Level</span>
+      <div class="level-seg" id="level-seg" role="radiogroup" aria-labelledby="level-label"></div>
+    </div>
+    <div class="student-row" id="topic-row">
+      <span class="control-label" id="topic-label">Topic</span>
+      <div class="chip-wrap" id="chip-wrap">
+        <div class="chip-scroll" id="chip-scroll" role="radiogroup" aria-labelledby="topic-label"></div>
+      </div>
+    </div>
+    <p class="student-mixed-note" id="mixed-note" hidden>30 mixed Waffles · suitable for any level</p>
+  </div>
+
   <div id="prompt-card">
+
+    <section class="empty-section" id="empty-section" hidden>
+      <div class="waffle-label" id="empty-title">🧇 No Waffles here yet</div>
+      <p class="empty-text" id="empty-text"></p>
+      <button type="button" class="empty-action" id="empty-all-btn" hidden>Show all topics</button>
+    </section>
 
     <section class="waffle-section" id="waffle-section">
       <div class="waffle-label">🧇 Waffle</div>
@@ -94,6 +124,8 @@
   </div>
 
   <footer>Press <kbd>Space</kbd> for a new Waffle</footer>
+
+  <div class="visually-hidden" id="waffle-live" role="status" aria-live="polite" aria-atomic="true"></div>
 
 </div>
 

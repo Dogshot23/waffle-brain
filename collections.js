@@ -17,6 +17,10 @@
 //  `categoryLabel` is the teacher-facing name for the `category` field of this
 //  Collection's Waffles (Activity, Topic, Situation, Exam part…), shown beside
 //  the category chips; the data field itself stays `category`.
+//  `studentCategoryLabel` is the STUDENT page's name for the same field. It is
+//  optional: the Student page says "Topic" unless this is set (IELTS "Part",
+//  Cambridge "Task"). Kept apart from `categoryLabel` on purpose, so the
+//  Teacher wording can change without touching the Student page.
 //  `group` puts the Collection under a heading in the Teacher menu (see
 //  COLLECTION_GROUPS below). Premium Collections are in the 'pro' group.
 //  Unlocked Collections are selectable and draw their own Waffles; a
@@ -41,8 +45,8 @@ const COLLECTIONS = [
   { id: 'debate',            name: 'Debate',            icon: '⚖️', group: 'everyday',  categoryLabel: 'Topic',     locked: false, comingSoon: false },
   { id: 'conversation-club', name: 'Conversation Club', icon: '☕', group: 'everyday',  categoryLabel: 'Topic',     locked: false, comingSoon: false },
   { id: 'medical',           name: 'Medical',           icon: '🩺', group: 'pro',       categoryLabel: 'Topic',     locked: false, comingSoon: false, isPremium: true },
-  { id: 'ielts',             name: 'IELTS',             icon: '🎓', group: 'pro',       categoryLabel: 'Exam part', locked: false, comingSoon: false, isPremium: true },
-  { id: 'cambridge',         name: 'Cambridge',         icon: '🏛️', group: 'pro',       categoryLabel: 'Exam task', locked: false, comingSoon: false, isPremium: true },
+  { id: 'ielts',             name: 'IELTS',             icon: '🎓', group: 'pro',       categoryLabel: 'Exam part', studentCategoryLabel: 'Part', locked: false, comingSoon: false, isPremium: true },
+  { id: 'cambridge',         name: 'Cambridge',         icon: '🏛️', group: 'pro',       categoryLabel: 'Exam task', studentCategoryLabel: 'Task', locked: false, comingSoon: false, isPremium: true },
 ];
 
 // Lets scripts/validate.js (Node) read the same list.
