@@ -47,6 +47,7 @@ const COLLECTIONS = [
   { id: 'medical',           name: 'Medical',           icon: '🩺', group: 'pro',       categoryLabel: 'Topic',     locked: false, comingSoon: false, isPremium: true },
   { id: 'ielts',             name: 'IELTS',             icon: '🎓', group: 'pro',       categoryLabel: 'Exam part', studentCategoryLabel: 'Part', locked: false, comingSoon: false, isPremium: true },
   { id: 'cambridge',         name: 'Cambridge',         icon: '🏛️', group: 'pro',       categoryLabel: 'Exam task', studentCategoryLabel: 'Task', locked: false, comingSoon: false, isPremium: true },
+  { id: 'hospitality',       name: 'Hospitality',       icon: '🛎️', group: 'pro',       categoryLabel: 'Topic',     locked: false, comingSoon: false, isPremium: true },
 ];
 
 // Lets scripts/validate.js (Node) read the same list.
